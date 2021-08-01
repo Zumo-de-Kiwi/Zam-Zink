@@ -1,22 +1,23 @@
 # ZomZink
-## Website prototaipu
-crazyness inside relax mind.
-cup of caffee in plaza mayor.
+-
+    `Website prototaipu`
+    crazyness inside relax mind.
+    cup of caffee in plaza mayor.
 
 
 # What's in the box
 1. Octopage  
     - 
-    - 八角頁 *expanding form the logo?*
-    - Why 8
-        1. Code (codepen, github)
-        2. Graphic Design (Poster, Fb Frame, Stickers
-        3. Film pic + Scan + Pies + 270....prj
-        4. Draw (Pixel-art, Cafe prj, Mau, dodo 128
-        5. Kinetic dress (papa, Leo, )
-        6. Videos (Vimeo YT)
-        7. Music (Soundcloud)
-        8. About me
+        - 八角頁 `expanding form the logo?`
+        - Why 8
+            1. Code (codepen, github)
+            2. Graphic Design (Poster, Fb Frame, Stickers)
+            3. Film pic + Scan + Pies + 270....prj
+            4. Draw (Pixel-art, Cafe prj, Mau, dodo 128
+            5. Kinetic dress (papa, Leo, )
+            6. Videos (Vimeo YT)
+            7. Music (Soundcloud)
+            8. About me
 
     - Iconos
         - Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad
@@ -25,8 +26,8 @@ cup of caffee in plaza mayor.
 
 2. Visual Design
     - 
-    1. Bauhaus braun stetic?
-    2. URL Animation [https://twitter.com/nealagarwal/status/1293578708247248897](https://twitter.com/nealagarwal/status/1293578708247248897)
+        1. Bauhaus braun stetic?
+        2. URL Animation [https://twitter.com/nealagarwal/status/1293578708247248897](https://twitter.com/nealagarwal/status/1293578708247248897)
 
 
 3. MODES (lang, color...)
@@ -38,7 +39,6 @@ cup of caffee in plaza mayor.
 
 
 4. BONUS
-    - 
         [ ]  Red green色盲 friendly
         [ ]  load main things in 5 sec
         [ ]  custom scrollbar
