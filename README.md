@@ -6,6 +6,7 @@ cup of caffee in plaza mayor.
 
 # What's in the box
 1. Octopage  
+    - 
     - 八角頁 *expanding form the logo?*
     - Why 8
         1. Code (codepen, github)
@@ -23,12 +24,13 @@ cup of caffee in plaza mayor.
 
 
 2. Visual Design
+    - 
     1. Bauhaus braun stetic?
     2. URL Animation [https://twitter.com/nealagarwal/status/1293578708247248897](https://twitter.com/nealagarwal/status/1293578708247248897)
 
 
-3. Options for Users
-    -
+3. MODES (lang, color...)
+    - 
         [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
         [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
         [ ] 8bit ver CV
