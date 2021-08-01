@@ -1,0 +1,2 @@
+# ZomZink
+website prototaipu
