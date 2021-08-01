@@ -5,7 +5,8 @@ cup of caffee in plaza mayor.
 
 
 # What's in the box
-1. Octopage - 八角頁 *expanding form the logo?*
+1. Octopage  
+    - 八角頁 *expanding form the logo?*
     - Why 8
         1. Code (codepen, github)
         2. Graphic Design (Poster, Fb Frame, Stickers
@@ -20,32 +21,32 @@ cup of caffee in plaza mayor.
         - Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad
 
 
-2. Options for Users
-    -
-        - [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
-        - [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
-        - 8bit ver CV
-             1. for my 8 bit works
 
-3. Visual Design
-    -
+2. Visual Design
     1. Bauhaus braun stetic?
     2. URL Animation [https://twitter.com/nealagarwal/status/1293578708247248897](https://twitter.com/nealagarwal/status/1293578708247248897)
 
 
+3. Options for Users
+    -
+        [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
+        [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
+        [ ] 8bit ver CV
+             1. for my 8 bit works
+
+
 4. BONUS
     - 
-        - [ ]  Red green色盲 friendly
-        - [ ]  load main things in 5 sec
-        - [ ]  custom scrollbar
-        - 8bit ver CV
-            
-            1. for my 8 bit works
+        [ ]  Red green色盲 friendly
+        [ ]  load main things in 5 sec
+        [ ]  custom scrollbar
+        [ ] 8bit ver CV (for my 8 bit works)
 
 
 
 5. Cool Webs
 
+- PERSNAL pages
     [https://gregives.co.uk](https://gregives.co.uk/)
 
     [https://matthewrayfield.com](https://matthewrayfield.com/)
@@ -58,13 +59,13 @@ cup of caffee in plaza mayor.
 
     [https://neal.fun](https://neal.fun/)
 
-    RECOMENDED:
+- RECOMENDED:
 
     [https://www.juliacodes.com](https://www.juliacodes.com/)
 
     [https://www.mschf.xyz](https://www.mschf.xyz/) 
 
-    DESIGN COURSE RECMD:
+- DESIGN COURSE RECMD:
 
     [https://paperpillar.com/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhjb2RIZktJMG1JNTVzWW83dDV3bmg4Z0htUXxBQ3Jtc0tuaEhGdXdldUEtaG0tMkJzVjF3RmpRVEliUmw3Tzkzd3B2U0MtYzFhNGtmbnFUbTJ1YVJ1YWo4cTU2SHVnUUZKSU81NmxnVlVHeG1zUGpDME00elF6V29FeW8xaG0xOGR5WHp5Nm9ZY05Qb050Y1pLVQ&q=https%3A%2F%2Fpaperpillar.com%2F)
 
@@ -80,11 +81,11 @@ cup of caffee in plaza mayor.
 
     [https://www.alexcoven.com/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkN5UUpqTW43Q0hkRFM2M25oSEdvVFVHVUwtZ3xBQ3Jtc0trME9NNzliQjNmdEk2RlRGRWNMMmlzWkNtSWRwWTBoeDhaSTRoc0VhUG4wMTk2ckpHbWhOYXdPaFpGbHQ0MlhPSDRyR3YwMnE1YkRRRWx2TW1tby1xei0yTFBTNTVmZE1TdzlUZVR5Y2Z4VVNaZ29CZw&q=https%3A%2F%2Fwww.alexcoven.com%2F)
 
-- Cool companys web
+- Com. Design 
 
     [swisscom.ch](http://swisscom.ch/)
 
-    google material
+    google material design
 
     apple product
 
