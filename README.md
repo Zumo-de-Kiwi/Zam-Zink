@@ -1,15 +1,17 @@
 # ZomZink
 -
     `Website prototaipu`
+
     crazyness inside relax mind.
+
     cup of caffee in plaza mayor.
 
 
 # What's in the box
 1. Octopage  
     - 
-        - 八角頁 `expanding form the logo?`
-        - Why 8
+        a. 八角頁 `expanding form the logo?`
+        b. Why 8
             1. Code (codepen, github)
             2. Graphic Design (Poster, Fb Frame, Stickers)
             3. Film pic + Scan + Pies + 270....prj
@@ -19,8 +21,8 @@
             7. Music (Soundcloud)
             8. About me
 
-    - Iconos
-        - Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad
+        - Iconos
+            - Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad
 
 
 
@@ -50,9 +52,10 @@
 5. Cool Webs
 
 - PERSNAL pages
-    [gregives](gregives.co.uk/)
 
-    [matthewrayfield](matthewrayfield.com/)
+    [gregives](www.gregives.co.uk/)
+
+    [matthewrayfield](www.matthewrayfield.com/)
 
     [wattenberger](wattenberger.com/)
 
