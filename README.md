@@ -41,17 +41,17 @@
 
 
 4. BONUS
-
+    - 
         [ ]  Red green色盲 friendly
         [ ]  load main things in 5 sec
         [ ]  custom scrollbar
         [ ] 8bit ver CV (for my 8 bit works)
 
--
+
 
 5. Cool Webs
     
-    - PERSNAL pages
+    - PERSONAL pages
 
         [gregives](https://gregives.co.uk)
 
