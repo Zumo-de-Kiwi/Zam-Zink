@@ -47,52 +47,52 @@
         [ ]  custom scrollbar
         [ ] 8bit ver CV (for my 8 bit works)
 
-
+-
 
 5. Cool Webs
+    
+    - PERSNAL pages
 
-- PERSNAL pages
+        [gregives](https://gregives.co.uk)
 
-    [gregives](www.gregives.co.uk)
+        [matthewrayfield](https://www.matthewrayfield.com)
 
-    [matthewrayfield](www.matthewrayfield.com)
+        [wattenberger](https://wattenberger.com)
 
-    [wattenberger](wattenberger.com)
+        [anthonycossins](https://anthonycossins.com) `Design ++`
 
-    [anthonycossins](anthonycossins.com) `Design ++`
+        [joshwcomeau](https://joshwcomeau.com)
 
-    [joshwcomeau](joshwcomeau.com)
+        [neal.fun](https://neal.fun)
 
-    [neal.fun](neal.fun)
+    - RECOMENDED:
 
-- RECOMENDED:
+        [juliacodes](juliacodes.com)
 
-    [juliacodes](juliacodes.com)
+        [mschf.xyz](mschf.xyz) 
 
-    [mschf.xyz](mschf.xyz) 
+    - DESIGN COURSE RECMD:
 
-- DESIGN COURSE RECMD:
+        [paperpillar](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhjb2RIZktJMG1JNTVzWW83dDV3bmg4Z0htUXxBQ3Jtc0tuaEhGdXdldUEtaG0tMkJzVjF3RmpRVEliUmw3Tzkzd3B2U0MtYzFhNGtmbnFUbTJ1YVJ1YWo4cTU2SHVnUUZKSU81NmxnVlVHeG1zUGpDME00elF6V29FeW8xaG0xOGR5WHp5Nm9ZY05Qb050Y1pLVQ&q=https%3A%2F%2Fpaperpillar.com%2F)
 
-    [paperpillar](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhjb2RIZktJMG1JNTVzWW83dDV3bmg4Z0htUXxBQ3Jtc0tuaEhGdXdldUEtaG0tMkJzVjF3RmpRVEliUmw3Tzkzd3B2U0MtYzFhNGtmbnFUbTJ1YVJ1YWo4cTU2SHVnUUZKSU81NmxnVlVHeG1zUGpDME00elF6V29FeW8xaG0xOGR5WHp5Nm9ZY05Qb050Y1pLVQ&q=https%3A%2F%2Fpaperpillar.com%2F)
+        [sebostudio](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbjZ1b3lBRVhXVHdhR2tzeHh2bWpaX0pXanRJZ3xBQ3Jtc0tuRnliaGlZS2E0TXp4Q05paVJKSk11aWh6MHRFWXlHTGRESmx4ZzdFWTk5UktXcV9iem1HeGdFUnFRODFYUlZReE1Dc01rWkxOalF4TTZjbXJSZmJhQXF5WURCMmZvell1VVVTQjJYdTBqcUZQZXcxWQ&q=https%3A%2F%2Fsebostudio.com%2F)
 
-    [sebostudio](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbjZ1b3lBRVhXVHdhR2tzeHh2bWpaX0pXanRJZ3xBQ3Jtc0tuRnliaGlZS2E0TXp4Q05paVJKSk11aWh6MHRFWXlHTGRESmx4ZzdFWTk5UktXcV9iem1HeGdFUnFRODFYUlZReE1Dc01rWkxOalF4TTZjbXJSZmJhQXF5WURCMmZvell1VVVTQjJYdTBqcUZQZXcxWQ&q=https%3A%2F%2Fsebostudio.com%2F)
+        [obys.agency](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFR5M2lCUDVjUWpPQ2pxdGJ4NUxsaVVoY2xtUXxBQ3Jtc0ttcnBFTjl4SjFnTzZuWnBwNzlLUXVMNjBteW40T0FqZUZfbGVvM0tJdUpVdUNKWldsZ2ZNZVlPNFh5SVhoeEh3VnlZTzVPWkZrd1pod0JJNFZUUHhHUmtFbEFGSEpOUTlNb2ZZdjRtTmtnc3NUc1Rjaw&q=https%3A%2F%2Fobys.agency%2F)
 
-    [obys.agency](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFR5M2lCUDVjUWpPQ2pxdGJ4NUxsaVVoY2xtUXxBQ3Jtc0ttcnBFTjl4SjFnTzZuWnBwNzlLUXVMNjBteW40T0FqZUZfbGVvM0tJdUpVdUNKWldsZ2ZNZVlPNFh5SVhoeEh3VnlZTzVPWkZrd1pod0JJNFZUUHhHUmtFbEFGSEpOUTlNb2ZZdjRtTmtnc3NUc1Rjaw&q=https%3A%2F%2Fobys.agency%2F)
+        [halo-lab.com](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTQxdnpHaVA2QXA5cWVLUEtGdk5Pb0hmUXBLZ3xBQ3Jtc0ttNVIyY2pCbFZzNzRXaFc2Vms0djNWTHdMbVpVbmMydzN1eGZyTEdCX0xqM0dnWHZlLTVCQm1vUm4yakYteExyd3NUZUNOMEQwWFRkbVpRZ1d1SXhPd044bDFINUZVVUprcEFLZTd2QVprYWRGa24xNA&q=https%3A%2F%2Fwww.halo-lab.com%2F)
 
-    [halo-lab.com](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTQxdnpHaVA2QXA5cWVLUEtGdk5Pb0hmUXBLZ3xBQ3Jtc0ttNVIyY2pCbFZzNzRXaFc2Vms0djNWTHdMbVpVbmMydzN1eGZyTEdCX0xqM0dnWHZlLTVCQm1vUm4yakYteExyd3NUZUNOMEQwWFRkbVpRZ1d1SXhPd044bDFINUZVVUprcEFLZTd2QVprYWRGa24xNA&q=https%3A%2F%2Fwww.halo-lab.com%2F)
+        [orizon.co](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0dZMGFnLWttczQ4UzVDSS04WE1pUkk3cFdud3xBQ3Jtc0trMEUyWmNtMkdLUkpWenc3TlpNLXRUenY2Yjg0SUFRcDBYQzRFZ0NOaXlMUTRzWmh2Y0Q3R0Zfb2J1aG1nOWVUU3MwNjFjWVUzRTJUVlBYaGxndmNkLUJKNFFNeDNSdjFXQjNzQkZMVmlNbFBXR19vRQ&q=https%3A%2F%2Fwww.orizon.co%2F)
 
-    [orizon.co](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0dZMGFnLWttczQ4UzVDSS04WE1pUkk3cFdud3xBQ3Jtc0trMEUyWmNtMkdLUkpWenc3TlpNLXRUenY2Yjg0SUFRcDBYQzRFZ0NOaXlMUTRzWmh2Y0Q3R0Zfb2J1aG1nOWVUU3MwNjFjWVUzRTJUVlBYaGxndmNkLUJKNFFNeDNSdjFXQjNzQkZMVmlNbFBXR19vRQ&q=https%3A%2F%2Fwww.orizon.co%2F)
+        [kuon.space](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbExMQkRmM2dGNjJqbUktVjQ5SlVjbGhJYnF4Z3xBQ3Jtc0trNUhkQWpoLVhhNGctYmVVbk05a3d6bzd4dXZicnlXamtxSUdVWDYtd3Jub1NnUHlGT1RxSEJrVFd6YXpfcWFDdUxQb2JGcWM5Wi1iV1QweFNpZkY1YlVQajVmTjRtcE12ZFoxV3dwcTVXZ2hLUVZacw&q=https%3A%2F%2Fkuon.space%2F)
 
-    [kuon.space](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbExMQkRmM2dGNjJqbUktVjQ5SlVjbGhJYnF4Z3xBQ3Jtc0trNUhkQWpoLVhhNGctYmVVbk05a3d6bzd4dXZicnlXamtxSUdVWDYtd3Jub1NnUHlGT1RxSEJrVFd6YXpfcWFDdUxQb2JGcWM5Wi1iV1QweFNpZkY1YlVQajVmTjRtcE12ZFoxV3dwcTVXZ2hLUVZacw&q=https%3A%2F%2Fkuon.space%2F)
+        [alexcoven.com](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkN5UUpqTW43Q0hkRFM2M25oSEdvVFVHVUwtZ3xBQ3Jtc0trME9NNzliQjNmdEk2RlRGRWNMMmlzWkNtSWRwWTBoeDhaSTRoc0VhUG4wMTk2ckpHbWhOYXdPaFpGbHQ0MlhPSDRyR3YwMnE1YkRRRWx2TW1tby1xei0yTFBTNTVmZE1TdzlUZVR5Y2Z4VVNaZ29CZw&q=https%3A%2F%2Fwww.alexcoven.com%2F)
 
-    [alexcoven.com](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkN5UUpqTW43Q0hkRFM2M25oSEdvVFVHVUwtZ3xBQ3Jtc0trME9NNzliQjNmdEk2RlRGRWNMMmlzWkNtSWRwWTBoeDhaSTRoc0VhUG4wMTk2ckpHbWhOYXdPaFpGbHQ0MlhPSDRyR3YwMnE1YkRRRWx2TW1tby1xei0yTFBTNTVmZE1TdzlUZVR5Y2Z4VVNaZ29CZw&q=https%3A%2F%2Fwww.alexcoven.com%2F)
+    - Com. Design 
 
-- Com. Design 
+        [swisscom](http://swisscom.ch/)
 
-    [swisscom](http://swisscom.ch/)
+        google material design
 
-    google material design
+        apple product
 
-    apple product
-
-    [developer.mozilla](http://developer.mozilla.org/)
+        [developer.mozilla](http://developer.mozilla.org/)
