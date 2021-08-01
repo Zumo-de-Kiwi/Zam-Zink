@@ -35,3 +35,6 @@ cup of caffee in plaza mayor.
         - [ ]  Red green色盲 friendly
         - [ ]  load main things in 5 sec
         - [ ]  custom scrollbar
+        - 8bit ver CV
+            
+            1. for my 8 bit works
