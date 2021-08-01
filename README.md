@@ -53,23 +53,23 @@
 
 - PERSNAL pages
 
-    [gregives](www.gregives.co.uk/)
+    [gregives](www.gregives.co.uk)
 
-    [matthewrayfield](www.matthewrayfield.com/)
+    [matthewrayfield](www.matthewrayfield.com)
 
-    [wattenberger](wattenberger.com/)
+    [wattenberger](wattenberger.com)
 
-    [anthonycossins](anthonycossins.com/) (Design ++
+    [anthonycossins](anthonycossins.com) `Design ++`
 
-    [joshwcomeau](joshwcomeau.com/)
+    [joshwcomeau](joshwcomeau.com)
 
-    [neal.fun](neal.fun/)
+    [neal.fun](neal.fun)
 
 - RECOMENDED:
 
-    [juliacodes](juliacodes.com/)
+    [juliacodes](juliacodes.com)
 
-    [mschf.xyz](mschf.xyz/) 
+    [mschf.xyz](mschf.xyz) 
 
 - DESIGN COURSE RECMD:
 
