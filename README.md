@@ -35,6 +35,7 @@
 3. MODES (lang, color...)
     - 
         [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
+        [ ] When preloads it appears an [skeleton css](https://www.youtube.com/watch?v=ZVug65gW-fc0)
         [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
         [ ] 8bit ver CV
             - for my 8 bit works
