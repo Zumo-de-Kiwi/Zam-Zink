@@ -29,7 +29,7 @@
 2. Visual Design
     - 
         1. Bauhaus braun stetic?
-        2. (URL Animation)[twitter.com/nealagarwal/status/1293578708247248897]
+        2. [URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
 
 
 3. MODES (lang, color...)
