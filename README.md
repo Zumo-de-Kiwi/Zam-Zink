@@ -29,7 +29,10 @@
 2. Visual Design
     - 
         1. Bauhaus braun stetic?
-        2. [URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
+        2. Comenzar con una pagina de entrada muy simple como en el de Eindhoven
+        3. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
+
+        4. The bottom aparecer como en  el bottom de esta pagina: [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
 
 
 3. MODES (lang, color...)
@@ -48,6 +51,7 @@
         [ ]  load main things in 5 sec
         [ ]  custom scrollbar
         [ ] 8bit ver CV (for my 8 bit works)
+        [ ] [URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
         
 
 
@@ -68,9 +72,15 @@
 
         [neal.fun](https://neal.fun)
 
+    - Universities:
+
         [University of Europe](https://www.ue-germany.com)
 
         [Design Academy Eindhoven](https://www.designacademy.nl)
+
+        [RCA](https://www.rca.ac.uk)
+
+        [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
 
     - RECOMENDED:
 
