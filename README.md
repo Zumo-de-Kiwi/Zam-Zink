@@ -65,6 +65,8 @@
         [joshwcomeau](https://joshwcomeau.com)
 
         [neal.fun](https://neal.fun)
+        
+        [University of Europe](https://www.ue-germany.com](https://www.ue-germany.com/)
 
     - RECOMENDED:
 
