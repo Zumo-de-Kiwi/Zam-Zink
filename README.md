@@ -71,6 +71,8 @@
         [joshwcomeau](https://joshwcomeau.com)
 
         [neal.fun](https://neal.fun)
+        
+        [designer a lo suizo.it](https://pierrebrunet.it)
 
     - Universities:
 
@@ -81,6 +83,16 @@
         [RCA](https://www.rca.ac.uk)
 
         [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
+        
+    - Bussiness:
+        
+        [Good animation rolling in the mid of the page](https://impact.ideo.org)
+        
+        [Muchos alemanes en stop motion mientras mueves la pagina](https://spielzeit.jungesschauspielhaus.de)
+        
+        [Gran logo pegado en una mitad de la pagina italiana](https://from.cm)
+        
+        [Shadow se mueve sigun tu cursor](https://readymag.com/readymag/oracle-cards/)
 
     - RECOMENDED:
 
