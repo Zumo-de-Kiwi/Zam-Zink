@@ -29,18 +29,26 @@
 2. Visual Design
     - 
         1. Bauhaus braun stetic?
-        2. Comenzar con una pagina de entrada muy simple como en el de Eindhoven
-        3. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
-
-        4. The bottom aparecer como en  el bottom de esta pagina: [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
+        2. The colors are from my favorite foods:
+            i. the greenish black of the wax of the cheese
+            ii. The salmon color
+            iii. The potato wash out yellow
+            iv. the sweety mid brown of the chocolate
+        3. Comenzar con una pagina de entrada muy simple como en el de Eindhoven
+        4. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
+        5. The bottom aparecer como en  el bottom de esta pagina: [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
 
 
 3. MODES (lang, color...)
     - 
-        [ ] Cuando las palabras son selescionadas que tengan un color como amarillo fosforescente, en vez del sistema operativo.        
+         
         [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
         [ ] When preloads it appears an [skeleton css](https://www.youtube.com/watch?v=ZVug65gW-fc0)
         [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
+        [ ] have a selection color: amarillo fosforescente, en vez del sistema operativo.   
+            `::selection {
+             background-color: #352e7e;
+             color: #fff;}`   
         [ ] 8bit ver CV
             - for my 8 bit works
 
@@ -73,6 +81,10 @@
         [neal.fun](https://neal.fun)
         
         [designer a lo suizo.it](https://pierrebrunet.it)
+        
+        [childy playful design colors](https://isolationcreation.club/inspire/)
+        
+        [top russian designer page, simple with his toque](https://maximaksenov.com)
 
     - Universities:
 
@@ -93,12 +105,22 @@
         [Gran logo pegado en una mitad de la pagina italiana](https://from.cm)
         
         [Shadow se mueve sigun tu cursor](https://readymag.com/readymag/oracle-cards/)
+        
+        [Greece tourists newspaper-like, fully featured](https://chronakis.homeybee.gr)
+        
+        [readymag big and clean UI](https://readymag.com)
+        
+        [Minimalistic SVG shapes and simple animations, yellow](https://www.thegrammarof.com)
 
     - RECOMENDED:
 
         [juliacodes](juliacodes.com)
 
         [mschf.xyz](mschf.xyz) 
+        
+    - IDEAS Pages:
+    
+        [Ready Mag ezamples](https://readymag.com/examples)
 
     - DESIGN COURSE RECMD:
 
