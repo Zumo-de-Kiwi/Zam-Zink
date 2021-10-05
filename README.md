@@ -38,6 +38,14 @@
         4. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
         5. The bottom aparecer como en  el bottom de esta pagina: [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
 
+3. FEATURES
+    -
+    [ ] Hot Keys:
+            1~9:    the page blocks
+            Shift:  slow animation
+            N:      Night Neon mode
+            L:      Language changes(can be like change the keyboard lang in Mac OS)
+            
 
 3. MODES (lang, color...)
     - 
