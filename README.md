@@ -36,7 +36,8 @@
             iv. the sweety mid brown of the chocolate
         3. Comenzar con una pagina de entrada muy simple como en el de Eindhoven
         4. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
-        5. The bottom aparecer como en  el bottom de esta pagina: [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
+        5. The bottom aparecer como en  el bottom de esta pagina: 
+            [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
 
 3. FEATURES
     -
@@ -119,6 +120,8 @@
         [readymag big and clean UI](https://readymag.com)
         
         [Minimalistic SVG shapes and simple animations, yellow](https://www.thegrammarof.com)
+        
+        [Brazilian design purple O rotating](https://bloomers.com.br)
 
     - RECOMENDED:
 
