@@ -94,6 +94,8 @@
         [childy playful design colors](https://isolationcreation.club/inspire/)
         
         [top russian designer page, simple with his toque](https://maximaksenov.com)
+        
+        [UX ppl](https://andrewbretnall.com)
 
     - Universities:
 
