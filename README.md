@@ -96,6 +96,8 @@
         [top russian designer page, simple with his toque](https://maximaksenov.com)
         
         [UX ppl](https://andrewbretnall.com)
+        
+        [Playful/minimalistic layout with interactive layout and a playground](http://kaiwei.design/#/)
 
     - Universities:
 
