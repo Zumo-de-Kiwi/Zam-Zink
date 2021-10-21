@@ -22,7 +22,7 @@
             8. About me
 
         - Iconos
-            - Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad
+            - Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad 
 
 
 
@@ -36,12 +36,11 @@
             iv. the sweety mid brown of the chocolate
         3. Comenzar con una pagina de entrada muy simple como en el de Eindhoven?
         4. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
-        5. The bottom aparecer como en  el bottom de esta pagina: 
-            [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
+        5. The bottom like [this](https://royaldanishacademy.com/programme/graphic-communication-design)?
 
 3. FEATURES
     -
-    [ ] Hot Keys:
+         [ ] Hot Keys:
             1~9:    the page blocks
             Shift:  slow animation
             N:      Night Neon mode
@@ -64,7 +63,7 @@
 
 4. BONUS
     - 
-        [ ]  Pointer is emoji hand?
+        [ ]  Pointer is an [emoji hand](https://kulbachny.com)?
         [ ]
         
         HOPU
@@ -106,6 +105,10 @@
         [Simplistic and inovative intro DEV](https://www.gregorychristian.com)
         
         [Many cool ideas with this duo: simple gif draw anim, parallel moving text, ouline text > moving photo > fiil text](https://www.thepapestielliz.com)
+
+        [About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part, and his [main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its arouind with your cursor movements.
+        
+        Here is another page that is moving left to right but doing [like God](http://robinmastromarino.com)
         
     - Webflow Templates:
         
@@ -145,6 +148,15 @@
         
         [Brazilian design purple O rotating](https://bloomers.com.br)
 
+        [swisscom](http://swisscom.ch/)
+
+        [Google Material Design]
+
+        [Apple](apple.com)
+
+        [developer.mozilla](http://developer.mozilla.org/)
+
+
     - RECOMENDED:
 
         [juliacodes](juliacodes.com)
@@ -171,12 +183,3 @@
 
         [alexcoven.com](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkN5UUpqTW43Q0hkRFM2M25oSEdvVFVHVUwtZ3xBQ3Jtc0trME9NNzliQjNmdEk2RlRGRWNMMmlzWkNtSWRwWTBoeDhaSTRoc0VhUG4wMTk2ckpHbWhOYXdPaFpGbHQ0MlhPSDRyR3YwMnE1YkRRRWx2TW1tby1xei0yTFBTNTVmZE1TdzlUZVR5Y2Z4VVNaZ29CZw&q=https%3A%2F%2Fwww.alexcoven.com%2F)
 
-    - Com. Design 
-
-        [swisscom](http://swisscom.ch/)
-
-        google material design
-
-        apple product
-
-        [developer.mozilla](http://developer.mozilla.org/)
