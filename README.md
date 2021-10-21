@@ -109,6 +109,8 @@
         [About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part, and his [main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its arouind with your cursor movements.
         
         Here is another page that is moving left to right but doing [like God](http://robinmastromarino.com)
+
+        moving typography, big profile pic with [lsd effect when hover over](https://kulbachny.com)
         
     - Webflow Templates:
         
