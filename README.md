@@ -98,6 +98,12 @@
         [UX ppl](https://andrewbretnall.com)
         
         [Playful/minimalistic layout with interactive layout and a playground](http://kaiwei.design/#/)
+        
+        [Simplistic and inovative intro DEV](https://www.gregorychristian.com)
+        
+    - Webflow Templates:
+        
+        [Very cool interactive way of navigate throught your porjects](https://prisma-portfolio.webflow.io)
 
     - Universities:
 
