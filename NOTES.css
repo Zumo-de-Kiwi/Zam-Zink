@@ -1,6 +1,6 @@
 /* ARE YOU USING THE RIGHRT CSS UNITS? */
 
-    /* 1. FOR A BETTER USE OF rem */
+        /* 1. FOR A BETTER USE OF rem */
 /* em is better beacause it no over write user browser preferences */
 html {
     font-size: 62.5%; /* Now 10px is equal 1rem*/
@@ -11,7 +11,12 @@ body {
 
 
 
-    /* ARE YOU SETTING THE WIDTH? */
-/* 1ch is the width of "0" 
-   Usually we use less than 75ch(like 45 charracters width) for a paragraph
-   So we use max-width with ch*/
+        /* 2. ARE YOU SETTING THE WIDTH? */
+/* 1em traditionally is the with of "M". 
+   1ch is the width of "0". 
+   Usually we use less than 75ch(45ch recommended) for a paragraph, so we use max-width with ch
+*/
+
+
+
+        /* 3. ARE YOU SETTING THE HEIGHT
