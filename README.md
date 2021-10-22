@@ -111,6 +111,8 @@
         Here is another page that is moving left to right but doing [like God](http://robinmastromarino.com)
 
         moving typography, big profile pic with [lsd effect when hover over](https://kulbachny.com)
+
+        [Very cool simple svg animated in a more complete way, clever and simple granular fx](https://www.svz.io)
         
     - Webflow Templates:
         
