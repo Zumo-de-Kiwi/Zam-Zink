@@ -12,4 +12,6 @@ body {
 
 
     /* ARE YOU SETTING THE WIDTH? */
-/* ch unit is average width of a letter */
+/* 1ch is the width of "0" 
+   Usually we use less than 75ch(like 45 charracters width) for a paragraph
+   So we use max-width with ch*/
