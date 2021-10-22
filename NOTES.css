@@ -20,3 +20,10 @@ body {
 
 
         /* 3. ARE YOU SETTING THE HEIGHT
+/* viewport hight may have problems, especially with mobile devices, when the keyboard appears
+   Recommend using a min heigh instead of a height, cause if the content shrinks  when the width in narrowing it wil need more room*/
+
+        /* 4. ARE YOU SETTING A PADDING OR MARGIN? */
+/* Better to use em or rem, it depends on wether you want the padding or margin to be consistent despite the element you're setting it on or if you want it to adjust based on the element's from size.
+   em for padding on buttons, then if your font-size gets bigger your bottom padding will be bigger in the same proportion  
+*/
