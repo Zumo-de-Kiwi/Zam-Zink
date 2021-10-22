@@ -1,0 +1,15 @@
+/* ARE YOU USING THE RIGHRT CSS UNITS? */
+
+    /* 1. FOR A BETTER USE OF rem */
+/* em is better beacause it no over write user browser preferences */
+html {
+    font-size: 62.5%; /* Now 10px is equal 1rem*/
+}
+body {
+    font-size: 3.5rem; /* because font-size is 62.5% then 3.5rem is 35px exactly */
+}
+
+
+
+    /* ARE YOU SETTING THE WIDTH? */
+/* ch unit is average width of a letter */
