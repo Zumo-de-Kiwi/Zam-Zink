@@ -74,10 +74,9 @@
         
 
 
-
-5. Cool Webs
-    
-    - PERSONAL pages
+5. Cool Webs  
+    - 
+    PERSONAL pages
 
         [gregives](https://gregives.co.uk)
 
@@ -103,8 +102,7 @@
         
         [Simplistic and inovative intro DEV](https://www.gregorychristian.com)
         
-        [Many cool ideas with this duo: simple gif draw anim, parallel moving text, ouline text > moving photo > fiil text](https://www.thepapestielliz.com)
-
+        [Many cool ideas with this duo](https://www.thepapestielliz.com) simple gif draw anim, parallel moving text, ouline text > moving photo > fill text
         [About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part, and his [main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its arouind with your cursor movements.
         
         Here is another page that is moving left to right but doing [like God](http://robinmastromarino.com)
@@ -115,13 +113,13 @@
         
     - Webflow Templates:
         
-        [Very cool interactive way of navigate throught your porjects](https://prisma-portfolio.webflow.io)
+        [Very cool interactive](https://prisma-portfolio.webflow.io) way of navigate throught your projects]
         
-        [The frame animation in very minimalistic and cool](https://shots-template.webflow.io/projects-wide)
+        The frame animation in very [minimalistic and cool](https://shots-template.webflow.io/projects-wide)
         
-        [I love the Right side Bar of this page](https://photographytemplate.webflow.io)
+        I love the right side Bar of [this page](https://photographytemplate.webflow.io)
         
-        [The Name stays in the same place all the time, although sometimes are behind, the dynamic social links that it have](http://dynamic-studios.webflow.io)
+        The Name stays in the same place all the time, although sometimes are behind, the dynamic social links that [it have](http://dynamic-studios.webflow.io)
 
     - Universities:
 
@@ -135,21 +133,21 @@
         
     - Bussiness:
         
-        [Good animation rolling in the mid of the page](https://impact.ideo.org)
+        Good animation rolling in the mid of [the page](https://impact.ideo.org)
         
-        [Muchos alemanes en stop motion mientras mueves la pagina](https://spielzeit.jungesschauspielhaus.de)
+        Muchos alemanes en stop motion mientras mueves [la pagina](https://spielzeit.jungesschauspielhaus.de)
         
-        [Gran logo pegado en una mitad de la pagina italiana](https://from.cm)
+        Gran logo pegado en una mitad de [la pagina italiana](https://from.cm)
         
-        [Shadow se mueve sigun tu cursor](https://readymag.com/readymag/oracle-cards/)
+        Shadow se mueve segun [tu cursor](https://readymag.com/readymag/oracle-cards/)
         
-        [Greece tourists newspaper-like, fully featured](https://chronakis.homeybee.gr)
+        Greece tourists newspaper-like, [fully featured](https://chronakis.homeybee.gr)
         
-        [readymag big and clean UI](https://readymag.com)
+        [readymag](https://readymag.com) big and clean UI
         
-        [Minimalistic SVG shapes and simple animations, yellow](https://www.thegrammarof.com)
+        [Minimalistic](https://www.thegrammarof.com) SVG shapes and simple animations, yellow
         
-        [Brazilian design purple O rotating](https://bloomers.com.br)
+        [Brazilian](https://bloomers.com.br) design purple O rotating
 
         [swisscom](http://swisscom.ch/)
 
