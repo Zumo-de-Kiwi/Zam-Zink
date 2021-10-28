@@ -128,10 +128,14 @@
         [Very cool interactive](https://prisma-portfolio.webflow.io) way of navigate throught your projects]
 
         The frame animation in very [minimalistic and cool](https://shots-template.webflow.io/projects-wide)
- 
+
         I love the right side Bar of [this page](https://photographytemplate.webflow.io)
 
         The Name stays in the same place all the time, although sometimes are behind, the dynamic social links that [it have](http://dynamic-studios.webflow.io)
+
+        [The page](http://roknrol-2018.webflow.io) of a very innovative slovenian green design guy
+
+        [Tremendous purple page](https://igma.im) with eye as logo, a russian with a very peculiar taste and humour
 
     - ### Universities:
 
