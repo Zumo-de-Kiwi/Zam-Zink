@@ -10,7 +10,9 @@
 # What's in the box
 1. INTRO SCREEN
     -
-    ### Left Side
+    Maybe a combination of these two pages, with [Igma non-scrollable main page](https://igma.im) with its singular composition. And have all the types of work you have like [roknol page](http://roknrol-2018.webflow.io).
+
+    ### A part
     1. LOGO (hover will come up )
     2. Graphic Design (UX, Poster, Fb Frame, Stickers)
     3. Draw (Pixel-art, Cafe prj, Mau, dodo 128
@@ -20,11 +22,10 @@
         a. Film pic + Scan + Pies + 270....prj
         b. Videos (Vimeo YT) 
         c. Music (Soundcloud)
-    
 
-    ### Right Side 
+    ### B part
     Will display with icons
-    1. Nigth/Light Mode
+    1. Nigth/Light Mode (Ra Eye or a toggle)
     2. A11y
     3. Contact me
 
