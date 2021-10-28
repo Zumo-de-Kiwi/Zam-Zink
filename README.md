@@ -76,7 +76,7 @@
 
 5. Cool Webs  
     - 
-    - PERSONAL pages
+    - ### PERSONAL pages
 
         [gregives](https://gregives.co.uk)
 
@@ -124,7 +124,7 @@
         
         The Name stays in the same place all the time, although sometimes are behind, the dynamic social links that [it have](http://dynamic-studios.webflow.io)
 
-    - Universities:
+    - ### Universities:
 
         [University of Europe](https://www.ue-germany.com)
 
@@ -134,7 +134,7 @@
 
         [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
         
-    - Bussiness:
+    - ### Bussiness:
         
         Good animation rolling in the mid of [the page](https://impact.ideo.org)
         
@@ -161,17 +161,17 @@
         [developer.mozilla](http://developer.mozilla.org/)
 
 
-    - RECOMENDED:
+    - ### RECOMENDED:
 
         [juliacodes](juliacodes.com)
 
         [mschf.xyz](mschf.xyz) 
         
-    - IDEAS Pages:
+    - ### IDEAS Pages:
     
         [Ready Mag ezamples](https://readymag.com/examples)
 
-    - DESIGN COURSE RECMD:
+    - ### DESIGN COURSE RECMD:
 
         [paperpillar](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhjb2RIZktJMG1JNTVzWW83dDV3bmg4Z0htUXxBQ3Jtc0tuaEhGdXdldUEtaG0tMkJzVjF3RmpRVEliUmw3Tzkzd3B2U0MtYzFhNGtmbnFUbTJ1YVJ1YWo4cTU2SHVnUUZKSU81NmxnVlVHeG1zUGpDME00elF6V29FeW8xaG0xOGR5WHp5Nm9ZY05Qb050Y1pLVQ&q=https%3A%2F%2Fpaperpillar.com%2F)
 
