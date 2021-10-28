@@ -8,23 +8,34 @@
 
 
 # What's in the box
-1. Octopage  
+1. INTRO SCREEN
     - 
-        a. 八角頁 `expanding form the logo?`
-        b. Why 8
-            1. Code (codepen, github)
-            2. Graphic Design (Poster, Fb Frame, Stickers)
-            3. Film pic + Scan + Pies + 270....prj
-            4. Draw (Pixel-art, Cafe prj, Mau, dodo 128
-            5. Kinetic dress (papa, Leo, )
-            6. Videos (Vimeo YT)
-            7. Music (Soundcloud)
-            8. About me
+        ### Left Side
+        1. LOGO (hover will come up )
+        2. Graphic Design (UX, Poster, Fb Frame, Stickers)
+        3. Draw (Pixel-art, Cafe prj, Mau, dodo 128
+        4. Code (codepen, github)
+        5. Multimedia 
+            Hover will unfold a. to c. like in [Josh](https://www.joshwcomeau.com) page.
+            a. Film pic + Scan + Pies + 270....prj
+            b. Videos (Vimeo YT) 
+            c. Music (Soundcloud)
+        
 
-        - Iconos
-            - Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad 
+        ### Right Side 
+        Will display with icons
+        1. Nigth/Light Mode
+        2. A11y
+        3. Contact me
 
-2. Visual Design
+        ### In the Center
+        1. Hi, I am [name] (About me will come up when hover the name)
+
+        ### BONUS
+        i. Sound On/Off
+        ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad 
+
+2. VISUAL DESIGN
     - 
         1. Bauhaus braun stetic?
         2. The colors are from my favorite foods:
