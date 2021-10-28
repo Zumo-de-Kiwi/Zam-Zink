@@ -9,31 +9,31 @@
 
 # What's in the box
 1. INTRO SCREEN
-    - 
-        ### Left Side
-        1. LOGO (hover will come up )
-        2. Graphic Design (UX, Poster, Fb Frame, Stickers)
-        3. Draw (Pixel-art, Cafe prj, Mau, dodo 128
-        4. Code (codepen, github)
-        5. Multimedia 
-            Hover will unfold a. to c. like in [Josh](https://www.joshwcomeau.com) page.
-            a. Film pic + Scan + Pies + 270....prj
-            b. Videos (Vimeo YT) 
-            c. Music (Soundcloud)
-        
+    -
+    ### Left Side
+    1. LOGO (hover will come up )
+    2. Graphic Design (UX, Poster, Fb Frame, Stickers)
+    3. Draw (Pixel-art, Cafe prj, Mau, dodo 128
+    4. Code (codepen, github)
+    5. Multimedia 
+        Hover will unfold a. to c. like in [Josh](https://www.joshwcomeau.com) page.
+        a. Film pic + Scan + Pies + 270....prj
+        b. Videos (Vimeo YT) 
+        c. Music (Soundcloud)
+    
 
-        ### Right Side 
-        Will display with icons
-        1. Nigth/Light Mode
-        2. A11y
-        3. Contact me
+    ### Right Side 
+    Will display with icons
+    1. Nigth/Light Mode
+    2. A11y
+    3. Contact me
 
-        ### In the Center
-        1. Hi, I am [name] (About me will come up when hover the name)
+    ### In the Center
+    1. Hi, I am [name] (About me will come up when hover the name)
 
-        ### BONUS
-        i. Sound On/Off
-        ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad 
+    ### BONUS
+    i. Sound On/Off
+    ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad 
 
 2. VISUAL DESIGN
     - 
