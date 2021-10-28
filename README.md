@@ -103,7 +103,10 @@
         [Simplistic and inovative intro DEV](https://www.gregorychristian.com)
         
         [Many cool ideas with this duo](https://www.thepapestielliz.com) simple gif draw anim, parallel moving text, ouline text > moving photo > fill text
-        [About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part, and his [main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its arouind with your cursor movements.
+        
+        [About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part, and his 
+        
+        [main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its arouind with your cursor movements.
         
         Here is another page that is moving left to right but doing [like God](http://robinmastromarino.com)
 
