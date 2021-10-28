@@ -47,6 +47,7 @@
         4. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
         5. A11y buttom is an minimalist gingerbread Man
         5. The bottom like [this](https://royaldanishacademy.com/programme/graphic-communication-design)?
+        6. Scroll percentage bar in top of the page
 
 3. FEATURES
     -
