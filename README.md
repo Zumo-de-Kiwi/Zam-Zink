@@ -6,13 +6,13 @@
 
   cup of caffee in plaza mayor.
 
-# What's in the box
+## What's in the box?
 
-1.  ## INTRO SCREEN
+### 1. INTRO SCREEN
 
-    Maybe a combination of these two pages, with [Igma non-scrollable main page](https://igma.im) with its singular composition. And have all the types of work you have like [roknol page](http://roknrol-2018.webflow.io).
+Maybe a combination of these two pages, with [Igma non-scrollable main page](https://igma.im) with its singular composition. And have all the types of work you have like [roknol page](http://roknrol-2018.webflow.io).
 
-    ### A part
+### A part
 
     1. LOGO (hover will come up )
     2. Graphic Design (UX, Poster, Fb Frame, Stickers)
@@ -24,7 +24,7 @@
        b. Videos (Vimeo YT)
        c. Music (Soundcloud)
 
-    ### B part
+### B part
 
     Will display with icons
 
@@ -32,16 +32,16 @@
     2. A11y
     3. Contact me ([roknol](http://roknrol-2018.webflow.io/contact) makes a very clever one.)
 
-    ### In the Center
+### In the Center
 
     1. Hi, I am [name] (About me will come up when hover the name)
 
-    ### BONUS
+### BONUS
 
     i. Sound On/Off
     ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tema, como comida, ingredientes, naturaleza, ciudad
 
-2.  VISUAL DESIGN
+## 2. VISUAL DESIGN
 
     - 1. Bauhaus braun stetic?
       2. The colors are from my favorite foods:
@@ -55,7 +55,7 @@
       6. The bottom like [this](https://royaldanishacademy.com/programme/graphic-communication-design)?
       7. Scroll percentage bar in top of the page
 
-3.  ## FEATURES
+## 3. FEATURES
 
          [ ] Hot Keys:
             1~9:    the page blocks
@@ -63,29 +63,43 @@
             N:      Night Neon mode
             L:      Language changes(can be like change the keyboard lang in Mac OS)
 
-4.  MODES (lang, color...)
+## 4. MODES (lang, color...)
 
     - [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
           [ ] When preloads it appears an [skeleton css](https://www.youtube.com/watch?v=ZVug65gW-fc0)
           [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
           [ ] have a [selection color](https://www.vox.com) or the [text itself](https://www.davidebaratta.com/info)
-          `::selection { background-color: #352e7e; color: #fff;}`  
+          `::selection { background-color: #352e7e; color: #fff;}`
            [ ] 8bit ver CV - for my 8 bit works
 
-5.  BONUS
+5. ## BONUS
 
-    - [ ] Pointer is an [emoji hand](https://kulbachny.com)?
-          [ ]
-          HOPU
-          [ ] Red green 色盲 friendly
-          [ ] load main things in 5 sec
-          [ ] custom scrollbar
-          [ ] 8bit ver CV (for my 8 bit works)
-          [ ] [URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
+   - [ ] Pointer is an [emoji hand](https://kulbachny.com)?
+         [ ]
+         HOPU
+         [ ] Red green 色盲 friendly
+         [ ] load main things in 5 sec
+         [ ] custom scrollbar
+         [ ] 8bit ver CV (for my 8 bit works)
+         [ ] [URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
 
-6.  ## Cool Webs
+## 6. DO and DON'T in PORTFOLIO
 
-    - ### PERSONAL pages
+- ### DON'Ts
+
+  a. DON'T Put `contact me` or `talk about you`before the user can see your work.
+  b. DON'T Bad `media query`, haven't test your page in different screen sizes
+  c. DON'T Without more information in the companies that you have worked.
+  d. DON'T `Progress bars` in the skills.
+  e. DON'T Talking about you don't well.
+  f. DON'T talk to much about you, instead show your work, `github`....
+  g. DON'T put ugly `screenshots` in the preview of the portfolio links.
+
+## 7. Cool Webs
+
+-
+
+### PERSONAL pages
 
       [gregives](https://gregives.co.uk)
 
@@ -123,7 +137,7 @@
 
       [Very cool simple svg animated in a more complete way, clever and simple granular fx](https://www.svz.io)
 
-    - ### Webflow Templates:
+### Webflow Templates:
 
       [Very cool interactive](https://prisma-portfolio.webflow.io) way of navigate throught your projects]
 
@@ -137,7 +151,7 @@
 
       [Tremendous purple page](https://igma.im) with eye as logo, a russian with a very peculiar taste and humour
 
-    - ### Universities:
+### Universities:
 
       [University of Europe](https://www.ue-germany.com)
 
@@ -147,7 +161,7 @@
 
       [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
 
-    - ### Bussiness:
+### Bussiness:
 
       Good animation rolling in the mid of [the page](https://impact.ideo.org)
 
@@ -173,17 +187,17 @@
 
       [developer.mozilla](http://developer.mozilla.org/)
 
-    - ### RECOMENDED:
+### RECOMENDED:
 
       [juliacodes](juliacodes.com)
 
       [mschf.xyz](mschf.xyz)
 
-    - ### IDEAS Pages:
+### IDEAS Pages:
 
       [Ready Mag ezamples](https://readymag.com/examples)
 
-    - ### DESIGN COURSE RECMD:
+### DESIGN COURSE RECMD:
 
       [paperpillar](youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazhjb2RIZktJMG1JNTVzWW83dDV3bmg4Z0htUXxBQ3Jtc0tuaEhGdXdldUEtaG0tMkJzVjF3RmpRVEliUmw3Tzkzd3B2U0MtYzFhNGtmbnFUbTJ1YVJ1YWo4cTU2SHVnUUZKSU81NmxnVlVHeG1zUGpDME00elF6V29FeW8xaG0xOGR5WHp5Nm9ZY05Qb050Y1pLVQ&q=https%3A%2F%2Fpaperpillar.com%2F)
 
