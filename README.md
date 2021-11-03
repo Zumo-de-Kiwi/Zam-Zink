@@ -1,6 +1,4 @@
-# ZomZink
-
-- `Website prototaipu`
+# Website prototaipu
 
 ## What's in the box?
 
@@ -11,7 +9,7 @@ And have all the types of work you have like [roknol page](http://roknrol-2018.w
 
 ### A part
 
-    1. LOGO (hover will come up )
+1. **LOGO** (hover will come up )
 
 
 2. **Design** 
@@ -21,11 +19,11 @@ And have all the types of work you have like [roknol page](http://roknrol-2018.w
     - Telegram and Siganl Stickers.
     - Posters and more 
 
-3. Draw (Pixel-art, Cafe prj, Mau, dodo 128)
+3. **Draw** (Pixel-art, Cafe prj, Mau, dodo 128)
 
-4. Code (codepen, github) 
+4. **Code** (codepen, github) 
 
-5. Multimedia
+5. **Multimedia**
     Hover will `unfold` a. to c. like in [Josh](https://www.joshwcomeau.com) page.
     - Film pic + Scan + Pies + 270....prj, the page can be like [this](https://prisma-portfolio.webflow.io)
     - Videos (Vimeo YT)
