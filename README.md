@@ -6,7 +6,8 @@
 
 ### 1. INTRO SCREEN
 
-Maybe a combination of these two pages, with [Igma non-scrollable main page](https://igma.im) with its singular composition. And have all the types of work you have like [roknol page](http://roknrol-2018.webflow.io).
+Maybe a combination of these two pages, with [Igma non-scrollable main page](https://igma.im) with its singular composition. 
+And have all the types of work you have like [roknol page](http://roknrol-2018.webflow.io).
 
 ### A part
 
@@ -14,22 +15,21 @@ Maybe a combination of these two pages, with [Igma non-scrollable main page](htt
 
 
 2. **Design** 
-
-> physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
-> Digital UX projects, apps and websites
-> FB frames, 3D pics, 360 pics.
-> Telegram and Siganl Stickers.
-> Posters and more 
+    - physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
+    - Digital UX projects, apps and websites
+    - FB frames, 3D pics, 360 pics.
+    - Telegram and Siganl Stickers.
+    - Posters and more 
 
 3. Draw (Pixel-art, Cafe prj, Mau, dodo 128)
 
 4. Code (codepen, github) 
 
 5. Multimedia
-Hover will `unfold` a. to c. like in [Josh](https://www.joshwcomeau.com) page.
-> Film pic + Scan + Pies + 270....prj
-> Videos (Vimeo YT)
-> Music (Soundcloud)
+    Hover will `unfold` a. to c. like in [Josh](https://www.joshwcomeau.com) page.
+    - Film pic + Scan + Pies + 270....prj, the page can be like [this](https://prisma-portfolio.webflow.io)
+    - Videos (Vimeo YT)
+    - Music (Soundcloud)
 
 ### B part
 
@@ -198,9 +198,9 @@ ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tem
 
 ### RECOMENDED:
 
-      [juliacodes](juliacodes.com)
+  [juliacodes](juliacodes.com)
 
-      [mschf.xyz](mschf.xyz)
+  [mschf.xyz](mschf.xyz)
 
 ### IDEAS Pages:
 
