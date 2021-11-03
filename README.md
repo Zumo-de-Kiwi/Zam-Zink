@@ -2,10 +2,6 @@
 
 - `Website prototaipu`
 
-  crazyness inside relax mind.
-
-  cup of caffee in plaza mayor.
-
 ## What's in the box?
 
 ### 1. INTRO SCREEN
@@ -15,19 +11,19 @@ Maybe a combination of these two pages, with [Igma non-scrollable main page](htt
 ### A part
 
     1. LOGO (hover will come up )
+
+
     2. Design (UX, Poster, Fb Frame, Stickers)
-            a. physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
-            b. Digital UX projects, apps and websites
-            c. FB frames, 3D pics, 360 pics.
-            d. Telegram and Siganl Stickers.
-            e. Posters and more
-    3. Draw (Pixel-art, Cafe prj, Mau, dodo 128)
-    4. Code (codepen, github)
-    5. Multimedia
-       Hover will unfold a. to c. like in [Josh](https://www.joshwcomeau.com) page.
-            a. Film pic + Scan + Pies + 270....prj
-            b. Videos (Vimeo YT)
-            c. Music (Soundcloud)
+
+a. physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
+b. Digital UX projects, apps and websites
+c. FB frames, 3D pics, 360 pics.
+d. Telegram and Siganl Stickers.
+e. Posters and more 3. Draw (Pixel-art, Cafe prj, Mau, dodo 128) 4. Code (codepen, github) 5. Multimedia
+Hover will `unfold` a. to c. like in [Josh](https://www.joshwcomeau.com) page.
+a. Film pic + Scan + Pies + 270....prj
+b. Videos (Vimeo YT)
+c. Music (Soundcloud)
 
 ### B part
 
