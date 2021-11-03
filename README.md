@@ -15,14 +15,19 @@ Maybe a combination of these two pages, with [Igma non-scrollable main page](htt
 ### A part
 
     1. LOGO (hover will come up )
-    2. Graphic Design (UX, Poster, Fb Frame, Stickers)
-    3. Draw (Pixel-art, Cafe prj, Mau, dodo 128
+    2. Design (UX, Poster, Fb Frame, Stickers)
+            a. physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
+            b. Digital UX projects, apps and websites
+            c. FB frames, 3D pics, 360 pics.
+            d. Telegram and Siganl Stickers.
+            e. Posters and more
+    3. Draw (Pixel-art, Cafe prj, Mau, dodo 128)
     4. Code (codepen, github)
     5. Multimedia
        Hover will unfold a. to c. like in [Josh](https://www.joshwcomeau.com) page.
-       a. Film pic + Scan + Pies + 270....prj
-       b. Videos (Vimeo YT)
-       c. Music (Soundcloud)
+            a. Film pic + Scan + Pies + 270....prj
+            b. Videos (Vimeo YT)
+            c. Music (Soundcloud)
 
 ### B part
 
@@ -136,6 +141,8 @@ Maybe a combination of these two pages, with [Igma non-scrollable main page](htt
       moving typography, big profile pic with [lsd effect when hover over](https://kulbachny.com)
 
       [Very cool simple svg animated in a more complete way, clever and simple granular fx](https://www.svz.io)
+
+      love how Penny use the [hambuguer](http://pennybanks.com/muse), very natural moving the content to the left
 
 ### Webflow Templates:
 
