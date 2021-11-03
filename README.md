@@ -57,7 +57,7 @@ ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tem
   3. Comenzar con una pagina de entrada muy simple como en el de Eindhoven?
   4. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
   5. A11y buttom is an minimalist gingerbread Man
-  6. The bottom like [this](https://royaldanishacademy.com/programme/graphic-communication-design)?
+  6. The bottom like [this](https://royaldanishacademy.com/programme/graphic-communication-design), a swiss square and lines design.
   7. Scroll percentage bar in top of the page
 
 ## 3. FEATURES
