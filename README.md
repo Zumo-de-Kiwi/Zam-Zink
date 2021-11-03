@@ -188,7 +188,7 @@ ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tem
 
   [swisscom](http://swisscom.ch/)
 
-  [Google Material Design]
+  [Google Material Design](https://material.io/design)
 
   [Apple](apple.com)
 
