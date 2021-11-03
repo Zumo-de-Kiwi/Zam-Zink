@@ -13,17 +13,23 @@ Maybe a combination of these two pages, with [Igma non-scrollable main page](htt
     1. LOGO (hover will come up )
 
 
-    2. Design (UX, Poster, Fb Frame, Stickers)
+    2. **Design** 
 
-a. physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
-b. Digital UX projects, apps and websites
-c. FB frames, 3D pics, 360 pics.
-d. Telegram and Siganl Stickers.
-e. Posters and more 3. Draw (Pixel-art, Cafe prj, Mau, dodo 128) 4. Code (codepen, github) 5. Multimedia
-Hover will `unfold` a. to c. like in [Josh](https://www.joshwcomeau.com) page.
-a. Film pic + Scan + Pies + 270....prj
-b. Videos (Vimeo YT)
-c. Music (Soundcloud)
+    > physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
+    > Digital UX projects, apps and websites
+    > FB frames, 3D pics, 360 pics.
+    > Telegram and Siganl Stickers.
+    > Posters and more 
+    
+    3. Draw (Pixel-art, Cafe prj, Mau, dodo 128)
+    
+    4. Code (codepen, github) 
+    
+    5. Multimedia
+    Hover will `unfold` a. to c. like in [Josh](https://www.joshwcomeau.com) page.
+    > Film pic + Scan + Pies + 270....prj
+    > Videos (Vimeo YT)
+    > Music (Soundcloud)
 
 ### B part
 
