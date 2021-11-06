@@ -3,19 +3,21 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 62.5%;
   height: 100%;
+  /*font-family: 'Bungee', cursive; font-family: 'Bungee Hairline', cursive;font-family: 'Bungee Inline', cursive; font-family: 'Bungee Outline', cursive;font-family: 'Bungee Shade', cursive; */
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
   /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 }
 
 html body {
-  background-color: #ffffd0;
+  background-color: #d5f7d8;
   color: #0f1c0e;
   font-size: 1.2rem;
 }
 
 html body .main .navigation {
   color: cadetblue;
+  font-family: "Bungee Hairline", cursive;
 }
 
 html body .main .content_wrap {
@@ -24,14 +26,30 @@ html body .main .content_wrap {
   height: 100%;
   padding-bottom: 64px;
   padding-left: 20vw;
+}
+
+html body .main .content_wrap .content {
   color: #33333d;
-  font-weight: 500;
+  font-family: "Bungee", cursive;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
-html body .main .content_wrap .link {
-  color: #b11e56;
-  font-weight: 800;
-  text-decoration: underline;
+html body .main .content_wrap .content .link {
+  color: #d30655;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
+  text-decoration: underline;
+  font-family: "Bungee Outline", cursive;
+}
+
+html body .main .content_wrap .content .link:hover {
+  font-family: "Bungee Shade", cursive;
+}
+
+html body .main .content_wrap .content .link-page {
+  position: relative;
+  left: 0;
+  top: -7px;
+  margin-left: 0px;
+  font-size: 0.5rem;
+  line-height: 22px;
 }
