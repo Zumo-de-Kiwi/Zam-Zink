@@ -23,8 +23,6 @@
 
 1. [Using SVG](https://css-tricks.com/lodge/svg/06-using-svg-svg-background-image/) as background-image
 
-1. Tools for [optimize](https://css-tricks.com/tools-for-optimizing-svg/) SVG
-
 1. A more deep and complete w3 [page](https://www.w3.org/TR/SVG/styling.html#StylingUsingCSS)
    1. Styling SVG content using CSS
    2. Inline style sheets: the ‘style’ element
@@ -37,3 +35,21 @@
    9. Required CSS features
    10. DOM interfaces
    - Interface SVGStyleElement
+
+### OPTIMAZATION
+
+1. [using](https://www.youtube.com/watch?v=a3-lwxTkUKI) SVGOMG and FontForge
+
+1. Tools for [optimize](https://css-tricks.com/tools-for-optimizing-svg/) SVG
+
+1. Optimizing for [WEB use](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-1-67e8f2d4035#.2bnvih6cw)
+
+## UNICODE
+
+### Emoji
+
+1. Emoji Cursor - CSS Generator [Tool](https://www.emojicursor.app/)
+
+   - simplyfied version of the code?: `cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🦄</text></svg>"), auto`
+
+1. Mattherayfield [Animating](https://www.matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/) urls with js & emojis

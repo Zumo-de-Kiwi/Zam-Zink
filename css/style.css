@@ -1,10 +1,14 @@
+@charset "UTF-8";
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 62.5%;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
+  /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 }
 
 html body {
-  background-color: beige;
+  background-color: #ffffd0;
   color: #0f1c0e;
 }
 
@@ -19,10 +23,12 @@ html body .main .content_wrap {
   padding-bottom: 64px;
   padding-left: 20vw;
   color: #33333d;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 html body .main .content_wrap .link {
   color: #b11e56;
   font-weight: 800;
   text-decoration: underline;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }

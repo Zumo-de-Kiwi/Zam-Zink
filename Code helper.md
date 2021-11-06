@@ -1,5 +1,9 @@
 # CODE help
 
+## HTML
+
+1. Compress html [TidyHtml](https://www.html-tidy.org)
+
 ## CSS
 
 1. How to make [shapes](https://www.youtube.com/watch?v=QY7Rj8aZcZk) with CSS (!yt tut)
@@ -44,11 +48,19 @@ em for padding on buttons, then if your font-size gets bigger your bottom paddin
 
 ## JS
 
+### GATSBY
+
+1. [Part 0](https://www.gatsbyjs.com/docs/tutorial/part-0/): Set Up Your Development Environment
+
 ### GSAP.js
 
 1. GSAP [Docs](https://greensock.com/docs/)
 
+1. [ScrollTrigger](https://www.youtube.com/watch?v=X7IBa7vZjmo)
+
 1. When to use [GreenSock / CSS](https://www.youtube.com/watch?v=R7dme7BRGOM) Animations
+
+1. [Magical](https://www.youtube.com/watch?v=a3-lwxTkUKI) behind Text Hover animation
 
 1. A [stackoverflow](https://stackoverflow.com/questions/39862190/greensock-gsap-is-much-less-smooth-more-jerky-compared-to-css-animations-in-th) comparing GSAP vs CSS
 
@@ -63,3 +75,9 @@ em for padding on buttons, then if your font-size gets bigger your bottom paddin
 1. C# corner [Best Practices](https://www.c-sharpcorner.com/article/best-practices-on-javascript-css-and-html/): JavaScript, CSS and HTML
 
 1. [50 CSS](https://medium.com/before-semicolon/50-css-best-practices-guidelines-to-write-better-css-c60807e9eee2) Best Practices & Guidelines to Write Better CSS
+
+## WEB technologies
+
+### CMS
+
+1. [What Is](https://kinsta.com/knowledgebase/content-management-system/) a Content Management System (CMS)?
