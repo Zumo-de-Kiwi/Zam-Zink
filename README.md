@@ -1,53 +1,5 @@
 # Website prototaipu
 
-## TECH
-
-### COLOR
-
-1. [Open color](https://yeun.github.io/open-color/) is an
-   open-source color scheme
-
-### PICS
-
-1. CSS [image-rendering] is a filter that have: auto(bi/tri/linear), pixelated, crisp-edges(nearest-neighbor)(-webkit-optimize-contrast)
-
-### CSS
-
-1. How to make [shapes](https://www.youtube.com/watch?v=QY7Rj8aZcZk) with CSS (!yt tut)
-
-1. Animating with [CSS Transitions](https://www.youtube.com/watch?v=Nloq6uzF8RQ) properties
-
-1. Animated [Responsive Navbar](https://www.youtube.com/watch?v=biOMz4puGt8) with CSS
-
-### GSAP.js
-
-1. GSAP [Docs](https://greensock.com/docs/)
-
-1. When to use [GreenSock / CSS](https://www.youtube.com/watch?v=R7dme7BRGOM) Animations
-
-1. A [stackoverflow](https://stackoverflow.com/questions/39862190/greensock-gsap-is-much-less-smooth-more-jerky-compared-to-css-animations-in-th) comparing GSAP vs CSS
-
-### SVG
-
-1. [Adding Shadows](https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/) to SVG Icons With CSS and SVG Filters, [Drop-Shadow](https://css-irl.info/drop-shadow-the-underrated-css-filter/): The Underrated CSS Filter
-
-1. SASS [mixin](https://mimoymima.com/sass-mixin-responsive-svgs/) for responsive SVGs
-
-1. Changing the compllexity of the same logo/icon depending on the screen size, [Making SVGs Responsive with CSS](https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/comment-page-2/#comments)
-
-1. A more deep and complete w3 [page](https://www.w3.org/TR/SVG/styling.html#StylingUsingCSS)
-   1. Styling SVG content using CSS
-   2. Inline style sheets: the ‘style’ element
-   3. External style sheets: the effect of the HTML ‘link’ element
-   4. Style sheets in HTML documents
-   5. Element-specific styling: the ‘class’ and ‘style’ attributes
-   6. Presentation attributes
-   7. Required properties
-   8. User agent style sheet
-   9. Required CSS features
-   10. DOM interfaces
-   - Interface SVGStyleElement
-
 ## What's in the box?
 
 ### 1. INTRO SCREEN
