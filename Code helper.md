@@ -24,10 +24,10 @@
 
 em is better beacause it no over write user browser preferences
 html {
-font-size: 62.5%; Now 10px is equal 1rem
+font-size: 62.5%; <!--Now 10px is equal 1rem-->
 }
 body {
-font-size: 3.5rem; because font-size is 62.5% then 3.5rem is 35px exactly
+font-size: 3.5rem; // if font-size is 62.5% then 3.5rem is exactly 35px
 }
 
         2. ARE YOU SETTING THE WIDTH?
