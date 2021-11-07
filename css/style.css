@@ -11,13 +11,13 @@ html {
 }
 
 html body {
-  background-color: #f9fcf9;
-  color: #0f1c0e;
+  background-color: #f8f7f1;
+  color: #1b1e1a;
   font-size: 1.2rem;
 }
 
 html body .main .navigation {
-  color: #bbbbc7;
+  color: #d0d2d2;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
 }
@@ -32,22 +32,22 @@ html body .main .content_wrap {
 }
 
 html body .main .content_wrap .helloName {
-  color: #1a1a1f;
+  color: #1b1e1a;
 }
 
 html body .main .content_wrap .content {
-  color: #33333d;
+  color: #1b1e1a;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 html body .main .content_wrap .content .link {
-  color: #581cd2;
+  color: #621bc5;
   text-decoration: none;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 html body .main .content_wrap .content .link:hover {
-  color: #602cfe;
+  color: #8800ff;
   text-decoration: underline;
 }
 
@@ -59,16 +59,21 @@ html body .main .content_wrap .content .link:border:after {
   left: 0;
   bottom: 10px;
   /*Change this to increase/decrease distance*/
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #621bc5;
 }
 
-html body .main .content_wrap .content .link .link--kateg {
+html body .main .content_wrap .content .link:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
-html body .main .content_wrap .content .link-page {
+html body .main .content_wrap .content .link .link--kateg {
+  display: none;
+}
+
+html body .main .content_wrap .content .link-number {
+  color: #621bc5;
   position: relative;
-  left: 0;
+  left: -3px;
   top: -7px;
   margin-left: 0px;
   font-size: 0.5rem;

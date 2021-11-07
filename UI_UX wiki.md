@@ -83,3 +83,9 @@
    - simplyfied version of the code?: `cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🦄</text></svg>"), auto`
 
 1. Mattherayfield [Animating](https://www.matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/) urls with js & emojis
+
+1. Some emojis not displaying correctly in [VSCode macOS](https://github.com/microsoft/vscode/issues/118905)
+
+   - This appears to be something specific to Menlo, which happens to be the default editor font on macOS.
+
+   - I updated this line in my settings.json so that I no longer include Menlo and instead I have Monaco as the first font listed: `"editor.fontFamily": "Monaco, 'Courier New', monospace, 'Apple Color Emoji'"`

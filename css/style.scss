@@ -1,3 +1,12 @@
+///////////////// font variables ///////////////
+$background-color: hsl(50, 33%, 96%);
+$font-color: hsl(105, 7%, 11%);
+$font-linked-color: hsl(265, 76%, 44%);
+$font-linked-hover-color: hsl(272, 100%, 50%);
+$font-low-contrast-color: hsl(200, 3%, 82%);
+// THe work around for some emojis that don't show up correctly
+//
+
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 62.5%; //Now 10px is equal 1rem
@@ -12,14 +21,14 @@ html {
   /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 
   body {
-    background-color: rgb(249, 252, 249);
-    color: rgb(15, 28, 14);
+    background-color: $background-color;
+    color: $font-color;
     font-size: 1.2rem; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
 
     .main {
       .navigation {
         //settings and the far left
-        color: rgb(187, 187, 199);
+        color: $font-low-contrast-color;
         font-family: "Montserrat Alternates", sans-serif;
         font-weight: 700;
       }
@@ -33,16 +42,16 @@ html {
 
         font-family: "Paytone One", sans-serif; //font-family: "Bungee", cursive;
         .helloName {
-          color: #1a1a1f;
+          color: $font-color;
         }
         .content {
-          color: #33333d;
+          color: $font-color;
 
           cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
               16 0,
             auto;
           .link {
-            color: rgb(88, 28, 210);
+            color: $font-linked-color;
             text-decoration: none;
 
             cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
@@ -51,30 +60,33 @@ html {
             //font-family: "Bungee Outline", cursive;
             &:hover {
               //text-decoration: underline;
-              color: rgb(96, 44, 254);
+              color: $font-linked-hover-color;
               text-decoration: underline;
             }
             &:border:after {
               content: "";
-
               position: absolute;
               width: 100%;
               height: 0;
               left: 0;
               bottom: 10px;
               /*Change this to increase/decrease distance*/
-              border-bottom: 2px solid #000;
+              border-bottom: 2px solid $font-linked-color;
             }
-            .link--kateg {
+            &:active {
               cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>")
                   16 0,
                 auto;
             }
+            .link--kateg {
+              display: none;
+            }
           }
-          .link-page {
+          .link-number {
             // mini linked number
+            color: $font-linked-color;
             position: relative;
-            left: 0;
+            left: -3px;
             top: -7px;
             margin-left: 0px;
             font-size: 0.5rem;
