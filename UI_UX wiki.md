@@ -32,6 +32,13 @@
 
 - <!--font-family: 'BioRhyme', serif; font-family: 'BioRhyme Expanded', serif;-->
 
+## LAYOUT
+
+### Phrases
+
+1. No many people reads before the first paragraph
+   - So I made only one paragraph in the main page.
+
 ## COLOR
 
 1. [Open color](https://yeun.github.io/open-color/) is an

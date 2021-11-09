@@ -16,6 +16,11 @@ html body {
   font-size: 1.2rem;
 }
 
+html body ::selection {
+  background-color: #fff705;
+  color: #281d48;
+}
+
 html body .main .navigation {
   color: #d0d2d2;
   font-family: "Montserrat Alternates", sans-serif;
@@ -37,6 +42,7 @@ html body .main .content_wrap .helloName {
 
 html body .main .content_wrap .content {
   color: #1b1e1a;
+  text-align: left;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 

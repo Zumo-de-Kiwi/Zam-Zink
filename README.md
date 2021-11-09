@@ -1,5 +1,58 @@
 # Website prototaipu
 
+## What's next?
+
+### Now working on
+
+- [ ] Link to the github
+- [ ] Make a working on page
+- [ ] Link netlify to the working page
+- [ ] Make the main a subpage of the working page, but hided
+
+### Crucial stuff
+
+1. Hover on...
+
+   - [ ] link a appears a big preview images or another stuff?
+
+1. link to more pages
+
+   - [ ] Choose the delay after clicked on the link
+   - [ ] How can I do a seamless transition while downloading the next page?
+
+1. Contact me
+
+   - [ ] Real pic, svg, png draw or me in pixel art?
+   - [ ] how to show my avatar or pic
+   - [ ] one or more pics of me?
+   - [ ] in a pop up or full page?
+
+1. Responsive Web
+
+   1. Browsers
+
+      - [ ] Safari
+      - [ ] Firefox
+      - [ ] Chrome
+      - [ ] Edge
+      - [ ] Opera
+
+   1. Devices
+      - [ ] iOS phone
+      - [ ] iOS iPad
+      - [ ] Mac 13inch
+      - [ ] Mac 24inch
+      - [ ] Windows 13inch
+      - [ ] Windows 24inch
+      - [ ] Ubuntu 13inch
+      - [ ] Ubuntu 24ich
+
+### Optional stuff
+
+1. Visual
+   - [x] have a [selection color](https://www.vox.com) or the [text itself](https://www.davidebaratta.com/info) code:`::selection { background-color: #352e7e; color: #fff;}`
+   - [ ] Scroll percentage bar in top of the page
+
 ## What's in the box?
 
 ### 1. INTRO SCREEN
@@ -66,34 +119,34 @@ ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tem
 5. A11y buttom is an minimalist gingerbread Man
 6. The bottom like [this](https://royaldanishacademy.com/programme/graphic-communication-design), a swiss square and lines design.
 7. Scroll percentage bar in top of the page
+8. have a [selection color](https://www.vox.com) or the [text itself](https://www.davidebaratta.com/info)
+   `::selection { background-color: #352e7e; color: #fff;}`
 
 ### 3. FEATURES
 
-[ ] Hot Keys:
-1~9: the page blocks
-Shift: slow animation
-N: Night Neon mode
-L: Language changes(can be like change the keyboard lang in Mac OS)
+- [ ] Hot Keys:
+      1~9: the page blocks
+      Shift: slow animation
+      N: Night Neon mode
+      L: Language changes(can be like change the keyboard lang in Mac OS)
 
 ### 4. MODES (lang, color...)
 
-- [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
-      [ ] When preloads it appears an [skeleton css](https://www.youtube.com/watch?v=ZVug65gW-fc0)
-      [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
-      [ ] have a [selection color](https://www.vox.com) or the [text itself](https://www.davidebaratta.com/info)
-      `::selection { background-color: #352e7e; color: #fff;}`
-      [ ] 8bit ver CV - for my 8 bit works
+- - [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
+    - [ ] When preloads it appears an [skeleton css](https://www.youtube.com/watch?v=ZVug65gW-fc0)
+    - [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
+    - [ ] 8bit ver CV - for my 8 bit works
 
 ### 5. BONUS
 
-- [ ] Pointer is an [emoji hand](https://kulbachny.com)?
-      [ ]
+- - [ ] Pointer is an [emoji hand](https://kulbachny.com)?
+    - [ ]
       HOPU
-      [ ] Red green 色盲 friendly
-      [ ] load main things in 5 sec
-      [ ] custom scrollbar
-      [ ] 8bit ver CV (for my 8 bit works)
-      [ ] [URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
+    - [ ] Red green 色盲 friendly
+    - [ ] load main things in 5 sec
+    - [ ] custom scrollbar
+    - [ ] 8bit ver CV (for my 8 bit works)
+    - [ ] [URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
 
 ### 6. DO and DON'T in PORTFOLIO
 
