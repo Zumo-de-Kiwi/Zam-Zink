@@ -8,7 +8,6 @@ $font-linked-hover-color: hsl(272, 100%, 50%);
 $font-low-contrast-color: hsl(200, 3%, 82%);
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 62.5%; //Now 10px is equal 1rem
 
   height: 100%;
@@ -35,8 +34,8 @@ html {
       .navigation {
         //settings and the far left
         color: $font-low-contrast-color;
-        font-family: "Paytone One", sans-serif;
-        font-weight: 700;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
       }
       .content_wrap {
         //all the middle right main content
@@ -48,6 +47,7 @@ html {
         padding-right: 20vw; //new
 
         font-family: "Paytone One", sans-serif; //font-family: "Bungee", cursive;
+        font-weight: 500;
         color: $font-color;
 
         transition-duration: 0.3s;
@@ -59,6 +59,7 @@ html {
         ///////// Hi, I am Héctor /////////
         .content-name {
           color: $font-color;
+          font-weight: 700;
 
           text-align: left;
           font-size: 16px;
@@ -90,7 +91,7 @@ html {
         .content-portfolio {
           font-size: 13px;
           text-align: left;
-          line-height: 0.6;
+          line-height: 1.2;
           .link {
             color: $font-linked-color;
             //text-decoration: none; text-decoration: underline;
