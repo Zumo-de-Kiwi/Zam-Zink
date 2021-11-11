@@ -35,7 +35,7 @@ html {
       .navigation {
         //settings and the far left
         color: $font-low-contrast-color;
-        font-family: "Montserrat Alternates", sans-serif;
+        font-family: "Paytone One", sans-serif;
         font-weight: 700;
       }
       .content_wrap {
@@ -45,48 +45,68 @@ html {
         height: 100%;
         padding-bottom: 64px;
         padding-left: 20vw;
+        padding-right: 20vw; //new
 
         font-family: "Paytone One", sans-serif; //font-family: "Bungee", cursive;
-        .helloName {
+        color: $font-color;
+
+        transition-duration: 0.3s;
+
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
+            16 0,
+          auto;
+
+        ///////// Hi, I am Héctor /////////
+        .content-name {
           color: $font-color;
-        }
-        .content {
-          color: $font-color;
+
           text-align: left;
+          font-size: 16px;
+          word-spacing: 0.7px;
+          margin-bottom: 2vh;
+          .coma {
+            position: relative;
+            //width: 100%;
+            height: 10px;
+            left: -2px;
+            //bottom: 0px;
+          }
 
-          cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
-              16 0,
-            auto;
-          .link {
+          .my-name {
             color: $font-linked-color;
-            text-decoration: none;
+            text-decoration-color: rgb(153, 137, 201);
 
+            //text-decoration: none;
             cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
                 16 0,
               auto;
-            //font-family: "Bungee Outline", cursive;
             &:hover {
-              //text-decoration: underline;
               color: $font-linked-hover-color;
-              text-decoration: underline;
+              text-decoration-color: rgb(87, 7, 167);
+              //text-decoration: underline;
             }
-            &:border:after {
-              content: "";
-              position: absolute;
-              width: 100%;
-              height: 0;
-              left: 0;
-              bottom: 10px;
-              /*Change this to increase/decrease distance*/
-              border-bottom: 2px solid $font-linked-color;
+          }
+        }
+        .content-portfolio {
+          font-size: 13px;
+          text-align: left;
+          line-height: 0.6;
+          .link {
+            color: $font-linked-color;
+            //text-decoration: none; text-decoration: underline;
+            text-decoration-color: rgb(153, 137, 201);
+            cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
+                16 0,
+              auto;
+
+            &:hover {
+              color: $font-linked-hover-color;
+              text-decoration-color: rgb(87, 7, 167);
             }
             &:active {
               cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>")
                   16 0,
                 auto;
-            }
-            .link--kateg {
-              display: none;
             }
           }
           .link-number {
@@ -100,6 +120,9 @@ html {
             line-height: 22px;
           }
         }
+      }
+      .link--kateg {
+        display: none;
       }
     }
   }

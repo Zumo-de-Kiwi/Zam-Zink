@@ -32,6 +32,16 @@
 
 - <!--font-family: 'BioRhyme', serif; font-family: 'BioRhyme Expanded', serif;-->
 
+### 1. Space between lines, words, characters
+
+1. Space between letters: `letter-spacing: 5px;` (can be minus too)
+
+1. Height between lines: `line-height: 0.7;`
+
+1. Word spacing: `word-spacing: -2px;`
+
+1. for the left margin of the first line of the first parapgraph`text-indent: 40px;`
+
 ## LAYOUT
 
 ### Phrases
