@@ -23,6 +23,8 @@
 
 1. [Apple](https://developer.apple.com/fonts/system-fonts/)
 
+1. [Windows](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows)
+
 ### 1. FONTS I would use
 
 1. **Bungee** The hair-outline-heavyfill game

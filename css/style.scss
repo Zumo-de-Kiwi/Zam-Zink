@@ -1,11 +1,12 @@
 ///////////////// font variables ///////////////
-$background-color: hsl(50, 33%, 96%);
+$background-color: hsl(40, 33%, 98%);
 $background-selected-color: hsl(58, 100%, 51%);
 
 $font-color: hsl(105, 7%, 11%);
 $font-linked-color: hsl(265, 76%, 44%);
 $font-linked-hover-color: hsl(272, 100%, 50%);
 $font-low-contrast-color: hsl(200, 3%, 82%);
+$underline-color: hsl(255, 37%, 66%);
 
 html {
   font-size: 62.5%; //Now 10px is equal 1rem
@@ -34,7 +35,7 @@ html {
       .navigation {
         //settings and the far left
         color: $font-low-contrast-color;
-        font-family: "Raleway", "Arial Black", sans-serif;
+        font-family: "Raleway", "Montserrat", "Arial Black", sans-serif;
         font-weight: 400;
       }
       .content_wrap {
@@ -46,7 +47,7 @@ html {
         padding-left: 20vw;
         padding-right: 20vw; //new
 
-        font-family: "Paytone One", "Arial Black", sans-serif; //font-family: "Bungee", cursive;
+        font-family: "Paytone One", "Montserrat", "Arial Black", sans-serif; //font-family: "Bungee", cursive;
         font-weight: 500;
         color: $font-color;
 
@@ -62,7 +63,7 @@ html {
           font-weight: 700;
 
           text-align: left;
-          font-size: 16px;
+          font-size: 24px;
           word-spacing: 0.7px;
           margin-bottom: 2vh;
           .coma {
@@ -75,7 +76,7 @@ html {
 
           .my-name {
             color: $font-linked-color;
-            text-decoration-color: rgb(153, 137, 201);
+            text-decoration-color: $underline-color;
 
             //text-decoration: none;
             cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
@@ -83,26 +84,26 @@ html {
               auto;
             &:hover {
               color: $font-linked-hover-color;
-              text-decoration-color: rgb(87, 7, 167);
+              text-decoration-color: $font-linked-color;
               //text-decoration: underline;
             }
           }
         }
         .content-portfolio {
-          font-size: 13px;
+          font-size: 18px;
           text-align: left;
           line-height: 1.2;
           .link {
             color: $font-linked-color;
             //text-decoration: none; text-decoration: underline;
-            text-decoration-color: rgb(153, 137, 201);
+            text-decoration-color: $underline-color;
             cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
                 16 0,
               auto;
 
             &:hover {
               color: $font-linked-hover-color;
-              text-decoration-color: rgb(87, 7, 167);
+              text-decoration-color: $font-linked-color;
             }
             &:active {
               cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>")

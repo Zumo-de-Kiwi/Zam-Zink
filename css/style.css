@@ -10,7 +10,7 @@ html {
 }
 
 html body {
-  background-color: #f8f7f1;
+  background-color: #fcfaf8;
   color: #1b1e1a;
   font-size: 1.2rem;
 }
@@ -22,7 +22,7 @@ html body ::selection {
 
 html body .main .navigation {
   color: #d0d2d2;
-  font-family: "Raleway", "Arial Black", sans-serif;
+  font-family: "Raleway", "Montserrat", "Arial Black", sans-serif;
   font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ html body .main .content_wrap {
   padding-bottom: 64px;
   padding-left: 20vw;
   padding-right: 20vw;
-  font-family: "Paytone One", "Arial Black", sans-serif;
+  font-family: "Paytone One", "Montserrat", "Arial Black", sans-serif;
   font-weight: 500;
   color: #1b1e1a;
   transition-duration: 0.3s;
@@ -44,7 +44,7 @@ html body .main .content_wrap .content-name {
   color: #1b1e1a;
   font-weight: 700;
   text-align: left;
-  font-size: 16px;
+  font-size: 24px;
   word-spacing: 0.7px;
   margin-bottom: 2vh;
 }
@@ -57,30 +57,30 @@ html body .main .content_wrap .content-name .coma {
 
 html body .main .content_wrap .content-name .my-name {
   color: #621bc5;
-  text-decoration-color: #9989c9;
+  text-decoration-color: #9888c8;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 html body .main .content_wrap .content-name .my-name:hover {
   color: #8800ff;
-  text-decoration-color: #5707a7;
+  text-decoration-color: #621bc5;
 }
 
 html body .main .content_wrap .content-portfolio {
-  font-size: 13px;
+  font-size: 18px;
   text-align: left;
   line-height: 1.2;
 }
 
 html body .main .content_wrap .content-portfolio .link {
   color: #621bc5;
-  text-decoration-color: #9989c9;
+  text-decoration-color: #9888c8;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 html body .main .content_wrap .content-portfolio .link:hover {
   color: #8800ff;
-  text-decoration-color: #5707a7;
+  text-decoration-color: #621bc5;
 }
 
 html body .main .content_wrap .content-portfolio .link:active {
