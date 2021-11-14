@@ -22,7 +22,7 @@ html body ::selection {
 
 html body .main .navigation {
   color: #d0d2d2;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "Arial Black", sans-serif;
   font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ html body .main .content_wrap {
   padding-bottom: 64px;
   padding-left: 20vw;
   padding-right: 20vw;
-  font-family: "Paytone One", sans-serif;
+  font-family: "Paytone One", "Bahnschrift", sans-serif;
   font-weight: 500;
   color: #1b1e1a;
   transition-duration: 0.3s;

@@ -4,33 +4,54 @@
 
 ## TYPOGRAPHY
 
-### 1. **Bungee** The hair-outline-heavyfill game
+### 1. TRICKS
 
-- You can use the type for the web, using his different family members, but his downside is it hasn't a lower case
+1. System Font Stack [(CSS TRICKS)](https://css-tricks.com/snippets/css/system-font-stack/)
 
-- [Google Fonts](https://fonts.google.com/specimen/Bungee)
+   **Method 1**
+   a. GitHub uses this method on their site, applying **system fonts** on the body element:
+   `body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}` //{El capitan & later: San FRancisco, Yosemite: Helvetica, Vista: Segui UI, Android 4.0+: Roboto, }
 
-- <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&display=swap" rel="stylesheet"> -->
+   b. Both Medium and the WordPress admin use a similar approach, with a slight variation, most notably support for Oxygen Sans (created for the GNU+Linux operating system) and Cantarell (created for the GNOME operating system). This snippet also drops support for certain types of emoji and symbols:
+   `body {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}`
 
-- font-family: 'Bungee', cursive; font-family: 'Bungee Hairline', cursive;font-family: 'Bungee Inline', cursive;font-family: 'Bungee Outline', cursive;font-family: 'Bungee Shade', cursive;
+   **Method 2**
 
-1. Bungee outline: normal mode.
+1. [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) in CSS
 
-1. Bungee shade: when hover(it appears a shade in his left-downer side)
+### 1. System Fonts
 
-1. Bungee (asecas): Title(is the fill version)
+1. [Apple](https://developer.apple.com/fonts/system-fonts/)
 
-1. Bungee inline: Like Bungee but without the hair inside(so weird)
+### 1. FONTS I would use
 
-1. Bungee hairline: for complementary, ui or secondary stuff.
+1. **Bungee** The hair-outline-heavyfill game
 
-### 1. **BioRhyme** the seif cute normal-megastretched
+   - You can use the type for the web, using his different family members, but his downside is it hasn't a lower case
 
-- [Google Fonts](https://fonts.google.com/specimen/BioRhyme)
+   - [Google Fonts](https://fonts.google.com/specimen/Bungee)
 
-- <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@300;400;800&family=BioRhyme:wght@300;400;800&display=swap" rel="stylesheet"> -->
+   - <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&display=swap" rel="stylesheet"> -->
 
-- <!--font-family: 'BioRhyme', serif; font-family: 'BioRhyme Expanded', serif;-->
+   - font-family: 'Bungee', cursive; font-family: 'Bungee Hairline', cursive;font-family: 'Bungee Inline', cursive;font-family: 'Bungee Outline', cursive;font-family: 'Bungee Shade', cursive;
+
+   1. Bungee outline: normal mode.
+
+   1. Bungee shade: when hover(it appears a shade in his left-downer side)
+
+   1. Bungee (asecas): Title(is the fill version)
+
+   1. Bungee inline: Like Bungee but without the hair inside(so weird)
+
+   1. Bungee hairline: for complementary, ui or secondary stuff.
+
+1. **BioRhyme** the seif cute normal-megastretched
+
+   - [Google Fonts](https://fonts.google.com/specimen/BioRhyme)
+
+   - <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@300;400;800&family=BioRhyme:wght@300;400;800&display=swap" rel="stylesheet"> -->
+
+   - <!--font-family: 'BioRhyme', serif; font-family: 'BioRhyme Expanded', serif;-->
 
 ### 1. Space between lines, words, characters
 
