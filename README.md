@@ -56,8 +56,11 @@
 ### Optional stuff
 
 1. Visual
+
    - [x] have a [selection color](https://www.vox.com) or the [text itself](https://www.davidebaratta.com/info). Example code:`::selection { background-color: #352e7e; color: #fff;}`
    - [ ] Scroll percentage bar in top of the page
+
+   - [ ] Cool stuff in Baratta[main page](https://www.davidebaratta.com) -[ ] And in Baratta [about](https://www.davidebaratta.com/info) with his funny hover on gifs
 
 ### Subpages
 

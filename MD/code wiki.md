@@ -48,6 +48,29 @@ em for padding on buttons, then if your font-size gets bigger your bottom paddin
 
 ## JS
 
+### Learn
+
+1. Build 15 Vanilla Projects [YT freeCodeAca](https://www.youtube.com/watch?v=3PHXvlpOkf4)
+   ⭐️ Course Contents ⭐️
+   ⌨️ (00:00) Intro
+   ⌨️ (07:01) Color Flipper
+   ⌨️ (30:25) Counter
+   ⌨️ (44:04) Reviews
+   ⌨️ (1:11:29) Navbar
+   ⌨️ (1:26:21) Sidebar
+   ⌨️ (1:39:03) Modal
+   ⌨️ (1:48:26) Questions
+   ⌨️ (2:16:25) Menu
+   ⌨️ (3:16:13) Video
+   ⌨️ (3:32:45) Scroll
+   ⌨️ (4:36:15) Tabs
+   ⌨️ (4:58:53) Countdown
+   ⌨️ (5:56:35) Lorem Ipsum
+   ⌨️ (6:18:23) Grocery
+   ⌨️ (8:01:14) Slider
+
+1. JS 30 Days [challenge](https://javascript30.com)
+
 ### GATSBY
 
 1. [Part 0](https://www.gatsbyjs.com/docs/tutorial/part-0/): Set Up Your Development Environment
@@ -81,3 +104,7 @@ em for padding on buttons, then if your font-size gets bigger your bottom paddin
 ### CMS
 
 1. [What Is](https://kinsta.com/knowledgebase/content-management-system/) a Content Management System (CMS)?
+
+### Learn
+
+1. Git and Github in 1 hour [YT freeCodeAca](https://www.youtube.com/watch?v=RGOj5yH7evk)

@@ -28,7 +28,7 @@
 
 [Many cool ideas with this duo](https://www.thepapestielliz.com) simple gif draw anim, parallel moving text, ouline text > moving photo > fill text
 
-[About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part, and his
+[About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part
 
 [main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its arouind with your cursor movements.
 
@@ -63,6 +63,12 @@ The Name stays in the same place all the time, although sometimes are behind, th
 [RCA](https://www.rca.ac.uk)
 
 [Royal Danish Academy](https://royaldanishacademy.com/programme/graphic-communication-design)
+
+## **Museums**
+
+[MACBA](https://www.macba.cat/en) Barcelona
+
+[Rijksmuseum](https://www.rijksmuseum.nl/nl)
 
 ## **Bussiness**
 

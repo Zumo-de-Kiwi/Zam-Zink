@@ -4,27 +4,6 @@
 
 ## TYPOGRAPHY
 
-### 1. TRICKS
-
-1. System Font Stack [(CSS TRICKS)](https://css-tricks.com/snippets/css/system-font-stack/)
-
-   **Method 1**
-   a. GitHub uses this method on their site, applying **system fonts** on the body element:
-   `body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}` //{El capitan & later: San FRancisco, Yosemite: Helvetica, Vista: Segui UI, Android 4.0+: Roboto, }
-
-   b. Both Medium and the WordPress admin use a similar approach, with a slight variation, most notably support for Oxygen Sans (created for the GNU+Linux operating system) and Cantarell (created for the GNOME operating system). This snippet also drops support for certain types of emoji and symbols:
-   `body {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}`
-
-   **Method 2**
-
-1. [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) in CSS
-
-### 1. System Fonts
-
-1. [Apple](https://developer.apple.com/fonts/system-fonts/)
-
-1. [Windows](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows)
-
 ### 1. FONTS I would use
 
 1. **Bungee** The hair-outline-heavyfill game
@@ -54,6 +33,75 @@
    - <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@300;400;800&family=BioRhyme:wght@300;400;800&display=swap" rel="stylesheet"> -->
 
    - <!--font-family: 'BioRhyme', serif; font-family: 'BioRhyme Expanded', serif;-->
+
+1. **Palanquin Dark**
+
+   - <!---<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;600&display=swap" rel="stylesheet">-->
+   - <!--font-family: 'Palanquin Dark', sans-serif;-->
+
+1. **Anicons** Animated variable font icons
+
+   1. How to [use](https://typogram.github.io/Anicons/use.html)
+
+### 1. Ways of use
+
+1. [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+
+### 1. TRICKS
+
+1. Basic system font stacks
+
+   **Sans-serif**
+   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+   **Serif**
+   font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+   **Mono**
+   font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+1. System Font Stack [(CSS TRICKS)](https://css-tricks.com/snippets/css/system-font-stack/)
+
+   **Method 1:** System Fonts at the Element Level
+   a. GitHub uses this method on their site, applying **system fonts** on the body element:
+   `body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}` //{El capitan & later: San FRancisco, Yosemite: Helvetica, Vista: Segui UI, Android 4.0+: Roboto, }
+
+   b. Both Medium and the WordPress admin use a similar approach, with a slight variation, most notably support for Oxygen Sans (created for the GNU+Linux operating system) and Cantarell (created for the GNOME operating system). This snippet also drops support for certain types of emoji and symbols:
+   `body {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}`
+
+   **Method 2:** System Font Stacks (@font-face)
+
+   [Jonathan Neal](https://github.com/csstools/system-font-css/blob/gh-pages/system-font.css) offers an alternative method where system fonts are declared using @font-face. Example:
+
+   1. 300 font weight:
+      `@font-face {`
+      `font-family: system-ui;`
+      `font-style: normal;`
+      `font-weight: 300;`
+      `src: local(".SFNS-Light"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");`
+      `}`
+
+   1. 700 font weight:
+      `@font-face {`
+      `font-family: system-ui;`
+      `font-style: normal;`
+      `font-weight: 700;`
+      `src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");}`
+      The benefit here is that you can declare the fonts once and then that becomes the thing you can on the font-family property instead of the long list of fonts each and every time.
+
+1. [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) in CSS
+
+1. [Get Started](https://developers.google.com/fonts/docs/getting_started) with the Google Fonts API
+   - **There are** font-diplay, script subset, font effects, optimizing font effects
+   - **font effects**: request multiple effects by separating the effect names with a pipe character (|): `https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float`. When applying:`<div class="font-effect-shadow-multiple">This is a font effect!<div>`
+
+### 1. System / Web safe Fonts
+
+1. [Apple](https://developer.apple.com/fonts/system-fonts/)
+
+1. [Windows](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows)
+
+1. [Web Safe Fonts](https://blog.hubspot.com/website/web-safe-html-css-fonts)
 
 ### 1. Space between lines, words, characters
 
