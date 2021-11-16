@@ -7,18 +7,19 @@ html {
   font-family: 'Shippori Antique B1', sans-serif;
   font-family: 'Signika Negative', sans-serif;
   font-family: 'Ultra', serif;*/
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
-  /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
-  /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 }
 
 html body {
   margin: 0px;
   border: 0px;
+  height: 100%;
   background-color: #fcfaf8;
   color: #1b1e1a;
   font-family: "Signika Negative", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-weight: 700;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
+  /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 }
 
 html body ::selection {
@@ -27,11 +28,34 @@ html body ::selection {
 }
 
 html body .main .navigation {
-  background-color: #621bc5;
-  color: #d0d2d2;
+  background-color: #e8e8e8;
   font-weight: 500;
   font-size: 2rem;
-  height: 27px;
+  height: 64px;
+}
+
+html body .main .navigation ul {
+  margin: 0px;
+  padding: 12px;
+  width: auto;
+  height: auto;
+  text-align: left;
+}
+
+html body .main .navigation ul li a {
+  text-decoration: none;
+  color: #621bc5;
+}
+
+html body .main .navigation ul li a:hover {
+  fill: #fff705;
+  color: #8c12f8;
+}
+
+html body .main .navigation ul li a .logo-svg {
+  display: inline-block;
+  width: 36px;
+  fill: #621bc5;
 }
 
 html body .main .content_wrap {
@@ -47,10 +71,10 @@ html body .main .content_wrap {
 
 html body .main .content_wrap .content-name {
   margin-bottom: 6vh;
-  padding-top: 16vh;
+  padding-top: 23vh;
   font-family: "Paytone One", "Arial Black", sans-serif;
   text-align: left;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   word-spacing: 0.7px;
 }
 
@@ -76,7 +100,7 @@ html body .main .content_wrap .content-name .complete-name .first-name:hover {
 
 html body .main .content_wrap .content-name .complete-name .first-name:hover::after {
   content: "About me ⤴️";
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #9888c8;
   font-family: "Montserrat", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 500;
@@ -99,7 +123,7 @@ html body .main .content_wrap .content-name .complete-name .family-name:hover {
 
 html body .main .content_wrap .content-name .complete-name .family-name:hover::after {
   content: "Contact ⤴️";
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #9888c8;
   font-family: "Montserrat", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 500;
@@ -112,7 +136,7 @@ html body .main .content_wrap .content-name .complete-name .family-name:hover::a
 }
 
 html body .main .content_wrap .content-portfolio {
-  font-size: 1.8rem;
+  font-size: 2.7em;
   font-weight: 800;
   text-align: left;
 }
@@ -150,9 +174,103 @@ html body .main .content_wrap .content-portfolio .link-number {
   left: -3px;
   top: -7px;
   margin-left: 0px;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 
 html body .main .link--kateg {
   display: none;
+}
+
+html body footer {
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+html body footer .footer {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+}
+
+html body footer .footer .line span {
+  font-size: 3.5rem;
+}
+
+@media (min-width: 320px) {
+  html body .main .content_wrap {
+    padding-bottom: 64px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+  html body .main .content_wrap .content-name {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 4rem;
+  }
+  html body .main .content_wrap .content-name .complete-name .first-name {
+    position: relative;
+  }
+  html body .main .content_wrap .content-name .complete-name .first-name:active {
+    color: #8c12f8;
+  }
+  html body .main .content_wrap .content-name .complete-name .family-name {
+    position: relative;
+  }
+  html body .main .content_wrap .content-name .complete-name .family-name:active {
+    color: #fff705;
+  }
+}
+
+@media (min-width: 576.02px) {
+  html body .main content_wrap {
+    padding-left: 11vw;
+    padding-right: 11vw;
+  }
+  html body .main content_wrap .content-name {
+    margin-bottom: 6vh;
+    padding-top: 5vh;
+    font-family: "Paytone One", "Arial Black", sans-serif;
+    text-align: left;
+    font-size: 3.6rem;
+    word-spacing: 0.7px;
+  }
+}
+
+@media (min-width: 768.02px) {
+  html body .main .content_wrap {
+    padding-left: 17vw;
+    padding-right: 17vw;
+  }
+  html body .main .content_wrap .content-name {
+    padding-top: 23vh;
+    text-align: left;
+    font-size: 4rem;
+  }
+  html body .main .content_wrap .content-name .complete-name .first-name {
+    position: relative;
+  }
+  html body .main .content_wrap .content-name .complete-name .first-name:active {
+    color: #8c12f8;
+  }
+  html body .main .content_wrap .content-name .complete-name .family-name {
+    position: relative;
+  }
+  html body .main .content_wrap .content-name .complete-name .family-name:active {
+    color: #fff705;
+  }
+}
+
+@media (min-width: 1200.02px) {
+  html body .main .content_wrap {
+    padding-left: 23vw;
+    padding-right: 23vw;
+  }
 }

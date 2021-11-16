@@ -18,6 +18,45 @@
 
 1. the best way to watch how the flexbox is working in your page is in **Firefox**.
 
+### Media query
+
+1. the best breakpoints:
+
+   In practice, many designers convert pixels to ems, largely because ems afford better zooming. At standard zoom 1em === 16px, multiply pixels by 1em/16px to get ems. For example, 320px === 20em.
+
+   In response to the comment, min-width is standard in "mobile-first" design, wherein you start by designing for your smallest screens, and then add ever-increasing media queries, working your way onto larger and larger screens.
+
+   Regardless of whether you prefer min-, max-, or combinations thereof, be cognizant of the order of your rules, keeping in mind that if multiple rules match the same element, the later rules will override the earlier rules.
+
+   <!--  @media (min-width:320px)  { /*smartphones, iPhone, portrait 480x320 phones*/ }
+
+   @media (min-width:481px)  { /*portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.*/ }
+   @media (min-width:641px)  { /*portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones*/ }
+   @media (min-width:961px)  { /*tablet, landscape iPad, lo-res laptops ands desktops*/ }
+   @media (min-width:1025px) { /*big landscape tablets, laptops, and desktops*/ }
+   @media (min-width:1281px) { /*hi-res laptops and desktops*/ } -->
+
+1. CSS tricks very [complete guide](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
+
+   1. Dark Mode
+
+   - As Adhuham explains in the [complete guide](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) to Dark Mode there is way more to it than just changing the color of the background. Before you jump into doing dark mode remember that if you don’t have a very smart implementation strategy you might end up with a code base that’s really hard to maintain. [CSS variables](https://css-tricks.com/theming-with-variables-globals-and-locals/) can do wonders for it but that’s a subject for another article.
+
+   1. Apply a sticky header for large viewports
+
+   1. Landcapde Mode
+      `/* iPhone X Landscape */`
+      `@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape)`
+      `{ /* Styles! */ }`
+
+   1. A11y
+
+      1. prefers-reduced-motion
+
+      1. prefers-contrast
+
+      1. inverted-colors
+
 ### ARE YOU USING THE RIGHRT CSS UNITS?
 
         1. FOR A BETTER USE OF rem

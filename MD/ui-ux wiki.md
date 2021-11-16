@@ -156,6 +156,13 @@
 
 ### OPTIMAZATION
 
+1. my SOP
+
+   1. Trow the svg in the [Image Optim](https://imageoptim.com/mac) app
+   1. Trow it again in [SVGOMG](https://jakearchibald.github.io/svgomg/) web and download it
+
+1. Stuff at the Top of an SVG [medium](https://medium.com/@peternowell/stuff-at-the-top-of-an-svg-f3ad198eb54e)
+
 1. [using](https://www.youtube.com/watch?v=a3-lwxTkUKI) SVGOMG and FontForge
 
 1. Tools for [optimize](https://css-tricks.com/tools-for-optimizing-svg/) SVG
