@@ -56,7 +56,6 @@ body .main .navigation ul li a {
 
 body .main .navigation ul li a:hover {
   fill: #fff705;
-  color: #8c12f8;
 }
 
 body .main .navigation ul li a .logo-svg {
@@ -102,8 +101,8 @@ body .main .content_wrap .content-name .complete-name .first-name {
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover {
-  font-variation-settings: "MONO" 0, "CASL" 0.9, "wght" 780, "slnt" 0, "CRSV" 0.5;
-  text-decoration-color: #00ff84;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  text-decoration-color: #1ed760;
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover::after {
@@ -130,7 +129,7 @@ body .main .content_wrap .content-name .complete-name .family-name {
 
 body .main .content_wrap .content-name .complete-name .family-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 780, "slnt" 0, "CRSV" 0.5;
-  text-decoration-color: #00ff84;
+  text-decoration-color: #1ed760;
 }
 
 body .main .content_wrap .content-name .complete-name .family-name:hover::after {
@@ -149,33 +148,38 @@ body .main .content_wrap .content-name .complete-name .family-name:hover::after 
 
 body .main .content_wrap .content-portfolio {
   font-size: 2.7rem;
-  font-variation-settings: "MONO" 0.3, "CASL" 0.2, "wght" 750, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 750, "slnt" 0, "CRSV" 0.5;
+  color: #2b2b2c;
   text-align: left;
 }
 
 body .main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
-  font-variation-settings: "MONO" 0.3, "CASL" 0.3, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.3, "wght" 780, "slnt" 0, "CRSV" 0.5;
   transition: 0.3s;
   text-decoration-color: #a48cee;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-body .main .content_wrap .content-portfolio .link:hover {
-  font-variation-settings: "MONO" 0.3, "CASL" 0.8, "wght" 750, "slnt" 0, "CRSV" 0.5;
-  text-decoration: none;
-}
-
-body .main .content_wrap .content-portfolio .link:hover::after {
+body .main .content_wrap .content-portfolio .link::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
   left: 0;
   bottom: 1.1px;
+  border-bottom: 2.3px solid #621bc5;
   /*Change this to increase/decrease distance*/
+}
+
+body .main .content_wrap .content-portfolio .link::after:hover {
   border-bottom: 3.14px solid #621bc5;
+}
+
+body .main .content_wrap .content-portfolio .link:hover {
+  font-variation-settings: "MONO" 0.3, "CASL" 0.8, "wght" 750, "slnt" 0, "CRSV" 0.5;
+  text-decoration: none;
 }
 
 body .main .content_wrap .content-portfolio .link:active {

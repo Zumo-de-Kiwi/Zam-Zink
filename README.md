@@ -2,10 +2,25 @@
 
 ## Now working on
 
-- [ ] Link to the github
-- [ ] Make a working on page
-- [ ] Link netlify to the working page
-- [ ] Make the main a subpage of the working page, but hided
+- [x] Separate the link of Hector and Cortes
+- [x] Hector Hover doesn't change undeline to green
+- [ ] linked github icon
+- [ ] Animate bottom banner
+- [x] Link netlify to the working page
+
+1. Subpage
+
+   1. About me
+
+      - [ ] Text
+      - [ ] Brainstorm Layout
+      - [ ] ...
+      - [ ] Super Arrowed 100vh intro
+
+   1. Contact me
+      - [ ] Text
+      - [ ] Brainstorm Layout
+      - [ ] ...
 
 ## What's next?
 

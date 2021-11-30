@@ -24,7 +24,7 @@ body {
   height: 100%;
 
   background-color: $background-color;
-  color: $font-color;
+  color: $font-black;
   font-family: $ff-recursive;
   font-variation-settings: "MONO" $MONO, "CASL" $CASL,
     "wght" $font-weight-normal, "slnt" $slnt, "CRSV" $CRSV;
@@ -39,7 +39,7 @@ body {
   ::selection {
     // When text is selected it will be yellow
     background-color: $background-selected-color;
-    color: $font-color;
+    color: $font-black;
   }
 
   .main {
@@ -66,7 +66,6 @@ body {
 
             &:hover {
               fill: $background-selected-color;
-              color: $font-linked-hover-color;
             }
 
             .logo-svg {
@@ -132,9 +131,9 @@ body {
 
             &:hover {
               // color: $font-linked-hover-color;
-              font-variation-settings: $MONO, "CASL" 0.9,
+              font-variation-settings: $MONO, "CASL" 1,
                 "wght" $font-weight-bolder, $slnt, $CRSV;
-              text-decoration-color: $skillshare-green;
+              text-decoration-color: $spotify-text-green;
 
               &::after {
                 content: "About me ⤴️";
@@ -165,7 +164,7 @@ body {
               // color: $font-linked-hover-color;
               font-variation-settings: $MONO, "CASL" 0,
                 "wght" $font-weight-bolder, $slnt, $CRSV;
-              text-decoration-color: $skillshare-green;
+              text-decoration-color: $spotify-text-green;
 
               //text-decoration-color: $font-linked-hover-color;
               //text-decoration: underline;
@@ -192,9 +191,9 @@ body {
       /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
       .content-portfolio {
         font-size: $font-size-big; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
-        font-variation-settings: "MONO" 0.3, "CASL" 0.2,
+        font-variation-settings: "MONO" 0.2, "CASL" 0.2,
           "wght" $font-weight-bold, $slnt, $CRSV;
-
+        color: $font-gray;
         text-align: left;
 
         //line-height: 1.3;
@@ -204,7 +203,7 @@ body {
           position: relative;
 
           color: $font-linked-color;
-          font-variation-settings: "MONO" 0.3, "CASL" 0.3,
+          font-variation-settings: "MONO" 0.2, "CASL" 0.3,
             "wght" $font-weight-bolder, $slnt, $CRSV;
           transition: 0.3s;
           // animation: weightShift 1s infinite alternate;
@@ -215,6 +214,21 @@ body {
               16 0,
             auto;
 
+          &::after {
+            //the thicker underline
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: 1.1px;
+            border-bottom: 2.3px solid $font-linked-color;
+            /*Change this to increase/decrease distance*/
+
+            &:hover {
+              border-bottom: 3.14px solid $font-linked-color;
+            }
+          }
           &:hover {
             // color: $font-linked-hover-color;
             font-variation-settings: "MONO" 0.3, "CASL" 0.8,
@@ -222,17 +236,6 @@ body {
             text-decoration: none;
 
             //text-decoration-color: $font-linked-hover-color;
-            &::after {
-              //the thicker underline
-              content: "";
-              position: absolute;
-              width: 100%;
-              height: 1px;
-              left: 0;
-              bottom: 1.1px;
-              /*Change this to increase/decrease distance*/
-              border-bottom: 3.14px solid $font-linked-color;
-            }
           }
 
           &:active {

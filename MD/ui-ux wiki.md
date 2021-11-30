@@ -92,6 +92,33 @@
 
       - ADJUSTING BASED ON SCREEN PROPERTIES
 
+        1. **adjust the width** to help conserve space when the screen width is small. This is especially useful for headline text, which needs to fill space on desktop screens, while being preserved on mobile devices (to avoid nasty word breaks).
+           `font-variation-settings: "wdth" 80;`
+
+        1. **Dark Mode** Using the new CSS media query prefers-color-scheme, you can adjust a VF’s axes depending on the user’s current color “scheme” or “mode.”
+           `.my-text { font-variation-settings: "wght" 400;}` - when is normal Black text on white bg
+
+           `@media (prefers-color-scheme: dark) {` - When Dark Mode in enable:
+           `.my-text { font-variation-settings: "wght" 300;}` - The Whitew text need to be thinner.
+
+      - SETTING THE AXES WITH JAVASCRIPT
+
+        1. Randomnize Variable Font
+           `function randomizeText() {`
+           `randomWeight = Math.random() * (200 - 35) + 35;` - for randomnize Weight axe 35~200
+           `randomWidth = Math.random() * (200 - 100) + 100;`
+           `myText.style.fontVariationSettings = "\"wght\" " + randomWeight + ", \"wdth\" " + randomWidth;}`
+           `setInterval(randomizeText, 1000);`
+
+        1. Font axes dependent on the user’s **mouse position** on the screen.
+           `function updateText(e) {`
+           `multiplierWidth = e.offsetX / window.innerWidth;`
+           `multiplierHeight = e.offsetY / window.innerHeight;`
+           `randomWeight = multiplierWidth * (200 - 35) + 35;`
+           `randomWidth = multiplierHeight * (200 - 100) + 100;`
+           `myText.style.fontVariationSettings = "\"wght\" " + randomWeight + ", \"wdth\" " + randomWidth; }`
+           `window.addEventListener("mousemove", updateText)`
+
 ### 1. Ways of use
 
 1. [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
