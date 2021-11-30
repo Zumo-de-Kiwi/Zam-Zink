@@ -1,448 +1,408 @@
+@import "variables";
+@import "globals";
 ///////////////// colors ///////////////
-$background-color: hsl(40, 33%, 98%);
-$background-selected-color: hsl(58, 100%, 51%);
-
-$font-color: hsl(105, 7%, 11%);
-$font-linked-color: hsl(265, 76%, 44%);
-$font-linked-hover-color: hsl(272, 94%, 52%);
-$font-low-contrast-color: hsl(200, 3%, 82%);
-$underline-color: hsl(255, 37%, 66%);
-
-///////////////// Layout Mixin ///////////////
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-@mixin justify-content($justify) {
-  -webkit-justify-content: $justify;
-  -moz-justify-content: $justify;
-  -ms-justify-content: $justify;
-  justify-content: $justify;
-  -ms-flex-pack: $justify;
-}
-
-@mixin align-items($align) {
-  -webkit-align-items: $align;
-  -moz-align-items: $align;
-  -ms-align-items: $align;
-  align-items: $align;
-}
 
 html {
   font-size: 62.5%; //Now 10px is equal 1rem
 
   height: 100%;
+  box-sizing: border-box;
   /* font-family: 'Bungee', cursive; font-family: 'Bungee Hairline', cursive;font-family: 'Bungee Inline', cursive; font-family: 'Bungee Outline', cursive;font-family: 'Bungee Shade',
   cursive; font-family: 'Paytone One', sans-serif;  font-family: 'Jockey One', sans-serif; font-family: 'Lilita One', cursive; font-family: 'Montserrat', sans-serif; font-family: 'Paytone One', sans-serif; font-family: 'Peralta', cursive; font-family: 'Ultra', serif;
   font-family: 'Shippori Antique B1', sans-serif;
   font-family: 'Signika Negative', sans-serif;
   font-family: 'Ultra', serif;*/
+}
+*,
+*::before *::after {
+  box-sizing: inherit;
 
-  body {
-    margin: 0px;
-    border: 0px;
-    height: 100%;
+  font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL),
+    "slnt" var(--slnt), "CRSV" var(--CRSV);
+}
 
-    background-color: $background-color;
+body {
+  margin: 0px;
+  border: 0px;
+  height: 100%;
+
+  background-color: $background-color;
+  color: $font-color;
+  font-family: "Recursive", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    color-emoji;
+  font-weight: $font-weight-bold;
+  // When text is selected it will be yellow
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
+      16 0,
+    auto;
+  /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
+  /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
+
+  ::selection {
+    background-color: $background-selected-color;
     color: $font-color;
-    font-family: "Signika Negative", sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", color-emoji;
-    font-weight: 700;
-    // When text is selected it will be yellow
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0,
-      auto;
-    /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
-    /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
+  }
 
-    ::selection {
-      background-color: $background-selected-color;
-      color: $font-color;
-    }
+  .main {
+    .navigation {
+      //settings and the far left
+      background-color: rgb(232, 232, 232);
+      //color: $font-low-contrast-color;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-normal; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
+      height: 64px;
 
-    .main {
-      .navigation {
-        //settings and the far left
-        background-color: rgb(232, 232, 232);
-        //color: $font-low-contrast-color;
-        font-weight: 500;
-        font-size: 2rem; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
-        height: 64px;
+      ul {
+        margin: 0px;
+        padding: 12px;
 
-        ul {
-          margin: 0px;
-          padding: 12px;
+        width: auto;
+        height: auto;
+        text-align: left;
 
-          width: auto;
-          height: auto;
-          text-align: left;
+        li {
+          a {
+            text-decoration: none;
+            color: $font-linked-color;
 
-          li {
-            a {
-              text-decoration: none;
-              color: $font-linked-color;
+            &:hover {
+              fill: $background-selected-color;
+              color: $font-linked-hover-color;
+            }
 
-              &:hover {
-                fill: $background-selected-color;
-                color: $font-linked-hover-color;
-              }
+            .logo-svg {
+              display: inline-block;
+              width: 36px;
+              fill: $font-linked-color;
+              //margin-top: 13px;
 
-              .logo-svg {
-                display: inline-block;
-                width: 36px;
-                fill: $font-linked-color;
-                //margin-top: 13px;
-
-                svg:hover {}
+              svg:hover {
               }
             }
           }
         }
       }
+    }
 
-      .content_wrap {
-        //all the middle right main content
-        left: 0;
-        overflow: auto;
-        height: 100%;
-        padding-bottom: 64px;
-        padding-left: 16vw;
-        padding-right: 14vw; //new
+    .content_wrap {
+      //all the middle right main content
+      left: 0;
+      overflow: auto;
+      height: 100%;
+      padding-bottom: 64px;
+      padding-left: 16vw;
+      padding-right: 14vw; //new
 
-        transition-duration: 0.3s;
+      transition-duration: 0.3s;
 
-        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0,
-          auto;
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
+          16 0,
+        auto;
 
-        ///////// Hi, I am Héctor /////////
-        .content-name {
-          margin-bottom: 6vh;
-          padding-top: 23vh;
+      ///////// Hi, I am Héctor /////////
+      .content-name {
+        margin-bottom: 6vh;
+        padding-top: 23vh;
 
-          font-family: "Paytone One", "Arial Black", sans-serif;
-          //font-weight: 800;
+        font-family: $ff-recursive-bold;
+        font-weight: $font-weight-heavy;
 
-          text-align: left;
-          font-size: 3.6rem; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
-          word-spacing: 0.7px;
+        text-align: left;
+        font-size: $font-size-huge; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
+        word-spacing: 0.7px;
 
-          .coma {
-            position: relative;
-            margin-left: -4px; // move the coma and the following words to the left
-          }
-
-          .complete-name {
-            color: $font-linked-color;
-            text-decoration-color: $underline-color;
-
-            //text-decoration: none;
-            cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0,
-              auto;
-
-            .first-name {
-              position: relative;
-
-              &:hover {
-                color: $font-linked-hover-color;
-                text-decoration: none;
-
-                //text-decoration-color: $font-linked-hover-color;
-                //text-decoration: underline;
-                &::after {
-                  content: "About me ⤴️";
-                  font-size: 1.4rem;
-                  color: $underline-color;
-                  font-family: "Montserrat", "Arial Black", sans-serif,
-                    color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
-                  font-weight: 500;
-
-                  position: absolute;
-                  text-align: center;
-                  bottom: 2px;
-                  width: 100%;
-                  height: 0;
-                  left: 0;
-                }
-              }
-            }
-
-            .family-name {
-              position: relative;
-
-              &:hover {
-                color: $font-linked-hover-color;
-                text-decoration: none;
-
-                //text-decoration-color: $font-linked-hover-color;
-                //text-decoration: underline;
-                &::after {
-                  content: "Contact ⤴️";
-                  font-size: 1.4rem;
-                  color: $underline-color;
-                  font-family: "Montserrat", "Arial Black", sans-serif,
-                    color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
-                  font-weight: 500;
-
-                  position: absolute;
-                  text-align: center;
-                  bottom: 2px;
-                  width: 100%;
-                  height: 0;
-                  left: 0;
-                }
-              }
-            }
-          }
+        .coma {
+          position: relative;
+          margin-left: -4px; // move the coma and the following words to the left
         }
 
-        /////////// Works dislplay~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
-        .content-portfolio {
-          font-size: 2.7em; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
-          font-weight: 800;
-          text-align: left;
+        .complete-name {
+          color: $font-linked-color;
+          text-decoration-color: $underline-color;
 
-          //line-height: 1.3;
-          //word-spacing: 0.7px;
-          //letter-spacing: -0.4px;
-          .link {
+          //text-decoration: none;
+          cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
+              16 0,
+            auto;
+
+          .first-name {
             position: relative;
-
-            color: $font-linked-color;
-            //text-decoration: none; text-decoration: underline;
-            text-decoration-color: $underline-color;
-            cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0,
-              auto;
 
             &:hover {
               color: $font-linked-hover-color;
               text-decoration: none;
 
               //text-decoration-color: $font-linked-hover-color;
+              //text-decoration: underline;
               &::after {
-                //the thicker underline
-                content: "";
+                content: "About me ⤴️";
+                font-size: $font-size-small;
+                color: $underline-color;
+                font-family: "Recursive", "Arial Black", sans-serif, color-emoji,
+                  "Apple Color Emoji", "Segoe UI Emoji";
+                font-weight: $font-weight-light;
+
                 position: absolute;
+                text-align: center;
+                bottom: 2px;
                 width: 100%;
                 height: 0;
                 left: 0;
-                bottom: 1.1px;
-                /*Change this to increase/decrease distance*/
-                border-bottom: 2.3px solid $font-linked-hover-color;
               }
-            }
-
-            &:active {
-              cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0,
-                auto;
             }
           }
 
-          .link-number {
-            // mini linked number
-            color: $font-linked-color;
+          .family-name {
             position: relative;
-            left: -3px;
-            top: -7px;
-            margin-left: 0px;
-            font-size: 0.8rem;
-          }
-        }
-      }
 
+            &:hover {
+              color: $font-linked-hover-color;
+              text-decoration: none;
 
+              //text-decoration-color: $font-linked-hover-color;
+              //text-decoration: underline;
+              &::after {
+                content: "Contact ⤴️";
+                font-size: $font-size-small;
+                color: $underline-color;
+                font-family: "Recursive", "Arial Black", sans-serif, color-emoji,
+                  "Apple Color Emoji", "Segoe UI Emoji";
+                font-weight: $font-weight-light;
 
-      .link--kateg {
-        display: none;
-      }
-    }
-
-    footer {
-      @include flexbox();
-      @include align-items(center);
-      @include justify-content(center);
-
-      .footer {
-        position: relative;
-        //   width: 100%;
-        // max-width: 1400px;
-        margin: 0 auto;
-        // padding: 0 30px;
-        // box-sizing: border-box;
-        @include flexbox();
-        //flex-wrap: wrap;
-
-        .line {
-          //position: relative;
-          //display: inline-block;
-          //box-sizing: border-box;
-          //width: 20%;
-          //padding-bottom: 20%;
-          //margin: 0 2.5%;
-
-          span {
-            font-size: 3.5rem;
-          }
-        }
-      }
-
-    }
-
-    /////////////////////////////////////////////////////////
-    /////////////// MEDIA QUERY Bootstrap 5 ///////////////////
-    /////////////////////////////////////////////////////////
-    //Why subtract .02px? Browsers don’t currently support range context queries, so we work around the limitations of min- and max- prefixes and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision.
-    // X-Small devices (portrait phones, more than 320px)
-    @media (min-width: 320px) {
-      .main {
-        .content_wrap {
-          padding-bottom: 64px;
-          padding-left: 7vw;
-          padding-right: 7vw;
-
-          .content-name {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
-            margin-bottom: 2vh;
-            // border-top: 5vh;
-            // border-bottom: 5vh;
-            // border-top: 20px;
-            // border-bottom: 20px;
-            text-align: center;
-            font-size: 4rem;
-
-            .complete-name {
-
-              .first-name {
-                position: relative;
-
-                &:hover {
-                  //color: $font-linked-hover-color;
-
-                  &::after {}
-                }
-
-                &:active {
-                  color: $font-linked-hover-color;
-                }
-              }
-
-              .family-name {
-                position: relative;
-
-                &:hover {
-                  // color: $font-linked-hover-color;
-
-                  &::after {}
-                }
-
-                &:active {
-                  color: $background-selected-color;
-                }
+                position: absolute;
+                text-align: center;
+                bottom: 2px;
+                width: 100%;
+                height: 0;
+                left: 0;
               }
             }
           }
         }
       }
-    }
 
-    // Small devices (landscape phones, more than 576px)
-    @media (min-width: 576.02px) {
-      .main {
-        content_wrap {
-          //all the middle right main content
-          // left: 0;
-          // overflow: auto;
-          // height: 100%;
-          // padding-bottom: 64px;
-          padding-left: 11vw;
-          padding-right: 11vw; //new
+      /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
+      .content-portfolio {
+        font-size: $font-size-big; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
+        font-weight: $font-weight-bold;
+        text-align: left;
 
-          ///////// Hi, I am Héctor /////////
-          .content-name {
-            margin-bottom: 6vh;
-            padding-top: 5vh;
+        //line-height: 1.3;
+        //word-spacing: 0.7px;
+        //letter-spacing: -0.4px;
+        .link {
+          position: relative;
 
-            font-family: "Paytone One", "Arial Black", sans-serif;
-            //font-weight: 800;
+          color: $font-linked-color;
+          font-weight: $font-weight-bolder;
+          //text-decoration: none; text-decoration: underline;
+          text-decoration-color: $underline-color;
+          cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
+              16 0,
+            auto;
 
-            text-align: left;
-            font-size: 3.6rem; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
-            word-spacing: 0.7px;
-          }
-        }
-      }
-    }
+          &:hover {
+            color: $font-linked-hover-color;
 
-    // Medium devices (tablets, more than 768px)
-    @media (min-width: 768.02px) {
+            text-decoration: none;
 
-      .main {
-        .content_wrap {
-          // padding-bottom: 64px;
-          padding-left: 17vw;
-          padding-right: 17vw;
-
-          .content-name {
-            padding-top: 23vh;
-            // padding-top: 10vh;
-            // padding-bottom: 10vh;
-            // margin-bottom: 2vh;
-
-            text-align: left;
-            font-size: 4rem;
-
-            .complete-name {
-
-              .first-name {
-                position: relative;
-
-                &:hover {
-                  //color: $font-linked-hover-color;
-
-                  &::after {}
-                }
-
-                &:active {
-                  color: $font-linked-hover-color;
-                }
-              }
-
-              .family-name {
-                position: relative;
-
-                &:hover {
-                  // color: $font-linked-hover-color;
-
-                  &::after {}
-                }
-
-                &:active {
-                  color: $background-selected-color;
-                }
-              }
+            //text-decoration-color: $font-linked-hover-color;
+            &::after {
+              //the thicker underline
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 0;
+              left: 0;
+              bottom: 1.1px;
+              /*Change this to increase/decrease distance*/
+              border-bottom: 2.3px solid $font-linked-hover-color;
             }
           }
+
+          &:active {
+            cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>")
+                16 0,
+              auto;
+          }
+        }
+
+        .link-number {
+          // mini linked number
+          color: $font-linked-color;
+          position: relative;
+          left: -3px;
+          top: -7px;
+          margin-left: 0px;
+          font-size: $font-size-linkNumber;
         }
       }
     }
 
-    // Large devices (desktops, more than 992px)
-    @media (min-width: 992.02px) {}
-
-    // X-Large devices (large desktops, more than 1200px)
-    @media (min-width: 1200.02px) {
-      .main {
-        .content_wrap {
-          padding-left: 23vw;
-          padding-right: 23vw;
-        }
-      }
-
+    .link--kateg {
+      display: none;
     }
-
-    // @media (min-width: 1399.98px) {}
   }
+
+  footer {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+
+    .footer {
+      position: relative;
+      //   width: 100%;
+      // max-width: 1400px;
+      margin: 0 auto;
+      // padding: 0 30px;
+      // box-sizing: border-box;
+      @include flexbox();
+      //flex-wrap: wrap;
+
+      .line {
+        //position: relative;
+        //display: inline-block;
+        //box-sizing: border-box;
+        //width: 20%;
+        //padding-bottom: 20%;
+        //margin: 0 2.5%;
+        padding: 22px;
+
+        span {
+          font-size: $font-size-huge;
+          color: whitesmoke;
+          background-color: $spotify-text-green;
+        }
+      }
+    }
+  }
+
+  /////////////////////////////////////////////////////////
+  /////////////// MEDIA QUERY Bootstrap 5 ///////////////////
+  /////////////////////////////////////////////////////////
+  //Why subtract .02px? Browsers don’t currently support range context queries, so we work around the limitations of min- and max- prefixes and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision.
+  // X-Small devices (portrait phones, more than 320px)
+  @media (min-width: 320px) {
+    .main {
+      .content_wrap {
+        padding-bottom: 64px;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        .content-name {
+          padding-top: 10vh;
+          padding-bottom: 10vh;
+          margin-bottom: 2vh;
+          // border-top: 5vh;
+          // border-bottom: 5vh;
+          // border-top: 20px;
+          // border-bottom: 20px;
+          text-align: left;
+          font-size: 4rem;
+
+          .complete-name {
+            // .first-name {
+            //   position: relative;
+            //   &:hover {
+            //     //color: $font-linked-hover-color;
+            //     &::after {
+            //     }
+            //   }
+            //   &:active {
+            //     color: $font-linked-hover-color;
+            //   }
+            // }
+
+            .family-name {
+              position: relative;
+              // &:hover {
+              //   // color: $font-linked-hover-color;
+              //   &::after {
+              //   }
+              // }
+              // &:active {
+              //   color: $background-selected-color;
+              // }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones, more than 576px)
+  @media (min-width: 576.02px) {
+    .main {
+      content_wrap {
+        //all the middle right main content
+        // left: 0;
+        // overflow: auto;
+        // height: 100%;
+        // padding-bottom: 64px;
+        padding-left: 11vw;
+        padding-right: 11vw; //new
+
+        ///////// Hi, I am Héctor /////////
+        .content-name {
+          margin-bottom: 6vh;
+          padding-top: 5vh;
+
+          font-family: "Recursive", "Arial Black", sans-serif;
+          font-weight: $font-weight-heavy;
+
+          // text-align: left;
+          // font-size: 3.6rem; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
+          word-spacing: 0.7px;
+        }
+      }
+    }
+  }
+
+  // Medium devices (tablets, more than 768px)
+  @media (min-width: 768.02px) {
+    .main {
+      .content_wrap {
+        // padding-bottom: 64px;
+        padding-left: 17vw;
+        padding-right: 17vw;
+
+        .content-name {
+          padding-top: 23vh;
+
+          text-align: center;
+          padding-right: 13vh;
+          .complete-name {
+            .first-name {
+              position: relative;
+
+              &:active {
+                color: $font-linked-hover-color;
+              }
+            }
+
+            .family-name {
+              position: relative;
+
+              &:active {
+                color: $background-selected-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Large devices (desktops, more than 992px)
+  @media (min-width: 992.02px) {
+  }
+  // X-Large devices (large desktops, more than 1200px)
+  @media (min-width: 1200.02px) {
+    .main {
+      .content_wrap {
+        padding-left: 25vw;
+        padding-right: 23vw;
+      }
+    }
+  }
+  // @media (min-width: 1399.98px) {}
 }

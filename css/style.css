@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
+  box-sizing: border-box;
   /* font-family: 'Bungee', cursive; font-family: 'Bungee Hairline', cursive;font-family: 'Bungee Inline', cursive; font-family: 'Bungee Outline', cursive;font-family: 'Bungee Shade',
   cursive; font-family: 'Paytone One', sans-serif;  font-family: 'Jockey One', sans-serif; font-family: 'Lilita One', cursive; font-family: 'Montserrat', sans-serif; font-family: 'Paytone One', sans-serif; font-family: 'Peralta', cursive; font-family: 'Ultra', serif;
   font-family: 'Shippori Antique B1', sans-serif;
@@ -9,32 +10,38 @@ html {
   font-family: 'Ultra', serif;*/
 }
 
-html body {
+*,
+*::before *::after {
+  box-sizing: inherit;
+  font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL), "slnt" var(--slnt), "CRSV" var(--CRSV);
+}
+
+body {
   margin: 0px;
   border: 0px;
   height: 100%;
   background-color: #fcfaf8;
   color: #1b1e1a;
-  font-family: "Signika Negative", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-weight: 700;
+  font-family: "Recursive", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-weight: 720;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
   /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 }
 
-html body ::selection {
+body ::selection {
   background-color: #fff705;
   color: #1b1e1a;
 }
 
-html body .main .navigation {
+body .main .navigation {
   background-color: #e8e8e8;
-  font-weight: 500;
+  font-weight: 650;
   font-size: 2rem;
   height: 64px;
 }
 
-html body .main .navigation ul {
+body .main .navigation ul {
   margin: 0px;
   padding: 12px;
   width: auto;
@@ -42,23 +49,23 @@ html body .main .navigation ul {
   text-align: left;
 }
 
-html body .main .navigation ul li a {
+body .main .navigation ul li a {
   text-decoration: none;
   color: #621bc5;
 }
 
-html body .main .navigation ul li a:hover {
+body .main .navigation ul li a:hover {
   fill: #fff705;
   color: #8c12f8;
 }
 
-html body .main .navigation ul li a .logo-svg {
+body .main .navigation ul li a .logo-svg {
   display: inline-block;
   width: 36px;
   fill: #621bc5;
 }
 
-html body .main .content_wrap {
+body .main .content_wrap {
   left: 0;
   overflow: auto;
   height: 100%;
@@ -69,40 +76,41 @@ html body .main .content_wrap {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
-html body .main .content_wrap .content-name {
+body .main .content_wrap .content-name {
   margin-bottom: 6vh;
   padding-top: 23vh;
-  font-family: "Paytone One", "Arial Black", sans-serif;
+  font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-weight: 900;
   text-align: left;
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   word-spacing: 0.7px;
 }
 
-html body .main .content_wrap .content-name .coma {
+body .main .content_wrap .content-name .coma {
   position: relative;
   margin-left: -4px;
 }
 
-html body .main .content_wrap .content-name .complete-name {
+body .main .content_wrap .content-name .complete-name {
   color: #621bc5;
   text-decoration-color: #9888c8;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-html body .main .content_wrap .content-name .complete-name .first-name {
+body .main .content_wrap .content-name .complete-name .first-name {
   position: relative;
 }
 
-html body .main .content_wrap .content-name .complete-name .first-name:hover {
+body .main .content_wrap .content-name .complete-name .first-name:hover {
   color: #8c12f8;
   text-decoration: none;
 }
 
-html body .main .content_wrap .content-name .complete-name .first-name:hover::after {
+body .main .content_wrap .content-name .complete-name .first-name:hover::after {
   content: "About me ⤴️";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #9888c8;
-  font-family: "Montserrat", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Recursive", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 500;
   position: absolute;
   text-align: center;
@@ -112,20 +120,20 @@ html body .main .content_wrap .content-name .complete-name .first-name:hover::af
   left: 0;
 }
 
-html body .main .content_wrap .content-name .complete-name .family-name {
+body .main .content_wrap .content-name .complete-name .family-name {
   position: relative;
 }
 
-html body .main .content_wrap .content-name .complete-name .family-name:hover {
+body .main .content_wrap .content-name .complete-name .family-name:hover {
   color: #8c12f8;
   text-decoration: none;
 }
 
-html body .main .content_wrap .content-name .complete-name .family-name:hover::after {
+body .main .content_wrap .content-name .complete-name .family-name:hover::after {
   content: "Contact ⤴️";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #9888c8;
-  font-family: "Montserrat", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Recursive", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 500;
   position: absolute;
   text-align: center;
@@ -135,25 +143,26 @@ html body .main .content_wrap .content-name .complete-name .family-name:hover::a
   left: 0;
 }
 
-html body .main .content_wrap .content-portfolio {
-  font-size: 2.7em;
-  font-weight: 800;
+body .main .content_wrap .content-portfolio {
+  font-size: 2.7rem;
+  font-weight: 720;
   text-align: left;
 }
 
-html body .main .content_wrap .content-portfolio .link {
+body .main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
+  font-weight: 760;
   text-decoration-color: #9888c8;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-html body .main .content_wrap .content-portfolio .link:hover {
+body .main .content_wrap .content-portfolio .link:hover {
   color: #8c12f8;
   text-decoration: none;
 }
 
-html body .main .content_wrap .content-portfolio .link:hover::after {
+body .main .content_wrap .content-portfolio .link:hover::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -164,11 +173,11 @@ html body .main .content_wrap .content-portfolio .link:hover::after {
   border-bottom: 2.3px solid #8c12f8;
 }
 
-html body .main .content_wrap .content-portfolio .link:active {
+body .main .content_wrap .content-portfolio .link:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
-html body .main .content_wrap .content-portfolio .link-number {
+body .main .content_wrap .content-portfolio .link-number {
   color: #621bc5;
   position: relative;
   left: -3px;
@@ -177,11 +186,11 @@ html body .main .content_wrap .content-portfolio .link-number {
   font-size: 0.8rem;
 }
 
-html body .main .link--kateg {
+body .main .link--kateg {
   display: none;
 }
 
-html body footer {
+body footer {
   display: flex;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -192,85 +201,81 @@ html body footer {
   -ms-flex-pack: center;
 }
 
-html body footer .footer {
+body footer .footer {
   position: relative;
   margin: 0 auto;
   display: flex;
 }
 
-html body footer .footer .line span {
+body footer .footer .line {
+  padding: 22px;
+}
+
+body footer .footer .line span {
   font-size: 3.5rem;
+  color: whitesmoke;
+  background-color: #1ed760;
 }
 
 @media (min-width: 320px) {
-  html body .main .content_wrap {
+  body .main .content_wrap {
     padding-bottom: 64px;
     padding-left: 7vw;
     padding-right: 7vw;
   }
-  html body .main .content_wrap .content-name {
+  body .main .content_wrap .content-name {
     padding-top: 10vh;
     padding-bottom: 10vh;
     margin-bottom: 2vh;
-    text-align: center;
+    text-align: left;
     font-size: 4rem;
   }
-  html body .main .content_wrap .content-name .complete-name .first-name {
+  body .main .content_wrap .content-name .complete-name .family-name {
     position: relative;
-  }
-  html body .main .content_wrap .content-name .complete-name .first-name:active {
-    color: #8c12f8;
-  }
-  html body .main .content_wrap .content-name .complete-name .family-name {
-    position: relative;
-  }
-  html body .main .content_wrap .content-name .complete-name .family-name:active {
-    color: #fff705;
   }
 }
 
 @media (min-width: 576.02px) {
-  html body .main content_wrap {
+  body .main content_wrap {
     padding-left: 11vw;
     padding-right: 11vw;
   }
-  html body .main content_wrap .content-name {
+  body .main content_wrap .content-name {
     margin-bottom: 6vh;
     padding-top: 5vh;
-    font-family: "Paytone One", "Arial Black", sans-serif;
-    text-align: left;
-    font-size: 3.6rem;
+    font-family: "Recursive", "Arial Black", sans-serif;
+    font-weight: 900;
     word-spacing: 0.7px;
   }
 }
 
 @media (min-width: 768.02px) {
-  html body .main .content_wrap {
+  body .main .content_wrap {
     padding-left: 17vw;
     padding-right: 17vw;
   }
-  html body .main .content_wrap .content-name {
+  body .main .content_wrap .content-name {
     padding-top: 23vh;
-    text-align: left;
-    font-size: 4rem;
+    text-align: center;
+    padding-right: 13vh;
   }
-  html body .main .content_wrap .content-name .complete-name .first-name {
+  body .main .content_wrap .content-name .complete-name .first-name {
     position: relative;
   }
-  html body .main .content_wrap .content-name .complete-name .first-name:active {
+  body .main .content_wrap .content-name .complete-name .first-name:active {
     color: #8c12f8;
   }
-  html body .main .content_wrap .content-name .complete-name .family-name {
+  body .main .content_wrap .content-name .complete-name .family-name {
     position: relative;
   }
-  html body .main .content_wrap .content-name .complete-name .family-name:active {
+  body .main .content_wrap .content-name .complete-name .family-name:active {
     color: #fff705;
   }
 }
 
 @media (min-width: 1200.02px) {
-  html body .main .content_wrap {
-    padding-left: 23vw;
+  body .main .content_wrap {
+    padding-left: 25vw;
     padding-right: 23vw;
   }
 }

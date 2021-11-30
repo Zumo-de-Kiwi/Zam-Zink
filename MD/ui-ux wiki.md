@@ -4,7 +4,7 @@
 
 ## TYPOGRAPHY
 
-### 1. FONTS I would use
+### 1. FONTS I may use
 
 1. **Bungee** The hair-outline-heavyfill game
 
@@ -42,6 +42,27 @@
 1. **Anicons** Animated variable font icons
 
    1. How to [use](https://typogram.github.io/Anicons/use.html)
+
+1. [Noto Sans Bamum](https://fonts.google.com/noto/specimen/Noto+Sans+Bamum?query=noto+sans+b)
+
+   1. Noto is a global font collection for writing in all modern and **ancient languages**. Noto Sans Bamum is an unmodulated (“sans serif”) design for texts in the African Bamum script. It has multiple weights and 662 glyphs.
+
+1. Cool Heavy Weight fonts
+
+   1. [Mochiy Pop One](https://fonts.google.com/specimen/Mochiy+Pop+One?query=mochiy+pop+one#standard-styles)
+
+      1. tender cute fonts +jp
+
+   1. [Lilita One](https://fonts.google.com/specimen/Lilita+One?query=lil)
+
+   1. [Paytone One](https://fonts.google.com/specimen/Paytone+One?query=payt)
+
+1. [Signika Negative](https://fonts.google.com/specimen/Signika+Negative?query=signi#standard-styles)
+
+   1. Signika is a sans-serif with a gentle character, developed for wayfinding, signage, and other media where clarity of information is required. It has a low contrast and tall x-height to improve readability of texts in small sizes as well as in large distances from the reader.
+
+1. [Shippori Antique B1](https://fonts.google.com/specimen/Shippori+Antique+B1?query=shippo#standard-styles)
+   1. little rounded sans serif.
 
 ### 1. Ways of use
 
@@ -154,7 +175,7 @@
    10. DOM interfaces
    - Interface SVGStyleElement
 
-### OPTIMAZATION
+### OPTIMIZATION
 
 1. my SOP
 
