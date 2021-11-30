@@ -1,0 +1,22 @@
+/////// a complete page full of arrows
+@import "../scss/variables";
+
+html {
+  font-size: 62.5%; //Now 10px is equal 1rem
+
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  border: 0px;
+  header {
+    #arrows {
+    }
+  }
+}

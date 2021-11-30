@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Héctor Cortés - Works</title>
+   <title>Héctor Cortés - Home</title>
 
    <!-----------------FONTS-------------------->
    <!------need to be above the CSS style sheet----------->
@@ -12,7 +12,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
    <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap" rel="stylesheet">
    <!------------------CSS-------------------->
-   <link rel="stylesheet" href="css/style.css"></link>
+   <link rel="stylesheet" href="scss/style.css"></link>
    <!------------------FAVICON-------------------->
    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -58,11 +58,12 @@
             <div class="content-name">
                <span class="hi welcome-phrase">Hi</span>
                <span class="coma">,</span>
-               <span class="i-am welcome-phrase">I am </span>
-               <a class="complete-name link" href="/img/preview/app.jpg">
+               <span class="i-am welcome-phrase">I am <wbr></span>
+               <!-- The <wbr> element is a “word-break opportunity” meaning a long word that would normally cause an annoying overflow issue could be told that it’s ok to break at a certain point.  -->
+               <a class="complete-name link" >
                   <span class="link--kateg">i</span>
-                  <span class="first-name">Héctor</span>
-                  <span class="family-name">Cortés</span> 
+                  <span class="first-name" href="/img/preview/app.jpg">Héctor</span>
+                  <span class="family-name" href="/img/preview/app.jpg">Cortés</span> 
                </a>
             </div>
 
@@ -97,7 +98,7 @@
       <footer>        
          <div class="footer">
             <div class="line">
-               <span>Working On! </span><span>Danger Zone!</span>
+               <span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span><span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span><span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span><span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span>
             </div>
          </div>     
       </footer>

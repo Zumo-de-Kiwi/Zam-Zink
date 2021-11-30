@@ -16,9 +16,6 @@ html {
 *,
 *::before *::after {
   box-sizing: inherit;
-
-  font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL),
-    "slnt" var(--slnt), "CRSV" var(--CRSV);
 }
 
 body {
@@ -28,10 +25,11 @@ body {
 
   background-color: $background-color;
   color: $font-color;
-  font-family: "Recursive", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    color-emoji;
-  font-weight: $font-weight-bold;
-  // When text is selected it will be yellow
+  font-family: $ff-recursive;
+  font-variation-settings: "MONO" $MONO, "CASL" $CASL,
+    "wght" $font-weight-normal, "slnt" $slnt, "CRSV" $CRSV;
+  hyphens: auto; //when text breaks it will hyphen you a word
+
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
       16 0,
     auto;
@@ -39,6 +37,7 @@ body {
   /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 
   ::selection {
+    // When text is selected it will be yellow
     background-color: $background-selected-color;
     color: $font-color;
   }
@@ -76,8 +75,8 @@ body {
               fill: $font-linked-color;
               //margin-top: 13px;
 
-              svg:hover {
-              }
+              // svg:hover {
+              // }
             }
           }
         }
@@ -93,7 +92,7 @@ body {
       padding-left: 16vw;
       padding-right: 14vw; //new
 
-      transition-duration: 0.3s;
+      // transition-duration: 0.3s;
 
       cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
           16 0,
@@ -101,11 +100,13 @@ body {
 
       ///////// Hi, I am Héctor /////////
       .content-name {
-        margin-bottom: 6vh;
-        padding-top: 23vh;
+        // margin-bottom: 4vh;
+        // padding-top: 20vh;
 
         font-family: $ff-recursive-bold;
-        font-weight: $font-weight-heavy;
+        font-variation-settings: $MONO, "CASL" 0.4, "wght" $font-weight-heavy,
+          $slnt, $CRSV;
+        // font-weight: $font-weight-heavy;
 
         text-align: left;
         font-size: $font-size-huge; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
@@ -118,29 +119,30 @@ body {
 
         .complete-name {
           color: $font-linked-color;
-          text-decoration-color: $underline-color;
-
-          //text-decoration: none;
           cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
               16 0,
             auto;
 
           .first-name {
             position: relative;
+            transition: 0.45s ease-out;
+            transition-delay: 0.15s;
+            text-decoration: underline;
+            text-decoration-color: $underline-color;
 
             &:hover {
-              color: $font-linked-hover-color;
-              text-decoration: none;
+              // color: $font-linked-hover-color;
+              font-variation-settings: $MONO, "CASL" 0.9,
+                "wght" $font-weight-bolder, $slnt, $CRSV;
+              text-decoration-color: $skillshare-green;
 
-              //text-decoration-color: $font-linked-hover-color;
-              //text-decoration: underline;
               &::after {
                 content: "About me ⤴️";
                 font-size: $font-size-small;
                 color: $underline-color;
-                font-family: "Recursive", "Arial Black", sans-serif, color-emoji,
-                  "Apple Color Emoji", "Segoe UI Emoji";
-                font-weight: $font-weight-light;
+                font-family: $ff-recursive;
+                font-variation-settings: "MONO" 0.6, "CASL" 0,
+                  "wght" $font-weight-light;
 
                 position: absolute;
                 text-align: center;
@@ -154,10 +156,16 @@ body {
 
           .family-name {
             position: relative;
+            transition: 0.45s ease-out;
+            transition-delay: 0.15s;
+            text-decoration: underline;
+            text-decoration-color: $underline-color;
 
             &:hover {
-              color: $font-linked-hover-color;
-              text-decoration: none;
+              // color: $font-linked-hover-color;
+              font-variation-settings: $MONO, "CASL" 0,
+                "wght" $font-weight-bolder, $slnt, $CRSV;
+              text-decoration-color: $skillshare-green;
 
               //text-decoration-color: $font-linked-hover-color;
               //text-decoration: underline;
@@ -165,9 +173,9 @@ body {
                 content: "Contact ⤴️";
                 font-size: $font-size-small;
                 color: $underline-color;
-                font-family: "Recursive", "Arial Black", sans-serif, color-emoji,
-                  "Apple Color Emoji", "Segoe UI Emoji";
-                font-weight: $font-weight-light;
+                font-family: $ff-recursive;
+                font-variation-settings: "MONO" 0.6, "CASL" 0.1,
+                  "wght" $font-weight-light, $slnt, $CRSV;
 
                 position: absolute;
                 text-align: center;
@@ -184,7 +192,9 @@ body {
       /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
       .content-portfolio {
         font-size: $font-size-big; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
-        font-weight: $font-weight-bold;
+        font-variation-settings: "MONO" 0.3, "CASL" 0.2,
+          "wght" $font-weight-bold, $slnt, $CRSV;
+
         text-align: left;
 
         //line-height: 1.3;
@@ -194,7 +204,11 @@ body {
           position: relative;
 
           color: $font-linked-color;
-          font-weight: $font-weight-bolder;
+          font-variation-settings: "MONO" 0.3, "CASL" 0.3,
+            "wght" $font-weight-bolder, $slnt, $CRSV;
+          transition: 0.3s;
+          // animation: weightShift 1s infinite alternate;
+
           //text-decoration: none; text-decoration: underline;
           text-decoration-color: $underline-color;
           cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
@@ -202,8 +216,9 @@ body {
             auto;
 
           &:hover {
-            color: $font-linked-hover-color;
-
+            // color: $font-linked-hover-color;
+            font-variation-settings: "MONO" 0.3, "CASL" 0.8,
+              "wght" $font-weight-bold, $slnt, $CRSV;
             text-decoration: none;
 
             //text-decoration-color: $font-linked-hover-color;
@@ -212,11 +227,11 @@ body {
               content: "";
               position: absolute;
               width: 100%;
-              height: 0;
+              height: 1px;
               left: 0;
               bottom: 1.1px;
               /*Change this to increase/decrease distance*/
-              border-bottom: 2.3px solid $font-linked-hover-color;
+              border-bottom: 3.14px solid $font-linked-color;
             }
           }
 
@@ -250,28 +265,25 @@ body {
     @include justify-content(center);
 
     .footer {
-      position: relative;
-      //   width: 100%;
+      position: absolute;
+      bottom: 0vh;
       // max-width: 1400px;
       margin: 0 auto;
+      background-color: $spotify-text-green;
       // padding: 0 30px;
       // box-sizing: border-box;
-      @include flexbox();
-      //flex-wrap: wrap;
-
+      overflow: hidden;
       .line {
-        //position: relative;
-        //display: inline-block;
-        //box-sizing: border-box;
-        //width: 20%;
-        //padding-bottom: 20%;
-        //margin: 0 2.5%;
-        padding: 22px;
-
+        text-align: center;
         span {
           font-size: $font-size-huge;
+          font-variation-settings: "MONO" 0.8, "CASL" 0,
+            "wght" $font-weight-light, $slnt, $CRSV;
           color: whitesmoke;
-          background-color: $spotify-text-green;
+          padding: 12px;
+          padding-left: 50px;
+          line-height: 6.3rem;
+          padding-right: 50px;
         }
       }
     }
@@ -289,74 +301,30 @@ body {
         padding-left: 7vw;
         padding-right: 7vw;
         .content-name {
-          padding-top: 10vh;
+          padding-top: 19vh;
           padding-bottom: 10vh;
-          margin-bottom: 2vh;
-          // border-top: 5vh;
-          // border-bottom: 5vh;
-          // border-top: 20px;
-          // border-bottom: 20px;
+          // margin-bottom: 2vh;
           text-align: left;
           font-size: 4rem;
-
-          .complete-name {
-            // .first-name {
-            //   position: relative;
-            //   &:hover {
-            //     //color: $font-linked-hover-color;
-            //     &::after {
-            //     }
-            //   }
-            //   &:active {
-            //     color: $font-linked-hover-color;
-            //   }
-            // }
-
-            .family-name {
-              position: relative;
-              // &:hover {
-              //   // color: $font-linked-hover-color;
-              //   &::after {
-              //   }
-              // }
-              // &:active {
-              //   color: $background-selected-color;
-              // }
-            }
-          }
         }
       }
     }
   }
-
   // Small devices (landscape phones, more than 576px)
   @media (min-width: 576.02px) {
     .main {
       content_wrap {
-        //all the middle right main content
-        // left: 0;
-        // overflow: auto;
-        // height: 100%;
-        // padding-bottom: 64px;
         padding-left: 11vw;
         padding-right: 11vw; //new
 
         ///////// Hi, I am Héctor /////////
         .content-name {
-          margin-bottom: 6vh;
-          padding-top: 5vh;
-
-          font-family: "Recursive", "Arial Black", sans-serif;
-          font-weight: $font-weight-heavy;
-
-          // text-align: left;
           // font-size: 3.6rem; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
           word-spacing: 0.7px;
         }
       }
     }
   }
-
   // Medium devices (tablets, more than 768px)
   @media (min-width: 768.02px) {
     .main {
@@ -366,35 +334,16 @@ body {
         padding-right: 17vw;
 
         .content-name {
-          padding-top: 23vh;
-
+          // padding-top: 23vh;
           text-align: center;
           padding-right: 13vh;
-          .complete-name {
-            .first-name {
-              position: relative;
-
-              &:active {
-                color: $font-linked-hover-color;
-              }
-            }
-
-            .family-name {
-              position: relative;
-
-              &:active {
-                color: $background-selected-color;
-              }
-            }
-          }
         }
       }
     }
   }
-
   // Large devices (desktops, more than 992px)
-  @media (min-width: 992.02px) {
-  }
+  // @media (min-width: 992.02px) {
+  // }
   // X-Large devices (large desktops, more than 1200px)
   @media (min-width: 1200.02px) {
     .main {

@@ -13,7 +13,6 @@ html {
 *,
 *::before *::after {
   box-sizing: inherit;
-  font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL), "slnt" var(--slnt), "CRSV" var(--CRSV);
 }
 
 body {
@@ -22,8 +21,9 @@ body {
   height: 100%;
   background-color: #fcfaf8;
   color: #1b1e1a;
-  font-family: "Recursive", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-weight: 720;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" "MONO" 0, "CASL" "CASL" 0.3, "wght" 650, "slnt" "slnt" 0, "CRSV" "CRSV" 0.5;
+  hyphens: auto;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
   /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
@@ -72,15 +72,12 @@ body .main .content_wrap {
   padding-bottom: 64px;
   padding-left: 16vw;
   padding-right: 14vw;
-  transition-duration: 0.3s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 body .main .content_wrap .content-name {
-  margin-bottom: 6vh;
-  padding-top: 23vh;
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-weight: 900;
+  font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 900, "slnt" 0, "CRSV" 0.5;
   text-align: left;
   font-size: 3.5rem;
   word-spacing: 0.7px;
@@ -93,25 +90,28 @@ body .main .content_wrap .content-name .coma {
 
 body .main .content_wrap .content-name .complete-name {
   color: #621bc5;
-  text-decoration-color: #9888c8;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 body .main .content_wrap .content-name .complete-name .first-name {
   position: relative;
+  transition: 0.45s ease-out;
+  transition-delay: 0.15s;
+  text-decoration: underline;
+  text-decoration-color: #a48cee;
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover {
-  color: #8c12f8;
-  text-decoration: none;
+  font-variation-settings: "MONO" 0, "CASL" 0.9, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  text-decoration-color: #00ff84;
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover::after {
   content: "About me ⤴️";
   font-size: 1.6rem;
-  color: #9888c8;
-  font-family: "Recursive", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
-  font-weight: 500;
+  color: #a48cee;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
   text-align: center;
   bottom: 2px;
@@ -122,19 +122,23 @@ body .main .content_wrap .content-name .complete-name .first-name:hover::after {
 
 body .main .content_wrap .content-name .complete-name .family-name {
   position: relative;
+  transition: 0.45s ease-out;
+  transition-delay: 0.15s;
+  text-decoration: underline;
+  text-decoration-color: #a48cee;
 }
 
 body .main .content_wrap .content-name .complete-name .family-name:hover {
-  color: #8c12f8;
-  text-decoration: none;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  text-decoration-color: #00ff84;
 }
 
 body .main .content_wrap .content-name .complete-name .family-name:hover::after {
   content: "Contact ⤴️";
   font-size: 1.6rem;
-  color: #9888c8;
-  font-family: "Recursive", "Arial Black", sans-serif, color-emoji, "Apple Color Emoji", "Segoe UI Emoji";
-  font-weight: 500;
+  color: #a48cee;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" 0.6, "CASL" 0.1, "wght" 500, "slnt" 0, "CRSV" 0.5;
   position: absolute;
   text-align: center;
   bottom: 2px;
@@ -145,20 +149,21 @@ body .main .content_wrap .content-name .complete-name .family-name:hover::after 
 
 body .main .content_wrap .content-portfolio {
   font-size: 2.7rem;
-  font-weight: 720;
+  font-variation-settings: "MONO" 0.3, "CASL" 0.2, "wght" 750, "slnt" 0, "CRSV" 0.5;
   text-align: left;
 }
 
 body .main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
-  font-weight: 760;
-  text-decoration-color: #9888c8;
+  font-variation-settings: "MONO" 0.3, "CASL" 0.3, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  transition: 0.3s;
+  text-decoration-color: #a48cee;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 body .main .content_wrap .content-portfolio .link:hover {
-  color: #8c12f8;
+  font-variation-settings: "MONO" 0.3, "CASL" 0.8, "wght" 750, "slnt" 0, "CRSV" 0.5;
   text-decoration: none;
 }
 
@@ -166,11 +171,11 @@ body .main .content_wrap .content-portfolio .link:hover::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 0;
+  height: 1px;
   left: 0;
   bottom: 1.1px;
   /*Change this to increase/decrease distance*/
-  border-bottom: 2.3px solid #8c12f8;
+  border-bottom: 3.14px solid #621bc5;
 }
 
 body .main .content_wrap .content-portfolio .link:active {
@@ -202,19 +207,25 @@ body footer {
 }
 
 body footer .footer {
-  position: relative;
+  position: absolute;
+  bottom: 0vh;
   margin: 0 auto;
-  display: flex;
+  background-color: #1ed760;
+  overflow: hidden;
 }
 
 body footer .footer .line {
-  padding: 22px;
+  text-align: center;
 }
 
 body footer .footer .line span {
   font-size: 3.5rem;
+  font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
   color: whitesmoke;
-  background-color: #1ed760;
+  padding: 12px;
+  padding-left: 50px;
+  line-height: 6.3rem;
+  padding-right: 50px;
 }
 
 @media (min-width: 320px) {
@@ -224,14 +235,10 @@ body footer .footer .line span {
     padding-right: 7vw;
   }
   body .main .content_wrap .content-name {
-    padding-top: 10vh;
+    padding-top: 19vh;
     padding-bottom: 10vh;
-    margin-bottom: 2vh;
     text-align: left;
     font-size: 4rem;
-  }
-  body .main .content_wrap .content-name .complete-name .family-name {
-    position: relative;
   }
 }
 
@@ -241,10 +248,6 @@ body footer .footer .line span {
     padding-right: 11vw;
   }
   body .main content_wrap .content-name {
-    margin-bottom: 6vh;
-    padding-top: 5vh;
-    font-family: "Recursive", "Arial Black", sans-serif;
-    font-weight: 900;
     word-spacing: 0.7px;
   }
 }
@@ -255,21 +258,8 @@ body footer .footer .line span {
     padding-right: 17vw;
   }
   body .main .content_wrap .content-name {
-    padding-top: 23vh;
     text-align: center;
     padding-right: 13vh;
-  }
-  body .main .content_wrap .content-name .complete-name .first-name {
-    position: relative;
-  }
-  body .main .content_wrap .content-name .complete-name .first-name:active {
-    color: #8c12f8;
-  }
-  body .main .content_wrap .content-name .complete-name .family-name {
-    position: relative;
-  }
-  body .main .content_wrap .content-name .complete-name .family-name:active {
-    color: #fff705;
   }
 }
 

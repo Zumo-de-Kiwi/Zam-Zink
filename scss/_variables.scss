@@ -1,7 +1,17 @@
+////////////// Font Family ////////////
 $ff-recursive: "Recursive", consolas, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", color-emoji;
 $ff-recursive-bold: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", color-emoji;
+
+////// Variable Font Default //////////
+$MONO: "MONO" 0; //Monospace
+$CASL: "CASL" 0.3; // Casual
+$wght: "wght" 500;
+$slnt: "slnt" 0; // Upright
+$CRSV: "CRSV" 0.5; // Auto Cursive
+// "MONO" var(--MONO), "CASL" var(--CASL),
+//     "slnt" var(--slnt), "CRSV" var(--CRSV);
 
 //////////// COLORS ///////////////
 $background-color: hsl(40, 33%, 98%);
@@ -11,14 +21,15 @@ $font-color: hsl(105, 7%, 11%);
 $font-linked-color: hsl(265, 76%, 44%);
 $font-linked-hover-color: hsl(272, 94%, 52%);
 $font-low-contrast-color: hsl(200, 3%, 82%);
-$underline-color: hsl(255, 37%, 66%);
+$underline-color: hsl(255, 74%, 74%);
+$transparent: rgba(255, 255, 255, 0);
 
 $skillshare-green: #00ff84;
 $spotify-text-green: #1ed760;
 
 $font-weight-heavy: 900;
-$font-weight-bolder: 760;
-$font-weight-bold: 720;
+$font-weight-bolder: 780;
+$font-weight-bold: 750;
 $font-weight-normal: 650;
 $font-weight-light: 500;
 

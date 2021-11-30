@@ -4,7 +4,7 @@
 
 ## TYPOGRAPHY
 
-### 1. FONTS I may use
+### 1. Fonts I may use
 
 1. **Bungee** The hair-outline-heavyfill game
 
@@ -63,6 +63,34 @@
 
 1. [Shippori Antique B1](https://fonts.google.com/specimen/Shippori+Antique+B1?query=shippo#standard-styles)
    1. little rounded sans serif.
+
+### 1. Variable Fonts
+
+1. Learn
+
+   1. [ABC Dinamo](https://abcdinamo.com/news/using-variable-fonts-on-the-web) tutorial: USING VARIABLE FONTS ON THE WEB
+
+      - WHAT ARE VFs?
+
+      - THE “AXES” OF A VF
+
+      - THE ADVANTAGES OF USING VFs
+
+      - LOADING THE FILE
+        `@font-face {`
+        `font-family: "Favorit Variable";`
+        `src: url("/fonts/ABCFavoritVariable.woff2") format("woff2-variations"),`
+        `url("/fonts/ABCFavoritVariable.woff") format("woff-variations");}`
+
+      - STYLING VARIABLE FONTS
+        `font-variation-settings: "wght" 550, "ital" 6;`
+
+      - USER INTERACTIONS
+        `.my-variable-text {font-variation-settings: "wght" 300, "ital" 0;`
+        `transition: font-variation-settings 0.3s ease;}`
+        `.my-variable-text:hover {font-variation-settings: "wght" 700, "ital" 12;}`
+
+      - ADJUSTING BASED ON SCREEN PROPERTIES
 
 ### 1. Ways of use
 
