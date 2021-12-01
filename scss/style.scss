@@ -27,7 +27,7 @@ body {
   color: $font-black;
   font-family: $ff-recursive;
   font-variation-settings: "MONO" $MONO, "CASL" $CASL,
-    "wght" $font-weight-normal, "slnt" $slnt, "CRSV" $CRSV;
+    "wght" $font-weight-normal, "slnt" $slnt;
   hyphens: auto; //when text breaks it will hyphen you a word
 
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
@@ -104,7 +104,7 @@ body {
 
         font-family: $ff-recursive-bold;
         font-variation-settings: $MONO, "CASL" 0.4, "wght" $font-weight-heavy,
-          $slnt, $CRSV;
+          $slnt;
         // font-weight: $font-weight-heavy;
 
         text-align: left;
@@ -132,7 +132,7 @@ body {
             &:hover {
               // color: $font-linked-hover-color;
               font-variation-settings: $MONO, "CASL" 1,
-                "wght" $font-weight-bolder, $slnt, $CRSV;
+                "wght" $font-weight-bolder, $slnt;
               text-decoration-color: $spotify-text-green;
 
               &::after {
@@ -163,7 +163,7 @@ body {
             &:hover {
               // color: $font-linked-hover-color;
               font-variation-settings: $MONO, "CASL" 0,
-                "wght" $font-weight-bolder, $slnt, $CRSV;
+                "wght" $font-weight-bolder, $slnt;
               text-decoration-color: $spotify-text-green;
 
               //text-decoration-color: $font-linked-hover-color;
@@ -174,7 +174,7 @@ body {
                 color: $underline-color;
                 font-family: $ff-recursive;
                 font-variation-settings: "MONO" 0.6, "CASL" 0.1,
-                  "wght" $font-weight-light, $slnt, $CRSV;
+                  "wght" $font-weight-light, $slnt;
 
                 position: absolute;
                 text-align: center;
@@ -192,7 +192,7 @@ body {
       .content-portfolio {
         font-size: $font-size-big; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
         font-variation-settings: "MONO" 0.2, "CASL" 0.2,
-          "wght" $font-weight-bold, $slnt, $CRSV;
+          "wght" $font-weight-bold, $slnt;
         color: $font-gray;
         text-align: left;
 
@@ -204,7 +204,7 @@ body {
 
           color: $font-linked-color;
           font-variation-settings: "MONO" 0.2, "CASL" 0.3,
-            "wght" $font-weight-bolder, $slnt, $CRSV;
+            "wght" $font-weight-bolder, $slnt;
           transition: 0.3s;
           // animation: weightShift 1s infinite alternate;
 
@@ -232,7 +232,7 @@ body {
           &:hover {
             // color: $font-linked-hover-color;
             font-variation-settings: "MONO" 0.3, "CASL" 0.8,
-              "wght" $font-weight-bold, $slnt, $CRSV;
+              "wght" $font-weight-bold, $slnt;
             text-decoration: none;
 
             //text-decoration-color: $font-linked-hover-color;
@@ -281,12 +281,29 @@ body {
         span {
           font-size: $font-size-huge;
           font-variation-settings: "MONO" 0.8, "CASL" 0,
-            "wght" $font-weight-light, $slnt, $CRSV;
+            "wght" $font-weight-light, $slnt;
           color: whitesmoke;
           padding: 12px;
           padding-left: 50px;
           line-height: 6.3rem;
           padding-right: 50px;
+        }
+      }
+      #githublink {
+        color: $skillshare-green;
+        font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-light,
+          $slnt;
+        font-size: 1.3rem;
+        text-align: center;
+        padding-bottom: 1vh;
+        a {
+          font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-light,
+            "slnt" -1;
+          color: inherit;
+          &:hover {
+            font-variation-settings: "MONO" 1, "CASL" 0,
+              "wght" $font-weight-light, "slnt" -17;
+          }
         }
       }
     }

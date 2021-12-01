@@ -22,7 +22,7 @@ body {
   background-color: #fcfaf8;
   color: #1b1e1a;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" "MONO" 0, "CASL" "CASL" 0.3, "wght" 650, "slnt" "slnt" 0, "CRSV" "CRSV" 0.5;
+  font-variation-settings: "MONO" "MONO" 0, "CASL" "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   hyphens: auto;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
@@ -36,7 +36,7 @@ body ::selection {
 
 body .main .navigation {
   background-color: #e8e8e8;
-  font-weight: 650;
+  font-weight: 620;
   font-size: 2rem;
   height: 64px;
 }
@@ -76,7 +76,7 @@ body .main .content_wrap {
 
 body .main .content_wrap .content-name {
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 900, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
   text-align: left;
   font-size: 3.5rem;
   word-spacing: 0.7px;
@@ -101,7 +101,7 @@ body .main .content_wrap .content-name .complete-name .first-name {
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 760, "slnt" 0;
   text-decoration-color: #1ed760;
 }
 
@@ -128,7 +128,7 @@ body .main .content_wrap .content-name .complete-name .family-name {
 }
 
 body .main .content_wrap .content-name .complete-name .family-name:hover {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 760, "slnt" 0;
   text-decoration-color: #1ed760;
 }
 
@@ -137,7 +137,7 @@ body .main .content_wrap .content-name .complete-name .family-name:hover::after 
   font-size: 1.6rem;
   color: #a48cee;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" 0.6, "CASL" 0.1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0.6, "CASL" 0.1, "wght" 500, "slnt" 0;
   position: absolute;
   text-align: center;
   bottom: 2px;
@@ -148,7 +148,7 @@ body .main .content_wrap .content-name .complete-name .family-name:hover::after 
 
 body .main .content_wrap .content-portfolio {
   font-size: 2.7rem;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 750, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 730, "slnt" 0;
   color: #2b2b2c;
   text-align: left;
 }
@@ -156,7 +156,7 @@ body .main .content_wrap .content-portfolio {
 body .main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.3, "wght" 780, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.3, "wght" 760, "slnt" 0;
   transition: 0.3s;
   text-decoration-color: #a48cee;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
@@ -178,7 +178,7 @@ body .main .content_wrap .content-portfolio .link::after:hover {
 }
 
 body .main .content_wrap .content-portfolio .link:hover {
-  font-variation-settings: "MONO" 0.3, "CASL" 0.8, "wght" 750, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0.3, "CASL" 0.8, "wght" 730, "slnt" 0;
   text-decoration: none;
 }
 
@@ -224,12 +224,29 @@ body footer .footer .line {
 
 body footer .footer .line span {
   font-size: 3.5rem;
-  font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: whitesmoke;
   padding: 12px;
   padding-left: 50px;
   line-height: 6.3rem;
   padding-right: 50px;
+}
+
+body footer .footer #githublink {
+  color: #00ff84;
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+body footer .footer #githublink a {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -1;
+  color: inherit;
+}
+
+body footer .footer #githublink a:hover {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -17;
 }
 
 @media (min-width: 320px) {
