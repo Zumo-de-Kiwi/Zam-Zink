@@ -17,7 +17,6 @@ html {
 body {
   margin: 0px;
   border: 0px;
-  background-color: #fcfaf8;
   color: #1b1e1a;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
@@ -29,6 +28,10 @@ body ::selection {
   color: #1b1e1a;
 }
 
+body h1 {
+  font-size: 3.5rem;
+}
+
 body {
   background-color: #a48cee;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
@@ -37,9 +40,9 @@ body {
 }
 
 body header {
-  height: 90vh;
+  height: 100vh;
   width: 99%;
-  padding: 5.5vh;
+  padding: 7rem;
   background-color: #621bc5;
   overflow: hidden;
   white-space: nowrap;
@@ -54,23 +57,38 @@ body header #down-arrows {
 body main {
   height: 100vh;
   width: 100%;
+  background: linear-gradient(180deg, #621bc5 0%, #bfdef2 100%);
+}
+
+body main .midGradient {
+  position: absolute;
+  top: 0px;
+  height: 5vh;
+  background-color: linear-gradient(180deg, #621bc5 0%, #bfdef2 100%);
 }
 
 body main .left-arrow {
   font-size: 6rem;
-  color: #d0d2d2;
   margin: 4rem;
 }
 
 body main .left-arrow a {
+  color: #fcfaf8;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
-  color: #d0d2d2;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   text-decoration: none;
   padding-left: 1rem;
 }
 
-body main .left-arrow a #homeArrow:hover {
+body main .left-arrow a:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0;
+}
+
+body main .left-arrow a span {
+  transition: 1s;
+}
+
+body main .left-arrow a span:hover {
+  color: white;
   font-variation-settings: "CASL" 0.9, "wght" 500;
 }
 

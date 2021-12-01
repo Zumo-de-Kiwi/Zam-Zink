@@ -18,11 +18,13 @@ $CRSV: "CRSV" 0.5; // Auto Cursive
 $background-color: hsl(40, 33%, 98%);
 $background-selected-color: hsl(58, 100%, 51%);
 
-$font-black: hsl(105, 7%, 11%);
-$font-gray: hsl(240, 1%, 17%);
-$font-linked-color: hsl(265, 76%, 44%);
+$font-black: hsl(100, 4%, 14%);
+$font-gray: hsl(0, 3%, 31%);
+$font-linked-color: #621bc5;
 // $font-linked-hover-color: hsl(272, 94%, 52%);
 $font-low-contrast-color: hsl(200, 3%, 82%);
+$josh-blue-white: hsl(225, 25%, 95%);
+$josh-light-blue: #bfdef2;
 $underline-color: hsl(255, 74%, 74%);
 $transparent: rgba(0, 0, 0, 0);
 
@@ -39,12 +41,23 @@ $font-weight-ligther: 300;
 
 $font-size-nacho: 6rem;
 $font-size-huge: 3.5rem;
-$font-size-big: 2.7rem;
+$font-size-big: 2.5rem;
 $font-size-normal: 2rem;
 $font-size-small: 1.6rem;
 $font-size-information: 1.3rem;
 $font-size-linkNumber: 0.8rem;
 
+///////////////// GRADIENT ///////////////
+$linear-gradient-purple-blue: linear-gradient(
+  90deg,
+  rgba(126, 21, 220, 1) 0%,
+  rgba(72, 104, 212, 1) 100%
+);
+$about-mid-gradient: linear-gradient(
+  180deg,
+  rgba(98, 27, 197, 1) 0%,
+  rgba(191, 222, 242, 1) 100%
+);
 ///////////////// Transition ///////////////
 $trans-fast: 0.15s;
 $trans-normal: 0.3s;
@@ -57,19 +70,21 @@ $delay-slow: 0.314s;
 
 ///////////////// CURSORS ///////////////
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-$cursor-pointer-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
+$cursor-pointer-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
     16 0,
   auto;
-$cursor-pointer-hand-flip: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>")
+$cursor-pointer-hand-flip: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>")
     16 0,
   auto;
-$cursor-startreck-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
+$cursor-startreck-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
     16 0,
   auto;
-$cursor-please-fingers: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
+$cursor-please-fingers: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
     16 0,
   auto;
-$cursor-yeah-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
-  16 0;
-$cursor-arrow-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
-  16 0;
+$cursor-yeah-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>")
+    16 0,
+  auto;
+$cursor-arrow-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>")
+    16 0,
+  auto;

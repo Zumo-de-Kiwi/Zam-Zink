@@ -15,7 +15,6 @@ html {
 body {
   margin: 0px;
   border: 0px;
-  background-color: $background-color;
   color: $font-black;
   font-family: $ff-recursive;
   font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal,
@@ -26,5 +25,8 @@ body {
     // When text is selected it will be yellow
     background-color: $background-selected-color;
     color: $font-black;
+  }
+  h1 {
+    font-size: $font-size-huge;
   }
 }

@@ -10,18 +10,28 @@ body {
   font-size: $font-size-normal;
   /////////////// | V | V | V | V | V | V | V /////////////
   header {
-    height: 90vh;
+    height: 100vh;
     width: 99%;
-    padding: 5.5vh;
+    padding: 7rem;
     background-color: $font-linked-color;
     // for let text overflow
     overflow: hidden;
     white-space: nowrap;
 
+    // &::after {
+    //   z-index: 99;
+    //   position: absolute;
+    //   border: 7rem solid black;
+    //   width: 100px;
+    //   height: 100px;
+    //   top: 0px;
+    //   left: 0px;
+    // }
     #down-arrows {
       font-size: $font-size-nacho;
       color: $background-color;
       font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-lighter;
+      /// frame
     }
   }
 
@@ -29,18 +39,36 @@ body {
   main {
     height: 100vh;
     width: 100%;
+    // background: rgb(98, 27, 197);
+    background: linear-gradient(
+      180deg,
+      rgba(98, 27, 197, 1) 0%,
+      rgba(191, 222, 242, 1) 100%
+    );
+
+    .midGradient {
+      position: absolute;
+      top: 0px;
+      height: 5vh;
+      background-color: $about-mid-gradient;
+    }
     .left-arrow {
       font-size: $font-size-nacho;
-      color: $font-low-contrast-color;
       margin: 4rem;
+
       a {
+        color: $background-color;
         font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
-        color: $font-low-contrast-color;
-        cursor: $cursor-please-fingers;
         text-decoration: none;
         padding-left: 1rem;
-        #homeArrow {
+        /// IMPORTANT note working
+        &:hover {
+          cursor: $cursor-arrow-hand;
+        }
+        span {
+          transition: 1s;
           &:hover {
+            color: white;
             font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
           }
         }

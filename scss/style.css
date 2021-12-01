@@ -16,7 +16,6 @@ html {
 body {
   margin: 0px;
   border: 0px;
-  background-color: #fcfaf8;
   color: #1b1e1a;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
@@ -26,6 +25,10 @@ body {
 body ::selection {
   background-color: #fff705;
   color: #1b1e1a;
+}
+
+body h1 {
+  font-size: 3.5rem;
 }
 
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
@@ -111,6 +114,7 @@ body .main .content_wrap .content-name .coma {
 body .main .content_wrap .content-name .complete-name {
   color: #621bc5;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
+  text-decoration: none;
 }
 
 body .main .content_wrap .content-name .complete-name .first-name {
@@ -128,12 +132,12 @@ body .main .content_wrap .content-name .complete-name .first-name::after {
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
   text-align: center;
-  bottom: 0px;
+  bottom: -2px;
   width: 100%;
   height: 0;
   left: 0;
-  transition: 0.45s ease-out;
-  transition-delay: 0.15s;
+  transition: 0.3s ease-out;
+  transition-delay: 0.16s;
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover {
@@ -144,7 +148,6 @@ body .main .content_wrap .content-name .complete-name .first-name:hover {
 body .main .content_wrap .content-name .complete-name .first-name:hover::after {
   color: #a48cee;
   bottom: 2px;
-  left: 0;
 }
 
 body .main .content_wrap .content-name .complete-name .family-name {
@@ -155,26 +158,33 @@ body .main .content_wrap .content-name .complete-name .family-name {
   text-decoration-color: #a48cee;
 }
 
+body .main .content_wrap .content-name .complete-name .family-name::after {
+  content: "contact ⤴️";
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0);
+  font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
+  position: absolute;
+  text-align: center;
+  bottom: -2px;
+  width: 100%;
+  height: 0;
+  left: 0;
+  transition: 0.3s ease-out;
+  transition-delay: 0.16s;
+}
+
 body .main .content_wrap .content-name .complete-name .family-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 760, "slnt" 0;
   text-decoration-color: #1ed760;
 }
 
 body .main .content_wrap .content-name .complete-name .family-name:hover::after {
-  content: "contact ⤴️";
-  font-size: 1.6rem;
   color: #a48cee;
-  font-variation-settings: "MONO" 0.6, "CASL" 0.1, "wght" 500, "slnt" 0;
-  position: absolute;
-  text-align: center;
   bottom: 2px;
-  width: 100%;
-  height: 0;
-  left: 0;
 }
 
 body .main .content_wrap .content-portfolio {
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 730, "slnt" 0;
   color: #2b2b2c;
   text-align: left;
@@ -183,34 +193,19 @@ body .main .content_wrap .content-portfolio {
 body .main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.3, "wght" 760, "slnt" 0;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 760, "slnt" 0;
   transition: 0.3s;
   text-decoration-color: #a48cee;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-body .main .content_wrap .content-portfolio .link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 1.1px;
-  border-bottom: 2.3px solid #621bc5;
-  /*Change this to increase/decrease distance*/
-}
-
-body .main .content_wrap .content-portfolio .link::after:hover {
-  border-bottom: 3.14px solid #621bc5;
-}
-
 body .main .content_wrap .content-portfolio .link:hover {
-  font-variation-settings: "MONO" 0.3, "CASL" 0.8, "wght" 730, "slnt" 0;
-  text-decoration: none;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 760, "slnt" 0;
+  text-decoration-color: #621bc5;
 }
 
 body .main .content_wrap .content-portfolio .link:active {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0;
 }
 
 body .main .content_wrap .content-portfolio .link-number {
@@ -219,11 +214,7 @@ body .main .content_wrap .content-portfolio .link-number {
   left: -3px;
   top: -7px;
   margin-left: 0px;
-  font-size: 0.8rem;
-}
-
-body .main .link--kateg {
-  display: none;
+  font-size: 1.3rem;
 }
 
 body footer {
@@ -235,7 +226,6 @@ body footer {
   -ms-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 body footer .footer {
@@ -244,6 +234,7 @@ body footer .footer {
   margin: 0 auto;
   background-color: #1ed760;
   overflow: hidden;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 body footer .footer .line {
@@ -301,9 +292,6 @@ body footer .footer #githublink a:hover {
     padding-left: 11vw;
     padding-right: 11vw;
   }
-  body .main content_wrap .content-name {
-    word-spacing: 0.7px;
-  }
   body footer .footer .line span {
     font-size: 2rem;
     line-height: 4rem;
@@ -311,9 +299,6 @@ body footer .footer #githublink a:hover {
 }
 
 @media (min-width: 768.02px) {
-  body {
-    font-size: 62.5%;
-  }
   body .main .content_wrap {
     padding-left: 17vw;
     padding-right: 17vw;
@@ -322,8 +307,11 @@ body footer .footer #githublink a:hover {
     text-align: center;
     padding-right: 11.5vh;
   }
+  body .main .content-portfolio {
+    font-size: 2.7rem;
+  }
   body footer .footer .line span {
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     line-height: 6rem;
   }
 }
