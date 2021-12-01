@@ -1,13 +1,38 @@
 @charset "UTF-8";
+/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
+/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
+/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 html {
   font-size: 62.5%;
   height: 100%;
   box-sizing: border-box;
-  /* font-family: 'Bungee', cursive; font-family: 'Bungee Hairline', cursive;font-family: 'Bungee Inline', cursive; font-family: 'Bungee Outline', cursive;font-family: 'Bungee Shade',
-  cursive; font-family: 'Paytone One', sans-serif;  font-family: 'Jockey One', sans-serif; font-family: 'Lilita One', cursive; font-family: 'Montserrat', sans-serif; font-family: 'Paytone One', sans-serif; font-family: 'Peralta', cursive; font-family: 'Ultra', serif;
-  font-family: 'Shippori Antique B1', sans-serif;
-  font-family: 'Signika Negative', sans-serif;
-  font-family: 'Ultra', serif;*/
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  border: 0px;
+  background-color: #fcfaf8;
+  color: #1b1e1a;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+}
+
+body ::selection {
+  background-color: #fff705;
+  color: #1b1e1a;
+}
+
+/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
+html {
+  font-size: 62.5%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 *,
@@ -22,11 +47,8 @@ body {
   background-color: #fcfaf8;
   color: #1b1e1a;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" "MONO" 0, "CASL" "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
-  hyphens: auto;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
-  /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
-  /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 }
 
 body ::selection {
@@ -71,7 +93,6 @@ body .main .content_wrap {
   padding-bottom: 64px;
   padding-left: 16vw;
   padding-right: 14vw;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 body .main .content_wrap .content-name {
@@ -94,10 +115,25 @@ body .main .content_wrap .content-name .complete-name {
 
 body .main .content_wrap .content-name .complete-name .first-name {
   position: relative;
-  transition: 0.45s ease-out;
-  transition-delay: 0.15s;
+  transition: 0.3s ease-out;
+  transition-delay: 0.16s;
   text-decoration: underline;
   text-decoration-color: #a48cee;
+}
+
+body .main .content_wrap .content-name .complete-name .first-name::after {
+  content: "about me ⤴️";
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0);
+  font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+  height: 0;
+  left: 0;
+  transition: 0.45s ease-out;
+  transition-delay: 0.15s;
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover {
@@ -106,23 +142,15 @@ body .main .content_wrap .content-name .complete-name .first-name:hover {
 }
 
 body .main .content_wrap .content-name .complete-name .first-name:hover::after {
-  content: "About me ⤴️";
-  font-size: 1.6rem;
   color: #a48cee;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
-  position: absolute;
-  text-align: center;
   bottom: 2px;
-  width: 100%;
-  height: 0;
   left: 0;
 }
 
 body .main .content_wrap .content-name .complete-name .family-name {
   position: relative;
   transition: 0.45s ease-out;
-  transition-delay: 0.15s;
+  transition-delay: 0.16s;
   text-decoration: underline;
   text-decoration-color: #a48cee;
 }
@@ -133,10 +161,9 @@ body .main .content_wrap .content-name .complete-name .family-name:hover {
 }
 
 body .main .content_wrap .content-name .complete-name .family-name:hover::after {
-  content: "Contact ⤴️";
+  content: "contact ⤴️";
   font-size: 1.6rem;
   color: #a48cee;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0.6, "CASL" 0.1, "wght" 500, "slnt" 0;
   position: absolute;
   text-align: center;
@@ -208,6 +235,7 @@ body footer {
   -ms-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 body footer .footer {
@@ -225,28 +253,29 @@ body footer .footer .line {
 body footer .footer .line span {
   font-size: 3.5rem;
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
-  color: whitesmoke;
+  color: #fcfaf8;
   padding: 12px;
   padding-left: 50px;
-  line-height: 6.3rem;
+  line-height: 6rem;
   padding-right: 50px;
 }
 
 body footer .footer #githublink {
   color: #00ff84;
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0;
+  font-variation-settings: "MONO" 1, "wght" 500, "slnt" 0;
   font-size: 1.3rem;
   text-align: center;
-  padding-bottom: 1vh;
+  padding: 1.6vh;
 }
 
 body footer .footer #githublink a {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -1;
+  font-variation-settings: "MONO" 1, "wght" 500, "slnt" -1;
   color: inherit;
+  transition: 0.3s;
 }
 
 body footer .footer #githublink a:hover {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -17;
+  font-variation-settings: "MONO" 1, "wght" 500, "slnt" -17, "CRSV" 0;
 }
 
 @media (min-width: 320px) {
@@ -261,6 +290,10 @@ body footer .footer #githublink a:hover {
     text-align: left;
     font-size: 4rem;
   }
+  body footer .footer .line span {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+  }
 }
 
 @media (min-width: 576.02px) {
@@ -271,20 +304,34 @@ body footer .footer #githublink a:hover {
   body .main content_wrap .content-name {
     word-spacing: 0.7px;
   }
+  body footer .footer .line span {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
 }
 
 @media (min-width: 768.02px) {
+  body {
+    font-size: 62.5%;
+  }
   body .main .content_wrap {
     padding-left: 17vw;
     padding-right: 17vw;
   }
   body .main .content_wrap .content-name {
     text-align: center;
-    padding-right: 13vh;
+    padding-right: 11.5vh;
+  }
+  body footer .footer .line span {
+    font-size: 3.5rem;
+    line-height: 6rem;
   }
 }
 
 @media (min-width: 1200.02px) {
+  body {
+    font-size: 62.5%;
+  }
   body .main .content_wrap {
     padding-left: 25vw;
     padding-right: 23vw;

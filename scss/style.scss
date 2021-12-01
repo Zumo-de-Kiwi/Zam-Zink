@@ -1,5 +1,6 @@
 @import "variables";
 @import "globals";
+@import "mixins";
 ///////////////// colors ///////////////
 
 html {
@@ -7,11 +8,6 @@ html {
 
   height: 100%;
   box-sizing: border-box;
-  /* font-family: 'Bungee', cursive; font-family: 'Bungee Hairline', cursive;font-family: 'Bungee Inline', cursive; font-family: 'Bungee Outline', cursive;font-family: 'Bungee Shade',
-  cursive; font-family: 'Paytone One', sans-serif;  font-family: 'Jockey One', sans-serif; font-family: 'Lilita One', cursive; font-family: 'Montserrat', sans-serif; font-family: 'Paytone One', sans-serif; font-family: 'Peralta', cursive; font-family: 'Ultra', serif;
-  font-family: 'Shippori Antique B1', sans-serif;
-  font-family: 'Signika Negative', sans-serif;
-  font-family: 'Ultra', serif;*/
 }
 *,
 *::before *::after {
@@ -26,16 +22,11 @@ body {
   background-color: $background-color;
   color: $font-black;
   font-family: $ff-recursive;
-  font-variation-settings: "MONO" $MONO, "CASL" $CASL,
-    "wght" $font-weight-normal, "slnt" $slnt;
-  hyphens: auto; //when text breaks it will hyphen you a word
+  font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal,
+    "slnt" $slnt;
+  // hyphens: auto; //when text breaks it will hyphen you a word
 
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
-      16 0,
-    auto;
-  /* My version with the numbers cahnged, the original=> cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto; */
-  /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-
+  cursor: $cursor-pointer-hand;
   ::selection {
     // When text is selected it will be yellow
     background-color: $background-selected-color;
@@ -93,10 +84,6 @@ body {
 
       // transition-duration: 0.3s;
 
-      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='54%'>🖖</text></svg>")
-          16 0,
-        auto;
-
       ///////// Hi, I am Héctor /////////
       .content-name {
         // margin-bottom: 4vh;
@@ -121,13 +108,32 @@ body {
           cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
               16 0,
             auto;
-
+          // transition: 0.45s;
+          // transition-delay: 0.1s;
           .first-name {
             position: relative;
-            transition: 0.45s ease-out;
-            transition-delay: 0.15s;
+            // Hector and underline animation
+            transition: $trans-normal ease-out;
+            transition-delay: $delay-normal;
             text-decoration: underline;
             text-decoration-color: $underline-color;
+            &::after {
+              content: "about me ⤴️";
+              font-size: $font-size-small;
+              color: $transparent;
+              font-variation-settings: "MONO" 0.6, "CASL" 0,
+                "wght" $font-weight-light;
+
+              position: absolute;
+              text-align: center;
+              bottom: 0px;
+              width: 100%;
+              height: 0;
+              left: 0;
+
+              transition: 0.45s ease-out;
+              transition-delay: 0.15s;
+            }
 
             &:hover {
               // color: $font-linked-hover-color;
@@ -136,18 +142,17 @@ body {
               text-decoration-color: $spotify-text-green;
 
               &::after {
-                content: "About me ⤴️";
-                font-size: $font-size-small;
+                // content: "About me ⤴️";
+                // font-size: $font-size-small;
                 color: $underline-color;
-                font-family: $ff-recursive;
-                font-variation-settings: "MONO" 0.6, "CASL" 0,
-                  "wght" $font-weight-light;
+                // font-family: $ff-recursive;
+                // font-variation-settings: "MONO" 0.6, "CASL" 0,
+                //   "wght" $font-weight-light;
 
-                position: absolute;
-                text-align: center;
+                // position: absolute;
+                // text-align: center;
                 bottom: 2px;
-                width: 100%;
-                height: 0;
+                // width: 100%;
                 left: 0;
               }
             }
@@ -155,8 +160,9 @@ body {
 
           .family-name {
             position: relative;
-            transition: 0.45s ease-out;
-            transition-delay: 0.15s;
+            // Hector and underline animation
+            transition: $trans-slow ease-out;
+            transition-delay: $delay-normal;
             text-decoration: underline;
             text-decoration-color: $underline-color;
 
@@ -169,10 +175,9 @@ body {
               //text-decoration-color: $font-linked-hover-color;
               //text-decoration: underline;
               &::after {
-                content: "Contact ⤴️";
+                content: "contact ⤴️";
                 font-size: $font-size-small;
                 color: $underline-color;
-                font-family: $ff-recursive;
                 font-variation-settings: "MONO" 0.6, "CASL" 0.1,
                   "wght" $font-weight-light, $slnt;
 
@@ -210,9 +215,7 @@ body {
 
           //text-decoration: none; text-decoration: underline;
           text-decoration-color: $underline-color;
-          cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
-              16 0,
-            auto;
+          cursor: $cursor-please-fingers;
 
           &::after {
             //the thicker underline
@@ -256,7 +259,7 @@ body {
         }
       }
     }
-
+    ////// i //////
     .link--kateg {
       display: none;
     }
@@ -266,7 +269,7 @@ body {
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
-
+    cursor: $cursor-startreck-hand;
     .footer {
       position: absolute;
       bottom: 0vh;
@@ -282,27 +285,28 @@ body {
           font-size: $font-size-huge;
           font-variation-settings: "MONO" 0.8, "CASL" 0,
             "wght" $font-weight-light, $slnt;
-          color: whitesmoke;
+          color: $background-color;
           padding: 12px;
           padding-left: 50px;
-          line-height: 6.3rem;
+          line-height: 6rem;
           padding-right: 50px;
         }
       }
       #githublink {
         color: $skillshare-green;
-        font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-light,
-          $slnt;
-        font-size: 1.3rem;
+        font-variation-settings: "MONO" 1, "wght" $font-weight-light, $slnt;
+        font-size: $font-size-information;
+
         text-align: center;
-        padding-bottom: 1vh;
+        padding: 1.6vh;
         a {
-          font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-light,
+          font-variation-settings: "MONO" 1, "wght" $font-weight-light,
             "slnt" -1;
           color: inherit;
+          transition: $trans-normal;
           &:hover {
-            font-variation-settings: "MONO" 1, "CASL" 0,
-              "wght" $font-weight-light, "slnt" -17;
+            font-variation-settings: "MONO" 1, "wght" $font-weight-light,
+              "slnt" -17, "CRSV" 0;
           }
         }
       }
@@ -329,6 +333,16 @@ body {
         }
       }
     }
+    footer {
+      .footer {
+        .line {
+          span {
+            font-size: $font-size-small;
+            line-height: 2.7rem;
+          }
+        }
+      }
+    }
   }
   // Small devices (landscape phones, more than 576px)
   @media (min-width: 576.02px) {
@@ -344,9 +358,21 @@ body {
         }
       }
     }
+    footer {
+      .footer {
+        .line {
+          span {
+            font-size: $font-size-normal;
+            line-height: 4rem;
+          }
+        }
+      }
+    }
   }
   // Medium devices (tablets, more than 768px)
   @media (min-width: 768.02px) {
+    font-size: 62.5%;
+
     .main {
       .content_wrap {
         // padding-bottom: 64px;
@@ -356,7 +382,17 @@ body {
         .content-name {
           // padding-top: 23vh;
           text-align: center;
-          padding-right: 13vh;
+          padding-right: 11.5vh;
+        }
+      }
+    }
+    footer {
+      .footer {
+        .line {
+          span {
+            font-size: $font-size-huge;
+            line-height: 6rem;
+          }
         }
       }
     }
@@ -366,6 +402,8 @@ body {
   // }
   // X-Large devices (large desktops, more than 1200px)
   @media (min-width: 1200.02px) {
+    font-size: 62.5%;
+
     .main {
       .content_wrap {
         padding-left: 25vw;

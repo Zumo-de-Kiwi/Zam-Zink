@@ -1,22 +1,79 @@
 /////// a complete page full of arrows
-@import "../scss/variables";
-
-html {
-  font-size: 62.5%; //Now 10px is equal 1rem
-
-  height: 100%;
-  box-sizing: border-box;
-}
-*,
-*::before *::after {
-  box-sizing: inherit;
-}
+@import "../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/globals";
 
 body {
-  margin: 0px;
-  border: 0px;
+  background-color: $underline-color;
+  font-family: $ff-recursive;
+  font-variation-settings: "MONO" 1, $CASL, "wght" $font-weight-normal, $slnt;
+  font-size: $font-size-normal;
+  /////////////// | V | V | V | V | V | V | V /////////////
   header {
-    #arrows {
+    height: 90vh;
+    width: 99%;
+    padding: 5.5vh;
+    background-color: $font-linked-color;
+    // for let text overflow
+    overflow: hidden;
+    white-space: nowrap;
+
+    #down-arrows {
+      font-size: $font-size-nacho;
+      color: $background-color;
+      font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-lighter;
+    }
+  }
+
+  ///////////// SECOND PAGE /////////////
+  main {
+    height: 100vh;
+    width: 100%;
+    .left-arrow {
+      font-size: $font-size-nacho;
+      color: $font-low-contrast-color;
+      margin: 4rem;
+      a {
+        font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
+        color: $font-low-contrast-color;
+        cursor: $cursor-please-fingers;
+        text-decoration: none;
+        padding-left: 1rem;
+        #homeArrow {
+          &:hover {
+            font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
+          }
+        }
+        &::after {
+          height: 2rem;
+          width: 80%;
+          color: $font-linked-color;
+        }
+      }
+    }
+    .content {
+      margin: 7rem;
+      h1 {
+        font-variation-settings: "MONO" 0.2, "CASL" 0.8,
+          "wght" $font-weight-bold;
+        font-size: $font-size-nacho;
+        color: $font-linked-color;
+        text-align: center;
+        margin: 0px auto;
+      }
+      .aboutContent {
+        background-color: $background-color;
+
+        padding: 2.4rem 2rem;
+        h3 {
+          font-variation-settings: "CASL" 0.6, "wght" $font-weight-normal;
+          color: $font-gray;
+        }
+        p {
+          font-variation-settings: "CASL" 0.6, "wght" $font-weight-light;
+          color: $font-linked-color;
+        }
+      }
     }
   }
 }

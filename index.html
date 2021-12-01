@@ -1,109 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Héctor Cortés - Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Héctor Cortés - Home</title>
 
-   <!-----------------FONTS-------------------->
-   <!------need to be above the CSS style sheet----------->
-   <link rel="preconnect" href="https://fonts.googleapis.com"> 
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap" rel="stylesheet">
-   <!------------------CSS-------------------->
-   <link rel="stylesheet" href="scss/style.css"></link>
-   <!------------------FAVICON-------------------->
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-   <link rel="manifest" href="/site.webmanifest">
-   <!--------------------JS----------------------->
-   <!--     is in the bottom of the <body>      -->
-</head>
+    <!-----------------FONTS-------------------->
+    <!------need to be above the CSS style sheet----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <!------------------CSS-------------------->
+    <link rel="stylesheet" href="scss/style.css" />
+    <!--  animate.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <!------------------FAVICON-------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--------------------JS----------------------->
+    <!--     is in the bottom of the <body>      -->
+  </head>
 
-<body class="body body_work">
-   <!------------LOADER------------------>
-   <div data-ix="pre-loader" class="loader">
-      <div class="loader_box" ></div> <!--this was inside the loader_boxstyle="transform-style: preserve-3d; transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg); transition: transform 1000ms ease-in-out;"-->
-   </div>
+  <body class="body body_work">
+    <!------------LOADER------------------>
+    <div data-ix="pre-loader" class="loader">
+      <div class="loader_box"></div>
+      <!--this was inside the loader_boxstyle="transform-style: preserve-3d; transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg); transition: transform 1000ms ease-in-out;"-->
+    </div>
 
-   <div class="body">
+    <div class="body">
       <!-- <div class="image_package"></div> // original green code
       <div class="data_collapse"></div> -->
       <main class="main">
-         <nav class="navigation">
-            <ul>
-               <li>
-                  <a class="back logo-frame" href="">
-                     <svg class="logo-svg" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g class="logo" fill="hsl(105, 7%, 11%)"><path d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"/></g></svg></a>
-                  <a class="works" href="https://duckduckgo.com">Works</a>
-                  <a class="checkbox filter" href="">Filter</a>
-                  <!-- <a class="contact" href="">Contact</a>
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a class="back logo-frame" href="">
+                <svg
+                  class="logo-svg"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="2"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="logo" fill="hsl(105, 7%, 11%)">
+                    <path
+                      d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
+                    />
+                  </g></svg
+              ></a>
+              <a class="works" href="https://duckduckgo.com">Works</a>
+              <a class="checkbox filter" href="">Filter</a>
+              <!-- <a class="contact" href="">Contact</a>
                   <a class="about" href="">About</a> -->
-               </li>
-            </ul>
-            <!--two upper dots-->
-            <!--<div class="logo" href="logoWhite">
+            </li>
+          </ul>
+          <!--two upper dots-->
+          <!--<div class="logo" href="logoWhite">
                Logo</div>
             <div class="work">
                <div class="nav_txt">Work</div>
             </div>
             <div class="dropdown"></div>--><!--Here is his face-->
-         </nav>
-         <!--Main content with your works-->
-         <main class="content_wrap">
-            <!--------------- Hi, I am Héctor -------------------->
-            <div class="content-name">
-               <span class="hi welcome-phrase">Hi</span>
-               <span class="coma">,</span>
-               <span class="i-am welcome-phrase">I am <wbr></span>
-               <!-- The <wbr> element is a “word-break opportunity” meaning a long word that would normally cause an annoying overflow issue could be told that it’s ok to break at a certain point.  -->
-               <!-- <a class="complete-name link"> -->
-               <span class="link--kateg">i</span>
-               <a class="complete-name link" href="/pages/about-me/about_me.html"><span class="first-name" >Héctor</span></a>
-               <a class="complete-name link" href="/pages/contact/contact.html"><span class="family-name" >Cortés</span> </a>
-               <!-- </a> -->
-            </div>
+        </nav>
+        <!--Main content with your works-->
+        <main class="content_wrap">
+          <!--------------- Hi, I am Héctor -------------------->
+          <div class="content-name">
+            <span class="hi welcome-phrase">Hi</span>
+            <span class="coma">,</span>
+            <span class="i-am welcome-phrase">I am</span>
+            <!-- The <wbr> element is a “word-break opportunity” meaning a long word that would normally cause an annoying overflow issue could be told that it’s ok to break at a certain point.  -->
+            <!-- <a class="complete-name link"> -->
+            <span class="link--kateg">i</span>
+            <nobr
+              ><a
+                class="complete-name link"
+                href="/pages/about-me/about_me.html"
+                ><span class="first-name">Héctor</span></a
+              >
+              <a class="complete-name link" href="/pages/contact/contact.html"
+                ><span class="family-name">Cortés</span>
+              </a>
+            </nobr>
+            <!-- </a> -->
+          </div>
 
-            <div class="content-portfolio"><!---old class: hidden-medium hidden-small hidden-tiny-->
-               <!------ Work 1 ------->
-               <span class="span-out">case study</span>
-               <a class="link border" href="/img/preview/app.jpg">
-                  <span class="link--kateg">i</span>
-                  Banking app  
-               </a>
-               <strong class="link-number">.11</strong>
-               <span class="span-out"> <!--old name: span-out--->
-                  <span class="dash-long">-</span>
-                  <!------ Work 2 ------->
-                  Tainan city
-               </span>
-               <a class="link border" href="/img/preview/app.jpg">
-                  <span class="link--kateg">i</span>
-                  Tourist Website 🐨
-               </a>
-               <strong class="link-number">.17</strong><!--link-pagina-->
-               <span class="span-out">
-                  <span class="dash-long">-</span>
-                  <!------ Work 3 ------->
-                  and some posters for your wall - font four pixel, scan some lost objects - some pics for relax in the plaza mayor - Codepen the son of pan y vino
-               </span>
-               
-            </div>
-         <!-- <div class="content hidden-main"></div> -->
-         </main>
+          <div class="content-portfolio">
+            <!---old class: hidden-medium hidden-small hidden-tiny-->
+            <!------ Work 1 ------->
+            <span class="span-out">case study</span>
+            <a class="link border" href="/img/preview/app.jpg">
+              <span class="link--kateg">i</span>
+              Banking app
+            </a>
+            <strong class="link-number">.11</strong>
+            <span class="span-out">
+              <!--old name: span-out--->
+              <span class="dash-long">-</span>
+              <!------ Work 2 ------->
+              Tainan city
+            </span>
+            <a class="link border" href="/img/preview/app.jpg">
+              <span class="link--kateg">i</span>
+              Tourist Website 🐨
+            </a>
+            <strong class="link-number">.17</strong
+            ><!--link-pagina-->
+            <span class="span-out">
+              <span class="dash-long">-</span>
+              <!------ Work 3 ------->
+              and some posters for your wall - font four pixel, scan some lost
+              objects - some pics for relax in the plaza mayor - Codepen the son
+              of pan y vino
+            </span>
+          </div>
+          <!-- <div class="content hidden-main"></div> -->
+        </main>
       </main>
-      <footer>        
-         <div class="footer">
-            <div class="line">
-               <span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span><span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span><span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span><span class="spanWorking">Working On! </span><span class="spanDanger">Danger Zone!</span>
-            </div>
-            <div id="githublink">made with 💚from the Earth  ☞<a href="https://github.com/Zumo-de-Kiwi/Zam-Zink">github repo</a>☜</div>
-         </div>     
+      <footer>
+        <div class="footer">
+          <div class="line">
+            <span class="spanWorking">Working On! </span
+            ><span class="spanDanger">Danger Zone!</span
+            ><span class="spanWorking">Working On! </span
+            ><span class="spanDanger">Danger Zone!</span
+            ><span class="spanWorking">Working On! </span
+            ><span class="spanDanger">Danger Zone!</span
+            ><span class="spanWorking">Working On! </span
+            ><span class="spanDanger">Danger Zone!</span>
+          </div>
+          <div id="githublink">
+            made with 💚from the boat ☞
+            <a
+              class="animate__headShake"
+              target="_blank"
+              href="https://github.com/Zumo-de-Kiwi/Zam-Zink"
+              >github repo</a
+            >
+            ☜
+          </div>
+        </div>
       </footer>
-   </div>
-   
-   <script src="js/script.js"></script>
-</body>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

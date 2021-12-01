@@ -4,7 +4,7 @@
 
 - [x] Separate the link of Hector and Cortes
 - [x] Hector Hover doesn't change undeline to green
-- [ ] linked github icon
+- [x] linked github icon
 - [ ] Animate bottom banner
 - [x] Link netlify to the working page
 
@@ -209,10 +209,10 @@ ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tem
 
 ### 6. DO and DON'T in PORTFOLIO
 
-1.  DON'T Put `contact me` or `talk about you`before the user can see your work.
-1.  DON'T Bad `media query`, haven't test your page in different screen sizes
-1.  DON'T Without more information in the companies that you have worked.
-1.  DON'T `Progress bars` in the skills.
-1.  DON'T Talking about you don't well.
-1.  DON'T talk to much about you, instead show your work, `github`....
-1.  DON'T put ugly `screenshots` in the preview of the portfolio links.
+1. DON'T Put `contact me` or `talk about you`before the user can see your work.
+1. DON'T Bad `media query`, haven't test your page in different screen sizes
+1. DON'T Without more information in the companies that you have worked.
+1. DON'T `Progress bars` in the skills.
+1. DON'T Talking about you don't well.
+1. DON'T talk to much about you, instead show your work, `github`....
+1. DON'T put ugly `screenshots` in the preview of the portfolio links.

@@ -1,18 +1,11 @@
 // Make something like a digital contact libreta?
-@import "../scss/variables";
-
-html {
-  font-size: 62.5%; //Now 10px is equal 1rem
-
-  height: 100%;
-  box-sizing: border-box;
-}
-*,
-*::before *::after {
-  box-sizing: inherit;
-}
+@import "../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/globals";
 
 body {
-  margin: 0px;
-  border: 0px;
+  #mailFrame {
+    #mailText {
+    }
+  }
 }

@@ -117,7 +117,13 @@
            `randomWeight = multiplierWidth * (200 - 35) + 35;`
            `randomWidth = multiplierHeight * (200 - 100) + 100;`
            `myText.style.fontVariationSettings = "\"wght\" " + randomWeight + ", \"wdth\" " + randomWidth; }`
-           `window.addEventListener("mousemove", updateText)`
+           `window.a
+
+   1. Getting the Most Out of Variable Fonts on Google Fonts [CSS tricks](https://css-tricks.com/getting-the-most-out-of-variable-fonts-on-google-fonts/)
+
+      1. Writted by the person who made Recursive
+
+   1. CSS [custom properties trick](https://pixelambacht.nl/2019/fixing-variable-font-inheritance/) for variable fonts
 
 ### 1. Ways of use
 
@@ -189,6 +195,28 @@
 
 1. for the left margin of the first line of the first parapgraph`text-indent: 40px;`
 
+## UNICODE
+
+### Emoji
+
+1. Emoji Cursor - CSS Generator [Tool](https://www.emojicursor.app/)
+
+   - simplyfied version of the code?: `cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🦄</text></svg>"), auto`
+
+   - My web version:
+     `cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0,auto;`
+   - My cursors: 👆 👈 🖖 ☝️🤞 ✌️
+
+   - My version with the numbers changed, the original=> `cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>👆</text></svg>") 16 0,auto;`
+
+1. Mattherayfield [Animating](https://www.matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/) urls with js & emojis
+
+1. Some emojis not displaying correctly in [VSCode macOS](https://github.com/microsoft/vscode/issues/118905)
+
+   - This appears to be something specific to Menlo, which happens to be the default editor font on macOS.
+
+   - I updated this line in my settings.json so that I no longer include Menlo and instead I have Monaco as the first font listed: `"editor.fontFamily": "Monaco, 'Courier New', monospace, 'Apple Color Emoji'"`
+
 ## LAYOUT
 
 ### Phrases
@@ -203,9 +231,40 @@
 
 ## PICS
 
+1. WepP
+
+   1. A format developed for the web by Google in 2010, focused on using advanced optimization techniques to reduce file-size. Supports transparency and even animation.
+
+   1. Josh Comeau [blog](https://www.joshwcomeau.com/performance/embracing-modern-image-formats/)
+
+   1. Someone Recommend to use WebP for images with alpha(like what **png** does), there is more difference in size than with **jpg** like images.
+
+   1. FALLBACK: **'picture'** to the rescue!
+
+      1. Critically, we're missing **Safari** and Internet Explorer so we need to have fallbacks.
+         `<picture>`
+         `<source srcset="/images/cereal-box.webp" type="image/webp" />` -For most modern browsers
+         `<source srcset="/images/cereal-box.jp2" type="image/jp2" />` -For Safari
+         `<img src="/images/cereal-box.jxr" type="image/vnd.ms-photo" />` -for IE
+         `</picture>`
+      1. The **picture** tag supports a bunch of source children. The browser parses the source elements in sequence, looking for the first one it can use based on the type. When it finds one, it works out where the image lives via srcset, and swaps it into the img's src
+      1. **srcset** can do a lot of complicated things, but happily for our usecase, we can treat it the same as src. Essentially, source is config, and it plugs the matching value into the img.
+
+      1. The **Lazier solution**
+         `<picture>`
+         `<source srcset="/images/cereal-box.webp" />`
+         `<img src="/images/cereal-box.jpg" />`
+         `</picture>`
+
+   1. Online CONVERTERS
+
+      - [Cloud Converter](https://cloudconvert.com/webp-converter)
+
+      - [Green Guy](https://image.online-convert.com/convert-to-webp) Converter
+
 1. CSS [image-rendering] is a filter that have: auto(bi/tri/linear), pixelated, crisp-edges(nearest-neighbor)(-webkit-optimize-contrast)
 
-2. If you use background images a lot in your CSS, you can reduce the number of HTTP lookups needed by combining the images into one, known as an image sprite. Then you just apply the same image each time you need it for a background and adjust the x/y coordinates appropriately. This technique works best with elements that will have limited dimensions, and will not work for every use of a background image. However, the fewer HTTP requests and single image caching can help reduce page-load time.
+1. If you use background images a lot in your CSS, you can reduce the number of HTTP lookups needed by combining the images into one, known as an image sprite. Then you just apply the same image each time you need it for a background and adjust the x/y coordinates appropriately. This technique works best with elements that will have limited dimensions, and will not work for every use of a background image. However, the fewer HTTP requests and single image caching can help reduce page-load time.
 
 ## SVG
 
@@ -244,19 +303,3 @@
 1. Tools for [optimize](https://css-tricks.com/tools-for-optimizing-svg/) SVG
 
 1. Optimizing for [WEB use](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-1-67e8f2d4035#.2bnvih6cw)
-
-## UNICODE
-
-### Emoji
-
-1. Emoji Cursor - CSS Generator [Tool](https://www.emojicursor.app/)
-
-   - simplyfied version of the code?: `cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🦄</text></svg>"), auto`
-
-1. Mattherayfield [Animating](https://www.matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/) urls with js & emojis
-
-1. Some emojis not displaying correctly in [VSCode macOS](https://github.com/microsoft/vscode/issues/118905)
-
-   - This appears to be something specific to Menlo, which happens to be the default editor font on macOS.
-
-   - I updated this line in my settings.json so that I no longer include Menlo and instead I have Monaco as the first font listed: `"editor.fontFamily": "Monaco, 'Courier New', monospace, 'Apple Color Emoji'"`
