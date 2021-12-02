@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -52,6 +50,10 @@ body header {
   border: 2rem solid #621bc5;
 }
 
+body header #down-arrows {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>") 16 0, auto;
+}
+
 body header #down-arrows pre {
   font-size: 2.5rem;
   color: #a48cee;
@@ -67,13 +69,10 @@ body main {
   height: 100vh;
   width: 100%;
   background: #621bc5;
-  background: linear-gradient(180deg, #621bc5 0%, #bfdef2 43%);
+  background: linear-gradient(180deg, #621bc5 0%, #672eb6 27%, #bfdef2 83%);
 }
 
 body main .midGradient {
-  position: absolute;
-  top: 0px;
-  height: 5vh;
   background-color: linear-gradient(180deg, #621bc5 0%, #bfdef2 100%);
 }
 
@@ -91,6 +90,7 @@ body main a:hover {
 body main a #left-arrow {
   font-size: 6rem;
   margin: 4rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }

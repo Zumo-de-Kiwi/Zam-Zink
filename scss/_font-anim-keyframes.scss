@@ -1,0 +1,32 @@
+@import "variables";
+
+@keyframes widthness {
+  0% {
+    font-variation-settings: "wght" $font-weight-light;
+  }
+  30% {
+    font-variation-settings: "wght" $font-weight-heavy;
+  }
+  70% {
+    font-variation-settings: "wght" $font-weight-normal;
+  }
+  100% {
+    font-variation-settings: "wght" $font-weight-light;
+  }
+}
+.dangerSpan {
+  animation: slintness 2s ease infinite;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" $font-weight-light,
+    "CRSV" 1;
+}
+@keyframes slintness {
+  0% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+  40% {
+    font-variation-settings: "slnt" -15, "CRSV" 1;
+  }
+  100% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+}

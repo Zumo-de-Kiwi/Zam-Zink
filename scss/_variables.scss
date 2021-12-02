@@ -20,17 +20,18 @@ $background-selected-color: hsl(58, 100%, 51%);
 
 $font-black: hsl(100, 4%, 14%);
 $font-gray: hsl(30, 2%, 35%);
-$font-sutil-gray-color: hsl(143, 15%, 80%);
-$font-linked-color: #621bc5;
+$font-sutil-gray-color: hsl(141, 14%, 76%);
+$sutil-dark-purple-gray-color: hsl(265, 15%, 31%);
+$font-linked-color: hsl(265, 76%, 44%);
 $font-linked-hover-color: hsl(272, 94%, 52%);
 $font-low-contrast-color: hsl(200, 3%, 82%);
 $josh-blue-white: hsl(225, 25%, 95%);
-$josh-light-blue: #bfdef2;
+$josh-light-blue: hsl(204, 66%, 85%);
 $underline-color: hsl(255, 74%, 74%);
 $transparent: rgba(0, 0, 0, 0);
 
-$skillshare-green: #00ff84;
-$spotify-text-green: #1ed760;
+$skillshare-green: hsl(151, 100%, 50%);
+$spotify-text-green: hsl(141, 76%, 48%);
 
 $font-weight-heavy: 800;
 $font-weight-bolder: 760;
@@ -70,7 +71,6 @@ $delay-normal: 0.16s;
 $delay-slow: 0.314s;
 
 ///////////////// CURSORS ///////////////
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 $cursor-pointer-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>")
     16 0,
   auto;
@@ -87,5 +87,11 @@ $cursor-yeah-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/20
     16 0,
   auto;
 $cursor-arrow-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>")
+    16 0,
+  auto;
+$cursor-pointer-down-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>")
+    16 0,
+  auto;
+$cursor-pointer-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🔎</text></svg>")
     16 0,
   auto;

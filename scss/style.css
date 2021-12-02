@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -31,6 +29,38 @@ body h1 {
   font-size: 3.7rem;
 }
 
+@keyframes widthness {
+  0% {
+    font-variation-settings: "wght" 500;
+  }
+  30% {
+    font-variation-settings: "wght" 800;
+  }
+  70% {
+    font-variation-settings: "wght" 620;
+  }
+  100% {
+    font-variation-settings: "wght" 500;
+  }
+}
+
+.dangerSpan {
+  animation: slintness 2s ease infinite;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
+}
+
+@keyframes slintness {
+  0% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+  40% {
+    font-variation-settings: "slnt" -15, "CRSV" 1;
+  }
+  100% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+}
+
 html body {
   height: 100%;
   background-color: #fcfaf8;
@@ -43,37 +73,39 @@ html .main .navigation {
   justify-content: space-between;
   align-items: center;
   padding-top: 12px;
+  transition: 0.3s;
 }
 
 html .main .navigation .logo-svg {
   display: inline-block;
-  width: 28px;
+  width: 30px;
   padding: 2rem;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
-html .main .navigation .logo-svg .hc-logo {
-  fill: #bfdef2;
+html .main .navigation .logo-svg:hover .hc-logo {
+  fill: #4d435b;
 }
 
-html .main .navigation .logo-svg .hc-logo:hover {
-  fill: #621bc5;
+html .main .navigation .logo-svg .hc-logo {
+  transition: 0.45s;
+  fill: #b9cabf;
 }
 
 html .main .navigation ul {
   margin: 0px auto;
-  padding: 5rem;
+  padding-right: 12rem;
   list-style-type: none;
 }
 
 html .main .navigation ul li {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 620, "slnt" 0;
 }
 
 html .main .navigation ul li a {
   transition: 0.45s;
-  color: #c4d4ca;
+  color: #b9cabf;
   text-decoration: none;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
@@ -82,12 +114,20 @@ html .main .navigation ul li a:hover {
   color: #621bc5;
 }
 
+html .main .navigation ul li .nowPage {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>") 16 0, auto;
+}
+
+html .main .navigation ul li .filter {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🔎</text></svg>") 16 0, auto;
+}
+
 html .main .content_wrap .content-name {
-  padding-top: 10vh;
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-size: 3.7rem;
   font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
   text-align: left;
-  font-size: 3.7rem;
+  color: #4d435b;
   word-spacing: 0.7px;
 }
 
@@ -127,7 +167,7 @@ html .main .content_wrap .content-name .complete-name .first-name::after {
 
 html .main .content_wrap .content-name .complete-name .first-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 1, "wght" 760, "slnt" 0;
-  text-decoration-color: #1ed760;
+  text-decoration-color: #1dd75e;
 }
 
 html .main .content_wrap .content-name .complete-name .first-name:hover::after {
@@ -160,7 +200,7 @@ html .main .content_wrap .content-name .complete-name .family-name::after {
 
 html .main .content_wrap .content-name .complete-name .family-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 760, "slnt" 0;
-  text-decoration-color: #1ed760;
+  text-decoration-color: #1dd75e;
 }
 
 html .main .content_wrap .content-name .complete-name .family-name:hover::after {
@@ -170,7 +210,8 @@ html .main .content_wrap .content-name .complete-name .family-name:hover::after 
 
 html .main .content_wrap .content-portfolio {
   font-size: 2.5rem;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 730, "slnt" 0;
+  --main-weight: 600;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" var(--main-weight), "slnt" 0;
   color: #5b5957;
   text-align: left;
 }
@@ -215,7 +256,7 @@ html .main .content_wrap #oneMore a #mailText {
 }
 
 html .main .content_wrap #oneMore a #mailText:hover {
-  text-decoration-color: #1ed760;
+  text-decoration-color: #1dd75e;
 }
 
 html .main .content_wrap #oneMore:hover #mailText {
@@ -237,11 +278,23 @@ html footer {
 }
 
 html footer .footer {
-  background-color: #1ed760;
+  background-color: #1dd75e;
   position: absolute;
-  bottom: 0vh;
   margin: 0 auto;
-  overflow: hidden;
+  bottom: 0px;
+  padding-top: 1rem;
+  margin-bottom: 1.3rem;
+  max-width: 800px;
+  border-radius: 19px;
+}
+
+@media (max-width: 800px) {
+  html footer .footer {
+    font-size: 2.5rem;
+    bottom: 0px;
+    margin-bottom: 0rem;
+    border-radius: 0px;
+  }
 }
 
 html footer .footer .line {
@@ -249,50 +302,32 @@ html footer .footer .line {
 }
 
 html footer .footer .line span {
-  font-size: 3.7rem;
+  font-size: 2rem;
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
   padding: 12px;
-  padding-left: 50px;
-  line-height: 6rem;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 3rem;
+}
+
+@media (max-width: 800px) {
+  html footer .footer .line span {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 
 html footer .footer .line .workingSpan {
   animation: widthness 2s ease infinite;
+  color: #00ff84;
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
-}
-
-@keyframes widthness {
-  0% {
-    font-variation-settings: "wght" 500;
-  }
-  30% {
-    font-variation-settings: "wght" 800;
-  }
-  70% {
-    font-variation-settings: "wght" 620;
-  }
-  100% {
-    font-variation-settings: "wght" 500;
-  }
 }
 
 html footer .footer .line .dangerSpan {
   animation: slintness 2s ease infinite;
+  color: #eff1f5;
   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
-}
-
-@keyframes slintness {
-  0% {
-    font-variation-settings: "slnt" 0, "CRSV" 1;
-  }
-  40% {
-    font-variation-settings: "slnt" -15, "CRSV" 1;
-  }
-  100% {
-    font-variation-settings: "slnt" 0, "CRSV" 1;
-  }
 }
 
 html footer .footer #githublink {
@@ -317,36 +352,21 @@ html footer .footer #githublink a:hover {
 @media (min-width: 320px) {
   html .main .content_wrap {
     padding-bottom: 7vh;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   html .main .content_wrap .content-name {
-    padding-top: 19vh;
+    padding-top: 17vh;
     padding-bottom: 10vh;
     text-align: left;
     font-size: 4rem;
   }
-  html footer .footer .line span {
-    font-size: 1.6rem;
-    line-height: 2.7rem;
-  }
 }
 
-@media (min-width: 576.02px) {
-  html body .main content_wrap {
-    padding-left: 11vw;
-    padding-right: 11vw;
-  }
-  html body footer .footer .line span {
-    font-size: 2rem;
-    line-height: 4rem;
-  }
-}
-
-@media (min-width: 768.02px) {
+@media (min-width: 768px) {
   html .main .content_wrap {
-    padding-left: 17vw;
-    padding-right: 17vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
   html .main .content_wrap .content-name {
     text-align: center;
@@ -355,13 +375,16 @@ html footer .footer #githublink a:hover {
   html .main .content-portfolio {
     font-size: 2.5rem;
   }
-  html footer .footer .line span {
-    font-size: 2.5rem;
-    line-height: 6rem;
+}
+
+@media (min-width: 1024px) {
+  html .main .content_wrap {
+    padding-left: 19vw;
+    padding-right: 19vw;
   }
 }
 
-@media (min-width: 1200.02px) {
+@media (min-width: 1400px) {
   html .main .content_wrap {
     padding-left: 25vw;
     padding-right: 23vw;
