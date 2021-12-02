@@ -214,8 +214,6 @@ html {
             transition: $trans-normal;
             transition-delay: $delay-fast;
             &:hover {
-              // color: $font-linked-color;
-              // text-decoration: underline;
               text-decoration-color: $spotify-text-green;
             }
           }
@@ -235,16 +233,16 @@ html {
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
+    cursor: $cursor-please-fingers;
     .footer {
+      background-color: $spotify-text-green;
       position: absolute;
       bottom: 0vh;
       // max-width: 1400px;
       margin: 0 auto;
-      background-color: $spotify-text-green;
       // padding: 0 30px;
       // box-sizing: border-box;
       overflow: hidden;
-      cursor: $cursor-please-fingers;
       .line {
         text-align: center;
         span {
@@ -257,6 +255,42 @@ html {
           line-height: 6rem;
           padding-right: 50px;
         }
+        //////////////////// FOOTER TEXT ANIMATIONS /////////////////
+        .workingSpan {
+          animation: widthness 2s ease infinite;
+          font-variation-settings: "MONO" 0.4, "CASL" 0.2,
+            "wght" $font-weight-light;
+        }
+        @keyframes widthness {
+          0% {
+            font-variation-settings: "wght" $font-weight-light;
+          }
+          30% {
+            font-variation-settings: "wght" $font-weight-heavy;
+          }
+          70% {
+            font-variation-settings: "wght" $font-weight-normal;
+          }
+          100% {
+            font-variation-settings: "wght" $font-weight-light;
+          }
+        }
+        .dangerSpan {
+          animation: slintness 2s ease infinite;
+          font-variation-settings: "MONO" 0.2, "CASL" 0.5,
+            "wght" $font-weight-light, "CRSV" 1;
+        }
+        @keyframes slintness {
+          0% {
+            font-variation-settings: "slnt" 0, "CRSV" 1;
+          }
+          40% {
+            font-variation-settings: "slnt" -15, "CRSV" 1;
+          }
+          100% {
+            font-variation-settings: "slnt" 0, "CRSV" 1;
+          }
+        }
       }
       #githublink {
         color: $skillshare-green;
@@ -265,11 +299,12 @@ html {
 
         text-align: center;
         padding: 1.6vh;
+        cursor: $cursor-startreck-hand;
         a {
           font-variation-settings: "MONO" 1, "wght" $font-weight-light,
             "slnt" -1;
           color: inherit;
-          transition: $trans-normal;
+          transition: $trans-slow;
           &:hover {
             font-variation-settings: "MONO" 1, "wght" $font-weight-light,
               "slnt" -17, "CRSV" 0;

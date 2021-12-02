@@ -233,15 +233,15 @@ html footer {
   -ms-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 html footer .footer {
+  background-color: #1ed760;
   position: absolute;
   bottom: 0vh;
   margin: 0 auto;
-  background-color: #1ed760;
   overflow: hidden;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 html footer .footer .line {
@@ -258,18 +258,56 @@ html footer .footer .line span {
   padding-right: 50px;
 }
 
+html footer .footer .line .workingSpan {
+  animation: widthness 2s ease infinite;
+  font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
+}
+
+@keyframes widthness {
+  0% {
+    font-variation-settings: "wght" 500;
+  }
+  30% {
+    font-variation-settings: "wght" 800;
+  }
+  70% {
+    font-variation-settings: "wght" 620;
+  }
+  100% {
+    font-variation-settings: "wght" 500;
+  }
+}
+
+html footer .footer .line .dangerSpan {
+  animation: slintness 2s ease infinite;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
+}
+
+@keyframes slintness {
+  0% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+  40% {
+    font-variation-settings: "slnt" -15, "CRSV" 1;
+  }
+  100% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+}
+
 html footer .footer #githublink {
   color: #00ff84;
   font-variation-settings: "MONO" 1, "wght" 500, "slnt" 0;
   font-size: 1.3rem;
   text-align: center;
   padding: 1.6vh;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 html footer .footer #githublink a {
   font-variation-settings: "MONO" 1, "wght" 500, "slnt" -1;
   color: inherit;
-  transition: 0.3s;
+  transition: 0.45s;
 }
 
 html footer .footer #githublink a:hover {
