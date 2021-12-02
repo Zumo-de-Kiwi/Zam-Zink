@@ -4,69 +4,53 @@
 ///////////////// colors ///////////////
 
 html {
-  font-size: 62.5%; //Now 10px is equal 1rem
+  body {
+    height: 100%;
 
-  height: 100%;
-  box-sizing: border-box;
-}
-*,
-*::before *::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0px;
-  border: 0px;
-  height: 100%;
-
-  background-color: $background-color;
-  color: $font-black;
-  font-family: $ff-recursive;
-  font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal,
-    "slnt" $slnt;
-  // hyphens: auto; //when text breaks it will hyphen you a word
-
-  cursor: $cursor-pointer-hand;
-  ::selection {
-    // When text is selected it will be yellow
-    background-color: $background-selected-color;
+    background-color: $background-color;
     color: $font-black;
   }
 
   .main {
     .navigation {
-      //settings and the far left
-      background-color: rgb(232, 232, 232);
-      //color: $font-low-contrast-color;
-      font-weight: $font-weight-normal;
-      font-size: $font-size-normal; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
-      height: 64px;
+      height: 50px;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
 
+      .logo-svg {
+        display: inline-block;
+        width: 28px;
+        padding: 2rem;
+        cursor: $cursor-arrow-hand;
+        .hc-logo {
+          fill: $josh-light-blue;
+          &:hover {
+            fill: $font-linked-color;
+          }
+        }
+      }
       ul {
-        margin: 0px;
-        padding: 12px;
+        margin: 0px auto;
+        padding: 5rem;
 
-        width: auto;
-        height: auto;
-        text-align: left;
-
+        // width: auto;
+        // height: auto;
+        // text-align: left;
+        list-style-type: none;
         li {
+          font-size: $font-size-normal;
+          font-variation-settings: $MONO, "CASL" 0, "wght" $font-weight-normal,
+            $slnt;
           a {
+            transition: $trans-slow;
+            color: $font-sutil-gray-color;
             text-decoration: none;
-            color: $font-linked-color;
-
+            cursor: $cursor-arrow-hand;
             &:hover {
-              fill: $background-selected-color;
-            }
-
-            .logo-svg {
-              display: inline-block;
-              width: 36px;
-              fill: $font-linked-color;
-              //margin-top: 13px;
-
-              // svg:hover {
-              // }
+              color: $font-linked-color;
             }
           }
         }
@@ -75,17 +59,17 @@ body {
 
     .content_wrap {
       //all the middle right main content
-      left: 0;
-      overflow: auto;
-      height: 100%;
-      padding-bottom: 64px;
-      padding-left: 16vw;
-      padding-right: 14vw; //new
+      // left: 0;
+      // overflow: auto;
+      // height: 100%;
+      // padding-bottom: 10rem;
+      // padding-left: 16vw;
+      // padding-right: 14vw; //new
 
       ///////// Hi, I am Héctor /////////
       .content-name {
         // margin-bottom: 4vh;
-        // padding-top: 20vh;
+        padding-top: 10vh;
         font-family: $ff-recursive-bold;
         font-variation-settings: $MONO, "CASL" 0.4, "wght" $font-weight-heavy,
           $slnt;
@@ -95,7 +79,7 @@ body {
 
         .coma {
           position: relative;
-          margin-left: -4px; // move the coma and the following words to the left
+          margin-left: -13px; // move the coma and the following words to the left
         }
 
         .complete-name {
@@ -180,7 +164,7 @@ body {
 
       /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
       .content-portfolio {
-        font-size: $font-size-normal; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
+        font-size: $font-size-big; // if font-size is 62.5%(set in html then 3.5rem is exactly 35px
         font-variation-settings: "MONO" 0.2, "CASL" 0.2,
           "wght" $font-weight-bold, $slnt;
         color: $font-gray;
@@ -217,6 +201,31 @@ body {
           top: -7px;
           margin-left: 0px;
           font-size: $font-size-information;
+        }
+      }
+      #oneMore {
+        a {
+          text-decoration: none;
+          #mailText {
+            position: absolute;
+            // text-align: center;
+            right: 20vw;
+            color: transparent;
+            transition: $trans-normal;
+            transition-delay: $delay-fast;
+            &:hover {
+              // color: $font-linked-color;
+              // text-decoration: underline;
+              text-decoration-color: $spotify-text-green;
+            }
+          }
+        }
+        &:hover {
+          #mailText {
+            color: $font-linked-color;
+            text-decoration: underline;
+            text-decoration-color: $font-linked-color;
+          }
         }
       }
     }
@@ -278,7 +287,7 @@ body {
   @media (min-width: 320px) {
     .main {
       .content_wrap {
-        padding-bottom: 64px;
+        padding-bottom: 7vh;
         padding-left: 7vw;
         padding-right: 7vw;
         .content-name {
@@ -304,18 +313,21 @@ body {
   // Small devices (landscape phones, more than 576px)
 
   @media (min-width: 576.02px) {
-    .main {
-      content_wrap {
-        padding-left: 11vw;
-        padding-right: 11vw; //new
+    body {
+      // font-size: 17.05px;
+      .main {
+        content_wrap {
+          padding-left: 11vw;
+          padding-right: 11vw; //new
+        }
       }
-    }
-    footer {
-      .footer {
-        .line {
-          span {
-            font-size: $font-size-normal;
-            line-height: 4rem;
+      footer {
+        .footer {
+          .line {
+            span {
+              font-size: $font-size-normal;
+              line-height: 4rem;
+            }
           }
         }
       }
@@ -349,12 +361,13 @@ body {
     }
   }
   // Large devices (desktops, more than 992px)
-  // @media (min-width: 992.02px) {
-  // }
+  @media (min-width: 992.02px) {
+    body {
+      // font-size: calc(7.6px + (140vw - 1400px) / 399);
+    }
+  }
   // X-Large devices (large desktops, more than 1200px)
   @media (min-width: 1200.02px) {
-    font-size: 62.5%;
-
     .main {
       .content_wrap {
         padding-left: 25vw;

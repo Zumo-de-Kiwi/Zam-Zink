@@ -4,34 +4,32 @@
 @import "../../scss/globals";
 
 body {
-  background-color: $underline-color;
+  // background-color: $underline-color;
   font-family: $ff-recursive;
   font-variation-settings: "MONO" 1, $CASL, "wght" $font-weight-normal, $slnt;
   font-size: $font-size-normal;
   /////////////// | V | V | V | V | V | V | V /////////////
   header {
-    height: 100vh;
-    width: 99%;
-    padding: 7rem;
+    height: 96vh;
+    width: calc(100% -4rem);
     background-color: $font-linked-color;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
     // for let text overflow
-    overflow: hidden;
-    white-space: nowrap;
-
-    // &::after {
-    //   z-index: 99;
-    //   position: absolute;
-    //   border: 7rem solid black;
-    //   width: 100px;
-    //   height: 100px;
-    //   top: 0px;
-    //   left: 0px;
-    // }
+    // overflow: hidden;
+    // white-space: nowrap;
+    border: 2rem solid $font-linked-color;
     #down-arrows {
-      font-size: $font-size-nacho;
-      color: $background-color;
-      font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-lighter;
-      /// frame
+      pre {
+        font-size: $font-size-big;
+        color: $underline-color;
+        font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-lighter;
+        transition: 0.314s;
+        &:hover {
+          color: $font-linked-hover-color;
+        }
+      }
     }
   }
 
@@ -39,11 +37,11 @@ body {
   main {
     height: 100vh;
     width: 100%;
-    // background: rgb(98, 27, 197);
+    background: rgb(98, 27, 197);
     background: linear-gradient(
       180deg,
       rgba(98, 27, 197, 1) 0%,
-      rgba(191, 222, 242, 1) 100%
+      rgba(191, 222, 242, 1) 43%
     );
 
     .midGradient {
@@ -52,26 +50,29 @@ body {
       height: 5vh;
       background-color: $about-mid-gradient;
     }
-    .left-arrow {
-      font-size: $font-size-nacho;
-      margin: 4rem;
 
-      a {
+    a {
+      color: $background-color;
+      font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
+      text-decoration: none;
+      padding-left: 1rem;
+      &:hover {
         color: $background-color;
-        font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
-        text-decoration: none;
-        padding-left: 1rem;
-        /// IMPORTANT note working
+      }
+      #left-arrow {
+        //span
+        font-size: $font-size-nacho;
+        margin: 4rem;
+        // cursor: $cursor-please-fingers;
+        transition: 1s;
+        cursor: $cursor-arrow-hand;
         &:hover {
-          cursor: $cursor-arrow-hand;
+          /// IMPORTANT note working
+          // cursor: $cursor-arrow-hand;
+          color: white;
+          font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
         }
-        span {
-          transition: 1s;
-          &:hover {
-            color: white;
-            font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
-          }
-        }
+
         &::after {
           height: 2rem;
           width: 80%;
@@ -85,7 +86,7 @@ body {
         font-variation-settings: "MONO" 0.2, "CASL" 0.8,
           "wght" $font-weight-bold;
         font-size: $font-size-nacho;
-        color: $font-linked-color;
+        color: $josh-blue-white;
         text-align: center;
         margin: 0px auto;
       }

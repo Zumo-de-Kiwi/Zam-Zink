@@ -1,10 +1,8 @@
 @charset "UTF-8";
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 html {
   font-size: 62.5%;
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -16,108 +14,95 @@ html {
 body {
   margin: 0px;
   border: 0px;
-  color: #1b1e1a;
+  color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body ::selection {
   background-color: #fff705;
-  color: #1b1e1a;
+  color: #5b5957;
 }
 
 body h1 {
-  font-size: 3.5rem;
+  font-size: 3.7rem;
 }
 
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-html {
-  font-size: 62.5%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-*,
-*::before *::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0px;
-  border: 0px;
+html body {
   height: 100%;
   background-color: #fcfaf8;
-  color: #1b1e1a;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  color: #232522;
 }
 
-body ::selection {
-  background-color: #fff705;
-  color: #1b1e1a;
+html .main .navigation {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
 }
 
-body .main .navigation {
-  background-color: #e8e8e8;
-  font-weight: 620;
-  font-size: 2rem;
-  height: 64px;
-}
-
-body .main .navigation ul {
-  margin: 0px;
-  padding: 12px;
-  width: auto;
-  height: auto;
-  text-align: left;
-}
-
-body .main .navigation ul li a {
-  text-decoration: none;
-  color: #621bc5;
-}
-
-body .main .navigation ul li a:hover {
-  fill: #fff705;
-}
-
-body .main .navigation ul li a .logo-svg {
+html .main .navigation .logo-svg {
   display: inline-block;
-  width: 36px;
+  width: 28px;
+  padding: 2rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+html .main .navigation .logo-svg .hc-logo {
+  fill: #bfdef2;
+}
+
+html .main .navigation .logo-svg .hc-logo:hover {
   fill: #621bc5;
 }
 
-body .main .content_wrap {
-  left: 0;
-  overflow: auto;
-  height: 100%;
-  padding-bottom: 64px;
-  padding-left: 16vw;
-  padding-right: 14vw;
+html .main .navigation ul {
+  margin: 0px auto;
+  padding: 5rem;
+  list-style-type: none;
 }
 
-body .main .content_wrap .content-name {
+html .main .navigation ul li {
+  font-size: 2rem;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 620, "slnt" 0;
+}
+
+html .main .navigation ul li a {
+  transition: 0.45s;
+  color: #c4d4ca;
+  text-decoration: none;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+html .main .navigation ul li a:hover {
+  color: #621bc5;
+}
+
+html .main .content_wrap .content-name {
+  padding-top: 10vh;
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
   text-align: left;
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   word-spacing: 0.7px;
 }
 
-body .main .content_wrap .content-name .coma {
+html .main .content_wrap .content-name .coma {
   position: relative;
-  margin-left: -4px;
+  margin-left: -13px;
 }
 
-body .main .content_wrap .content-name .complete-name {
+html .main .content_wrap .content-name .complete-name {
   color: #621bc5;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   text-decoration: none;
 }
 
-body .main .content_wrap .content-name .complete-name .first-name {
+html .main .content_wrap .content-name .complete-name .first-name {
   position: relative;
   transition: 0.3s ease-out;
   transition-delay: 0.16s;
@@ -125,7 +110,7 @@ body .main .content_wrap .content-name .complete-name .first-name {
   text-decoration-color: #a48cee;
 }
 
-body .main .content_wrap .content-name .complete-name .first-name::after {
+html .main .content_wrap .content-name .complete-name .first-name::after {
   content: "about me ⤴️";
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0);
@@ -140,17 +125,17 @@ body .main .content_wrap .content-name .complete-name .first-name::after {
   transition-delay: 0.16s;
 }
 
-body .main .content_wrap .content-name .complete-name .first-name:hover {
+html .main .content_wrap .content-name .complete-name .first-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 1, "wght" 760, "slnt" 0;
   text-decoration-color: #1ed760;
 }
 
-body .main .content_wrap .content-name .complete-name .first-name:hover::after {
+html .main .content_wrap .content-name .complete-name .first-name:hover::after {
   color: #a48cee;
   bottom: 2px;
 }
 
-body .main .content_wrap .content-name .complete-name .family-name {
+html .main .content_wrap .content-name .complete-name .family-name {
   position: relative;
   transition: 0.45s ease-out;
   transition-delay: 0.16s;
@@ -158,7 +143,7 @@ body .main .content_wrap .content-name .complete-name .family-name {
   text-decoration-color: #a48cee;
 }
 
-body .main .content_wrap .content-name .complete-name .family-name::after {
+html .main .content_wrap .content-name .complete-name .family-name::after {
   content: "contact ⤴️";
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0);
@@ -173,24 +158,24 @@ body .main .content_wrap .content-name .complete-name .family-name::after {
   transition-delay: 0.16s;
 }
 
-body .main .content_wrap .content-name .complete-name .family-name:hover {
+html .main .content_wrap .content-name .complete-name .family-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 760, "slnt" 0;
   text-decoration-color: #1ed760;
 }
 
-body .main .content_wrap .content-name .complete-name .family-name:hover::after {
+html .main .content_wrap .content-name .complete-name .family-name:hover::after {
   color: #a48cee;
   bottom: 2px;
 }
 
-body .main .content_wrap .content-portfolio {
-  font-size: 2rem;
+html .main .content_wrap .content-portfolio {
+  font-size: 2.5rem;
   font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 730, "slnt" 0;
-  color: #2b2b2c;
+  color: #5b5957;
   text-align: left;
 }
 
-body .main .content_wrap .content-portfolio .link {
+html .main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 760, "slnt" 0;
@@ -199,16 +184,16 @@ body .main .content_wrap .content-portfolio .link {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-body .main .content_wrap .content-portfolio .link:hover {
+html .main .content_wrap .content-portfolio .link:hover {
   font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 760, "slnt" 0;
   text-decoration-color: #621bc5;
 }
 
-body .main .content_wrap .content-portfolio .link:active {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0;
+html .main .content_wrap .content-portfolio .link:active {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
-body .main .content_wrap .content-portfolio .link-number {
+html .main .content_wrap .content-portfolio .link-number {
   color: #621bc5;
   position: relative;
   left: -3px;
@@ -217,7 +202,29 @@ body .main .content_wrap .content-portfolio .link-number {
   font-size: 1.3rem;
 }
 
-body footer {
+html .main .content_wrap #oneMore a {
+  text-decoration: none;
+}
+
+html .main .content_wrap #oneMore a #mailText {
+  position: absolute;
+  right: 20vw;
+  color: transparent;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+
+html .main .content_wrap #oneMore a #mailText:hover {
+  text-decoration-color: #1ed760;
+}
+
+html .main .content_wrap #oneMore:hover #mailText {
+  color: #621bc5;
+  text-decoration: underline;
+  text-decoration-color: #621bc5;
+}
+
+html footer {
   display: flex;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -228,7 +235,7 @@ body footer {
   -ms-flex-pack: center;
 }
 
-body footer .footer {
+html footer .footer {
   position: absolute;
   bottom: 0vh;
   margin: 0 auto;
@@ -237,12 +244,12 @@ body footer .footer {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-body footer .footer .line {
+html footer .footer .line {
   text-align: center;
 }
 
-body footer .footer .line span {
-  font-size: 3.5rem;
+html footer .footer .line span {
+  font-size: 3.7rem;
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
   padding: 12px;
@@ -251,7 +258,7 @@ body footer .footer .line span {
   padding-right: 50px;
 }
 
-body footer .footer #githublink {
+html footer .footer #githublink {
   color: #00ff84;
   font-variation-settings: "MONO" 1, "wght" 500, "slnt" 0;
   font-size: 1.3rem;
@@ -259,68 +266,65 @@ body footer .footer #githublink {
   padding: 1.6vh;
 }
 
-body footer .footer #githublink a {
+html footer .footer #githublink a {
   font-variation-settings: "MONO" 1, "wght" 500, "slnt" -1;
   color: inherit;
   transition: 0.3s;
 }
 
-body footer .footer #githublink a:hover {
+html footer .footer #githublink a:hover {
   font-variation-settings: "MONO" 1, "wght" 500, "slnt" -17, "CRSV" 0;
 }
 
 @media (min-width: 320px) {
-  body .main .content_wrap {
-    padding-bottom: 64px;
+  html .main .content_wrap {
+    padding-bottom: 7vh;
     padding-left: 7vw;
     padding-right: 7vw;
   }
-  body .main .content_wrap .content-name {
+  html .main .content_wrap .content-name {
     padding-top: 19vh;
     padding-bottom: 10vh;
     text-align: left;
     font-size: 4rem;
   }
-  body footer .footer .line span {
+  html footer .footer .line span {
     font-size: 1.6rem;
     line-height: 2.7rem;
   }
 }
 
 @media (min-width: 576.02px) {
-  body .main content_wrap {
+  html body .main content_wrap {
     padding-left: 11vw;
     padding-right: 11vw;
   }
-  body footer .footer .line span {
+  html body footer .footer .line span {
     font-size: 2rem;
     line-height: 4rem;
   }
 }
 
 @media (min-width: 768.02px) {
-  body .main .content_wrap {
+  html .main .content_wrap {
     padding-left: 17vw;
     padding-right: 17vw;
   }
-  body .main .content_wrap .content-name {
+  html .main .content_wrap .content-name {
     text-align: center;
     padding-right: 11.5vh;
   }
-  body .main .content-portfolio {
-    font-size: 2.7rem;
+  html .main .content-portfolio {
+    font-size: 2.5rem;
   }
-  body footer .footer .line span {
-    font-size: 2.7rem;
+  html footer .footer .line span {
+    font-size: 2.5rem;
     line-height: 6rem;
   }
 }
 
 @media (min-width: 1200.02px) {
-  body {
-    font-size: 62.5%;
-  }
-  body .main .content_wrap {
+  html .main .content_wrap {
     padding-left: 25vw;
     padding-right: 23vw;
   }

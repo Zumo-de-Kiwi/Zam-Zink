@@ -1,11 +1,8 @@
 @charset "UTF-8";
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 html {
   font-size: 62.5%;
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -17,47 +14,60 @@ html {
 body {
   margin: 0px;
   border: 0px;
-  color: #1b1e1a;
+  color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body ::selection {
   background-color: #fff705;
-  color: #1b1e1a;
+  color: #5b5957;
 }
 
 body h1 {
-  font-size: 3.5rem;
+  font-size: 3.7rem;
 }
 
 body {
-  background-color: #a48cee;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;
   font-size: 2rem;
 }
 
 body header {
-  height: 100vh;
-  width: 99%;
-  padding: 7rem;
+  height: 96vh;
+  width: calc(100% -4rem);
   background-color: #621bc5;
-  overflow: hidden;
-  white-space: nowrap;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  border: 2rem solid #621bc5;
 }
 
-body header #down-arrows {
-  font-size: 6rem;
-  color: #fcfaf8;
+body header #down-arrows pre {
+  font-size: 2.5rem;
+  color: #a48cee;
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400;
+  transition: 0.314s;
+}
+
+body header #down-arrows pre:hover {
+  color: #8c12f8;
 }
 
 body main {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(180deg, #621bc5 0%, #bfdef2 100%);
+  background: #621bc5;
+  background: linear-gradient(180deg, #621bc5 0%, #bfdef2 43%);
 }
 
 body main .midGradient {
@@ -67,32 +77,30 @@ body main .midGradient {
   background-color: linear-gradient(180deg, #621bc5 0%, #bfdef2 100%);
 }
 
-body main .left-arrow {
-  font-size: 6rem;
-  margin: 4rem;
-}
-
-body main .left-arrow a {
+body main a {
   color: #fcfaf8;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
 }
 
-body main .left-arrow a:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0;
+body main a:hover {
+  color: #fcfaf8;
 }
 
-body main .left-arrow a span {
+body main a #left-arrow {
+  font-size: 6rem;
+  margin: 4rem;
   transition: 1s;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
-body main .left-arrow a span:hover {
+body main a #left-arrow:hover {
   color: white;
   font-variation-settings: "CASL" 0.9, "wght" 500;
 }
 
-body main .left-arrow a::after {
+body main a #left-arrow::after {
   height: 2rem;
   width: 80%;
   color: #621bc5;
@@ -105,7 +113,7 @@ body main .content {
 body main .content h1 {
   font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 730;
   font-size: 6rem;
-  color: #621bc5;
+  color: #eff1f5;
   text-align: center;
   margin: 0px auto;
 }
@@ -117,7 +125,7 @@ body main .content .aboutContent {
 
 body main .content .aboutContent h3 {
   font-variation-settings: "CASL" 0.6, "wght" 620;
-  color: #2b2b2c;
+  color: #5b5957;
 }
 
 body main .content .aboutContent p {

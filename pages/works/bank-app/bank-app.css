@@ -1,11 +1,8 @@
 @charset "UTF-8";
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 /*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
-/*The cursors: 👆 👈 🖖 ☝️🤞 ✌️*/
 html {
   font-size: 62.5%;
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -17,17 +14,19 @@ html {
 body {
   margin: 0px;
   border: 0px;
-  color: #1b1e1a;
+  color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body ::selection {
   background-color: #fff705;
-  color: #1b1e1a;
+  color: #5b5957;
 }
 
 body h1 {
-  font-size: 3.5rem;
+  font-size: 3.7rem;
 }
