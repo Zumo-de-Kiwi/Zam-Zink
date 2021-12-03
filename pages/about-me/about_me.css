@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 *,
@@ -17,7 +18,6 @@ body {
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body ::selection {
@@ -26,13 +26,13 @@ body ::selection {
 }
 
 body h1 {
-  font-size: 3.7rem;
+  font-size: calc(1.2vw + 0.6vw + 14px);
 }
 
 body {
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;
-  font-size: 2rem;
+  font-size: calc(1.2vw - 0.15vw + 7.2px);
 }
 
 body header {
@@ -55,25 +55,18 @@ body header #down-arrows {
 }
 
 body header #down-arrows pre {
-  font-size: 2.5rem;
-  color: #a48cee;
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400;
-  transition: 0.314s;
-}
-
-body header #down-arrows pre:hover {
-  color: #8c12f8;
+  font-size: calc(1.2vw + 0.6vw + 14px);
+  color: #c0def2;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" 0.5, "CASL" 1, "wght" 400;
+  transition: 0.1s;
 }
 
 body main {
   height: 100vh;
   width: 100%;
   background: #621bc5;
-  background: linear-gradient(180deg, #621bc5 0%, #672eb6 27%, #bfdef2 83%);
-}
-
-body main .midGradient {
-  background-color: linear-gradient(180deg, #621bc5 0%, #bfdef2 100%);
+  background: linear-gradient(180deg, #621bc5 0%, #672eb6 29%, #bfdef2 71%);
 }
 
 body main a {
@@ -81,23 +74,21 @@ body main a {
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
+  font-size: calc(1.2vw + 1vw + 26px);
 }
 
 body main a:hover {
   color: #fcfaf8;
+  font-variation-settings: "CASL" 0.9, "wght" 500;
+  color: white;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
 body main a #left-arrow {
-  font-size: 6rem;
   margin: 4rem;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
-}
-
-body main a #left-arrow:hover {
-  color: white;
-  font-variation-settings: "CASL" 0.9, "wght" 500;
 }
 
 body main a #left-arrow::after {
@@ -107,28 +98,40 @@ body main a #left-arrow::after {
 }
 
 body main .content {
-  margin: 7rem;
+  max-width: 800px;
+  margin: 4vh;
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
 }
 
 body main .content h1 {
-  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 730;
-  font-size: 6rem;
-  color: #eff1f5;
-  text-align: center;
-  margin: 0px auto;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 690;
+  font-size: calc(1.2vw + 1vw + 26px);
+  color: #a48cee;
 }
 
-body main .content .aboutContent {
-  background-color: #fcfaf8;
-  padding: 2.4rem 2rem;
-}
-
-body main .content .aboutContent h3 {
+body main .content h3 {
+  padding: 4vh;
   font-variation-settings: "CASL" 0.6, "wght" 620;
-  color: #5b5957;
+  color: #c0def2;
 }
 
-body main .content .aboutContent p {
-  font-variation-settings: "CASL" 0.6, "wght" 500;
-  color: #621bc5;
+body main .content #aboutContent {
+  width: 40vw;
+}
+
+body main .content p {
+  font-variation-settings: "CASL" 0.6, "wght" 400;
+  color: #431485;
+  font-size: calc(1.2vw - 0.3vw + 5.8px);
+  padding: 2vh;
+  background: linear-gradient(180deg, #be93f9 0%, #d5c3ee 27%, #c0def2 83%);
 }

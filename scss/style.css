@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 *,
@@ -17,7 +18,6 @@ body {
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body ::selection {
@@ -26,7 +26,13 @@ body ::selection {
 }
 
 body h1 {
-  font-size: 3.7rem;
+  font-size: calc(1.2vw + 0.6vw + 14px);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes widthness {
@@ -59,6 +65,10 @@ body h1 {
   100% {
     font-variation-settings: "slnt" 0, "CRSV" 1;
   }
+}
+
+html .loader {
+  position: absolute;
 }
 
 html body {
@@ -99,7 +109,7 @@ html .main .navigation ul {
 }
 
 html .main .navigation ul li {
-  font-size: 2.5rem;
+  font-size: calc(1.2vw + 0.2vw + 9px);
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 620, "slnt" 0;
 }
 
@@ -111,7 +121,7 @@ html .main .navigation ul li a {
 }
 
 html .main .navigation ul li a:hover {
-  color: #621bc5;
+  color: #4d435b;
 }
 
 html .main .navigation ul li .nowPage {
@@ -124,7 +134,7 @@ html .main .navigation ul li .filter {
 
 html .main .content_wrap .content-name {
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-size: 3.7rem;
+  font-size: calc(1.2vw + 0.6vw + 14px);
   font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
   text-align: left;
   color: #4d435b;
@@ -133,7 +143,7 @@ html .main .content_wrap .content-name {
 
 html .main .content_wrap .content-name .coma {
   position: relative;
-  margin-left: -13px;
+  margin-left: calc( -3px * 1vw);
 }
 
 html .main .content_wrap .content-name .complete-name {
@@ -152,7 +162,7 @@ html .main .content_wrap .content-name .complete-name .first-name {
 
 html .main .content_wrap .content-name .complete-name .first-name::after {
   content: "about me ⤴️";
-  font-size: 1.6rem;
+  font-size: calc(1.2vw - 0.3vw + 5.8px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
@@ -166,7 +176,7 @@ html .main .content_wrap .content-name .complete-name .first-name::after {
 }
 
 html .main .content_wrap .content-name .complete-name .first-name:hover {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 760, "slnt" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 740, "slnt" 0;
   text-decoration-color: #1dd75e;
 }
 
@@ -185,7 +195,7 @@ html .main .content_wrap .content-name .complete-name .family-name {
 
 html .main .content_wrap .content-name .complete-name .family-name::after {
   content: "contact ⤴️";
-  font-size: 1.6rem;
+  font-size: calc(1.2vw - 0.3vw + 5.8px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
@@ -199,7 +209,7 @@ html .main .content_wrap .content-name .complete-name .family-name::after {
 }
 
 html .main .content_wrap .content-name .complete-name .family-name:hover {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 760, "slnt" 0;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 740, "slnt" 0;
   text-decoration-color: #1dd75e;
 }
 
@@ -209,9 +219,9 @@ html .main .content_wrap .content-name .complete-name .family-name:hover::after 
 }
 
 html .main .content_wrap .content-portfolio {
-  font-size: 2.5rem;
+  font-size: calc(1.2vw + 0.2vw + 9px);
   --main-weight: 600;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" var(--main-weight), "slnt" 0;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;
   color: #5b5957;
   text-align: left;
 }
@@ -219,14 +229,14 @@ html .main .content_wrap .content-portfolio {
 html .main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
-  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 760, "slnt" 0;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 620, "slnt" 0;
   transition: 0.3s;
   text-decoration-color: #a48cee;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 html .main .content_wrap .content-portfolio .link:hover {
-  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 760, "slnt" 0;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 740, "slnt" 0;
   text-decoration-color: #621bc5;
 }
 
@@ -236,11 +246,12 @@ html .main .content_wrap .content-portfolio .link:active {
 
 html .main .content_wrap .content-portfolio .link-number {
   color: #621bc5;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 740;
   position: relative;
-  left: -3px;
+  left: -7px;
   top: -7px;
   margin-left: 0px;
-  font-size: 1.3rem;
+  font-size: calc(0.6vw + 2.8px);
 }
 
 html .main .content_wrap #oneMore a {
@@ -253,10 +264,12 @@ html .main .content_wrap #oneMore a #mailText {
   color: transparent;
   transition: 0.3s;
   transition-delay: 0.1s;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 620;
 }
 
 html .main .content_wrap #oneMore a #mailText:hover {
   text-decoration-color: #1dd75e;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 690;
 }
 
 html .main .content_wrap #oneMore:hover #mailText {
@@ -290,7 +303,6 @@ html footer .footer {
 
 @media (max-width: 800px) {
   html footer .footer {
-    font-size: 2.5rem;
     bottom: 0px;
     margin-bottom: 0rem;
     border-radius: 0px;
@@ -302,7 +314,7 @@ html footer .footer .line {
 }
 
 html footer .footer .line span {
-  font-size: 2rem;
+  font-size: calc(1.2vw - 0.15vw + 7.2px);
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
   padding: 12px;
@@ -313,7 +325,6 @@ html footer .footer .line span {
 
 @media (max-width: 800px) {
   html footer .footer .line span {
-    font-size: 1.6rem;
     line-height: 2.4rem;
   }
 }
@@ -333,7 +344,7 @@ html footer .footer .line .dangerSpan {
 html footer .footer #githublink {
   color: #00ff84;
   font-variation-settings: "MONO" 1, "wght" 500, "slnt" 0;
-  font-size: 1.3rem;
+  font-size: calc( 1.2vw - 0.5vw + 4.5px);
   text-align: center;
   padding: 1.6vh;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
@@ -359,7 +370,6 @@ html footer .footer #githublink a:hover {
     padding-top: 17vh;
     padding-bottom: 10vh;
     text-align: left;
-    font-size: 4rem;
   }
 }
 
@@ -371,9 +381,6 @@ html footer .footer #githublink a:hover {
   html .main .content_wrap .content-name {
     text-align: center;
     padding-right: 11.5vh;
-  }
-  html .main .content-portfolio {
-    font-size: 2.5rem;
   }
 }
 

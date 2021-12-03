@@ -1,5 +1,19 @@
 @import "variables";
 
+// Normal clock rotate
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+    // transform: skewX(15deg);
+  }
+}
+// X-axis rotate
+// @keyframes twist-up {
+//   to {
+//     transform: rotateX(360deg);
+//   }
+// }
+
 @keyframes widthness {
   0% {
     font-variation-settings: "wght" $font-weight-light;
@@ -30,3 +44,108 @@
     font-variation-settings: "slnt" 0, "CRSV" 1;
   }
 }
+
+// Emoji Wave hand
+// .wave {
+//   animation-name: wave-hand;
+//   animation-duration: 3s;
+//   animation-iteration-count: infinite;
+//   transform-origin: 50% 50%;
+// }
+// @keyframes waveHand {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   10% {
+//     transform: rotate(20deg);
+//   }
+//   20% {
+//     transform: rotate(-10deg);
+//   }
+//   30% {
+//     transform: rotate(20deg);
+//   }
+//   40% {
+//     transform: rotate(-6deg);
+//   }
+//   50% {
+//     transform: rotate(12deg);
+//   }
+//   60% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
+
+/////////// EMOJI ANIM /////
+// with this your emoji va dando vueltas por tod la pantalla sin parar
+// i {
+//   font-size: 44px;
+//   position: absolute; //old: display: inline-block;
+//   left: 0;
+//   right: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 50%; /* Need a specific value to work */
+//   height: 100vh;
+//   animation: spin 1s infinite linear;
+// }
+
+////// Moving like it was from italic to normal
+// .tree-1 {
+//   top: 0px;
+//   left: 300px;
+// }
+// //
+// .tree {
+//   font-size: 120px;
+//   position: absolute;
+//   animation-name: swaying;
+//   animation-duration: 4s;
+//   animation-iteration-count: infinite;
+//   animation-direction: alternate;
+// }
+// @keyframes swaying {
+//   from {
+//     transform: skewX(15deg);
+//   }
+
+//   to {
+//     transform: skewX(-15deg);
+//   }
+// }
+
+// https://codepen.io/rivass/pen/VBYOEr?editors=0100
+// MOving from right to left and then again(dejavu)
+// .sailboat {
+//   font-size: 75px;
+//   position: absolute;
+//   animation-name: sailing;
+//   animation-duration: 4s;
+//   animation-timing-function: linear;
+//   animation-iteration-count: infinite;
+// }
+// @keyframes sailing {
+//   0% {
+//   top: 150px;
+//   right: 20px;
+// }
+//   25% {
+//   top: 180px;
+
+// }
+//   50% {
+//   top: 150px;
+
+// }
+//   75% {
+//   top: 120px;
+
+// }
+//   100% {
+//   top: 150px;
+//   right: 100%;
+// }
+// }

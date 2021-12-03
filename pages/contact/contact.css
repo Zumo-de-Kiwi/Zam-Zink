@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 *,
@@ -17,7 +18,6 @@ body {
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body ::selection {
@@ -26,5 +26,128 @@ body ::selection {
 }
 
 body h1 {
-  font-size: 3.7rem;
+  font-size: calc(1.2vw + 0.6vw + 14px);
+}
+
+body {
+  height: 100%;
+}
+
+body .container {
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+}
+
+body .container section {
+  padding: 2rem;
+}
+
+body .container .logo-svg {
+  display: inline-block;
+  width: 30px;
+  padding: 2rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body .container .logo-svg:hover .hc-logo {
+  fill: #4d435b;
+}
+
+body .container .logo-svg .hc-logo {
+  transition: 0.45s;
+  fill: #b9cabf;
+}
+
+body .container h1 {
+  color: #b9cabf;
+  text-align: center;
+}
+
+body .container p {
+  --weight: 500;
+  font-size: calc(1.2vw - 0.15vw + 7.2px);
+  font-variation-settings: "wght" var(--weight);
+}
+
+body .container #mailFrame a {
+  text-decoration-color: #b9cabf;
+  transition: 0.45s;
+}
+
+body .container #mailFrame a:hover {
+  text-decoration-color: #232522;
+}
+
+body .container #mailFrame a #mailText {
+  font-variation-settings: "MONO" 1, "CASL" 0.2, "wght" 500;
+  font-size: calc(1.2vw - 0.15vw + 7.2px);
+  transition: font-variation-settings 0.5s ease;
+  font-size: calc(3vw + 12px);
+  user-select: none;
+  color: #4d435b;
+}
+
+body .container #mailFrame a #mailText:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>💌 </text></svg>") 16 0, auto;
+  font-variation-settings: "MONO" 1, "CASL" 0.01, "wght" 400;
+  color: #232522;
+}
+
+body .container #mailFrame div {
+  display: none;
+}
+
+body .container #mailFrame:hover div {
+  font-size: calc(3vw + 40px);
+  position: fixed;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(3vw + 70px);
+  height: calc(3vw + 70px);
+  border-radius: 50%;
+}
+
+body .container #mailFrame:hover .wave {
+  display: block;
+  animation-name: waveHand;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

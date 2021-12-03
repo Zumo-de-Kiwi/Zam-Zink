@@ -22,6 +22,7 @@ $font-black: hsl(100, 4%, 14%);
 $font-gray: hsl(30, 2%, 35%);
 $font-sutil-gray-color: hsl(141, 14%, 76%);
 $sutil-dark-purple-gray-color: hsl(265, 15%, 31%);
+$font-dark-linked-color: hsl(265, 74%, 30%);
 $font-linked-color: hsl(265, 76%, 44%);
 $font-linked-hover-color: hsl(272, 94%, 52%);
 $font-low-contrast-color: hsl(200, 3%, 82%);
@@ -34,20 +35,24 @@ $skillshare-green: hsl(151, 100%, 50%);
 $spotify-text-green: hsl(141, 76%, 48%);
 
 $font-weight-heavy: 800;
-$font-weight-bolder: 760;
-$font-weight-bold: 730;
+$font-weight-bolder: 740;
+$font-weight-bold: 690;
 $font-weight-normal: 620;
 $font-weight-light: 500;
 $font-weight-lighter: 400;
-$font-weight-ligther: 300;
+$font-weight-lightest: 300;
 
-$font-size-nacho: 6rem;
-$font-size-huge: 3.7rem;
-$font-size-big: 2.5rem;
-$font-size-normal: 2rem;
-$font-size-small: 1.6rem;
-$font-size-information: 1.3rem;
-$font-size-linkNumber: 0.8rem;
+///////////// SIZE ////////////////////
+$font-size-imcrement: 1.2;
+$font-size-nacho: calc(#{$font-size-imcrement}vw + 1vw + 26px); //6rem
+$font-size-huge: calc(#{$font-size-imcrement}vw + 0.6vw + 14px); //3.7rem;
+$font-size-big: calc(#{$font-size-imcrement}vw + 0.2vw + 9px); //2.5rem; //
+$font-size-normal: calc(#{$font-size-imcrement}vw - 0.15vw + 7.2px); //2rem;
+$font-size-small: calc(#{$font-size-imcrement}vw - 0.3vw + 5.8px); //1.6rem;
+$font-size-information: calc(
+  #{$font-size-imcrement}vw - 0.5vw + 4.5px
+); //1.3rem;
+$font-size-linkNumber: calc(0.6vw + 2.8px); //0.8rem;
 
 ///////////////// GRADIENT ///////////////
 $linear-gradient-purple-blue: linear-gradient(
@@ -93,5 +98,12 @@ $cursor-pointer-down-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w
     16 0,
   auto;
 $cursor-pointer-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🔎</text></svg>")
+    16 0,
+  auto;
+$cursor-say-hi: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>👋</text></svg>")
+    16 0,
+  auto;
+
+$cursor-contact-mail: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>💌 </text></svg>")
     16 0,
   auto;

@@ -23,13 +23,16 @@ body {
     #down-arrows {
       cursor: $cursor-pointer-down-hand;
       pre {
-        font-size: $font-size-big;
-        color: $underline-color;
-        font-variation-settings: "MONO" 1, "CASL" 0, "wght" $font-weight-lighter;
-        transition: 0.314s;
-        &:hover {
-          color: $font-linked-hover-color;
-        }
+        font-size: $font-size-huge;
+        color: $josh-light-blue;
+
+        font-family: $ff-recursive;
+        font-variation-settings: "MONO" 0.5, "CASL" 1,
+          "wght" $font-weight-lighter;
+        transition: 0.1s;
+        // &:hover {
+        //   color: $josh-blue-white;
+        // }
       }
     }
   }
@@ -42,38 +45,34 @@ body {
     background: linear-gradient(
       180deg,
       rgba(98, 27, 197, 1) 0%,
-      rgb(103, 46, 182) 27%,
-      rgba(191, 222, 242, 1) 83%
+      rgb(103, 46, 182) 29%,
+      rgba(191, 222, 242, 1) 71%
     );
 
-    .midGradient {
-      // position: absolute;
-      // top: 0px;
-      // height: 5vh;
-      background-color: $about-mid-gradient;
-    }
+    // .midGradient {
+    //   // position: absolute;
+    //   // top: 0px;
+    //   // height: 5vh;
+    //   background-color: $about-mid-gradient;
+    // }
 
     a {
       color: $background-color;
       font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
       text-decoration: none;
       padding-left: 1rem;
+      font-size: $font-size-nacho;
       &:hover {
         color: $background-color;
+        font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
+        color: white;
+        cursor: $cursor-arrow-hand;
       }
       #left-arrow {
-        font-size: $font-size-nacho;
         margin: 4rem;
         cursor: $cursor-please-fingers;
         transition: 1s;
         cursor: $cursor-arrow-hand;
-        &:hover {
-          /// IMPORTANT note working
-          // cursor: $cursor-arrow-hand;
-          color: white;
-          font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
-        }
-
         &::after {
           height: 2rem;
           width: 80%;
@@ -82,27 +81,46 @@ body {
       }
     }
     .content {
-      margin: 7rem;
+      max-width: 800px;
+      margin: 4vh;
+      /* We first create a flex layout context */
+      display: flex;
+      /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;*/
+      flex-flow: row wrap;
+      /* Then we define how is distributed the remaining space */
+      justify-content: space-around;
       h1 {
         font-variation-settings: "MONO" 0.2, "CASL" 0.8,
           "wght" $font-weight-bold;
         font-size: $font-size-nacho;
-        color: $josh-blue-white;
-        text-align: center;
-        margin: 0px auto;
+        color: $underline-color;
+        // text-align: center;
+        // margin: 0px auto;
       }
-      .aboutContent {
-        background-color: $background-color;
-
-        padding: 2.4rem 2rem;
-        h3 {
-          font-variation-settings: "CASL" 0.6, "wght" $font-weight-normal;
-          color: $font-gray;
-        }
-        p {
-          font-variation-settings: "CASL" 0.6, "wght" $font-weight-light;
-          color: $font-linked-color;
-        }
+      h3 {
+        // background-color: $background-color;
+        padding: 4vh;
+        font-variation-settings: "CASL" 0.6, "wght" $font-weight-normal;
+        color: $josh-light-blue;
+      }
+      #aboutContent {
+        width: 40vw;
+      }
+      p {
+        font-variation-settings: "CASL" 0.6, "wght" $font-weight-lighter;
+        color: $font-dark-linked-color;
+        font-size: $font-size-small;
+        padding: 2vh;
+        background: linear-gradient(
+          180deg,
+          rgb(190, 147, 249) 0%,
+          rgb(213, 195, 238) 27%,
+          $josh-light-blue 83%
+        );
       }
     }
   }
