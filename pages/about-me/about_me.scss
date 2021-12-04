@@ -57,10 +57,11 @@ body {
     // }
 
     a {
-      color: $background-color;
+      color: $josh-light-blue;
       font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
       text-decoration: none;
       padding-left: 1rem;
+      position: absolute;
       font-size: $font-size-nacho;
       &:hover {
         color: $background-color;
@@ -73,39 +74,60 @@ body {
         cursor: $cursor-please-fingers;
         transition: 1s;
         cursor: $cursor-arrow-hand;
-        &::after {
-          height: 2rem;
-          width: 80%;
-          color: $font-linked-color;
-        }
+        // &::after {
+        //   height: 2rem;
+        //   width: 80%;
+        //   color: $font-linked-color;
+        // }
       }
     }
     .content {
-      max-width: 800px;
-      margin: 4vh;
-      /* We first create a flex layout context */
       display: flex;
-      /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;*/
-      flex-flow: row wrap;
-      /* Then we define how is distributed the remaining space */
-      justify-content: space-around;
-      h1 {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      //     max-width: 800px;
+      //     // margin: 4vh;
+      //     /* We first create a flex layout context */
+      //     display: flex;
+      //     /* Then we define the flow direction
+      //    and if we allow the items to wrap
+      //  * Remember this is the same as:
+      //  * flex-direction: row;
+      //  * flex-wrap: wrap;*/
+      //     flex-flow: row wrap;
+      //     /* Then we define how is distributed the remaining space */
+      //     justify-content: space-around;
+      .box {
+        width: 100%;
+        max-width: 30%;
+        border: 1px solid $spotify-text-green;
+        margin: 5px;
+      }
+      @media only screen and (max-width: 768px) {
+        .box {
+          width: 100%;
+          max-width: 40%;
+          border: 1px solid $spotify-text-green;
+        }
+      }
+
+      .title {
         font-variation-settings: "MONO" 0.2, "CASL" 0.8,
           "wght" $font-weight-bold;
         font-size: $font-size-nacho;
         color: $underline-color;
-        // text-align: center;
         // margin: 0px auto;
+        text-align: center;
+        align-self: center;
       }
-      h3 {
+      .subtitle {
         // background-color: $background-color;
+        max-width: 500px;
         padding: 4vh;
         font-variation-settings: "CASL" 0.6, "wght" $font-weight-normal;
         color: $josh-light-blue;
+        width: 100%;
       }
       #aboutContent {
         width: 40vw;

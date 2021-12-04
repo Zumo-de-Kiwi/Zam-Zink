@@ -330,7 +330,6 @@ html footer .footer .line span {
 }
 
 html footer .footer .line .workingSpan {
-  animation: widthness 2s ease infinite;
   color: #00ff84;
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
