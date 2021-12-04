@@ -26,13 +26,13 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(1.2vw + 0.6vw + 14px);
+  font-size: calc(0.5vw + 0.4vw + 30px);
 }
 
 body {
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;
-  font-size: calc(1.2vw - 0.15vw + 7.2px);
+  font-size: calc(0.5vw + 0.3vw + 13px);
 }
 
 body header {
@@ -55,7 +55,7 @@ body header #down-arrows {
 }
 
 body header #down-arrows pre {
-  font-size: calc(1.2vw + 0.6vw + 14px);
+  font-size: calc(0.5vw + 0.4vw + 30px);
   color: #c0def2;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0.5, "CASL" 1, "wght" 400;
@@ -75,7 +75,7 @@ body main a {
   text-decoration: none;
   padding-left: 1rem;
   position: absolute;
-  font-size: calc(1.2vw + 1vw + 26px);
+  font-size: calc(0.5vw + 0.8vw + 40px);
 }
 
 body main a:hover {
@@ -116,7 +116,7 @@ body main .content .box {
 
 body main .content .title {
   font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 690;
-  font-size: calc(1.2vw + 1vw + 26px);
+  font-size: calc(0.5vw + 0.8vw + 40px);
   color: #a48cee;
   text-align: center;
   align-self: center;
@@ -137,7 +137,7 @@ body main .content #aboutContent {
 body main .content p {
   font-variation-settings: "CASL" 0.6, "wght" 400;
   color: #431485;
-  font-size: calc(1.2vw - 0.3vw + 5.8px);
+  font-size: calc(0.5vw - 0vw + 12px);
   padding: 2vh;
   background: linear-gradient(180deg, #be93f9 0%, #d5c3ee 27%, #c0def2 83%);
 }

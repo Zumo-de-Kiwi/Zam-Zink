@@ -26,7 +26,7 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(1.2vw + 0.6vw + 14px);
+  font-size: calc(0.5vw + 0.4vw + 30px);
 }
 
 @keyframes spin {
@@ -109,11 +109,12 @@ html .main .navigation ul {
 }
 
 html .main .navigation ul li {
-  font-size: calc(1.2vw + 0.2vw + 9px);
+  font-size: calc(0.5vw + 0vw + 18px);
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 620, "slnt" 0;
 }
 
 html .main .navigation ul li a {
+  margin: calc(0.4vh + 2px);
   transition: 0.45s;
   color: #b9cabf;
   text-decoration: none;
@@ -134,7 +135,7 @@ html .main .navigation ul li .filter {
 
 html .main .content_wrap .content-name {
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-size: calc(1.2vw + 0.6vw + 14px);
+  font-size: calc(0.5vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
   text-align: left;
   color: #4d435b;
@@ -162,7 +163,7 @@ html .main .content_wrap .content-name .complete-name .first-name {
 
 html .main .content_wrap .content-name .complete-name .first-name::after {
   content: "about me ⤴️";
-  font-size: calc(1.2vw - 0.3vw + 5.8px);
+  font-size: calc(0.5vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
@@ -195,7 +196,7 @@ html .main .content_wrap .content-name .complete-name .family-name {
 
 html .main .content_wrap .content-name .complete-name .family-name::after {
   content: "contact ⤴️";
-  font-size: calc(1.2vw - 0.3vw + 5.8px);
+  font-size: calc(0.5vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
@@ -219,11 +220,12 @@ html .main .content_wrap .content-name .complete-name .family-name:hover::after 
 }
 
 html .main .content_wrap .content-portfolio {
-  font-size: calc(1.2vw + 0.2vw + 9px);
+  font-size: calc(0.5vw + 0vw + 18px);
   --main-weight: 600;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;
   color: #5b5957;
   text-align: left;
+  letter-spacing: -0.25px;
 }
 
 html .main .content_wrap .content-portfolio .link {
@@ -251,7 +253,7 @@ html .main .content_wrap .content-portfolio .link-number {
   left: -7px;
   top: -7px;
   margin-left: 0px;
-  font-size: calc(0.6vw + 2.8px);
+  font-size: calc(0.4vw + 7px);
 }
 
 html .main .content_wrap #oneMore a {
@@ -265,6 +267,13 @@ html .main .content_wrap #oneMore a #mailText {
   transition: 0.3s;
   transition-delay: 0.1s;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 620;
+}
+
+@media (max-width: 740px) {
+  html .main .content_wrap #oneMore a #mailText {
+    color: #232522;
+    right: 7vw;
+  }
 }
 
 html .main .content_wrap #oneMore a #mailText:hover {
@@ -291,10 +300,10 @@ html footer {
 }
 
 html footer .footer {
-  background-color: #1dd75e;
   position: absolute;
-  margin: 0 auto;
   bottom: 0px;
+  background-color: #1dd75e;
+  margin: 0 auto;
   padding-top: 1rem;
   margin-bottom: 1.3rem;
   max-width: 800px;
@@ -306,6 +315,7 @@ html footer .footer {
     bottom: 0px;
     margin-bottom: 0rem;
     border-radius: 0px;
+    padding: 1.3rem;
   }
 }
 
@@ -314,19 +324,13 @@ html footer .footer .line {
 }
 
 html footer .footer .line span {
-  font-size: calc(1.2vw - 0.15vw + 7.2px);
+  font-size: calc(0.5vw + 0.3vw + 13px);
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
   padding: 12px;
   padding-left: 20px;
   padding-right: 20px;
   line-height: 3rem;
-}
-
-@media (max-width: 800px) {
-  html footer .footer .line span {
-    line-height: 2.4rem;
-  }
 }
 
 html footer .footer .line .workingSpan {
@@ -342,42 +346,52 @@ html footer .footer .line .dangerSpan {
 
 html footer .footer #githublink {
   color: #00ff84;
-  font-variation-settings: "MONO" 1, "wght" 500, "slnt" 0;
-  font-size: calc( 1.2vw - 0.5vw + 4.5px);
+  font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
+  font-size: calc(0.5vw - 0vw + 8px);
   text-align: center;
   padding: 1.6vh;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
 html footer .footer #githublink a {
-  font-variation-settings: "MONO" 1, "wght" 500, "slnt" -1;
+  font-variation-settings: "MONO" 1, "wght" 400, "slnt" -3;
   color: inherit;
   transition: 0.45s;
 }
 
 html footer .footer #githublink a:hover {
-  font-variation-settings: "MONO" 1, "wght" 500, "slnt" -17, "CRSV" 0;
+  font-variation-settings: "MONO" 1, "wght" 400, "slnt" -17, "CRSV" 0;
 }
 
 @media (min-width: 320px) {
   html .main .content_wrap {
-    padding-bottom: 7vh;
+    margin-top: 10vh;
     padding-left: 5vw;
     padding-right: 5vw;
   }
   html .main .content_wrap .content-name {
-    padding-top: 17vh;
-    padding-bottom: 10vh;
+    padding-bottom: 4vh;
     text-align: left;
+  }
+}
+
+@media (min-width: 576.02px) {
+  html .content-wrap {
+    margin-top: 10vh;
+  }
+  html .content-wrap .content-name {
+    padding-bottom: 4vh;
   }
 }
 
 @media (min-width: 768px) {
   html .main .content_wrap {
+    margin-top: 17vh;
     padding-left: 15vw;
     padding-right: 15vw;
   }
   html .main .content_wrap .content-name {
+    padding-bottom: 10vh;
     text-align: center;
     padding-right: 11.5vh;
   }

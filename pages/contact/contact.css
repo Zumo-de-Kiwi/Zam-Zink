@@ -26,7 +26,7 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(1.2vw + 0.6vw + 14px);
+  font-size: calc(0.5vw + 0.4vw + 30px);
 }
 
 body {
@@ -74,7 +74,7 @@ body .container h1 {
 
 body .container p {
   --weight: 500;
-  font-size: calc(1.2vw - 0.15vw + 7.2px);
+  font-size: calc(0.5vw + 0.3vw + 13px);
   font-variation-settings: "wght" var(--weight);
 }
 
@@ -89,7 +89,7 @@ body .container #mailFrame a:hover {
 
 body .container #mailFrame a #mailText {
   font-variation-settings: "MONO" 1, "CASL" 0.2, "wght" 500;
-  font-size: calc(1.2vw - 0.15vw + 7.2px);
+  font-size: calc(0.5vw + 0.3vw + 13px);
   transition: font-variation-settings 0.5s ease;
   font-size: calc(3vw + 12px);
   user-select: none;
