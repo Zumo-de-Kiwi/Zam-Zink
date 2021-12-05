@@ -14,6 +14,8 @@
 
       - [ ] Text
       - [ ] Brainstorm Layout
+      - [ ] friends testimonials about me, that updates every 7s
+      - [ ] "Tips" about my hobbies, personality
       - [ ] ...
       - [ ] Super Arrowed 100vh intro
 

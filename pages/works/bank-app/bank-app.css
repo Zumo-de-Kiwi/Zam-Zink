@@ -3,6 +3,12 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0px;
+  border: 0px;
 }
 
 *,
@@ -11,8 +17,7 @@ html {
 }
 
 body {
-  margin: 0px;
-  border: 0px;
+  min-height: 100vh;
   color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;

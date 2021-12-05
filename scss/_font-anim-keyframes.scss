@@ -2,8 +2,14 @@
 
 // Normal clock rotate
 @keyframes spin {
+  // from {
+  //   transform: rotate(0deg);
+  // }
   to {
     transform: rotate(360deg);
+    // transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+    // transform-style: preserve-3d;
+    // transition: transform 1000ms ease-in-out;
     // transform: skewX(15deg);
   }
 }

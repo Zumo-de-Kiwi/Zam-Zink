@@ -3,6 +3,12 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0px;
+  border: 0px;
 }
 
 *,
@@ -11,8 +17,7 @@ html {
 }
 
 body {
-  margin: 0px;
-  border: 0px;
+  min-height: 100vh;
   color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
@@ -67,14 +72,31 @@ body h1 {
   }
 }
 
-html .loader {
-  position: absolute;
-}
-
 html body {
-  height: 100%;
+  min-height: 100%;
   background-color: #fcfaf8;
   color: #232522;
+}
+
+html body .loader {
+  display: none;
+  bottom: 0;
+  height: 44px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+}
+
+html body .loader #emoji-loader {
+  font-size: 44px;
+  animation: spin 2.3s infinite linear;
+}
+
+html body .loader #text-loader {
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620;
 }
 
 html .main .navigation {
@@ -134,6 +156,7 @@ html .main .navigation ul li .filter {
 }
 
 html .main .content_wrap .content-name {
+  padding-bottom: 7vh;
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.5vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
@@ -300,7 +323,7 @@ html footer {
 }
 
 html footer .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   background-color: #1dd75e;
   margin: 0 auto;
@@ -365,12 +388,12 @@ html footer .footer #githublink a:hover {
 
 @media (min-width: 320px) {
   html .main .content_wrap {
-    margin-top: 10vh;
+    margin-top: 13vh;
     padding-left: 5vw;
     padding-right: 5vw;
   }
   html .main .content_wrap .content-name {
-    padding-bottom: 4vh;
+    padding-bottom: 7vh;
     text-align: left;
   }
 }
@@ -380,7 +403,7 @@ html footer .footer #githublink a:hover {
     margin-top: 10vh;
   }
   html .content-wrap .content-name {
-    padding-bottom: 4vh;
+    padding-bottom: 7vh;
   }
 }
 

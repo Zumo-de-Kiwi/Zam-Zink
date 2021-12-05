@@ -10,19 +10,30 @@ body {
   font-size: $font-size-normal;
   /////////////// | V | V | V | V | V | V | V /////////////
   header {
-    height: 96vh;
-    width: calc(100% -4rem);
+    height: 100vh;
+    // width: calc(100% -4rem);
     background-color: $font-linked-color;
-    @include flexbox();
-    @include align-items(center);
-    @include justify-content(center);
+    // @include flexbox();
+    // @include align-items(center);
+    // @include justify-content(center);
     // for let text overflow
     // overflow: hidden;
     // white-space: nowrap;
-    border: 2rem solid $font-linked-color;
+    // border: 2rem solid $font-linked-color;
+    // position: relative;
     #down-arrows {
       cursor: $cursor-pointer-down-hand;
-      pre {
+      .down-arrow {
+        // these 8 lines for absoilute center position: like this https://jsfiddle.net/mBBJM/1/
+        bottom: 0;
+        height: 320px; //need to set a height to let it position absolute center
+        left: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+
         font-size: $font-size-huge;
         color: $josh-light-blue;
 
@@ -39,8 +50,9 @@ body {
 
   ///////////// SECOND PAGE /////////////
   main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    position: relative;
     background: rgb(98, 27, 197);
     background: linear-gradient(
       180deg,
@@ -56,30 +68,66 @@ body {
     //   background-color: $about-mid-gradient;
     // }
 
-    a {
-      color: $josh-light-blue;
-      font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
-      text-decoration: none;
-      padding-left: 1rem;
-      position: absolute;
-      font-size: $font-size-nacho;
+    .left-arrow {
+      .link-a {
+        color: $josh-light-blue;
+        font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
+        text-decoration: none;
+        padding-left: 1rem;
+        position: absolute;
+        font-size: $font-size-nacho;
+
+        &:hover {
+          color: $background-color;
+          font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
+          color: white;
+          cursor: $cursor-arrow-hand;
+          display: relative;
+        }
+        #left-arrow {
+          margin: 4rem;
+          cursor: $cursor-please-fingers;
+          transition: 1s;
+          cursor: $cursor-arrow-hand;
+          // &::after {
+          //   height: 2rem;
+          //   width: 80%;
+          //   color: $font-linked-color;
+          // }
+        }
+      }
+      .logo-frame {
+        transition: $trans-normal ease-out;
+        position: relative;
+        left: 7.5rem;
+        top: 2rem;
+        .logo-svg {
+          width: 36px; //adjust logo size
+          .hc-logo {
+            transition: $trans-normal ease-out;
+            fill: transparent; //$font-sutil-gray-color;
+          }
+        }
+      }
       &:hover {
-        color: $background-color;
-        font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
-        color: white;
-        cursor: $cursor-arrow-hand;
+        .logo-frame {
+          left: 8rem;
+          .logo-svg {
+            .hc-logo {
+              fill: $josh-light-blue;
+            }
+          }
+        }
       }
-      #left-arrow {
-        margin: 4rem;
-        cursor: $cursor-please-fingers;
-        transition: 1s;
-        cursor: $cursor-arrow-hand;
-        // &::after {
-        //   height: 2rem;
-        //   width: 80%;
-        //   color: $font-linked-color;
-        // }
-      }
+    }
+
+    .title {
+      font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" $font-weight-bold;
+      font-size: $font-size-nacho;
+      color: $underline-color;
+      // margin: 0px auto;
+      text-align: center;
+      align-self: center;
     }
     .content {
       display: flex;
@@ -104,23 +152,22 @@ body {
         border: 1px solid $spotify-text-green;
         margin: 5px;
       }
+
       @media only screen and (max-width: 768px) {
         .box {
           width: 100%;
-          max-width: 40%;
+          max-width: 35%;
+          // border: 1px solid $spotify-text-green;
+        }
+      }
+      @media only screen and (max-width: 442px) {
+        .box {
+          width: 100%;
+          max-width: 80%;
           border: 1px solid $spotify-text-green;
         }
       }
 
-      .title {
-        font-variation-settings: "MONO" 0.2, "CASL" 0.8,
-          "wght" $font-weight-bold;
-        font-size: $font-size-nacho;
-        color: $underline-color;
-        // margin: 0px auto;
-        text-align: center;
-        align-self: center;
-      }
       .subtitle {
         // background-color: $background-color;
         max-width: 500px;

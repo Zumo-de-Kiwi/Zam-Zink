@@ -3,6 +3,12 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0px;
+  border: 0px;
 }
 
 *,
@@ -11,8 +17,7 @@ html {
 }
 
 body {
-  margin: 0px;
-  border: 0px;
+  min-height: 100vh;
   color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
@@ -36,25 +41,23 @@ body {
 }
 
 body header {
-  height: 96vh;
-  width: calc(100% -4rem);
+  height: 100vh;
   background-color: #621bc5;
-  display: flex;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  border: 2rem solid #621bc5;
 }
 
 body header #down-arrows {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
-body header #down-arrows pre {
+body header #down-arrows .down-arrow {
+  bottom: 0;
+  height: 320px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
   font-size: calc(0.5vw + 0.4vw + 30px);
   color: #c0def2;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
@@ -63,13 +66,14 @@ body header #down-arrows pre {
 }
 
 body main {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  position: relative;
   background: #621bc5;
   background: linear-gradient(180deg, #621bc5 0%, #672eb6 29%, #bfdef2 71%);
 }
 
-body main a {
+body main .left-arrow .link-a {
   color: #c0def2;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
@@ -78,18 +82,51 @@ body main a {
   font-size: calc(0.5vw + 0.8vw + 40px);
 }
 
-body main a:hover {
+body main .left-arrow .link-a:hover {
   color: #fcfaf8;
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: white;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  display: relative;
 }
 
-body main a #left-arrow {
+body main .left-arrow .link-a #left-arrow {
   margin: 4rem;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body main .left-arrow .logo-frame {
+  transition: 0.3s ease-out;
+  position: relative;
+  left: 7.5rem;
+  top: 2rem;
+}
+
+body main .left-arrow .logo-frame .logo-svg {
+  width: 36px;
+}
+
+body main .left-arrow .logo-frame .logo-svg .hc-logo {
+  transition: 0.3s ease-out;
+  fill: transparent;
+}
+
+body main .left-arrow:hover .logo-frame {
+  left: 8rem;
+}
+
+body main .left-arrow:hover .logo-frame .logo-svg .hc-logo {
+  fill: #c0def2;
+}
+
+body main .title {
+  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 690;
+  font-size: calc(0.5vw + 0.8vw + 40px);
+  color: #a48cee;
+  text-align: center;
+  align-self: center;
 }
 
 body main .content {
@@ -109,17 +146,16 @@ body main .content .box {
 @media only screen and (max-width: 768px) {
   body main .content .box {
     width: 100%;
-    max-width: 40%;
-    border: 1px solid #1dd75e;
+    max-width: 35%;
   }
 }
 
-body main .content .title {
-  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 690;
-  font-size: calc(0.5vw + 0.8vw + 40px);
-  color: #a48cee;
-  text-align: center;
-  align-self: center;
+@media only screen and (max-width: 442px) {
+  body main .content .box {
+    width: 100%;
+    max-width: 80%;
+    border: 1px solid #1dd75e;
+  }
 }
 
 body main .content .subtitle {
