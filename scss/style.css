@@ -136,7 +136,7 @@ html .main .navigation ul li {
 }
 
 html .main .navigation ul li a {
-  margin: calc(0.4vh + 2px);
+  padding: calc(0.4vh + 3px);
   transition: 0.45s;
   color: #b9cabf;
   text-decoration: none;
@@ -171,7 +171,7 @@ html .main .content_wrap .content-name .coma {
 }
 
 html .main .content_wrap .content-name .complete-name {
-  color: #621bc5;
+  color: #4d435b;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   text-decoration: none;
 }
@@ -191,7 +191,7 @@ html .main .content_wrap .content-name .complete-name .first-name::after {
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
   text-align: center;
-  bottom: -2px;
+  bottom: -9px;
   width: 100%;
   height: 0;
   left: 0;
@@ -202,11 +202,12 @@ html .main .content_wrap .content-name .complete-name .first-name::after {
 html .main .content_wrap .content-name .complete-name .first-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 1, "wght" 740, "slnt" 0;
   text-decoration-color: #1dd75e;
+  color: #621bc5;
 }
 
 html .main .content_wrap .content-name .complete-name .first-name:hover::after {
   color: #a48cee;
-  bottom: 2px;
+  bottom: -5px;
 }
 
 html .main .content_wrap .content-name .complete-name .family-name {
@@ -219,12 +220,12 @@ html .main .content_wrap .content-name .complete-name .family-name {
 
 html .main .content_wrap .content-name .complete-name .family-name::after {
   content: "contact ⤴️";
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0.5vw + 0.3vw + 13px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
   text-align: center;
-  bottom: -2px;
+  bottom: -9px;
   width: 100%;
   height: 0;
   left: 0;
@@ -233,22 +234,24 @@ html .main .content_wrap .content-name .complete-name .family-name::after {
 }
 
 html .main .content_wrap .content-name .complete-name .family-name:hover {
+  color: #621bc5;
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 740, "slnt" 0;
   text-decoration-color: #1dd75e;
 }
 
 html .main .content_wrap .content-name .complete-name .family-name:hover::after {
   color: #a48cee;
-  bottom: 2px;
+  bottom: -5px;
 }
 
 html .main .content_wrap .content-portfolio {
   font-size: calc(0.5vw + 0vw + 18px);
+  text-align: left;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+  color: #5b5957;
   --main-weight: 600;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;
-  color: #5b5957;
-  text-align: left;
-  letter-spacing: -0.25px;
 }
 
 html .main .content_wrap .content-portfolio .link {
@@ -273,7 +276,7 @@ html .main .content_wrap .content-portfolio .link-number {
   color: #621bc5;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 740;
   position: relative;
-  left: -7px;
+  left: -5px;
   top: -7px;
   margin-left: 0px;
   font-size: calc(0.4vw + 7px);

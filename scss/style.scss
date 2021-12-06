@@ -59,6 +59,7 @@ html {
       }
       ul {
         //these two for center margin: 0px auto; adding-right: 12rem;
+        // padding-top: 10px;
         margin: 0px auto;
         padding-right: 12rem;
         // text-align: right;
@@ -68,7 +69,8 @@ html {
           font-variation-settings: $MONO, "CASL" 0, "wght" $font-weight-normal,
             $slnt;
           a {
-            margin: calc(0.4vh + 2px);
+            padding: calc(0.4vh + 3px);
+            // padding: 5px;
             transition: $trans-slow;
             color: $font-sutil-gray-color;
             text-decoration: none;
@@ -116,7 +118,7 @@ html {
         }
 
         .complete-name {
-          color: $font-linked-color;
+          color: $sutil-dark-purple-gray-color; //$font-linked-color;
           cursor: $cursor-please-fingers;
           text-decoration: none;
 
@@ -136,7 +138,7 @@ html {
 
               position: absolute;
               text-align: center;
-              bottom: -2px;
+              bottom: -9px;
               width: 100%;
               height: 0;
               left: 0;
@@ -149,9 +151,10 @@ html {
               font-variation-settings: $MONO, "CASL" 1,
                 "wght" $font-weight-bolder, $slnt;
               text-decoration-color: $spotify-text-green;
+              color: $font-linked-color;
               &::after {
                 color: $underline-color;
-                bottom: 2px;
+                bottom: -5px;
               }
             }
           }
@@ -166,14 +169,14 @@ html {
 
             &::after {
               content: "contact ⤴️";
-              font-size: $font-size-small;
+              font-size: $font-size-normal;
               color: $transparent;
               font-variation-settings: "MONO" 0.6, "CASL" 0,
                 "wght" $font-weight-light;
 
               position: absolute;
               text-align: center;
-              bottom: -2px;
+              bottom: -9px;
               width: 100%;
               height: 0;
               left: 0;
@@ -182,13 +185,14 @@ html {
               transition-delay: $delay-normal;
             }
             &:hover {
+              color: $font-linked-color;
               // color: $font-linked-hover-color;
               font-variation-settings: $MONO, "CASL" 0,
                 "wght" $font-weight-bolder, $slnt;
               text-decoration-color: $spotify-text-green;
               &::after {
                 color: $underline-color;
-                bottom: 2px;
+                bottom: -5px;
               }
             }
           }
@@ -198,17 +202,23 @@ html {
       /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
       .content-portfolio {
         font-size: $font-size-big;
-        // Set for fluidAxisVariation()
+        text-align: left;
+        letter-spacing: -0.3px;
+        line-height: 1.4;
+        color: $font-gray;
+        //word-spacing: 0.7px;
+
         // no working warning
         --main-weight: 600;
+
         font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight),
           $slnt;
-        color: $font-gray;
-        text-align: left;
-        letter-spacing: -0.25px;
-        //line-height: 1.3;
-        //word-spacing: 0.7px;
-        //letter-spacing: -0.4px;
+
+        // Not working: When hover content name content will be less visual appealing(turn black)
+        // &:hover + .complete-name {
+        //   color: $sutil-dark-purple-gray-color;
+        // }
+
         .link {
           position: relative;
 
@@ -236,7 +246,7 @@ html {
           font-variation-settings: "MONO" 0.2, "CASL" 0,
             "wght" $font-weight-bolder;
           position: relative;
-          left: -7px;
+          left: -5px;
           top: -7px;
           margin-left: 0px;
           font-size: $font-size-linkNumber;
