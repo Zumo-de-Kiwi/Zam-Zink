@@ -282,6 +282,16 @@ html .main .content_wrap .content-portfolio .link-number {
   font-size: calc(0.4vw + 7px);
 }
 
+html .main .content_wrap .content-portfolio .angled-brackets {
+  color: transparent;
+  transition: 0.45s;
+  transition-delay: 0.1s;
+}
+
+html .main .content_wrap .content-portfolio #playground:hover .angled-brackets {
+  color: #621bc5;
+}
+
 html .main .content_wrap #oneMore a {
   text-decoration: none;
 }

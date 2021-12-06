@@ -251,6 +251,17 @@ html {
           margin-left: 0px;
           font-size: $font-size-linkNumber;
         }
+
+        .angled-brackets {
+          color: transparent;
+          transition: $trans-slow;
+          transition-delay: $delay-fast;
+        }
+        #playground:hover {
+          .angled-brackets {
+            color: $font-linked-color;
+          }
+        }
       }
       #oneMore {
         a {
