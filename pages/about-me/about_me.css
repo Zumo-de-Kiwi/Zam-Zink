@@ -40,37 +40,11 @@ body {
   font-size: calc(0.5vw + 0.3vw + 13px);
 }
 
-body header {
-  height: 100vh;
-  background-color: #621bc5;
-}
-
-body header #down-arrows {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>") 16 0, auto;
-}
-
-body header #down-arrows .down-arrow {
-  bottom: 0;
-  height: 320px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 200px;
-  font-size: calc(0.5vw + 0.4vw + 30px);
-  color: #c0def2;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" 0.5, "CASL" 1, "wght" 400;
-  transition: 0.1s;
-}
-
 body main {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background: #621bc5;
-  background: linear-gradient(180deg, #621bc5 0%, #672eb6 29%, #bfdef2 71%);
+  background: #ccd6fe;
 }
 
 body main .left-arrow .link-a {
@@ -101,7 +75,7 @@ body main .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
   left: 7.5rem;
-  top: 2rem;
+  top: 1.8rem;
 }
 
 body main .left-arrow .logo-frame .logo-svg {
@@ -118,10 +92,10 @@ body main .left-arrow:hover .logo-frame {
 }
 
 body main .left-arrow:hover .logo-frame .logo-svg .hc-logo {
-  fill: #c0def2;
+  fill: #fcfaf8;
 }
 
-body main .title {
+body main .content .title {
   font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 690;
   font-size: calc(0.5vw + 0.8vw + 40px);
   color: #a48cee;
@@ -129,51 +103,11 @@ body main .title {
   align-self: center;
 }
 
-body main .content {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+body footer {
+  height: 41vh;
+  background-color: beige;
 }
 
-body main .content .box {
-  width: 100%;
-  max-width: 30%;
-  border: 1px solid #1dd75e;
-  margin: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-  body main .content .box {
-    width: 100%;
-    max-width: 35%;
-  }
-}
-
-@media only screen and (max-width: 442px) {
-  body main .content .box {
-    width: 100%;
-    max-width: 80%;
-    border: 1px solid #1dd75e;
-  }
-}
-
-body main .content .subtitle {
-  max-width: 500px;
-  padding: 4vh;
-  font-variation-settings: "CASL" 0.6, "wght" 620;
-  color: #c0def2;
-  width: 100%;
-}
-
-body main .content #aboutContent {
-  width: 40vw;
-}
-
-body main .content p {
-  font-variation-settings: "CASL" 0.6, "wght" 400;
-  color: #431485;
-  font-size: calc(0.5vw - 0vw + 12px);
-  padding: 2vh;
-  background: linear-gradient(180deg, #be93f9 0%, #d5c3ee 27%, #c0def2 83%);
+body footer #footer-div {
+  padding: 3rem;
 }
