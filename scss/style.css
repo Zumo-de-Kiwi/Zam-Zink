@@ -9,6 +9,7 @@ html {
 * {
   margin: 0px;
   border: 0px;
+  box-sizing: border-box;
 }
 
 *,
@@ -78,25 +79,51 @@ html body {
   color: #232522;
 }
 
-html body .loader {
-  display: none;
-  bottom: 0;
-  height: 44px;
-  left: 0;
-  margin: auto;
-  position: absolute;
+html body .preloader {
+  position: fixed;
   top: 0;
   right: 0;
-  width: 44px;
+  width: 100%;
+  height: 100vh;
+  background: #d8dcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transition: 0.45s ease-out;
 }
 
-html body .loader #emoji-loader {
-  font-size: 44px;
+html body .preloader #emoji-loader,
+html body .preloader #text-loader {
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  margin: 0px auto;
+}
+
+html body .preloader #emoji-loader {
+  font-size: 6rem;
   animation: spin 2.3s infinite linear;
+  height: 7rem;
+  width: 7rem;
 }
 
-html body .loader #text-loader {
-  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620;
+html body .preloader #text-loader {
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-weight: 500;
+  padding-top: 9rem;
+  color: #4d435b;
+  font-size: calc(0.5vw - 0vw + 12px);
+}
+
+html body .preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+html body .preload-finish #emoji-loader {
+  animation: spin 2.3s none linear;
+  animation-iteration-count: 1;
 }
 
 html .main .navigation {
