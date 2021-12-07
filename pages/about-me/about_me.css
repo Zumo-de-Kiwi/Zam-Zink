@@ -44,11 +44,15 @@ body main {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background: #ccd6fe;
+  background: #d3daf5;
+}
+
+body main .left-arrow {
+  padding: 2.5rem;
 }
 
 body main .left-arrow .link-a {
-  color: #c0def2;
+  color: #a48cee;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
@@ -57,7 +61,6 @@ body main .left-arrow .link-a {
 }
 
 body main .left-arrow .link-a:hover {
-  color: #fcfaf8;
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: white;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
@@ -66,7 +69,6 @@ body main .left-arrow .link-a:hover {
 
 body main .left-arrow .link-a #left-arrow {
   margin: 4rem;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }

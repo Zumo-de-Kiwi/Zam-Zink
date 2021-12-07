@@ -15,12 +15,13 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background: rgb(204, 214, 254);
+    background: rgb(211, 218, 245);
 
     // BACK ARROW
     .left-arrow {
+      padding: 2.5rem;
       .link-a {
-        color: $josh-light-blue;
+        color: $underline-color;
         font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
         text-decoration: none;
         padding-left: 1rem;
@@ -28,7 +29,6 @@ body {
         font-size: $font-size-nacho;
 
         &:hover {
-          color: $background-color;
           font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
           color: white;
           cursor: $cursor-arrow-hand;
@@ -36,14 +36,8 @@ body {
         }
         #left-arrow {
           margin: 4rem;
-          cursor: $cursor-please-fingers;
           transition: 1s;
           cursor: $cursor-arrow-hand;
-          // &::after {
-          //   height: 2rem;
-          //   width: 80%;
-          //   color: $font-linked-color;
-          // }
         }
       }
       .logo-frame {
