@@ -169,7 +169,7 @@ html {
 
             &::after {
               content: "contact ⤴️";
-              font-size: $font-size-normal;
+              font-size: $font-size-small;
               color: $transparent;
               font-variation-settings: "MONO" 0.6, "CASL" 0,
                 "wght" $font-weight-light;
@@ -204,9 +204,9 @@ html {
         font-size: $font-size-big;
         text-align: left;
         letter-spacing: -0.3px;
-        line-height: 1.4;
+        line-height: 1.45;
         color: $font-gray;
-        //word-spacing: 0.7px;
+        // word-spacing: -0.5px;
 
         // no working warning
         --main-weight: 600;
@@ -246,7 +246,7 @@ html {
           font-variation-settings: "MONO" 0.2, "CASL" 0,
             "wght" $font-weight-bolder;
           position: relative;
-          left: -5px;
+          left: -6.5px;
           top: -7px;
           margin-left: 0px;
           font-size: $font-size-linkNumber;
@@ -254,8 +254,11 @@ html {
 
         .angled-brackets {
           color: transparent;
-          transition: $trans-slow;
+          transition: 0.6s;
           transition-delay: $delay-fast;
+          @media (max-width: 740px) {
+            color: $font-linked-hover-color;
+          }
         }
         #playground:hover {
           .angled-brackets {
@@ -264,27 +267,41 @@ html {
         }
       }
       #oneMore {
-        a {
-          text-decoration: none;
-          #mailText {
-            position: absolute;
-            // text-align: center;
-            right: 20vw;
-            color: transparent;
-            transition: $trans-normal;
-            transition-delay: $delay-fast;
+        // a {
+        text-decoration: none;
+        position: relative;
+        #dotsss {
+          color: $font-linked-color;
+        }
+        #mailText {
+          position: absolute;
+          display: block;
+          // text-align: center;
+          left: -2ch;
+          color: transparent;
+          transition: $trans-normal;
+          transition-delay: $delay-fast;
+          font-variation-settings: "MONO" 0.2, "CASL" 0,
+            "wght" $font-weight-normal;
+
+          &:hover {
+            text-decoration-color: $spotify-text-green;
             font-variation-settings: "MONO" 0.2, "CASL" 0,
-              "wght" $font-weight-normal;
-            @media (max-width: 740px) {
-              //the mail one more thing wouldn't be hidden
-              color: $font-black;
-              right: 7vw;
+              "wght" $font-weight-bold;
+          }
+        }
+        // }
+        @media (max-width: 740px) {
+          #oneMoreText {
+            color: transparent;
+            #dotsss {
+              color: transparent;
             }
-            &:hover {
-              text-decoration-color: $spotify-text-green;
-              font-variation-settings: "MONO" 0.2, "CASL" 0,
-                "wght" $font-weight-bold;
-            }
+          }
+          #mailText {
+            color: $font-black;
+            right: 7vw;
+            // left: 0ch;
           }
         }
         &:hover {

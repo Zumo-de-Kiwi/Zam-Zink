@@ -220,7 +220,7 @@ html .main .content_wrap .content-name .complete-name .family-name {
 
 html .main .content_wrap .content-name .complete-name .family-name::after {
   content: "contact ⤴️";
-  font-size: calc(0.5vw + 0.3vw + 13px);
+  font-size: calc(0.5vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
@@ -248,7 +248,7 @@ html .main .content_wrap .content-portfolio {
   font-size: calc(0.5vw + 0vw + 18px);
   text-align: left;
   letter-spacing: -0.3px;
-  line-height: 1.4;
+  line-height: 1.45;
   color: #5b5957;
   --main-weight: 600;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;
@@ -276,7 +276,7 @@ html .main .content_wrap .content-portfolio .link-number {
   color: #621bc5;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 740;
   position: relative;
-  left: -5px;
+  left: -6.5px;
   top: -7px;
   margin-left: 0px;
   font-size: calc(0.4vw + 7px);
@@ -284,37 +284,55 @@ html .main .content_wrap .content-portfolio .link-number {
 
 html .main .content_wrap .content-portfolio .angled-brackets {
   color: transparent;
-  transition: 0.45s;
+  transition: 0.6s;
   transition-delay: 0.1s;
+}
+
+@media (max-width: 740px) {
+  html .main .content_wrap .content-portfolio .angled-brackets {
+    color: #8c12f8;
+  }
 }
 
 html .main .content_wrap .content-portfolio #playground:hover .angled-brackets {
   color: #621bc5;
 }
 
-html .main .content_wrap #oneMore a {
+html .main .content_wrap #oneMore {
   text-decoration: none;
+  position: relative;
 }
 
-html .main .content_wrap #oneMore a #mailText {
+html .main .content_wrap #oneMore #dotsss {
+  color: #621bc5;
+}
+
+html .main .content_wrap #oneMore #mailText {
   position: absolute;
-  right: 20vw;
+  display: block;
+  left: -2ch;
   color: transparent;
   transition: 0.3s;
   transition-delay: 0.1s;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 620;
 }
 
+html .main .content_wrap #oneMore #mailText:hover {
+  text-decoration-color: #1dd75e;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 690;
+}
+
 @media (max-width: 740px) {
-  html .main .content_wrap #oneMore a #mailText {
+  html .main .content_wrap #oneMore #oneMoreText {
+    color: transparent;
+  }
+  html .main .content_wrap #oneMore #oneMoreText #dotsss {
+    color: transparent;
+  }
+  html .main .content_wrap #oneMore #mailText {
     color: #232522;
     right: 7vw;
   }
-}
-
-html .main .content_wrap #oneMore a #mailText:hover {
-  text-decoration-color: #1dd75e;
-  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 690;
 }
 
 html .main .content_wrap #oneMore:hover #mailText {
