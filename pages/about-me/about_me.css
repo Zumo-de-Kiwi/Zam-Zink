@@ -35,6 +35,254 @@ body h1 {
   font-size: calc(0.5vw + 0.4vw + 30px);
 }
 
+body .left-arrow {
+  padding: 2.5rem;
+  width: 8vw;
+  height: 100px;
+  width: 150px;
+}
+
+body .left-arrow .link-a {
+  color: #b9cabf;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
+  text-decoration: none;
+  position: absolute;
+  font-size: calc(0.5vw + 0.8vw + 40px);
+}
+
+body .left-arrow .link-a:hover {
+  font-variation-settings: "CASL" 0.9, "wght" 500;
+  color: #b9cabf;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  display: relative;
+}
+
+body .left-arrow .link-a #left-arrow {
+  margin: 4rem;
+  transition: 1s;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body .left-arrow .logo-frame {
+  transition: 0.3s ease-out;
+  position: relative;
+  left: 7.5rem;
+  top: 1.5rem;
+}
+
+body .left-arrow .logo-frame .logo-svg {
+  width: 36px;
+}
+
+body .left-arrow .logo-frame .logo-svg .hc-logo {
+  transition: 0.3s ease-out;
+  fill: transparent;
+}
+
+body .left-arrow:hover .logo-frame {
+  left: 8rem;
+}
+
+body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
+  fill: #fcfaf8;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: #d0d5fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transition: 0.45s ease-out;
+}
+
+.preloader #emoji-loader,
+.preloader #text-loader {
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.preloader #emoji-loader {
+  font-size: 6rem;
+  animation: spin 2.6s infinite ease;
+  height: 7rem;
+  width: 7rem;
+}
+
+.preloader #text-loader {
+  font-weight: 500;
+  padding-top: 10rem;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620;
+  animation: variableOpacity 2s infinite linear;
+  color: #4d435b;
+  font-size: calc(0.5vw - 0vw + 12px);
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preload-finish #emoji-loader {
+  animation: none;
+}
+
+.preload-finish #text-loader {
+  animation: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes variableOpacity {
+  0% {
+    opacity: 100%;
+  }
+  66% {
+    opacity: 33%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes gifFrame1 {
+  0% {
+    opacity: 100%;
+  }
+  24% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame2 {
+  0% {
+    opacity: 0%;
+  }
+  24% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  49% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame3 {
+  0% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  76% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame4 {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  76% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes widthness {
+  0% {
+    font-variation-settings: "wght" 500;
+  }
+  30% {
+    font-variation-settings: "wght" 800;
+  }
+  70% {
+    font-variation-settings: "wght" 620;
+  }
+  100% {
+    font-variation-settings: "wght" 500;
+  }
+}
+
+@keyframes slintness {
+  0% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+  40% {
+    font-variation-settings: "slnt" -15, "CRSV" 1;
+  }
+  100% {
+    font-variation-settings: "slnt" 0, "CRSV" 1;
+  }
+}
+
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 body {
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;

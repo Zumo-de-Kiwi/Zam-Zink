@@ -1,77 +1,35 @@
-@import "variables";
 @import "globals";
+@import "variables";
 @import "mixins";
 @import "font-anim-keyframes";
+// @import "pre-loader";
 ///////////////// colors ///////////////
 
-html {
-  body {
-    min-height: 100%;
-    background-color: $background-color;
-    color: $font-black;
+body {
+  height: 100%;
+  // background-color: white; //$background-color;
+  color: $font-black;
+}
 
-    .preloader {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100vh;
-      background: rgb(216, 220, 255);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 99;
-      transition: $trans-slow ease-out;
-      // display: none; /// hid
-      #emoji-loader,
-      #text-loader {
-        height: 100px;
-        position: absolute;
-        text-align: center;
-        margin: 0px auto;
-      }
+.main {
+  height: 100%;
+  .navigation {
+    //logo home filter
+    height: 6rem;
+    display: flex;
 
-      #emoji-loader {
-        // emoji rotate when loading
-        font-size: 6rem;
-        animation: spin 2.3s infinite linear; //hided temporaly
-        // height and width to center the emoji for a absolute center rotation anchor
-        height: 7rem;
-        width: 7rem;
-      }
-      #text-loader {
-        font-family: $ff-recursive;
-        font-weight: 500;
-        padding-top: 9rem;
-        // font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
-        color: $sutil-dark-purple-gray-color;
-        font-size: $font-size-small;
-      }
-    }
-    .preload-finish {
-      opacity: 0;
-      pointer-events: none;
-      #emoji-loader {
-        // stop emoji rotate
-        animation: spin 2.3s none linear;
-        animation-iteration-count: 1;
-      }
-    }
-  }
-
-  .main {
-    //home filter
-    .navigation {
-      height: 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 12px;
-      transition: $trans-normal; // INitial fx when enter the page
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    // transition: all $trans-slow; // INitial fx when enter the page
+    .logo-frame {
+      display: block;
+      position: relative;
+      margin-left: 4rem;
+      left: -23vw;
       .logo-svg {
-        display: inline-block;
-        width: 30px;
-        padding: 2rem;
+        width: 60px;
+        height: 30px; // svg size
         cursor: $cursor-arrow-hand;
         &:hover {
           .hc-logo {
@@ -83,408 +41,425 @@ html {
           fill: $font-sutil-gray-color;
         }
       }
-      ul {
-        //these two for center margin: 0px auto; adding-right: 12rem;
-        // padding-top: 10px;
-        margin: 0px auto;
-        padding-right: 12rem;
-        // text-align: right;
-        list-style-type: none;
-        li {
-          font-size: $font-size-big;
-          font-variation-settings: $MONO, "CASL" 0, "wght" $font-weight-normal,
-            $slnt;
-          a {
-            padding: calc(0.4vh + 3px);
-            // padding: 5px;
-            transition: $trans-slow;
-            color: $font-sutil-gray-color;
-            text-decoration: none;
-            cursor: $cursor-arrow-hand;
-            &:hover {
-              color: $sutil-dark-purple-gray-color;
-            }
+    }
+
+    ul {
+      //these two for center margin: 0px auto; adding-right: 12rem;
+      // margin: 0px auto;
+      list-style-type: none;
+      display: block;
+      position: relative;
+      left: 14vw;
+      li {
+        display: inline-block;
+        font-size: $font-size-big;
+        font-variation-settings: $MONO, "CASL" 0, "wght" $font-weight-normal,
+          $slnt;
+
+        a {
+          // margin: 1rem;
+          // padding: calc(0.4vh + 3px);
+          padding: 0.5rem;
+          transition: $trans-slow;
+          color: $font-sutil-gray-color;
+          text-decoration: none;
+          cursor: $cursor-arrow-hand;
+          &:hover {
+            color: $sutil-dark-purple-gray-color;
           }
-          .nowPage {
-            cursor: $cursor-pointer-down-hand;
-          }
-          .filter {
-            cursor: $cursor-pointer-filter;
-          }
+        }
+        .nowPage {
+          cursor: $cursor-pointer-down-hand;
+        }
+        .filter {
+          cursor: $cursor-pointer-filter;
         }
       }
     }
+  }
 
-    .content_wrap {
-      //all the middle right main content
-      // left: 0;
-      // overflow: auto;
-      // height: 100%;
-      // padding-bottom: 10rem;
-      // padding-left: 16vw;
-      // padding-right: 14vw; //new
+  .content_wrap {
+    //all the middle right main content
+    // left: 0;
+    // overflow: auto;
+    // height: 100%;
+    // padding-bottom: 10rem;
+    // padding-left: 16vw;
+    // padding-right: 14vw; //new
 
-      ///////// Hi, I am Héctor /////////
-      .content-name {
-        padding-bottom: 7vh;
-        // padding-top: 10vh;
-        font-family: $ff-recursive-bold;
-        font-size: $font-size-huge;
-        font-variation-settings: $MONO, "CASL" 0.4, "wght" $font-weight-heavy,
-          $slnt;
-        text-align: left;
-        color: $sutil-dark-purple-gray-color;
-        word-spacing: 0.7px;
+    ///////// Hi, I am Héctor /////////
+    .content-name {
+      padding-bottom: 7vh;
+      // padding-top: 10vh;
+      font-family: $ff-recursive-bold;
+      font-size: $font-size-huge;
+      font-variation-settings: $MONO, "CASL" 0.4, "wght" $font-weight-heavy,
+        $slnt;
+      text-align: left;
+      color: $sutil-dark-purple-gray-color;
+      word-spacing: 0.7px;
 
-        .coma {
+      .coma {
+        position: relative;
+        margin-left: calc(
+          -3px * 1vw
+        ); //-13px // move the coma and the following words to the left
+      }
+
+      .complete-name {
+        color: $sutil-dark-purple-gray-color; //$font-linked-color;
+        cursor: $cursor-please-fingers;
+        text-decoration: none;
+
+        .first-name {
           position: relative;
-          margin-left: calc(
-            -3px * 1vw
-          ); //-13px // move the coma and the following words to the left
-        }
+          // Hector and underline animation
+          transition: $trans-normal ease-out;
+          transition-delay: $delay-normal;
+          text-decoration: underline;
+          text-decoration-color: $underline-color;
+          &::after {
+            content: "about me ⤴️";
+            font-size: $font-size-small;
+            color: $transparent;
+            font-variation-settings: "MONO" 0.6, "CASL" 0,
+              "wght" $font-weight-light;
 
-        .complete-name {
-          color: $sutil-dark-purple-gray-color; //$font-linked-color;
-          cursor: $cursor-please-fingers;
-          text-decoration: none;
+            position: absolute;
+            text-align: center;
+            bottom: -9px;
+            width: 100%;
+            height: 0;
+            left: 0;
 
-          .first-name {
-            position: relative;
-            // Hector and underline animation
             transition: $trans-normal ease-out;
             transition-delay: $delay-normal;
-            text-decoration: underline;
-            text-decoration-color: $underline-color;
-            &::after {
-              content: "about me ⤴️";
-              font-size: $font-size-small;
-              color: $transparent;
-              font-variation-settings: "MONO" 0.6, "CASL" 0,
-                "wght" $font-weight-light;
-
-              position: absolute;
-              text-align: center;
-              bottom: -9px;
-              width: 100%;
-              height: 0;
-              left: 0;
-
-              transition: $trans-normal ease-out;
-              transition-delay: $delay-normal;
-            }
-            &:hover {
-              // color: $font-linked-hover-color;
-              font-variation-settings: $MONO, "CASL" 1,
-                "wght" $font-weight-bolder, $slnt;
-              text-decoration-color: $spotify-text-green;
-              color: $font-linked-color;
-              &::after {
-                color: $underline-color;
-                bottom: -5px;
-              }
-            }
           }
-
-          .family-name {
-            position: relative;
-            // Cortes and underline animation
-            transition: $trans-slow ease-out;
-            transition-delay: $delay-normal;
-            text-decoration: underline;
-            text-decoration-color: $underline-color;
-
-            &::after {
-              content: "contact ⤴️";
-              font-size: $font-size-small;
-              color: $transparent;
-              font-variation-settings: "MONO" 0.6, "CASL" 0,
-                "wght" $font-weight-light;
-
-              position: absolute;
-              text-align: center;
-              bottom: -9px;
-              width: 100%;
-              height: 0;
-              left: 0;
-
-              transition: $trans-normal ease-out;
-              transition-delay: $delay-normal;
-            }
-            &:hover {
-              color: $font-linked-color;
-              // color: $font-linked-hover-color;
-              font-variation-settings: $MONO, "CASL" 0,
-                "wght" $font-weight-bolder, $slnt;
-              text-decoration-color: $spotify-text-green;
-              &::after {
-                color: $underline-color;
-                bottom: -5px;
-              }
-            }
-          }
-        }
-      }
-
-      /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
-      .content-portfolio {
-        font-size: $font-size-big;
-        text-align: left;
-        letter-spacing: -0.3px;
-        line-height: 1.45;
-        color: $font-gray;
-        // word-spacing: -0.5px;
-
-        // no working warning
-        --main-weight: 600;
-
-        font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight),
-          $slnt;
-
-        // Not working: When hover content name content will be less visual appealing(turn black)
-        // &:hover + .complete-name {
-        //   color: $sutil-dark-purple-gray-color;
-        // }
-
-        .link {
-          position: relative;
-
-          color: $font-linked-color;
-          font-variation-settings: "MONO" 0.2, "CASL" 0,
-            "wght" $font-weight-normal, $slnt;
-          transition: 0.3s;
-
-          text-decoration-color: $underline-color;
-          cursor: $cursor-please-fingers;
           &:hover {
             // color: $font-linked-hover-color;
-            font-variation-settings: "MONO" 0.2, "CASL" 0.8,
-              "wght" $font-weight-bolder, $slnt;
-            text-decoration-color: $font-linked-color;
-          }
-          &:active {
-            cursor: $cursor-yeah-hand;
-          }
-        }
-
-        .link-number {
-          // mini linked number
-          color: $font-linked-color;
-          font-variation-settings: "MONO" 0.2, "CASL" 0,
-            "wght" $font-weight-bolder;
-          position: relative;
-          left: -6.5px;
-          top: -7px;
-          margin-left: 0px;
-          font-size: $font-size-linkNumber;
-        }
-
-        .angled-brackets {
-          color: transparent;
-          transition: 0.6s;
-          transition-delay: $delay-fast;
-          @media (max-width: 740px) {
-            color: $font-linked-hover-color;
-          }
-        }
-        #playground:hover {
-          .angled-brackets {
-            color: $font-linked-color;
-          }
-        }
-      }
-      #oneMore {
-        // a {
-        text-decoration: none;
-        position: relative;
-        #dotsss {
-          color: $font-linked-color;
-        }
-        #mailText {
-          position: absolute;
-          display: block;
-          // text-align: center;
-          left: -2ch;
-          color: transparent;
-          transition: $trans-normal;
-          transition-delay: $delay-fast;
-          font-variation-settings: "MONO" 0.2, "CASL" 0,
-            "wght" $font-weight-normal;
-
-          &:hover {
+            font-variation-settings: $MONO, "CASL" 1, "wght" $font-weight-bolder,
+              $slnt;
             text-decoration-color: $spotify-text-green;
-            font-variation-settings: "MONO" 0.2, "CASL" 0,
-              "wght" $font-weight-bold;
-          }
-        }
-        // }
-        @media (max-width: 740px) {
-          #oneMoreText {
-            color: transparent;
-            #dotsss {
-              color: transparent;
+            color: $font-linked-color;
+            &::after {
+              color: $underline-color;
+              bottom: -5px;
             }
           }
-          #mailText {
-            color: $font-black;
-            right: 7vw;
-            // left: 0ch;
+        }
+
+        .family-name {
+          position: relative;
+          // Cortes and underline animation
+          transition: $trans-slow ease-out;
+          transition-delay: $delay-normal;
+          text-decoration: underline;
+          text-decoration-color: $underline-color;
+
+          &::after {
+            content: "contact ⤴️";
+            font-size: $font-size-small;
+            color: $transparent;
+            font-variation-settings: "MONO" 0.6, "CASL" 0,
+              "wght" $font-weight-light;
+
+            position: absolute;
+            text-align: center;
+            bottom: -9px;
+            width: 100%;
+            height: 0;
+            left: 0;
+
+            transition: $trans-normal ease-out;
+            transition-delay: $delay-normal;
           }
-        }
-        &:hover {
-          #mailText {
-            color: $font-linked-color;
-            text-decoration: underline;
-            text-decoration-color: $font-linked-color;
-          }
-        }
-      }
-    }
-  }
-
-  footer {
-    // margin: 1rem;
-    @include flexbox();
-    @include align-items(center);
-    @include justify-content(center);
-    cursor: $cursor-please-fingers;
-    .footer {
-      position: fixed;
-      bottom: 0px;
-      background-color: $spotify-text-green;
-      margin: 0 auto;
-      padding-top: 1rem;
-      // margin-top: 10vh;
-      margin-bottom: 1.3rem;
-      max-width: 800px;
-      border-radius: 19px;
-      @media (max-width: 800px) {
-        // font-size: $font-size-big;
-        bottom: 0px;
-        margin-bottom: 0rem;
-        border-radius: 0px;
-        padding: 1.3rem;
-      }
-
-      .line {
-        text-align: center;
-        span {
-          font-size: $font-size-normal;
-          font-variation-settings: "MONO" 0.8, "CASL" 0,
-            "wght" $font-weight-light, $slnt;
-          color: $background-color;
-          padding: 12px;
-          padding-left: 20px;
-          padding-right: 20px;
-          line-height: 3rem;
-          // @media (max-width: 800px) {
-          //   // font-size: $font-size-small;
-          //   // line-height: 2.4rem;
-          //   // padding-bottom: 20vh;
-          // }
-        }
-        //////////////////// FOOTER TEXT ANIMATIONS /////////////////
-        .workingSpan {
-          // animation: widthness 2s ease infinite;
-          color: $skillshare-green;
-          font-variation-settings: "MONO" 0.4, "CASL" 0.2,
-            "wght" $font-weight-light;
-        }
-        .dangerSpan {
-          animation: slintness 2s ease infinite;
-          color: $josh-blue-white;
-          font-variation-settings: "MONO" 0.2, "CASL" 0.5,
-            "wght" $font-weight-light, "CRSV" 1;
-        }
-      }
-      #githublink {
-        color: $skillshare-green;
-        font-variation-settings: "MONO" 1, "wght" $font-weight-lighter, $slnt;
-        font-size: $font-size-information;
-
-        text-align: center;
-        padding: 1.6vh;
-        cursor: $cursor-startreck-hand;
-        a {
-          font-variation-settings: "MONO" 1, "wght" $font-weight-lighter,
-            "slnt" -3;
-          color: inherit;
-          transition: $trans-slow;
           &:hover {
-            font-variation-settings: "MONO" 1, "wght" $font-weight-lighter,
-              "slnt" -17, "CRSV" 0;
+            color: $font-linked-color;
+            // color: $font-linked-hover-color;
+            font-variation-settings: $MONO, "CASL" 0, "wght" $font-weight-bolder,
+              $slnt;
+            text-decoration-color: $spotify-text-green;
+            &::after {
+              color: $underline-color;
+              bottom: -5px;
+            }
           }
         }
       }
     }
-  }
 
-  /////////////////////////////////////////////////////////
-  /////////////// MEDIA QUERY Bootstrap 5 ///////////////////
-  /////////////////////////////////////////////////////////
-  //Why subtract .02px? Browsers don’t currently support range context queries, so we work around the limitations of min- and max- prefixes and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision.
-  // X-Small devices (portrait phones, more than 320px)
-  @media (min-width: 320px) {
-    .main {
-      .content_wrap {
-        // padding-bottom: 7vh;
-        margin-top: 13vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        .content-name {
-          // padding-top: 8vh;
-          padding-bottom: 7vh;
-          // margin-bottom: 2vh;
-          text-align: left;
+    /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
+    .content-portfolio {
+      font-size: $font-size-big;
+      text-align: left;
+      letter-spacing: -0.3px;
+      line-height: 1.45;
+      color: $font-gray;
+      // word-spacing: -0.5px;
+
+      // no working warning
+      --main-weight: 600;
+
+      font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight),
+        $slnt;
+
+      // Not working: When hover content name content will be less visual appealing(turn black)
+      // &:hover + .complete-name {
+      //   color: $sutil-dark-purple-gray-color;
+      // }
+
+      .link {
+        position: relative;
+
+        color: $font-linked-color;
+        font-variation-settings: "MONO" 0.2, "CASL" 0,
+          "wght" $font-weight-normal, $slnt;
+        transition: 0.3s;
+
+        text-decoration-color: $underline-color;
+        cursor: $cursor-please-fingers;
+        &:hover {
+          // color: $font-linked-hover-color;
+          font-variation-settings: "MONO" 0.2, "CASL" 0.8,
+            "wght" $font-weight-bolder, $slnt;
+          text-decoration-color: $font-linked-color;
+        }
+        &:active {
+          cursor: $cursor-yeah-hand;
+        }
+      }
+
+      .link-number {
+        // mini linked number
+        color: $font-linked-color;
+        font-variation-settings: "MONO" 0.2, "CASL" 0,
+          "wght" $font-weight-bolder;
+        position: relative;
+        left: -6.5px;
+        top: -7px;
+        margin-left: 0px;
+        font-size: $font-size-linkNumber;
+      }
+
+      .angled-brackets {
+        color: transparent;
+        transition: 0.6s;
+        transition-delay: $delay-fast;
+        @media (max-width: 740px) {
+          color: $font-linked-hover-color;
+        }
+      }
+      #playground:hover {
+        .angled-brackets {
+          color: $font-linked-color;
+        }
+      }
+    }
+    #oneMore {
+      // a {
+      text-decoration: none;
+      position: relative;
+      #dotsss {
+        color: $font-linked-color;
+      }
+      #mailText {
+        position: absolute;
+        display: block;
+        // text-align: center;
+        left: -2ch;
+        color: transparent;
+        transition: $trans-normal;
+        transition-delay: $delay-fast;
+        font-variation-settings: "MONO" 0.2, "CASL" 0,
+          "wght" $font-weight-normal;
+
+        &:hover {
+          text-decoration-color: $spotify-text-green;
+          font-variation-settings: "MONO" 0.2, "CASL" 0,
+            "wght" $font-weight-bold;
+        }
+      }
+      // }
+      @media (max-width: 740px) {
+        #oneMoreText {
+          color: transparent;
+          #dotsss {
+            color: transparent;
+          }
+        }
+        #mailText {
+          color: $font-black;
+          right: 7vw;
+          // left: 0ch;
+        }
+      }
+      &:hover {
+        #mailText {
+          color: $font-linked-color;
+          text-decoration: underline;
+          text-decoration-color: $font-linked-color;
         }
       }
     }
   }
-  // Small devices (landscape phones, more than 576px)
-  @media (min-width: 576.02px) {
-    .content-wrap {
-      margin-top: 10vh;
+}
+
+footer {
+  // margin: 1rem;
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  cursor: $cursor-please-fingers;
+  .footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: $spotify-text-green;
+    margin: 0 auto;
+    padding-top: 1rem;
+    // margin-top: 10vh;
+    margin-bottom: 1.3rem;
+    max-width: 800px;
+    border-radius: 19px;
+
+    .line {
+      text-align: center;
+      span {
+        font-size: $font-size-normal;
+        font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" $font-weight-light,
+          $slnt;
+        color: $background-color;
+        padding: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 3rem;
+        @media (max-width: 800px) {
+          font-size: $font-size-small;
+          line-height: 2.4rem;
+          padding-bottom: 20vh;
+        }
+      }
+      //////////////////// FOOTER TEXT ANIMATIONS /////////////////
+      .workingSpan {
+        // animation: widthness 2s ease infinite;
+        color: $skillshare-green;
+        font-variation-settings: "MONO" 0.4, "CASL" 0.2,
+          "wght" $font-weight-light;
+      }
+      .dangerSpan {
+        animation: slintness 2s ease infinite;
+        color: $josh-blue-white;
+        font-variation-settings: "MONO" 0.2, "CASL" 0.5,
+          "wght" $font-weight-light, "CRSV" 1;
+      }
+    }
+    @media (max-width: 800px) {
+      // font-size: $font-size-big;
+      bottom: 0px;
+      margin-bottom: 0rem;
+      border-radius: 0px;
+      padding: 1.3rem;
+      .line {
+        padding-left: 2px;
+        padding-right: 12px;
+        font-size: $font-size-small;
+      }
+    }
+    #githublink {
+      color: $skillshare-green;
+      font-variation-settings: "MONO" 1, "wght" $font-weight-lighter, $slnt;
+      font-size: $font-size-information;
+
+      text-align: center;
+      padding: 1.6vh;
+      cursor: $cursor-startreck-hand;
+      a {
+        font-variation-settings: "MONO" 1, "wght" $font-weight-lighter,
+          "slnt" -3;
+        color: inherit;
+        transition: $trans-slow;
+        &:hover {
+          font-variation-settings: "MONO" 1, "wght" $font-weight-lighter,
+            "slnt" -17, "CRSV" 0;
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////
+/////////////// MEDIA QUERY Bootstrap 5 ///////////////////
+/////////////////////////////////////////////////////////
+//Why subtract .02px? Browsers don’t currently support range context queries, so we work around the limitations of min- and max- prefixes and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision.
+// X-Small devices (portrait phones, more than 320px)
+@media (min-width: 320px) {
+  .main {
+    .content_wrap {
+      // padding-bottom: 7vh;
+      margin-top: 7vh;
+      padding-left: 5vw;
+      padding-right: 5vw;
       .content-name {
         // padding-top: 8vh;
-        padding-bottom: 7vh;
+        padding-bottom: 5vh;
         // margin-bottom: 2vh;
-        // text-align: left;
+        text-align: left;
       }
     }
   }
-  // Medium devices (tablets, more than 768px)
-  @media (min-width: 768px) {
-    .main {
-      .content_wrap {
-        // padding-bottom: 17vh;
-        margin-top: 17vh;
-        // padding-top: 13vh; //need to change
-        padding-left: 15vw;
-        padding-right: 15vw;
-        .content-name {
-          padding-bottom: 10vh;
-          text-align: center;
-          padding-right: 11.5vh;
-        }
+}
+// Small devices (landscape phones, more than 576px)
+@media (min-width: 576.02px) {
+  .content-wrap {
+    margin-top: 11vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    .content-name {
+      // padding-top: 8vh;
+      padding-bottom: 7vh;
+      // margin-bottom: 2vh;
+      text-align: center;
+    }
+  }
+}
+// Medium devices (tablets, more than 768px)
+@media (min-width: 768px) {
+  .main {
+    .content_wrap {
+      // padding-bottom: 17vh;
+      margin-top: 17vh;
+      // padding-top: 13vh; //need to change
+      padding-left: 15vw;
+      padding-right: 15vw;
+      .content-name {
+        padding-bottom: 8vh;
+        text-align: center;
+        padding-right: 11.5vh;
       }
     }
   }
-  // Large devices (desktops, more than 992px)
-  @media (min-width: 1024px) {
-    .main {
-      .content_wrap {
-        // padding-bottom: 19vh;
-        padding-left: 19vw;
-        padding-right: 19vw;
+}
+// Large devices (desktops, more than 992px)
+@media (min-width: 1024px) {
+  .main {
+    .content_wrap {
+      // padding-bottom: 19vh;
+
+      padding-left: 19vw;
+      padding-right: 19vw;
+      .content-name {
+        padding-bottom: 10vh;
+        text-align: center;
+        // padding-right: 11.5vh;
       }
     }
   }
-  // X-Large devices (large desktops, more than 1400px)
-  @media (min-width: 1400px) {
-    .main {
-      .content_wrap {
-        padding-left: 25vw;
-        padding-right: 23vw;
-      }
+}
+// X-Large devices (large desktops, more than 1400px)
+@media (min-width: 1400px) {
+  .main {
+    .content_wrap {
+      padding-left: 25vw;
+      padding-right: 23vw;
     }
   }
 }

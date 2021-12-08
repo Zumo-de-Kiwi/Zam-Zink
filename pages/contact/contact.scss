@@ -2,150 +2,221 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 @import "../../scss/globals";
+@import "../../scss/font-anim-keyframes";
 
 body {
   height: 100%;
+}
+.preloader {
+  background: rgb(245, 245, 245);
 
-  // ARROW BACK
-  // a {
-  //   color: $background-color;
-  //   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
-  //   text-decoration: none;
-  //   padding-left: 1rem;
-  //   &:hover {
-  //     color: $background-color;
-  //   }
-  //   #left-arrow {
-  //     font-size: $font-size-nacho;
-  //     margin: 4rem;
-  //     cursor: $cursor-please-fingers;
-  //     transition: 1s;
-  //     cursor: $cursor-arrow-hand;
-  //     &:hover {
-  //       /// IMPORTANT note working
-  //       // cursor: $cursor-arrow-hand;
-  //       color: white;
-  //       font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
-  //     }
-
-  //     &::after {
-  //       height: 2rem;
-  //       width: 80%;
-  //       color: $font-linked-color;
-  //     }
-  //   }
-  // }
-  .container {
-    @include flexbox();
-    @include align-items(center);
-    @include justify-content(center);
-    // align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: row;
-
-    section {
-      padding: 2rem;
+  #emoji-loader {
+    // emoji rotate when loading
+    animation: none; //ease is funnier//linear
+    position: relative;
+    padding-right: 8vw;
+    #frame1,
+    #frame2,
+    #frame3,
+    #frame4 {
+      position: absolute;
     }
-    .logo-svg {
-      display: inline-block;
-      width: 30px;
-      padding: 2rem;
-      cursor: $cursor-arrow-hand;
-      &:hover {
-        .hc-logo {
-          fill: $sutil-dark-purple-gray-color;
-        }
-      }
-      .hc-logo {
-        transition: $trans-slow;
-        fill: $font-sutil-gray-color;
-      }
+    #frame1 {
+      animation: gifFrame1 1.6s infinite ease;
     }
-    h1 {
+    #frame2 {
+      animation: gifFrame2 1.6s infinite ease;
+    }
+    #frame3 {
+      animation: gifFrame3 1.6s infinite ease;
+    }
+    #frame4 {
+      animation: gifFrame4 1.6s infinite ease;
+    }
+  }
+  #text-loader {
+    // font-weight: 500;
+    padding-top: 12rem;
+    // font-family: $ff-recursive;
+    // font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
+    animation: variableOpacity 2s infinite linear;
+    color: $sutil-dark-purple-gray-color;
+    // font-size: $font-size-small;
+  }
+}
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+  #emoji-loader {
+    // stop emoji rotate
+    animation: none;
+    #frame1,
+    #frame2,
+    #frame3,
+    #frame4 {
+      animation: none;
+    }
+  }
+  #text-loader {
+    animation: none;
+  }
+}
+// ARROW BACK
+.left-arrow {
+  padding: 2.5rem;
+  .link-a {
+    color: $font-sutil-gray-color;
+    font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
+    text-decoration: none;
+    padding-left: 1rem;
+    position: absolute;
+    font-size: $font-size-nacho;
+
+    &:hover {
+      font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
       color: $font-sutil-gray-color;
-      text-align: center;
+      cursor: $cursor-arrow-hand;
+      display: relative;
     }
-    p {
-      --weight: 500;
-      font-size: $font-size-normal;
-      font-variation-settings: "wght" var(--weight);
+    #left-arrow {
+      margin: 4rem;
+      transition: 1s;
+      cursor: $cursor-arrow-hand;
     }
-    #mailFrame {
-      a {
-        text-decoration-color: $font-sutil-gray-color;
-        transition: $trans-slow;
-        &:hover {
-          text-decoration-color: $font-black;
-        }
-        #mailText {
-          font-variation-settings: "MONO" 1, "CASL" 0.2,
-            "wght" $font-weight-light;
-          font-size: $font-size-normal;
-          // font-family: "Ginto Variable";
-          transition: font-variation-settings 0.5s ease;
-          font-size: calc(3vw + 12px);
-          user-select: none;
-          color: $sutil-dark-purple-gray-color;
-          // font-variation-settings: "wght" 400;
-          &:hover {
-            cursor: $cursor-contact-mail;
-            font-variation-settings: "MONO" 1, "CASL" 0.01,
-              "wght" $font-weight-lighter;
-            color: $font-black;
-          }
+  }
+  .logo-frame {
+    transition: $trans-normal ease-out;
+    position: relative;
+    left: 7.5rem;
+    top: 1.8rem;
+    .logo-svg {
+      width: 36px; //adjust logo size
+      .hc-logo {
+        transition: $trans-normal ease-out;
+        fill: transparent; //$font-sutil-gray-color;
+      }
+    }
+  }
+  &:hover {
+    .logo-frame {
+      left: 8rem;
+      .logo-svg {
+        .hc-logo {
+          fill: $background-color;
         }
       }
-      //////wave hand
-      div {
-        display: none;
+    }
+  }
+}
+.container {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  // align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+
+  section {
+    padding: 2rem;
+  }
+  .logo-svg {
+    display: inline-block;
+    width: 30px;
+    padding: 2rem;
+    cursor: $cursor-arrow-hand;
+    &:hover {
+      .hc-logo {
+        fill: $sutil-dark-purple-gray-color;
       }
+    }
+    .hc-logo {
+      transition: $trans-slow;
+      fill: $font-sutil-gray-color;
+    }
+  }
+  h1 {
+    color: $font-sutil-gray-color;
+    text-align: center;
+  }
+  p {
+    --weight: 500;
+    font-size: $font-size-normal;
+    font-variation-settings: "wght" var(--weight);
+  }
+  #mailFrame {
+    a {
+      text-decoration-color: $font-sutil-gray-color;
+      transition: $trans-slow;
       &:hover {
-        div {
-          font-size: calc(3vw + 40px);
-          position: fixed;
-          // position: relative;
-          left: 45%; //40%
-          top: 50%; //50%
-          transform: translate(-50%, -50%);
-          width: calc(3vw + 70px);
-          height: calc(3vw + 70px);
-          border-radius: 50%;
-        }
-        .wave {
-          display: block;
-          animation-name: waveHand;
-          animation-duration: 3s;
-          animation-iteration-count: infinite;
-          transform-origin: 50% 50%;
-        }
-        @keyframes waveHand {
-          0% {
-            transform: rotate(0deg);
-          }
-          10% {
-            transform: rotate(20deg);
-          }
-          20% {
-            transform: rotate(-10deg);
-          }
-          30% {
-            transform: rotate(20deg);
-          }
-          40% {
-            transform: rotate(-6deg);
-          }
-          50% {
-            transform: rotate(12deg);
-          }
-          60% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(0deg);
-          }
+        text-decoration-color: $font-black;
+      }
+      #mailText {
+        font-variation-settings: "MONO" 1, "CASL" 0.2, "wght" $font-weight-light;
+        font-size: $font-size-normal;
+        // font-family: "Ginto Variable";
+        transition: font-variation-settings 0.5s ease;
+        font-size: calc(3vw + 12px);
+        user-select: none;
+        color: $sutil-dark-purple-gray-color;
+        // font-variation-settings: "wght" 400;
+        &:hover {
+          cursor: $cursor-contact-mail;
+          font-variation-settings: "MONO" 1, "CASL" 0.01,
+            "wght" $font-weight-lighter;
+          color: $font-black;
         }
       }
+    }
+    //////wave hand
+    div {
+      display: none;
+    }
+    &:hover {
+      div {
+        font-size: calc(3vw + 40px);
+        position: fixed;
+        // position: relative;
+        left: 45%; //40%
+        top: 50%; //50%
+        transform: translate(-50%, -50%);
+        width: calc(3vw + 70px);
+        height: calc(3vw + 70px);
+        border-radius: 50%;
+      }
+      .wave {
+        display: block;
+        animation-name: waveHand;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+      // @keyframes waveHand {
+      //   0% {
+      //     transform: rotate(0deg);
+      //   }
+      //   10% {
+      //     transform: rotate(20deg);
+      //   }
+      //   20% {
+      //     transform: rotate(-10deg);
+      //   }
+      //   30% {
+      //     transform: rotate(20deg);
+      //   }
+      //   40% {
+      //     transform: rotate(-6deg);
+      //   }
+      //   50% {
+      //     transform: rotate(12deg);
+      //   }
+      //   60% {
+      //     transform: rotate(0deg);
+      //   }
+      //   100% {
+      //     transform: rotate(0deg);
+      //   }
+      // }
     }
   }
 }

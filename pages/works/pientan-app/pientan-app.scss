@@ -2,3 +2,68 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
 @import "../../../scss/globals";
+@import "../../../scss/font-anim-keyframes";
+
+body {
+  //   font-size: 2rem;
+  .preloader {
+    transition: $trans-slow ease-out;
+    background: rgb(238, 74, 74);
+    #emoji-loader {
+      padding-right: 8vw;
+    }
+    #text-loader {
+      color: white;
+      font-size: $font-size-small;
+    }
+  }
+  .left-arrow {
+    background: coral;
+    .link-a {
+      color: whitesmoke;
+      &:hover {
+        color: $font-sutil-gray-color;
+      }
+    }
+    &:hover {
+      .hc-logo {
+        fill: $background-color;
+      }
+    }
+  }
+  main {
+    background: coral;
+    height: 200vh;
+    h1 {
+      text-align: center;
+      padding: 2rem;
+    }
+  }
+  footer {
+    background: cornsilk;
+    height: 70vh;
+    #trampolineEmoji {
+      position: fixed; /* Fixed/sticky position */
+      bottom: 2rem; /* Place the button at the bottom of the page */
+      right: 4rem; /* Place the button 30px from the right */
+      //   position: sticky;
+      //   position: -webkit-sticky;
+      //   height: 30px;
+      z-index: 9; /* Make sure it does not overlap */
+
+      text-decoration: none;
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      font-size: 3.5rem; /* Increase font size */
+      transition: $trans-fast;
+      cursor: $cursor-pointer-hand-flip;
+      &:hover {
+        cursor: $cursor-pointer-hand-flip;
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

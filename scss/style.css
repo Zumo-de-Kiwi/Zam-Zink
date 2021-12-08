@@ -35,9 +35,197 @@ body h1 {
   font-size: calc(0.5vw + 0.4vw + 30px);
 }
 
+body .left-arrow {
+  padding: 2.5rem;
+  width: 8vw;
+  height: 100px;
+  width: 150px;
+}
+
+body .left-arrow .link-a {
+  color: #b9cabf;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
+  text-decoration: none;
+  position: absolute;
+  font-size: calc(0.5vw + 0.8vw + 40px);
+}
+
+body .left-arrow .link-a:hover {
+  font-variation-settings: "CASL" 0.9, "wght" 500;
+  color: #b9cabf;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  display: relative;
+}
+
+body .left-arrow .link-a #left-arrow {
+  margin: 4rem;
+  transition: 1s;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body .left-arrow .logo-frame {
+  transition: 0.3s ease-out;
+  position: relative;
+  left: 7.5rem;
+  top: 1.5rem;
+}
+
+body .left-arrow .logo-frame .logo-svg {
+  width: 36px;
+}
+
+body .left-arrow .logo-frame .logo-svg .hc-logo {
+  transition: 0.3s ease-out;
+  fill: transparent;
+}
+
+body .left-arrow:hover .logo-frame {
+  left: 8rem;
+}
+
+body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
+  fill: #fcfaf8;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: #d0d5fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transition: 0.45s ease-out;
+}
+
+.preloader #emoji-loader,
+.preloader #text-loader {
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.preloader #emoji-loader {
+  font-size: 6rem;
+  animation: spin 2.6s infinite ease;
+  height: 7rem;
+  width: 7rem;
+}
+
+.preloader #text-loader {
+  font-weight: 500;
+  padding-top: 10rem;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620;
+  animation: variableOpacity 2s infinite linear;
+  color: #4d435b;
+  font-size: calc(0.5vw - 0vw + 12px);
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preload-finish #emoji-loader {
+  animation: none;
+}
+
+.preload-finish #text-loader {
+  animation: none;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes variableOpacity {
+  0% {
+    opacity: 100%;
+  }
+  66% {
+    opacity: 33%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes gifFrame1 {
+  0% {
+    opacity: 100%;
+  }
+  24% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame2 {
+  0% {
+    opacity: 0%;
+  }
+  24% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  49% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame3 {
+  0% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  76% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame4 {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  76% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 
@@ -56,11 +244,6 @@ body h1 {
   }
 }
 
-.dangerSpan {
-  animation: slintness 2s ease infinite;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
-}
-
 @keyframes slintness {
   0% {
     font-variation-settings: "slnt" 0, "CRSV" 1;
@@ -73,116 +256,106 @@ body h1 {
   }
 }
 
-html body {
-  min-height: 100%;
-  background-color: #fcfaf8;
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+body {
+  height: 100%;
   color: #232522;
 }
 
-html body .preloader {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  background: #d8dcff;
+.main {
+  height: 100%;
+}
+
+.main .navigation {
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
-  transition: 0.45s ease-out;
+  padding-top: 3rem;
 }
 
-html body .preloader #emoji-loader,
-html body .preloader #text-loader {
-  height: 100px;
-  position: absolute;
-  text-align: center;
-  margin: 0px auto;
+.main .navigation .logo-frame {
+  display: block;
+  position: relative;
+  margin-left: 4rem;
+  left: -23vw;
 }
 
-html body .preloader #emoji-loader {
-  font-size: 6rem;
-  animation: spin 2.3s infinite linear;
-  height: 7rem;
-  width: 7rem;
-}
-
-html body .preloader #text-loader {
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-weight: 500;
-  padding-top: 9rem;
-  color: #4d435b;
-  font-size: calc(0.5vw - 0vw + 12px);
-}
-
-html body .preload-finish {
-  opacity: 0;
-  pointer-events: none;
-}
-
-html body .preload-finish #emoji-loader {
-  animation: spin 2.3s none linear;
-  animation-iteration-count: 1;
-}
-
-html .main .navigation {
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 12px;
-  transition: 0.3s;
-}
-
-html .main .navigation .logo-svg {
-  display: inline-block;
-  width: 30px;
-  padding: 2rem;
+.main .navigation .logo-frame .logo-svg {
+  width: 60px;
+  height: 30px;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
-html .main .navigation .logo-svg:hover .hc-logo {
+.main .navigation .logo-frame .logo-svg:hover .hc-logo {
   fill: #4d435b;
 }
 
-html .main .navigation .logo-svg .hc-logo {
+.main .navigation .logo-frame .logo-svg .hc-logo {
   transition: 0.45s;
   fill: #b9cabf;
 }
 
-html .main .navigation ul {
-  margin: 0px auto;
-  padding-right: 12rem;
+.main .navigation ul {
   list-style-type: none;
+  display: block;
+  position: relative;
+  left: 14vw;
 }
 
-html .main .navigation ul li {
+.main .navigation ul li {
+  display: inline-block;
   font-size: calc(0.5vw + 0vw + 18px);
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 620, "slnt" 0;
 }
 
-html .main .navigation ul li a {
-  padding: calc(0.4vh + 3px);
+.main .navigation ul li a {
+  padding: 0.5rem;
   transition: 0.45s;
   color: #b9cabf;
   text-decoration: none;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
-html .main .navigation ul li a:hover {
+.main .navigation ul li a:hover {
   color: #4d435b;
 }
 
-html .main .navigation ul li .nowPage {
+.main .navigation ul li .nowPage {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
-html .main .navigation ul li .filter {
+.main .navigation ul li .filter {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🔎</text></svg>") 16 0, auto;
 }
 
-html .main .content_wrap .content-name {
+.main .content_wrap .content-name {
   padding-bottom: 7vh;
   font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.5vw + 0.4vw + 30px);
@@ -192,18 +365,18 @@ html .main .content_wrap .content-name {
   word-spacing: 0.7px;
 }
 
-html .main .content_wrap .content-name .coma {
+.main .content_wrap .content-name .coma {
   position: relative;
   margin-left: calc( -3px * 1vw);
 }
 
-html .main .content_wrap .content-name .complete-name {
+.main .content_wrap .content-name .complete-name {
   color: #4d435b;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   text-decoration: none;
 }
 
-html .main .content_wrap .content-name .complete-name .first-name {
+.main .content_wrap .content-name .complete-name .first-name {
   position: relative;
   transition: 0.3s ease-out;
   transition-delay: 0.16s;
@@ -211,7 +384,7 @@ html .main .content_wrap .content-name .complete-name .first-name {
   text-decoration-color: #a48cee;
 }
 
-html .main .content_wrap .content-name .complete-name .first-name::after {
+.main .content_wrap .content-name .complete-name .first-name::after {
   content: "about me ⤴️";
   font-size: calc(0.5vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
@@ -226,18 +399,18 @@ html .main .content_wrap .content-name .complete-name .first-name::after {
   transition-delay: 0.16s;
 }
 
-html .main .content_wrap .content-name .complete-name .first-name:hover {
+.main .content_wrap .content-name .complete-name .first-name:hover {
   font-variation-settings: "MONO" 0, "CASL" 1, "wght" 740, "slnt" 0;
   text-decoration-color: #1dd75e;
   color: #621bc5;
 }
 
-html .main .content_wrap .content-name .complete-name .first-name:hover::after {
+.main .content_wrap .content-name .complete-name .first-name:hover::after {
   color: #a48cee;
   bottom: -5px;
 }
 
-html .main .content_wrap .content-name .complete-name .family-name {
+.main .content_wrap .content-name .complete-name .family-name {
   position: relative;
   transition: 0.45s ease-out;
   transition-delay: 0.16s;
@@ -245,7 +418,7 @@ html .main .content_wrap .content-name .complete-name .family-name {
   text-decoration-color: #a48cee;
 }
 
-html .main .content_wrap .content-name .complete-name .family-name::after {
+.main .content_wrap .content-name .complete-name .family-name::after {
   content: "contact ⤴️";
   font-size: calc(0.5vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
@@ -260,18 +433,18 @@ html .main .content_wrap .content-name .complete-name .family-name::after {
   transition-delay: 0.16s;
 }
 
-html .main .content_wrap .content-name .complete-name .family-name:hover {
+.main .content_wrap .content-name .complete-name .family-name:hover {
   color: #621bc5;
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 740, "slnt" 0;
   text-decoration-color: #1dd75e;
 }
 
-html .main .content_wrap .content-name .complete-name .family-name:hover::after {
+.main .content_wrap .content-name .complete-name .family-name:hover::after {
   color: #a48cee;
   bottom: -5px;
 }
 
-html .main .content_wrap .content-portfolio {
+.main .content_wrap .content-portfolio {
   font-size: calc(0.5vw + 0vw + 18px);
   text-align: left;
   letter-spacing: -0.3px;
@@ -281,7 +454,7 @@ html .main .content_wrap .content-portfolio {
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;
 }
 
-html .main .content_wrap .content-portfolio .link {
+.main .content_wrap .content-portfolio .link {
   position: relative;
   color: #621bc5;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 620, "slnt" 0;
@@ -290,16 +463,16 @@ html .main .content_wrap .content-portfolio .link {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-html .main .content_wrap .content-portfolio .link:hover {
+.main .content_wrap .content-portfolio .link:hover {
   font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 740, "slnt" 0;
   text-decoration-color: #621bc5;
 }
 
-html .main .content_wrap .content-portfolio .link:active {
+.main .content_wrap .content-portfolio .link:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
-html .main .content_wrap .content-portfolio .link-number {
+.main .content_wrap .content-portfolio .link-number {
   color: #621bc5;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 740;
   position: relative;
@@ -309,32 +482,32 @@ html .main .content_wrap .content-portfolio .link-number {
   font-size: calc(0.4vw + 7px);
 }
 
-html .main .content_wrap .content-portfolio .angled-brackets {
+.main .content_wrap .content-portfolio .angled-brackets {
   color: transparent;
   transition: 0.6s;
   transition-delay: 0.1s;
 }
 
 @media (max-width: 740px) {
-  html .main .content_wrap .content-portfolio .angled-brackets {
+  .main .content_wrap .content-portfolio .angled-brackets {
     color: #8c12f8;
   }
 }
 
-html .main .content_wrap .content-portfolio #playground:hover .angled-brackets {
+.main .content_wrap .content-portfolio #playground:hover .angled-brackets {
   color: #621bc5;
 }
 
-html .main .content_wrap #oneMore {
+.main .content_wrap #oneMore {
   text-decoration: none;
   position: relative;
 }
 
-html .main .content_wrap #oneMore #dotsss {
+.main .content_wrap #oneMore #dotsss {
   color: #621bc5;
 }
 
-html .main .content_wrap #oneMore #mailText {
+.main .content_wrap #oneMore #mailText {
   position: absolute;
   display: block;
   left: -2ch;
@@ -344,31 +517,31 @@ html .main .content_wrap #oneMore #mailText {
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 620;
 }
 
-html .main .content_wrap #oneMore #mailText:hover {
+.main .content_wrap #oneMore #mailText:hover {
   text-decoration-color: #1dd75e;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 690;
 }
 
 @media (max-width: 740px) {
-  html .main .content_wrap #oneMore #oneMoreText {
+  .main .content_wrap #oneMore #oneMoreText {
     color: transparent;
   }
-  html .main .content_wrap #oneMore #oneMoreText #dotsss {
+  .main .content_wrap #oneMore #oneMoreText #dotsss {
     color: transparent;
   }
-  html .main .content_wrap #oneMore #mailText {
+  .main .content_wrap #oneMore #mailText {
     color: #232522;
     right: 7vw;
   }
 }
 
-html .main .content_wrap #oneMore:hover #mailText {
+.main .content_wrap #oneMore:hover #mailText {
   color: #621bc5;
   text-decoration: underline;
   text-decoration-color: #621bc5;
 }
 
-html footer {
+footer {
   display: flex;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -380,7 +553,7 @@ html footer {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
-html footer .footer {
+footer .footer {
   position: fixed;
   bottom: 0px;
   background-color: #1dd75e;
@@ -391,20 +564,11 @@ html footer .footer {
   border-radius: 19px;
 }
 
-@media (max-width: 800px) {
-  html footer .footer {
-    bottom: 0px;
-    margin-bottom: 0rem;
-    border-radius: 0px;
-    padding: 1.3rem;
-  }
-}
-
-html footer .footer .line {
+footer .footer .line {
   text-align: center;
 }
 
-html footer .footer .line span {
+footer .footer .line span {
   font-size: calc(0.5vw + 0.3vw + 13px);
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
@@ -414,18 +578,40 @@ html footer .footer .line span {
   line-height: 3rem;
 }
 
-html footer .footer .line .workingSpan {
+@media (max-width: 800px) {
+  footer .footer .line span {
+    font-size: calc(0.5vw - 0vw + 12px);
+    line-height: 2.4rem;
+    padding-bottom: 20vh;
+  }
+}
+
+footer .footer .line .workingSpan {
   color: #00ff84;
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
 
-html footer .footer .line .dangerSpan {
+footer .footer .line .dangerSpan {
   animation: slintness 2s ease infinite;
   color: #eff1f5;
   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }
 
-html footer .footer #githublink {
+@media (max-width: 800px) {
+  footer .footer {
+    bottom: 0px;
+    margin-bottom: 0rem;
+    border-radius: 0px;
+    padding: 1.3rem;
+  }
+  footer .footer .line {
+    padding-left: 2px;
+    padding-right: 12px;
+    font-size: calc(0.5vw - 0vw + 12px);
+  }
+}
+
+footer .footer #githublink {
   color: #00ff84;
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
   font-size: calc(0.5vw - 0vw + 8px);
@@ -434,59 +620,66 @@ html footer .footer #githublink {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='54%'>🖖</text></svg>") 16 0, auto;
 }
 
-html footer .footer #githublink a {
+footer .footer #githublink a {
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -3;
   color: inherit;
   transition: 0.45s;
 }
 
-html footer .footer #githublink a:hover {
+footer .footer #githublink a:hover {
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -17, "CRSV" 0;
 }
 
 @media (min-width: 320px) {
-  html .main .content_wrap {
-    margin-top: 13vh;
+  .main .content_wrap {
+    margin-top: 7vh;
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  html .main .content_wrap .content-name {
-    padding-bottom: 7vh;
+  .main .content_wrap .content-name {
+    padding-bottom: 5vh;
     text-align: left;
   }
 }
 
 @media (min-width: 576.02px) {
-  html .content-wrap {
-    margin-top: 10vh;
+  .content-wrap {
+    margin-top: 11vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
-  html .content-wrap .content-name {
+  .content-wrap .content-name {
     padding-bottom: 7vh;
+    text-align: center;
   }
 }
 
 @media (min-width: 768px) {
-  html .main .content_wrap {
+  .main .content_wrap {
     margin-top: 17vh;
     padding-left: 15vw;
     padding-right: 15vw;
   }
-  html .main .content_wrap .content-name {
-    padding-bottom: 10vh;
+  .main .content_wrap .content-name {
+    padding-bottom: 8vh;
     text-align: center;
     padding-right: 11.5vh;
   }
 }
 
 @media (min-width: 1024px) {
-  html .main .content_wrap {
+  .main .content_wrap {
     padding-left: 19vw;
     padding-right: 19vw;
+  }
+  .main .content_wrap .content-name {
+    padding-bottom: 10vh;
+    text-align: center;
   }
 }
 
 @media (min-width: 1400px) {
-  html .main .content_wrap {
+  .main .content_wrap {
     padding-left: 25vw;
     padding-right: 23vw;
   }

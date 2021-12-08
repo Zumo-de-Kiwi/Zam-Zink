@@ -7,12 +7,96 @@
   // }
   to {
     transform: rotate(360deg);
-    // transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
-    // transform-style: preserve-3d;
-    // transition: transform 1000ms ease-in-out;
-    // transform: skewX(15deg);
   }
 }
+// transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+// transform-style: preserve-3d;
+// transition: transform 1000ms ease-in-out;
+// transform: skewX(15deg);
+
+//tranparency opacity
+@keyframes variableOpacity {
+  0% {
+    opacity: 100%;
+  }
+  66% {
+    opacity: 33%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+// Gif like animations (4frames)
+@keyframes gifFrame1 {
+  0% {
+    opacity: 100%;
+  }
+  24% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes gifFrame2 {
+  0% {
+    opacity: 0%;
+  }
+  24% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  49% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes gifFrame3 {
+  0% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  76% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes gifFrame4 {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  76% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 // X-axis rotate
 // @keyframes twist-up {
 //   to {
@@ -34,11 +118,11 @@
     font-variation-settings: "wght" $font-weight-light;
   }
 }
-.dangerSpan {
-  animation: slintness 2s ease infinite;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" $font-weight-light,
-    "CRSV" 1;
-}
+// .dangerSpan {
+//   animation: slintness 2s ease infinite;
+//   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" $font-weight-light,
+//     "CRSV" 1;
+// }
 @keyframes slintness {
   0% {
     font-variation-settings: "slnt" 0, "CRSV" 1;
@@ -58,32 +142,32 @@
 //   animation-iteration-count: infinite;
 //   transform-origin: 50% 50%;
 // }
-// @keyframes waveHand {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   10% {
-//     transform: rotate(20deg);
-//   }
-//   20% {
-//     transform: rotate(-10deg);
-//   }
-//   30% {
-//     transform: rotate(20deg);
-//   }
-//   40% {
-//     transform: rotate(-6deg);
-//   }
-//   50% {
-//     transform: rotate(12deg);
-//   }
-//   60% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 /////////// EMOJI ANIM /////
 // with this your emoji va dando vueltas por tod la pantalla sin parar
