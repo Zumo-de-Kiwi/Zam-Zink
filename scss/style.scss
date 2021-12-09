@@ -2,7 +2,6 @@
 @import "variables";
 @import "mixins";
 @import "font-anim-keyframes";
-// @import "pre-loader";
 ///////////////// colors ///////////////
 
 body {
@@ -25,8 +24,8 @@ body {
     .logo-frame {
       display: block;
       position: relative;
-      margin-left: 4rem;
-      left: -23vw;
+      // margin-left: 4rem;
+      left: -20vw; //calc(0px - 16vw - 1rem);
       .logo-svg {
         width: 60px;
         height: 30px; // svg size

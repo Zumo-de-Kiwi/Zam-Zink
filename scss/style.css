@@ -37,15 +37,13 @@ body h1 {
 
 body .left-arrow {
   padding: 2.5rem;
-  width: 8vw;
-  height: 100px;
-  width: 150px;
 }
 
 body .left-arrow .link-a {
   color: #b9cabf;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
+  padding-left: 1rem;
   position: absolute;
   font-size: calc(0.5vw + 0.8vw + 40px);
 }
@@ -67,7 +65,7 @@ body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
   left: 7.5rem;
-  top: 1.5rem;
+  top: 1.8rem;
 }
 
 body .left-arrow .logo-frame .logo-svg {
@@ -87,7 +85,7 @@ body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
   fill: #fcfaf8;
 }
 
-.preloader {
+body .preloader {
   position: fixed;
   top: 0;
   right: 0;
@@ -101,22 +99,22 @@ body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
   transition: 0.45s ease-out;
 }
 
-.preloader #emoji-loader,
-.preloader #text-loader {
+body .preloader #emoji-loader,
+body .preloader #text-loader {
   height: 100px;
   position: absolute;
   text-align: center;
   margin: 0px auto;
 }
 
-.preloader #emoji-loader {
+body .preloader #emoji-loader {
   font-size: 6rem;
   animation: spin 2.6s infinite ease;
   height: 7rem;
   width: 7rem;
 }
 
-.preloader #text-loader {
+body .preloader #text-loader {
   font-weight: 500;
   padding-top: 10rem;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
@@ -126,16 +124,16 @@ body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
   font-size: calc(0.5vw - 0vw + 12px);
 }
 
-.preload-finish {
+body .preload-finish {
   opacity: 0;
   pointer-events: none;
 }
 
-.preload-finish #emoji-loader {
+body .preload-finish #emoji-loader {
   animation: none;
 }
 
-.preload-finish #text-loader {
+body .preload-finish #text-loader {
   animation: none;
 }
 
@@ -303,8 +301,7 @@ body {
 .main .navigation .logo-frame {
   display: block;
   position: relative;
-  margin-left: 4rem;
-  left: -23vw;
+  left: -20vw;
 }
 
 .main .navigation .logo-frame .logo-svg {

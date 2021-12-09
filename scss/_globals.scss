@@ -47,7 +47,7 @@ body {
       padding-left: 1rem;
       position: absolute;
       font-size: $font-size-nacho;
-  
+
       &:hover {
         font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
         color: $font-sutil-gray-color;
@@ -85,55 +85,56 @@ body {
     }
   }
 
-//////////// PRE LOADER ////////////////
-.preloader {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgb(208, 213, 254);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 99;
-  transition: $trans-slow ease-out;
-  // display: none; /// hid
-  #emoji-loader,
-  #text-loader {
-    height: 100px;
-    position: absolute;
-    text-align: center;
-    margin: 0px auto;
-  }
+  //////////// PRE LOADER ////////////////
+  .preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(208, 213, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    transition: $trans-slow ease-out;
+    // display: none; /// hid
+    #emoji-loader,
+    #text-loader {
+      height: 100px;
+      position: absolute;
+      text-align: center;
+      margin: 0px auto;
+    }
 
-  #emoji-loader {
-    // emoji rotate when loading
-    font-size: 6rem;
-    animation: spin 2.6s infinite ease; //ease is funnier//linear
-    // height and width to center the emoji for a absolute center rotation anchor
-    height: 7rem;
-    width: 7rem;
-  }
+    #emoji-loader {
+      // emoji rotate when loading
+      font-size: 6rem;
+      animation: spin 2.6s infinite ease; //ease is funnier//linear
+      // height and width to center the emoji for a absolute center rotation anchor
+      height: 7rem;
+      width: 7rem;
+    }
 
-  #text-loader {
-    font-weight: 500;
-    padding-top: 10rem;
-    font-family: $ff-recursive;
-    font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
-    animation: variableOpacity 2s infinite linear;
-    color: $sutil-dark-purple-gray-color;
-    font-size: $font-size-small;
+    #text-loader {
+      font-weight: 500;
+      padding-top: 10rem;
+      font-family: $ff-recursive;
+      font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
+      animation: variableOpacity 2s infinite linear;
+      color: $sutil-dark-purple-gray-color;
+      font-size: $font-size-small;
+    }
   }
-}
-.preload-finish {
-  opacity: 0;
-  pointer-events: none;
-  #emoji-loader {
-    // stop emoji rotate
-    animation: none;
-  }
-  #text-loader {
-    animation: none;
+  .preload-finish {
+    opacity: 0;
+    pointer-events: none;
+    #emoji-loader {
+      // stop emoji rotate
+      animation: none;
+    }
+    #text-loader {
+      animation: none;
+    }
   }
 }

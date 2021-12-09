@@ -19,10 +19,11 @@ body {
   }
   .left-arrow {
     background: coral;
+
     .link-a {
       color: whitesmoke;
       &:hover {
-        color: $font-sutil-gray-color;
+        color: $background-color;
       }
     }
     &:hover {
