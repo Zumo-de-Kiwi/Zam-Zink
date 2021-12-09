@@ -18,9 +18,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  // margin: 0px;
-  // border: 0px;
   color: $font-black;
   font-family: $ff-recursive;
   font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal,
@@ -39,23 +36,29 @@ body {
 
   // BACK ARROW
   .left-arrow {
-    padding: 2.5rem;
+    padding-top: 1rem;
+    // padding: 2rem;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     .link-a {
       color: $font-sutil-gray-color;
       font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
       text-decoration: none;
-      padding-left: 1rem;
-      position: absolute;
+      padding: 2rem;
+      // padding-top: 3rem;
       font-size: $font-size-nacho;
 
       &:hover {
         font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
         color: $font-sutil-gray-color;
         cursor: $cursor-arrow-hand;
-        display: relative;
+        // display: relative;
       }
       #left-arrow {
-        margin: 4rem;
+        // margin: 2rem;
         transition: 1s;
         cursor: $cursor-arrow-hand;
       }
@@ -63,8 +66,8 @@ body {
     .logo-frame {
       transition: $trans-normal ease-out;
       position: relative;
-      left: 7.5rem;
-      top: 1.8rem;
+      left: 0.8rem;
+      top: 0.5rem;
       .logo-svg {
         width: 36px; //adjust logo size
         .hc-logo {
@@ -75,7 +78,7 @@ body {
     }
     &:hover {
       .logo-frame {
-        left: 8rem;
+        left: 1.1rem;
         .logo-svg {
           .hc-logo {
             fill: $background-color;
@@ -84,57 +87,57 @@ body {
       }
     }
   }
-
-  //////////// PRE LOADER ////////////////
-  .preloader {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgb(208, 213, 254);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    transition: $trans-slow ease-out;
-    // display: none; /// hid
-    #emoji-loader,
-    #text-loader {
-      height: 100px;
-      position: absolute;
-      text-align: center;
-      margin: 0px auto;
-    }
-
-    #emoji-loader {
-      // emoji rotate when loading
-      font-size: 6rem;
-      animation: spin 2.6s infinite ease; //ease is funnier//linear
-      // height and width to center the emoji for a absolute center rotation anchor
-      height: 7rem;
-      width: 7rem;
-    }
-
-    #text-loader {
-      font-weight: 500;
-      padding-top: 10rem;
-      font-family: $ff-recursive;
-      font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
-      animation: variableOpacity 2s infinite linear;
-      color: $sutil-dark-purple-gray-color;
-      font-size: $font-size-small;
-    }
+}
+//////////// PRE LOADER //////////////////////
+//// ALERT! don't put it inside the body/////
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(208, 213, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transition: $trans-slow ease-out;
+  // display: none; /// hid
+  #emoji-loader,
+  #text-loader {
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    margin: 0px auto;
   }
-  .preload-finish {
-    opacity: 0;
-    pointer-events: none;
-    #emoji-loader {
-      // stop emoji rotate
-      animation: none;
-    }
-    #text-loader {
-      animation: none;
-    }
+
+  #emoji-loader {
+    // emoji rotate when loading
+    font-size: 6rem;
+    animation: spin 2.6s infinite ease; //ease is funnier//linear
+    // height and width to center the emoji for a absolute center rotation anchor
+    height: 7rem;
+    width: 7rem;
+  }
+
+  #text-loader {
+    font-weight: 500;
+    padding-top: 10rem;
+    font-family: Monaco, Consolas, "Courier New", monospace;
+    // font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
+    animation: variableOpacity 2s infinite linear;
+    color: $sutil-dark-purple-gray-color;
+    font-size: $font-size-small;
+  }
+}
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+  #emoji-loader {
+    // stop emoji rotate
+    animation: none;
+  }
+  #text-loader {
+    animation: none;
   }
 }

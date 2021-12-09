@@ -63,51 +63,40 @@ body {
 }
 // ARROW BACK
 .left-arrow {
-  padding: 2.5rem;
   .link-a {
     color: $font-sutil-gray-color;
-    font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
-    text-decoration: none;
-    padding-left: 1rem;
-    position: absolute;
-    font-size: $font-size-nacho;
 
     &:hover {
-      font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
       color: $font-sutil-gray-color;
-      cursor: $cursor-arrow-hand;
-      display: relative;
-    }
-    #left-arrow {
-      margin: 4rem;
-      transition: 1s;
-      cursor: $cursor-arrow-hand;
     }
   }
   .logo-frame {
-    transition: $trans-normal ease-out;
-    position: relative;
-    left: 7.5rem;
-    top: 1.8rem;
     .logo-svg {
-      width: 36px; //adjust logo size
       .hc-logo {
-        transition: $trans-normal ease-out;
         fill: transparent; //$font-sutil-gray-color;
       }
     }
   }
   &:hover {
-    .logo-frame {
-      left: 8rem;
-      .logo-svg {
-        .hc-logo {
-          fill: $background-color;
-        }
-      }
-    }
+    fill: $font-sutil-gray-color;
   }
 }
+.logo-svg {
+  display: inline-block;
+  width: 30px;
+  padding: 2rem;
+  cursor: $cursor-arrow-hand;
+  &:hover {
+    .hc-logo {
+      fill: $sutil-dark-purple-gray-color;
+    }
+  }
+  .hc-logo {
+    transition: $trans-slow;
+    fill: $font-sutil-gray-color;
+  }
+}
+
 .container {
   @include flexbox();
   @include align-items(center);
@@ -120,24 +109,11 @@ body {
   section {
     padding: 2rem;
   }
-  .logo-svg {
-    display: inline-block;
-    width: 30px;
-    padding: 2rem;
-    cursor: $cursor-arrow-hand;
-    &:hover {
-      .hc-logo {
-        fill: $sutil-dark-purple-gray-color;
-      }
-    }
-    .hc-logo {
-      transition: $trans-slow;
-      fill: $font-sutil-gray-color;
-    }
-  }
   h1 {
     color: $font-sutil-gray-color;
     text-align: center;
+    margin: 0px auto;
+    margin-top: 2rem;
   }
   p {
     --weight: 500;

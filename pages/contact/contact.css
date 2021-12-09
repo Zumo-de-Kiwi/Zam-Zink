@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
@@ -36,15 +35,19 @@ body h1 {
 }
 
 body .left-arrow {
-  padding: 2.5rem;
+  padding-top: 1rem;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 body .left-arrow .link-a {
   color: #b9cabf;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
-  padding-left: 1rem;
-  position: absolute;
+  padding: 2rem;
   font-size: calc(0.5vw + 0.8vw + 40px);
 }
 
@@ -52,11 +55,9 @@ body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: #b9cabf;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
-  display: relative;
 }
 
 body .left-arrow .link-a #left-arrow {
-  margin: 4rem;
   transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
@@ -64,8 +65,8 @@ body .left-arrow .link-a #left-arrow {
 body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
-  left: 7.5rem;
-  top: 1.8rem;
+  left: 0.8rem;
+  top: 0.5rem;
 }
 
 body .left-arrow .logo-frame .logo-svg {
@@ -78,14 +79,14 @@ body .left-arrow .logo-frame .logo-svg .hc-logo {
 }
 
 body .left-arrow:hover .logo-frame {
-  left: 8rem;
+  left: 1.1rem;
 }
 
 body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
   fill: #fcfaf8;
 }
 
-body .preloader {
+.preloader {
   position: fixed;
   top: 0;
   right: 0;
@@ -99,41 +100,40 @@ body .preloader {
   transition: 0.45s ease-out;
 }
 
-body .preloader #emoji-loader,
-body .preloader #text-loader {
+.preloader #emoji-loader,
+.preloader #text-loader {
   height: 100px;
   position: absolute;
   text-align: center;
   margin: 0px auto;
 }
 
-body .preloader #emoji-loader {
+.preloader #emoji-loader {
   font-size: 6rem;
   animation: spin 2.6s infinite ease;
   height: 7rem;
   width: 7rem;
 }
 
-body .preloader #text-loader {
+.preloader #text-loader {
   font-weight: 500;
   padding-top: 10rem;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620;
+  font-family: Monaco, Consolas, "Courier New", monospace;
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
   font-size: calc(0.5vw - 0vw + 12px);
 }
 
-body .preload-finish {
+.preload-finish {
   opacity: 0;
   pointer-events: none;
 }
 
-body .preload-finish #emoji-loader {
+.preload-finish #emoji-loader {
   animation: none;
 }
 
-body .preload-finish #text-loader {
+.preload-finish #text-loader {
   animation: none;
 }
 
@@ -344,54 +344,36 @@ body {
   animation: none;
 }
 
-.left-arrow {
-  padding: 2.5rem;
-}
-
 .left-arrow .link-a {
   color: #b9cabf;
-  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
-  text-decoration: none;
-  padding-left: 1rem;
-  position: absolute;
-  font-size: calc(0.5vw + 0.8vw + 40px);
 }
 
 .left-arrow .link-a:hover {
-  font-variation-settings: "CASL" 0.9, "wght" 500;
   color: #b9cabf;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
-  display: relative;
-}
-
-.left-arrow .link-a #left-arrow {
-  margin: 4rem;
-  transition: 1s;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
-}
-
-.left-arrow .logo-frame {
-  transition: 0.3s ease-out;
-  position: relative;
-  left: 7.5rem;
-  top: 1.8rem;
-}
-
-.left-arrow .logo-frame .logo-svg {
-  width: 36px;
 }
 
 .left-arrow .logo-frame .logo-svg .hc-logo {
-  transition: 0.3s ease-out;
   fill: transparent;
 }
 
-.left-arrow:hover .logo-frame {
-  left: 8rem;
+.left-arrow:hover {
+  fill: #b9cabf;
 }
 
-.left-arrow:hover .logo-frame .logo-svg .hc-logo {
-  fill: #fcfaf8;
+.logo-svg {
+  display: inline-block;
+  width: 30px;
+  padding: 2rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+.logo-svg:hover .hc-logo {
+  fill: #4d435b;
+}
+
+.logo-svg .hc-logo {
+  transition: 0.45s;
+  fill: #b9cabf;
 }
 
 .container {
@@ -412,25 +394,11 @@ body {
   padding: 2rem;
 }
 
-.container .logo-svg {
-  display: inline-block;
-  width: 30px;
-  padding: 2rem;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
-}
-
-.container .logo-svg:hover .hc-logo {
-  fill: #4d435b;
-}
-
-.container .logo-svg .hc-logo {
-  transition: 0.45s;
-  fill: #b9cabf;
-}
-
 .container h1 {
   color: #b9cabf;
   text-align: center;
+  margin: 0px auto;
+  margin-top: 2rem;
 }
 
 .container p {
