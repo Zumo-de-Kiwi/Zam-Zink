@@ -1,0 +1,59 @@
+/////// a complete page full of arrows
+@import '../../scss/globals';
+@import '../../scss/variables';
+@import '../../scss/mixins';
+@import '../../scss/font-anim-keyframes';
+
+body {
+  // background-color: $underline-color;
+  font-family: $ff-recursive;
+  font-variation-settings: 'MONO' 1, $CASL, 'wght' $font-weight-normal, $slnt;
+  font-size: $font-size-normal;
+  /////////////// | V | V | V | V | V | V | V /////////////
+
+  ///////////// SECOND PAGE /////////////
+  main {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgb(233, 255, 234);
+
+    // BACK ARROW
+    .left-arrow {
+      .link-a {
+        color: $spotify-text-green;
+        &:hover {
+          color: $skillshare-green;
+        }
+      }
+      .hc-logo {
+        fill: transparent; //$font-sutil-gray-color;
+        fill: $skillshare-green;
+      }
+      &:hover {
+        .hc-logo {
+          fill: $skillshare-green;
+        }
+      }
+    }
+
+    // MAIN CONTENT
+    .content {
+    }
+  }
+
+  footer {
+    height: 41vh;
+    background-color: $spotify-text-green;
+    color: beige;
+    #footer-div {
+      padding: 3rem;
+    }
+    a {
+      color: $skillshare-green;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

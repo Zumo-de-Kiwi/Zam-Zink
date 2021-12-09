@@ -324,173 +324,49 @@ body #trampolineEmoji:active {
 }
 
 body {
-  height: 100%;
+  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;
+  font-size: calc(0.5vw + 0.3vw + 13px);
 }
 
-.preloader {
-  background: whitesmoke;
-}
-
-.preloader #emoji-loader {
-  animation: none;
+body main {
+  min-height: 100vh;
+  width: 100%;
   position: relative;
-  padding-right: 8vw;
+  background: #e9ffea;
 }
 
-.preloader #emoji-loader #frame1,
-.preloader #emoji-loader #frame2,
-.preloader #emoji-loader #frame3,
-.preloader #emoji-loader #frame4 {
-  position: absolute;
+body main .left-arrow .link-a {
+  color: #1dd75e;
 }
 
-.preloader #emoji-loader #frame1 {
-  animation: gifFrame1 1.6s infinite ease;
+body main .left-arrow .link-a:hover {
+  color: #00ff84;
 }
 
-.preloader #emoji-loader #frame2 {
-  animation: gifFrame2 1.6s infinite ease;
-}
-
-.preloader #emoji-loader #frame3 {
-  animation: gifFrame3 1.6s infinite ease;
-}
-
-.preloader #emoji-loader #frame4 {
-  animation: gifFrame4 1.6s infinite ease;
-}
-
-.preloader #text-loader {
-  padding-top: 12rem;
-  animation: variableOpacity 2s infinite linear;
-  color: #4d435b;
-}
-
-.preload-finish {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.preload-finish #emoji-loader {
-  animation: none;
-}
-
-.preload-finish #emoji-loader #frame1,
-.preload-finish #emoji-loader #frame2,
-.preload-finish #emoji-loader #frame3,
-.preload-finish #emoji-loader #frame4 {
-  animation: none;
-}
-
-.preload-finish #text-loader {
-  animation: none;
-}
-
-.left-arrow .link-a {
-  color: #b9cabf;
-}
-
-.left-arrow .link-a:hover {
-  color: #b9cabf;
-}
-
-.left-arrow .logo-frame .logo-svg .hc-logo {
+body main .left-arrow .hc-logo {
   fill: transparent;
+  fill: #00ff84;
 }
 
-.left-arrow:hover {
-  fill: #b9cabf;
+body main .left-arrow:hover .hc-logo {
+  fill: #00ff84;
 }
 
-.logo-svg {
-  display: inline-block;
-  padding: 2rem;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+body footer {
+  height: 41vh;
+  background-color: #1dd75e;
+  color: beige;
 }
 
-.logo-svg .hc-logo {
-  transition: 0.45s;
-  fill: #b9cabf;
+body footer #footer-div {
+  padding: 3rem;
 }
 
-.logo-svg:hover .hc-logo {
-  fill: #4d435b;
+body footer a {
+  color: #00ff84;
 }
 
-.container {
-  display: flex;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  flex-wrap: wrap;
-  align-content: center;
-  flex-direction: row;
-}
-
-.container section {
-  padding: 2rem;
-}
-
-.container h1 {
-  color: #b9cabf;
-  text-align: center;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
-
-.container p {
-  --weight: 500;
-  font-size: calc(0.5vw + 0.3vw + 13px);
-  font-variation-settings: "wght" var(--weight);
-}
-
-.container #mailFrame a {
-  text-decoration-color: #b9cabf;
-  transition: 0.45s;
-}
-
-.container #mailFrame a:hover {
-  text-decoration-color: #232522;
-}
-
-.container #mailFrame a #mailText {
-  font-variation-settings: "MONO" 1, "CASL" 0.2, "wght" 500;
-  font-size: calc(0.5vw + 0.3vw + 13px);
-  transition: font-variation-settings 0.5s ease;
-  font-size: calc(3vw + 12px);
-  user-select: none;
-  color: #4d435b;
-}
-
-.container #mailFrame a #mailText:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>💌 </text></svg>") 16 0, auto;
-  font-variation-settings: "MONO" 1, "CASL" 0.01, "wght" 400;
-  color: #232522;
-}
-
-.container #mailFrame div {
-  display: none;
-}
-
-.container #mailFrame:hover div {
-  font-size: calc(3vw + 40px);
-  position: fixed;
-  left: 45%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(3vw + 70px);
-  height: calc(3vw + 70px);
-  border-radius: 50%;
-}
-
-.container #mailFrame:hover .wave {
-  display: block;
-  animation-name: waveHand;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
+body footer a:hover {
+  color: white;
 }

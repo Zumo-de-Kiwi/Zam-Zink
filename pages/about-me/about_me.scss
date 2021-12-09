@@ -1,17 +1,15 @@
 /////// a complete page full of arrows
-@import "../../scss/globals";
-@import "../../scss/variables";
-@import "../../scss/mixins";
-@import "../../scss/font-anim-keyframes";
+@import '../../scss/globals';
+@import '../../scss/variables';
+@import '../../scss/mixins';
+@import '../../scss/font-anim-keyframes';
 
 body {
   // background-color: $underline-color;
   font-family: $ff-recursive;
-  font-variation-settings: "MONO" 1, $CASL, "wght" $font-weight-normal, $slnt;
+  font-variation-settings: 'MONO' 1, $CASL, 'wght' $font-weight-normal, $slnt;
   font-size: $font-size-normal;
-  /////////////// | V | V | V | V | V | V | V /////////////
 
-  ///////////// SECOND PAGE /////////////
   main {
     min-height: 100vh;
     width: 100%;
@@ -20,48 +18,18 @@ body {
 
     // BACK ARROW
     .left-arrow {
-      padding: 2.5rem;
       .link-a {
         color: $underline-color;
-        font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
-        text-decoration: none;
-        padding-left: 1rem;
-        position: absolute;
-        font-size: $font-size-nacho;
-
         &:hover {
-          font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
           color: white;
-          cursor: $cursor-arrow-hand;
-          display: relative;
-        }
-        #left-arrow {
-          margin: 4rem;
-          transition: 1s;
-          cursor: $cursor-arrow-hand;
         }
       }
-      .logo-frame {
-        transition: $trans-normal ease-out;
-        position: relative;
-        left: 7.5rem;
-        top: 1.8rem;
-        .logo-svg {
-          width: 36px; //adjust logo size
-          .hc-logo {
-            transition: $trans-normal ease-out;
-            fill: transparent; //$font-sutil-gray-color;
-          }
-        }
+      .hc-logo {
+        fill: transparent; //$font-sutil-gray-color;
       }
       &:hover {
-        .logo-frame {
-          left: 8rem;
-          .logo-svg {
-            .hc-logo {
-              fill: $background-color;
-            }
-          }
+        .hc-logo {
+          fill: $background-color;
         }
       }
     }
@@ -69,8 +37,8 @@ body {
     // MAIN CONTENT
     .content {
       .title {
-        font-variation-settings: "MONO" 0.2, "CASL" 0.8,
-          "wght" $font-weight-bold;
+        font-variation-settings: 'MONO' 0.2, 'CASL' 0.8,
+          'wght' $font-weight-bold;
         font-size: $font-size-nacho;
         color: $underline-color;
         // margin: 0px auto;

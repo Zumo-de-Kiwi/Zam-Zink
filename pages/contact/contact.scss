@@ -1,8 +1,8 @@
 // Make something like a digital contact libreta?
-@import "../../scss/variables";
-@import "../../scss/mixins";
-@import "../../scss/globals";
-@import "../../scss/font-anim-keyframes";
+@import '../../scss/variables';
+@import '../../scss/mixins';
+@import '../../scss/globals';
+@import '../../scss/font-anim-keyframes';
 
 body {
   height: 100%;
@@ -83,17 +83,16 @@ body {
 }
 .logo-svg {
   display: inline-block;
-  width: 30px;
   padding: 2rem;
   cursor: $cursor-arrow-hand;
+  .hc-logo {
+    transition: $trans-slow;
+    fill: $font-sutil-gray-color;
+  }
   &:hover {
     .hc-logo {
       fill: $sutil-dark-purple-gray-color;
     }
-  }
-  .hc-logo {
-    transition: $trans-slow;
-    fill: $font-sutil-gray-color;
   }
 }
 
@@ -118,7 +117,7 @@ body {
   p {
     --weight: 500;
     font-size: $font-size-normal;
-    font-variation-settings: "wght" var(--weight);
+    font-variation-settings: 'wght' var(--weight);
   }
   #mailFrame {
     a {
@@ -128,7 +127,7 @@ body {
         text-decoration-color: $font-black;
       }
       #mailText {
-        font-variation-settings: "MONO" 1, "CASL" 0.2, "wght" $font-weight-light;
+        font-variation-settings: 'MONO' 1, 'CASL' 0.2, 'wght' $font-weight-light;
         font-size: $font-size-normal;
         // font-family: "Ginto Variable";
         transition: font-variation-settings 0.5s ease;
@@ -138,8 +137,8 @@ body {
         // font-variation-settings: "wght" 400;
         &:hover {
           cursor: $cursor-contact-mail;
-          font-variation-settings: "MONO" 1, "CASL" 0.01,
-            "wght" $font-weight-lighter;
+          font-variation-settings: 'MONO' 1, 'CASL' 0.01,
+            'wght' $font-weight-lighter;
           color: $font-black;
         }
       }

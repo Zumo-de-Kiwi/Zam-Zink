@@ -1,8 +1,8 @@
 // Make something like a digital contact libreta?
-@import "../../../scss/variables";
-@import "../../../scss/mixins";
-@import "../../../scss/globals";
-@import "../../../scss/font-anim-keyframes";
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+@import '../../../scss/globals';
+@import '../../../scss/font-anim-keyframes';
 
 body {
   //   font-size: 2rem;
@@ -47,9 +47,7 @@ body {
       position: fixed; /* Fixed/sticky position */
       bottom: 2rem; /* Place the button at the bottom of the page */
       right: 4rem; /* Place the button 30px from the right */
-      //   position: sticky;
-      //   position: -webkit-sticky;
-      //   height: 30px;
+
       z-index: 9; /* Make sure it does not overlap */
 
       text-decoration: none;

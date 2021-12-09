@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 html {
   font-size: 62.5%; //Now 10px is equal 1rem
@@ -20,15 +20,15 @@ html {
 body {
   color: $font-black;
   font-family: $ff-recursive;
-  font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal,
-    "slnt" $slnt;
+  font-variation-settings: $MONO, $CASL, 'wght' $font-weight-normal,
+    'slnt' $slnt;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
   ::selection {
     // When text is selected it will be yellow
     background-color: $background-selected-color;
-    color: $font-gray;
+    color: black;
   }
   h1 {
     font-size: $font-size-huge;
@@ -45,14 +45,13 @@ body {
     left: 1rem;
     .link-a {
       color: $font-sutil-gray-color;
-      font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" $font-weight-light;
+      font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-light;
       text-decoration: none;
-      padding: 2rem;
-      // padding-top: 3rem;
+      padding: 2rem; // padding-top: 3rem;
       font-size: $font-size-nacho;
-
+      transition: $trans-slow;
       &:hover {
-        font-variation-settings: "CASL" 0.9, "wght" $font-weight-light;
+        font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-light;
         color: $font-sutil-gray-color;
         cursor: $cursor-arrow-hand;
         // display: relative;
@@ -66,8 +65,8 @@ body {
     .logo-frame {
       transition: $trans-normal ease-out;
       position: relative;
-      left: 0.8rem;
-      top: 0.5rem;
+      left: 0.7rem;
+      top: 0.2rem;
       .logo-svg {
         width: 36px; //adjust logo size
         .hc-logo {
@@ -78,13 +77,50 @@ body {
     }
     &:hover {
       .logo-frame {
-        left: 1.1rem;
-        .logo-svg {
-          .hc-logo {
-            fill: $background-color;
-          }
+        left: 1rem;
+        .hc-logo {
+          fill: rgba(252, 252, 252, 0.6);
+          // fill: transparent;
         }
       }
+    }
+  }
+
+  // REMOVE LIST STYLE
+  ul {
+    list-style: none;
+  }
+
+  // LINK STYLE + EMOJI POINTER
+  a {
+    color: $font-linked-color;
+    cursor: $cursor-please-fingers;
+    &:active {
+      cursor: $cursor-yeah-hand;
+    }
+  }
+
+  // TO THE TOP TRAMPOLINE
+  // <a id="trampolineEmoji" title="Go to the top" href="#top">🚀</a>   <!-- ✈️  🧹-->
+  #trampolineEmoji {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2rem; /* Place the button at the bottom of the page */
+    right: 4rem; /* Place the button 30px from the 
+    z-index: 9; /* Make sure it does not overlap */
+
+    text-decoration: none;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    font-size: 3.5rem; /* Increase font size */
+    transition: $trans-fast;
+    cursor: $cursor-pointer-hand-flip;
+    &:hover {
+      cursor: $cursor-pointer-hand-flip;
+      transform: scale(1.1);
+      // transform: translate(1rem, 0.1rem);
+    }
+    &:active {
+      transform: scale(0.9);
     }
   }
 }
@@ -123,7 +159,7 @@ body {
   #text-loader {
     font-weight: 500;
     padding-top: 10rem;
-    font-family: Monaco, Consolas, "Courier New", monospace;
+    font-family: Monaco, Consolas, 'Courier New', monospace;
     // font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
     animation: variableOpacity 2s infinite linear;
     color: $sutil-dark-purple-gray-color;

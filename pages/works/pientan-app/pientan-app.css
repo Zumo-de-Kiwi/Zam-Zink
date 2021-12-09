@@ -27,7 +27,7 @@ body {
 
 body ::selection {
   background-color: #fff705;
-  color: #5b5957;
+  color: black;
 }
 
 body h1 {
@@ -49,6 +49,7 @@ body .left-arrow .link-a {
   text-decoration: none;
   padding: 2rem;
   font-size: calc(0.5vw + 0.8vw + 40px);
+  transition: 0.45s;
 }
 
 body .left-arrow .link-a:hover {
@@ -65,8 +66,8 @@ body .left-arrow .link-a #left-arrow {
 body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
-  left: 0.8rem;
-  top: 0.5rem;
+  left: 0.7rem;
+  top: 0.2rem;
 }
 
 body .left-arrow .logo-frame .logo-svg {
@@ -79,11 +80,52 @@ body .left-arrow .logo-frame .logo-svg .hc-logo {
 }
 
 body .left-arrow:hover .logo-frame {
-  left: 1.1rem;
+  left: 1rem;
 }
 
-body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
-  fill: #fcfaf8;
+body .left-arrow:hover .logo-frame .hc-logo {
+  fill: rgba(252, 252, 252, 0.6);
+}
+
+body ul {
+  list-style: none;
+}
+
+body a {
+  color: #621bc5;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
+}
+
+body a:active {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
+}
+
+body #trampolineEmoji {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 2rem;
+  /* Place the button at the bottom of the page */
+  right: 4rem;
+  /* Place the button 30px from the 
+    z-index: 9; /* Make sure it does not overlap */
+  text-decoration: none;
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  font-size: 3.5rem;
+  /* Increase font size */
+  transition: 0.15s;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+}
+
+body #trampolineEmoji:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  transform: scale(1.1);
+}
+
+body #trampolineEmoji:active {
+  transform: scale(0.9);
 }
 
 .preloader {
@@ -118,7 +160,7 @@ body .left-arrow:hover .logo-frame .logo-svg .hc-logo {
 .preloader #text-loader {
   font-weight: 500;
   padding-top: 10rem;
-  font-family: Monaco, Consolas, "Courier New", monospace;
+  font-family: Monaco, Consolas, 'Courier New', monospace;
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
   font-size: calc(0.5vw - 0vw + 12px);
