@@ -1,19 +1,92 @@
 // HIDE / SHOW
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const btnCloseModal = document.querySelector('.close-modal');
-const btnsOpenModal = document.querySelectorAll('.show-modal');
+// Examples
+// const modal = document.querySelector('.modal');
+// const overlay = document.querySelector('.overlay');
+// const btnCloseModal = document.querySelector('.close-modal');
+// const btnsOpenModal = document.querySelectorAll('.show-modal');
 
-const openModal = function () {
-  modal.classList.remove('hidden'); // You can even add classes
-  overlay.classList.remove('hidden');
+// const openModal = function () {
+//   modal.classList.remove('hidden'); // You can even add classes
+//   overlay.classList.remove('hidden');
+// };
+
+// const closeModal = function () {
+//   modal.classList.add('hidden'); //add the hidden class back
+//   overlay.classList.add('hidden');
+// };
+
+/////  DO IT ////
+const leftArrow = document.getElementById('leftArrow');
+const closeBtn = document.querySelector('.closeBtn');
+const ingredients = document.querySelector('.ingredients');
+const comicalPics = document.getElementById('comical-pics');
+// const centerContent = document.getElementById('center-content');
+const centerPs = document.getElementById('center-Ps');
+const moreBtns = document.getElementById('more-btns');
+const myPixelPic = document.getElementById('my-pixel-pic');
+
+const titles = document.querySelectorAll('.titles');
+// const titles = (document.getElementsByClassName('titles').style.color ='black');
+const aboutMe = document.getElementById('about-me');
+const boringSide = document.getElementById('boring-side');
+const comicalSide = document.getElementById('comical-side');
+const bottomSide = document.getElementById('bottom-side');
+
+console.log(titles);
+
+////////// FUNCTIONS //////////////
+
+const openComical = function () {
+  centerPs.classList.add('hidden');
+  moreBtns.classList.add('hidden');
+  myPixelPic.classList.add('hidden');
+
+  comicalPics.classList.remove('hidden');
+  // atenuate sides
+  aboutMe.style.color = 'hsl(0, 0%, 84%)';
+  bottomSide.style.color = 'hsl(0, 0%, 84%)';
+  boringSide.style.color = 'hsl(0, 0%, 84%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  boringSide.style.textDecoration = 'none';
+  //  <   X
+  leftArrow.classList.add('hidden');
+  closeBtn.classList.remove('hidden');
+};
+const closeComical = function () {
+  centerPs.classList.remove('hidden');
+  moreBtns.classList.remove('hidden');
+  comicalPics.classList.add('hidden');
+  // atenuate sides
+  aboutMe.style.color = 'hsl(100, 4%, 14%)';
+  bottomSide.style.color = 'hsl(100, 4%, 14%)';
+  boringSide.style.color = 'hsl(100, 4%, 14%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  boringSide.style.textDecoration = 'underline';
+  //  <   X
+  leftArrow.classList.remove('hidden');
+  closeBtn.classList.add('hidden');
 };
 
-const closeModal = function () {
-  modal.classList.add('hidden'); //add the hidden class back
-  overlay.classList.add('hidden');
+///////// WHEN CLICK ////////////
+let comicalOpened = 0;
+const isComical = function () {
+  if (comicalOpened == 0) {
+    comicalOpened++;
+    openComical();
+  } else {
+    comicalOpened = 0;
+    closeComical();
+  }
 };
 
+comicalSide.addEventListener('click', isComical);
+// if (comicalOpened == 1)
+closeBtn.addEventListener('click', closeComical);
+
+//
+//
+//
+//
+//
+//
 //
 // BTN CHANGE TEXT ON CLOCK
 let btnNum = 1;

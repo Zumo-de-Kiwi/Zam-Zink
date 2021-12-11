@@ -8,7 +8,6 @@ body {
   // background-color: $underline-color;
   // font-family: $ff-recursive;
   font-size: $font-size-normal;
-  color: $dark-gray;
 
   main {
     display: grid;
@@ -28,9 +27,9 @@ body {
       grid-column: 1/ 2;
       grid-row: 1 / 2;
       .link-a {
-        color: $dark-gray;
+        color: $font-black;
         &:hover {
-          color: $dark-gray;
+          color: $font-black;
         }
       }
       .hc-logo {
@@ -42,12 +41,33 @@ body {
         }
       }
     }
+    // X close btn
+    .closeBtn {
+      // grid-column: 1/ 2;
+      // grid-row: 1 / 2;
+      z-index: 5;
+      font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-light;
+      font-size: 5rem;
+      color: $font-black;
+      padding: 3rem;
+      margin-top: 2rem;
+      margin-left: 2rem;
+
+      cursor: $cursor-please-fingers;
+      transition: $trans-normal;
+      // align-self: end;
+      // justify-self: center;
+      // text-align: center;
+      &:hover {
+        font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-light;
+      }
+    }
 
     // THE FOUR TITLES
     .titles {
       font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
       font-size: 3rem;
-      // color: $dark-gray;
+      color: $font-black;
       align-self: center;
       justify-self: center;
       text-align: center;
@@ -58,7 +78,7 @@ body {
       z-index: 1;
 
       &:hover {
-        text-decoration-color: $dark-gray;
+        text-decoration-color: $font-black;
         font-variation-settings: 'MONO' 1, 'CASL' 0.1,
           'wght' $font-weight-normal;
       }
@@ -67,7 +87,6 @@ body {
       grid-column: 2/ 3;
       grid-row: 1 / 2;
       text-decoration: none;
-      // color: $light-gray;
       cursor: $cursor-pointer-down-hand;
       &:hover {
         text-decoration: none;
@@ -132,11 +151,11 @@ body {
       grid-row: 2 / 3;
       border: 1px solid rgb(240, 240, 240);
       display: grid;
-      justify-content: center;
+      place-items: center;
       #center-content {
         border: 1px solid rgb(232, 232, 232);
         height: 100%;
-        z-index: 2;
+        z-index: 1;
 
         display: grid;
         place-items: center;
@@ -207,6 +226,11 @@ body {
       ////// COMICAL SIDE ///////////
       #comical-pics {
         opacity: 100%;
+        z-index: 2;
+        // #comical-text {
+        //   text-align: center;
+        //   z-index: 3;
+        // }
         @keyframes toUpRight {
           to {
             transform: translate(2rem, -2rem);
@@ -253,7 +277,7 @@ body {
           // will-change: transform;
           position: absolute;
           border-radius: 7px;
-          z-index: 2;
+          // z-index: 2;
           // GRAYSCALE
           -webkit-filter: grayscale(
             1
@@ -275,7 +299,7 @@ body {
         #my-pic-2 {
           bottom: 15vh;
           left: 11vw;
-          width: calc(50px + 9vw);
+          width: calc(45px + 9vw);
           animation: toUpRight 5s ease 4s infinite alternate;
         }
         #my-pic-3 {
@@ -287,24 +311,24 @@ body {
         #my-pic-4 {
           top: 15vh;
           left: 31vw;
-          width: calc(px + 10vw);
+          width: calc(27px + 10vw);
           animation: toUpLeft 7s linear 5s infinite alternate;
         }
         #my-pic-5 {
-          top: 39vh;
+          top: 41vh;
           right: 11vw;
-          width: calc(40px + 10vw);
+          width: calc(39px + 10vw);
           // animation: parabola 8s linear 2s infinite alternate;
         }
         #my-pic-6 {
-          bottom: 13vh;
-          right: 46vw;
+          bottom: 11vh;
+          right: 43vw;
           width: calc(8px + 9vw);
           animation: toUpRight 10s ease 3s infinite alternate;
         }
         #my-pic-7 {
-          top: 17vh;
-          right: 36vw;
+          top: 19vh;
+          right: 31vw;
           width: calc(15px + 10vw);
           animation: toUpRight 10s ease 5s infinite alternate;
         }
@@ -315,8 +339,8 @@ body {
           animation: lToR 13s ease 3s infinite alternate;
         }
         #my-pic-9 {
-          top: 40vh;
-          left: 26vw;
+          top: 44vh;
+          left: 24vw;
           width: calc(40px + 10vw);
           animation: lToR 13s ease 3s infinite alternate;
         }
@@ -327,12 +351,11 @@ body {
   footer {
     height: 41vh;
     display: grid;
-    background-color: beige;
+    background-color: $light-gray;
     #footer-inside {
       padding: 3rem;
     }
   }
-
   /////////////////////////////
   /////////////////////////////
   //////////////////////////////
