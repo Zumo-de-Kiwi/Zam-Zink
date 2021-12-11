@@ -29,6 +29,7 @@ const p4 =
   'I really appreciated an out-of-box design, listening a open-minder song or watch a non-cliche film is welcomed.';
 const p5 = 'You realy want more about me?';
 const p6 = 'Really!? The Midnight Gospel is one of my favourite series, too.';
+const pComical = 'One photo tells more than a thousand words.';
 
 const btn1 = 'Tell me more';
 const btn2 = 'Don’t tell me less';

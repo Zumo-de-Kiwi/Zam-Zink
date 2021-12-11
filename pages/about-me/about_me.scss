@@ -130,15 +130,13 @@ body {
     #center-box {
       grid-column: 2/ 3;
       grid-row: 2 / 3;
-      border: 5px solid rgb(238, 238, 238);
-      // padding: 10vh 15vw;
-      // padding: 10rem 5rem;
+      border: 1px solid rgb(240, 240, 240);
       display: grid;
-      // justify-content: center;
-      place-items: center;
+      justify-content: center;
       #center-content {
-        border: 5px solid rgb(228, 227, 227);
+        border: 1px solid rgb(232, 232, 232);
         height: 100%;
+        z-index: 2;
 
         display: grid;
         place-items: center;
@@ -154,16 +152,16 @@ body {
         #center-Ps {
           grid-column: 1/ 4;
           grid-row: 2 / 3;
-          font-size: 1.8rem;
+          font-size: calc(1.4rem + 0.5vw);
           position: relative;
           .center-p {
             font-variation-settings: 'MONO' 1, 'CASL' 0,
               'wght' $font-weight-light;
-
+            z-index: 2;
             text-align: center;
             span {
               text-decoration: underline;
-              z-index: 2;
+              z-index: 4;
               &:hover {
                 text-decoration: none;
               }
@@ -208,15 +206,33 @@ body {
 
       ////// COMICAL SIDE ///////////
       #comical-pics {
-        // display: none;
-        opacity: 20%;
-        // position: absolute;
-        /// sutilly move the pics like they are on the water
-        // move it with margin and not transform, for better performance
+        opacity: 100%;
         @keyframes toUpRight {
           to {
-            transform: translate(1rem, -2rem);
+            transform: translate(2rem, -2rem);
             // no use margin=> margin-top: 0rem;margin-left: 4rem;
+          }
+        }
+        @keyframes toDownLeft {
+          to {
+            transform: translate(-2.3rem, 2rem);
+            // no use margin=> margin-top: 0rem;margin-left: 4rem;
+          }
+        }
+        @keyframes toUpLeft {
+          to {
+            transform: translate(-2.6rem, -3rem);
+            // no use margin=> margin-top: 0rem;margin-left: 4rem;
+          }
+        }
+        @keyframes lToR {
+          to {
+            transform: translateX(7rem);
+          }
+        }
+        @keyframes btmToTop {
+          to {
+            transform: translateY(-5rem);
           }
         }
         @keyframes parabola {
@@ -234,38 +250,75 @@ body {
           }
         }
         .comical-pic {
-          will-change: transform;
+          // will-change: transform;
           position: absolute;
+          border-radius: 7px;
+          z-index: 2;
+          // GRAYSCALE
+          -webkit-filter: grayscale(
+            1
+          ); /* Google Chrome, Safari 6+ & Opera 15+ */
+          filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+          // transition: $trans-fast;
+          &:hover {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            // transform: scale(1.1);
+          }
         }
         #my-pic-1 {
-          top: 20vh;
-          left: 5vw;
-          width: calc(150px + 5vw);
-          animation: toUpRight 5s ease 3s infinite alternate;
+          top: 15vh;
+          left: 9vw;
+          width: calc(30px + 9vw);
+          animation: parabola 6s linear 2s infinite alternate;
         }
         #my-pic-2 {
           bottom: 15vh;
-          left: 20vh;
-          width: calc(140px + 5vw);
-          animation: parabola 6s linear 3s infinite alternate;
+          left: 11vw;
+          width: calc(50px + 9vw);
+          animation: toUpRight 5s ease 4s infinite alternate;
         }
         #my-pic-3 {
-          bottom: 35vh;
-          right: 10vh;
-          width: calc(140px + 5vw);
-          animation: parabola 6s linear 3s infinite alternate;
+          top: -2vh;
+          right: 13vh;
+          width: calc(50px + 10vw);
+          animation: btmToTop 10s ease 1s infinite alternate;
         }
         #my-pic-4 {
-          top: 10vh;
-          right: 40vh;
-          width: calc(140px + 5vw);
-          animation: parabola 6s linear 3s infinite alternate;
+          top: 15vh;
+          left: 31vw;
+          width: calc(px + 10vw);
+          animation: toUpLeft 7s linear 5s infinite alternate;
         }
         #my-pic-5 {
-          top: 50vh;
-          right: 28vh;
-          width: calc(140px + 5vw);
-          animation: parabola 6s linear 3s infinite alternate;
+          top: 39vh;
+          right: 11vw;
+          width: calc(40px + 10vw);
+          // animation: parabola 8s linear 2s infinite alternate;
+        }
+        #my-pic-6 {
+          bottom: 13vh;
+          right: 46vw;
+          width: calc(8px + 9vw);
+          animation: toUpRight 10s ease 3s infinite alternate;
+        }
+        #my-pic-7 {
+          top: 17vh;
+          right: 36vw;
+          width: calc(15px + 10vw);
+          animation: toUpRight 10s ease 5s infinite alternate;
+        }
+        #my-pic-8 {
+          bottom: 7vh;
+          right: 15vw;
+          width: calc(65px + 8vw);
+          animation: lToR 13s ease 3s infinite alternate;
+        }
+        #my-pic-9 {
+          top: 40vh;
+          left: 26vw;
+          width: calc(40px + 10vw);
+          animation: lToR 13s ease 3s infinite alternate;
         }
       }
     }
@@ -288,6 +341,10 @@ body {
   /* The bitton to show the stuff */
   // .show-modal{
   // }
+  /* CLASSES TO MAKE MODAL WORK */
+  .hidden {
+    display: none;
+  }
   /* X button */
   .close-modal {
     /*write this in the html for show the X button <button class="close-modal">&times;</button> */
@@ -300,10 +357,6 @@ body {
     border: none;
     background: none;
   }
-  /* CLASSES TO MAKE MODAL WORK */
-  .hidden {
-    display: none;
-  }
   //// the ingredients and my pics can be set with this
   .modal {
     // position: absolute;
@@ -311,7 +364,6 @@ body {
     // left: 50%;
     // transform: translate(-50%, -50%);
     // width: 70%;
-
     background-color: white;
     // padding: 6rem;
     // border-radius: 5px;

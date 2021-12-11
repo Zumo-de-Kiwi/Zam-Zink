@@ -328,8 +328,8 @@ body {
   font-size: calc(0.5vw + 0.3vw + 13px);
   color: #323232;
   /* The bitton to show the stuff */
-  /* X button */
   /* CLASSES TO MAKE MODAL WORK */
+  /* X button */
 }
 
 body main {
@@ -447,14 +447,15 @@ body main #ingredients :after {
 body main #center-box {
   grid-column: 2/ 3;
   grid-row: 2 / 3;
-  border: 5px solid #eeeeee;
+  border: 1px solid #f0f0f0;
   display: grid;
-  place-items: center;
+  justify-content: center;
 }
 
 body main #center-box #center-content {
-  border: 5px solid #e4e3e3;
+  border: 1px solid #e8e8e8;
   height: 100%;
+  z-index: 2;
   display: grid;
   place-items: center;
   width: clamp(400px, 40ch, 45ch);
@@ -466,18 +467,19 @@ body main #center-box #center-content {
 body main #center-box #center-content #center-Ps {
   grid-column: 1/ 4;
   grid-row: 2 / 3;
-  font-size: 1.8rem;
+  font-size: calc(1.4rem + 0.5vw);
   position: relative;
 }
 
 body main #center-box #center-content #center-Ps .center-p {
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500;
+  z-index: 2;
   text-align: center;
 }
 
 body main #center-box #center-content #center-Ps .center-p span {
   text-decoration: underline;
-  z-index: 2;
+  z-index: 4;
 }
 
 body main #center-box #center-content #center-Ps .center-p span:hover {
@@ -521,12 +523,36 @@ body main #center-box #center-content #more-btns .more-btn:active {
 }
 
 body main #center-box #comical-pics {
-  opacity: 20%;
+  opacity: 100%;
 }
 
 @keyframes toUpRight {
   to {
-    transform: translate(1rem, -2rem);
+    transform: translate(2rem, -2rem);
+  }
+}
+
+@keyframes toDownLeft {
+  to {
+    transform: translate(-2.3rem, 2rem);
+  }
+}
+
+@keyframes toUpLeft {
+  to {
+    transform: translate(-2.6rem, -3rem);
+  }
+}
+
+@keyframes lToR {
+  to {
+    transform: translateX(7rem);
+  }
+}
+
+@keyframes btmToTop {
+  to {
+    transform: translateY(-5rem);
   }
 }
 
@@ -546,43 +572,78 @@ body main #center-box #comical-pics {
 }
 
 body main #center-box #comical-pics .comical-pic {
-  will-change: transform;
   position: absolute;
+  border-radius: 7px;
+  z-index: 2;
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+}
+
+body main #center-box #comical-pics .comical-pic:hover {
+  filter: none;
 }
 
 body main #center-box #comical-pics #my-pic-1 {
-  top: 20vh;
-  left: 5vw;
-  width: calc(150px + 5vw);
-  animation: toUpRight 5s ease 3s infinite alternate;
+  top: 15vh;
+  left: 9vw;
+  width: calc(30px + 9vw);
+  animation: parabola 6s linear 2s infinite alternate;
 }
 
 body main #center-box #comical-pics #my-pic-2 {
   bottom: 15vh;
-  left: 20vh;
-  width: calc(140px + 5vw);
-  animation: parabola 6s linear 3s infinite alternate;
+  left: 11vw;
+  width: calc(50px + 9vw);
+  animation: toUpRight 5s ease 4s infinite alternate;
 }
 
 body main #center-box #comical-pics #my-pic-3 {
-  bottom: 35vh;
-  right: 10vh;
-  width: calc(140px + 5vw);
-  animation: parabola 6s linear 3s infinite alternate;
+  top: -2vh;
+  right: 13vh;
+  width: calc(50px + 10vw);
+  animation: btmToTop 10s ease 1s infinite alternate;
 }
 
 body main #center-box #comical-pics #my-pic-4 {
-  top: 10vh;
-  right: 40vh;
-  width: calc(140px + 5vw);
-  animation: parabola 6s linear 3s infinite alternate;
+  top: 15vh;
+  left: 31vw;
+  width: calc(40px + 10vw);
+  animation: toUpLeft 7s linear 5s infinite alternate;
 }
 
 body main #center-box #comical-pics #my-pic-5 {
-  top: 50vh;
-  right: 28vh;
-  width: calc(140px + 5vw);
-  animation: parabola 6s linear 3s infinite alternate;
+  top: 39vh;
+  right: 11vw;
+  width: calc(40px + 10vw);
+}
+
+body main #center-box #comical-pics #my-pic-6 {
+  bottom: 13vh;
+  right: 46vw;
+  width: calc(8px + 9vw);
+  animation: toUpRight 10s ease 3s infinite alternate;
+}
+
+body main #center-box #comical-pics #my-pic-7 {
+  top: 17vh;
+  right: 36vw;
+  width: calc(15px + 10vw);
+  animation: toUpRight 10s ease 5s infinite alternate;
+}
+
+body main #center-box #comical-pics #my-pic-8 {
+  bottom: 7vh;
+  right: 15vw;
+  width: calc(65px + 8vw);
+  animation: lToR 13s ease 3s infinite alternate;
+}
+
+body main #center-box #comical-pics #my-pic-9 {
+  top: 40vh;
+  left: 26vw;
+  width: calc(40px + 10vw);
+  animation: lToR 13s ease 3s infinite alternate;
 }
 
 body footer {
@@ -595,6 +656,10 @@ body footer #footer-inside {
   padding: 3rem;
 }
 
+body .hidden {
+  display: none;
+}
+
 body .close-modal {
   /*write this in the html for show the X button <button class="close-modal">&times;</button> */
   position: absolute;
@@ -605,10 +670,6 @@ body .close-modal {
   cursor: pointer;
   border: none;
   background: none;
-}
-
-body .hidden {
-  display: none;
 }
 
 body .modal {
