@@ -324,24 +324,33 @@ body #trampolineEmoji:active {
 }
 
 body {
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 620, "slnt" 0;
   font-size: calc(0.5vw + 0.3vw + 13px);
+  color: #323232;
 }
 
 body main {
-  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+  grid-template-rows: 10rem 1fr 10rem;
+  height: 100vh;
   width: 100%;
+  margin: 0px auto;
+  background: #fffff8;
   position: relative;
-  background: #d3daf5;
+}
+
+body main .left-arrow {
+  grid-column: 1/ 2;
+  grid-row: 1 / 2;
 }
 
 body main .left-arrow .link-a {
-  color: #a48cee;
+  color: #323232;
 }
 
 body main .left-arrow .link-a:hover {
-  color: white;
+  color: #232522;
 }
 
 body main .left-arrow .hc-logo {
@@ -349,19 +358,143 @@ body main .left-arrow .hc-logo {
 }
 
 body main .left-arrow:hover .hc-logo {
-  fill: #fcfaf8;
+  fill: #323232;
 }
 
-body main .content .title {
-  font-variation-settings: "MONO" 0.2, "CASL" 0.8, "wght" 690;
-  font-size: calc(0.5vw + 0.8vw + 40px);
-  color: #a48cee;
-  text-align: center;
+body main .titles {
+  font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 620;
+  font-size: 3rem;
   align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 300px;
+  text-decoration: underline;
+  text-decoration-color: #a6a6a6;
+  transition: 0.3s;
+}
+
+body main .titles:hover {
+  text-decoration-color: #323232;
+}
+
+body main #about-me {
+  grid-column: 2/ 3;
+  grid-row: 1 / 2;
+}
+
+body main #boring-side {
+  transform: rotate(-90deg);
+  grid-column: 1/ 2;
+  grid-row: 2 / 3;
+}
+
+body main #comical-side {
+  transform: rotate(90deg);
+  grid-column: 3/ 4;
+  grid-row: 2 / 3;
+}
+
+body main #bottom-side {
+  transform: rotate(180deg);
+  grid-column: 2/ 3;
+  grid-row: 3 / 4;
+}
+
+body main #ingredients {
+  opacity: 30%;
+  width: clamp(280px, 25%, 380px);
+  z-index: 6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body main #ingredients :after {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d6d6d6;
+}
+
+body main #center-box {
+  grid-column: 2/ 3;
+  grid-row: 2 / 3;
+  border: 5px solid #e6e6e6;
+  padding: 10rem 5rem;
+}
+
+body main #center-box #center-content {
+  border: 5px solid #e4e3e3;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  width: clamp(400px, 40ch, 45ch);
+  margin: 0px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 40%;
+}
+
+body main #center-box #center-content .center-p {
+  grid-column: 1/ 4;
+  grid-row: 2 / 3;
+  font-size: 2rem;
+  font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 500;
+}
+
+body main #center-box #center-content .center-p span {
+  text-decoration: underline;
+  z-index: 2;
+}
+
+body main #center-box #center-content .center-p span:hover {
+  text-decoration: none;
+}
+
+body main #center-box #center-content #my-pixel-pic {
+  grid-column: 2/ 3;
+  grid-row: 3 / 4;
+}
+
+body main #center-box #center-content #more-btn {
+  align-self: start;
+  grid-column: 3/ 4;
+  grid-row: 3 / 4;
+  border: 2px solid #323232;
+  width: clamp(15rem, 10%, 28rem);
+  height: 4rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 1.1rem;
+  background-color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
+}
+
+body main #center-box #center-content #more-btn:hover {
+  border: 3px solid #323232;
+}
+
+body main #center-box .comical-pics {
+  position: absolute;
+  opacity: 20%;
+}
+
+body main #center-box #my-pic-1 {
+  top: 60vh;
+  left: 5vw;
+}
+
+body main #center-box #my-pic-2 {
+  top: 20vh;
+  left: 20vh;
 }
 
 body footer {
   height: 41vh;
+  display: grid;
   background-color: beige;
 }
 

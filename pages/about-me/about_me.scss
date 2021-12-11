@@ -1,27 +1,36 @@
-/////// a complete page full of arrows
 @import '../../scss/globals';
 @import '../../scss/variables';
 @import '../../scss/mixins';
 @import '../../scss/font-anim-keyframes';
 
 body {
+  font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-normal, $slnt;
   // background-color: $underline-color;
-  font-family: $ff-recursive;
-  font-variation-settings: 'MONO' 1, $CASL, 'wght' $font-weight-normal, $slnt;
+  // font-family: $ff-recursive;
   font-size: $font-size-normal;
+  color: $dark-gray;
 
   main {
-    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: 10rem 1fr 10rem;
+    height: 100vh;
     width: 100%;
-    position: relative;
-    background: rgb(211, 218, 245);
+    // width: clamp(600px, 100vw, 1300px); // need important change revision
+    margin: 0px auto;
 
-    // BACK ARROW
+    background: rgb(255, 255, 248);
+
+    position: relative; // for place the photos of the comical
+
+    // BACK ARROW 1/2 1/2
     .left-arrow {
+      grid-column: 1/ 2;
+      grid-row: 1 / 2;
       .link-a {
-        color: $underline-color;
+        color: $dark-gray;
         &:hover {
-          color: white;
+          color: $font-black;
         }
       }
       .hc-logo {
@@ -29,93 +38,145 @@ body {
       }
       &:hover {
         .hc-logo {
-          fill: $background-color;
+          fill: $dark-gray;
         }
       }
     }
 
-    // MAIN CONTENT
-    .content {
-      .title {
-        font-variation-settings: 'MONO' 0.2, 'CASL' 0.8,
-          'wght' $font-weight-bold;
-        font-size: $font-size-nacho;
-        color: $underline-color;
-        // margin: 0px auto;
-        text-align: center;
-        align-self: center;
-      }
-      .package-sides {
+    // THE FOUR TITLES
+    .titles {
+      font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-normal;
+      font-size: 3rem;
+      // color: $dark-gray;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      width: 300px;
+      text-decoration: underline;
+      text-decoration-color: $light-gray;
+      transition: $trans-normal;
+      &:hover {
+        text-decoration-color: $dark-gray;
       }
     }
+    #about-me {
+      grid-column: 2/ 3;
+      grid-row: 1 / 2;
+    }
+    #boring-side {
+      transform: rotate(-90deg);
+      grid-column: 1/ 2;
+      grid-row: 2 / 3;
+    }
+    #comical-side {
+      transform: rotate(90deg);
+      grid-column: 3/ 4;
+      grid-row: 2 / 3;
+    }
+    #bottom-side {
+      transform: rotate(180deg);
+      grid-column: 2/ 3;
+      grid-row: 3 / 4;
+    }
+    #ingredients {
+      opacity: 30%;
 
-    // OLD VER.
-    // display: flex;
-    // flex-wrap: wrap;
-    // text-align: center;
-    // justify-content: center;
-    //   //     max-width: 800px;
-    //   //     // margin: 4vh;
-    //   //     /* We first create a flex layout context */
-    //   //     display: flex;
-    //   //     /* Then we define the flow direction
-    //   //    and if we allow the items to wrap
-    //   //  * Remember this is the same as:
-    //   //  * flex-direction: row;
-    //   //  * flex-wrap: wrap;*/
-    //   //     flex-flow: row wrap;
-    //   //     /* Then we define how is distributed the remaining space */
-    //   //     justify-content: space-around;
-    //   .box {
-    //     width: 100%;
-    //     max-width: 30%;
-    //     border: 1px solid $spotify-text-green;
-    //     margin: 5px;
-    //   }
+      width: clamp(280px, 25%, 380px);
+      z-index: 6;
 
-    //   @media only screen and (max-width: 768px) {
-    //     .box {
-    //       width: 100%;
-    //       max-width: 35%;
-    //       // border: 1px solid $spotify-text-green;
-    //     }
-    //   }
-    //   @media only screen and (max-width: 442px) {
-    //     .box {
-    //       width: 100%;
-    //       max-width: 80%;
-    //       border: 1px solid $spotify-text-green;
-    //     }
-    //   }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-    //   .subtitle {
-    //     // background-color: $background-color;
-    //     max-width: 500px;
-    //     padding: 4vh;
-    //     font-variation-settings: "CASL" 0.6, "wght" $font-weight-normal;
-    //     color: $josh-light-blue;
-    //     width: 100%;
-    //   }
-    //   #aboutContent {
-    //     width: 40vw;
-    //   }
-    //   p {
-    //     font-variation-settings: "CASL" 0.6, "wght" $font-weight-lighter;
-    //     color: $font-dark-linked-color;
-    //     font-size: $font-size-small;
-    //     padding: 2vh;
-    //     background: linear-gradient(
-    //       180deg,
-    //       rgb(190, 147, 249) 0%,
-    //       rgb(213, 195, 238) 27%,
-    //       $josh-light-blue 83%
-    //     );
-    //   }
-    // }
+      // A darker bg
+      :after {
+        z-index: 5;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $lighter-gray;
+      }
+    }
+    // CENTER CONTENT
+    #center-box {
+      grid-column: 2/ 3;
+      grid-row: 2 / 3;
+      border: 5px solid rgb(230, 230, 230);
+      // padding: 10vh 15vw;
+      padding: 10rem 5rem;
+      #center-content {
+        border: 5px solid rgb(228, 227, 227);
+        height: 100%;
+
+        display: grid;
+        place-items: center;
+        width: clamp(400px, 40ch, 45ch);
+        margin: 0px auto;
+        // _ _ _
+        // _ * _
+        // * * *
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 40%;
+
+        .center-p {
+          grid-column: 1/ 4;
+          grid-row: 2 / 3;
+          font-size: 2rem;
+          font-variation-settings: 'MONO' 1, 'CASL' 0.3,
+            'wght' $font-weight-light;
+          span {
+            text-decoration: underline;
+            z-index: 2;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        #my-pixel-pic {
+          grid-column: 2/ 3;
+          grid-row: 3 / 4;
+        }
+        #more-btn {
+          align-self: start;
+          grid-column: 3/ 4;
+          grid-row: 3 / 4;
+          //btn
+          border: 2px solid $dark-gray;
+          width: clamp(15rem, 10%, 28rem);
+          height: 4rem;
+          padding: 0.6rem 0.8rem;
+          border-radius: 1.1rem;
+          background-color: white;
+
+          text-align: center;
+          font-size: 1.6rem;
+          cursor: $cursor-please-fingers;
+          &:hover {
+            border: 3px solid $dark-gray;
+          }
+        }
+      }
+      .comical-pics {
+        position: absolute;
+        opacity: 20%;
+      }
+      #my-pic-1 {
+        top: 60vh;
+        left: 5vw;
+      }
+      #my-pic-2 {
+        top: 20vh;
+        left: 20vh;
+      }
+    }
   }
 
   footer {
     height: 41vh;
+    display: grid;
     background-color: beige;
     #footer-div {
       padding: 3rem;
