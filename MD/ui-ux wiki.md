@@ -2,6 +2,28 @@
 
 1. A super amount [collection](https://www.uigoodies.com/) of UI, typo, icon, phot, illus....of webpages for UI/UX designers
 
+## PERFORMANCE
+
+### ANIMATION
+
+1. Animation performance and frame rate [MDN](https://developer.mozilla.org/en-US/docs/Web/Performance/Animation_performance_and_frame_rate)
+
+1. from [web.dev](https://web.dev/animations-guide/)
+
+   1. Check if an animation triggers layout:
+      An animation that moves an element using something other than transform, is likely to be slow. In the following example, I have achieved the same visual result animating top and left, and using transform.
+      Don't use this
+      `50% {`
+      `top: calc(90vh - 160px);`
+      `left: calc(90vw - 200px);}`
+      Use this:
+      `50% {`
+      `transform: translate(calc(90vw - 200px), calc(90vh - 160px)); }`
+      Using transform instead of margin eliminates those expensive paints entirely.
+
+   1. Check if an animation triggers paint
+      When it comes to painting, some things are more expensive than others. For example, anything that involves a blur (like a shadow, for example) is going to take longer to paint than drawing a red box. In terms of CSS, however, this isn't always obvious: background: red; and box-shadow: 0, 4px, 4px, rgba(0,0,0,0.5); don't necessarily look like they have vastly different performance characteristics, but they do.
+
 ## TYPOGRAPHY
 
 ### 1. Fonts I may use
@@ -262,7 +284,7 @@
 
       - [Green Guy](https://image.online-convert.com/convert-to-webp) Converter
 
-1. CSS [image-rendering] is a filter that have: auto(bi/tri/linear), pixelated, crisp-edges(nearest-neighbor)(-webkit-optimize-contrast)
+1. CSS [image-rendering] is a filter that have: auto(bi/tri/linear), pixelated, crisp-edges(nearest-neighbor, for pixel art)(-webkit-optimize-contrast)
 
 1. If you use background images a lot in your CSS, you can reduce the number of HTTP lookups needed by combining the images into one, known as an image sprite. Then you just apply the same image each time you need it for a background and adjust the x/y coordinates appropriately. This technique works best with elements that will have limited dimensions, and will not work for every use of a background image. However, the fewer HTTP requests and single image caching can help reduce page-load time.
 

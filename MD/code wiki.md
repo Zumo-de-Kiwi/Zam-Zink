@@ -12,6 +12,17 @@
 
 1. Animated [Responsive Navbar](https://www.youtube.com/watch?v=biOMz4puGt8) with CSS
 
+## Set width wisely
+
+1. three lines in one: `width: clamp(200px, 50%, 600px); //min, preferred, max`
+
+## Videos
+
+1. Responsive
+   `video{`
+   `width:100%;`
+   `aspect-ratio: 16/9;}`
+
 ### Flebox
 
 1. Flexbox is more [complicated(YT)](https://www.youtube.com/watch?v=fm3dSg4cxRI) than you thought: [CSS trick](https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/)

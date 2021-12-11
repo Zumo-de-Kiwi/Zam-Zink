@@ -71,6 +71,8 @@ $trans-fast: 0.15s;
 $trans-normal: 0.3s;
 $trans-slow: 0.45s;
 $trans-turtle: 0.9s;
+$trans-caracol: 1.8s;
+$trans-pi: 3.14s;
 
 $delay-fast: 0.1s;
 $delay-normal: 0.16s;
@@ -93,6 +95,9 @@ $cursor-yeah-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/20
     16 0,
   auto;
 $cursor-arrow-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>")
+    16 0,
+  auto;
+$cursor-right-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👉</text></svg>")
     16 0,
   auto;
 $cursor-pointer-down-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>")

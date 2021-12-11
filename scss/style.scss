@@ -1,7 +1,7 @@
-@import "globals";
-@import "variables";
-@import "mixins";
-@import "font-anim-keyframes";
+@import 'globals';
+@import 'variables';
+@import 'mixins';
+@import 'font-anim-keyframes';
 ///////////////// colors ///////////////
 
 body {
@@ -52,7 +52,7 @@ body {
       li {
         display: inline-block;
         font-size: $font-size-big;
-        font-variation-settings: $MONO, "CASL" 0, "wght" $font-weight-normal,
+        font-variation-settings: $MONO, 'CASL' 0, 'wght' $font-weight-normal,
           $slnt;
 
         a {
@@ -92,7 +92,7 @@ body {
       // padding-top: 10vh;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
-      font-variation-settings: $MONO, "CASL" 0.4, "wght" $font-weight-heavy,
+      font-variation-settings: $MONO, 'CASL' 0.4, 'wght' $font-weight-heavy,
         $slnt;
       text-align: left;
       color: $sutil-dark-purple-gray-color;
@@ -113,36 +113,39 @@ body {
         .first-name {
           position: relative;
           // Hector and underline animation
-          transition: $trans-normal ease-out;
-          transition-delay: $delay-normal;
+          transition: $trans-slow ease;
+          // transition-delay: $delay-normal;
+          will-change: transform;
+
           text-decoration: underline;
           text-decoration-color: $underline-color;
           &::after {
-            content: "about me ⤴️";
+            content: 'about me ⤴️';
             font-size: $font-size-small;
             color: $transparent;
-            font-variation-settings: "MONO" 0.6, "CASL" 0,
-              "wght" $font-weight-light;
+            font-variation-settings: 'MONO' 0.6, 'CASL' 0,
+              'wght' $font-weight-light;
 
             position: absolute;
             text-align: center;
-            bottom: -9px;
+            bottom: -1rem;
             width: 100%;
             height: 0;
             left: 0;
 
-            transition: $trans-normal ease-out;
-            transition-delay: $delay-normal;
+            transition: $trans-slow;
+            transition-delay: $delay-fast;
+            will-change: transform;
           }
           &:hover {
             // color: $font-linked-hover-color;
-            font-variation-settings: $MONO, "CASL" 1, "wght" $font-weight-bolder,
+            font-variation-settings: $MONO, 'CASL' 1, 'wght' $font-weight-bolder,
               $slnt;
             text-decoration-color: $spotify-text-green;
             color: $font-linked-color;
             &::after {
               color: $underline-color;
-              bottom: -5px;
+              transform: translateY(-0.3rem);
             }
           }
         }
@@ -150,37 +153,38 @@ body {
         .family-name {
           position: relative;
           // Cortes and underline animation
-          transition: $trans-slow ease-out;
-          transition-delay: $delay-normal;
+          transition: $trans-slow ease;
+          transition-delay: $delay-fast;
           text-decoration: underline;
           text-decoration-color: $underline-color;
 
           &::after {
-            content: "contact ⤴️";
+            content: 'contact ⤴️';
             font-size: $font-size-small;
             color: $transparent;
-            font-variation-settings: "MONO" 0.6, "CASL" 0,
-              "wght" $font-weight-light;
+            font-variation-settings: 'MONO' 0.6, 'CASL' 0,
+              'wght' $font-weight-light;
 
             position: absolute;
             text-align: center;
-            bottom: -9px;
+            bottom: -1rem;
             width: 100%;
             height: 0;
             left: 0;
 
-            transition: $trans-normal ease-out;
-            transition-delay: $delay-normal;
+            transition: $trans-slow;
+            transition-delay: $delay-fast;
+            will-change: transform;
           }
           &:hover {
             color: $font-linked-color;
             // color: $font-linked-hover-color;
-            font-variation-settings: $MONO, "CASL" 0, "wght" $font-weight-bolder,
+            font-variation-settings: $MONO, 'CASL' 0, 'wght' $font-weight-bolder,
               $slnt;
             text-decoration-color: $spotify-text-green;
             &::after {
               color: $underline-color;
-              bottom: -5px;
+              transform: translateY(-0.3rem);
             }
           }
         }
@@ -199,7 +203,7 @@ body {
       // no working warning
       --main-weight: 600;
 
-      font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight),
+      font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' var(--main-weight),
         $slnt;
 
       // Not working: When hover content name content will be less visual appealing(turn black)
@@ -211,16 +215,16 @@ body {
         position: relative;
 
         color: $font-linked-color;
-        font-variation-settings: "MONO" 0.2, "CASL" 0,
-          "wght" $font-weight-normal, $slnt;
+        font-variation-settings: 'MONO' 0.2, 'CASL' 0,
+          'wght' $font-weight-normal, $slnt;
         transition: 0.3s;
 
         text-decoration-color: $underline-color;
         cursor: $cursor-please-fingers;
         &:hover {
           // color: $font-linked-hover-color;
-          font-variation-settings: "MONO" 0.2, "CASL" 0.8,
-            "wght" $font-weight-bolder, $slnt;
+          font-variation-settings: 'MONO' 0.2, 'CASL' 0.8,
+            'wght' $font-weight-bolder, $slnt;
           text-decoration-color: $font-linked-color;
         }
         &:active {
@@ -231,8 +235,8 @@ body {
       .link-number {
         // mini linked number
         color: $font-linked-color;
-        font-variation-settings: "MONO" 0.2, "CASL" 0,
-          "wght" $font-weight-bolder;
+        font-variation-settings: 'MONO' 0.2, 'CASL' 0,
+          'wght' $font-weight-bolder;
         position: relative;
         left: -6.5px;
         top: -7px;
@@ -269,13 +273,13 @@ body {
         color: transparent;
         transition: $trans-normal;
         transition-delay: $delay-fast;
-        font-variation-settings: "MONO" 0.2, "CASL" 0,
-          "wght" $font-weight-normal;
+        font-variation-settings: 'MONO' 0.2, 'CASL' 0,
+          'wght' $font-weight-normal;
 
         &:hover {
           text-decoration-color: $spotify-text-green;
-          font-variation-settings: "MONO" 0.2, "CASL" 0,
-            "wght" $font-weight-bold;
+          font-variation-settings: 'MONO' 0.2, 'CASL' 0,
+            'wght' $font-weight-bold;
         }
       }
       // }
@@ -324,7 +328,7 @@ footer {
       text-align: center;
       span {
         font-size: $font-size-normal;
-        font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" $font-weight-light,
+        font-variation-settings: 'MONO' 0.8, 'CASL' 0, 'wght' $font-weight-light,
           $slnt;
         color: $background-color;
         padding: 12px;
@@ -339,16 +343,18 @@ footer {
       }
       //////////////////// FOOTER TEXT ANIMATIONS /////////////////
       .workingSpan {
-        // animation: widthness 2s ease infinite;
+        animation: widthness 2s ease 10;
+        will-change: transform;
         color: $skillshare-green;
-        font-variation-settings: "MONO" 0.4, "CASL" 0.2,
-          "wght" $font-weight-light;
+        font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
+          'wght' $font-weight-light;
       }
       .dangerSpan {
-        animation: slintness 2s ease infinite;
+        will-change: transform;
+        animation: slintness 2s ease 10s 6;
         color: $josh-blue-white;
-        font-variation-settings: "MONO" 0.2, "CASL" 0.5,
-          "wght" $font-weight-light, "CRSV" 1;
+        font-variation-settings: 'MONO' 0.2, 'CASL' 0.5,
+          'wght' $font-weight-light, 'CRSV' 1;
       }
     }
     @media (max-width: 800px) {
@@ -365,20 +371,20 @@ footer {
     }
     #githublink {
       color: $skillshare-green;
-      font-variation-settings: "MONO" 1, "wght" $font-weight-lighter, $slnt;
+      font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
       font-size: $font-size-information;
 
       text-align: center;
       padding: 1.6vh;
       cursor: $cursor-startreck-hand;
       a {
-        font-variation-settings: "MONO" 1, "wght" $font-weight-lighter,
-          "slnt" -3;
+        font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter,
+          'slnt' -3;
         color: inherit;
         transition: $trans-slow;
         &:hover {
-          font-variation-settings: "MONO" 1, "wght" $font-weight-lighter,
-            "slnt" -17, "CRSV" 0;
+          font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter,
+            'slnt' -17, 'CRSV' 0;
         }
       }
     }

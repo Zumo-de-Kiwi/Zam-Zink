@@ -417,25 +417,26 @@ body {
 
 .main .content_wrap .content-name .complete-name .first-name {
   position: relative;
-  transition: 0.3s ease-out;
-  transition-delay: 0.16s;
+  transition: 0.45s ease;
+  will-change: transform;
   text-decoration: underline;
   text-decoration-color: #a48cee;
 }
 
 .main .content_wrap .content-name .complete-name .first-name::after {
-  content: "about me ⤴️";
+  content: 'about me ⤴️';
   font-size: calc(0.5vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
   text-align: center;
-  bottom: -9px;
+  bottom: -1rem;
   width: 100%;
   height: 0;
   left: 0;
-  transition: 0.3s ease-out;
-  transition-delay: 0.16s;
+  transition: 0.45s;
+  transition-delay: 0.1s;
+  will-change: transform;
 }
 
 .main .content_wrap .content-name .complete-name .first-name:hover {
@@ -446,30 +447,31 @@ body {
 
 .main .content_wrap .content-name .complete-name .first-name:hover::after {
   color: #a48cee;
-  bottom: -5px;
+  transform: translateY(-0.3rem);
 }
 
 .main .content_wrap .content-name .complete-name .family-name {
   position: relative;
-  transition: 0.45s ease-out;
-  transition-delay: 0.16s;
+  transition: 0.45s ease;
+  transition-delay: 0.1s;
   text-decoration: underline;
   text-decoration-color: #a48cee;
 }
 
 .main .content_wrap .content-name .complete-name .family-name::after {
-  content: "contact ⤴️";
+  content: 'contact ⤴️';
   font-size: calc(0.5vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
   font-variation-settings: "MONO" 0.6, "CASL" 0, "wght" 500;
   position: absolute;
   text-align: center;
-  bottom: -9px;
+  bottom: -1rem;
   width: 100%;
   height: 0;
   left: 0;
-  transition: 0.3s ease-out;
-  transition-delay: 0.16s;
+  transition: 0.45s;
+  transition-delay: 0.1s;
+  will-change: transform;
 }
 
 .main .content_wrap .content-name .complete-name .family-name:hover {
@@ -480,7 +482,7 @@ body {
 
 .main .content_wrap .content-name .complete-name .family-name:hover::after {
   color: #a48cee;
-  bottom: -5px;
+  transform: translateY(-0.3rem);
 }
 
 .main .content_wrap .content-portfolio {
@@ -626,12 +628,15 @@ footer .footer .line span {
 }
 
 footer .footer .line .workingSpan {
+  animation: widthness 2s ease 10;
+  will-change: transform;
   color: #00ff84;
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
 
 footer .footer .line .dangerSpan {
-  animation: slintness 2s ease infinite;
+  will-change: transform;
+  animation: slintness 2s ease 10s 6;
   color: #eff1f5;
   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }

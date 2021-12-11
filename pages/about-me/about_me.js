@@ -1,3 +1,104 @@
+// HIDE / SHOW
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.close-modal');
+const btnsOpenModal = document.querySelectorAll('.show-modal');
+
+const openModal = function () {
+  modal.classList.remove('hidden'); // You can even add classes
+  overlay.classList.remove('hidden');
+};
+
+const closeModal = function () {
+  modal.classList.add('hidden'); //add the hidden class back
+  overlay.classList.add('hidden');
+};
+
+//
+// BTN CHANGE TEXT ON CLOCK
+let btnNum = 1;
+let pNum = 1;
+
+const p1 =
+  'I come from a Mediterranean village which has an onion as a coat of arms to an island with surplus of Silicon Pies and a chicken as an enemy.';
+const p2 =
+  ' My perfect day is the day which I learn something new. From learn a eggy technology to a outlandish dish. Btw, friends are a good source.';
+const p3 =
+  'If my hobbies would count as badges, I will fill my scout jacket pretty soon.';
+const p4 =
+  'I really appreciated an out-of-box design, listening a open-minder song or watch a non-cliche film is welcomed.';
+const p5 = 'You realy want more about me?';
+const p6 = 'Really!? The Midnight Gospel is one of my favourite series, too.';
+
+const btn1 = 'Tell me more';
+const btn2 = 'Don’t tell me less';
+const btn3 = 'I wanna know more!';
+const btn4 = 'Any gossip?';
+const btn5 = 'YES';
+const btn6 = 'ok...';
+
+function changeText() {
+  // paragraph text
+  //   document.getElementById('demo').innerText = 'Paragraph changed!';
+  pNum++;
+  switch (pNum) {
+    case 2:
+      document.querySelector('.center-p').textContent = `${p2}`;
+      break;
+    case 3:
+      document.querySelector('.center-p').textContent = `${p3}`;
+      break;
+    case 4:
+      document.querySelector('.center-p').textContent = `${p4}`;
+      break;
+    case 5:
+      document.querySelector('.center-p').textContent = `${p5}`;
+      break;
+    case 6:
+      document.querySelector('.center-p').textContent = `${p6}`;
+      pNum = 0;
+      break;
+    case 1:
+      document.querySelector('.center-p').textContent = `${p1}`;
+      break;
+    default:
+      document.querySelector('.center-p').textContent = 'error';
+      break;
+  }
+  /////////////
+  // btn text
+  btnNum++;
+  switch (btnNum) {
+    case 2:
+      document.querySelector('.more-btn').textContent = `${btn2}`;
+      break;
+    case 3:
+      document.querySelector('.more-btn').textContent = `${btn3}`;
+      break;
+    case 4:
+      document.querySelector('.more-btn').textContent = `${btn4}`;
+      break;
+    case 5:
+      document.querySelector('.more-btn').textContent = `${btn5}`;
+      break;
+    case 6:
+      document.querySelector('.more-btn').textContent = `${btn6}`;
+      btnNum = 0;
+      break;
+    case 1:
+      document.querySelector('.more-btn').textContent = `${btn1}`;
+      break;
+    default:
+      document.querySelector('.center-p').textContent = 'error';
+      break;
+  }
+}
+
+//
+//
+//
+//
+//
 // const p = document.querySelector(".mousePos");
 // /////////////////////////////////////////////
 // // And here, we use changed the font’s axes

@@ -69,29 +69,54 @@
       />
       <div id="center-box">
         <!-- the photos of the comical side -->
-        <img
-          class="comical-pics"
-          id="my-pic-1"
-          src="https://via.placeholder.com/260x256"
-          alt="my-pic"
-        />
-        <img
-          class="comical-pics"
-          id="my-pic-2"
-          src="https://via.placeholder.com/260x256"
-          alt="my-pic"
-        />
-
+        <div id="comical-pics">
+          <img
+            class="comical-pic"
+            id="my-pic-1"
+            src="https://via.placeholder.com/260x256"
+            alt="my-pic"
+          />
+          <img
+            id="my-pic-2"
+            class="comical-pic"
+            src="https://via.placeholder.com/260x256"
+            alt="my-pic"
+          />
+          <img
+            id="my-pic-3"
+            class="comical-pic"
+            src="https://via.placeholder.com/260x200"
+            alt="my-pic"
+          />
+          <img
+            class="comical-pic"
+            id="my-pic-4"
+            src="https://via.placeholder.com/260x300"
+            alt="my-pic"
+          />
+          <img
+            class="comical-pic"
+            id="my-pic-5"
+            src="https://via.placeholder.com/230x256"
+            alt="me baby"
+          />
+        </div>
         <!-- content in the center -->
         <div id="center-content">
           <!-- about me center parragraphs -->
-          <p class="center-p" id="p1">
-            I come from a Mediterranean village which has an onion as a coat of
-            arms to an island with surplus of Silicon Pies and a chicken as an
-            enemy.
-          </p>
+          <div id="center-Ps">
+            <p class="center-p" id="p1">
+              I come from a Mediterranean village which has an onion as a coat
+              of arms to an island with surplus of Silicon Pies and a chicken as
+              an enemy.
+            </p>
+          </div>
           <!-- btn more -->
-          <p id="more-btn">Tell me more</p>
+          <div id="more-btns">
+            <button onclick="changeText()" class="more-btn show-modal">
+              Tell me more
+            </button>
+          </div>
           <!-- my pixel ver -->
           <img
             id="my-pixel-pic"
@@ -103,7 +128,7 @@
     </main>
 
     <footer>
-      <div id="footer-div">
+      <div id="footer-inside">
         <h2>BOTTOM OF THE PACKAGE</h2>
         <p id="who-really?">
           Tell me, who really pay attention to the bottom of the package?
