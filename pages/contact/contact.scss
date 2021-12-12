@@ -5,7 +5,7 @@
 @import '../../scss/font-anim-keyframes';
 
 body {
-  height: 100%;
+  height: 95vh;
 }
 .preloader {
   background: rgb(245, 245, 245);
@@ -64,62 +64,47 @@ body {
 // ARROW BACK
 .left-arrow {
   .link-a {
-    color: $font-sutil-gray-color;
-
+    color: $font-gray;
     &:hover {
-      color: $font-sutil-gray-color;
-    }
-  }
-  .logo-frame {
-    .logo-svg {
-      .hc-logo {
-        fill: transparent; //$font-sutil-gray-color;
-      }
-    }
-  }
-  &:hover {
-    fill: $font-sutil-gray-color;
-  }
-}
-.logo-svg {
-  display: inline-block;
-  padding: 2rem;
-  cursor: $cursor-arrow-hand;
-  .hc-logo {
-    transition: $trans-slow;
-    fill: $font-sutil-gray-color;
-  }
-  &:hover {
-    .hc-logo {
-      fill: $sutil-dark-purple-gray-color;
+      color: $font-gray;
     }
   }
 }
 
 .container {
-  // @include flexbox();
-  // @include align-items(center);
-  // @include justify-content(center);
-  // // align-items: center;
-  // flex-wrap: wrap;
-  // align-content: center;
-  // flex-direction: row;
-
-  // section {
-  //   padding: 2rem;
-  // }
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 60rem 1fr;
+  grid-template-rows: 15% 1fr 10% 1fr 5%;
   h1 {
-    color: $font-sutil-gray-color;
+    grid-column: 2;
+    grid-row: 1 /2;
     text-align: center;
-    margin: 0px auto;
-    margin-top: 2rem;
+    align-self: end;
+    color: $light-gray;
+    // margin-top: 3rem;
+    font-variation-settings: 'MONO' 0.5, 'CASL' 0.1, 'wght' $font-weight-light;
   }
   p {
+    grid-column: 2;
+    text-align: center;
+    color: $light-gray;
     --weight: 500;
     font-size: $font-size-normal;
     font-variation-settings: 'wght' var(--weight);
   }
+  .p1 {
+    grid-row: 2;
+  }
+  .p2 {
+    grid-row: 4;
+  }
   #mailFrame {
+    grid-column: 2;
+    grid-row: 3;
     a {
       text-decoration-color: $font-sutil-gray-color;
       transition: $trans-slow;

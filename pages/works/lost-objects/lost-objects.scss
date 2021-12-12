@@ -5,7 +5,9 @@
 @import '../../../scss/font-anim-keyframes';
 
 body {
-  //   font-size: 2rem;
+  font-size: 2rem;
+  font-variation-settings: 'MONO' 0.2, 'CASL' 0.1, 'wght' $font-weight-normal,
+    $slnt;
   .preloader {
     transition: $trans-slow ease-out;
     background: rgb(230, 230, 230);
@@ -20,41 +22,77 @@ body {
   }
   .left-arrow {
     .link-a {
-      color: $light-gray;
+      mix-blend-mode: difference;
+      color: crimson;
       &:hover {
-        color: $light-gray;
+        color: $font-linked-color;
+        mix-blend-mode: difference;
       }
     }
-    .hc-logo {
-      fill: $light-gray;
-    }
-    // &:hover {
-    //   .hc-logo {
-    //     // fill: $light-gray;
-    //   }
-    // }
   }
+
   header {
-    height: 33vh;
-    width: 100%;
-    h1 {
-      text-align: center;
-      padding: 5rem;
+    position: relative;
+    .mainBgPic {
+      background: rgb(16, 8, 143);
+      background: linear-gradient(
+        0deg,
+        rgba(16, 8, 143, 1) 0%,
+        rgba(53, 57, 231, 1) 23%,
+        rgba(23, 96, 210, 1) 37%,
+        rgba(65, 245, 255, 1) 53%,
+        rgba(211, 255, 245, 1) 72%,
+        rgba(247, 247, 247, 1) 81%,
+        rgba(224, 244, 79, 1) 94%,
+        rgba(237, 57, 57, 1) 100%
+      );
+      filter: blur(0.2rem);
+      background-repeat: no-repeat;
+      background-color: #ccc;
+      background-size: cover;
+      background-position: bottom;
+      // filter: blur(1rem);
+      height: 40vh;
+      width: 100%;
     }
-    background-image: url('../lost-objects/lost-obj-img/POINTS-MANY-BG-4X2-tiny.jpg');
+    h1 {
+      mix-blend-mode: difference;
+      position: absolute;
+      color: white;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      // padding: 5rem;
+    }
   }
+
   main {
     // min-height: 300vh;
     #section1,
     #section2 {
       display: grid;
     }
+    p {
+      line-height: 1.5;
+      font-size: $font-size-big;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
     #section1 {
-      height: 100vh;
+      min-height: 100vh;
+      grid-template-columns: 1fr 70rem, calc(100) 1fr;
+      #p1 {
+        grid-column: 2;
+      }
+      #p2 {
+        grid-column: 2;
+      }
     }
     // section 2 has the trampolin
     #section2 {
-      height: 200vh;
+      min-height: 200vh;
       background-color: yellow;
       position: relative;
       // display: grid;

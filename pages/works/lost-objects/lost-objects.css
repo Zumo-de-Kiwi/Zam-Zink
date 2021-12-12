@@ -69,6 +69,7 @@ body h1 {
 
 body .left-arrow {
   padding-top: 1rem;
+  z-index: 10;
   margin: 0px;
   border: 0px;
   position: absolute;
@@ -362,6 +363,11 @@ body #trampolineEmoji:active {
   }
 }
 
+body {
+  font-size: 2rem;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 620, "slnt" 0;
+}
+
 body .preloader {
   transition: 0.45s ease-out;
   background: #e6e6e6;
@@ -377,26 +383,39 @@ body .preloader #text-loader {
 }
 
 body .left-arrow .link-a {
-  color: #a6a6a6;
+  mix-blend-mode: difference;
+  color: crimson;
 }
 
 body .left-arrow .link-a:hover {
-  color: #a6a6a6;
-}
-
-body .left-arrow .hc-logo {
-  fill: #a6a6a6;
+  color: #621bc5;
+  mix-blend-mode: difference;
 }
 
 body header {
-  height: 33vh;
+  position: relative;
+}
+
+body header .mainBgPic {
+  background: #10088f;
+  background: linear-gradient(0deg, #10088f 0%, #3539e7 23%, #1760d2 37%, #41f5ff 53%, #d3fff5 72%, #f7f7f7 81%, #e0f44f 94%, #ed3939 100%);
+  filter: blur(0.2rem);
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: bottom;
+  height: 40vh;
   width: 100%;
-  background-image: url("../lost-objects/lost-obj-img/POINTS-MANY-BG-4X2-tiny.jpg");
 }
 
 body header h1 {
+  mix-blend-mode: difference;
+  position: absolute;
+  color: white;
   text-align: center;
-  padding: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 body main #section1,
@@ -404,12 +423,28 @@ body main #section2 {
   display: grid;
 }
 
+body main p {
+  line-height: 1.5;
+  font-size: calc(0.5vw + 0vw + 18px);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 body main #section1 {
-  height: 100vh;
+  min-height: 100vh;
+  grid-template-columns: 1fr 70rem, calc(100) 1fr;
+}
+
+body main #section1 #p1 {
+  grid-column: 2;
+}
+
+body main #section1 #p2 {
+  grid-column: 2;
 }
 
 body main #section2 {
-  height: 200vh;
+  min-height: 200vh;
   background-color: yellow;
   position: relative;
 }

@@ -69,6 +69,7 @@ body h1 {
 
 body .left-arrow {
   padding-top: 1rem;
+  z-index: 10;
   margin: 0px;
   border: 0px;
   position: absolute;

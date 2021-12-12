@@ -69,6 +69,7 @@ body h1 {
 
 body .left-arrow {
   padding-top: 1rem;
+  z-index: 10;
   margin: 0px;
   border: 0px;
   position: absolute;
@@ -363,7 +364,7 @@ body #trampolineEmoji:active {
 }
 
 body {
-  height: 100%;
+  height: 95vh;
 }
 
 .preloader {
@@ -426,47 +427,52 @@ body {
 }
 
 .left-arrow .link-a {
-  color: #b9cabf;
+  color: #5b5957;
 }
 
 .left-arrow .link-a:hover {
-  color: #b9cabf;
+  color: #5b5957;
 }
 
-.left-arrow .logo-frame .logo-svg .hc-logo {
-  fill: transparent;
-}
-
-.left-arrow:hover {
-  fill: #b9cabf;
-}
-
-.logo-svg {
-  display: inline-block;
-  padding: 2rem;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
-}
-
-.logo-svg .hc-logo {
-  transition: 0.45s;
-  fill: #b9cabf;
-}
-
-.logo-svg:hover .hc-logo {
-  fill: #4d435b;
+.container {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 60rem 1fr;
+  grid-template-rows: 15% 1fr 10% 1fr 5%;
 }
 
 .container h1 {
-  color: #b9cabf;
+  grid-column: 2;
+  grid-row: 1 /2;
   text-align: center;
-  margin: 0px auto;
-  margin-top: 2rem;
+  align-self: end;
+  color: #a6a6a6;
+  font-variation-settings: "MONO" 0.5, "CASL" 0.1, "wght" 500;
 }
 
 .container p {
+  grid-column: 2;
+  text-align: center;
+  color: #a6a6a6;
   --weight: 500;
   font-size: calc(0.5vw + 0.3vw + 13px);
   font-variation-settings: "wght" var(--weight);
+}
+
+.container .p1 {
+  grid-row: 2;
+}
+
+.container .p2 {
+  grid-row: 4;
+}
+
+.container #mailFrame {
+  grid-column: 2;
+  grid-row: 3;
 }
 
 .container #mailFrame a {
