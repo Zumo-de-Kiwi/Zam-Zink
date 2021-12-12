@@ -1,0 +1,98 @@
+// Make something like a digital contact libreta?
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+@import '../../../scss/globals';
+@import '../../../scss/font-anim-keyframes';
+
+body {
+  //   font-size: 2rem;
+  .preloader {
+    transition: $trans-slow ease-out;
+    background: rgb(230, 230, 230);
+    #emoji-loader {
+      // padding-right: 8vw;
+      animation: brujula 1.5s ease 0.3s infinite alternate;
+    }
+    #text-loader {
+      color: $font-gray;
+      font-size: $font-size-small;
+    }
+  }
+  .left-arrow {
+    .link-a {
+      color: $light-gray;
+      &:hover {
+        color: $light-gray;
+      }
+    }
+    .hc-logo {
+      fill: $light-gray;
+    }
+    // &:hover {
+    //   .hc-logo {
+    //     // fill: $light-gray;
+    //   }
+    // }
+  }
+  header {
+    height: 33vh;
+    width: 100%;
+    h1 {
+      text-align: center;
+      padding: 5rem;
+    }
+    background-image: url('../lost-objects/lost-obj-img/POINTS-MANY-BG-4X2-tiny.jpg');
+  }
+  main {
+    // min-height: 300vh;
+    #section1,
+    #section2 {
+      display: grid;
+    }
+    #section1 {
+      height: 100vh;
+    }
+    // section 2 has the trampolin
+    #section2 {
+      height: 200vh;
+      background-color: yellow;
+      position: relative;
+      // display: grid;
+      #trampolin-wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: right;
+        #trampolineEmoji {
+          position: sticky;
+          align-self: flex-end;
+          justify-self: right;
+          bottom: 2rem;
+          right: 4rem;
+          z-index: 9;
+
+          text-decoration: none;
+          padding: 2rem; /* Some padding */
+          font-size: $font-size-huge; /* Increase font size */
+          transition: $trans-fast;
+          cursor: $cursor-pointer-hand-flip;
+          &:hover {
+            // cursor: $cursor-pointer-hand-flip;
+            transform: scale(1.1);
+            transform: translateY(-0.2rem);
+          }
+          &:active {
+            transform: scale(0.9);
+            transform: translateY(0.2rem);
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background: rgb(218, 225, 255);
+    height: 70vh;
+  }
+}

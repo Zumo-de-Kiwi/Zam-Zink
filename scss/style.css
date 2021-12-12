@@ -17,10 +17,43 @@ html {
   box-sizing: inherit;
 }
 
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*7. Remove built-in form typography styles*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
 body {
   color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
+  /*Typographic tweaks!
+  Add accessible line-height
+   Improve text rendering*/
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -66,8 +99,8 @@ body .left-arrow .link-a #left-arrow {
 body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
-  left: 0.7rem;
-  top: 0.2rem;
+  left: 6rem;
+  top: -5rem;
 }
 
 body .left-arrow .logo-frame .logo-svg {
@@ -80,11 +113,11 @@ body .left-arrow .logo-frame .logo-svg .hc-logo {
 }
 
 body .left-arrow:hover .logo-frame {
-  left: 1rem;
+  left: 8rem;
 }
 
 body .left-arrow:hover .logo-frame .hc-logo {
-  fill: rgba(252, 252, 252, 0.6);
+  fill: #6d60fc;
 }
 
 body ul {
@@ -101,31 +134,31 @@ body a:active {
 }
 
 body #trampolineEmoji {
-  position: fixed;
+  position: sticky;
   /* Fixed/sticky position */
-  bottom: 2rem;
+  bottom: 3rem;
   /* Place the button at the bottom of the page */
   right: 4rem;
-  /* Place the button 30px from the 
-    z-index: 9; /* Make sure it does not overlap */
+  /* Place the button 30px from the */
+  z-index: 9;
+  /* Make sure it does not overlap */
   text-decoration: none;
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
   /* Some padding */
-  font-size: 3.5rem;
+  font-size: calc(0.5vw + 0.4vw + 30px);
   /* Increase font size */
   transition: 0.15s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
 body #trampolineEmoji:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: scale(1.1);
+  transform: translateY(-0.2rem);
 }
 
 body #trampolineEmoji:active {
   transform: scale(0.9);
+  transform: translateY(0.2rem);
 }
 
 .preloader {
@@ -269,6 +302,12 @@ body #trampolineEmoji:active {
   }
 }
 
+@keyframes brujula {
+  to {
+    transform: rotateZ(23deg);
+  }
+}
+
 @keyframes widthness {
   0% {
     font-variation-settings: "wght" 500;
@@ -286,13 +325,13 @@ body #trampolineEmoji:active {
 
 @keyframes slintness {
   0% {
-    font-variation-settings: "slnt" 0, "CRSV" 1;
+    font-variation-settings: 'slnt' 0, 'CRSV' 1;
   }
   40% {
-    font-variation-settings: "slnt" -15, "CRSV" 1;
+    font-variation-settings: 'slnt' -15, 'CRSV' 1;
   }
   100% {
-    font-variation-settings: "slnt" 0, "CRSV" 1;
+    font-variation-settings: 'slnt' 0, 'CRSV' 1;
   }
 }
 
@@ -387,11 +426,11 @@ body {
 }
 
 .main .navigation ul li .nowPage {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>👁‍🗨</text></svg>") 16 0, auto;
 }
 
 .main .navigation ul li .filter {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🔎</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>💌 </text></svg>") 16 0, auto;
 }
 
 .main .content_wrap .content-name {
@@ -488,9 +527,10 @@ body {
 .main .content_wrap .content-portfolio {
   font-size: calc(0.5vw + 0vw + 18px);
   text-align: left;
-  letter-spacing: -0.3px;
-  line-height: 1.45;
+  letter-spacing: -0.32px;
+  line-height: 1.5;
   color: #5b5957;
+  word-spacing: -0.3px;
   --main-weight: 600;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;
 }

@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 // Normal clock rotate
 @keyframes spin {
@@ -97,6 +97,13 @@
   }
 }
 
+//// BRUJULA
+@keyframes brujula {
+  to {
+    transform: rotateZ(23deg);
+  }
+}
+
 // X-axis rotate
 // @keyframes twist-up {
 //   to {
@@ -106,16 +113,16 @@
 
 @keyframes widthness {
   0% {
-    font-variation-settings: "wght" $font-weight-light;
+    font-variation-settings: 'wght' $font-weight-light;
   }
   30% {
-    font-variation-settings: "wght" $font-weight-heavy;
+    font-variation-settings: 'wght' $font-weight-heavy;
   }
   70% {
-    font-variation-settings: "wght" $font-weight-normal;
+    font-variation-settings: 'wght' $font-weight-normal;
   }
   100% {
-    font-variation-settings: "wght" $font-weight-light;
+    font-variation-settings: 'wght' $font-weight-light;
   }
 }
 // .dangerSpan {
@@ -125,13 +132,13 @@
 // }
 @keyframes slintness {
   0% {
-    font-variation-settings: "slnt" 0, "CRSV" 1;
+    font-variation-settings: 'slnt' 0, 'CRSV' 1;
   }
   40% {
-    font-variation-settings: "slnt" -15, "CRSV" 1;
+    font-variation-settings: 'slnt' -15, 'CRSV' 1;
   }
   100% {
-    font-variation-settings: "slnt" 0, "CRSV" 1;
+    font-variation-settings: 'slnt' 0, 'CRSV' 1;
   }
 }
 

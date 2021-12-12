@@ -13,7 +13,7 @@ body {
 .main {
   height: 100%;
   .navigation {
-    //logo home filter
+    //logo home filter contact about me
     height: 6rem;
     display: flex;
 
@@ -68,10 +68,12 @@ body {
           }
         }
         .nowPage {
-          cursor: $cursor-pointer-down-hand;
+          //about me
+          cursor: $cursor-about-me;
         }
         .filter {
-          cursor: $cursor-pointer-filter;
+          //contact
+          cursor: $cursor-contact-mail;
         }
       }
     }
@@ -195,10 +197,10 @@ body {
     .content-portfolio {
       font-size: $font-size-big;
       text-align: left;
-      letter-spacing: -0.3px;
-      line-height: 1.45;
+      letter-spacing: -0.32px;
+      line-height: 1.5;
       color: $font-gray;
-      // word-spacing: -0.5px;
+      word-spacing: -0.3px;
 
       // no working warning
       --main-weight: 600;

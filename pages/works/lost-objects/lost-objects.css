@@ -364,70 +364,92 @@ body #trampolineEmoji:active {
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #ee4a4a;
+  background: #e6e6e6;
+}
+
+body .preloader #emoji-loader {
+  animation: brujula 1.5s ease 0.3s infinite alternate;
 }
 
 body .preloader #text-loader {
-  color: white;
+  color: #5b5957;
   font-size: calc(0.5vw - 0vw + 12px);
 }
 
-body .left-arrow {
-  background: coral;
-}
-
 body .left-arrow .link-a {
-  color: whitesmoke;
+  color: #a6a6a6;
 }
 
 body .left-arrow .link-a:hover {
-  color: #fcfaf8;
+  color: #a6a6a6;
 }
 
-body .left-arrow:hover .hc-logo {
-  fill: #ffca9b;
+body .left-arrow .hc-logo {
+  fill: #a6a6a6;
 }
 
-body main {
-  background: coral;
-  height: 200vh;
+body header {
+  height: 33vh;
+  width: 100%;
+  background-image: url("../lost-objects/lost-obj-img/POINTS-MANY-BG-4X2-tiny.jpg");
 }
 
-body main h1 {
+body header h1 {
   text-align: center;
-  padding: 2rem;
+  padding: 5rem;
 }
 
-body footer {
-  background: cornsilk;
-  height: 70vh;
+body main #section1,
+body main #section2 {
+  display: grid;
 }
 
-body footer #trampolineEmoji {
-  position: fixed;
-  /* Fixed/sticky position */
+body main #section1 {
+  height: 100vh;
+}
+
+body main #section2 {
+  height: 200vh;
+  background-color: yellow;
+  position: relative;
+}
+
+body main #section2 #trampolin-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+}
+
+body main #section2 #trampolin-wrapper #trampolineEmoji {
+  position: sticky;
+  align-self: flex-end;
+  justify-self: right;
   bottom: 2rem;
-  /* Place the button at the bottom of the page */
   right: 4rem;
-  /* Place the button 30px from the right */
   z-index: 9;
-  /* Make sure it does not overlap */
   text-decoration: none;
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
+  padding: 2rem;
   /* Some padding */
-  font-size: 3.5rem;
+  font-size: calc(0.5vw + 0.4vw + 30px);
   /* Increase font size */
   transition: 0.15s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
-body footer #trampolineEmoji:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+body main #section2 #trampolin-wrapper #trampolineEmoji:hover {
   transform: scale(1.1);
+  transform: translateY(-0.2rem);
 }
 
-body footer #trampolineEmoji:active {
+body main #section2 #trampolin-wrapper #trampolineEmoji:active {
   transform: scale(0.9);
+  transform: translateY(0.2rem);
+}
+
+body footer {
+  background: #dae1ff;
+  height: 70vh;
 }

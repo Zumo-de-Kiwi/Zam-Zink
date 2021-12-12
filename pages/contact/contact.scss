@@ -97,17 +97,17 @@ body {
 }
 
 .container {
-  @include flexbox();
-  @include align-items(center);
-  @include justify-content(center);
-  // align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
-  flex-direction: row;
+  // @include flexbox();
+  // @include align-items(center);
+  // @include justify-content(center);
+  // // align-items: center;
+  // flex-wrap: wrap;
+  // align-content: center;
+  // flex-direction: row;
 
-  section {
-    padding: 2rem;
-  }
+  // section {
+  //   padding: 2rem;
+  // }
   h1 {
     color: $font-sutil-gray-color;
     text-align: center;
