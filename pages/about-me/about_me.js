@@ -18,6 +18,7 @@
 /////  DO IT ////
 const leftArrow = document.getElementById('leftArrow');
 const closeBtn = document.querySelector('.closeBtn');
+const boringBtn = document.querySelector('.boringBtn');
 const ingredients = document.querySelector('.ingredients');
 const comicalPics = document.getElementById('comical-pics');
 // const centerContent = document.getElementById('center-content');
@@ -26,16 +27,14 @@ const moreBtns = document.getElementById('more-btns');
 const myPixelPic = document.getElementById('my-pixel-pic');
 
 const titles = document.querySelectorAll('.titles');
-// const titles = (document.getElementsByClassName('titles').style.color ='black');
 const aboutMe = document.getElementById('about-me');
 const boringSide = document.getElementById('boring-side');
 const comicalSide = document.getElementById('comical-side');
 const bottomSide = document.getElementById('bottom-side');
-
-console.log(titles);
+console.log(ingredients);
 
 ////////// FUNCTIONS //////////////
-
+/////// COMICAL //////////
 const openComical = function () {
   centerPs.classList.add('hidden');
   moreBtns.classList.add('hidden');
@@ -50,6 +49,8 @@ const openComical = function () {
   //  <   X
   leftArrow.classList.add('hidden');
   closeBtn.classList.remove('hidden');
+  // comicalSide.style.fontWeight = '620';
+  comicalSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0.7,'wght' 620";
 };
 const closeComical = function () {
   centerPs.classList.remove('hidden');
@@ -63,27 +64,183 @@ const closeComical = function () {
   //  <   X
   leftArrow.classList.remove('hidden');
   closeBtn.classList.add('hidden');
+  // VF
+  // comicalSide.style.fontWeight = '620';
+  comicalSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0.1, 'wght' 500";
+};
+
+//////////////// BORING SIDE /////////////////////
+const openBoring = function () {
+  centerPs.classList.add('hidden');
+  moreBtns.classList.add('hidden');
+  myPixelPic.classList.add('hidden');
+
+  ingredients.classList.remove('hidden');
+  // atenuate sides
+  aboutMe.style.color = 'hsl(0, 0%, 84%)';
+  bottomSide.style.color = 'hsl(0, 0%, 84%)';
+  comicalSide.style.color = 'hsl(0, 0%, 84%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  comicalSide.style.textDecoration = 'none';
+  //  <   X
+  leftArrow.classList.add('hidden');
+  closeBtn.classList.remove('hidden');
+  // boringBtn.classList.remove('hidden');
+  // comicalSide.style.fontWeight = '620';
+  boringSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0,'wght' 620";
+};
+const closeBoring = function () {
+  centerPs.classList.remove('hidden');
+  moreBtns.classList.remove('hidden');
+  comicalPics.classList.add('hidden');
+
+  ingredients.classList.add('hidden');
+  // atenuate sides
+  aboutMe.style.color = 'hsl(100, 4%, 14%)';
+  bottomSide.style.color = 'hsl(100, 4%, 14%)';
+  comicalSide.style.color = 'hsl(100, 4%, 14%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  comicalSide.style.textDecoration = 'underline';
+  //  <   X
+  leftArrow.classList.remove('hidden');
+  closeBtn.classList.add('hidden');
+  // boringBtn.classList.add('hidden');
+  // VF
+  // comicalSide.style.fontWeight = '620';
+  boringSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0.1, 'wght' 500";
 };
 
 ///////// WHEN CLICK ////////////
+//// Cobined func
 let comicalOpened = 0;
-const isComical = function () {
-  if (comicalOpened == 0) {
-    comicalOpened++;
-    openComical();
-  } else {
-    comicalOpened = 0;
-    closeComical();
+let boringOpened = 0;
+const openOrClose = function (whoClicked) {
+  // WhoClicked -> boring = 1, comic= 2, xBtn = 3 error = 0
+  console.log(whoClicked);
+  // when boring is clicked
+  if (whoClicked == 1) {
+    // when the two are closed
+    if (boringOpened == 0 && comicalOpened == 0) {
+      boringOpened = 1;
+      openBoring();
+    } // when boring closed and comical open
+    else if (boringOpened == 0 && comicalOpened == 1) {
+      comicalOpened = 0;
+      closeComical();
+      boringOpened = 1;
+      openBoring();
+    } //when boring opened and comical closed
+    else if (boringOpened == 1 && comicalOpened == 0) {
+      boringOpened = 0;
+      closeBoring();
+    }
+  } // when COMICAL is clicked
+  else if (whoClicked == 2) {
+    // when the two are closed
+    if (boringOpened == 0 && comicalOpened == 0) {
+      comicalOpened = 1;
+      openComical();
+    } // when boring closed and comical open
+    else if (boringOpened == 0 && comicalOpened == 1) {
+      comicalOpened = 0;
+      closeComical();
+    } //when boring opened and comical closed
+    else if (boringOpened == 1 && comicalOpened == 0) {
+      boringOpened = 0;
+      closeBoring();
+      comicalOpened = 1;
+      openComical();
+    }
   }
+  /// Xbtn clicked
+  else if (whoClicked == 3) {
+    // when the two are closed
+    if (boringOpened == 0 && comicalOpened == 0) {
+    } // when boring closed and comical open
+    else if (boringOpened == 0 && comicalOpened == 1) {
+      comicalOpened = 0;
+      closeComical();
+    } //when boring opened and comical closed
+    else if (boringOpened == 1 && comicalOpened == 0) {
+      boringOpened = 0;
+      closeBoring();
+    }
+  }
+  /// Xbtn clicked
+  else if (whoClicked == 4) {
+    // when the two are closed
+    if (boringOpened == 0 && comicalOpened == 0) {
+    } // when boring closed and comical open
+    else if (boringOpened == 0 && comicalOpened == 1) {
+      comicalOpened = 0;
+      closeComical();
+    } //when boring opened and comical closed
+    else if (boringOpened == 1 && comicalOpened == 0) {
+      boringOpened = 0;
+      closeBoring();
+    }
+  } else {
+    console.log('This is an Hérror message. 😳');
+  }
+  console.log(boringOpened, comicalOpened);
+};
+const boringPressed = function () {
+  openOrClose(1);
+};
+const comicalPressed = function () {
+  openOrClose(2);
+};
+const closeBtnPressed = function () {
+  openOrClose(3);
+};
+const aboutMePressed = function () {
+  openOrClose(4);
 };
 
-comicalSide.addEventListener('click', isComical);
-// if (comicalOpened == 1)
-closeBtn.addEventListener('click', closeComical);
+boringSide.addEventListener('click', boringPressed);
+comicalSide.addEventListener('click', comicalPressed);
+closeBtn.addEventListener('click', closeBtnPressed);
+aboutMe.addEventListener('click', aboutMePressed);
+// boringSide.addEventListener('click', openOrClose(1));
+// comicalSide.addEventListener('click', openOrClose(2));
+// closeBtn.addEventListener('click', openOrClose(3));
 
-//
-//
-//
+// const isBoring = function () {
+//   let boringOpened = 0;
+//   let wannaCloseBoring = 0;
+//   const isBoring = function () {
+//     wannaCloseBoring++;
+//   };
+
+//   if (boringOpened == 0) {
+//     boringOpened++;
+//     openBoring();
+//   } else if (boringOpened == 1 && wannaCloseBoring == 1) {
+//     boringOpened = 0;
+//     wannaCloseBoring = 0;
+//     closeBoring();
+//   } else if (boringOpened == 1) {
+//     boringOpened = 0;
+//     closeBoring();
+//   }
+// boringSide.addEventListener('click', isBoring);
+// comicalSide.addEventListener('click', wannaCloseBoring);
+// closeBtn.addEventListener('click', isBoring);
+// };
+///////// WHEN CLICK ////////////
+// let comicalOpened = 0;
+// const isComical = function () {
+//   if (comicalOpened == 0) {
+//     comicalOpened++;
+//     openComical();
+//   } else {
+//     comicalOpened = 0;
+//     closeComical();
+//   }
+// };
+// //// if comical is opened
+// comicalSide.addEventListener('click', isComical);
+// closeBtn.addEventListener('click', isComical);
+// boringSide.addEventListener('click', isComical);
+//// if comical is opened
 //
 //
 //

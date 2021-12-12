@@ -28,6 +28,8 @@ body {
       grid-row: 1 / 2;
       .link-a {
         color: $font-black;
+        font-variation-settings: 'MONO' 0, 'CASL' 0.3,
+          'wght' $font-weight-lightest;
         &:hover {
           color: $font-black;
         }
@@ -41,23 +43,24 @@ body {
         }
       }
     }
+    // .xBtn {
+    // }
+    // X comical
     // X close btn
     .closeBtn {
-      // grid-column: 1/ 2;
-      // grid-row: 1 / 2;
       z-index: 5;
-      font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-light;
+      font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-lighter;
       font-size: 5rem;
       color: $font-black;
-      padding: 3rem;
-      margin-top: 2rem;
-      margin-left: 2rem;
+      padding: 4.5rem;
+      padding-top: 3.4rem;
+      padding-left: 8rem;
+
+      grid-column: 1/ 2;
+      grid-row: 1 / 2;
 
       cursor: $cursor-please-fingers;
-      transition: $trans-normal;
-      // align-self: end;
-      // justify-self: center;
-      // text-align: center;
+      transition: $trans-slow;
       &:hover {
         font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-light;
       }
@@ -68,10 +71,12 @@ body {
       font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
       font-size: 3rem;
       color: $font-black;
+
       align-self: center;
       justify-self: center;
       text-align: center;
-      width: 300px;
+
+      width: 70vh;
       text-decoration: underline;
       text-decoration-color: $light-gray;
       transition: $trans-normal;
@@ -122,10 +127,7 @@ body {
         }
       }
     }
-    #ingredients {
-      display: none;
-      // opacity: 30%;
-
+    .ingredients {
       width: clamp(280px, 25%, 380px);
       z-index: 6;
 
@@ -227,6 +229,7 @@ body {
       #comical-pics {
         opacity: 100%;
         z-index: 2;
+        transition: $trans-normal;
         // #comical-text {
         //   text-align: center;
         //   z-index: 3;
@@ -287,7 +290,6 @@ body {
           &:hover {
             -webkit-filter: grayscale(0);
             filter: none;
-            // transform: scale(1.1);
           }
         }
         #my-pic-1 {
@@ -369,17 +371,17 @@ body {
     display: none;
   }
   /* X button */
-  .close-modal {
-    /*write this in the html for show the X button <button class="close-modal">&times;</button> */
-    position: absolute;
-    top: 1.2rem;
-    right: 2rem;
-    font-size: 5rem;
-    color: #333;
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
+  // .close-modal {
+  //   /*write this in the html for show the X button <button class="close-modal">&times;</button> */
+  //   position: absolute;
+  //   top: 1.2rem;
+  //   right: 2rem;
+  //   font-size: 5rem;
+  //   color: #333;
+  //   cursor: pointer;
+  //   border: none;
+  //   background: none;
+  // }
   //// the ingredients and my pics can be set with this
   .modal {
     // position: absolute;
