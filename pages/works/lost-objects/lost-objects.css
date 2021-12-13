@@ -423,6 +423,27 @@ body .mainBgPic h1 {
   padding: 3rem;
 }
 
+body .mainBgPic #explainBg {
+  position: absolute;
+  text-align: center;
+  color: #d3fff5;
+  bottom: -2.2rem;
+  font-variation-settings: "MONO" 1, "CASL" 0.8, "wght" 400;
+  transition: 0.45s;
+  will-change: transition;
+}
+
+body .mainBgPic:hover #explainBg {
+  color: #3539e7;
+  bottom: -3.8rem;
+  font-variation-settings: "MONO" 1, "CASL" 0.8, "wght" 400;
+}
+
+body main {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400;
+  line-height: 1.5;
+}
+
 body main #section1,
 body main #section2 {
   display: grid;
@@ -430,26 +451,37 @@ body main #section2 {
 }
 
 body main p {
-  line-height: 1.5;
-  font-size: calc(0.5vw + 0vw + 18px);
+  font-size: calc(0.5vw + 0.3vw + 13px);
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 body main #section1 {
   min-height: 100vh;
-  grid-template-columns: 1fr 70rem 1fr;
-  grid-template-rows: 1fr 500px 500px;
+  grid-template-columns: 1fr 900px 1fr;
+}
+
+body main #section1 #div1 {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr 300px 1fr;
 }
 
 body main #section1 #div1 #p1 {
-  grid-column: 2;
+  grid-column: 1 / 6;
   grid-row: 1;
+  place-self: center;
 }
 
-body main #section1 #div1 #p2 {
+body main #section1 #div1 #sweat {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
+}
+
+body main #section1 #div1 #boring {
+  grid-column: 4;
+  grid-row: 4;
 }
 
 body main #section2 {
