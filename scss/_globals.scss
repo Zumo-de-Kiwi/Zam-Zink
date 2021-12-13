@@ -70,16 +70,20 @@ body {
     padding-top: 1rem;
     z-index: 10;
     margin: 0px;
+    padding: 0rem;
     border: 0px;
+    height: 5rem;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
     .link-a {
       color: $font-sutil-gray-color;
       font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-light;
       text-decoration: none;
-      padding: 2rem; // padding-top: 3rem;
-      font-size: $font-size-nacho;
+
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: $font-size-huge;
       transition: $trans-slow;
       &:hover {
         font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-light;
@@ -96,8 +100,8 @@ body {
     .logo-frame {
       transition: $trans-normal ease-out;
       position: relative;
-      left: 6rem;
-      top: -5rem;
+      left: 4.5rem;
+      top: -4rem;
       .logo-svg {
         width: 36px; //adjust logo size
         .hc-logo {
@@ -108,7 +112,7 @@ body {
     }
     &:hover {
       .logo-frame {
-        left: 8rem;
+        left: 5.5rem;
         .hc-logo {
           fill: rgb(109, 96, 252);
           // fill: transparent;

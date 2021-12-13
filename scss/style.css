@@ -71,18 +71,21 @@ body .left-arrow {
   padding-top: 1rem;
   z-index: 10;
   margin: 0px;
+  padding: 0rem;
   border: 0px;
+  height: 5rem;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 2rem;
 }
 
 body .left-arrow .link-a {
   color: #b9cabf;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
-  padding: 2rem;
-  font-size: calc(0.5vw + 0.8vw + 40px);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: calc(0.5vw + 0.4vw + 30px);
   transition: 0.45s;
 }
 
@@ -100,8 +103,8 @@ body .left-arrow .link-a #left-arrow {
 body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
-  left: 6rem;
-  top: -5rem;
+  left: 4.5rem;
+  top: -4rem;
 }
 
 body .left-arrow .logo-frame .logo-svg {
@@ -114,7 +117,7 @@ body .left-arrow .logo-frame .logo-svg .hc-logo {
 }
 
 body .left-arrow:hover .logo-frame {
-  left: 8rem;
+  left: 5.5rem;
 }
 
 body .left-arrow:hover .logo-frame .hc-logo {
@@ -677,7 +680,7 @@ footer .footer .line .workingSpan {
 
 footer .footer .line .dangerSpan {
   will-change: transform;
-  animation: slintness 2s ease 10s 6;
+  animation: slintness 2s ease 10s 17;
   color: #eff1f5;
   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }

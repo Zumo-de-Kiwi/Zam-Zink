@@ -11,7 +11,7 @@ body {
 
   main {
     display: grid;
-    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-columns: 8rem 1fr 8rem;
     grid-template-rows: 8rem 1fr 8rem;
     height: 100vh;
     width: 100%;
@@ -24,9 +24,14 @@ body {
 
     // BACK ARROW 1/2 1/2
     .left-arrow {
-      grid-column: 1/ 2;
-      grid-row: 1 / 2;
+      grid-column: 1;
+      grid-row: 1;
+      place-self: center;
       .link-a {
+        height: 70%;
+        padding: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         color: $font-black;
         font-variation-settings: 'MONO' 0, 'CASL' 0.3,
           'wght' $font-weight-lightest;
@@ -43,21 +48,18 @@ body {
         }
       }
     }
-    // .xBtn {
-    // }
-    // X comical
-    // X close btn
     .closeBtn {
       z-index: 5;
       font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-lighter;
       font-size: 5rem;
       color: $font-black;
-      padding: 4.5rem;
-      padding-top: 3.4rem;
-      padding-left: 8rem;
+      padding: 6rem;
+      place-self: center;
+      // padding-top: 3.4rem;
+      // padding-left: 8rem;
 
-      grid-column: 1/ 2;
-      grid-row: 1 / 2;
+      grid-column: 1;
+      grid-row: 1;
 
       cursor: $cursor-please-fingers;
       transition: $trans-slow;
@@ -69,16 +71,18 @@ body {
     // THE FOUR TITLES
     .titles {
       font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
-      font-size: 3rem;
+      font-size: $font-size-big;
       color: $font-black;
 
       align-self: center;
       justify-self: center;
       text-align: center;
 
-      width: 70vh;
+      width: 30rem;
       text-decoration: underline;
       text-decoration-color: $light-gray;
+
+      will-change: transform;
       transition: $trans-normal;
       z-index: 1;
 
@@ -117,14 +121,10 @@ body {
       grid-column: 2/ 3;
       grid-row: 3 / 4;
       text-decoration: none;
-      cursor: $cursor-pointer-down-hand;
       &:hover {
         text-decoration: none;
-        &:hover {
-          text-decoration: none;
-          font-variation-settings: 'MONO' 1, 'CASL' 0.1,
-            'wght' $font-weight-lightest;
-        }
+        font-variation-settings: 'MONO' 1, 'CASL' 0.1,
+          'wght' $font-weight-lightest;
       }
     }
     .ingredients {
@@ -163,10 +163,7 @@ body {
         place-items: center;
         width: clamp(400px, 40ch, 45ch);
         height: clamp(400px, 30vh, 40vh);
-        // margin: 0px auto;
-        // _ _ _
-        // _ * _
-        // * * *
+
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 40%;
 
@@ -214,6 +211,7 @@ body {
             background-color: white;
 
             transition: $trans-normal;
+            will-change: transform;
             &:hover {
               border: 2.4px solid $dark-gray;
               transform: translateY(-0.1rem);
@@ -351,7 +349,7 @@ body {
   }
 
   footer {
-    height: 41vh;
+    height: 41%;
     display: grid;
     background-color: $light-gray;
     #footer-inside {

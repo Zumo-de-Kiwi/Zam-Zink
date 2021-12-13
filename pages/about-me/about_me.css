@@ -71,18 +71,21 @@ body .left-arrow {
   padding-top: 1rem;
   z-index: 10;
   margin: 0px;
+  padding: 0rem;
   border: 0px;
+  height: 5rem;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 2rem;
 }
 
 body .left-arrow .link-a {
   color: #b9cabf;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
-  padding: 2rem;
-  font-size: calc(0.5vw + 0.8vw + 40px);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: calc(0.5vw + 0.4vw + 30px);
   transition: 0.45s;
 }
 
@@ -100,8 +103,8 @@ body .left-arrow .link-a #left-arrow {
 body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
-  left: 6rem;
-  top: -5rem;
+  left: 4.5rem;
+  top: -4rem;
 }
 
 body .left-arrow .logo-frame .logo-svg {
@@ -114,7 +117,7 @@ body .left-arrow .logo-frame .logo-svg .hc-logo {
 }
 
 body .left-arrow:hover .logo-frame {
-  left: 8rem;
+  left: 5.5rem;
 }
 
 body .left-arrow:hover .logo-frame .hc-logo {
@@ -373,7 +376,7 @@ body {
 
 body main {
   display: grid;
-  grid-template-columns: 10rem 1fr 10rem;
+  grid-template-columns: 8rem 1fr 8rem;
   grid-template-rows: 8rem 1fr 8rem;
   height: 100vh;
   width: 100%;
@@ -383,11 +386,16 @@ body main {
 }
 
 body main .left-arrow {
-  grid-column: 1/ 2;
-  grid-row: 1 / 2;
+  grid-column: 1;
+  grid-row: 1;
+  place-self: center;
 }
 
 body main .left-arrow .link-a {
+  height: 70%;
+  padding: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: #232522;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 300;
 }
@@ -409,11 +417,10 @@ body main .closeBtn {
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 400;
   font-size: 5rem;
   color: #232522;
-  padding: 4.5rem;
-  padding-top: 3.4rem;
-  padding-left: 8rem;
-  grid-column: 1/ 2;
-  grid-row: 1 / 2;
+  padding: 6rem;
+  place-self: center;
+  grid-column: 1;
+  grid-row: 1;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   transition: 0.45s;
 }
@@ -424,14 +431,15 @@ body main .closeBtn:hover {
 
 body main .titles {
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400;
-  font-size: 3rem;
+  font-size: calc(0.5vw + 0vw + 18px);
   color: #232522;
   align-self: center;
   justify-self: center;
   text-align: center;
-  width: 70vh;
+  width: 30rem;
   text-decoration: underline;
   text-decoration-color: #a6a6a6;
+  will-change: transform;
   transition: 0.3s;
   z-index: 1;
 }
@@ -472,14 +480,9 @@ body main #bottom-side {
   grid-column: 2/ 3;
   grid-row: 3 / 4;
   text-decoration: none;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
 body main #bottom-side:hover {
-  text-decoration: none;
-}
-
-body main #bottom-side:hover:hover {
   text-decoration: none;
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 300;
 }
@@ -569,6 +572,7 @@ body main #center-box #center-content #more-btns .more-btn {
   padding: 0.5rem 1.2rem;
   background-color: white;
   transition: 0.3s;
+  will-change: transform;
 }
 
 body main #center-box #center-content #more-btns .more-btn:hover {
@@ -706,7 +710,7 @@ body main #center-box #comical-pics #my-pic-9 {
 }
 
 body footer {
-  height: 41vh;
+  height: 41%;
   display: grid;
   background-color: #a6a6a6;
 }
