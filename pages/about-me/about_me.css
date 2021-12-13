@@ -413,12 +413,12 @@ body main .left-arrow:hover .hc-logo {
 }
 
 body main .closeBtn {
-  z-index: 5;
+  z-index: 99;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 400;
-  font-size: 5rem;
+  font-size: calc(0.5vw + 0.4vw + 30px);
   color: #232522;
-  padding: 6rem;
-  place-self: center;
+  padding: 4rem;
+  padding-left: 6rem;
   grid-column: 1;
   grid-row: 1;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
@@ -426,7 +426,7 @@ body main .closeBtn {
 }
 
 body main .closeBtn:hover {
-  font-variation-settings: "CASL" 0.9, "wght" 500;
+  font-variation-settings: "CASL" 0.9, "wght" 400;
 }
 
 body main .titles {

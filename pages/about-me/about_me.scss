@@ -49,22 +49,19 @@ body {
       }
     }
     .closeBtn {
-      z-index: 5;
+      z-index: 99;
       font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-lighter;
-      font-size: 5rem;
+      font-size: $font-size-huge;
       color: $font-black;
-      padding: 6rem;
-      place-self: center;
-      // padding-top: 3.4rem;
-      // padding-left: 8rem;
-
+      padding: 4rem;
+      padding-left: 6rem;
       grid-column: 1;
       grid-row: 1;
 
       cursor: $cursor-please-fingers;
       transition: $trans-slow;
       &:hover {
-        font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-light;
+        font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-lighter;
       }
     }
 

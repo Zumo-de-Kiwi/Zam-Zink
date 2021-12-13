@@ -452,7 +452,7 @@ body {
   grid-row: 1 /2;
   text-align: center;
   align-self: end;
-  color: #a6a6a6;
+  color: #ededed;
   font-variation-settings: "MONO" 0.5, "CASL" 0.1, "wght" 500;
 }
 
@@ -519,8 +519,8 @@ body {
 
 .container #mailFrame:hover .wave {
   display: block;
+  place-self: end;
   animation-name: waveHand;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
 }

@@ -367,6 +367,7 @@ body #trampolineEmoji:active {
 }
 
 body {
+  height: 100%;
   font-size: 2rem;
   font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 620, "slnt" 0;
 }
@@ -395,11 +396,11 @@ body .left-arrow .link-a:hover {
   mix-blend-mode: difference;
 }
 
-body header {
+body .mainBgPic {
   position: relative;
-}
-
-body header .mainBgPic {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
   background: #10088f;
   background: linear-gradient(0deg, #10088f 0%, #3539e7 23%, #1760d2 37%, #41f5ff 53%, #d3fff5 72%, #f7f7f7 81%, #e0f44f 94%, #ed3939 100%);
   filter: blur(0.2rem);
@@ -409,21 +410,23 @@ body header .mainBgPic {
   background-position: bottom;
   height: 40vh;
   width: 100%;
+  z-index: 2;
 }
 
-body header h1 {
-  mix-blend-mode: difference;
-  position: absolute;
+body .mainBgPic h1 {
+  z-index: 3;
   color: white;
+  mix-blend-mode: difference;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: sticky;
+  top: 0rem;
+  padding: 3rem;
 }
 
 body main #section1,
 body main #section2 {
   display: grid;
+  border: 2px solid crimson;
 }
 
 body main p {
@@ -435,20 +438,22 @@ body main p {
 
 body main #section1 {
   min-height: 100vh;
-  grid-template-columns: 1fr 70rem, calc(100) 1fr;
+  grid-template-columns: 1fr 70rem 1fr;
+  grid-template-rows: 1fr 500px 500px;
 }
 
-body main #section1 #p1 {
+body main #section1 #div1 #p1 {
   grid-column: 2;
+  grid-row: 1;
 }
 
-body main #section1 #p2 {
+body main #section1 #div1 #p2 {
   grid-column: 2;
+  grid-row: 1;
 }
 
 body main #section2 {
   min-height: 200vh;
-  background-color: yellow;
   position: relative;
 }
 

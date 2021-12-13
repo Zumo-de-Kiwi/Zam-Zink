@@ -5,6 +5,7 @@
 @import '../../../scss/font-anim-keyframes';
 
 body {
+  height: 100%;
   font-size: 2rem;
   font-variation-settings: 'MONO' 0.2, 'CASL' 0.1, 'wght' $font-weight-normal,
     $slnt;
@@ -31,40 +32,40 @@ body {
     }
   }
 
-  header {
+  .mainBgPic {
     position: relative;
-    .mainBgPic {
-      background: rgb(16, 8, 143);
-      background: linear-gradient(
-        0deg,
-        rgba(16, 8, 143, 1) 0%,
-        rgba(53, 57, 231, 1) 23%,
-        rgba(23, 96, 210, 1) 37%,
-        rgba(65, 245, 255, 1) 53%,
-        rgba(211, 255, 245, 1) 72%,
-        rgba(247, 247, 247, 1) 81%,
-        rgba(224, 244, 79, 1) 94%,
-        rgba(237, 57, 57, 1) 100%
-      );
-      filter: blur(0.2rem);
-      background-repeat: no-repeat;
-      background-color: #ccc;
-      background-size: cover;
-      background-position: bottom;
-      // filter: blur(1rem);
-      height: 40vh;
-      width: 100%;
-    }
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    background: rgb(16, 8, 143);
+    background: linear-gradient(
+      0deg,
+      rgba(16, 8, 143, 1) 0%,
+      rgba(53, 57, 231, 1) 23%,
+      rgba(23, 96, 210, 1) 37%,
+      rgba(65, 245, 255, 1) 53%,
+      rgba(211, 255, 245, 1) 72%,
+      rgba(247, 247, 247, 1) 81%,
+      rgba(224, 244, 79, 1) 94%,
+      rgba(237, 57, 57, 1) 100%
+    );
+    filter: blur(0.2rem);
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: bottom;
+    height: 40vh;
+    width: 100%;
+    z-index: 2;
     h1 {
-      mix-blend-mode: difference;
-      position: absolute;
+      z-index: 3;
       color: white;
+      mix-blend-mode: difference;
       text-align: center;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      // padding: 5rem;
+      position: sticky;
+      top: 0rem;
+      // bottom: 3rem;
+      padding: 3rem;
     }
   }
 
@@ -73,27 +74,35 @@ body {
     #section1,
     #section2 {
       display: grid;
+      border: 2px solid crimson;
     }
     p {
       line-height: 1.5;
       font-size: $font-size-big;
       margin-top: 2rem;
       margin-bottom: 2rem;
+      // position: relative;
     }
     #section1 {
       min-height: 100vh;
-      grid-template-columns: 1fr 70rem, calc(100) 1fr;
-      #p1 {
-        grid-column: 2;
-      }
-      #p2 {
-        grid-column: 2;
+      grid-template-columns: 1fr 70rem 1fr;
+      grid-template-rows: 1fr 500px 500px;
+      #div1 {
+        #p1 {
+          grid-column: 2;
+          grid-row: 1;
+        }
+        #p2 {
+          grid-column: 2;
+          grid-row: 1;
+        }
       }
     }
     // section 2 has the trampolin
     #section2 {
       min-height: 200vh;
-      background-color: yellow;
+      // background-color: rgb(255, 255, 255);
+
       position: relative;
       // display: grid;
       #trampolin-wrapper {
