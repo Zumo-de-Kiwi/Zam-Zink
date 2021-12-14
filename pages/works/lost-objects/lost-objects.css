@@ -528,7 +528,7 @@ body main #section #trampolin-wrapper #trampolineEmoji {
   align-self: flex-end;
   z-index: 9;
   text-decoration: none;
-  padding: 1rem;
+  padding: 3rem;
   font-size: calc(0.5vw + 0.4vw + 30px);
   transition: 0.15s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
@@ -836,19 +836,26 @@ body footer #wrapper #nextPrj {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
   body main h3 {
     font-size: 1.8;
   }
   body main #section {
-    grid-template-columns: 0px 1fr 0px;
+    grid-template-columns: 1fr 90vw 1fr;
+  }
+  body main #section img {
+    place-self: center;
+    width: clamp(250px, 85%, 500px);
   }
   body main #section #trampolin-wrapper #trampolineEmoji {
     font-size: calc(0.5vw + 0.4vw + 30px);
+    padding: 1rem;
   }
   body main #section #div1 {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
+    display: block;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -858,7 +865,7 @@ body footer #wrapper #nextPrj {
     grid-row: 1;
     place-self: center;
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
   }
   body main #section #div1 #p1 #collect {
     filter: blur(0.3rem);
@@ -875,165 +882,203 @@ body footer #wrapper #nextPrj {
   body main #section #div1 #p1 #touchMe {
     color: #9eb0c2;
     font-size: 1.5rem;
-    padding-left: 28rem;
+    padding-left: 10rem;
   }
   body main #section #div1 #sweat {
     grid-column: 1;
     grid-row: 2;
-    padding-top: 13rem;
-    text-align: end;
+    padding-top: 3rem;
+    text-align: center;
   }
   body main #section #div1 #chocoPic {
     grid-column: 1;
-    grid-row: 2 /4;
-    padding-left: 4rem;
-  }
-  body main #section #div1 #alonePic {
-    grid-column: 1;
-    grid-row: 4 /6;
-    padding-top: 4rem;
-    padding-left: 7rem;
+    grid-row: 3;
+    padding-left: 1rem;
   }
   body main #section #div1 #boring {
     grid-column: 1;
+    grid-row: 4;
+    padding-bottom: 0rem;
+    padding-top: 16rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  body main #section #div1 #alonePic {
+    grid-column: 1;
     grid-row: 5;
-    padding-top: 10rem;
+    padding-top: 1rem;
     padding-left: 5rem;
-    padding-right: 2rem;
+    padding-right: 5rem;
   }
   body main #section #div1 #checkPic {
     grid-column: 1;
-    grid-row: 5;
-    padding-top: 25rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    grid-row: 6;
+    padding-top: 4rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    place-self: center;
   }
   body main #section #div1 #monetaryText {
     grid-column: 1;
     grid-row: 7;
-    padding-top: 16rem;
-    text-align: center;
-    padding-right: 3rem;
+    padding-top: 20rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
   }
   body main #section #div1 #dreamsPic {
     grid-column: 1;
     grid-row: 8;
-    padding-left: 9rem;
-    padding-right: 16rem;
-  }
-  body main #section #div1 #mathPic {
-    grid-column: 1;
-    grid-row: 9 / 11;
-    padding-top: 25rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   body main #section #div1 #mathText {
     grid-column: 1;
-    grid-row: 10;
-    padding-left: 26rem;
-    padding-bottom: 5rem;
+    grid-row: 9;
+    padding-left: 0rem;
+    padding-bottom: 0rem;
+    padding-top: 20rem;
     z-index: 2;
+  }
+  body main #section #div1 #mathPic {
+    grid-column: 1;
+    grid-row: 10;
+    padding-top: 0rem;
   }
   body main #section #div1 #cardsText {
     grid-column: 1;
     grid-row: 11;
     text-align: center;
     padding-top: 20rem;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
   }
   body main #section #div1 #wsjPic {
     grid-column: 1;
     grid-row: 12;
-    padding-left: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
   }
   body main #section #div1 #generaliPic {
     grid-column: 1;
-    grid-row: 12;
-    padding-top: 1.4rem;
-    padding-right: 4rem;
+    grid-row: 13;
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   body main #section #div1 #schoolText {
     grid-column: 1;
-    grid-row: 13;
+    grid-row: 14;
     text-align: center;
-    padding-top: 15rem;
+    padding-top: 20rem;
   }
   body main #section #div1 #schoolPic {
     grid-column: 1;
-    grid-row: 13;
-    padding-top: 27rem;
-    padding-left: 15.3rem;
-    padding-right: 12rem;
+    grid-row: 14;
+    padding-top: 29rem;
+    padding-left: 2rem;
+    padding-right: 0rem;
   }
   body main #section #div1 #graphicalText {
     grid-column: 1;
-    grid-row: 14;
+    grid-row: 15;
     text-align: center;
     padding-top: 30rem;
   }
   body main #section #div1 #granPic {
     grid-column: 1;
-    grid-row: 14;
-    padding-top: 80rem;
-    padding-bottom: 10rem;
-    padding-left: 18rem;
-    padding-right: 17rem;
+    grid-row: 15;
+    padding-top: 70rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   body main #section #div1 #miliPic {
     grid-column: 1;
-    grid-row: 15;
-    padding-left: 9rem;
-    padding-bottom: 10rem;
+    grid-row: 16;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 12rem;
   }
   body main #section #div1 #girlPic {
     grid-column: 1;
-    grid-row: 15;
-    padding-right: 10rem;
-    padding-bottom: 8rem;
+    grid-row: 17;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 13rem;
   }
   body main #section #div1 #secureWrapper {
     grid-column: 1;
-    grid-row: 16;
-    padding: 3rem;
+    grid-row: 18;
+    padding: 0rem;
+    width: 100%;
   }
   body main #section #div1 #secureWrapper #securePic {
     padding: 0.4rem;
-    padding-left: 40rem;
+    padding-left: 8rem;
+    padding-right: 4rem;
     border-radius: 3rem;
-    border: 3px solid #c4cde8;
+    border: 3px solid white;
   }
   body main #section #div1 #carText {
     grid-column: 1;
-    grid-row: 17;
-    padding-top: 37rem;
+    grid-row: 19;
+    padding-top: 20rem;
   }
   body main #section #div1 #toyotaPic {
     grid-column: 1;
-    grid-row: 17;
-    padding-top: 25rem;
-    padding-left: 5rem;
+    grid-row: 20;
+    padding-top: 2rem;
+    padding-left: 1rem;
   }
   body main #section #div1 #barrosPic {
     grid-column: 1;
-    grid-row: 17;
-    padding-top: 62rem;
-    padding-left: 25rem;
-    padding-bottom: 25rem;
+    grid-row: 21;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    transform: rotateZ(90deg);
+    width: 400px;
   }
   body main #section #div1 #endText {
     z-index: 8;
     grid-column: 1;
     text-align: center;
-    grid-row: 17;
-    padding-top: 95rem;
-    padding-bottom: 25rem;
+    grid-row: 22;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
   }
   body main::after {
-    content: url("lost-obj-img/placa800bw.webp");
-    position: absolute;
-    bottom: -441px;
+    content: '';
+  }
+  body footer {
+    position: relative;
+    height: 80%;
+    bottom: 0px;
+    width: 100%;
+    background: #556ade;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+  }
+  body footer #placa {
+    grid-column: 1/ 4;
     z-index: 2;
     transform: rotateZ(0.3deg);
-    left: 50%;
-    transform: translateX(-50%);
+  }
+  body footer #wrapper {
+    z-index: 17;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 10rem 10rem 10rem;
+  }
+  body footer #wrapper .morePrj {
+    z-index: 17;
+  }
+  body footer #wrapper #prevPrj {
+    grid-row: 2;
+  }
+  body footer #wrapper #nextPrj {
+    grid-row: 2;
   }
 }
