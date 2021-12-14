@@ -48,6 +48,7 @@ h6 {
 }
 
 body {
+  font-size: 1.8rem;
   color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;

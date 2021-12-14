@@ -374,167 +374,76 @@ body #trampolineEmoji:active {
 }
 
 body {
-  height: 95vh;
-}
-
-.preloader {
-  background: whitesmoke;
-}
-
-.preloader #emoji-loader {
-  animation: none;
-  position: relative;
-  padding-right: 8vw;
-}
-
-.preloader #emoji-loader #frame1,
-.preloader #emoji-loader #frame2,
-.preloader #emoji-loader #frame3,
-.preloader #emoji-loader #frame4 {
-  position: absolute;
-}
-
-.preloader #emoji-loader #frame1 {
-  animation: gifFrame1 1.6s infinite ease;
-}
-
-.preloader #emoji-loader #frame2 {
-  animation: gifFrame2 1.6s infinite ease;
-}
-
-.preloader #emoji-loader #frame3 {
-  animation: gifFrame3 1.6s infinite ease;
-}
-
-.preloader #emoji-loader #frame4 {
-  animation: gifFrame4 1.6s infinite ease;
-}
-
-.preloader #text-loader {
-  padding-top: 12rem;
-  animation: variableOpacity 2s infinite linear;
-  color: #4d435b;
-}
-
-.preload-finish {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.preload-finish #emoji-loader {
-  animation: none;
-}
-
-.preload-finish #emoji-loader #frame1,
-.preload-finish #emoji-loader #frame2,
-.preload-finish #emoji-loader #frame3,
-.preload-finish #emoji-loader #frame4 {
-  animation: none;
-}
-
-.preload-finish #text-loader {
-  animation: none;
-}
-
-.left-arrow .link-a {
-  color: #5b5957;
-}
-
-.left-arrow .link-a:hover {
-  color: #5b5957;
-}
-
-.container {
   height: 100%;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr minmax(100%, 60ch) 1fr;
 }
 
-.container #subcontainer {
-  grid-column: 2;
-  line-height: 1.5;
-  display: grid;
-  grid-template-rows: 15% 1fr 10% 1fr 5%;
-  width: clamp(250px, 80%, 60ch);
-  gap: 5rem;
-  place-items: center;
+body .preloader {
+  transition: 0.45s ease-out;
+  background: white;
 }
 
-.container #subcontainer h1 {
-  grid-row: 1;
+body .preloader #emoji-loader {
+  animation: jump 1.5s ease 0.3s infinite alternate;
+}
+
+body .preloader #text-loader {
+  color: black;
+  font-size: calc(0.5vw - 0vw + 12px);
+}
+
+body .left-arrow .link-a {
+  color: #a7a7a7;
+}
+
+body .left-arrow .link-a:hover {
+  color: white;
+}
+
+body .left-arrow:hover .hc-logo {
+  fill: #ffca9b;
+}
+
+body main {
+  background: white;
+  height: 200vh;
+}
+
+body main h1 {
   text-align: center;
-  align-self: end;
-  color: #ededed;
-  font-variation-settings: "MONO" 0.5, "CASL" 0.1, "wght" 500;
+  padding: 2rem;
 }
 
-.container #subcontainer p {
-  text-align: center;
-  color: #a6a6a6;
-  font-size: calc(0.5vw + 0.3vw + 13px);
+body footer {
+  background: black;
+  height: 20rem;
+  color: white;
 }
 
-.container #subcontainer .p1 {
-  grid-row: 2;
-}
-
-.container #subcontainer .p2 {
-  grid-row: 4;
-}
-
-.container #subcontainer #mailFrame {
-  grid-row: 3;
-}
-
-.container #subcontainer #mailFrame a {
-  text-decoration-color: #b9cabf;
-  transition: 0.45s;
-}
-
-.container #subcontainer #mailFrame a:hover {
-  text-decoration-color: #232522;
-}
-
-.container #subcontainer #mailFrame a #mailText {
-  font-variation-settings: "MONO" 1, "CASL" 0.2, "wght" 500;
-  font-size: calc(0.5vw + 0.3vw + 13px);
-  transition: font-variation-settings 0.5s ease;
-  font-size: calc(3vw + 12px);
-  user-select: none;
-  color: #4d435b;
-}
-
-.container #subcontainer #mailFrame a #mailText:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>💌 </text></svg>") 16 0, auto;
-  font-variation-settings: "MONO" 1, "CASL" 0.01, "wght" 400;
-  color: #232522;
-}
-
-.container #subcontainer #mailFrame div {
-  display: none;
-}
-
-.container #subcontainer #mailFrame:hover div {
-  font-size: calc(3vw + 40px);
+body footer #trampolineEmoji {
   position: fixed;
-  left: 45%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(3vw + 70px);
-  height: calc(3vw + 70px);
-  border-radius: 50%;
+  /* Fixed/sticky position */
+  bottom: 2rem;
+  /* Place the button at the bottom of the page */
+  right: 4rem;
+  /* Place the button 30px from the right */
+  z-index: 9;
+  /* Make sure it does not overlap */
+  text-decoration: none;
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  font-size: 3.5rem;
+  /* Increase font size */
+  transition: 0.15s;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
-.container #subcontainer #mailFrame:hover .wave {
-  display: block;
-  position: absolute;
-  z-index: -1;
-  place-self: end;
-  animation-name: waveHand;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  top: 55%;
-  left: 53%;
+body footer #trampolineEmoji:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  transform: scale(1.1);
+}
+
+body footer #trampolineEmoji:active {
+  transform: scale(0.9);
 }

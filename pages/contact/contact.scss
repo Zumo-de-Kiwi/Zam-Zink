@@ -74,113 +74,97 @@ body {
 .container {
   height: 100%;
   width: 100%;
-  line-height: 1.5;
+
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 60rem 1fr;
-  grid-template-rows: 15% 1fr 10% 1fr 5%;
-  h1 {
+  grid-template-columns: 1fr minmax(100%, 60ch) 1fr;
+  #subcontainer {
     grid-column: 2;
-    grid-row: 1 /2;
-    text-align: center;
-    align-self: end;
-    color: rgb(237, 237, 237);
-    // margin-top: 3rem;
-    font-variation-settings: 'MONO' 0.5, 'CASL' 0.1, 'wght' $font-weight-light;
-  }
-  p {
-    grid-column: 2;
-    text-align: center;
-    color: $light-gray;
-    --weight: 500;
-    font-size: $font-size-normal;
-    font-variation-settings: 'wght' var(--weight);
-  }
-  .p1 {
-    grid-row: 2;
-  }
-  .p2 {
-    grid-row: 4;
-  }
-  #mailFrame {
-    grid-column: 2;
-    grid-row: 3;
-    a {
-      text-decoration-color: $font-sutil-gray-color;
-      transition: $trans-slow;
-      &:hover {
-        text-decoration-color: $font-black;
-      }
-      #mailText {
-        font-variation-settings: 'MONO' 1, 'CASL' 0.2, 'wght' $font-weight-light;
-        font-size: $font-size-normal;
-        // font-family: "Ginto Variable";
-        transition: font-variation-settings 0.5s ease;
-        font-size: calc(3vw + 12px);
-        user-select: none;
-        color: $sutil-dark-purple-gray-color;
-        // font-variation-settings: "wght" 400;
+
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: 15% 1fr 10% 1fr 5%;
+    width: clamp(250px, 80%, 60ch);
+    gap: 5rem;
+    place-items: center;
+    h1 {
+      grid-row: 1;
+      text-align: center;
+      align-self: end;
+      color: rgb(237, 237, 237);
+      // margin-top: 3rem;
+      font-variation-settings: 'MONO' 0.5, 'CASL' 0.1, 'wght' $font-weight-light;
+    }
+    p {
+      // grid-column: 2;
+      text-align: center;
+      color: $light-gray;
+      font-size: $font-size-normal;
+      // --weight: 500;
+      // font-variation-settings: 'wght' var(--weight);
+    }
+    .p1 {
+      grid-row: 2;
+    }
+    .p2 {
+      grid-row: 4;
+    }
+    #mailFrame {
+      // grid-column: 2;
+      grid-row: 3;
+      a {
+        text-decoration-color: $font-sutil-gray-color;
+        transition: $trans-slow;
         &:hover {
-          cursor: $cursor-contact-mail;
-          font-variation-settings: 'MONO' 1, 'CASL' 0.01,
-            'wght' $font-weight-lighter;
-          color: $font-black;
+          text-decoration-color: $font-black;
+        }
+        #mailText {
+          font-variation-settings: 'MONO' 1, 'CASL' 0.2,
+            'wght' $font-weight-light;
+          font-size: $font-size-normal;
+          // font-family: "Ginto Variable";
+          transition: font-variation-settings 0.5s ease;
+          font-size: calc(3vw + 12px);
+          user-select: none;
+          color: $sutil-dark-purple-gray-color;
+          // font-variation-settings: "wght" 400;
+          &:hover {
+            cursor: $cursor-contact-mail;
+            font-variation-settings: 'MONO' 1, 'CASL' 0.01,
+              'wght' $font-weight-lighter;
+            color: $font-black;
+          }
         }
       }
-    }
-    //////wave hand
-    div {
-      display: none;
-    }
-    &:hover {
+      //////wave hand
       div {
-        font-size: calc(3vw + 40px);
-        position: fixed;
-        // position: relative;
-        left: 45%; //40%
-        top: 50%; //50%
-        transform: translate(-50%, -50%);
-        width: calc(3vw + 70px);
-        height: calc(3vw + 70px);
-        border-radius: 50%;
+        display: none;
       }
-      .wave {
-        display: block;
-        // position: relative;
-        place-self: end;
-        animation-name: waveHand;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        // transform-origin: 50% 70%;
-        // top: 50%;
-        // left: 50%;
+      &:hover {
+        div {
+          font-size: calc(3vw + 40px);
+          position: fixed;
+          // position: relative;
+          left: 45%; //40%
+          top: 50%; //50%
+          transform: translate(-50%, -50%);
+          width: calc(3vw + 70px);
+          height: calc(3vw + 70px);
+          border-radius: 50%;
+        }
+        .wave {
+          display: block;
+          position: absolute;
+          z-index: -1;
+          place-self: end;
+          animation-name: waveHand;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          // transform-origin: 50% 80%;
+          top: 55%;
+          left: 53%;
+        }
       }
-      // @keyframes waveHand {
-      //   0% {
-      //     transform: rotate(0deg);
-      //   }
-      //   10% {
-      //     transform: rotate(20deg);
-      //   }
-      //   20% {
-      //     transform: rotate(-10deg);
-      //   }
-      //   30% {
-      //     transform: rotate(20deg);
-      //   }
-      //   40% {
-      //     transform: rotate(-6deg);
-      //   }
-      //   50% {
-      //     transform: rotate(12deg);
-      //   }
-      //   60% {
-      //     transform: rotate(0deg);
-      //   }
-      //   100% {
-      //     transform: rotate(0deg);
-      //   }
-      // }
     }
   }
 }

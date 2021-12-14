@@ -48,6 +48,7 @@ h6 {
 }
 
 body {
+  font-size: 1.8rem;
   color: #232522;
   font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
@@ -312,6 +313,12 @@ body #trampolineEmoji:active {
   }
 }
 
+@keyframes jump {
+  to {
+    transform: translateY(1rem);
+  }
+}
+
 @keyframes widthness {
   0% {
     font-variation-settings: "wght" 500;
@@ -501,7 +508,7 @@ body main #section {
   z-index: 1;
   display: grid;
   background-color: white;
-  border: 2px solid #6423e6;
+  border: 0px solid #6423e6;
   grid-template-columns: 1fr 900px 1fr;
   position: relative;
 }
@@ -785,6 +792,10 @@ body footer {
   grid-template-columns: 1fr 360px 1fr;
 }
 
+body footer #placa {
+  display: none;
+}
+
 body footer #wrapper {
   z-index: 17;
   grid-column: 2;
@@ -1062,9 +1073,9 @@ body footer #wrapper #nextPrj {
     grid-template-columns: 1fr 80% 1fr;
   }
   body footer #placa {
+    display: block;
     grid-column: 1/ 4;
     z-index: 2;
-    transform: rotateZ(0.3deg);
   }
   body footer #wrapper {
     z-index: 17;

@@ -16,6 +16,8 @@
 
 1. three lines in one: `width: clamp(200px, 50%, 600px); //min, preferred, max`
 
+1. Set the main center paragraph: `grid-template-columns: 1fr minmax(100%, 60ch) 1fr;`
+
 ## Videos
 
 1. Responsive

@@ -141,7 +141,7 @@ body {
       z-index: 1;
       display: grid;
       background-color: white;
-      border: 2px solid rgb(100, 35, 230);
+      border: 0px solid rgb(100, 35, 230);
       // min-height: 100vh;
       grid-template-columns: 1fr 900px 1fr;
       @media (max-width: 900px) {
@@ -399,6 +399,9 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 360px 1fr;
+    #placa {
+      display: none;
+    }
     #wrapper {
       z-index: 17;
       grid-column: 2;
@@ -686,22 +689,9 @@ body {
       }
       &::after {
         content: '';
-        // content: url('lost-obj-img/placa800bw.webp');
-        // position: absolute;
-        // #placa {
-        //   // content: url('lost-obj-img/placa800bw.webp');
-        //   bottom: -441px;
-        //   z-index: 2;
-        //   transform: rotateZ(0.3deg);
-        //   // width:;
-        //   // place it justify centered
-        //   // left: 50%;
-        //   // transform: translateX(-50%);
-        // }
       }
     }
     footer {
-      // z-index: 0;
       position: relative;
       height: 80%;
       // height: calc(100vh * 0.4 + 45rem);
@@ -713,9 +703,11 @@ body {
       grid-template-columns: 1fr 80% 1fr;
 
       #placa {
+        display: block;
         grid-column: 1/ 4;
         z-index: 2;
-        transform: rotateZ(0.3deg);
+        // transform: rotateZ(0.1deg);
+        // top: -1rem;
       }
       #wrapper {
         z-index: 17;
