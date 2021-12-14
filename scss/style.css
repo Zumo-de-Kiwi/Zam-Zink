@@ -380,20 +380,25 @@ body {
 
 .main {
   height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr minmax(90%, 60ch) 1fr;
+  gap: 2rem;
 }
 
 .main .navigation {
+  grid-column: 2;
   height: 6rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 93%;
+  justify-content: flex-end;
   padding-top: 3rem;
+  padding-right: 2vw;
+  padding-left: 2vw;
 }
 
 .main .navigation .logo-frame {
-  display: block;
-  position: relative;
-  left: -20vw;
+  margin-right: auto;
 }
 
 .main .navigation .logo-frame .logo-svg {
@@ -413,9 +418,7 @@ body {
 
 .main .navigation ul {
   list-style-type: none;
-  display: block;
-  position: relative;
-  left: 14vw;
+  right: 3vw;
 }
 
 .main .navigation ul li {
@@ -442,6 +445,11 @@ body {
 
 .main .navigation ul li .filter {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>💌 </text></svg>") 16 0, auto;
+}
+
+.main .content_wrap {
+  grid-column: 2;
+  display: grid;
 }
 
 .main .content_wrap .content-name {
@@ -727,7 +735,7 @@ footer .footer #githublink a:hover {
 
 @media (min-width: 320px) {
   .main .content_wrap {
-    margin-top: 7vh;
+    margin-top: 4vh;
     padding-left: 5vw;
     padding-right: 5vw;
   }
@@ -740,8 +748,8 @@ footer .footer #githublink a:hover {
 @media (min-width: 576.02px) {
   .content-wrap {
     margin-top: 11vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   .content-wrap .content-name {
     padding-bottom: 7vh;
@@ -752,30 +760,22 @@ footer .footer #githublink a:hover {
 @media (min-width: 768px) {
   .main .content_wrap {
     margin-top: 17vh;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   .main .content_wrap .content-name {
     padding-bottom: 8vh;
     text-align: center;
-    padding-right: 11.5vh;
   }
 }
 
 @media (min-width: 1024px) {
   .main .content_wrap {
-    padding-left: 19vw;
-    padding-right: 19vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
   .main .content_wrap .content-name {
     padding-bottom: 10vh;
     text-align: center;
-  }
-}
-
-@media (min-width: 1400px) {
-  .main .content_wrap {
-    padding-left: 25vw;
-    padding-right: 23vw;
   }
 }

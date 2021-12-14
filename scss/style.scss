@@ -12,20 +12,26 @@ body {
 
 .main {
   height: 100%;
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr minmax(90%, 60ch) 1fr;
+  gap: 2rem;
+
+  //logo home filter contact about me
   .navigation {
-    //logo home filter contact about me
+    grid-column: 2;
+
     height: 6rem;
     display: flex;
-
-    justify-content: center;
-    align-items: center;
+    width: 93%;
+    justify-content: flex-end;
     padding-top: 3rem;
+    padding-right: 2vw;
+    padding-left: 2vw;
     // transition: all $trans-slow; // INitial fx when enter the page
     .logo-frame {
-      display: block;
-      position: relative;
-      // margin-left: 4rem;
-      left: -20vw; //calc(0px - 16vw - 1rem);
+      margin-right: auto;
       .logo-svg {
         width: 60px;
         height: 30px; // svg size
@@ -43,12 +49,8 @@ body {
     }
 
     ul {
-      //these two for center margin: 0px auto; adding-right: 12rem;
-      // margin: 0px auto;
       list-style-type: none;
-      display: block;
-      position: relative;
-      left: 14vw;
+      right: 3vw;
       li {
         display: inline-block;
         font-size: $font-size-big;
@@ -80,13 +82,9 @@ body {
   }
 
   .content_wrap {
-    //all the middle right main content
-    // left: 0;
-    // overflow: auto;
-    // height: 100%;
-    // padding-bottom: 10rem;
-    // padding-left: 16vw;
-    // padding-right: 14vw; //new
+    grid-column: 2;
+
+    display: grid;
 
     ///////// Hi, I am Héctor /////////
     .content-name {
@@ -207,11 +205,6 @@ body {
 
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' var(--main-weight),
         $slnt;
-
-      // Not working: When hover content name content will be less visual appealing(turn black)
-      // &:hover + .complete-name {
-      //   color: $sutil-dark-purple-gray-color;
-      // }
 
       .link {
         position: relative;
@@ -402,7 +395,7 @@ footer {
   .main {
     .content_wrap {
       // padding-bottom: 7vh;
-      margin-top: 7vh;
+      margin-top: 4vh;
       padding-left: 5vw;
       padding-right: 5vw;
       .content-name {
@@ -418,8 +411,8 @@ footer {
 @media (min-width: 576.02px) {
   .content-wrap {
     margin-top: 11vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     .content-name {
       // padding-top: 8vh;
       padding-bottom: 7vh;
@@ -435,12 +428,12 @@ footer {
       // padding-bottom: 17vh;
       margin-top: 17vh;
       // padding-top: 13vh; //need to change
-      padding-left: 15vw;
-      padding-right: 15vw;
+      padding-left: 10vw;
+      padding-right: 10vw;
       .content-name {
         padding-bottom: 8vh;
         text-align: center;
-        padding-right: 11.5vh;
+        // padding-right: 11.5vh;
       }
     }
   }
@@ -451,8 +444,8 @@ footer {
     .content_wrap {
       // padding-bottom: 19vh;
 
-      padding-left: 19vw;
-      padding-right: 19vw;
+      padding-left: 20vw;
+      padding-right: 20vw;
       .content-name {
         padding-bottom: 10vh;
         text-align: center;
@@ -465,8 +458,8 @@ footer {
 @media (min-width: 1400px) {
   .main {
     .content_wrap {
-      padding-left: 25vw;
-      padding-right: 23vw;
+      // padding-left: 2vw;
+      // padding-right: 2vw;
     }
   }
 }
