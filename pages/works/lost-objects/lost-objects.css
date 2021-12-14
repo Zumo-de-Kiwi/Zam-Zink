@@ -369,6 +369,7 @@ body #trampolineEmoji:active {
 body {
   height: 100%;
   font-size: 2rem;
+  position: relative;
   font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 620, "slnt" 0;
 }
 
@@ -440,21 +441,34 @@ body .mainBgPic:hover #explainBg {
 }
 
 body main {
+  z-index: 1;
+  position: relative;
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500;
   line-height: 1.5;
   color: #5b5957;
-}
-
-body main #section1,
-body main #section2 {
-  display: grid;
-  border: 2px solid crimson;
 }
 
 body main p {
   font-size: 1.8rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+body main p:hover {
+  color: black;
+}
+
+body main h3 {
+  font-size: 2.3;
+  color: #7e8fc4;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  transition: 0.5s;
+}
+
+body main h3:hover {
+  color: royalblue;
 }
 
 body main img {
@@ -466,12 +480,16 @@ body main img:hover {
   filter: grayscale(1%);
 }
 
-body main #section1 {
+body main #section {
+  z-index: 1;
+  display: grid;
+  background-color: white;
+  border: 2px solid #6423e6;
   grid-template-columns: 1fr 900px 1fr;
   position: relative;
 }
 
-body main #section1 #trampolin-wrapper {
+body main #section #trampolin-wrapper {
   position: absolute;
   height: 90%;
   width: 3%;
@@ -482,7 +500,7 @@ body main #section1 #trampolin-wrapper {
   justify-content: right;
 }
 
-body main #section1 #trampolin-wrapper #trampolineEmoji {
+body main #section #trampolin-wrapper #trampolineEmoji {
   position: sticky;
   align-self: flex-end;
   justify-self: right;
@@ -498,25 +516,25 @@ body main #section1 #trampolin-wrapper #trampolineEmoji {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
-body main #section1 #trampolin-wrapper #trampolineEmoji:hover {
+body main #section #trampolin-wrapper #trampolineEmoji:hover {
   transform: scale(1.1);
   transform: translateY(-0.2rem);
 }
 
-body main #section1 #trampolin-wrapper #trampolineEmoji:active {
+body main #section #trampolin-wrapper #trampolineEmoji:active {
   transform: scale(0.9);
   transform: translateY(0.3rem);
 }
 
-body main #section1 #div1 {
+body main #section #div1 {
   grid-column: 2;
   grid-row: 2;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 300px 1fr 300px 1fr;
+  grid-template-columns: 1fr 300px 73px 300px 1fr;
 }
 
-body main #section1 #div1 #p1 {
+body main #section #div1 #p1 {
   grid-column: 1 / 6;
   grid-row: 1;
   place-self: center;
@@ -525,36 +543,243 @@ body main #section1 #div1 #p1 {
   padding-bottom: 6rem;
 }
 
-body main #section1 #div1 #sweat {
-  grid-column: 2;
-  grid-row: 2;
-  padding-top: 10rem;
-  padding-bottom: 5rem;
-  text-align: end;
-  padding-right: 5rem;
+body main #section #div1 #p1 #collect {
+  filter: blur(0.3rem);
+  transition: 0.3s;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-body main #section1 #div1 #chocoPic {
+body main #section #div1 #p1 #collect:hover {
+  filter: blur(0rem);
+}
+
+body main #section #div1 #p1 #touchMe {
+  color: #9eb0c2;
+  font-size: 1.5rem;
+  padding-left: 28rem;
+}
+
+body main #section #div1 #sweat {
+  grid-column: 2;
+  grid-row: 2;
+  padding-top: 13rem;
+  text-align: end;
+}
+
+body main #section #div1 #chocoPic {
   grid-column: 3/ 5;
   grid-row: 2 /4;
   padding-left: 4rem;
 }
 
-body main #section1 #div1 #alonePic {
+body main #section #div1 #alonePic {
   grid-column: 1/ 3;
-  grid-row: 3 /6;
-  padding: 4rem;
-  padding-right: 3rem;
+  grid-row: 4 /6;
+  padding-top: 4rem;
   padding-left: 7rem;
 }
 
-body main #section1 #div1 #boring {
+body main #section #div1 #boring {
+  grid-column: 3/ 5;
+  grid-row: 5;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+
+body main #section #div1 #checkPic {
+  grid-column: 3/ 5;
+  grid-row: 5;
+  padding-top: 25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+body main #section #div1 #monetaryText {
+  grid-column: 2/ 5;
+  grid-row: 7;
+  padding-top: 16rem;
+  text-align: center;
+  padding-right: 3rem;
+}
+
+body main #section #div1 #dreamsPic {
+  grid-column: 2/ 5;
+  grid-row: 8;
+  padding-left: 9rem;
+  padding-right: 16rem;
+}
+
+body main #section #div1 #mathPic {
+  grid-column: 2/ 4;
+  grid-row: 9 / 11;
+  padding-top: 25rem;
+}
+
+body main #section #div1 #mathText {
+  grid-column: 2/ 5;
+  grid-row: 10;
+  padding-left: 26rem;
+  padding-bottom: 5rem;
+  z-index: 2;
+}
+
+body main #section #div1 #cardsText {
+  grid-column: 2/ 5;
+  grid-row: 11;
+  text-align: center;
+  padding-top: 20rem;
+  padding-bottom: 7rem;
+}
+
+body main #section #div1 #wsjPic {
+  grid-column: 3 / 5;
+  grid-row: 12;
+  padding-left: 5rem;
+}
+
+body main #section #div1 #generaliPic {
+  grid-column: 2 / 4;
+  grid-row: 12;
+  padding-top: 1.4rem;
+  padding-right: 4rem;
+}
+
+body main #section #div1 #schoolText {
+  grid-column: 2/ 5;
+  grid-row: 13;
+  text-align: center;
+  padding-top: 15rem;
+}
+
+body main #section #div1 #schoolPic {
+  grid-column: 2/ 5;
+  grid-row: 13;
+  padding-top: 27rem;
+  padding-left: 15.3rem;
+  padding-right: 12rem;
+}
+
+body main #section #div1 #graphicalText {
+  grid-column: 2/ 5;
+  grid-row: 14;
+  text-align: center;
+  padding-top: 30rem;
+}
+
+body main #section #div1 #granPic {
+  grid-column: 2/ 5;
+  grid-row: 14;
+  padding-top: 80rem;
+  padding-bottom: 10rem;
+  padding-left: 18rem;
+  padding-right: 17rem;
+}
+
+body main #section #div1 #miliPic {
+  grid-column: 2;
+  grid-row: 15;
+  padding-left: 9rem;
+  padding-bottom: 10rem;
+}
+
+body main #section #div1 #girlPic {
   grid-column: 4;
-  grid-row: 4;
-  padding-top: 6rem;
+  grid-row: 15;
+  padding-right: 10rem;
+  padding-bottom: 8rem;
+}
+
+body main #section #div1 #secureWrapper {
+  grid-column: 2/ 5;
+  grid-row: 16;
+  padding: 3rem;
+}
+
+body main #section #div1 #secureWrapper #securePic {
+  padding: 0.4rem;
+  padding-left: 40rem;
+  border-radius: 3rem;
+  border: 3px solid #c4cde8;
+}
+
+body main #section #div1 #carText {
+  grid-column: 4;
+  grid-row: 17;
+  padding-top: 37rem;
+}
+
+body main #section #div1 #toyotaPic {
+  grid-column: 2;
+  grid-row: 17;
+  padding-top: 25rem;
+  padding-left: 5rem;
+  z-index: 2;
+}
+
+body main #section #div1 #barrosPic {
+  grid-column: 2/ 6;
+  grid-row: 17;
+  padding-top: 62rem;
+  padding-left: 25rem;
+  padding-bottom: 25rem;
+}
+
+body main #section #div1 #endText {
+  z-index: 8;
+  grid-column: 2/ 5;
+  text-align: center;
+  grid-row: 17;
+  padding-top: 95rem;
+  padding-bottom: 25rem;
+}
+
+body main::after {
+  content: url("lost-obj-img/placa800bw.webp");
+  z-index: 2;
+  position: absolute;
+  bottom: -300px;
+  right: 25vw;
 }
 
 body footer {
-  background: #dae1ff;
-  height: 70vh;
+  z-index: 0;
+  position: sticky;
+  height: calc(100vh * 0.4 + 30rem);
+  bottom: 0px;
+  width: 100%;
+  background: #556ade;
+  display: grid;
+  grid-template-columns: 1fr 360px 1fr;
+}
+
+body footer #wrapper {
+  z-index: 17;
+  grid-column: 2;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 400px 2rem 2rem 4fr;
+}
+
+body footer #wrapper .morePrj {
+  z-index: 17;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 2.3rem;
+  transition: 0.3s;
+}
+
+body footer #wrapper .morePrj:hover {
+  text-decoration: underline;
+  text-decoration-color: #fcc204;
+}
+
+body footer #wrapper #prevPrj {
+  grid-row: 2;
+}
+
+body footer #wrapper #nextPrj {
+  grid-row: 4;
 }
