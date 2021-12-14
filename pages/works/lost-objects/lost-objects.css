@@ -368,14 +368,16 @@ body #trampolineEmoji:active {
 
 body {
   height: 100%;
+  width: 100%;
   font-size: 2rem;
   position: relative;
+  scroll-behavior: smooth;
   font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 620, "slnt" 0;
 }
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #e6e6e6;
+  background: white;
 }
 
 body .preloader #emoji-loader {
@@ -393,6 +395,11 @@ body .left-arrow .link-a {
 }
 
 body .left-arrow .link-a:hover {
+  color: #621bc5;
+  mix-blend-mode: difference;
+}
+
+body .left-arrow .link-a:active {
   color: #621bc5;
   mix-blend-mode: difference;
 }
@@ -440,6 +447,12 @@ body .mainBgPic:hover #explainBg {
   font-variation-settings: "MONO" 1, "CASL" 0.8, "wght" 400;
 }
 
+body .mainBgPic:active #explainBg {
+  color: #3539e7;
+  bottom: -3.8rem;
+  font-variation-settings: "MONO" 1, "CASL" 0.8, "wght" 400;
+}
+
 body main {
   z-index: 1;
   position: relative;
@@ -480,6 +493,10 @@ body main img:hover {
   filter: grayscale(1%);
 }
 
+body main img:active {
+  filter: grayscale(1%);
+}
+
 body main #section {
   z-index: 1;
   display: grid;
@@ -487,6 +504,12 @@ body main #section {
   border: 2px solid #6423e6;
   grid-template-columns: 1fr 900px 1fr;
   position: relative;
+}
+
+@media (max-width: 900px) {
+  body main #section {
+    grid-template-columns: 0px 1fr 0px;
+  }
 }
 
 body main #section #trampolin-wrapper {
@@ -503,15 +526,10 @@ body main #section #trampolin-wrapper {
 body main #section #trampolin-wrapper #trampolineEmoji {
   position: sticky;
   align-self: flex-end;
-  justify-self: right;
-  bottom: 2rem;
-  right: 4rem;
   z-index: 9;
   text-decoration: none;
-  padding: 3rem;
-  /* Some padding */
+  padding: 1rem;
   font-size: calc(0.5vw + 0.4vw + 30px);
-  /* Increase font size */
   transition: 0.15s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
@@ -529,16 +547,24 @@ body main #section #trampolin-wrapper #trampolineEmoji:active {
 body main #section #div1 {
   grid-column: 2;
   grid-row: 2;
+  width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 300px 73px 300px 1fr;
+  grid-template-columns: 1fr minmax(300px, 1fr) 73px minmax(300px, 1fr) 1fr;
+}
+
+@media (max-width: 900px) {
+  body main #section #div1 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
 }
 
 body main #section #div1 #p1 {
-  grid-column: 1 / 6;
+  grid-column: 2 / 5;
   grid-row: 1;
   place-self: center;
-  padding: 3rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -551,6 +577,10 @@ body main #section #div1 #p1 #collect {
 }
 
 body main #section #div1 #p1 #collect:hover {
+  filter: blur(0rem);
+}
+
+body main #section #div1 #p1 #collect:active {
   filter: blur(0rem);
 }
 
@@ -715,11 +745,10 @@ body main #section #div1 #toyotaPic {
   grid-row: 17;
   padding-top: 25rem;
   padding-left: 5rem;
-  z-index: 2;
 }
 
 body main #section #div1 #barrosPic {
-  grid-column: 2/ 6;
+  grid-column: 2/ 5;
   grid-row: 17;
   padding-top: 62rem;
   padding-left: 25rem;
@@ -737,16 +766,18 @@ body main #section #div1 #endText {
 
 body main::after {
   content: url("lost-obj-img/placa800bw.webp");
-  z-index: 2;
   position: absolute;
-  bottom: -300px;
-  right: 25vw;
+  bottom: -441px;
+  z-index: 2;
+  transform: rotateZ(0.3deg);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 body footer {
   z-index: 0;
   position: sticky;
-  height: calc(100vh * 0.4 + 30rem);
+  height: calc(100vh * 0.4 + 45rem);
   bottom: 0px;
   width: 100%;
   background: #556ade;
@@ -759,12 +790,12 @@ body footer #wrapper {
   grid-column: 2;
   display: grid;
   gap: 2rem;
-  grid-template-rows: 400px 2rem 2rem 4fr;
+  grid-template-rows: 45rem 2rem 2rem;
 }
 
 body footer #wrapper .morePrj {
   z-index: 17;
-  text-decoration: none;
+  text-decoration-color: transparent;
   text-align: center;
   color: white;
   font-size: 2.3rem;
@@ -772,8 +803,11 @@ body footer #wrapper .morePrj {
 }
 
 body footer #wrapper .morePrj:hover {
-  text-decoration: underline;
-  text-decoration-color: #fcc204;
+  text-decoration-color: #2fe325;
+}
+
+body footer #wrapper .morePrj:active {
+  text-decoration-color: #2fe325;
 }
 
 body footer #wrapper #prevPrj {
@@ -782,4 +816,224 @@ body footer #wrapper #prevPrj {
 
 body footer #wrapper #nextPrj {
   grid-row: 4;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.6rem;
+  }
+  body .mainBgPic {
+    height: 33vh;
+  }
+  body .mainBgPic #explainBg {
+    position: absolute;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #d3fff5;
+    bottom: -2.2rem;
+  }
+  body main p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  body main h3 {
+    font-size: 1.8;
+  }
+  body main #section {
+    grid-template-columns: 0px 1fr 0px;
+  }
+  body main #section #trampolin-wrapper #trampolineEmoji {
+    font-size: calc(0.5vw + 0.4vw + 30px);
+  }
+  body main #section #div1 {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  body main #section #div1 #p1 {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  body main #section #div1 #p1 #collect {
+    filter: blur(0.3rem);
+    transition: 0.3s;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  body main #section #div1 #p1 #collect:hover {
+    filter: blur(0rem);
+  }
+  body main #section #div1 #p1 #collect:active {
+    filter: blur(0rem);
+  }
+  body main #section #div1 #p1 #touchMe {
+    color: #9eb0c2;
+    font-size: 1.5rem;
+    padding-left: 28rem;
+  }
+  body main #section #div1 #sweat {
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 13rem;
+    text-align: end;
+  }
+  body main #section #div1 #chocoPic {
+    grid-column: 1;
+    grid-row: 2 /4;
+    padding-left: 4rem;
+  }
+  body main #section #div1 #alonePic {
+    grid-column: 1;
+    grid-row: 4 /6;
+    padding-top: 4rem;
+    padding-left: 7rem;
+  }
+  body main #section #div1 #boring {
+    grid-column: 1;
+    grid-row: 5;
+    padding-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 2rem;
+  }
+  body main #section #div1 #checkPic {
+    grid-column: 1;
+    grid-row: 5;
+    padding-top: 25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  body main #section #div1 #monetaryText {
+    grid-column: 1;
+    grid-row: 7;
+    padding-top: 16rem;
+    text-align: center;
+    padding-right: 3rem;
+  }
+  body main #section #div1 #dreamsPic {
+    grid-column: 1;
+    grid-row: 8;
+    padding-left: 9rem;
+    padding-right: 16rem;
+  }
+  body main #section #div1 #mathPic {
+    grid-column: 1;
+    grid-row: 9 / 11;
+    padding-top: 25rem;
+  }
+  body main #section #div1 #mathText {
+    grid-column: 1;
+    grid-row: 10;
+    padding-left: 26rem;
+    padding-bottom: 5rem;
+    z-index: 2;
+  }
+  body main #section #div1 #cardsText {
+    grid-column: 1;
+    grid-row: 11;
+    text-align: center;
+    padding-top: 20rem;
+    padding-bottom: 7rem;
+  }
+  body main #section #div1 #wsjPic {
+    grid-column: 1;
+    grid-row: 12;
+    padding-left: 5rem;
+  }
+  body main #section #div1 #generaliPic {
+    grid-column: 1;
+    grid-row: 12;
+    padding-top: 1.4rem;
+    padding-right: 4rem;
+  }
+  body main #section #div1 #schoolText {
+    grid-column: 1;
+    grid-row: 13;
+    text-align: center;
+    padding-top: 15rem;
+  }
+  body main #section #div1 #schoolPic {
+    grid-column: 1;
+    grid-row: 13;
+    padding-top: 27rem;
+    padding-left: 15.3rem;
+    padding-right: 12rem;
+  }
+  body main #section #div1 #graphicalText {
+    grid-column: 1;
+    grid-row: 14;
+    text-align: center;
+    padding-top: 30rem;
+  }
+  body main #section #div1 #granPic {
+    grid-column: 1;
+    grid-row: 14;
+    padding-top: 80rem;
+    padding-bottom: 10rem;
+    padding-left: 18rem;
+    padding-right: 17rem;
+  }
+  body main #section #div1 #miliPic {
+    grid-column: 1;
+    grid-row: 15;
+    padding-left: 9rem;
+    padding-bottom: 10rem;
+  }
+  body main #section #div1 #girlPic {
+    grid-column: 1;
+    grid-row: 15;
+    padding-right: 10rem;
+    padding-bottom: 8rem;
+  }
+  body main #section #div1 #secureWrapper {
+    grid-column: 1;
+    grid-row: 16;
+    padding: 3rem;
+  }
+  body main #section #div1 #secureWrapper #securePic {
+    padding: 0.4rem;
+    padding-left: 40rem;
+    border-radius: 3rem;
+    border: 3px solid #c4cde8;
+  }
+  body main #section #div1 #carText {
+    grid-column: 1;
+    grid-row: 17;
+    padding-top: 37rem;
+  }
+  body main #section #div1 #toyotaPic {
+    grid-column: 1;
+    grid-row: 17;
+    padding-top: 25rem;
+    padding-left: 5rem;
+  }
+  body main #section #div1 #barrosPic {
+    grid-column: 1;
+    grid-row: 17;
+    padding-top: 62rem;
+    padding-left: 25rem;
+    padding-bottom: 25rem;
+  }
+  body main #section #div1 #endText {
+    z-index: 8;
+    grid-column: 1;
+    text-align: center;
+    grid-row: 17;
+    padding-top: 95rem;
+    padding-bottom: 25rem;
+  }
+  body main::after {
+    content: url("lost-obj-img/placa800bw.webp");
+    position: absolute;
+    bottom: -441px;
+    z-index: 2;
+    transform: rotateZ(0.3deg);
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

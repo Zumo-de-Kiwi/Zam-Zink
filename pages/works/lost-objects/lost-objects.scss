@@ -6,13 +6,16 @@
 
 body {
   height: 100%;
+  width: 100%;
   font-size: 2rem;
   position: relative;
+  scroll-behavior: smooth;
+
   font-variation-settings: 'MONO' 0.2, 'CASL' 0.1, 'wght' $font-weight-normal,
     $slnt;
   .preloader {
     transition: $trans-slow ease-out;
-    background: rgb(230, 230, 230);
+    background: rgb(255, 255, 255);
     #emoji-loader {
       // padding-right: 8vw;
       animation: brujula 1.5s ease 0.3s infinite alternate;
@@ -27,6 +30,10 @@ body {
       mix-blend-mode: difference;
       color: crimson;
       &:hover {
+        color: $font-linked-color;
+        mix-blend-mode: difference;
+      }
+      &:active {
         color: $font-linked-color;
         mix-blend-mode: difference;
       }
@@ -85,12 +92,18 @@ body {
           'wght' $font-weight-lighter;
       }
     }
+    &:active {
+      #explainBg {
+        color: rgba(53, 57, 231, 1);
+        bottom: -3.8rem;
+        font-variation-settings: 'MONO' 1, 'CASL' 0.8,
+          'wght' $font-weight-lighter;
+      }
+    }
   }
 
   main {
-    // min-height: 300vh;
     z-index: 1;
-    // background-color: transparent;
     position: relative;
     font-variation-settings: 'MONO' 0.8, 'CASL' 0, 'wght' $font-weight-light;
     line-height: 1.5;
@@ -120,6 +133,9 @@ body {
       &:hover {
         filter: grayscale(1%);
       }
+      &:active {
+        filter: grayscale(1%);
+      }
     }
     #section {
       z-index: 1;
@@ -128,6 +144,9 @@ body {
       border: 2px solid rgb(100, 35, 230);
       // min-height: 100vh;
       grid-template-columns: 1fr 900px 1fr;
+      @media (max-width: 900px) {
+        grid-template-columns: 0px 1fr 0px;
+      }
       position: relative;
       #trampolin-wrapper {
         position: absolute;
@@ -141,14 +160,11 @@ body {
         #trampolineEmoji {
           position: sticky;
           align-self: flex-end;
-          justify-self: right;
-          bottom: 2rem;
-          right: 4rem;
           z-index: 9;
 
           text-decoration: none;
-          padding: 3rem; /* Some padding */
-          font-size: $font-size-huge; /* Increase font size */
+          padding: 1rem;
+          font-size: $font-size-huge;
           transition: $trans-fast;
           cursor: $cursor-pointer-hand-flip;
           &:hover {
@@ -165,15 +181,20 @@ body {
       #div1 {
         grid-column: 2;
         grid-row: 2;
+        width: 100%;
 
         display: grid;
         gap: 2rem;
-        grid-template-columns: 1fr 300px 73px 300px 1fr;
+        grid-template-columns: 1fr minmax(300px, 1fr) 73px minmax(300px, 1fr) 1fr;
+        @media (max-width: 900px) {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          justify-content: space-evenly;
+        }
         #p1 {
-          grid-column: 1 / 6;
+          grid-column: 2 / 5;
           grid-row: 1;
           place-self: center;
-          padding: 3rem;
           padding-top: 6rem;
           padding-bottom: 6rem;
           #collect {
@@ -182,6 +203,9 @@ body {
             padding-bottom: 2rem;
             padding-top: 2rem;
             &:hover {
+              filter: blur(0rem);
+            }
+            &:active {
               filter: blur(0rem);
             }
           }
@@ -334,10 +358,10 @@ body {
           grid-row: 17;
           padding-top: 25rem;
           padding-left: 5rem;
-          z-index: 2;
+          // z-index: 2;
         }
         #barrosPic {
-          grid-column: 2/ 6;
+          grid-column: 2/ 5;
           grid-row: 17;
           padding-top: 62rem;
           padding-left: 25rem;
@@ -355,39 +379,21 @@ body {
     }
     &::after {
       content: url('lost-obj-img/placa800bw.webp');
-      // #placaPic {
-      //   // 800x443 / 1.8
-      z-index: 2;
+      // 800x443 / 1.8
       position: absolute;
-      // top: -10rem;
-      bottom: -300px;
-      right: 25vw;
-      // left: 0rem;
-      // width: 90vw;
-      // height: 50vh;
+      bottom: -441px;
+      z-index: 2;
+      transform: rotateZ(0.3deg);
+      // place it justify centered
+      left: 50%;
+      transform: translateX(-50%);
     }
-    // #placaPic {
-    //   // 800x443 / 1.8
-    //   width: 80%;
-    //   z-index: 2;
-    //   position: absolute;
-    //   bottom: -100px;
-    //   // top: 10px;
-    //   // bottom: calc(-100vw / 1.8);
-    //   // background-color: transparent;
-    //   // height: calc(60vw + 50vh);
-    // }
-    // #overflowToFooter {
-    //   // top: -2rem;
-    // }
   }
   footer {
     z-index: 0;
     position: sticky;
-    height: calc(100vh * 0.4 + 30rem);
+    height: calc(100vh * 0.4 + 45rem);
     bottom: 0px;
-    // bottom: calc(calc(-100vh * 0.7) - 10rem);
-    // bottom: calc(-100vw / 1.8);
     width: 100%;
     background: rgb(85, 106, 222);
 
@@ -398,17 +404,20 @@ body {
       grid-column: 2;
       display: grid;
       gap: 2rem;
-      grid-template-rows: 400px 2rem 2rem 4fr;
+      grid-template-rows: 45rem 2rem 2rem;
       .morePrj {
         z-index: 17;
-        text-decoration: none;
+        // text-decoration: none;
+        text-decoration-color: transparent;
         text-align: center;
         color: white;
         font-size: 2.3rem;
         transition: $trans-normal;
         &:hover {
-          text-decoration: underline;
-          text-decoration-color: rgb(252, 194, 4);
+          text-decoration-color: rgb(47, 227, 37);
+        }
+        &:active {
+          text-decoration-color: rgb(47, 227, 37);
         }
       }
       #prevPrj {
@@ -416,6 +425,248 @@ body {
       }
       #nextPrj {
         grid-row: 4;
+      }
+    }
+  }
+  // @media (max-width: 900px) {
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 1.6rem;
+    .mainBgPic {
+      height: 33vh;
+      h1 {
+      }
+      #explainBg {
+        position: absolute;
+        text-align: center;
+        font-size: 1.4rem;
+        color: rgba(211, 255, 245, 1);
+        bottom: -2.2rem;
+      }
+    }
+
+    main {
+      p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        font-size: 1.8;
+      }
+
+      #section {
+        grid-template-columns: 0px 1fr 0px;
+        #trampolin-wrapper {
+          #trampolineEmoji {
+            font-size: $font-size-huge;
+          }
+        }
+        #div1 {
+          grid-column: 2;
+          grid-row: 2;
+
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+
+          #p1 {
+            grid-column: 1;
+            grid-row: 1;
+            place-self: center;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            #collect {
+              filter: blur(0.3rem);
+              transition: 0.3s;
+              padding-bottom: 2rem;
+              padding-top: 2rem;
+              &:hover {
+                filter: blur(0rem);
+              }
+              &:active {
+                filter: blur(0rem);
+              }
+            }
+            #touchMe {
+              color: rgb(158, 176, 194);
+              font-size: 1.5rem;
+              padding-left: 28rem;
+            }
+          }
+          #sweat {
+            grid-column: 1;
+            grid-row: 2;
+            padding-top: 13rem;
+            text-align: end;
+          }
+          #chocoPic {
+            grid-column: 1;
+            grid-row: 2 /4;
+            padding-left: 4rem;
+          }
+          #alonePic {
+            grid-column: 1;
+            grid-row: 4 /6;
+            padding-top: 4rem;
+            padding-left: 7rem;
+          }
+          #boring {
+            grid-column: 1;
+            grid-row: 5;
+            // padding-bottom: 4rem;
+            padding-top: 10rem;
+            padding-left: 5rem;
+            padding-right: 2rem;
+          }
+          #checkPic {
+            grid-column: 1;
+            grid-row: 5;
+            padding-top: 25rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+          #monetaryText {
+            grid-column: 1;
+            grid-row: 7;
+            padding-top: 16rem;
+            text-align: center;
+            padding-right: 3rem;
+          }
+          #dreamsPic {
+            grid-column: 1;
+            grid-row: 8;
+            padding-left: 9rem;
+            padding-right: 16rem;
+          }
+          #mathPic {
+            grid-column: 1;
+            grid-row: 9 / 11;
+            padding-top: 25rem;
+            // padding-left: 5rem;
+          }
+          #mathText {
+            grid-column: 1;
+            grid-row: 10;
+            padding-left: 26rem;
+            padding-bottom: 5rem;
+            z-index: 2;
+          }
+          #cardsText {
+            grid-column: 1;
+            grid-row: 11;
+            text-align: center;
+            padding-top: 20rem;
+            // padding-right: 2rem;
+            padding-bottom: 7rem;
+          }
+          #wsjPic {
+            grid-column: 1;
+            grid-row: 12;
+            padding-left: 5rem;
+          }
+          #generaliPic {
+            grid-column: 1;
+            grid-row: 12;
+            padding-top: 1.4rem;
+            padding-right: 4rem;
+          }
+          #schoolText {
+            grid-column: 1;
+            grid-row: 13;
+            text-align: center;
+            padding-top: 15rem;
+          }
+          #schoolPic {
+            grid-column: 1;
+            grid-row: 13;
+            padding-top: 27rem;
+            padding-left: 15.3rem;
+            padding-right: 12rem;
+          }
+          #graphicalText {
+            grid-column: 1;
+            grid-row: 14;
+            text-align: center;
+            padding-top: 30rem;
+          }
+          #granPic {
+            grid-column: 1;
+            grid-row: 14;
+            padding-top: 80rem;
+            padding-bottom: 10rem;
+            padding-left: 18rem;
+            padding-right: 17rem;
+          }
+          #miliPic {
+            grid-column: 1;
+            grid-row: 15;
+            padding-left: 9rem;
+            padding-bottom: 10rem;
+          }
+          #girlPic {
+            grid-column: 1;
+            grid-row: 15;
+            padding-right: 10rem;
+            padding-bottom: 8rem;
+          }
+          #secureWrapper {
+            grid-column: 1;
+            grid-row: 16;
+
+            padding: 3rem;
+            // padding-left: 5rem;
+            // padding-right: 5rem;
+            #securePic {
+              // width: 600px;
+              // height: 200px;
+              padding: 0.4rem;
+              padding-left: 40rem;
+              border-radius: 3rem;
+              border: 3px solid rgb(196, 205, 232);
+            }
+          }
+
+          #carText {
+            grid-column: 1;
+            grid-row: 17;
+            padding-top: 37rem;
+          }
+          #toyotaPic {
+            grid-column: 1;
+            grid-row: 17;
+            padding-top: 25rem;
+            padding-left: 5rem;
+            // z-index: 2;
+          }
+          #barrosPic {
+            grid-column: 1;
+            grid-row: 17;
+            padding-top: 62rem;
+            padding-left: 25rem;
+            padding-bottom: 25rem;
+          }
+          #endText {
+            z-index: 8;
+            grid-column: 1;
+            text-align: center;
+            grid-row: 17;
+            padding-top: 95rem;
+            padding-bottom: 25rem;
+          }
+        }
+      }
+      &::after {
+        content: url('lost-obj-img/placa800bw.webp');
+        // 800x443 / 1.8
+        position: absolute;
+        bottom: -441px;
+        z-index: 2;
+        transform: rotateZ(0.3deg);
+        // place it justify centered
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
