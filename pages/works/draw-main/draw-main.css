@@ -379,11 +379,12 @@ body #trampolineEmoji:active {
 
 body {
   height: 100%;
+  font-size: 2rem;
 }
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: white;
+  background: #eeebe0;
 }
 
 body .preloader #emoji-loader {
@@ -396,19 +397,19 @@ body .preloader #text-loader {
 }
 
 body .left-arrow .link-a {
-  color: #a7a7a7;
+  color: #595959;
 }
 
 body .left-arrow .link-a:hover {
-  color: white;
+  color: #5c5c5c;
 }
 
 body .left-arrow:hover .hc-logo {
-  fill: #ffca9b;
+  fill: #621bc5;
 }
 
 body main {
-  background: white;
+  background: #eeebe0;
   height: 200vh;
 }
 
@@ -418,9 +419,9 @@ body main h1 {
 }
 
 body footer {
-  background: black;
+  background: #4f4f4f;
   height: 20rem;
-  color: white;
+  color: #eeebe0;
 }
 
 body footer #trampolineEmoji {

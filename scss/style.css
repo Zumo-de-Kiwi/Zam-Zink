@@ -217,6 +217,10 @@ body #trampolineEmoji:active {
   animation: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -650,6 +654,7 @@ footer {
   -ms-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
+  position: relative;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
@@ -664,12 +669,19 @@ footer .footer {
   border-radius: 19px;
 }
 
+footer .footer .closeBtn {
+  position: absolute;
+  color: #621bc5;
+  top: 1.5rem;
+  left: 2rem;
+}
+
 footer .footer .line {
   text-align: center;
 }
 
 footer .footer .line span {
-  font-size: calc(0.5vw + 0.3vw + 13px);
+  font-size: 2rem;
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
   padding: 12px;

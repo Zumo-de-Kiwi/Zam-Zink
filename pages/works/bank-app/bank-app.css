@@ -217,6 +217,10 @@ body #trampolineEmoji:active {
   animation: none;
 }
 
+.hidden {
+  display: none;
+}
+
 body main h1 {
   font-size: calc(0.5vw + 0.4vw + 30px);
 }

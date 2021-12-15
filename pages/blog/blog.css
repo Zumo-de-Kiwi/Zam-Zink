@@ -217,6 +217,10 @@ body #trampolineEmoji:active {
   animation: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);

@@ -1,0 +1,68 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+@import '../../../scss/globals';
+@import '../../../scss/font-anim-keyframes';
+
+body {
+  height: 100%;
+  font-size: 2rem;
+  $my-paper-color: rgb(238, 235, 224);
+  .preloader {
+    transition: $trans-slow ease-out;
+    background: $my-paper-color;
+    #emoji-loader {
+      animation: jump 1.5s ease 0.3s infinite alternate;
+    }
+    #text-loader {
+      color: rgb(0, 0, 0);
+      font-size: $font-size-small;
+    }
+  }
+  .left-arrow {
+    .link-a {
+      color: rgb(89, 89, 89);
+      &:hover {
+        color: rgb(92, 92, 92);
+      }
+    }
+    &:hover {
+      .hc-logo {
+        fill: $font-linked-color;
+      }
+    }
+  }
+  main {
+    background: $my-paper-color;
+    height: 200vh;
+    h1 {
+      text-align: center;
+      padding: 2rem;
+    }
+  }
+  footer {
+    background: rgb(79, 79, 79);
+    height: 20rem;
+    color: $my-paper-color;
+    #trampolineEmoji {
+      position: fixed; /* Fixed/sticky position */
+      bottom: 2rem; /* Place the button at the bottom of the page */
+      right: 4rem; /* Place the button 30px from the right */
+
+      z-index: 9; /* Make sure it does not overlap */
+
+      text-decoration: none;
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      font-size: 3.5rem; /* Increase font size */
+      transition: $trans-fast;
+      cursor: $cursor-pointer-hand-flip;
+      &:hover {
+        cursor: $cursor-pointer-hand-flip;
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

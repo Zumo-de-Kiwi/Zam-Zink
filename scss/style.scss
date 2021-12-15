@@ -307,6 +307,7 @@ footer {
   @include flexbox();
   @include align-items(center);
   @include justify-content(center);
+  position: relative;
   cursor: $cursor-please-fingers;
   .footer {
     position: fixed;
@@ -314,15 +315,20 @@ footer {
     background-color: $spotify-text-green;
     margin: 0 auto;
     padding-top: 1rem;
-    // margin-top: 10vh;
     margin-bottom: 1.3rem;
     max-width: 800px;
     border-radius: 19px;
-
+    // position: relative;
+    .closeBtn {
+      position: absolute;
+      color: $font-linked-color;
+      top: 1.5rem;
+      left: 2rem;
+    }
     .line {
       text-align: center;
       span {
-        font-size: $font-size-normal;
+        font-size: 2rem;
         font-variation-settings: 'MONO' 0.8, 'CASL' 0, 'wght' $font-weight-light,
           $slnt;
         color: $background-color;
