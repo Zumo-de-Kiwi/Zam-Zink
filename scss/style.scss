@@ -118,7 +118,7 @@ body {
           will-change: transform;
 
           text-decoration: underline;
-          text-decoration-color: $underline-color;
+          text-decoration-color: $light-gray;
           &::after {
             content: 'about me ⤴️';
             font-size: $font-size-small;
@@ -156,7 +156,7 @@ body {
           transition: $trans-slow ease;
           transition-delay: $delay-fast;
           text-decoration: underline;
-          text-decoration-color: $underline-color;
+          text-decoration-color: $light-gray;
 
           &::after {
             content: 'contact ⤴️';
@@ -239,6 +239,20 @@ body {
         font-size: $font-size-linkNumber;
       }
 
+      .pixelLink {
+        #pixel {
+          display: none;
+        }
+        &:hover {
+          #mosaic {
+            display: none;
+          }
+          #pixel {
+            display: inline;
+            font-variation-settings: 'MONO' 0.735, 'CASL' 0.1, 'wght' 550;
+          }
+        }
+      }
       .angled-brackets {
         color: transparent;
         transition: 0.6s;
@@ -321,9 +335,17 @@ footer {
     // position: relative;
     .closeBtn {
       position: absolute;
-      color: $font-linked-color;
-      top: 1.5rem;
-      left: 2rem;
+      color: rgb(193, 241, 176);
+      font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 400, $slnt;
+      font-size: 2rem;
+      top: 0rem;
+      left: 0.5rem;
+      padding: 1.2rem;
+      transition: $trans-normal;
+      &:hover {
+        font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
+        color: white;
+      }
     }
     .line {
       text-align: center;
@@ -417,13 +439,13 @@ footer {
 @media (min-width: 576.02px) {
   .content-wrap {
     margin-top: 11vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 7vw;
+    padding-right: 6vw;
     .content-name {
       // padding-top: 8vh;
       padding-bottom: 7vh;
       // margin-bottom: 2vh;
-      text-align: center;
+      text-align: left;
     }
   }
 }
@@ -434,8 +456,8 @@ footer {
       // padding-bottom: 17vh;
       margin-top: 17vh;
       // padding-top: 13vh; //need to change
-      padding-left: 10vw;
-      padding-right: 10vw;
+      padding-left: 7vw;
+      padding-right: 6vw;
       .content-name {
         padding-bottom: 8vh;
         text-align: center;
@@ -450,8 +472,8 @@ footer {
     .content_wrap {
       // padding-bottom: 19vh;
 
-      padding-left: 20vw;
-      padding-right: 20vw;
+      padding-left: 13vw;
+      padding-right: 13vw;
       .content-name {
         padding-bottom: 10vh;
         text-align: center;
@@ -464,8 +486,8 @@ footer {
 @media (min-width: 1400px) {
   .main {
     .content_wrap {
-      // padding-left: 2vw;
-      // padding-right: 2vw;
+      padding-left: 20vw;
+      padding-right: 20vw;
     }
   }
 }

@@ -396,15 +396,11 @@ body .preloader #text-loader {
 }
 
 body .left-arrow .link-a {
-  color: #a7a7a7;
+  color: black;
 }
 
 body .left-arrow .link-a:hover {
-  color: white;
-}
-
-body .left-arrow:hover .hc-logo {
-  fill: #ffca9b;
+  color: black;
 }
 
 body main {

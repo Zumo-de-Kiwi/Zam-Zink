@@ -482,7 +482,7 @@ body {
   transition: 0.45s ease;
   will-change: transform;
   text-decoration: underline;
-  text-decoration-color: #a48cee;
+  text-decoration-color: #a6a6a6;
 }
 
 .main .content_wrap .content-name .complete-name .first-name::after {
@@ -517,7 +517,7 @@ body {
   transition: 0.45s ease;
   transition-delay: 0.1s;
   text-decoration: underline;
-  text-decoration-color: #a48cee;
+  text-decoration-color: #a6a6a6;
 }
 
 .main .content_wrap .content-name .complete-name .family-name::after {
@@ -584,6 +584,19 @@ body {
   top: -7px;
   margin-left: 0px;
   font-size: calc(0.4vw + 7px);
+}
+
+.main .content_wrap .content-portfolio .pixelLink #pixel {
+  display: none;
+}
+
+.main .content_wrap .content-portfolio .pixelLink:hover #mosaic {
+  display: none;
+}
+
+.main .content_wrap .content-portfolio .pixelLink:hover #pixel {
+  display: inline;
+  font-variation-settings: 'MONO' 0.735, 'CASL' 0.1, 'wght' 550;
 }
 
 .main .content_wrap .content-portfolio .angled-brackets {
@@ -671,9 +684,18 @@ footer .footer {
 
 footer .footer .closeBtn {
   position: absolute;
-  color: #621bc5;
-  top: 1.5rem;
-  left: 2rem;
+  color: #c1f1b0;
+  font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400, "slnt" 0;
+  font-size: 2rem;
+  top: 0rem;
+  left: 0.5rem;
+  padding: 1.2rem;
+  transition: 0.3s;
+}
+
+footer .footer .closeBtn:hover {
+  font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
+  color: white;
 }
 
 footer .footer .line {
@@ -760,20 +782,20 @@ footer .footer #githublink a:hover {
 @media (min-width: 576.02px) {
   .content-wrap {
     margin-top: 11vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 7vw;
+    padding-right: 6vw;
   }
   .content-wrap .content-name {
     padding-bottom: 7vh;
-    text-align: center;
+    text-align: left;
   }
 }
 
 @media (min-width: 768px) {
   .main .content_wrap {
     margin-top: 17vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 7vw;
+    padding-right: 6vw;
   }
   .main .content_wrap .content-name {
     padding-bottom: 8vh;
@@ -783,11 +805,18 @@ footer .footer #githublink a:hover {
 
 @media (min-width: 1024px) {
   .main .content_wrap {
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
   }
   .main .content_wrap .content-name {
     padding-bottom: 10vh;
     text-align: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main .content_wrap {
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
 }
