@@ -12,7 +12,7 @@ const dodoSec = document.querySelector('#dodoDraws');
 const sketchSec = document.querySelector('#sketchDraws');
 const archSec = document.querySelector('#archDraws');
 const randomSec = document.querySelector('#randomDraws');
-console.log(arch);
+// console.log(arch);
 noodles.addEventListener('click', function () {
   noodlesSec.scrollIntoView({ behavior: 'smooth' });
 });

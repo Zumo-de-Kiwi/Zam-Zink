@@ -21,8 +21,9 @@ body {
       animation: jump 1.5s ease 0.3s infinite alternate;
     }
     #text-loader {
+      padding-top: 12rem;
       color: $muji-cover;
-      font-size: $font-size-small;
+      font-size: $font-size-normal;
     }
   }
   .left-arrow {
@@ -43,20 +44,26 @@ body {
     h1 {
       text-align: center;
       padding: 2rem;
-      color: rgb(232, 228, 221);
+      color: rgb(208, 204, 196);
     }
     #draw-types {
       width: 100%;
       min-height: 5rem;
       border-bottom: 2px solid $muji-cover;
+
+      display: flex;
+      justify-content: center;
       ul {
         padding: 1rem;
-        width: 100%;
+        max-width: 1400px;
         display: flex;
         flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
         li {
           padding: 1rem;
           padding-right: 1.5rem;
+          font-size: $font-size-normal;
           &:hover {
             // appears a comeau line
           }
@@ -84,8 +91,63 @@ body {
     #drawSections {
       height: 400vh;
       z-index: 2;
+
+      display: grid;
+      grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(
+          7%,
+          1fr
+        );
+      gap: 1rem;
       .drawSection {
-        height: 300px;
+        // height: 300px;
+        grid-column: 2;
+      }
+      .title {
+        padding: 3rem;
+        text-align: center;
+        color: rgb(104, 104, 104);
+        font-variation-settings: 'MONO' 0, 'CASL' 0.2,
+          'wght' $font-weight-lighter, $slnt;
+        .titleSign {
+          padding-right: 1rem;
+          color: rgb(128, 128, 128);
+          font-variation-settings: 'MONO' 1, 'CASL' 0.9,
+            'wght' $font-weight-light, $slnt;
+        }
+      }
+      picture {
+        padding-bottom: 6rem;
+        height: auto;
+      }
+
+      #noodlesDraws {
+        .title {
+        }
+        #hidro {
+          place-self: center;
+          padding-left: 8vw;
+          padding-right: 8vw;
+        }
+      }
+      #cafeDraws {
+        #cafe-two-woman {
+        }
+      }
+      #dodoDraws {
+      }
+      #archDraws {
+      }
+      #randomDraws {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .title {
+          grid-column: 1/4;
+          grid-row: 1;
+        }
+        .rabbit {
+          grid-column: 3;
+          grid-row: 2;
+        }
       }
     }
 

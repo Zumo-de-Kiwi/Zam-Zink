@@ -405,8 +405,9 @@ body .preloader #emoji-loader {
 }
 
 body .preloader #text-loader {
+  padding-top: 12rem;
   color: #3e3d3c;
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0.5vw + 0.3vw + 13px);
 }
 
 body .left-arrow .link-a {
@@ -428,25 +429,30 @@ body header {
 body header h1 {
   text-align: center;
   padding: 2rem;
-  color: #e8e4dd;
+  color: #d0ccc4;
 }
 
 body header #draw-types {
   width: 100%;
   min-height: 5rem;
   border-bottom: 2px solid #3e3d3c;
+  display: flex;
+  justify-content: center;
 }
 
 body header #draw-types ul {
   padding: 1rem;
-  width: 100%;
+  max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 
 body header #draw-types ul li {
   padding: 1rem;
   padding-right: 1.5rem;
+  font-size: calc(0.5vw + 0.3vw + 13px);
 }
 
 body main {
@@ -458,10 +464,52 @@ body main {
 body main #drawSections {
   height: 400vh;
   z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(7%, 1fr);
+  gap: 1rem;
 }
 
 body main #drawSections .drawSection {
-  height: 300px;
+  grid-column: 2;
+}
+
+body main #drawSections .title {
+  padding: 3rem;
+  text-align: center;
+  color: #686868;
+  font-variation-settings: "MONO" 0, "CASL" 0.2, "wght" 400, "slnt" 0;
+}
+
+body main #drawSections .title .titleSign {
+  padding-right: 1rem;
+  color: gray;
+  font-variation-settings: "MONO" 1, "CASL" 0.9, "wght" 500, "slnt" 0;
+}
+
+body main #drawSections picture {
+  padding-bottom: 6rem;
+  height: auto;
+}
+
+body main #drawSections #noodlesDraws #hidro {
+  place-self: center;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+body main #drawSections #randomDraws {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+body main #drawSections #randomDraws .title {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+body main #drawSections #randomDraws .rabbit {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 body main #trampolin-wrapper {

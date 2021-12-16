@@ -27,7 +27,7 @@
     <!------------PRE LOADER------------------>
     <div class="preloader">
       <p id="emoji-loader">✏️</p>
-      <p id="text-loader">draw is the most natural expression of art</p>
+      <p id="text-loader">is like surfing clouds</p>
     </div>
 
     <div class="left-arrow" title="Main Page">
@@ -55,12 +55,12 @@
       <h1>Draws</h1>
       <nav id="draw-types">
         <ul>
-          <li id="icon">*</li>
+          <li id="icon" class="hidden">*</li>
           <li id="noodlesTab">noodles</li>
           <li id="cafeTab">café</li>
           <li id="dodoTab">dodo</li>
           <li id="sketchTab">sketch</li>
-          <li id="archTab">archi</li>
+          <li id="archTab">architecture</li>
           <li id="randomTab">random</li>
         </ul>
       </nav>
@@ -68,33 +68,108 @@
 
     <main>
       <div id="drawSections">
+        <!-- NOODLES -->
         <div id="noodlesDraws" class="drawSection">
-          <h2 class="title"><span class="subTitle">*</span>Noodles</h2>
-          <img id="" src="" alt="" />
-          <img id="" src="" alt="" />
-          <img id="" src="" alt="" />
-          <img id="" src="" alt="" loading="lazy" />
+          <h2 class="title"><span class="titleSign">*</span>Noodles</h2>
+          <picture id="pistola">
+            <source
+              srcset="https://i.ibb.co/Tq9R5zQ/pistola.jpg"
+              type="image/jpg"
+            />
+            <img src="draw-img/pistola.jpg" alt="pistola" type="image/jpg" />
+          </picture>
+          <picture id="hidro">
+            <source
+              srcset="https://i.ibb.co/VTf1mHT/hidroge.jpg"
+              alt="hidroge"
+              type="image/jpg"
+            />
+            <img src="draw-img/hidroge.jpg" alt="" type="image/jpg" />
+          </picture>
+          <picture id="">
+            <source srcset="" loading="lazy" type="image/jpg" />
+            <img src="" alt="" loading="lazy" type="image/jpg" />
+          </picture>
         </div>
-        <div id="cafeDraws" class="drawSection">
-          <h2 class="title"><span class="subTitle">!</span>Café</h2>
-          <img id="" src="" alt="" loading="lazy" />
-        </div>
-        <div id="dodoDraws" class="drawSection">
-          <h2 class="title"><span class="subTitle">&</span>Dodo</h2>
 
-          <img id="" src="" alt="" loading="lazy" />
+        <!-- CAFE -->
+        <div id="cafeDraws" class="drawSection">
+          <h2 class="title"><span class="titleSign">!</span>Café</h2>
+          <picture id="cafe-two-woman">
+            <source
+              srcset="https://i.ibb.co/2dbj0yr/cafe-two-woman.jpg"
+              alt="cafe-two-woman"
+              loading="lazy"
+              type="image/jpg"
+            />
+            <img
+              src="draw-img/cafe-two-woman.jpg"
+              alt=""
+              loading="lazy"
+              type="image/jpg"
+            />
+          </picture>
         </div>
+
+        <!-- DODO -->
+        <div id="dodoDraws" class="drawSection">
+          <h2 class="title"><span class="titleSign">&</span>Dodo</h2>
+          <picture>
+            <source
+              srcset="https://i.ibb.co/9t0CxrQ/dodo-revolution.jpg"
+              alt="dodo-revolution"
+              border="0"
+              type="image/jpg"
+            />
+            <img
+              src="draw-img/dodo-revolution.jpg"
+              type="image/jpg"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <source srcset="" loading="lazy" type="image/jpg" />
+            <img id="" src="" alt="" loading="lazy" type="image/jpg" />
+          </picture>
+          <!-- <img id="dodo1" src="https://i.imgur.com/pM8BFX0.jpg" alt="" /> -->
+        </div>
+
+        <!-- SKETCH -->
         <div id="sketchDraws" class="drawSection">
-          <h2 class="title"><span class="subTitle">?</span>Sketch</h2>
-          <img id="" src="" alt="" loading="lazy" />
+          <h2 class="title"><span class="titleSign">?</span>Sketch</h2>
+          <picture id="sketch-diario-1">
+            <source
+              srcset="https://i.ibb.co/YWJ4zmQ/sketch-diario-1.jpg"
+              loading="lazy"
+              type="image/jpg"
+            />
+            <img
+              src="draw-img/sketch-diario-1.jpg"
+              alt="sketch-diario-1"
+              loading="lazy"
+              type="image/jpg"
+            />
+          </picture>
         </div>
+
+        <!-- ARCH -->
         <div id="archDraws" class="drawSection">
-          <h2 class="title"><span class="subTitle">$</span>Architecture</h2>
-          <img id="" src="" alt="" loading="lazy" />
+          <h2 class="title"><span class="titleSign">$</span>Architecture</h2>
+          <picture id="">
+            <source srcset="" loading="lazy" type="image/jpg" />
+            <img src="" alt="" loading="lazy" type="image/jpg" />
+          </picture>
+          <img id="trees" src="https://ibb.co/HGMJ6XB" alt="" loading="lazy" />
         </div>
+
+        <!-- RANDOM -->
         <div id="randomDraws" class="drawSection">
-          <h2 class="title"><span class="subTitle">#</span>Random</h2>
-          <img id="" src="" alt="" loading="lazy" />
+          <h2 class="title"><span class="titleSign">#</span>Random</h2>
+          <picture id="rabbit">
+            <source srcset="https://i.ibb.co/JqNLy0Y/rabbit.jpg"" loading="lazy"
+            type="image/jpg" width="100px" />
+            <img src="" alt="rabbit" loading="lazy" type="image/jpg" />
+          </picture>
         </div>
         <div id="trampolin-wrapper">
           <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🍾</a>
