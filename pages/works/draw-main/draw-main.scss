@@ -5,8 +5,13 @@
 
 body {
   height: 100%;
+  width: 100vw;
+  $my-paper-color: hsl(47, 29%, 91%);
+  $muji-cover: hsl(30, 2%, 24%);
+
   font-size: 2rem;
-  $my-paper-color: rgb(238, 235, 224);
+  font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' $font-weight-normal,
+    $slnt;
   .preloader {
     transition: $trans-slow ease-out;
     background: $my-paper-color;
@@ -14,15 +19,15 @@ body {
       animation: jump 1.5s ease 0.3s infinite alternate;
     }
     #text-loader {
-      color: rgb(0, 0, 0);
+      color: $muji-cover;
       font-size: $font-size-small;
     }
   }
   .left-arrow {
     .link-a {
-      color: rgb(89, 89, 89);
+      color: $muji-cover;
       &:hover {
-        color: rgb(92, 92, 92);
+        color: $muji-cover;
       }
     }
     &:hover {
@@ -40,7 +45,7 @@ body {
     }
   }
   footer {
-    background: rgb(79, 79, 79);
+    background: $muji-cover;
     height: 20rem;
     color: $my-paper-color;
     #trampolineEmoji {

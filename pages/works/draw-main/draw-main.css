@@ -379,12 +379,14 @@ body #trampolineEmoji:active {
 
 body {
   height: 100%;
+  width: 100vw;
   font-size: 2rem;
+  font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 620, "slnt" 0;
 }
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #eeebe0;
+  background: #efece1;
 }
 
 body .preloader #emoji-loader {
@@ -392,16 +394,16 @@ body .preloader #emoji-loader {
 }
 
 body .preloader #text-loader {
-  color: black;
+  color: #3e3d3c;
   font-size: calc(0.5vw - 0vw + 12px);
 }
 
 body .left-arrow .link-a {
-  color: #595959;
+  color: #3e3d3c;
 }
 
 body .left-arrow .link-a:hover {
-  color: #5c5c5c;
+  color: #3e3d3c;
 }
 
 body .left-arrow:hover .hc-logo {
@@ -409,7 +411,7 @@ body .left-arrow:hover .hc-logo {
 }
 
 body main {
-  background: #eeebe0;
+  background: #efece1;
   height: 200vh;
 }
 
@@ -419,9 +421,9 @@ body main h1 {
 }
 
 body footer {
-  background: #4f4f4f;
+  background: #3e3d3c;
   height: 20rem;
-  color: #eeebe0;
+  color: #efece1;
 }
 
 body footer #trampolineEmoji {
