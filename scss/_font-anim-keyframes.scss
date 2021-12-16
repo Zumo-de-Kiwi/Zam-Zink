@@ -111,6 +111,12 @@
   }
 }
 
+@keyframes goLeft {
+  to {
+    transform: translateX(-0.6rem);
+  }
+}
+
 // X-axis rotate
 // @keyframes twist-up {
 //   to {

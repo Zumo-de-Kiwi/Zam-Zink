@@ -221,6 +221,10 @@ body #trampolineEmoji:active {
   display: none;
 }
 
+.show {
+  display: block;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -323,6 +327,12 @@ body #trampolineEmoji:active {
   }
 }
 
+@keyframes goLeft {
+  to {
+    transform: translateX(-0.6rem);
+  }
+}
+
 @keyframes widthness {
   0% {
     font-variation-settings: "wght" 500;
@@ -382,11 +392,12 @@ body {
   width: 100vw;
   font-size: 2rem;
   font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 620, "slnt" 0;
+  position: relative;
 }
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #efece1;
+  background: #eeebe7;
 }
 
 body .preloader #emoji-loader {
@@ -410,47 +421,150 @@ body .left-arrow:hover .hc-logo {
   fill: #621bc5;
 }
 
-body main {
-  background: #efece1;
-  height: 200vh;
+body header {
+  background-color: #eeebe7;
 }
 
-body main h1 {
+body header h1 {
   text-align: center;
   padding: 2rem;
+  color: #e8e4dd;
 }
 
-body footer {
-  background: #3e3d3c;
-  height: 20rem;
-  color: #efece1;
+body header #draw-types {
+  width: 100%;
+  min-height: 5rem;
+  border-bottom: 2px solid #3e3d3c;
 }
 
-body footer #trampolineEmoji {
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 2rem;
-  /* Place the button at the bottom of the page */
-  right: 4rem;
-  /* Place the button 30px from the right */
+body header #draw-types ul {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body header #draw-types ul li {
+  padding: 1rem;
+  padding-right: 1.5rem;
+}
+
+body main {
+  background: #eeebe7;
+  height: 400vh;
+  position: relative;
+}
+
+body main #drawSections {
+  height: 400vh;
+  z-index: 2;
+}
+
+body main #drawSections .drawSection {
+  height: 300px;
+}
+
+body main #trampolin-wrapper {
+  position: absolute;
+  height: 90%;
+  width: 3%;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+}
+
+body main #trampolin-wrapper #trampolineEmoji {
+  position: sticky;
+  align-self: flex-end;
   z-index: 9;
-  /* Make sure it does not overlap */
   text-decoration: none;
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
-  /* Some padding */
-  font-size: 3.5rem;
-  /* Increase font size */
+  padding: 3rem;
+  font-size: calc(0.5vw + 0.4vw + 30px);
   transition: 0.15s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
-body footer #trampolineEmoji:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+body main #trampolin-wrapper #trampolineEmoji:hover {
   transform: scale(1.1);
+  transform: translateY(-0.2rem);
 }
 
-body footer #trampolineEmoji:active {
+body main #trampolin-wrapper #trampolineEmoji:active {
   transform: scale(0.9);
+  transform: translateY(0.3rem);
+}
+
+body #footer {
+  z-index: -1;
+  position: sticky;
+  height: 60vh;
+  bottom: 0px;
+  width: 100%;
+  background: #3e3d3c;
+  display: grid;
+  grid-template-columns: 1fr 360px 1fr;
+}
+
+body #footer #placa {
+  display: none;
+}
+
+body #footer #wrapper {
+  z-index: -1;
+  grid-column: 2;
+  display: grid;
+  justify-content: center;
+  gap: 4rem;
+  grid-template-rows: 1fr 4rem 4rem 1fr;
+  color: white;
+}
+
+body #footer #wrapper span {
+  transition: 0.3s;
+  margin: 0.5rem;
+}
+
+body #footer #wrapper .morePrj {
+  z-index: -1;
+  text-decoration-color: transparent;
+  color: #eeebe7;
+  font-size: 2.3rem;
+  align-self: center;
+  transition: 0.3s;
+}
+
+body #footer #wrapper .morePrj:hover {
+  text-decoration-color: white;
+}
+
+body #footer #wrapper .morePrj:active {
+  text-decoration-color: white;
+}
+
+body #footer #wrapper #nextPrj {
+  grid-row: 2;
+  margin-left: 0rem;
+}
+
+body #footer #wrapper #nextPrj:hover #Rarrow {
+  margin-left: 1rem;
+}
+
+body #footer #wrapper #nextPrj:active #Rarrow {
+  margin-left: 1rem;
+}
+
+body #footer #wrapper #prevPrj {
+  grid-row: 3;
+  margin-right: 0rem;
+}
+
+body #footer #wrapper #prevPrj:hover #Larrow {
+  margin-right: 1rem;
+}
+
+body #footer #wrapper #prevPrj:active #Larrow {
+  margin-right: 1rem;
 }

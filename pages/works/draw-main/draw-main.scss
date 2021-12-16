@@ -6,12 +6,14 @@
 body {
   height: 100%;
   width: 100vw;
-  $my-paper-color: hsl(47, 29%, 91%);
+  $my-paper-color: hsl(35, 16%, 92%);
   $muji-cover: hsl(30, 2%, 24%);
 
   font-size: 2rem;
   font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' $font-weight-normal,
     $slnt;
+  position: relative;
+
   .preloader {
     transition: $trans-slow ease-out;
     background: $my-paper-color;
@@ -36,37 +38,161 @@ body {
       }
     }
   }
-  main {
-    background: $my-paper-color;
-    height: 200vh;
+  header {
+    background-color: $my-paper-color;
     h1 {
       text-align: center;
       padding: 2rem;
+      color: rgb(232, 228, 221);
+    }
+    #draw-types {
+      width: 100%;
+      min-height: 5rem;
+      border-bottom: 2px solid $muji-cover;
+      ul {
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          padding: 1rem;
+          padding-right: 1.5rem;
+          &:hover {
+            // appears a comeau line
+          }
+        }
+        #noodlesTab {
+        }
+        #cafeTab {
+        }
+        #dodoTab {
+        }
+        #skecthTab {
+        }
+        #archTab {
+        }
+        #randomTab {
+        }
+      }
     }
   }
-  footer {
-    background: $muji-cover;
-    height: 20rem;
-    color: $my-paper-color;
-    #trampolineEmoji {
-      position: fixed; /* Fixed/sticky position */
-      bottom: 2rem; /* Place the button at the bottom of the page */
-      right: 4rem; /* Place the button 30px from the right */
+  main {
+    background: $my-paper-color;
+    height: 400vh;
+    position: relative;
 
-      z-index: 9; /* Make sure it does not overlap */
-
-      text-decoration: none;
-      cursor: pointer; /* Add a mouse pointer on hover */
-      padding: 15px; /* Some padding */
-      font-size: 3.5rem; /* Increase font size */
-      transition: $trans-fast;
-      cursor: $cursor-pointer-hand-flip;
-      &:hover {
-        cursor: $cursor-pointer-hand-flip;
-        transform: scale(1.1);
+    #drawSections {
+      height: 400vh;
+      z-index: 2;
+      .drawSection {
+        height: 300px;
       }
-      &:active {
-        transform: scale(0.9);
+    }
+
+    #trampolin-wrapper {
+      position: absolute;
+      height: 90%;
+      width: 3%;
+      right: 0px;
+      bottom: 0px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: right;
+      #trampolineEmoji {
+        position: sticky;
+        align-self: flex-end;
+        z-index: 9;
+
+        text-decoration: none;
+        padding: 3rem;
+        font-size: $font-size-huge;
+        transition: $trans-fast;
+        cursor: $cursor-pointer-hand-flip;
+        &:hover {
+          // cursor: $cursor-pointer-hand-flip;
+          transform: scale(1.1);
+          transform: translateY(-0.2rem);
+        }
+        &:active {
+          transform: scale(0.9);
+          transform: translateY(0.3rem);
+        }
+      }
+    }
+  }
+  #footer {
+    z-index: -1;
+    position: sticky;
+    height: 60vh;
+    bottom: 0px;
+    width: 100%;
+    background: $muji-cover;
+
+    display: grid;
+    grid-template-columns: 1fr 360px 1fr;
+    #placa {
+      display: none;
+    }
+    #wrapper {
+      z-index: -1;
+      grid-column: 2;
+
+      display: grid;
+      justify-content: center;
+      gap: 4rem;
+      grid-template-rows: 1fr 4rem 4rem 1fr;
+      color: white;
+
+      span {
+        transition: $trans-normal;
+        margin: 0.5rem;
+      }
+      .morePrj {
+        //a
+        z-index: -1;
+        text-decoration-color: transparent;
+
+        color: $my-paper-color;
+        font-size: 2.3rem;
+        align-self: center;
+        transition: $trans-normal;
+
+        &:hover {
+          text-decoration-color: white;
+        }
+        &:active {
+          text-decoration-color: white;
+        }
+      }
+      #nextPrj {
+        grid-row: 2;
+
+        margin-left: 0rem;
+        &:hover {
+          #Rarrow {
+            margin-left: 1rem;
+          }
+        }
+        &:active {
+          #Rarrow {
+            margin-left: 1rem;
+          }
+        }
+      }
+      #prevPrj {
+        grid-row: 3;
+
+        margin-right: 0rem;
+        &:hover {
+          #Larrow {
+            margin-right: 1rem;
+          }
+        }
+        &:active {
+          #Larrow {
+            margin-right: 1rem;
+          }
+        }
       }
     }
   }

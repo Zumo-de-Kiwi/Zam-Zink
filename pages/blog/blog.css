@@ -221,6 +221,10 @@ body #trampolineEmoji:active {
   display: none;
 }
 
+.show {
+  display: block;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -320,6 +324,12 @@ body #trampolineEmoji:active {
 @keyframes jump {
   to {
     transform: translateY(1rem);
+  }
+}
+
+@keyframes goLeft {
+  to {
+    transform: translateX(-0.6rem);
   }
 }
 

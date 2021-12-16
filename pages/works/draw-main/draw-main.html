@@ -55,35 +55,74 @@
       <h1>Draws</h1>
       <nav id="draw-types">
         <ul>
-          <li>noodles</li>
-          <li>café</li>
-          <li>dodo</li>
-          <li>random</li>
+          <li id="icon">*</li>
+          <li id="noodlesTab">noodles</li>
+          <li id="cafeTab">café</li>
+          <li id="dodoTab">dodo</li>
+          <li id="sketchTab">sketch</li>
+          <li id="archTab">archi</li>
+          <li id="randomTab">random</li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="noodlesDraws" class="drawSections">
-        <h2 class="subTitle">*</h2>
-      </section>
-      <section id="cafeDraws" class="drawSections">
-        <h2 class="subTitle">!</h2>
-      </section>
-      <section id="dodoDraws" class="drawSections">
-        <h2 class="subTitle">&</h2>
-      </section>
-      <section id="randomDraws" class="drawSections">
-        <h2 class="subTitle">#</h2>
-      </section>
+      <div id="drawSections">
+        <div id="noodlesDraws" class="drawSection">
+          <h2 class="title"><span class="subTitle">*</span>Noodles</h2>
+          <img id="" src="" alt="" />
+          <img id="" src="" alt="" />
+          <img id="" src="" alt="" />
+          <img id="" src="" alt="" loading="lazy" />
+        </div>
+        <div id="cafeDraws" class="drawSection">
+          <h2 class="title"><span class="subTitle">!</span>Café</h2>
+          <img id="" src="" alt="" loading="lazy" />
+        </div>
+        <div id="dodoDraws" class="drawSection">
+          <h2 class="title"><span class="subTitle">&</span>Dodo</h2>
 
-      <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🍾</a>
+          <img id="" src="" alt="" loading="lazy" />
+        </div>
+        <div id="sketchDraws" class="drawSection">
+          <h2 class="title"><span class="subTitle">?</span>Sketch</h2>
+          <img id="" src="" alt="" loading="lazy" />
+        </div>
+        <div id="archDraws" class="drawSection">
+          <h2 class="title"><span class="subTitle">$</span>Architecture</h2>
+          <img id="" src="" alt="" loading="lazy" />
+        </div>
+        <div id="randomDraws" class="drawSection">
+          <h2 class="title"><span class="subTitle">#</span>Random</h2>
+          <img id="" src="" alt="" loading="lazy" />
+        </div>
+        <div id="trampolin-wrapper">
+          <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🍾</a>
+          <!-- ✈️  🧹 -->
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="wrapper">
+          <div id="nextPrj">
+            <a
+              class="morePrj"
+              href="/pages/works/analog-photo/analog-photo.html"
+              >next project
+            </a>
+            <span id="Rarrow">-></span>
+          </div>
+          <div id="prevPrj">
+            <span id="Larrow"><-</span>
+            <a class="morePrj" href="/pages/works/pientan-app/pientan.html"
+              >prev. project
+            </a>
+          </div>
+        </div>
+        <!-- <div><a id="flickrLink" href="https://www.flickr.com/photos/153289030@N04/albums" target="_blank"
+            rel="noopener noreferrer">Flickr</a></div> -->
+      </div>
     </main>
-    <footer>
-      <!-- <div><a id="flickrLink" href="https://www.flickr.com/photos/153289030@N04/albums" target="_blank"
-          rel="noopener noreferrer">Flickr</a></div> -->
-      <!-- ✈️  🧹 -->
-    </footer>
 
     <script src="draw-main.js"></script>
     <script src="/js/app.js"></script>
