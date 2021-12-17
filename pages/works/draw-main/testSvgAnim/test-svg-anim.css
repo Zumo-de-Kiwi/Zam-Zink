@@ -435,29 +435,71 @@ body header h1 {
 body header #draw-types {
   width: 100%;
   min-height: 5rem;
-  border-bottom: 2px solid #3e3d3c;
+  border-bottom: 2px solid #464646;
   background-color: burlywood;
   display: flex;
   justify-content: center;
 }
 
 body header #draw-types ul {
-  padding: 1rem;
   max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-evenly;
 }
 
 body header #draw-types ul li {
-  padding: 1rem;
-  padding-right: 1.5rem;
-  font-size: calc(0.5vw + 0.3vw + 13px);
+  font-size: 1.8rem;
+  list-style: none;
+  margin: 1rem;
 }
 
-body header #draw-types ul svg {
-  display: none;
+body header #draw-types ul li .li-wrapper {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+body header #draw-types ul li .li-wrapper a {
+  position: relative;
+  color: #3e3d3c;
+  text-decoration: none;
+  font-variation-settings: "wght" 500;
+  padding: 1rem;
+}
+
+body header #draw-types ul li .li-wrapper a svg {
+  position: absolute;
+  display: block;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+
+body header #draw-types ul li .li-wrapper a svg path {
+  animation-duration: 0.5s cubic-bezier(0.27, 0.22, 0.44, 1.03) 0.1s 1;
+}
+
+body header #draw-types ul #noodlesTab div a svg path {
+  stroke-dasharray: 75px;
+  stroke-dashoffset: 75px;
+}
+
+body header #draw-types ul #noodlesTab div a:hover {
+  color: blue;
+}
+
+body header #draw-types ul #noodlesTab div a:hover svg .path {
+  animation: dash 2s linear;
+  height: 20px;
+  width: 50px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 75;
+  }
 }
 
 body main {
@@ -480,7 +522,10 @@ body main #drawSections .drawSection {
 }
 
 body main #drawSections .title {
-  padding: 5rem;
+  top: 0px;
+  position: sticky;
+  background-color: #eeebe7;
+  padding: 2rem;
   text-align: center;
   font-size: 2.1rem;
   color: #919191;

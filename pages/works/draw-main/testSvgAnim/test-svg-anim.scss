@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
-@import '../../../scss/mixins';
-@import '../../../scss/globals';
-@import '../../../scss/font-anim-keyframes';
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins';
+@import '../../../../scss/globals';
+@import '../../../../scss/font-anim-keyframes';
 
 body {
   // height: 100%;
@@ -50,66 +50,102 @@ body {
     #draw-types {
       width: 100%;
       min-height: 5rem;
-      border-bottom: 2px solid $muji-cover;
+      border-bottom: 2px solid rgb(70, 70, 70);
       background-color: burlywood;
 
       display: flex;
       justify-content: center;
       ul {
-        padding: 1rem;
         max-width: 1400px;
         display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-evenly;
+        flex-wrap: wrap; //can be deleted when do the mobile responsive
+        // align-items: stretch;
+        // justify-content: space-evenly;
         li {
-          padding: 1rem;
-          padding-right: 1.5rem;
-          font-size: $font-size-normal;
+          font-size: 1.8rem;
+          list-style: none;
+          margin: 1rem;
+          .li-wrapper {
+            //div
+            padding: 1rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            a {
+              position: relative;
+
+              color: $muji-cover;
+              text-decoration: none;
+              font-variation-settings: 'wght' $font-weight-light;
+              padding: 1rem;
+              svg {
+                position: absolute;
+                display: block;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: auto;
+                path {
+                  animation-duration: 0.5s cubic-bezier(0.27, 0.22, 0.44, 1.03)
+                    0.1s 1;
+                }
+              }
+            }
+          }
         }
         // mobile
-        svg {
-          display: none;
-        }
-
+        // svg {
+        //   display: none;
+        // }
         //desktop
-
-        // #noodlesTab {
-        //   svg {
-        //     transition: 0.3s;
-        //   }
-        //   &:hover {
-        // .path {
-        // stroke-dasharray: 60; //dash length
-        // animation: dash 5s linear;
-        // }
-        // @keyframes dash {
-        //   to {
-        //     stroke-dashoffset: 60; // the same number as the total dash
-        //   }
-        // }
-        //   }
-        // }
-        // #cafeTab {
-        //   &:hover {
-        //   }
-        // }
-        // #dodoTab {
-        //   &:hover {
-        //   }
-        // }
-        // #skecthTab {
-        //   &:hover {
-        //   }
-        // }
-        // #archTab {
-        //   &:hover {
-        //   }
-        // }
-        // #randomTab {
-        //   &:hover {
-        //   }
-        // }
+        #noodlesTab {
+          div {
+            a {
+              svg {
+                path {
+                  stroke-dasharray: 75px;
+                  stroke-dashoffset: 75px;
+                  // transition: ;
+                }
+              }
+              &:hover {
+                color: blue;
+                svg {
+                  .path {
+                    animation: dash 2s linear;
+                    height: 20px;
+                    width: 50px;
+                  }
+                }
+                @keyframes dash {
+                  to {
+                    stroke-dashoffset: 75; // the same number as the total dash
+                  }
+                }
+              }
+            }
+          }
+        }
+        #cafeTab {
+          &:hover {
+          }
+        }
+        #dodoTab {
+          &:hover {
+          }
+        }
+        #skecthTab {
+          &:hover {
+          }
+        }
+        #archTab {
+          &:hover {
+          }
+        }
+        #randomTab {
+          &:hover {
+          }
+        }
       }
     }
   }
@@ -135,9 +171,14 @@ body {
         padding-bottom: 7rem;
       }
       .title {
-        padding: 5rem;
+        top: 0px;
+        position: sticky;
+
+        background-color: $my-paper-color;
+        padding: 2rem;
         text-align: center;
         font-size: 2.1rem;
+
         color: rgb(145, 145, 145);
         font-variation-settings: 'MONO' 0, 'CASL' 0, 'wght' $font-weight-lighter,
           $slnt;
