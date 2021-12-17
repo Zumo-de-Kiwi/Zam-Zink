@@ -473,7 +473,7 @@ body header #draw-types ul li .li-wrapper a svg {
   display: block;
   left: 0px;
   right: 0px;
-  bottom: 0px;
+  bottom: -5px;
   margin: auto;
 }
 
@@ -492,13 +492,30 @@ body header #draw-types ul #noodlesTab div a:hover {
 
 body header #draw-types ul #noodlesTab div a:hover svg .path {
   animation: dash 2s linear;
-  height: 20px;
-  width: 50px;
 }
 
 @keyframes dash {
   to {
     stroke-dashoffset: 75;
+  }
+}
+
+body header #draw-types ul #skecthTab div a svg path {
+  stroke-dasharray: 63px;
+  stroke-dashoffset: 63px;
+}
+
+body header #draw-types ul #skecthTab div a:hover {
+  color: blue;
+}
+
+body header #draw-types ul #skecthTab div a:hover svg .path {
+  animation: dash 2s linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 63;
   }
 }
 

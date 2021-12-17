@@ -83,7 +83,7 @@ body {
                 display: block;
                 left: 0px;
                 right: 0px;
-                bottom: 0px;
+                bottom: -5px; //adjust the margin the text
                 margin: auto;
                 path {
                   animation-duration: 0.5s cubic-bezier(0.27, 0.22, 0.44, 1.03)
@@ -113,8 +113,6 @@ body {
                 svg {
                   .path {
                     animation: dash 2s linear;
-                    height: 20px;
-                    width: 50px;
                   }
                 }
                 @keyframes dash {
@@ -135,7 +133,28 @@ body {
           }
         }
         #skecthTab {
-          &:hover {
+          div {
+            a {
+              svg {
+                path {
+                  stroke-dasharray: 63px;
+                  stroke-dashoffset: 63px;
+                }
+              }
+              &:hover {
+                color: blue;
+                svg {
+                  .path {
+                    animation: dash 2s linear;
+                  }
+                }
+                @keyframes dash {
+                  to {
+                    stroke-dashoffset: 63; // the same number as the total dash
+                  }
+                }
+              }
+            }
           }
         }
         #archTab {
