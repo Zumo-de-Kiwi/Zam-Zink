@@ -50,7 +50,7 @@ h6 {
 body {
   font-size: 1.8rem;
   color: #232522;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", Consolas, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   /*Typographic tweaks!
   Add accessible line-height
@@ -468,7 +468,7 @@ body {
 
 .main .content_wrap .content-name {
   padding-bottom: 7vh;
-  font-family: "Recursive", "Arial Black", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.5vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
   text-align: left;

@@ -50,7 +50,7 @@ h6 {
 body {
   font-size: 1.8rem;
   color: #232522;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", Consolas, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   /*Typographic tweaks!
   Add accessible line-height
@@ -388,7 +388,7 @@ body #trampolineEmoji:active {
 }
 
 body {
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", Consolas, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;
   font-size: calc(0.5vw + 0.3vw + 13px);
 }

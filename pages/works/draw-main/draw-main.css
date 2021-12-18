@@ -50,7 +50,7 @@ h6 {
 body {
   font-size: 1.8rem;
   color: #232522;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", Consolas, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   /*Typographic tweaks!
   Add accessible line-height
@@ -426,38 +426,130 @@ body header {
   background-color: #eeebe7;
 }
 
-body header h1 {
-  text-align: center;
-  padding: 2rem;
-  color: #d0ccc4;
-}
-
 body header #draw-types {
   width: 100%;
   min-height: 5rem;
-  border-bottom: 2px solid #3e3d3c;
-  background-color: burlywood;
+  border-bottom: 2px solid #a0a0a0;
+  background-color: #f0dec7;
   display: flex;
   justify-content: center;
 }
 
 body header #draw-types ul {
-  padding: 1rem;
   max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-evenly;
 }
 
 body header #draw-types ul li {
-  padding: 1rem;
-  padding-right: 1.5rem;
-  font-size: calc(0.5vw + 0.3vw + 13px);
+  font-size: 1.8rem;
+  list-style: none;
+  margin: 1rem;
 }
 
-body header #draw-types ul svg {
-  display: none;
+body header #draw-types ul li .li-wrapper {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+body header #draw-types ul li .li-wrapper a {
+  position: relative;
+  color: #3e3d3c;
+  text-decoration: none;
+  font-variation-settings: "wght" 500;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+body header #draw-types ul li .li-wrapper a svg {
+  position: absolute;
+  display: block;
+  left: 0px;
+  right: 0px;
+  bottom: -5px;
+  margin: auto;
+}
+
+body header #draw-types ul li .li-wrapper:hover a {
+  font-variation-settings: "wght" 620;
+}
+
+body header #draw-types ul li .li-wrapper:hover svg .path {
+  animation: dash 0.8s cubic-bezier(0.27, 0.22, 0.44, 1.03) 1 0.3s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+body header #draw-types ul .menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid blue;
+}
+
+body header #draw-types ul #noodlesTab .path {
+  stroke-dasharray: 87px;
+  stroke-dashoffset: 87px;
+}
+
+body header #draw-types ul #noodlesTab:hover .path {
+  animation: dash 1.3s linear infinite;
+}
+
+body header #draw-types ul #cafeTab .path {
+  stroke-dasharray: 54px;
+  stroke-dashoffset: 54px;
+}
+
+body header #draw-types ul #cafeTab:hover .path {
+  animation: dash 1s;
+}
+
+body header #draw-types ul #dodoTab .path {
+  stroke-dasharray: 59px;
+  stroke-dashoffset: 59px;
+}
+
+body header #draw-types ul #dodoTab:hover .path {
+  animation: dash 0.9s ease-out 2 0.4s;
+}
+
+body header #draw-types ul #sketchTab path {
+  stroke-dasharray: 76px;
+  stroke-dashoffset: 76px;
+}
+
+body header #draw-types ul #sketchTab:hover .path {
+  animation: dash 0.85s linear 2;
+}
+
+body header #draw-types ul #archTab .path {
+  stroke-dasharray: 128px;
+  stroke-dashoffset: 128px;
+}
+
+body header #draw-types ul #archTab:hover .path {
+  animation: dash 1.3s linear;
+}
+
+body header #draw-types ul #randomTab .path {
+  stroke-dasharray: 82px;
+  stroke-dashoffset: 82px;
+}
+
+body header #draw-types ul #randomTab:hover .path {
+  animation: dash 1s linear 3 0.3s;
 }
 
 body main {
@@ -465,6 +557,18 @@ body main {
   height: 600vh;
   position: relative;
   display: grid;
+}
+
+body main h1 {
+  width: 100%;
+  text-align: center;
+  padding: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #3e3e3e;
+  background-color: #faeab5;
+  font-size: 3.3rem;
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740, "slnt" -7;
 }
 
 body main #drawSections {
@@ -480,16 +584,19 @@ body main #drawSections .drawSection {
 }
 
 body main #drawSections .title {
-  padding: 5rem;
+  top: 0px;
+  position: sticky;
+  background-color: #eeebe7;
+  padding: 1.5rem;
   text-align: center;
-  font-size: 2.1rem;
-  color: #919191;
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0;
+  font-size: 2.5rem;
+  color: #6a665e;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" 0;
 }
 
-body main #drawSections .title .titleSign {
+body main #drawSections .titleSign {
   padding-right: 1rem;
-  color: gray;
+  color: #5b5448;
   font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0;
 }
 
@@ -511,6 +618,10 @@ body main #drawSections #noodlesDraws h2 {
   grid-column: 1/ 4;
 }
 
+body main #drawSections #noodlesDraws #pistola {
+  padding-top: 8vw;
+}
+
 body main #drawSections #noodlesDraws #hidro {
   place-self: center;
   padding-left: 8vw;
@@ -527,6 +638,48 @@ body main #drawSections #noodlesDraws #mr-cakebeef {
 body main #drawSections #noodlesDraws #tijera-black {
   padding-left: 12vw;
   grid-column: 2 /4;
+}
+
+body main #drawSections #dodoDraws #dodo-fapiaou {
+  padding-top: 6rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 10rem;
+}
+
+body main #drawSections #dodoDraws #ropa-dodo {
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-bottom: 8rem;
+}
+
+body main #drawSections #dodoDraws #magnet-dodo {
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 8rem;
+}
+
+body main #drawSections #dodoDraws #mosquito-dodo {
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 8rem;
+}
+
+body main #drawSections #dodoDraws #dodo-kagaroo {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10rem;
+}
+
+body main #drawSections #dodoDraws #dodo-revolution {
+  padding-bottom: 8rem;
+  display: none;
+}
+
+body main #drawSections #dodoDraws #dodo-ojo {
+  padding-left: 10vw;
+  padding-right: 12vw;
+  padding-bottom: 10rem;
 }
 
 body main #drawSections #sketchDraws #zodiac-blue-red {
@@ -550,23 +703,22 @@ body main #drawSections #randomDraws {
 }
 
 body main #drawSections #randomDraws .title {
-  grid-column: 1/4;
+  grid-column: 1 /4;
   grid-row: 1;
 }
 
-body main #drawSections #randomDraws #rabbit {
+body main #drawSections #randomDraws #pato-gato {
   grid-column: 3;
   grid-row: 2;
-  padding-bottom: 3rem;
-  padding-top: 5rem;
-  padding-left: 3rem;
+  padding-top: 23vh;
+  padding-bottom: 7rem;
+  padding-left: 1rem;
 }
 
 body main #drawSections #randomDraws #ancient-spanish {
   grid-column: 1/ 3;
   grid-row: 3/ 5;
   padding-left: 10vw;
-  padding-top: 4rem;
   padding-bottom: 9rem;
 }
 
@@ -575,12 +727,52 @@ body main #drawSections #randomDraws #korean {
   grid-row: 5;
   padding-left: 1rem;
   padding-right: 0.6rem;
-  padding-bottom: 10rem;
+  padding-bottom: 17vh;
 }
 
-body main #drawSections #randomDraws #magnolia {
-  grid-column: 1/ 4;
+body main #drawSections #randomDraws #citron-girl {
+  grid-column: 2/ 4;
   grid-row: 6;
+  padding-left: 13vw;
+  padding-right: 1vw;
+  padding-bottom: 22vh;
+}
+
+body main #drawSections #randomDraws #cat-arrow {
+  grid-column: 1/ 3;
+  grid-row: 6;
+  padding-top: 14rem;
+  padding-right: 12vw;
+  padding-left: 2vw;
+  padding-bottom: 22vh;
+}
+
+body main #drawSections #randomDraws #fin1 {
+  grid-column: 1/ 4;
+  grid-row: 8;
+  text-align: center;
+  color: #f4b5c2;
+  font-weight: 400;
+  font-size: 2.3rem;
+  padding-bottom: 11rem;
+}
+
+body main #drawSections #randomDraws #rabbit {
+  grid-column: 2;
+  grid-row: 9;
+  padding-bottom: 11rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+body main #drawSections #randomDraws #fin2 {
+  grid-column: 1/ 4;
+  grid-row: 10;
+  text-align: center;
+  color: #85c288;
+  font-weight: 400;
+  font-size: 2.3rem;
+  padding-bottom: 9rem;
 }
 
 body main #trampolin-wrapper {
@@ -622,7 +814,7 @@ body #footer {
   height: 50vh;
   bottom: 0px;
   width: 100%;
-  background: #3e3d3c;
+  background: #85c288;
   display: grid;
   grid-template-columns: 1fr 360px 1fr;
 }

@@ -50,7 +50,7 @@ h6 {
 body {
   font-size: 1.8rem;
   color: #232522;
-  font-family: "Recursive", consolas, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", Consolas, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   /*Typographic tweaks!
   Add accessible line-height
@@ -429,7 +429,8 @@ body header {
 body header h1 {
   text-align: center;
   padding: 2rem;
-  color: #d0ccc4;
+  color: #e1e1e0;
+  background-color: white;
 }
 
 body header #draw-types {
@@ -466,6 +467,7 @@ body header #draw-types ul li .li-wrapper a {
   text-decoration: none;
   font-variation-settings: "wght" 500;
   padding: 1rem;
+  transition: 0.3s;
 }
 
 body header #draw-types ul li .li-wrapper a svg {
@@ -477,46 +479,72 @@ body header #draw-types ul li .li-wrapper a svg {
   margin: auto;
 }
 
-body header #draw-types ul li .li-wrapper a svg path {
-  animation-duration: 0.5s cubic-bezier(0.27, 0.22, 0.44, 1.03) 0.1s 1;
+body header #draw-types ul li .li-wrapper:hover a {
+  font-variation-settings: "wght" 620;
 }
 
-body header #draw-types ul #noodlesTab div a svg path {
-  stroke-dasharray: 75px;
-  stroke-dashoffset: 75px;
-}
-
-body header #draw-types ul #noodlesTab div a:hover {
-  color: blue;
-}
-
-body header #draw-types ul #noodlesTab div a:hover svg .path {
-  animation: dash 2s linear;
+body header #draw-types ul li .li-wrapper:hover svg .path {
+  animation: dash 0.8s cubic-bezier(0.27, 0.22, 0.44, 1.03) 1 0.3s;
 }
 
 @keyframes dash {
   to {
-    stroke-dashoffset: 75;
+    stroke-dashoffset: 0px;
   }
 }
 
-body header #draw-types ul #skecthTab div a svg path {
-  stroke-dasharray: 63px;
-  stroke-dashoffset: 63px;
+body header #draw-types ul #noodlesTab .path {
+  stroke-dasharray: 87px;
+  stroke-dashoffset: 87px;
 }
 
-body header #draw-types ul #skecthTab div a:hover {
-  color: blue;
+body header #draw-types ul #noodlesTab:hover .path {
+  animation: dash 1.3s linear infinite;
 }
 
-body header #draw-types ul #skecthTab div a:hover svg .path {
-  animation: dash 2s linear;
+body header #draw-types ul #cafeTab .path {
+  stroke-dasharray: 54px;
+  stroke-dashoffset: 54px;
 }
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 63;
-  }
+body header #draw-types ul #cafeTab:hover .path {
+  animation: dash 1s;
+}
+
+body header #draw-types ul #dodoTab .path {
+  stroke-dasharray: 59px;
+  stroke-dashoffset: 59px;
+}
+
+body header #draw-types ul #dodoTab:hover .path {
+  animation: dash 0.9s ease-out 2 0.4s;
+}
+
+body header #draw-types ul #sketchTab path {
+  stroke-dasharray: 76px;
+  stroke-dashoffset: 76px;
+}
+
+body header #draw-types ul #sketchTab:hover .path {
+  animation: dash 0.85s linear 2;
+}
+
+body header #draw-types ul #archTab .path {
+  stroke-dasharray: 128px;
+  stroke-dashoffset: 128px;
+}
+
+body header #draw-types ul #archTab:hover .path {
+  animation: dash 1.3s linear;
+}
+
+body header #draw-types ul #randomTab .path {
+  stroke-dasharray: 82px;
+  stroke-dashoffset: 82px;
+}
+
+body header #draw-types ul #randomTab:hover .path {
+  animation: dash 1s linear 3 0.3s;
 }
 
 body main {

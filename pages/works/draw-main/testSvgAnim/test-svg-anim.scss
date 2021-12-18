@@ -45,7 +45,8 @@ body {
     h1 {
       text-align: center;
       padding: 2rem;
-      color: rgb(208, 204, 196);
+      color: rgb(225, 225, 224);
+      background-color: white;
     }
     #draw-types {
       width: 100%;
@@ -59,8 +60,6 @@ body {
         max-width: 1400px;
         display: flex;
         flex-wrap: wrap; //can be deleted when do the mobile responsive
-        // align-items: stretch;
-        // justify-content: space-evenly;
         li {
           font-size: 1.8rem;
           list-style: none;
@@ -73,21 +72,33 @@ body {
             align-items: center;
             a {
               position: relative;
-
               color: $muji-cover;
               text-decoration: none;
               font-variation-settings: 'wght' $font-weight-light;
               padding: 1rem;
+              transition: $trans-normal;
               svg {
                 position: absolute;
                 display: block;
                 left: 0px;
                 right: 0px;
-                bottom: -5px; //adjust the margin the text
-                margin: auto;
-                path {
-                  animation-duration: 0.5s cubic-bezier(0.27, 0.22, 0.44, 1.03)
-                    0.1s 1;
+                bottom: -5px; //adjust the
+                margin: auto; //margin the text
+              }
+            }
+            &:hover {
+              a {
+                font-variation-settings: 'wght' $font-weight-normal;
+              }
+              svg {
+                .path {
+                  animation: dash 0.8s cubic-bezier(0.27, 0.22, 0.44, 1.03) 1
+                    0.3s;
+                }
+                @keyframes dash {
+                  to {
+                    stroke-dashoffset: 0px;
+                  }
                 }
               }
             }
@@ -99,70 +110,74 @@ body {
         // }
         //desktop
         #noodlesTab {
-          div {
-            a {
-              svg {
-                path {
-                  stroke-dasharray: 75px;
-                  stroke-dashoffset: 75px;
-                  // transition: ;
-                }
-              }
-              &:hover {
-                color: blue;
-                svg {
-                  .path {
-                    animation: dash 2s linear;
-                  }
-                }
-                @keyframes dash {
-                  to {
-                    stroke-dashoffset: 75; // the same number as the total dash
-                  }
-                }
-              }
+          //87px
+          .path {
+            stroke-dasharray: 87px;
+            stroke-dashoffset: 87px;
+          }
+          &:hover {
+            .path {
+              animation: dash 1.3s linear infinite;
             }
           }
         }
         #cafeTab {
+          // 54px
+          .path {
+            stroke-dasharray: 54px;
+            stroke-dashoffset: 54px;
+          }
           &:hover {
+            .path {
+              animation: dash 1s;
+            }
           }
         }
         #dodoTab {
+          .path {
+            stroke-dasharray: 59px;
+            stroke-dashoffset: 59px;
+          }
           &:hover {
+            .path {
+              animation: dash 0.9s ease-out 2 0.4s;
+            }
           }
         }
-        #skecthTab {
-          div {
-            a {
-              svg {
-                path {
-                  stroke-dasharray: 63px;
-                  stroke-dashoffset: 63px;
-                }
-              }
-              &:hover {
-                color: blue;
-                svg {
-                  .path {
-                    animation: dash 2s linear;
-                  }
-                }
-                @keyframes dash {
-                  to {
-                    stroke-dashoffset: 63; // the same number as the total dash
-                  }
-                }
-              }
+        #sketchTab {
+          // 76px
+          path {
+            stroke-dasharray: 76px;
+            stroke-dashoffset: 76px;
+          }
+          &:hover {
+            .path {
+              animation: dash 0.85s linear 2;
             }
           }
         }
         #archTab {
+          //128px
+          .path {
+            stroke-dasharray: 128px;
+            stroke-dashoffset: 128px;
+          }
           &:hover {
+            .path {
+              animation: dash 1.3s linear;
+            }
           }
         }
         #randomTab {
+          // 82px
+          .path {
+            stroke-dasharray: 82px;
+            stroke-dashoffset: 82px;
+          }
           &:hover {
+            .path {
+              animation: dash 1s linear 3 0.3s;
+            }
           }
         }
       }

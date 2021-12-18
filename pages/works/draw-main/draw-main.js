@@ -1,3 +1,8 @@
+//output the svg line length
+// var path = document.querySelector('.path');
+// var length = path.getTotalLength();
+// console.log(length);
+
 //// go to different sections of the page ////////
 const noodles = document.querySelector('#noodlesTab');
 const cafe = document.querySelector('#cafeTab');

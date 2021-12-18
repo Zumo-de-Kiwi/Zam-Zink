@@ -42,74 +42,150 @@ body {
   }
   header {
     background-color: $my-paper-color;
-    h1 {
-      text-align: center;
-      padding: 2rem;
-      color: rgb(208, 204, 196);
-    }
     #draw-types {
       width: 100%;
       min-height: 5rem;
-      border-bottom: 2px solid $muji-cover;
-      background-color: burlywood;
+      border-bottom: 2px solid rgb(160, 160, 160);
+      background-color: rgb(240, 222, 199);
 
       display: flex;
       justify-content: center;
+
       ul {
-        padding: 1rem;
         max-width: 1400px;
         display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-evenly;
+        flex-wrap: wrap; //can be deleted when do the mobile responsive
         li {
-          padding: 1rem;
-          padding-right: 1.5rem;
-          font-size: $font-size-normal;
+          font-size: 1.8rem;
+          list-style: none;
+          margin: 1rem;
+          .li-wrapper {
+            //div
+            padding: 1rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            a {
+              position: relative;
+              color: $muji-cover;
+              text-decoration: none;
+              font-variation-settings: 'wght' $font-weight-light;
+              padding: 1rem;
+              transition: $trans-normal;
+              svg {
+                position: absolute;
+                display: block;
+                left: 0px;
+                right: 0px;
+                bottom: -5px; //adjust the
+                margin: auto; //margin the text
+              }
+            }
+            &:hover {
+              a {
+                font-variation-settings: 'wght' $font-weight-normal;
+              }
+              svg {
+                .path {
+                  animation: dash 0.8s cubic-bezier(0.27, 0.22, 0.44, 1.03) 1
+                    0.3s;
+                }
+                @keyframes dash {
+                  to {
+                    stroke-dashoffset: 0px;
+                  }
+                }
+              }
+            }
+          }
         }
         // mobile
-        svg {
-          display: none;
+        .menu-btn {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 8rem;
+          height: 8rem;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+          border: 2px solid blue;
         }
-
+        // svg {
+        //   display: none;
+        // }
         //desktop
-
-        // #noodlesTab {
-        //   svg {
-        //     transition: 0.3s;
-        //   }
-        //   &:hover {
-        // .path {
-        // stroke-dasharray: 60; //dash length
-        // animation: dash 5s linear;
-        // }
-        // @keyframes dash {
-        //   to {
-        //     stroke-dashoffset: 60; // the same number as the total dash
-        //   }
-        // }
-        //   }
-        // }
-        // #cafeTab {
-        //   &:hover {
-        //   }
-        // }
-        // #dodoTab {
-        //   &:hover {
-        //   }
-        // }
-        // #skecthTab {
-        //   &:hover {
-        //   }
-        // }
-        // #archTab {
-        //   &:hover {
-        //   }
-        // }
-        // #randomTab {
-        //   &:hover {
-        //   }
-        // }
+        #noodlesTab {
+          //87px
+          .path {
+            stroke-dasharray: 87px;
+            stroke-dashoffset: 87px;
+          }
+          &:hover {
+            .path {
+              animation: dash 1.3s linear infinite;
+            }
+          }
+        }
+        #cafeTab {
+          // 54px
+          .path {
+            stroke-dasharray: 54px;
+            stroke-dashoffset: 54px;
+          }
+          &:hover {
+            .path {
+              animation: dash 1s;
+            }
+          }
+        }
+        #dodoTab {
+          .path {
+            stroke-dasharray: 59px;
+            stroke-dashoffset: 59px;
+          }
+          &:hover {
+            .path {
+              animation: dash 0.9s ease-out 2 0.4s;
+            }
+          }
+        }
+        #sketchTab {
+          // 76px
+          path {
+            stroke-dasharray: 76px;
+            stroke-dashoffset: 76px;
+          }
+          &:hover {
+            .path {
+              animation: dash 0.85s linear 2;
+            }
+          }
+        }
+        #archTab {
+          //128px
+          .path {
+            stroke-dasharray: 128px;
+            stroke-dashoffset: 128px;
+          }
+          &:hover {
+            .path {
+              animation: dash 1.3s linear;
+            }
+          }
+        }
+        #randomTab {
+          // 82px
+          .path {
+            stroke-dasharray: 82px;
+            stroke-dashoffset: 82px;
+          }
+          &:hover {
+            .path {
+              animation: dash 1s linear 3 0.3s;
+            }
+          }
+        }
       }
     }
   }
@@ -119,6 +195,19 @@ body {
     position: relative;
     display: grid;
 
+    h1 {
+      width: 100%;
+      text-align: center;
+      padding: 10rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      color: rgb(62, 62, 62);
+      background-color: rgb(250, 234, 181);
+      font-size: 3.3rem;
+      font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-bolder,
+        'slnt' -7;
+      // background-color: white;
+    }
     #drawSections {
       // height: 400vh;
       z-index: 2;
@@ -135,18 +224,23 @@ body {
         padding-bottom: 7rem;
       }
       .title {
-        padding: 5rem;
+        top: 0px;
+        position: sticky;
+
+        background-color: $my-paper-color;
+        padding: 1.5rem;
         text-align: center;
-        font-size: 2.1rem;
-        color: rgb(145, 145, 145);
-        font-variation-settings: 'MONO' 0, 'CASL' 0, 'wght' $font-weight-lighter,
+        font-size: 2.5rem;
+
+        color: rgb(106, 102, 94);
+        font-variation-settings: 'MONO' 0, 'CASL' 0.3,
+          'wght' $font-weight-normal, $slnt;
+      }
+      .titleSign {
+        padding-right: 1rem;
+        color: rgb(91, 84, 72);
+        font-variation-settings: 'MONO' 1, 'CASL' 1, 'wght' $font-weight-lighter,
           $slnt;
-        .titleSign {
-          padding-right: 1rem;
-          color: rgb(128, 128, 128);
-          font-variation-settings: 'MONO' 1, 'CASL' 1,
-            'wght' $font-weight-lighter, $slnt;
-        }
       }
       picture {
         padding-bottom: 6rem;
@@ -162,12 +256,14 @@ body {
         h2 {
           grid-column: 1/ 4;
         }
+        #pistola {
+          padding-top: 8vw;
+        }
         #hidro {
           place-self: center;
           padding-left: 8vw;
           padding-right: 8vw;
         }
-
         #mr-cakebeef {
           padding-right: 12vw;
           grid-column: 1 /3;
@@ -184,6 +280,41 @@ body {
         }
       }
       #dodoDraws {
+        #dodo-fapiaou {
+          padding-top: 6rem;
+          padding-left: 2vw;
+          padding-right: 2vw;
+          padding-bottom: 10rem;
+        }
+        #ropa-dodo {
+          padding-left: 12vw;
+          padding-right: 12vw;
+          padding-bottom: 8rem;
+        }
+        #magnet-dodo {
+          padding-left: 20vw;
+          padding-right: 20vw;
+          padding-bottom: 8rem;
+        }
+        #mosquito-dodo {
+          padding-left: 20vw;
+          padding-right: 20vw;
+          padding-bottom: 8rem;
+        }
+        #dodo-kagaroo {
+          padding-left: 10vw;
+          padding-right: 10vw;
+          padding-bottom: 10rem;
+        }
+        #dodo-revolution {
+          padding-bottom: 8rem;
+          display: none;
+        }
+        #dodo-ojo {
+          padding-left: 10vw;
+          padding-right: 12vw;
+          padding-bottom: 10rem;
+        }
       }
       #sketchDraws {
         #zodiac-blue-red {
@@ -205,34 +336,69 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         .title {
-          grid-column: 1/4;
+          grid-column: 1 /4;
           grid-row: 1;
         }
-        #rabbit {
+        #pato-gato {
           grid-column: 3;
           grid-row: 2;
-          padding-bottom: 3rem;
-          padding-top: 5rem;
-          padding-left: 3rem;
+
+          padding-top: 23vh;
+          padding-bottom: 7rem;
+          padding-left: 1rem;
         }
         #ancient-spanish {
           grid-column: 1/ 3;
           grid-row: 3/ 5;
           padding-left: 10vw;
-          padding-top: 4rem;
           padding-bottom: 9rem;
-          // padding-top: 17vw;
         }
         #korean {
           grid-column: 1/ 4;
           grid-row: 5;
           padding-left: 1rem;
           padding-right: 0.6rem;
-          padding-bottom: 10rem;
+          padding-bottom: 17vh;
         }
-        #magnolia {
-          grid-column: 1/ 4;
+        #citron-girl {
+          grid-column: 2/ 4;
           grid-row: 6;
+          padding-left: 13vw;
+          padding-right: 1vw;
+          padding-bottom: 22vh;
+        }
+        #cat-arrow {
+          grid-column: 1/ 3;
+          grid-row: 6;
+          padding-top: 14rem;
+          padding-right: 12vw;
+          padding-left: 2vw;
+          padding-bottom: 22vh;
+        }
+        #fin1 {
+          grid-column: 1/ 4;
+          grid-row: 8;
+          text-align: center;
+          color: rgb(244, 181, 194);
+          font-weight: 400;
+          font-size: 2.3rem;
+          padding-bottom: 11rem;
+        }
+        #rabbit {
+          grid-column: 2;
+          grid-row: 9;
+          padding-bottom: 11rem;
+          padding-left: 5vw;
+          padding-right: 5vw;
+        }
+        #fin2 {
+          grid-column: 1/ 4;
+          grid-row: 10;
+          text-align: center;
+          color: rgb(133, 194, 136);
+          font-weight: 400;
+          font-size: 2.3rem;
+          padding-bottom: 9rem;
         }
       }
     }
@@ -276,7 +442,9 @@ body {
     height: 50vh;
     bottom: 0px;
     width: 100%;
-    background: $muji-cover;
+    // background: $muji-cover;
+    // background: rgb(244, 181, 194);
+    background: rgb(133, 194, 136);
 
     display: grid;
     grid-template-columns: 1fr 360px 1fr;
