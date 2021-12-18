@@ -29,7 +29,7 @@
       <p id="emoji-loader">✏️</p>
       <p id="text-loader">It's like surfing clouds.</p>
     </div>
-
+    <div class="absolute-nav"></div>
     <div class="left-arrow" title="Main Page">
       <a class="link-a" href="/index.html"><span id="leftArrow"><</span></a>
       <!-- <span id="arrowLine">___________________</span> -->
@@ -50,6 +50,9 @@
           </g>
         </svg>
       </a>
+    </div>
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
     </div>
     <header>
       <nav id="draw-types">
@@ -250,9 +253,6 @@
             </div>
           </li>
         </ul>
-        <div class="menu-btn">
-          <div class="menu-btn__burg"></div>
-        </div>
       </nav>
     </header>
 
@@ -262,13 +262,7 @@
         <!-- NOODLES -->
         <div id="noodlesDraws" class="drawSection">
           <h2 class="title"><span class="titleSign">*</span>Noodles</h2>
-          <picture id="pistola">
-            <source
-              srcset="https://i.ibb.co/Tq9R5zQ/pistola.jpg"
-              type="image/jpg"
-            />
-            <img src="draw-img/pistola.jpg" alt="pistola" type="image/jpg" />
-          </picture>
+
           <picture id="hidro">
             <source
               srcset="https://i.ibb.co/VTf1mHT/hidroge.jpg"
@@ -276,6 +270,13 @@
               type="image/jpg"
             />
             <img src="draw-img/hidroge.jpg" alt="" type="image/jpg" />
+          </picture>
+          <picture id="pistola">
+            <source
+              srcset="https://i.ibb.co/Tq9R5zQ/pistola.jpg"
+              type="image/jpg"
+            />
+            <img src="draw-img/pistola.jpg" alt="pistola" type="image/jpg" />
           </picture>
           <picture id="lin-club">
             <source
@@ -291,6 +292,24 @@
             <img
               src="draw-img/lin-club.jpg"
               alt="lin-club"
+              loading="lazy"
+              type="image/jpg"
+            />
+          </picture>
+          <picture id="flora-color">
+            <source
+              srcset="https://i.ibb.co/26LXjjF/flora-color.webp"
+              loading="lazy"
+              type="image/webp"
+            />
+            <source
+              srcset="https://i.ibb.co/MB0v72R/flora-color.jpg"
+              loading="lazy"
+              type="image/jpg"
+            />
+            <img
+              src="draw-img/flora-color.jpg"
+              alt="flora-color"
               loading="lazy"
               type="image/jpg"
             />
@@ -515,7 +534,8 @@
 
         <!-- SKETCH -->
         <div id="sketchDraws" class="drawSection">
-          <h2 class="title"><span class="titleSign">?</span>Sketch</h2>
+          <span class="titleSign">?</span>
+          <h2 class="title">Sketch</h2>
           <picture id="zodiac-blue-red">
             <source
               srcset="https://i.ibb.co/12w9kfp/zodiac-blue-red.webp"
@@ -565,6 +585,24 @@
               type="image/jpg"
             />
           </picture>
+          <picture id="manga">
+            <source
+              srcset="https://i.ibb.co/Z8PK7Q4/manga.webp"
+              loading="lazy"
+              type="image/webp"
+            />
+            <source
+              srcset="https://i.ibb.co/5Fy8CWz/manga.jpg"
+              loading="lazy"
+              type="image/jpg"
+            />
+            <img
+              src="draw-img/manga.jpg"
+              alt=""
+              loading="lazy"
+              type="image/jpg"
+            />
+          </picture>
           <picture id="rus-sketch">
             <source
               srcset="https://i.ibb.co/6DwtmTH/rus-ske.webp"
@@ -582,6 +620,11 @@
               loading="lazy"
               type="image/jpg"
             />
+          </picture>
+          <picture id="">
+            <source srcset="" loading="lazy" type="image/webp" />
+            <source srcset="" loading="lazy" type="image/jpg" />
+            <img src="draw-img/" alt="" loading="lazy" type="image/jpg" />
           </picture>
         </div>
 
@@ -606,7 +649,6 @@
               type="image/jpg"
             />
           </picture>
-
           <picture id="trees">
             <source srcset="" loading="lazy" type="image/webp" />
             <source
@@ -615,6 +657,19 @@
               type="image/jpg"
             />
             <img src="draw-img/trees.jpg" alt="trees" loading="lazy" />
+          </picture>
+          <picture id="land-home">
+            <source
+              srcset="https://i.ibb.co/VpPjXSZ/land-home.jpg"
+              loading="lazy"
+              type="image/jpg"
+            />
+            <img
+              src="draw-img/land-home.jpg"
+              alt="land-home"
+              loading="lazy"
+              type="image/jpg"
+            />
           </picture>
           <picture id="">
             <source srcset="" loading="lazy" type="image/webp" />
@@ -626,16 +681,15 @@
         <!-- RANDOM -->
         <div id="randomDraws" class="drawSection">
           <h2 class="title"><span class="titleSign">#</span>Random</h2>
-
-          <picture id="korean">
+          <picture id="pato-gato">
             <source
-              srcset="https://i.ibb.co/nfr0cyd/korean.jpg"
+              srcset="https://i.ibb.co/0B75T1v/pato-gato.jpg"
               loading="lazy"
               type="image/jpg"
             />
             <img
-              src="draw-img/korean.jpg"
-              alt="lazy-woman"
+              src="draw-img/pato-gato.jpg"
+              alt="pato-gato"
               loading="lazy"
               type="image/jpg"
             />
@@ -653,15 +707,33 @@
               type="image/jpg"
             />
           </picture>
-          <picture id="pato-gato">
+          <picture id="penguin-banera">
             <source
-              srcset="https://i.ibb.co/0B75T1v/pato-gato.jpg"
+              srcset="https://i.ibb.co/LYJFK42/penguin-banera.webp"
+              loading="lazy"
+              type="image/webp"
+            />
+            <source
+              srcset="https://i.ibb.co/17SpCH2/penguin-banera.jpg"
               loading="lazy"
               type="image/jpg"
             />
             <img
-              src="draw-img/pato-gato.jpg"
-              alt="pato-gato"
+              src="draw-img/penguin-banera.jpg"
+              alt="penguin-banera"
+              loading="lazy"
+              type="image/jpg"
+            />
+          </picture>
+          <picture id="korean">
+            <source
+              srcset="https://i.ibb.co/nfr0cyd/korean.jpg"
+              loading="lazy"
+              type="image/jpg"
+            />
+            <img
+              src="draw-img/korean.jpg"
+              alt="lazy-woman"
               loading="lazy"
               type="image/jpg"
             />
@@ -692,28 +764,23 @@
               type="image/jpg"
             />
           </picture>
-          <picture id="penguin-banera">
+          <picture id="beer-coleta">
             <source
-              srcset="https://i.ibb.co/LYJFK42/penguin-banera.webp"
+              srcset="https://i.ibb.co/5TB4W4m/beer-coleta.webp"
               loading="lazy"
               type="image/webp"
             />
             <source
-              srcset="https://i.ibb.co/17SpCH2/penguin-banera.jpg"
+              srcset="https://i.ibb.co/yfpy82w/beer-coleta.jpg"
               loading="lazy"
               type="image/jpg"
             />
             <img
-              src="draw-img/penguin-banera.jpg"
-              alt="penguin-banera"
+              src="draw-img/beer-coleta.jpg"
+              alt="beer-coleta"
               loading="lazy"
               type="image/jpg"
             />
-          </picture>
-          <picture id="">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source srcset="" loading="lazy" type="image/jpg" />
-            <img src="draw-img/" alt="" loading="lazy" type="image/jpg" />
           </picture>
           <picture id="">
             <source srcset="" loading="lazy" type="image/webp" />

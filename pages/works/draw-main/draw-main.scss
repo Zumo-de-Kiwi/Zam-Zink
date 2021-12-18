@@ -27,6 +27,11 @@ body {
       font-size: $font-size-normal;
     }
   }
+  .absolute-nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
   .left-arrow {
     .link-a {
       color: $muji-cover;
@@ -40,6 +45,49 @@ body {
       }
     }
   }
+  ////// HAMBURGER /////
+  .menu-btn {
+    z-index: 99;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    // margin: 2rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 5rem;
+    border: 2px solid blue;
+    .menu-btn__burger {
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        width: 3rem;
+        height: 0.4rem;
+        border-radius: 4px;
+        background-color: $muji-cover;
+        transition: all 0.4s ease-in-out;
+      }
+      &::after {
+        transform: translateY(-0.8rem);
+      }
+      &::before {
+        transform: translateY(0.8rem);
+      }
+    }
+  }
+  //// ANIMATION HAMBU
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg);
+  }
+
   header {
     background-color: $my-paper-color;
     #draw-types {
@@ -55,6 +103,8 @@ body {
         max-width: 1400px;
         display: flex;
         flex-wrap: wrap; //can be deleted when do the mobile responsive
+        //mobile
+        display: none;
         li {
           font-size: 1.8rem;
           list-style: none;
@@ -100,17 +150,7 @@ body {
           }
         }
         // mobile
-        .menu-btn {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 8rem;
-          height: 8rem;
-          cursor: pointer;
-          transition: all 0.5s ease-in-out;
-          border: 2px solid blue;
-        }
+
         // svg {
         //   display: none;
         // }
@@ -189,20 +229,21 @@ body {
       }
     }
   }
+
   main {
     background: $my-paper-color;
     height: 600vh;
     position: relative;
     display: grid;
-
     h1 {
       width: 100%;
       text-align: center;
       padding: 10rem;
       padding-left: 2rem;
       padding-right: 2rem;
+      margin-bottom: 4rem;
       color: rgb(62, 62, 62);
-      background-color: rgb(250, 234, 181);
+      background-color: rgb(245, 243, 230);
       font-size: 3.3rem;
       font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-bolder,
         'slnt' -7;
@@ -226,18 +267,20 @@ body {
       .title {
         top: 0px;
         position: sticky;
-
+        z-index: 2;
         background-color: $my-paper-color;
         padding: 1.5rem;
         text-align: center;
         font-size: 2.5rem;
-
         color: rgb(106, 102, 94);
         font-variation-settings: 'MONO' 0, 'CASL' 0.3,
           'wght' $font-weight-normal, $slnt;
       }
       .titleSign {
-        padding-right: 1rem;
+        display: none; //hidden
+        padding: 1.5rem;
+        text-align: center;
+        width: 100%;
         color: rgb(91, 84, 72);
         font-variation-settings: 'MONO' 1, 'CASL' 1, 'wght' $font-weight-lighter,
           $slnt;
@@ -250,29 +293,39 @@ body {
       #noodlesDraws {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        .title {
+          grid-column: 1 / 4;
+        }
         picture {
           grid-column: 1/ 4;
         }
-        h2 {
-          grid-column: 1/ 4;
-        }
-        #pistola {
-          padding-top: 8vw;
-        }
+
         #hidro {
           place-self: center;
-          padding-left: 8vw;
-          padding-right: 8vw;
+          padding-top: 10vw;
+          padding-left: 2vw;
+          padding-right: 2vw;
+        }
+        #pistola {
+        }
+        #lin-club {
+          padding-bottom: 0rem;
+        }
+        #flora-color {
+          padding-bottom: 5rem;
+        }
+        #election-draw {
         }
         #mr-cakebeef {
           padding-right: 12vw;
           grid-column: 1 /3;
-          padding-top: 7rem;
-          padding-bottom: 5rem;
+          padding-top: 1rem;
+          padding-bottom: 3rem;
         }
         #tijera-black {
           padding-left: 12vw;
           grid-column: 2 /4;
+          // padding-bottom: 0rem;
         }
       }
       #cafeDraws {
@@ -323,11 +376,15 @@ body {
         #sketch-diario-1 {
           padding-left: 1rem;
           padding-right: 1rem;
-          padding-bottom: 9rem;
+          padding-bottom: 6rem;
         }
         #rus-sketch {
           padding-left: 1rem;
           padding-right: 1rem;
+        }
+        #manga {
+          padding-left: 12vw;
+          padding-right: 12vw;
         }
       }
       #archDraws {
@@ -335,6 +392,7 @@ body {
       #randomDraws {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
         .title {
           grid-column: 1 /4;
           grid-row: 1;
@@ -343,23 +401,32 @@ body {
           grid-column: 3;
           grid-row: 2;
 
-          padding-top: 23vh;
-          padding-bottom: 7rem;
+          padding-top: 19vh;
+          padding-bottom: 4.5rem;
           padding-left: 1rem;
         }
         #ancient-spanish {
           grid-column: 1/ 3;
           grid-row: 3/ 5;
           padding-left: 10vw;
-          padding-bottom: 9rem;
+          padding-bottom: 5rem;
+        }
+        #penguin-banera {
+          grid-column: 1/ 4;
+          grid-row: 5;
+          padding-left: 0vw;
+          padding-right: 0vw;
+          padding-bottom: 22vh;
         }
         #korean {
           grid-column: 1/ 4;
           grid-row: 5;
+          padding-top: 19rem;
           padding-left: 1rem;
           padding-right: 0.6rem;
-          padding-bottom: 17vh;
+          padding-bottom: 5rem;
         }
+
         #citron-girl {
           grid-column: 2/ 4;
           grid-row: 6;
@@ -373,11 +440,19 @@ body {
           padding-top: 14rem;
           padding-right: 12vw;
           padding-left: 2vw;
-          padding-bottom: 22vh;
+          padding-bottom: 9vh;
+        }
+        #beer-coleta {
+          grid-column: 1/ 4;
+          grid-row: 8;
+          // padding-top: 14rem;
+          padding-right: 2vw;
+          padding-left: 2vw;
+          padding-bottom: 16rem;
         }
         #fin1 {
           grid-column: 1/ 4;
-          grid-row: 8;
+          grid-row: 10;
           text-align: center;
           color: rgb(244, 181, 194);
           font-weight: 400;
@@ -386,14 +461,14 @@ body {
         }
         #rabbit {
           grid-column: 2;
-          grid-row: 9;
+          grid-row: 11;
           padding-bottom: 11rem;
           padding-left: 5vw;
           padding-right: 5vw;
         }
         #fin2 {
           grid-column: 1/ 4;
-          grid-row: 10;
+          grid-row: 12;
           text-align: center;
           color: rgb(133, 194, 136);
           font-weight: 400;

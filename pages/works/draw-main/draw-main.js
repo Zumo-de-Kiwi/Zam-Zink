@@ -3,6 +3,19 @@
 // var length = path.getTotalLength();
 // console.log(length);
 
+// HAMBURGER BTN /////
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
 //// go to different sections of the page ////////
 const noodles = document.querySelector('#noodlesTab');
 const cafe = document.querySelector('#cafeTab');
