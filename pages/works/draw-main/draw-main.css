@@ -411,24 +411,26 @@ body .preloader #text-loader {
 }
 
 body .absolute-nav {
-  position: absolute;
+  position: sticky;
+  top: 0rem;
+  z-index: 99;
   display: flex;
   align-items: center;
 }
 
-body .left-arrow .link-a {
+body .absolute-nav .left-arrow .link-a {
   color: #3e3d3c;
 }
 
-body .left-arrow .link-a:hover {
+body .absolute-nav .left-arrow .link-a:hover {
   color: #3e3d3c;
 }
 
-body .left-arrow:hover .hc-logo {
+body .absolute-nav .left-arrow:hover .hc-logo {
   fill: #621bc5;
 }
 
-body .menu-btn {
+body .absolute-nav .menu-btn {
   z-index: 99;
   position: absolute;
   top: 0px;
@@ -443,7 +445,7 @@ body .menu-btn {
   border: 2px solid blue;
 }
 
-body .menu-btn .menu-btn__burger::after, body .menu-btn .menu-btn__burger::before {
+body .absolute-nav .menu-btn .menu-btn__burger::after, body .absolute-nav .menu-btn .menu-btn__burger::before {
   content: '';
   position: absolute;
   width: 3rem;
@@ -453,19 +455,19 @@ body .menu-btn .menu-btn__burger::after, body .menu-btn .menu-btn__burger::befor
   transition: all 0.4s ease-in-out;
 }
 
-body .menu-btn .menu-btn__burger::after {
+body .absolute-nav .menu-btn .menu-btn__burger::after {
   transform: translateY(-0.8rem);
 }
 
-body .menu-btn .menu-btn__burger::before {
+body .absolute-nav .menu-btn .menu-btn__burger::before {
   transform: translateY(0.8rem);
 }
 
-body .menu-btn.open .menu-btn__burger::before {
+body .absolute-nav .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg);
 }
 
-body .menu-btn.open .menu-btn__burger::after {
+body .absolute-nav .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
 }
 

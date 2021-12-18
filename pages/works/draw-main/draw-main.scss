@@ -28,64 +28,66 @@ body {
     }
   }
   .absolute-nav {
-    position: absolute;
-    display: flex;
-    align-items: center;
-  }
-  .left-arrow {
-    .link-a {
-      color: $muji-cover;
-      &:hover {
-        color: $muji-cover;
-      }
-    }
-    &:hover {
-      .hc-logo {
-        fill: $font-linked-color;
-      }
-    }
-  }
-  ////// HAMBURGER /////
-  .menu-btn {
+    position: sticky;
+    top: 0rem;
     z-index: 99;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    // margin: 2rem;
-    margin-right: 4rem;
-    margin-top: 2rem;
-
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 6rem;
-    height: 5rem;
-    border: 2px solid blue;
-    .menu-btn__burger {
-      &::after,
-      &::before {
-        content: '';
-        position: absolute;
-        width: 3rem;
-        height: 0.4rem;
-        border-radius: 4px;
-        background-color: $muji-cover;
-        transition: all 0.4s ease-in-out;
+    .left-arrow {
+      .link-a {
+        color: $muji-cover;
+        &:hover {
+          color: $muji-cover;
+        }
       }
-      &::after {
-        transform: translateY(-0.8rem);
-      }
-      &::before {
-        transform: translateY(0.8rem);
+      &:hover {
+        .hc-logo {
+          fill: $font-linked-color;
+        }
       }
     }
-  }
-  //// ANIMATION HAMBU
-  .menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg);
-  }
-  .menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg);
+    ////// HAMBURGER /////
+    .menu-btn {
+      z-index: 99;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      // margin: 2rem;
+      margin-right: 4rem;
+      margin-top: 2rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 6rem;
+      height: 5rem;
+      border: 2px solid blue;
+      .menu-btn__burger {
+        &::after,
+        &::before {
+          content: '';
+          position: absolute;
+          width: 3rem;
+          height: 0.4rem;
+          border-radius: 4px;
+          background-color: $muji-cover;
+          transition: all 0.4s ease-in-out;
+        }
+        &::after {
+          transform: translateY(-0.8rem);
+        }
+        &::before {
+          transform: translateY(0.8rem);
+        }
+      }
+    }
+    //// ANIMATION HAMBU
+    .menu-btn.open .menu-btn__burger::before {
+      transform: rotate(45deg);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+      transform: rotate(-45deg);
+    }
   }
 
   header {
