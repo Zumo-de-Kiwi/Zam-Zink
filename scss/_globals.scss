@@ -50,9 +50,7 @@ body {
   font-family: $ff-recursive;
   font-variation-settings: $MONO, $CASL, 'wght' $font-weight-normal,
     'slnt' $slnt;
-  /*Typographic tweaks!
-  Add accessible line-height
-   Improve text rendering*/
+  // Typographic tweaks!Add accessible line-height Improve text rendering
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   //line-height: 1.5; //https://www.joshwcomeau.com/css/custom-css-reset/
@@ -76,10 +74,16 @@ body {
     height: 5rem;
     position: absolute;
     top: 2rem;
+    @media (max-width: 768px) {
+      top: 1rem;
+    }
     left: 2rem;
     .link-a {
       color: $font-sutil-gray-color;
       font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-light;
+      @media (max-width: 768px) {
+        font-variation-settings: 'CASL' 1, 'wght' $font-weight-light;
+      }
       text-decoration: none;
 
       padding-left: 1rem;
@@ -90,7 +94,6 @@ body {
         font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-light;
         color: $font-sutil-gray-color;
         cursor: $cursor-arrow-hand;
-        // display: relative;
       }
       #left-arrow {
         // margin: 2rem;
@@ -99,6 +102,9 @@ body {
       }
     }
     .logo-frame {
+      @media (max-width: 768px) {
+        display: none;
+      }
       transition: $trans-normal ease-out;
       position: relative;
       left: 4.5rem;
@@ -115,13 +121,59 @@ body {
       .logo-frame {
         left: 5.5rem;
         .hc-logo {
-          fill: rgb(109, 96, 252);
-          // fill: transparent;
+          fill: $blue-purple-tech;
         }
       }
     }
   }
 
+  // HAMBURGUER
+  .menu-btn {
+    @media (min-width: 768px) {
+      display: none;
+    }
+    z-index: 19;
+    position: absolute;
+    top: 0.5rem;
+
+    right: 0px;
+    margin-right: 3rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 5rem;
+    // border: 2px solid blue;
+    .menu-btn__burger {
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        width: 2.6rem;
+        height: 0.35rem;
+        border-radius: 4px;
+        background-color: $font-black;
+        transition: all 0.4s ease-in-out;
+      }
+      &::after {
+        transform: translateY(-0.7rem);
+      }
+      &::before {
+        transform: translateY(0.7rem);
+      }
+    }
+  }
+  //// ANIMATION HAMBU
+  .menu-btn.open {
+    .menu-btn__burger::before {
+      transform: rotate(45deg);
+    }
+    .menu-btn__burger::after {
+      transform: rotate(-45deg);
+    }
+  }
   // REMOVE LIST STYLE
   ul {
     list-style: none;

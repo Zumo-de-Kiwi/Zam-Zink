@@ -54,17 +54,16 @@ body {
       li {
         display: inline-block;
         font-size: $font-size-big;
-        font-variation-settings: $MONO, 'CASL' 0, 'wght' $font-weight-normal,
+        font-variation-settings: $MONO, 'CASL' 0.1, 'wght' $font-weight-normal,
           $slnt;
 
         a {
-          // margin: 1rem;
-          // padding: calc(0.4vh + 3px);
           padding: 0.5rem;
-          transition: $trans-slow;
           color: $font-sutil-gray-color;
           text-decoration: none;
           cursor: $cursor-arrow-hand;
+
+          transition: $trans-slow;
           &:hover {
             color: $sutil-dark-purple-gray-color;
           }
@@ -83,7 +82,6 @@ body {
 
   .content_wrap {
     grid-column: 2;
-
     display: grid;
 
     ///////// Hi, I am Héctor /////////
@@ -106,25 +104,20 @@ body {
       }
 
       .complete-name {
-        color: $sutil-dark-purple-gray-color; //$font-linked-color;
+        color: $sutil-dark-purple-gray-color;
         cursor: $cursor-please-fingers;
         text-decoration: none;
-
-        .first-name {
+        .first-name,
+        .family-name {
           position: relative;
-          // Hector and underline animation
-          transition: $trans-slow ease;
-          // transition-delay: $delay-normal;
-          will-change: transform;
-
           text-decoration: underline;
-          text-decoration-color: $light-gray;
+          text-decoration-color: $font-sutil-gray-color;
+
+          transition: $trans-slow ease;
+          will-change: transition;
           &::after {
-            content: 'about me ⤴️';
             font-size: $font-size-small;
             color: $transparent;
-            font-variation-settings: 'MONO' 0.6, 'CASL' 0,
-              'wght' $font-weight-light;
 
             position: absolute;
             text-align: center;
@@ -138,9 +131,6 @@ body {
             will-change: transform;
           }
           &:hover {
-            // color: $font-linked-hover-color;
-            font-variation-settings: $MONO, 'CASL' 1, 'wght' $font-weight-bolder,
-              $slnt;
             text-decoration-color: $spotify-text-green;
             color: $font-linked-color;
             &::after {
@@ -149,43 +139,22 @@ body {
             }
           }
         }
-
-        .family-name {
-          position: relative;
-          // Cortes and underline animation
-          transition: $trans-slow ease;
-          transition-delay: $delay-fast;
-          text-decoration: underline;
-          text-decoration-color: $light-gray;
-
+        .first-name {
           &::after {
-            content: 'contact ⤴️';
-            font-size: $font-size-small;
-            color: $transparent;
-            font-variation-settings: 'MONO' 0.6, 'CASL' 0,
-              'wght' $font-weight-light;
-
-            position: absolute;
-            text-align: center;
-            bottom: -1rem;
-            width: 100%;
-            height: 0;
-            left: 0;
-
-            transition: $trans-slow;
-            transition-delay: $delay-fast;
-            will-change: transform;
+            content: 'about me ⤴️';
           }
           &:hover {
-            color: $font-linked-color;
-            // color: $font-linked-hover-color;
-            font-variation-settings: $MONO, 'CASL' 0, 'wght' $font-weight-bolder,
+            font-variation-settings: $MONO, 'CASL' 1, 'wght' $font-weight-bolder,
               $slnt;
-            text-decoration-color: $spotify-text-green;
-            &::after {
-              color: $underline-color;
-              transform: translateY(-0.3rem);
-            }
+          }
+        }
+        .family-name {
+          &::after {
+            content: 'contact ⤴️';
+          }
+          &:hover {
+            font-variation-settings: $MONO, 'CASL' 0.1,
+              'wght' $font-weight-bolder, $slnt;
           }
         }
       }
@@ -210,15 +179,15 @@ body {
         position: relative;
 
         color: $font-linked-color;
-        font-variation-settings: 'MONO' 0.2, 'CASL' 0,
+        font-variation-settings: 'MONO' 0.2, 'CASL' 0.1,
           'wght' $font-weight-normal, $slnt;
-        transition: 0.3s;
+        transition: 0.5s ease-out;
 
         text-decoration-color: $underline-color;
         cursor: $cursor-please-fingers;
         &:hover {
           // color: $font-linked-hover-color;
-          font-variation-settings: 'MONO' 0.2, 'CASL' 0.8,
+          font-variation-settings: 'MONO' 0.2, 'CASL' 0.6,
             'wght' $font-weight-bolder, $slnt;
           text-decoration-color: $font-linked-color;
         }
@@ -422,14 +391,11 @@ footer {
 @media (min-width: 320px) {
   .main {
     .content_wrap {
-      // padding-bottom: 7vh;
       margin-top: 4vh;
       padding-left: 5vw;
       padding-right: 5vw;
       .content-name {
-        // padding-top: 8vh;
         padding-bottom: 5vh;
-        // margin-bottom: 2vh;
         text-align: left;
       }
     }
@@ -442,9 +408,7 @@ footer {
     padding-left: 7vw;
     padding-right: 6vw;
     .content-name {
-      // padding-top: 8vh;
       padding-bottom: 7vh;
-      // margin-bottom: 2vh;
       text-align: left;
     }
   }
@@ -453,7 +417,6 @@ footer {
 @media (min-width: 768px) {
   .main {
     .content_wrap {
-      // padding-bottom: 17vh;
       margin-top: 17vh;
       // padding-top: 13vh; //need to change
       padding-left: 7vw;
