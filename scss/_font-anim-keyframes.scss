@@ -117,6 +117,17 @@
   }
 }
 
+@keyframes navbarAppears {
+  from {
+    transform: translateX(5rem);
+    opacity: 20%;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 100%;
+  }
+}
+
 // X-axis rotate
 // @keyframes twist-up {
 //   to {

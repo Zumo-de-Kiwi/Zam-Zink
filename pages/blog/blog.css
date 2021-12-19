@@ -108,6 +108,7 @@ body .left-arrow .link-a:hover {
 body .left-arrow .link-a #left-arrow {
   transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  transition: 0.2s;
 }
 
 body .left-arrow .logo-frame {
@@ -141,9 +142,11 @@ body .left-arrow:hover .logo-frame .hc-logo {
 }
 
 body .menu-btn {
-  z-index: 19;
-  position: absolute;
+  z-index: 39;
+  position: fixed;
   top: 0.5rem;
+  width: 100%;
+  height: 10rem;
   right: 0px;
   margin-right: 3rem;
   padding: 1rem;
@@ -283,8 +286,54 @@ body #trampolineEmoji:active {
   display: none;
 }
 
+.anim-hidden {
+  animation: animHidden 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes animHidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
 .show {
   display: block;
+}
+
+.visuallyHidden {
+  opacity: 0;
+}
+
+.anim-show {
+  animation: showHidden 0.4s ease-out forwards;
+  display: block;
+  opacity: 1;
+}
+
+@keyframes showHidden {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    display: block;
+  }
+}
+
+.overlay-background {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
 }
 
 @keyframes spin {
@@ -392,6 +441,17 @@ body #trampolineEmoji:active {
 @keyframes goLeft {
   to {
     transform: translateX(-0.6rem);
+  }
+}
+
+@keyframes navbarAppears {
+  from {
+    transform: translateX(5rem);
+    opacity: 20%;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 100%;
   }
 }
 

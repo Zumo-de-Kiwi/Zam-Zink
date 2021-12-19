@@ -28,11 +28,12 @@ body {
     }
   }
   .absolute-nav {
-    position: sticky;
+    position: fixed;
     top: 0rem;
     z-index: 19;
     display: flex;
     align-items: center;
+
     .left-arrow {
       // //mobile
       // top: 1rem; //desktop is 2rem;
@@ -58,45 +59,41 @@ body {
   }
 
   header {
-    background-color: $my-paper-color;
+    background-color: rgb(245, 243, 230);
+    z-index: 18;
     #draw-types {
       width: 100%;
-      min-height: 5rem;
-      background-color: rgb(245, 243, 230);
-
       display: flex;
+      // display: none;
       justify-content: center;
-
       ul {
         max-width: 1200px;
         display: flex;
         flex-wrap: wrap; //can be deleted when do the mobile responsive
         justify-content: space-between;
-        height: 6rem;
-        line-height: 6rem;
-        //mobile
-        @media (max-width: 768px) {
-          display: none;
-          flex-direction: column;
-        }
+
+        align-items: flex-end;
         li {
           font-size: 1.8rem;
           list-style: none;
-          // margin: 1rem;
+
+          line-height: 5.4rem;
           .li-wrapper {
-            //div
-            padding: 1rem;
             position: relative;
             display: flex;
             align-items: center;
             a {
+              // z-index: 29;
               position: relative;
               color: $muji-cover;
               text-decoration: none;
+              font-size: 2.1rem;
               font-variation-settings: 'wght' $font-weight-light;
-              padding: 1rem;
+              padding: 2rem;
+              padding-bottom: 0rem;
               transition: $trans-normal;
               svg {
+                z-index: 19;
                 position: absolute;
                 display: block;
                 left: 0px;
@@ -111,8 +108,9 @@ body {
               }
               svg {
                 .path {
-                  animation: dash 0.8s cubic-bezier(0.27, 0.22, 0.44, 1.03) 1
-                    0.3s;
+                  animation: dash 0.8s
+                    cubic-bezier(0.27, 0.22, 0.44, forwards 1.03) 1 0.3s;
+                  will-change: transform;
                 }
                 @keyframes dash {
                   to {
@@ -123,11 +121,6 @@ body {
             }
           }
         }
-        // mobile
-        // svg {
-        //   display: none;
-        // }
-        //desktop
         #noodlesTab {
           //87px
           .path {
@@ -136,7 +129,7 @@ body {
           }
           &:hover {
             .path {
-              animation: dash 1.3s linear infinite;
+              animation: dash 1.3s linear infinite forwards;
             }
           }
         }
@@ -148,7 +141,7 @@ body {
           }
           &:hover {
             .path {
-              animation: dash 1s;
+              animation: dash 1s forwards;
             }
           }
         }
@@ -159,7 +152,7 @@ body {
           }
           &:hover {
             .path {
-              animation: dash 0.9s ease-out 2 0.4s;
+              animation: dash 0.9s ease-out 2 0.4s forwards;
             }
           }
         }
@@ -171,7 +164,7 @@ body {
           }
           &:hover {
             .path {
-              animation: dash 0.85s linear 2;
+              animation: dash 0.85s linear 2 forwards;
             }
           }
         }
@@ -183,7 +176,7 @@ body {
           }
           &:hover {
             .path {
-              animation: dash 1.3s linear;
+              animation: dash 1.3s linear forwards;
             }
           }
         }
@@ -195,7 +188,60 @@ body {
           }
           &:hover {
             .path {
-              animation: dash 1s linear 3 0.3s;
+              animation: dash 1s linear 3 0.3s forwards;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
+      z-index: 18;
+      position: fixed;
+      top: 0vh;
+      height: 41rem;
+
+      width: 100vw;
+      overflow: hidden;
+      background-color: rgba(245, 243, 230, 0.93);
+      #draw-types {
+        ul {
+          width: 100vw;
+          margin-top: 5rem;
+          margin-right: 7rem;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          flex-direction: column;
+          animation: navbarAppears 0.35s ease-out 0.1s forwards;
+          // transform: translateX(10rem);
+          opacity: 0%;
+          li {
+            font-size: 1.8rem;
+            list-style: none;
+            line-height: 4rem;
+            .li-wrapper {
+              //div
+              padding: 0rem;
+              padding-bottom: 0rem;
+              position: relative;
+              display: flex;
+              align-items: center;
+              a {
+                z-index: 18;
+                font-size: 2.3rem;
+                font-variation-settings: 'CASL' 0.3, 'wght' $font-weight-light; ///or normal
+                padding: 1.2rem;
+                padding-bottom: 0rem;
+                svg {
+                  display: none;
+                }
+              }
+              &:hover {
+                .path {
+                  animation: none;
+                }
+              }
             }
           }
         }
@@ -242,7 +288,7 @@ body {
         position: sticky;
         z-index: 2;
         background-color: $my-paper-color;
-        padding: 1.5rem;
+        padding: 1.7rem;
         text-align: center;
         font-size: 2.5rem;
         color: rgb(106, 102, 94);

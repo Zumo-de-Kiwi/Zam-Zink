@@ -3,18 +3,53 @@
 // var length = path.getTotalLength();
 // console.log(length);
 
-// HAMBURGER BTN /////
+/////////// HAMBURGER BTN /////
 const menuBtn = document.querySelector('.menu-btn');
+// const navBar = document.querySelector('#draw-types');
+const navBar = document.querySelector('.header');
+const main = document.querySelector('.main');
+// const leftArrow = document.querySelector('.left-arrow');
+
 let menuOpen = false;
-menuBtn.addEventListener('click', () => {
+const closeOrOpenNav = function () {
   if (!menuOpen) {
+    leftArrow.classList.add('anim-hidden');
     menuBtn.classList.add('open');
+    navBar.classList.add('anim-show');
     menuOpen = true;
   } else {
+    leftArrow.classList.remove('anim-hidden');
     menuBtn.classList.remove('open');
+    navBar.classList.remove('anim-show');
+    // navBar.classList.add('anim-hidden');
     menuOpen = false;
   }
-});
+};
+const closeNav = function () {
+  leftArrow.classList.remove('anim-hidden');
+  menuBtn.classList.remove('open');
+  navBar.classList.remove('anim-show');
+  // navBar.classList.add('anim-hidden');
+};
+menuBtn.addEventListener('click', closeOrOpenNav);
+main.addEventListener('click', closeNav);
+
+// menuBtn.addEventListener('click', () => {
+//   if (!menuOpen) {
+//     leftArrow.classList.add('anim-hidden');
+//     menuBtn.classList.add('open');
+//     // menuBtn.classList.add('overlay-background');
+//     navBar.classList.add('show');
+
+//     menuOpen = true;
+//   } else {
+//     leftArrow.classList.remove('anim-hidden');
+//     menuBtn.classList.remove('open');
+//     navBar.classList.remove('show');
+//     // menuBtn.classList.remove('overlay-background');
+//     menuOpen = false;
+//   }
+// });
 
 //// go to different sections of the page ////////
 const noodles = document.querySelector('#noodlesTab');
