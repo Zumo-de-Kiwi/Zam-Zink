@@ -34,23 +34,6 @@ const closeNav = function () {
 menuBtn.addEventListener('click', closeOrOpenNav);
 main.addEventListener('click', closeNav);
 
-// menuBtn.addEventListener('click', () => {
-//   if (!menuOpen) {
-//     leftArrow.classList.add('anim-hidden');
-//     menuBtn.classList.add('open');
-//     // menuBtn.classList.add('overlay-background');
-//     navBar.classList.add('show');
-
-//     menuOpen = true;
-//   } else {
-//     leftArrow.classList.remove('anim-hidden');
-//     menuBtn.classList.remove('open');
-//     navBar.classList.remove('show');
-//     // menuBtn.classList.remove('overlay-background');
-//     menuOpen = false;
-//   }
-// });
-
 //// go to different sections of the page ////////
 const noodles = document.querySelector('#noodlesTab');
 const cafe = document.querySelector('#cafeTab');
@@ -83,6 +66,14 @@ arch.addEventListener('click', function () {
 });
 random.addEventListener('click', function () {
   randomSec.scrollIntoView({ behavior: 'smooth' });
+});
+// Smoth scrolling to a section
+const btnScroll = document.querySelector('.toTopBtn');
+// const btnScrollTo = document.querySelector('.toTopBtn');
+// const leftArrow = document.querySelector('.left-arrow');
+btnScroll.addEventListener('click', function (e) {
+  main.scrollIntoView({ behavior: 'smooth' });
+  // console.log(btnScrollTo, leftArrow);
 });
 
 //////// backup

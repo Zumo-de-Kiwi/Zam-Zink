@@ -115,7 +115,8 @@ body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
   left: 4.5rem;
-  top: -4rem;
+  top: -4.2rem;
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
@@ -203,31 +204,54 @@ body a:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
-body #trampolineEmoji {
-  position: sticky;
+body #trampolin-wrapper {
+  position: fixed;
+  height: 90%;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  overflow: hidden;
+}
+
+body #trampolin-wrapper #trampolineEmoji {
+  position: fixed;
   /* Fixed/sticky position */
-  bottom: 3rem;
+  overflow: hidden;
+  bottom: 2.3rem;
   /* Place the button at the bottom of the page */
-  right: 4rem;
-  /* Place the button 30px from the */
-  z-index: 9;
+  right: 1rem;
+  z-index: 18;
   /* Make sure it does not overlap */
+  text-align: center;
   text-decoration: none;
-  padding: 15px;
+  padding: 2rem;
   /* Some padding */
-  font-size: calc(0.5vw + 0.4vw + 30px);
-  /* Increase font size */
+  font-size: 3.3rem;
   transition: 0.15s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
-body #trampolineEmoji:hover {
-  transform: scale(1.1);
+@media (max-width: 768px) {
+  body #trampolin-wrapper #trampolineEmoji {
+    bottom: 1rem;
+    right: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body #trampolin-wrapper #trampolineEmoji {
+    font-size: 2.3rem;
+  }
+}
+
+body #trampolin-wrapper #trampolineEmoji:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
 
-body #trampolineEmoji:active {
-  transform: scale(0.9);
+body #trampolin-wrapper #trampolineEmoji:active {
   transform: translateY(0.2rem);
 }
 
@@ -305,10 +329,6 @@ body #trampolineEmoji:active {
   display: block;
 }
 
-.visuallyHidden {
-  opacity: 0;
-}
-
 .anim-show {
   animation: showHidden 0.4s ease-out forwards;
   display: block;
@@ -325,15 +345,6 @@ body #trampolineEmoji:active {
   100% {
     display: block;
   }
-}
-
-.overlay-background {
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
 }
 
 @keyframes spin {
@@ -557,8 +568,10 @@ body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burge
 }
 
 body header {
-  background-color: #f5f3e6;
   z-index: 18;
+  position: fixed;
+  top: 0rem;
+  width: 100%;
 }
 
 body header #draw-types {
@@ -570,7 +583,6 @@ body header #draw-types {
 body header #draw-types ul {
   max-width: 1200px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -578,7 +590,7 @@ body header #draw-types ul {
 body header #draw-types ul li {
   font-size: 1.8rem;
   list-style: none;
-  line-height: 5.4rem;
+  line-height: 5rem;
 }
 
 body header #draw-types ul li .li-wrapper {
@@ -591,7 +603,7 @@ body header #draw-types ul li .li-wrapper a {
   position: relative;
   color: #3e3d3c;
   text-decoration: none;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-variation-settings: "wght" 500;
   padding: 2rem;
   padding-bottom: 0rem;
@@ -728,7 +740,6 @@ body header #draw-types ul #randomTab:hover .path {
 
 body main {
   background: #eeebe7;
-  height: 600vh;
   position: relative;
   display: grid;
 }
@@ -767,7 +778,7 @@ body main #drawSections .title {
   text-align: center;
   font-size: 2.5rem;
   color: #6a665e;
-  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" 0;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500, "slnt" 0;
 }
 
 body main #drawSections .titleSign {
@@ -923,7 +934,7 @@ body main #drawSections #randomDraws #penguin-banera {
 body main #drawSections #randomDraws #korean {
   grid-column: 1/ 4;
   grid-row: 5;
-  padding-top: 19rem;
+  padding-top: 45rem;
   padding-left: 1rem;
   padding-right: 0.6rem;
   padding-bottom: 5rem;
@@ -982,37 +993,237 @@ body main #drawSections #randomDraws #fin2 {
   padding-bottom: 9rem;
 }
 
-body main #trampolin-wrapper {
-  position: absolute;
-  height: 90%;
-  width: 3%;
-  right: 0px;
-  bottom: 270px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: right;
-  overflow: hidden;
-}
-
-body main #trampolin-wrapper #trampolineEmoji {
-  position: sticky;
-  align-self: flex-end;
-  z-index: 9;
-  text-decoration: none;
-  padding: 3rem;
-  font-size: calc(0.5vw + 0.4vw + 30px);
-  transition: 0.15s;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
-}
-
-body main #trampolin-wrapper #trampolineEmoji:hover {
-  transform: scale(1.1);
-  transform: translateY(-0.2rem);
-}
-
-body main #trampolin-wrapper #trampolineEmoji:active {
-  transform: scale(0.9);
-  transform: translateY(0.3rem);
+@media (min-width: 768px) {
+  body main h1 {
+    padding: 10rem;
+    padding-top: 17rem;
+    font-size: 3.7rem;
+  }
+  body main #drawSections {
+    grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(7%, 1fr);
+  }
+  body main #drawSections .title {
+    padding: 1.5rem;
+    padding-top: 8rem;
+    font-size: 2.5rem;
+    color: #aeaaa4;
+    font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" 0;
+  }
+  body main #drawSections .titleSign {
+    display: none;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    color: #5b5448;
+    font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0;
+  }
+  body main #drawSections #noodlesDraws picture {
+    grid-column: 1/ 4;
+  }
+  body main #drawSections #noodlesDraws #hidro {
+    place-self: center;
+    padding-top: 5vh;
+    padding-left: calc(5vw + 15rem);
+    padding-right: calc(5vw + 15rem);
+  }
+  body main #drawSections #noodlesDraws #pistola {
+    padding-top: 7vh;
+    padding-left: calc(5vw + 5rem);
+    padding-right: calc(5vw + 5rem);
+    padding-bottom: 13vh;
+  }
+  body main #drawSections #noodlesDraws #lin-club {
+    padding-left: calc(5vw + 7rem);
+    padding-right: calc(5vw + 7rem);
+    padding-bottom: 0vh;
+  }
+  body main #drawSections #noodlesDraws #flora-color {
+    padding-top: 23rem;
+    padding-left: calc(5vw + 15rem);
+    padding-right: calc(5vw + 15rem);
+    padding-bottom: 23rem;
+  }
+  body main #drawSections #noodlesDraws #election-draw {
+    padding-left: calc(5vw + 10rem);
+    padding-right: calc(5vw + 10rem);
+    padding-bottom: 23rem;
+  }
+  body main #drawSections #noodlesDraws #mr-cakebeef {
+    padding-left: calc(3vw + 7rem);
+    padding-right: calc(3vw + 17rem);
+    grid-column: 1 /3;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  body main #drawSections #noodlesDraws #tijera-black {
+    padding-left: calc(5vw + 17rem);
+    grid-column: 2 /4;
+  }
+  body main #drawSections #cafeDraws picture {
+    padding: 7rem;
+    padding-bottom: 15vh;
+  }
+  body main #drawSections #dodoDraws {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body main #drawSections #dodoDraws picture,
+  body main #drawSections #dodoDraws .title {
+    grid-column: 2;
+  }
+  body main #drawSections #dodoDraws .title {
+    grid-row: 1 /4;
+    height: 12rem;
+    min-width: 1000px;
+  }
+  body main #drawSections #dodoDraws #dodo-fapiaou {
+    grid-column: 1/ 4;
+    grid-row: 2;
+    padding-left: calc(5vw + 26rem);
+    padding-right: calc(5vw + 26rem);
+    padding-bottom: 10rem;
+  }
+  body main #drawSections #dodoDraws #ropa-dodo {
+    grid-column: 1/ 3;
+    grid-row: 3;
+    padding-left: calc(2vw + 5rem);
+    padding-right: calc(10vw + 31rem);
+    padding-bottom: 4rem;
+  }
+  body main #drawSections #dodoDraws #magnet-dodo {
+    grid-column: 1/ 3;
+    grid-row: 4;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 8rem;
+  }
+  body main #drawSections #dodoDraws #mosquito-dodo {
+    grid-column: 1/ 3;
+    grid-row: 5;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 8rem;
+  }
+  body main #drawSections #dodoDraws #dodo-kagaroo {
+    grid-column: 1/ 3;
+    grid-row: 6;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10rem;
+  }
+  body main #drawSections #dodoDraws #dodo-revolution {
+    grid-column: 1/ 3;
+    grid-row: 6;
+    padding-bottom: 8rem;
+    display: none;
+  }
+  body main #drawSections #dodoDraws #dodo-ojo {
+    grid-column: 1/ 3;
+    grid-row: 7;
+    padding-left: 10vw;
+    padding-right: 12vw;
+    padding-bottom: 10rem;
+  }
+  body main #drawSections #sketchDraws #zodiac-blue-red {
+    padding-left: 2rem;
+  }
+  body main #drawSections #sketchDraws #sketch-diario-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+  }
+  body main #drawSections #sketchDraws #rus-sketch {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body main #drawSections #sketchDraws #manga {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+  body main #drawSections #randomDraws {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+  }
+  body main #drawSections #randomDraws .title {
+    grid-column: 1 /4;
+    grid-row: 1;
+  }
+  body main #drawSections #randomDraws #pato-gato {
+    grid-column: 3;
+    grid-row: 2;
+    padding-top: 19vh;
+    padding-bottom: 4.5rem;
+    padding-left: 1rem;
+  }
+  body main #drawSections #randomDraws #ancient-spanish {
+    grid-column: 1/ 3;
+    grid-row: 3/ 5;
+    padding-left: 10vw;
+    padding-bottom: 5rem;
+  }
+  body main #drawSections #randomDraws #penguin-banera {
+    grid-column: 1/ 4;
+    grid-row: 5;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    padding-bottom: 22vh;
+  }
+  body main #drawSections #randomDraws #korean {
+    grid-column: 1/ 4;
+    grid-row: 5;
+    padding-top: 45rem;
+    padding-left: 1rem;
+    padding-right: 0.6rem;
+    padding-bottom: 5rem;
+  }
+  body main #drawSections #randomDraws #citron-girl {
+    grid-column: 2/ 4;
+    grid-row: 6;
+    padding-left: 13vw;
+    padding-right: 1vw;
+    padding-bottom: 22vh;
+  }
+  body main #drawSections #randomDraws #cat-arrow {
+    grid-column: 1/ 3;
+    grid-row: 6;
+    padding-top: 14rem;
+    padding-right: 12vw;
+    padding-left: 2vw;
+    padding-bottom: 9vh;
+  }
+  body main #drawSections #randomDraws #beer-coleta {
+    grid-column: 1/ 4;
+    grid-row: 8;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 16rem;
+  }
+  body main #drawSections #randomDraws #fin1 {
+    grid-column: 1/ 4;
+    grid-row: 10;
+    text-align: center;
+    color: #f4b5c2;
+    font-weight: 400;
+    font-size: 2.3rem;
+    padding-bottom: 11rem;
+  }
+  body main #drawSections #randomDraws #rabbit {
+    grid-column: 2;
+    grid-row: 11;
+    padding-bottom: 11rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  body main #drawSections #randomDraws #fin2 {
+    grid-column: 1/ 4;
+    grid-row: 12;
+    text-align: center;
+    color: #85c288;
+    font-weight: 400;
+    font-size: 2.3rem;
+    padding-bottom: 9rem;
+  }
 }
 
 body #footer {
@@ -1024,10 +1235,6 @@ body #footer {
   background: #85c288;
   display: grid;
   grid-template-columns: 1fr 360px 1fr;
-}
-
-body #footer #placa {
-  display: none;
 }
 
 body #footer #wrapper {
@@ -1086,4 +1293,47 @@ body #footer #wrapper #prevPrj:hover #Larrow {
 
 body #footer #wrapper #prevPrj:active #Larrow {
   margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  body #footer {
+    height: 40vh;
+  }
+  body #footer #wrapper {
+    grid-column: 1/ 4;
+    justify-content: center;
+    grid-template-rows: 1fr 4rem 4rem 1fr;
+  }
+  body #footer #wrapper .morePrj {
+    font-size: 2rem;
+    align-self: center;
+    transition: 0.3s;
+  }
+  body #footer #wrapper .morePrj:hover {
+    text-decoration-color: white;
+  }
+  body #footer #wrapper .morePrj:active {
+    text-decoration-color: white;
+  }
+  body #footer #wrapper #nextPrj {
+    grid-row: 2;
+    justify-self: start;
+    margin-left: 0rem;
+  }
+  body #footer #wrapper #nextPrj:hover #Rarrow {
+    margin-left: 1rem;
+  }
+  body #footer #wrapper #nextPrj:active #Rarrow {
+    margin-left: 1rem;
+  }
+  body #footer #wrapper #prevPrj {
+    grid-row: 3;
+    margin-right: 0rem;
+  }
+  body #footer #wrapper #prevPrj:hover #Larrow {
+    margin-right: 1rem;
+  }
+  body #footer #wrapper #prevPrj:active #Larrow {
+    margin-right: 1rem;
+  }
 }

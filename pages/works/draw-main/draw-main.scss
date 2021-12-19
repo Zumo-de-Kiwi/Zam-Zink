@@ -59,17 +59,19 @@ body {
   }
 
   header {
-    background-color: rgb(245, 243, 230);
+    // background-color: rgb(245, 243, 230);
     z-index: 18;
+    position: fixed;
+    top: 0rem;
+    width: 100%;
     #draw-types {
       width: 100%;
       display: flex;
-      // display: none;
       justify-content: center;
       ul {
         max-width: 1200px;
         display: flex;
-        flex-wrap: wrap; //can be deleted when do the mobile responsive
+        // flex-wrap: wrap; //can be deleted when do the mobile responsive
         justify-content: space-between;
 
         align-items: flex-end;
@@ -77,7 +79,7 @@ body {
           font-size: 1.8rem;
           list-style: none;
 
-          line-height: 5.4rem;
+          line-height: 5rem;
           .li-wrapper {
             position: relative;
             display: flex;
@@ -87,7 +89,7 @@ body {
               position: relative;
               color: $muji-cover;
               text-decoration: none;
-              font-size: 2.1rem;
+              font-size: 2rem;
               font-variation-settings: 'wght' $font-weight-light;
               padding: 2rem;
               padding-bottom: 0rem;
@@ -251,7 +253,7 @@ body {
 
   main {
     background: $my-paper-color;
-    height: 600vh;
+    // height: 600vh;
     position: relative;
     display: grid;
     h1 {
@@ -292,8 +294,8 @@ body {
         text-align: center;
         font-size: 2.5rem;
         color: rgb(106, 102, 94);
-        font-variation-settings: 'MONO' 0, 'CASL' 0.3,
-          'wght' $font-weight-normal, $slnt;
+        font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-light,
+          $slnt;
       }
       .titleSign {
         display: none; //hidden
@@ -440,7 +442,7 @@ body {
         #korean {
           grid-column: 1/ 4;
           grid-row: 5;
-          padding-top: 19rem;
+          padding-top: 45rem;
           padding-left: 1rem;
           padding-right: 0.6rem;
           padding-bottom: 5rem;
@@ -496,37 +498,297 @@ body {
         }
       }
     }
+    @media (min-width: 768px) {
+      h1 {
+        padding: 10rem;
+        padding-top: 17rem;
+        font-size: 3.7rem;
+      }
+      #drawSections {
+        grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(
+            7%,
+            1fr
+          );
+        // gap: 1rem;
+        .drawSection {
+          // padding-bottom: 7rem;
+        }
+        .title {
+          // background-color: $my-paper-color;
+          padding: 1.5rem;
+          padding-top: 8rem;
+          font-size: 2.5rem;
+          color: rgb(174, 170, 164);
+          font-variation-settings: 'MONO' 0, 'CASL' 0.3,
+            'wght' $font-weight-normal, $slnt;
+        }
+        .titleSign {
+          display: none; //hidden
+          padding: 1.5rem;
+          text-align: center;
+          width: 100%;
+          color: rgb(91, 84, 72);
+          font-variation-settings: 'MONO' 1, 'CASL' 1,
+            'wght' $font-weight-lighter, $slnt;
+        }
+
+        #noodlesDraws {
+          picture {
+            grid-column: 1/ 4;
+          }
+
+          #hidro {
+            place-self: center;
+            padding-top: 5vh;
+            padding-left: calc(5vw + 15rem);
+            padding-right: calc(5vw + 15rem);
+          }
+          #pistola {
+            padding-top: 7vh;
+            padding-left: calc(5vw + 5rem);
+            padding-right: calc(5vw + 5rem);
+            padding-bottom: 13vh;
+          }
+          #lin-club {
+            padding-left: calc(5vw + 7rem);
+            padding-right: calc(5vw + 7rem);
+            padding-bottom: 0vh;
+          }
+          #flora-color {
+            padding-top: 23rem;
+            padding-left: calc(5vw + 15rem);
+            padding-right: calc(5vw + 15rem);
+            padding-bottom: 23rem;
+          }
+          #election-draw {
+            padding-left: calc(5vw + 10rem);
+            padding-right: calc(5vw + 10rem);
+            padding-bottom: 23rem;
+          }
+          #mr-cakebeef {
+            padding-left: calc(3vw + 7rem);
+            padding-right: calc(3vw + 17rem);
+            grid-column: 1 /3;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+          }
+          #tijera-black {
+            padding-left: calc(5vw + 17rem);
+            grid-column: 2 /4;
+            // padding-bottom: 0rem;
+          }
+        }
+        #cafeDraws {
+          picture {
+            padding: 7rem;
+            padding-bottom: 15vh;
+          }
+          #cafe-two-woman {
+          }
+        }
+        #dodoDraws {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          picture,
+          .title {
+            grid-column: 2;
+          }
+          .title {
+            grid-row: 1 /4;
+            height: 12rem;
+            // max-width: vw;
+            min-width: 1000px;
+          }
+          #dodo-fapiaou {
+            grid-column: 1/ 4;
+            grid-row: 2;
+            // padding-top: 30rem;
+            padding-left: calc(5vw + 26rem);
+            padding-right: calc(5vw + 26rem);
+            padding-bottom: 10rem;
+          }
+          #ropa-dodo {
+            grid-column: 1/ 3;
+            grid-row: 3;
+            padding-left: calc(2vw + 5rem);
+            padding-right: calc(10vw + 31rem);
+            padding-bottom: 4rem;
+          }
+          #magnet-dodo {
+            grid-column: 1/ 3;
+            grid-row: 4;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            padding-bottom: 8rem;
+          }
+          #mosquito-dodo {
+            grid-column: 1/ 3;
+            grid-row: 5;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            padding-bottom: 8rem;
+          }
+          #dodo-kagaroo {
+            grid-column: 1/ 3;
+            grid-row: 6;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-bottom: 10rem;
+          }
+          #dodo-revolution {
+            grid-column: 1/ 3;
+            grid-row: 6;
+            padding-bottom: 8rem;
+            display: none;
+          }
+          #dodo-ojo {
+            grid-column: 1/ 3;
+            grid-row: 7;
+            padding-left: 10vw;
+            padding-right: 12vw;
+            padding-bottom: 10rem;
+          }
+        }
+        #sketchDraws {
+          #zodiac-blue-red {
+            padding-left: 2rem;
+          }
+          #sketch-diario-1 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 6rem;
+          }
+          #rus-sketch {
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+          #manga {
+            padding-left: 12vw;
+            padding-right: 12vw;
+          }
+        }
+        #archDraws {
+        }
+        #randomDraws {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          position: relative;
+          .title {
+            grid-column: 1 /4;
+            grid-row: 1;
+          }
+          #pato-gato {
+            grid-column: 3;
+            grid-row: 2;
+
+            padding-top: 19vh;
+            padding-bottom: 4.5rem;
+            padding-left: 1rem;
+          }
+          #ancient-spanish {
+            grid-column: 1/ 3;
+            grid-row: 3/ 5;
+            padding-left: 10vw;
+            padding-bottom: 5rem;
+          }
+          #penguin-banera {
+            grid-column: 1/ 4;
+            grid-row: 5;
+            padding-left: 0vw;
+            padding-right: 0vw;
+            padding-bottom: 22vh;
+          }
+          #korean {
+            grid-column: 1/ 4;
+            grid-row: 5;
+            padding-top: 45rem;
+            padding-left: 1rem;
+            padding-right: 0.6rem;
+            padding-bottom: 5rem;
+          }
+
+          #citron-girl {
+            grid-column: 2/ 4;
+            grid-row: 6;
+            padding-left: 13vw;
+            padding-right: 1vw;
+            padding-bottom: 22vh;
+          }
+          #cat-arrow {
+            grid-column: 1/ 3;
+            grid-row: 6;
+            padding-top: 14rem;
+            padding-right: 12vw;
+            padding-left: 2vw;
+            padding-bottom: 9vh;
+          }
+          #beer-coleta {
+            grid-column: 1/ 4;
+            grid-row: 8;
+            // padding-top: 14rem;
+            padding-right: 2vw;
+            padding-left: 2vw;
+            padding-bottom: 16rem;
+          }
+          #fin1 {
+            grid-column: 1/ 4;
+            grid-row: 10;
+            text-align: center;
+            color: rgb(244, 181, 194);
+            font-weight: 400;
+            font-size: 2.3rem;
+            padding-bottom: 11rem;
+          }
+          #rabbit {
+            grid-column: 2;
+            grid-row: 11;
+            padding-bottom: 11rem;
+            padding-left: 5vw;
+            padding-right: 5vw;
+          }
+          #fin2 {
+            grid-column: 1/ 4;
+            grid-row: 12;
+            text-align: center;
+            color: rgb(133, 194, 136);
+            font-weight: 400;
+            font-size: 2.3rem;
+            padding-bottom: 9rem;
+          }
+        }
+      }
+    }
 
     // don't appear on mobile
     #trampolin-wrapper {
-      position: absolute;
-      height: 90%;
-      width: 3%;
-      right: 0px;
-      bottom: 270px; // in desktop is 0px
-      display: flex;
-      align-items: flex-start;
-      justify-content: right;
-      overflow: hidden;
+      // position: fixed;
+      // height: 90%;
+      // width: 8rem;
+      // right: 0px;
+      // bottom: 0px; // in desktop is 0px
+      // display: flex;
+      // align-items: flex-end; //start
+      // justify-content: right;
+      // overflow: hidden;
       #trampolineEmoji {
-        position: sticky;
-        align-self: flex-end;
-        z-index: 9;
+        // position: sticky;
+        // align-self: flex-end;
+        // z-index: 9;
 
-        text-decoration: none;
-        padding: 3rem;
-        font-size: $font-size-huge;
-        transition: $trans-fast;
-        cursor: $cursor-pointer-hand-flip;
-        &:hover {
-          // cursor: $cursor-pointer-hand-flip;
-          transform: scale(1.1);
-          transform: translateY(-0.2rem);
-        }
-        &:active {
-          transform: scale(0.9);
-          transform: translateY(0.3rem);
-        }
+        // text-decoration: none;
+        // padding: 3rem;
+        // font-size: $font-size-huge;
+        // transition: $trans-fast;
+        // cursor: $cursor-pointer-hand-flip;
+        // &:hover {
+        //   // // cursor: $cursor-pointer-hand-flip;
+        //   // transform: scale(1.1);
+        //   // transform: translateY(-0.2rem);
+        // }
+        // &:active {
+        //   transform: scale(0.9);
+        //   transform: translateY(0.3rem);
+        // }
       }
     }
   }
@@ -536,15 +798,10 @@ body {
     height: 50vh;
     bottom: 0px;
     width: 100%;
-    // background: $muji-cover;
-    // background: rgb(244, 181, 194);
     background: rgb(133, 194, 136);
 
     display: grid;
     grid-template-columns: 1fr 360px 1fr;
-    #placa {
-      display: none;
-    }
     #wrapper {
       z-index: -1;
       grid-column: 2;
@@ -608,81 +865,65 @@ body {
       }
     }
   }
+
   // for desktop
-  // #footer {
-  //   z-index: -1;
-  //   position: sticky;
-  //   height: 60vh;
-  //   bottom: 0px;
-  //   width: 100%;
-  //   background: $muji-cover;
+  @media (min-width: 768px) {
+    #footer {
+      // position: sticky;
+      height: 40vh;
+      #wrapper {
+        // z-index: -1;
+        grid-column: 1/ 4;
 
-  //   display: grid;
-  //   grid-template-columns: 1fr 360px 1fr;
-  //   #placa {
-  //     display: none;
-  //   }
-  //   #wrapper {
-  //     z-index: -1;
-  //     grid-column: 2;
+        // display: grid;
+        justify-content: center;
+        // gap: 4rem;
+        grid-template-rows: 1fr 4rem 4rem 1fr;
+        // color: white;
+        .morePrj {
+          //a
+          font-size: 2rem;
+          align-self: center;
+          transition: $trans-normal;
 
-  //     display: grid;
-  //     justify-content: center;
-  //     gap: 4rem;
-  //     grid-template-rows: 1fr 4rem 4rem 1fr;
-  //     color: white;
+          &:hover {
+            text-decoration-color: white;
+          }
+          &:active {
+            text-decoration-color: white;
+          }
+        }
+        #nextPrj {
+          grid-row: 2;
+          justify-self: start;
+          margin-left: 0rem;
+          &:hover {
+            #Rarrow {
+              margin-left: 1rem;
+            }
+          }
+          &:active {
+            #Rarrow {
+              margin-left: 1rem;
+            }
+          }
+        }
+        #prevPrj {
+          grid-row: 3;
 
-  //     span {
-  //       transition: $trans-normal;
-  //       margin: 0.5rem;
-  //     }
-  //     .morePrj {
-  //       //a
-  //       z-index: -1;
-  //       text-decoration-color: transparent;
-
-  //       color: $my-paper-color;
-  //       font-size: 2.3rem;
-  //       align-self: center;
-  //       transition: $trans-normal;
-
-  //       &:hover {
-  //         text-decoration-color: white;
-  //       }
-  //       &:active {
-  //         text-decoration-color: white;
-  //       }
-  //     }
-  //     #nextPrj {
-  //       grid-row: 2;
-
-  //       margin-left: 0rem;
-  //       &:hover {
-  //         #Rarrow {
-  //           margin-left: 1rem;
-  //         }
-  //       }
-  //       &:active {
-  //         #Rarrow {
-  //           margin-left: 1rem;
-  //         }
-  //       }
-  //     }
-  //     #prevPrj {
-  //       grid-row: 3;
-
-  //       margin-right: 0rem;
-  //       &:hover {
-  //         #Larrow {
-  //           margin-right: 1rem;
-  //         }
-  //       }
-  //       &:active {
-  //         #Larrow {
-  //           margin-right: 1rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+          margin-right: 0rem;
+          &:hover {
+            #Larrow {
+              margin-right: 1rem;
+            }
+          }
+          &:active {
+            #Larrow {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }

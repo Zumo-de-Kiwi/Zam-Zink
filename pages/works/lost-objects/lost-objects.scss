@@ -148,33 +148,7 @@ body {
       }
       position: relative;
       #trampolin-wrapper {
-        position: absolute;
-        height: 90%;
-        width: 3%;
-        right: 0px;
-        bottom: 0px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: right;
         #trampolineEmoji {
-          position: sticky;
-          align-self: flex-end;
-          z-index: 9;
-
-          text-decoration: none;
-          padding: 3rem;
-          font-size: $font-size-huge;
-          transition: $trans-fast;
-          cursor: $cursor-pointer-hand-flip;
-          &:hover {
-            // cursor: $cursor-pointer-hand-flip;
-            transform: scale(1.1);
-            transform: translateY(-0.2rem);
-          }
-          &:active {
-            transform: scale(0.9);
-            transform: translateY(0.3rem);
-          }
         }
       }
       #div1 {

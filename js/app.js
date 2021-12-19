@@ -7,10 +7,10 @@ window.addEventListener('load', () => {
 // Smoth scrolling to a section
 const btnScrollTo = document.querySelector('.toTopBtn');
 const leftArrow = document.querySelector('.left-arrow');
-
 btnScrollTo.addEventListener('click', function (e) {
   leftArrow.scrollIntoView({ behavior: 'smooth' });
 });
+// console.log(btnScrollTo, leftArrow);
 
 // Close btn
 // const closeBtn = document.querySelector('.closeBtn');

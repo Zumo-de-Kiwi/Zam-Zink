@@ -115,7 +115,8 @@ body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
   left: 4.5rem;
-  top: -4rem;
+  top: -4.2rem;
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
@@ -203,31 +204,54 @@ body a:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
-body #trampolineEmoji {
-  position: sticky;
+body #trampolin-wrapper {
+  position: fixed;
+  height: 90%;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  overflow: hidden;
+}
+
+body #trampolin-wrapper #trampolineEmoji {
+  position: fixed;
   /* Fixed/sticky position */
-  bottom: 3rem;
+  overflow: hidden;
+  bottom: 2.3rem;
   /* Place the button at the bottom of the page */
-  right: 4rem;
-  /* Place the button 30px from the */
-  z-index: 9;
+  right: 1rem;
+  z-index: 18;
   /* Make sure it does not overlap */
+  text-align: center;
   text-decoration: none;
-  padding: 15px;
+  padding: 2rem;
   /* Some padding */
-  font-size: calc(0.5vw + 0.4vw + 30px);
-  /* Increase font size */
+  font-size: 3.3rem;
   transition: 0.15s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
-body #trampolineEmoji:hover {
-  transform: scale(1.1);
+@media (max-width: 768px) {
+  body #trampolin-wrapper #trampolineEmoji {
+    bottom: 1rem;
+    right: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body #trampolin-wrapper #trampolineEmoji {
+    font-size: 2.3rem;
+  }
+}
+
+body #trampolin-wrapper #trampolineEmoji:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
 
-body #trampolineEmoji:active {
-  transform: scale(0.9);
+body #trampolin-wrapper #trampolineEmoji:active {
   transform: translateY(0.2rem);
 }
 
@@ -305,10 +329,6 @@ body #trampolineEmoji:active {
   display: block;
 }
 
-.visuallyHidden {
-  opacity: 0;
-}
-
 .anim-show {
   animation: showHidden 0.4s ease-out forwards;
   display: block;
@@ -325,15 +345,6 @@ body #trampolineEmoji:active {
   100% {
     display: block;
   }
-}
-
-.overlay-background {
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
 }
 
 @keyframes spin {
