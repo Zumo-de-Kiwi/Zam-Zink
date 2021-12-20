@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -525,7 +526,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
 body {
   width: 100vw;
   background-color: #eeebe7;
-  font-size: 2rem;
   font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 620, "slnt" 0;
   position: relative;
 }
@@ -559,10 +559,6 @@ body .absolute-nav .left-arrow .link-a {
 
 body .absolute-nav .left-arrow .link-a:hover {
   color: #3e3d3c;
-}
-
-body .absolute-nav .left-arrow:hover .hc-logo {
-  fill: #5f3fd5;
 }
 
 body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {

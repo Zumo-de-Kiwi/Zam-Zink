@@ -8,10 +8,7 @@ body {
   width: 100%;
   font-size: 2rem;
   position: relative;
-  scroll-behavior: smooth;
-
-  font-variation-settings: 'MONO' 0.2, 'CASL' 0.1, 'wght' $font-weight-normal,
-    $slnt;
+  // scroll-behavior: smooth;
   .preloader {
     transition: $trans-slow ease-out;
     background: rgb(255, 255, 255);

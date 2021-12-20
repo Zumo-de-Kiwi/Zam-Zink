@@ -10,7 +10,7 @@ body {
   $muji-cover: hsl(30, 2%, 24%);
   background-color: $my-paper-color;
 
-  font-size: 2rem;
+  // font-size: 2rem;
   font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' $font-weight-normal,
     $slnt;
   position: relative;
@@ -35,17 +35,10 @@ body {
     align-items: center;
 
     .left-arrow {
-      // //mobile
-      // top: 1rem; //desktop is 2rem;
       .link-a {
         color: $muji-cover;
         &:hover {
           color: $muji-cover;
-        }
-      }
-      &:hover {
-        .hc-logo {
-          fill: $font-linked-color;
         }
       }
     }
@@ -821,37 +814,7 @@ body {
       }
     }
 
-    // don't appear on mobile
     #trampolin-wrapper {
-      // position: fixed;
-      // height: 90%;
-      // width: 8rem;
-      // right: 0px;
-      // bottom: 0px; // in desktop is 0px
-      // display: flex;
-      // align-items: flex-end; //start
-      // justify-content: right;
-      // overflow: hidden;
-      #trampolineEmoji {
-        // position: sticky;
-        // align-self: flex-end;
-        // z-index: 9;
-
-        // text-decoration: none;
-        // padding: 3rem;
-        // font-size: $font-size-huge;
-        // transition: $trans-fast;
-        // cursor: $cursor-pointer-hand-flip;
-        // &:hover {
-        //   // // cursor: $cursor-pointer-hand-flip;
-        //   // transform: scale(1.1);
-        //   // transform: translateY(-0.2rem);
-        // }
-        // &:active {
-        //   transform: scale(0.9);
-        //   transform: translateY(0.3rem);
-        // }
-      }
     }
   }
   #footer {
@@ -934,12 +897,8 @@ body {
       // position: sticky;
       height: 40vh;
       #wrapper {
-        // z-index: -1;
         grid-column: 1/ 4;
-
-        // display: grid;
         justify-content: center;
-        // gap: 4rem;
         grid-template-rows: 1fr 4rem 4rem 1fr;
         // color: white;
         .morePrj {

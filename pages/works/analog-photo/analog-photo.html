@@ -5,62 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Héctor Cortés - Analog Photography</title>
-       <!-----------------FONTS-------------------->
-   <!------need to be above the CSS style sheet----------->
-   <link rel="preconnect" href="https://fonts.googleapis.com"> 
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap" rel="stylesheet">
-   <!------------------CSS-------------------->
-   <link rel="stylesheet" href="analog-photo.css"></link>
-   <!------------------FAVICON-------------------->
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-   <link rel="manifest" href="/site.webmanifest">
-   <!--------------------JS----------------------->
-   <!--     is in the bottom of the <body>      -->
+    <!-----------------FONTS-------------------->
+    <!------need to be above the CSS style sheet----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <!------------------CSS-------------------->
+    <link rel="stylesheet" href="analog-photo.css" />
+    <!------------------FAVICON-------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--------------------JS----------------------->
+    <!--     is in the bottom of the <body>      -->
   </head>
   <body>
-        <!------------PRE LOADER------------------>
+    <!------------PRE LOADER------------------>
     <div class="preloader">
       <p id="emoji-loader">☕️</p>
-      <p id="text-loader">Processing the film<br>is like making coffee</p>
+      <p id="text-loader">Processing the film<br />is like making coffee</p>
       <!-- Welcome to the paradise... -->
     </div>
-    <main>
-      <div class="left-arrow" title="Main Page">
-        <a class="link-a" href="/index.html"
-          ><span id="leftArrow"><</span></a
+    <div class="left-arrow" title="Main Page">
+      <a class="link-a" href="/index.html"><span id="leftArrow"><</span></a>
+      <!-- <span id="arrowLine">___________________</span> -->
+      <a class="back logo-frame">
+        <svg
+          class="logo-svg"
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          stroke-linejoin="round"
+          stroke-miterlimit="2"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
         >
-        <!-- <span id="arrowLine">___________________</span> -->
-        <a class="back logo-frame" >
-          <svg
-            class="logo-svg"
-            clip-rule="evenodd"
-            fill-rule="evenodd"
-            stroke-linejoin="round"
-            stroke-miterlimit="2"
-            viewBox="0 0 48 48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g class="hc-logo" fill="hsl(0, 3%, 31%)">
-              <path
-                d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
-              />
-            </g>
-          </svg>
-        </a>
-      </div>
+          <g class="hc-logo" fill="hsl(0, 3%, 31%)">
+            <path
+              d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <main>
       <h1>Analog</h1>
     </main>
-      <footer>
-        <div><a id="flickrLink" href="https://www.flickr.com/photos/153289030@N04/albums" target="_blank"
-          rel="noopener noreferrer">Flickr</a></div>
-        <!-- <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🚀</a> -->
+    <footer>
+      <div>
+        <a
+          id="flickrLink"
+          href="https://www.flickr.com/photos/153289030@N04/albums"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Flickr</a
+        >
+      </div>
+      <!-- <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🚀</a> -->
       <!-- ✈️  🧹-->
-      </footer>
+    </footer>
 
     <script src="analog-photo.js"></script>
     <script src="/js/app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"
+      integrity="sha384-w/MD6ViHY75cSCFDokCb3Pxb7Gl9Y1/NHN5L0+m5p6QrWvXMaPDnma/2xYKFODiO"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"
+      integrity="sha384-Jvo7nrdCM9IL1bE2YGgxmdGZ5/+RAb0OEf4RqcgieCwnRFSLhahxOXN5nn408Wwj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

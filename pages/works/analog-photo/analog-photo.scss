@@ -4,7 +4,7 @@
 @import '../../../scss/font-anim-keyframes';
 
 body {
-  //   font-size: 2rem;
+  // font-size: 2rem;
   height: 100%;
   .preloader {
     transition: $trans-slow ease-out;
@@ -24,11 +24,6 @@ body {
         color: black;
       }
     }
-    &:hover {
-      .hc-logo {
-        // fill: rgb(255, 202, 155);
-      }
-    }
   }
   main {
     background: white;
@@ -42,26 +37,5 @@ body {
     background: rgb(0, 0, 0);
     height: 20rem;
     color: white;
-    #trampolineEmoji {
-      position: fixed; /* Fixed/sticky position */
-      bottom: 2rem; /* Place the button at the bottom of the page */
-      right: 4rem; /* Place the button 30px from the right */
-
-      z-index: 9; /* Make sure it does not overlap */
-
-      text-decoration: none;
-      cursor: pointer; /* Add a mouse pointer on hover */
-      padding: 15px; /* Some padding */
-      font-size: 3.5rem; /* Increase font size */
-      transition: $trans-fast;
-      cursor: $cursor-pointer-hand-flip;
-      &:hover {
-        cursor: $cursor-pointer-hand-flip;
-        transform: scale(1.1);
-      }
-      &:active {
-        transform: scale(0.9);
-      }
-    }
   }
 }

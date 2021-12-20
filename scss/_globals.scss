@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   cursor: $cursor-pointer-hand;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 * {
   margin: 0px;
