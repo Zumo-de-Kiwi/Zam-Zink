@@ -1,8 +1,11 @@
 ////////////// Font Family ////////////
-$ff-recursive: 'Recursive', Consolas, Helvetica Neue, Helvetica, Arial,
-  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', color-emoji;
+$ff-recursive: 'Recursive', 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji',
+  color-emoji;
 $ff-recursive-bold: 'Recursive', 'Arial Black', 'Helvetica Neue Bold',
   sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', color-emoji;
+$ff-recursive-mono: 'Recursive', SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace;
 
 ////// Variable Font Default //////////
 $MONO: 'MONO' 0; //Monospace

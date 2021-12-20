@@ -126,7 +126,8 @@ body {
         color: royalblue;
       }
     }
-    img {
+    // modified
+    picture {
       filter: grayscale(90%);
       transition: 1s;
       &:hover {
@@ -434,7 +435,7 @@ body {
       }
 
       #section {
-        img {
+        picture {
           // max-width: 400px;
           place-self: center;
           width: clamp(
@@ -447,8 +448,8 @@ body {
         grid-template-columns: 1fr 90vw 1fr;
         #trampolin-wrapper {
           #trampolineEmoji {
-            font-size: $font-size-huge;
-            padding: 1rem;
+            // font-size: $font-size-huge;
+            // padding: 1rem;
           }
         }
         #div1 {

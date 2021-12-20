@@ -471,14 +471,21 @@ body {
           padding-left: 2vw;
           padding-bottom: 16rem;
         }
-        #fin1 {
-          grid-column: 1/ 4;
+        #fin1,
+        #fin3 {
+          // grid-column: 1/ 4;
           grid-row: 10;
           text-align: center;
           color: rgb(244, 181, 194);
           font-weight: 400;
           font-size: 2.3rem;
           padding-bottom: 11rem;
+        }
+        #fin1 {
+          grid-column: 1;
+        }
+        #fin3 {
+          grid-column: 3;
         }
         #rabbit {
           grid-column: 2;
@@ -487,14 +494,20 @@ body {
           padding-left: 5vw;
           padding-right: 5vw;
         }
-        #fin2 {
-          grid-column: 1/ 4;
+        #fin2,
+        #fin4 {
           grid-row: 12;
           text-align: center;
           color: rgb(133, 194, 136);
           font-weight: 400;
           font-size: 2.3rem;
           padding-bottom: 9rem;
+        }
+        #fin2 {
+          grid-column: 3;
+        }
+        #fin4 {
+          grid-column: 1;
         }
       }
     }
@@ -516,6 +529,8 @@ body {
         .title {
           // background-color: $my-paper-color;
           padding: 1.5rem;
+          width: 100%;
+          height: 12rem;
           padding-top: 8rem;
           font-size: 2.5rem;
           color: rgb(174, 170, 164);
@@ -573,7 +588,7 @@ body {
             padding-bottom: 3rem;
           }
           #tijera-black {
-            padding-left: calc(5vw + 17rem);
+            padding-left: calc(5vw + 27rem);
             grid-column: 2 /4;
             // padding-bottom: 0rem;
           }
@@ -591,147 +606,180 @@ body {
           grid-template-columns: 1fr 1fr 1fr;
           picture,
           .title {
-            grid-column: 2;
+            grid-column: 1/ 4;
           }
           .title {
-            grid-row: 1 /4;
-            height: 12rem;
-            // max-width: vw;
-            min-width: 1000px;
+            grid-row: 1;
+            // height: 12rem;
+            // width: 100%;
+            place-self: center;
           }
           #dodo-fapiaou {
-            grid-column: 1/ 4;
+            grid-column: 2;
             grid-row: 2;
             // padding-top: 30rem;
-            padding-left: calc(5vw + 26rem);
-            padding-right: calc(5vw + 26rem);
-            padding-bottom: 10rem;
+            padding-top: 40rem;
+            padding-left: calc(1vw + 2rem);
+            padding-right: calc(1vw + 2rem);
+            padding-bottom: 15rem;
           }
           #ropa-dodo {
-            grid-column: 1/ 3;
+            grid-column: 1;
             grid-row: 3;
-            padding-left: calc(2vw + 5rem);
-            padding-right: calc(10vw + 31rem);
-            padding-bottom: 4rem;
+            padding-left: calc(2vw + 1rem);
+            padding-right: calc(2vw + 1rem);
+            padding-bottom: 8rem;
           }
           #magnet-dodo {
-            grid-column: 1/ 3;
+            grid-column: 2;
             grid-row: 4;
-            padding-left: 20vw;
-            padding-right: 20vw;
-            padding-bottom: 8rem;
-          }
-          #mosquito-dodo {
-            grid-column: 1/ 3;
-            grid-row: 5;
-            padding-left: 20vw;
-            padding-right: 20vw;
-            padding-bottom: 8rem;
-          }
-          #dodo-kagaroo {
-            grid-column: 1/ 3;
-            grid-row: 6;
-            padding-left: 10vw;
-            padding-right: 10vw;
+            padding-left: calc(3vw + 1rem);
+            padding-right: calc(3vw + 1rem);
             padding-bottom: 10rem;
           }
-          #dodo-revolution {
-            grid-column: 1/ 3;
+          #mosquito-dodo {
+            grid-column: 1;
+            grid-row: 5;
+            padding-left: calc(3vw + 1rem);
+            padding-right: calc(3vw + 2rem);
+            padding-bottom: 12rem;
+          }
+          #dodo-kagaroo {
+            grid-column: 2/ 4;
             grid-row: 6;
+            padding-left: calc(1vw + 3rem);
+            padding-right: calc(1vw + 3rem);
+            padding-bottom: 11rem;
+          }
+          #dodo-revolution {
+            grid-column: 1/ 4;
+            grid-row: 7;
             padding-bottom: 8rem;
             display: none;
           }
           #dodo-ojo {
-            grid-column: 1/ 3;
-            grid-row: 7;
-            padding-left: 10vw;
-            padding-right: 12vw;
-            padding-bottom: 10rem;
+            grid-column: 2;
+            grid-row: 8;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            padding-bottom: 30rem;
           }
         }
         #sketchDraws {
+          display: grid;
+          grid-template-columns: repeat(9, minmax(1rem, 12rem));
+          // place-items: center; // overflow: hidden;
+          .title {
+            grid-column: 1/ 10;
+            // height: 12rem;
+            grid-row: 1;
+            // width: 100%;
+            place-self: center;
+          }
           #zodiac-blue-red {
-            padding-left: 2rem;
+            grid-column: 1/ 7;
+            padding-top: 12rem;
           }
           #sketch-diario-1 {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            padding-bottom: 6rem;
+            grid-column: 5/ 10;
+            padding: 5rem;
+            padding-bottom: 13rem;
+          }
+          #magnolia {
+            grid-column: 2/ 6;
+            padding-bottom: 19rem;
+          }
+
+          #manga {
+            grid-column: 3/ 10;
+            // padding-left: 12vw;
+            // padding-right: 12vw;
           }
           #rus-sketch {
-            padding-left: 1rem;
-            padding-right: 1rem;
-          }
-          #manga {
-            padding-left: 12vw;
-            padding-right: 12vw;
+            grid-column: 3/ 8;
+            padding: 4rem;
+            padding-bottom: 5rem;
           }
         }
         #archDraws {
+          display: grid;
+          gap: 15rem;
+          place-items: center;
+          picture {
+            max-width: 600px;
+            // padding-bottom: 10rem;
+          }
         }
         #randomDraws {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: repeat(10, minmax(1rem, 12rem));
           position: relative;
+          place-items: center;
           .title {
-            grid-column: 1 /4;
+            grid-column: 1 /11;
             grid-row: 1;
+            // place-self: center;
           }
           #pato-gato {
-            grid-column: 3;
+            grid-column: 7/ 9;
             grid-row: 2;
-
-            padding-top: 19vh;
-            padding-bottom: 4.5rem;
-            padding-left: 1rem;
+            // position: sticky;
+            padding-top: 31rem;
+            padding-bottom: 10rem;
+            padding-left: 0rem;
           }
           #ancient-spanish {
-            grid-column: 1/ 3;
+            grid-column: 1/ 5;
             grid-row: 3/ 5;
-            padding-left: 10vw;
-            padding-bottom: 5rem;
+            padding-left: 0vw;
+            padding-bottom: 12rem;
           }
           #penguin-banera {
-            grid-column: 1/ 4;
+            grid-column: 4/ 11;
             grid-row: 5;
             padding-left: 0vw;
             padding-right: 0vw;
-            padding-bottom: 22vh;
+            padding-bottom: 23rem;
+            align-self: flex-start;
           }
           #korean {
-            grid-column: 1/ 4;
+            grid-column: 2/ 8;
             grid-row: 5;
-            padding-top: 45rem;
-            padding-left: 1rem;
-            padding-right: 0.6rem;
-            padding-bottom: 5rem;
+            padding-top: 51rem;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-bottom: 10rem;
+            align-self: flex-end;
           }
 
           #citron-girl {
-            grid-column: 2/ 4;
+            grid-column: 8/ 11;
             grid-row: 6;
-            padding-left: 13vw;
-            padding-right: 1vw;
-            padding-bottom: 22vh;
+            padding-top: 0rem;
+            padding-left: 0vw;
+            padding-right: 0vw;
+            padding-bottom: 0rem;
+            align-self: flex-start;
           }
           #cat-arrow {
-            grid-column: 1/ 3;
+            grid-column: 1/ 4;
             grid-row: 6;
-            padding-top: 14rem;
-            padding-right: 12vw;
-            padding-left: 2vw;
-            padding-bottom: 9vh;
+            padding-top: 41rem;
+            padding-right: 0vw;
+            padding-left: 0vw;
+            padding-bottom: 17rem;
+            align-self: flex-end;
           }
           #beer-coleta {
-            grid-column: 1/ 4;
+            grid-column: 3/ 9;
             grid-row: 8;
             // padding-top: 14rem;
-            padding-right: 2vw;
-            padding-left: 2vw;
-            padding-bottom: 16rem;
+            padding-right: 0vw;
+            padding-left: 0vw;
+            padding-bottom: 33rem;
           }
-          #fin1 {
-            grid-column: 1/ 4;
+          #fin1,
+          #fin3 {
             grid-row: 10;
             text-align: center;
             color: rgb(244, 181, 194);
@@ -739,21 +787,35 @@ body {
             font-size: 2.3rem;
             padding-bottom: 11rem;
           }
-          #rabbit {
-            grid-column: 2;
-            grid-row: 11;
-            padding-bottom: 11rem;
-            padding-left: 5vw;
-            padding-right: 5vw;
+          #fin1 {
+            grid-column: 3;
           }
-          #fin2 {
-            grid-column: 1/ 4;
+          #fin3 {
+            grid-column: 8;
+          }
+          #rabbit {
+            grid-column: 5/ 7;
+
+            grid-row: 11;
+
+            padding-bottom: 11rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+          }
+          #fin2,
+          #fin4 {
             grid-row: 12;
             text-align: center;
             color: rgb(133, 194, 136);
             font-weight: 400;
             font-size: 2.3rem;
-            padding-bottom: 9rem;
+            padding-bottom: 17rem;
+          }
+          #fin2 {
+            grid-column: 8;
+          }
+          #fin4 {
+            grid-column: 3;
           }
         }
       }

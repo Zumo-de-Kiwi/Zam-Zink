@@ -88,7 +88,7 @@ body {
 
       padding-left: 1rem;
       padding-right: 1rem;
-      font-size: $font-size-huge;
+      font-size: 3.1rem;
       transition: $trans-slow;
       &:hover {
         font-variation-settings: 'CASL' 0.9, 'wght' $font-weight-light;
@@ -109,10 +109,10 @@ body {
       transition: $trans-normal ease-out;
       position: relative;
       left: 4.5rem;
-      top: -4.2rem;
+      top: -3.4rem;
       pointer-events: none;
       .logo-svg {
-        width: 36px; //adjust logo size
+        width: 29px; //adjust logo size
         .hc-logo {
           transition: $trans-normal ease-out;
           fill: transparent; //$font-sutil-gray-color;
@@ -223,8 +223,10 @@ body {
         font-size: 2.3rem;
       }
       transition: $trans-fast;
+      opacity: 0.33;
       cursor: $cursor-pointer-hand-flip;
       &:hover {
+        opacity: 1;
         cursor: $cursor-pointer-hand-flip;
         transform: translateY(-0.2rem);
       }

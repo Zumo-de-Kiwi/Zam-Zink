@@ -50,7 +50,7 @@ h6 {
 body {
   font-size: 1.8rem;
   color: #232522;
-  font-family: "Recursive", Consolas, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -89,7 +89,7 @@ body .left-arrow .link-a {
   text-decoration: none;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: calc(0.5vw + 0.4vw + 30px);
+  font-size: 3.1rem;
   transition: 0.45s;
 }
 
@@ -115,7 +115,7 @@ body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
   left: 4.5rem;
-  top: -4.2rem;
+  top: -3.4rem;
   pointer-events: none;
 }
 
@@ -126,7 +126,7 @@ body .left-arrow .logo-frame {
 }
 
 body .left-arrow .logo-frame .logo-svg {
-  width: 36px;
+  width: 29px;
 }
 
 body .left-arrow .logo-frame .logo-svg .hc-logo {
@@ -230,6 +230,7 @@ body #trampolin-wrapper #trampolineEmoji {
   /* Some padding */
   font-size: 3.3rem;
   transition: 0.15s;
+  opacity: 0.33;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
@@ -247,6 +248,7 @@ body #trampolin-wrapper #trampolineEmoji {
 }
 
 body #trampolin-wrapper #trampolineEmoji:hover {
+  opacity: 1;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
@@ -521,7 +523,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: "Recursive", Consolas, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-variation-settings: "MONO" 1, "CASL" 0.3, "wght" 620, "slnt" 0;
   font-size: calc(0.5vw + 0.3vw + 13px);
 }
