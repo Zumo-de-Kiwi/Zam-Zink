@@ -613,7 +613,7 @@ body {
 
 .main .content_wrap .content-name .coma {
   position: relative;
-  margin-left: calc( -3px * 1vw);
+  margin-left: calc( -3px * 1vw);
 }
 
 .main .content_wrap .content-name .complete-name {
