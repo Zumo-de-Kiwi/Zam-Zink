@@ -16,22 +16,25 @@ body {
     overflow-x: hidden;
     .panel-content {
       margin: 2rem;
+      margin-top: 12vh;
+      margin-bottom: 12vh;
       padding: 1rem;
       border: 1px solid rgb(250, 109, 109);
-      width: 100%;
+      width: 66%;
 
       display: flex;
       justify-content: center;
       align-items: center;
-      height: calc(100vh - 2rem * 2);
+      height: calc(100vh - 12vh * 2);
     }
     .horizontal-wrapper {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      height: calc(100vh - 2rem * 2);
+      height: calc(100vh - 12vh * 2);
       .block {
         width: 100%;
+        // max-width: 66%;
         height: 100%;
         border: 1px solid rgb(255, 30, 0);
         background-color: coral;

@@ -14,10 +14,10 @@ const horizontalScroll = ScrollTrigger.create({
   animation: scrollTween,
   trigger: scrollContainer,
   pin: true,
-  scrub: 3, //smoothness physics
+  scrub: 1, //1 sec, smoothness physics
   end: () => '+=' + scrollContainer.offsetWidth,
   snap: {
-    duration: 0.2,
+    duration: 0.7,
     delay: 0,
     ease: 'none',
     // inertia: false,

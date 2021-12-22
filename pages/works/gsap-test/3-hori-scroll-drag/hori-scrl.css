@@ -20,20 +20,22 @@ body .panel {
 
 body .panel .panel-content {
   margin: 2rem;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
   padding: 1rem;
   border: 1px solid #fa6d6d;
-  width: 100%;
+  width: 66%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 2rem * 2);
+  height: calc(100vh - 12vh * 2);
 }
 
 body .panel .horizontal-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: calc(100vh - 2rem * 2);
+  height: calc(100vh - 12vh * 2);
 }
 
 body .panel .horizontal-wrapper .block {
