@@ -6,13 +6,40 @@
 body {
   margin: 0;
 }
-.div1,
-.div2 {
+//tut 6
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
+.panel {
   height: 100vh;
+  background-color: blue;
 }
-.div1 {
-  background-color: coral;
-}
-.div2 {
-  background-color: crimson;
-}
+// tut 1~5
+// .div1,
+// .div2 {
+//   height: 100vh;
+// }
+// .div1 {
+//   background-color: coral;
+// }
+// .div2 {
+//   background-color: rgb(46, 187, 243);
+// }
+// .square {
+//   width: 150px;
+//   height: 20vh;
+//   background-color: rgb(122, 122, 255);
+// }
+// .square2 {
+//   width: 150px;
+//   height: 20vh;
+//   background-color: rgb(65, 65, 236);
+// }
+// .rojo {
+//   background-color: blueviolet;
+// }
+// .border {
+//   border-radius: 20px;
+// }

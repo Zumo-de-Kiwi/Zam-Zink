@@ -8,15 +8,13 @@ body {
   margin: 0;
 }
 
-.div1,
-.div2 {
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
+
+.panel {
   height: 100vh;
-}
-
-.div1 {
-  background-color: coral;
-}
-
-.div2 {
-  background-color: crimson;
+  background-color: blue;
 }
