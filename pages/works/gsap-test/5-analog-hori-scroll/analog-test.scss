@@ -1,53 +1,138 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/globals';
+@import '../../../../scss/font-anim-keyframes';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+article,
+aside,
+div,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+html {
+  --bg-color: rgb(255, 255, 255);
+  --line-color: rgb(0, 0, 0);
+}
+
+// #viewContainer
 body {
   overflow-x: hidden;
-  .panel {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 2rem;
+  height: 100%;
 
-    background-color: rgb(255, 236, 66);
-    overflow-x: hidden;
-    .panel-content {
-      margin: 2rem;
-      margin-top: 12vh;
-      margin-bottom: 12vh;
-      padding: 1rem;
-      border: 3px solid rgb(250, 172, 109);
-      width: 66%;
+  .left-arrow {
+  }
+  #header {
+    position: absolute;
+    right: 2.3rem;
+    top: 1.5rem;
+    z-index: 19;
+    display: flex; // block;
 
+    .nav {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: calc(100vh - 12vh * 2);
+
+      height: 4.1rem;
+      font-size: 1.8rem;
+      margin: 0.5rem;
+      border: 1px solid var(--line-color);
+      padding: 1.4rem;
+      background-color: var(--bg-color);
+      color: var(--line-color);
+      font-weight: bold;
+      transition: 0.2s;
+      &:hover {
+        background-color: var(--line-color);
+        color: var(--bg-color);
+      }
     }
-    .horizontal-wrapper {
+    #whyAnalog {
+    }
+    #flash {
+      padding-bottom: 2rem;
+    }
+    #flashInside {
+      // display: hidden;
+    }
+  }
+  // main is the pics, scrool obj and the title box
+  .main {
+    // my page custom scroller
+    .dragWrapper {
+      width: 70%;
+      height: 25%;
+      position: absolute;
+      top: 0rem;
+      left: 15%;
+      z-index: -9;
+      touch-action: pan-y;
+      user-select: none;
+    }
+    .dragObj {
+      position: absolute;
+      top: 0rem;
+      left: 0;
+      #line {
+        height: 7vh;
+      }
+      #presser {
+      }
+    }
+    // #viewcontainer
+    .panel {
+      height: 100%;
+      width: 100vw;
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      height: calc(100vh - 12vh * 2);
-      .block {
-        width: 100%;
-        // max-width: 66%;
-        height: 100%;
-        border: 3px solid rgb(150, 190, 255);
-        background-color: rgb(181, 240, 255);
+      justify-content: center;
+      align-items: center;
+
+      background-color: var(--bg-color);
+      overflow-x: hidden;
+      .panel-content {
+        margin: 2rem;
+        margin-top: 12vh;
+        margin-bottom: 12vh;
+        padding: 1rem;
+        border: 3px solid rgb(250, 172, 109);
+        width: 66%;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3rem;
+        height: calc(100vh - 12vh * 2);
+      }
+      .horizontal-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: calc(100vh - 12vh * 2);
+        .block {
+          width: 100%;
+          // max-width: 66%;
+          height: 100%;
+          border: 3px solid rgb(150, 190, 255);
+          background-color: rgb(181, 240, 255);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3rem;
+        }
       }
     }
-  }
-  .proxy {
-    position: absolute;
-    visibility: hidden;
+    .proxy {
+      position: absolute;
+      visibility: hidden;
+    }
   }
 }

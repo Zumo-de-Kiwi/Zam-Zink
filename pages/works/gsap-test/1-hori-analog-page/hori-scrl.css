@@ -606,7 +606,6 @@ body #viewContainer main {
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
-  overflow-x: hidden;
   background: #ffd4d4;
   height: 100%;
 }
@@ -625,8 +624,8 @@ body #viewContainer main .dragObj #line {
 }
 
 body #viewContainer main .scrollContainer .scrollInner .scrollWrapper section .scrollItem {
-  width: 10vmin;
-  height: 10vmin;
+  width: 70vmin;
+  height: 70vmin;
   margin-top: 0px;
   margin-right: 5vw;
   display: flex;
