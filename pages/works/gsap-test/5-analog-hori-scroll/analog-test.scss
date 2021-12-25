@@ -29,9 +29,10 @@ body {
   height: 100%;
 
   .left-arrow {
+    position: fixed;
   }
   #header {
-    position: absolute;
+    position: fixed;
     right: 2.3rem;
     top: 1.5rem;
     z-index: 19;
@@ -116,12 +117,13 @@ body {
         flex-wrap: wrap;
         flex-direction: column;
         height: calc(100vh - 12vh * 2);
+        // section
         .block {
           width: 100%;
           // max-width: 66%;
           height: 100%;
-          border: 3px solid rgb(150, 190, 255);
-          background-color: rgb(181, 240, 255);
+          border: 3px solid rgb(150, 197, 255);
+          background-color: rgb(212, 246, 255);
 
           display: flex;
           justify-content: center;

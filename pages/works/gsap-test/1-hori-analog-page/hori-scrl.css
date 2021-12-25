@@ -523,11 +523,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-html {
-  --bg-color: rgb(255, 255, 255);
-  --line-color: rgb(0, 0, 0);
-}
-
 article,
 aside,
 div,
@@ -537,6 +532,11 @@ main,
 nav,
 section {
   display: block;
+}
+
+html {
+  --bg-color: rgb(255, 255, 255);
+  --line-color: rgb(0, 0, 0);
 }
 
 body {
