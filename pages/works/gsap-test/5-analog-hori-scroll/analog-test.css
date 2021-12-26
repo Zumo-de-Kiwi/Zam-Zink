@@ -107,7 +107,6 @@ body .left-arrow .link-a:hover {
 }
 
 body .left-arrow .link-a #left-arrow {
-  transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
@@ -547,19 +546,63 @@ html {
 
 body {
   overflow-x: hidden;
-  font-size: 2rem;
   height: 100%;
+  font-size: 1.8rem;
+  font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 300;
 }
 
 body .left-arrow {
   position: fixed;
+  border: 1px solid var(--line-color);
+  transition: 0.2s;
+  height: 3rem;
+  top: 1.2rem;
+}
+
+body .left-arrow .link-a {
+  padding: 0.7rem;
+  color: var(--line-color);
+  font-size: 2.2rem;
+}
+
+body .left-arrow .link-a:hover {
+  color: var(--bg-color);
+}
+
+body .left-arrow .logo-frame {
+  top: 1.4rem;
+  left: 5.9rem;
+  position: fixed;
+}
+
+body .left-arrow .logo-frame .logo-svg {
+  width: 2.4rem;
+}
+
+body .left-arrow .logo-frame .logo-svg .hc-logo {
+  fill: #f0eee1;
+  transition: opacity 2s;
+  opacity: 0.01;
+}
+
+body .left-arrow:hover {
+  background-color: var(--line-color);
+}
+
+body .left-arrow:hover .logo-frame {
+  left: 6.4rem;
+}
+
+body .left-arrow:hover .logo-frame .hc-logo {
+  fill: #6c5ffc;
+  opacity: 1;
 }
 
 body #header {
   position: fixed;
   right: 2.3rem;
-  top: 1.5rem;
-  z-index: 19;
+  top: 1.2rem;
+  z-index: 9;
   display: flex;
 }
 
@@ -567,14 +610,13 @@ body #header .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4.1rem;
-  font-size: 1.8rem;
-  margin: 0.5rem;
-  border: 1px solid var(--line-color);
-  padding: 1.4rem;
-  background-color: var(--bg-color);
+  padding: 0.4rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  font-size: 1.3rem;
   color: var(--line-color);
-  font-weight: bold;
+  border: 1px solid var(--line-color);
+  background-color: var(--bg-color);
   transition: 0.2s;
 }
 
@@ -584,7 +626,8 @@ body #header .nav:hover {
 }
 
 body #header #flash {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  margin-left: 0.7rem;
 }
 
 body .main .dragWrapper {
@@ -610,16 +653,14 @@ body .main .dragObj #line {
 
 body .main .Title__MainWrapper {
   position: fixed;
-  bottom: calc(5vh + 5rem);
-  left: calc(50vw - 30rem / 2);
+  bottom: calc(5vh + 2rem);
+  left: calc(50vw - 28rem / 2);
   z-index: 9;
-  padding: 0.5rem;
   color: var(--line-color);
-  border: 2px solid var(--line-color);
+  border: 1.5px solid var(--line-color);
   background-color: var(--bg-color);
   display: grid;
-  grid-template-columns: 4rem 22rem 4rem;
-  gap: 1rem;
+  grid-template-columns: 4rem 20rem 4rem;
   text-align: center;
 }
 
@@ -628,25 +669,57 @@ body .main .Title__MainWrapper .Title__Number {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  font-size: 1.4rem;
+  padding: 0.8rem;
 }
 
 body .main .Title__MainWrapper .Title__Title {
   grid-column: 2;
   width: 100%;
-  padding: 1.7rem;
+  padding: 1.2rem;
+  border-left: 1.5px solid var(--line-color);
+  border-right: 1.5px solid var(--line-color);
 }
 
-body .main .Title__MainWrapper .Title__Title .Title__Main {
-  font-size: 2.2rem;
+body .main .Title__MainWrapper .Title__Title #Title__Main {
+  font-size: 1.8rem;
 }
 
-body .main .Title__MainWrapper .Title__Title .Title__Second {
-  font-size: 1.6rem;
+body .main .Title__MainWrapper .Title__Title #Title__Second {
+  font-size: 1.3rem;
   margin-top: 0.5rem;
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji {
   grid-column: 3;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+body .main .Title__MainWrapper .Title__SignAndEmoji #epSign,
+body .main .Title__MainWrapper .Title__SignAndEmoji #epEmoji {
+  padding: 1rem 1rem;
+  font-size: 1.8rem;
+}
+
+body .main .Title__MainWrapper .Title__SignAndEmoji #epSign {
+  border-bottom: 1.5px solid var(--line-color);
+  font-size: 1.6rem;
+}
+
+body .main .Title__MainWrapper .Title__SignAndEmoji #epEmoji {
+  color: transparent;
+  text-shadow: 0px 0px 0px var(--line-color);
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+body .main .Title__MainWrapper:hover #epEmoji {
+  color: var(--line-color);
+  opacity: 1;
 }
 
 body .main .panel {
@@ -665,7 +738,7 @@ body .main .panel .panel-content {
   margin-top: 12vh;
   margin-bottom: 12vh;
   padding: 1rem;
-  border: 3px solid #faac6d;
+  border: 3px solid rgba(250, 172, 109, 0.132);
   width: 66%;
   display: flex;
   justify-content: center;
@@ -694,7 +767,7 @@ body .main .panel .horizontal-wrapper .block {
 body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem {
   width: 85vmin;
   height: 85vmin;
-  margin: 0px 5vw;
+  margin: 0rem 5vw;
   border: 3px solid rgba(52, 255, 21, 0.091);
   background-color: rgba(198, 255, 141, 0.057);
   display: flex;
@@ -742,6 +815,11 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView_
   inset: 0px;
   position: absolute;
   object-fit: contain;
+}
+
+body .main #footer {
+  position: absolute;
+  position: fixed;
 }
 
 body .main .proxy {

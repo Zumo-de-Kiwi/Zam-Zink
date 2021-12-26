@@ -25,17 +25,54 @@ html {
 // #viewContainer
 body {
   overflow-x: hidden;
-  font-size: 2rem;
+  // overflow-y: hidden;
   height: 100%;
+  font-size: 1.8rem;
+  font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lightest;
 
   .left-arrow {
     position: fixed;
+    border: 1px solid var(--line-color);
+    transition: 0.2s;
+    height: 3rem;
+    top: 1.2rem;
+    .link-a {
+      padding: 0.7rem;
+      color: var(--line-color);
+      font-size: 2.2rem;
+      &:hover {
+        color: var(--bg-color);
+      }
+    }
+    .logo-frame {
+      top: 1.4rem;
+      left: 5.9rem;
+      position: fixed;
+      .logo-svg {
+        width: 2.4rem; //adjust logo size
+        .hc-logo {
+          fill: rgb(240, 238, 225);
+          transition: opacity 2s;
+          opacity: 0.01;
+        }
+      }
+    }
+    &:hover {
+      background-color: var(--line-color);
+      .logo-frame {
+        left: 6.4rem;
+        .hc-logo {
+          fill: $blue-purple-tech;
+          opacity: 1;
+        }
+      }
+    }
   }
   #header {
     position: fixed;
     right: 2.3rem;
-    top: 1.5rem;
-    z-index: 19;
+    top: 1.2rem;
+    z-index: 9;
     display: flex; // block;
 
     .nav {
@@ -43,14 +80,13 @@ body {
       justify-content: center;
       align-items: center;
 
-      height: 4.1rem;
-      font-size: 1.8rem;
-      margin: 0.5rem;
-      border: 1px solid var(--line-color);
-      padding: 1.4rem;
-      background-color: var(--bg-color);
+      padding: 0.4rem;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      font-size: 1.3rem;
       color: var(--line-color);
-      font-weight: bold;
+      border: 1px solid var(--line-color);
+      background-color: var(--bg-color);
       transition: 0.2s;
       &:hover {
         background-color: var(--line-color);
@@ -60,7 +96,8 @@ body {
     #whyAnalog {
     }
     #flash {
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
+      margin-left: 0.7rem;
     }
     #flashInside {
       // display: hidden;
@@ -92,38 +129,71 @@ body {
     // TITLES
     .Title__MainWrapper {
       position: fixed;
-      bottom: calc(5vh + 5rem);
-      left: calc(50vw - 30rem / 2);
+      bottom: calc(5vh + 2rem);
+      left: calc(50vw - 28rem / 2);
       z-index: 9;
-      padding: 0.5rem;
       color: var(--line-color);
-      border: 2px solid var(--line-color);
+      border: 1.5px solid var(--line-color);
       background-color: var(--bg-color);
 
       display: grid;
-      grid-template-columns: 4rem 22rem 4rem;
-      gap: 1rem;
+      grid-template-columns: 4rem 20rem 4rem;
       text-align: center;
+
       .Title__Number {
         grid-column: 1;
+
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
+        font-size: 1.4rem;
+        padding: 0.8rem;
       }
       .Title__Title {
         grid-column: 2;
         width: 100%;
-        padding: 1.7rem;
-        .Title__Main {
-          font-size: 2.2rem;
+        padding: 1.2rem;
+        border-left: 1.5px solid var(--line-color);
+        border-right: 1.5px solid var(--line-color);
+        #Title__Main {
+          font-size: 1.8rem;
         }
-        .Title__Second {
-          font-size: 1.6rem;
+        #Title__Second {
+          font-size: 1.3rem;
           margin-top: 0.5rem;
         }
       }
       .Title__SignAndEmoji {
         grid-column: 3;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: stretch;
+        // justify-content: stretch;
+        #epSign,
+        #epEmoji {
+          padding: 1rem 1rem;
+          font-size: 1.8rem;
+        }
+        #epSign {
+          border-bottom: 1.5px solid var(--line-color);
+          font-size: 1.6rem;
+          // -webkit-text-stroke: 1px rgb(255, 134, 134);
+        }
+        #epEmoji {
+          color: transparent;
+          text-shadow: 0px 0px 0px var(--line-color);
+          opacity: 0.3;
+          transition: 0.3s;
+        }
+      }
+      &:hover {
+        #epEmoji {
+          color: var(--line-color);
+          opacity: 1;
+        }
       }
     }
     // #viewcontainer
@@ -142,7 +212,7 @@ body {
         margin-top: 12vh;
         margin-bottom: 12vh;
         padding: 1rem;
-        border: 3px solid rgb(250, 172, 109);
+        border: 3px solid rgba(250, 172, 109, 0.132);
         width: 66%;
 
         display: flex;
@@ -159,7 +229,6 @@ body {
         // section
         .block {
           width: 100%;
-          // max-width: 66%;
           height: 100%;
           border: 3px solid rgba(85, 204, 255, 0.057);
           background-color: rgba(141, 230, 255, 0.05);
@@ -168,15 +237,10 @@ body {
           justify-content: center;
           align-items: center;
           font-size: 3rem;
-          //images
-          // .scrollContainer {
-          //   .scrollInner {
-          //     .scrollWrapper {
-          // section {
           .ScollView__ScrollItem {
             width: 85vmin;
             height: 85vmin;
-            margin: 0px 5vw;
+            margin: 0rem 5vw;
             // margin-top: 0px;
             // margin-right: 5vw;
 
@@ -232,12 +296,53 @@ body {
               }
             }
           }
-          // }
-          //     }
-          //   }
-          // }
         }
       }
+    }
+
+    #footer {
+      position: absolute;
+      position: fixed;
+      // #trampolin-wrapper {
+      //   position: fixed;
+      //   height: 4vh;
+      //   width: 100vw;
+      //   left: 0px;
+      //   inset: 0px;
+      //   top: 0px; // in desktop is 0px
+      //   display: flex;
+      //   align-items: flex-end; //start
+      //   justify-content: right;
+      //   overflow: hidden;
+      //   #trampolineEmoji {
+      //     position: fixed; /* Fixed/sticky position */
+      //     overflow: hidden;
+      //     bottom: 2.3rem; /* Place the button at the bottom of the page */
+      //     right: 1rem;
+      //     @media (max-width: 768px) {
+      //       bottom: 1rem;
+      //       right: 0.6rem;
+      //     }
+      //     text-align: center;
+      //     text-decoration: none;
+      //     padding: 2rem; /* Some padding */
+      //     font-size: 3.3rem;
+      //     @media (max-width: 768px) {
+      //       font-size: 2.3rem;
+      //     }
+      //     transition: $trans-fast;
+      //     opacity: 0.33;
+      //     cursor: $cursor-pointer-hand-flip;
+      //     &:hover {
+      //       opacity: 1;
+      //       cursor: $cursor-pointer-hand-flip;
+      //       transform: translateY(-0.2rem);
+      //     }
+      //     &:active {
+      //       transform: translateY(0.2rem);
+      //     }
+      //   }
+      // }
     }
     .proxy {
       position: absolute;

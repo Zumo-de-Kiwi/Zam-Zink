@@ -107,7 +107,6 @@ body .left-arrow .link-a:hover {
 }
 
 body .left-arrow .link-a #left-arrow {
-  transition: 1s;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
@@ -623,7 +622,7 @@ body #viewContainer main .dragObj #line {
   height: 7vh;
 }
 
-body #viewContainer main .scrollContainer .scrollInner .scrollWrapper section .scrollItem {
+body #viewContainer main .scrollContainer .scrollInner .scrollWrapper section .ScollView__ScrollItem {
   width: 70vmin;
   height: 70vmin;
   margin-top: 0px;
