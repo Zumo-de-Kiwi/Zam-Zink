@@ -557,33 +557,16 @@ body .left-arrow {
   transition: 0.2s;
   height: 3.5rem;
   top: 1.5rem;
-  padding: 0.23rem 0.3rem;
+  padding: 0.3rem 0rem;
 }
 
 body .left-arrow .link-a {
-  padding: 0.7rem;
   color: var(--line-color);
   font-size: 2.2rem;
 }
 
 body .left-arrow .link-a:hover {
   color: var(--bg-color);
-}
-
-body .left-arrow .logo-frame {
-  top: 1.9rem;
-  left: 5.9rem;
-  position: fixed;
-}
-
-body .left-arrow .logo-frame .logo-svg {
-  width: 2.4rem;
-}
-
-body .left-arrow .logo-frame .logo-svg .hc-logo {
-  fill: #f0eee1;
-  transition: opacity 2s;
-  opacity: 0.01;
 }
 
 body .left-arrow:hover {
@@ -601,8 +584,8 @@ body .left-arrow:hover .logo-frame .hc-logo {
 
 body #header {
   position: fixed;
-  right: 2rem;
-  top: 1.5rem;
+  right: 2.3rem;
+  top: 1.2rem;
   z-index: 9;
   display: flex;
 }

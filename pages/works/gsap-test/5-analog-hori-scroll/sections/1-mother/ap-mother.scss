@@ -1,6 +1,6 @@
-@import '../../../../scss/variables';
-@import '../../../../scss/globals';
-@import '../../../../scss/font-anim-keyframes';
+@import '../../../../../../scss/variables';
+@import '../../../../../../scss/globals';
+@import '../../../../../../scss/font-anim-keyframes';
 
 * {
   margin: 0;
@@ -36,28 +36,27 @@ body {
     transition: 0.2s;
     height: 3.5rem;
     top: 1.5rem;
-    padding: 0.23rem 0.3rem;
+    padding: 0.3rem 0rem;
     .link-a {
-      padding: 0.7rem;
       color: var(--line-color);
       font-size: 2.2rem;
       &:hover {
         color: var(--bg-color);
       }
     }
-    .logo-frame {
-      top: 1.9rem;
-      left: 5.9rem;
-      position: fixed;
-      .logo-svg {
-        width: 2.4rem; //adjust logo size
-        .hc-logo {
-          fill: rgb(240, 238, 225);
-          transition: opacity 2s;
-          opacity: 0.01;
-        }
-      }
-    }
+    // .logo-frame {
+    //   top: 1.4rem;
+    //   left: 5.9rem;
+    //   position: fixed;
+    //   .logo-svg {
+    //     width: 2.4rem; //adjust logo size
+    //     .hc-logo {
+    //       fill: rgb(240, 238, 225);
+    //       transition: opacity 2s;
+    //       opacity: 0.01;
+    //     }
+    //   }
+    // }
     &:hover {
       background-color: var(--line-color);
       .logo-frame {
@@ -71,8 +70,8 @@ body {
   }
   #header {
     position: fixed;
-    right: 2rem;
-    top: 1.5rem;
+    right: 2.3rem;
+    top: 1.2rem;
     z-index: 9;
     display: flex; // block;
 
