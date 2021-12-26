@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 //change colors
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -74,9 +75,66 @@
 // section.active {
 //   background-color: orange;
 // }
+const sectionsForWidth = gsap.utils.toArray('section'); //sections for know the width
+let maxWidth = 0;
 
-//HORIZONTAL SCROLL
-gsap.registerPlugin(ScrollTrigger);
+const getMaxWidth = () => {
+  maxWidth = 0; //sectionsForWidth.offsetWidth* ((100-66)/2);//the leftest part of the page without a section
+  sectionsForWidth.forEach(section => {
+    maxWidth += section.offsetWidth;
+    console.log(maxWidth);
+  });
+};
+getMaxWidth();
+ScrollTrigger.addEventListener('refreshInit', getMaxWidth);
+
+// gsap.to(sectionsForWidth, {
+//   x: () => `-${maxWidth - window.innerWidth}`,
+//   ease: 'none',
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: '.wrapper',
+//     pin: true,
+//     scrub: true,
+//     end: () => `+=${maxWidth}`,
+//     invalidateOnRefresh: true,
+//   },
+// });
+
+sectionsForWidth.forEach((sct, i) => {
+  ScrollTrigger.create({
+    trigger: sct,
+    start: () =>
+      'top top-=' +
+      (sct.offsetLeft - window.innerWidth / 2) *
+        (maxWidth / (maxWidth - window.innerWidth)),
+    end: () =>
+      '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+    duration: 1,
+    toggleClass: { targets: sct, className: 'active' },
+  });
+});
+
+////////////////////////////////////////////////
+///////////////////////////////////////////////
+/////////// learning GSAP STUFF
+// const blocks = gsap.utils.toArray('.block');
+// blocks.forEach(block => {
+//   gsap.to(block, {
+//     x: 300,
+//     scrollTrigger: {
+//       trigger: block,
+//       // start: 'left 40%', //when block left is 40% from left viewport
+//       // following two lines: Start animation mid-viewport, but reset it offscreen
+//       start: 'center 70%', //when the center of the object arrives to the top of the viewport
+//       toggleActions: 'play none none reset',
+//     },
+//   });
+// });
+
+///////////////////////////////////////////
+/////////  HORIZONTAL SCROLL  /////////////
+// gsap.registerPlugin(ScrollTrigger);//written above
 const sections = document.querySelectorAll('.block');
 const scrollContainer = document.querySelector('.panel2');
 const snapBy = 1 / (sections.length - 1);
@@ -93,11 +151,14 @@ const horizontalScroll = ScrollTrigger.create({
   pin: true,
   scrub: 1, //1 sec, smoothness physics
   end: () => '+=' + scrollContainer.offsetWidth,
+  // <Trying>
+
+  // <Trying/>
   snap: {
     duration: 0.7,
     delay: 0,
     ease: 'none',
-    // inertia: false,
+    //is like inertia: false,
     snapTo: (value, self) => {
       let snapped = snap(value);
       if (snapped > value === self.direction > 0) {
