@@ -17,29 +17,49 @@ nav,
 section {
   display: block;
 }
-html {
-  --bg-color: rgb(255, 255, 255);
-  --line-color: rgb(0, 0, 0);
-}
 
 // #viewContainer
 body {
   overflow-x: hidden;
-  // overflow-y: hidden;
   height: 100%;
   font-size: 1.8rem;
-  font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lightest;
+  font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
 
+  --bg-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  // --bg-color: #000;
+  // --text-color: #ffff00;
+  transition: 1.3s ease-out;
+  .section1 {
+    --bg-color: #000;
+    --text-color: #ff4646;
+  }
+  .section2 {
+    --bg-color: #f9d1cf;
+    --text-color: #000;
+  }
+  .section3 {
+    --bg-color: #33d17c;
+    --text-color: #000;
+  }
+  .section4 {
+    --bg-color: #3e44c8;
+    --text-color: #fff;
+  }
+  .section5 {
+    --bg-color: #fff23f;
+    --text-color: #000;
+  }
   .left-arrow {
     position: fixed;
-    border: 1px solid var(--line-color);
+    border: 1px solid var(--text-color);
     transition: 0.2s;
     height: 3.5rem;
     top: 1.5rem;
     padding: 0.23rem 0.3rem;
     .link-a {
       padding: 0.7rem;
-      color: var(--line-color);
+      color: var(--text-color);
       font-size: 2.2rem;
       &:hover {
         color: var(--bg-color);
@@ -59,7 +79,7 @@ body {
       }
     }
     &:hover {
-      background-color: var(--line-color);
+      background-color: var(--text-color);
       .logo-frame {
         left: 6.4rem;
         .hc-logo {
@@ -85,12 +105,12 @@ body {
       padding-left: 0.8rem;
       padding-right: 0.8rem;
       font-size: 1.3rem;
-      color: var(--line-color);
-      border: 1px solid var(--line-color);
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
       background-color: var(--bg-color);
       transition: 0.2s;
       &:hover {
-        background-color: var(--line-color);
+        background-color: var(--text-color);
         color: var(--bg-color);
       }
     }
@@ -133,8 +153,8 @@ body {
       bottom: calc(5vh + 2rem);
       left: calc(50vw - 28rem / 2);
       z-index: 9;
-      color: var(--line-color);
-      border: 1.5px solid var(--line-color);
+      color: var(--text-color);
+      border: 1.5px solid var(--text-color);
       background-color: var(--bg-color);
 
       display: grid;
@@ -156,8 +176,8 @@ body {
         // padding: 1.2rem;
         padding-top: 1.5rem;
         padding-bottom: 1.3rem;
-        border-left: 1.5px solid var(--line-color);
-        border-right: 1.5px solid var(--line-color);
+        border-left: 1.5px solid var(--text-color);
+        border-right: 1.5px solid var(--text-color);
         #Title__Main {
           font-size: 1.8rem;
         }
@@ -181,20 +201,20 @@ body {
           font-size: 1.8rem;
         }
         #epSign {
-          border-bottom: 1.5px solid var(--line-color);
+          border-bottom: 1.5px solid var(--text-color);
           font-size: 1.6rem;
           // -webkit-text-stroke: 1px rgb(255, 134, 134);
         }
         #epEmoji {
           color: transparent;
-          text-shadow: 0px 0px 0px var(--line-color);
+          text-shadow: 0px 0px 0px var(--text-color);
           opacity: 0.3;
           transition: 0.3s;
         }
       }
       &:hover {
         #epEmoji {
-          color: var(--line-color);
+          color: var(--text-color);
           opacity: 1;
         }
       }
@@ -208,7 +228,7 @@ body {
       align-items: center;
 
       background-color: var(--bg-color);
-      color: var(--line-color);
+      color: var(--text-color);
       overflow-x: hidden;
       .panel-content {
         margin: 2rem;
@@ -240,6 +260,7 @@ body {
           justify-content: center;
           align-items: center;
           font-size: 3rem;
+
           .ScollView__ScrollItem {
             width: 85vmin;
             height: 85vmin;
@@ -297,11 +318,8 @@ body {
               }
             }
           }
-          // .ScollView__ScrollItem.WorkingOn {
-          //   width: 70vmin;
-          //   height: 70vmin;
-          //   margin: 0rem 5vw;
-          // }
+          &.active {
+          }
         }
       }
     }
