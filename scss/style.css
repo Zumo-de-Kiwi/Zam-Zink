@@ -280,10 +280,11 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 .preloader #emoji-loader {
-  font-size: 6rem;
+  font-size: 60px;
   animation: spin 2.6s infinite ease;
-  height: 7rem;
   width: 7rem;
+  height: 70px;
+  transform-origin: center;
 }
 
 .preloader #text-loader {
@@ -680,6 +681,7 @@ body {
   letter-spacing: -0.32px;
   line-height: 1.5;
   color: #5b5957;
+  color: #82807d;
   word-spacing: -0.3px;
   --main-weight: 600;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;

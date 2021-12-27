@@ -280,10 +280,11 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 .preloader #emoji-loader {
-  font-size: 6rem;
+  font-size: 60px;
   animation: spin 2.6s infinite ease;
-  height: 7rem;
   width: 7rem;
+  height: 70px;
+  transform-origin: center;
 }
 
 .preloader #text-loader {

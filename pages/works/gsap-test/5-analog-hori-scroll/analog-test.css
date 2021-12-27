@@ -280,10 +280,11 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 .preloader #emoji-loader {
-  font-size: 6rem;
+  font-size: 60px;
   animation: spin 2.6s infinite ease;
-  height: 7rem;
   width: 7rem;
+  height: 70px;
+  transform-origin: center;
 }
 
 .preloader #text-loader {
@@ -650,29 +651,8 @@ body #header .nav:hover {
 }
 
 body #header #flash {
-  padding-bottom: 1rem;
+  padding-bottom: 0.7rem;
   margin-left: 0.7rem;
-}
-
-body .main .dragWrapper {
-  width: 70%;
-  height: 25%;
-  position: absolute;
-  top: 0rem;
-  left: 15%;
-  z-index: -9;
-  touch-action: pan-y;
-  user-select: none;
-}
-
-body .main .dragObj {
-  position: absolute;
-  top: 0rem;
-  left: 0;
-}
-
-body .main .dragObj #line {
-  height: 7vh;
 }
 
 body .main .Title__MainWrapper {

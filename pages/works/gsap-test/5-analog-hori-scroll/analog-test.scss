@@ -117,7 +117,7 @@ body {
     #whyAnalog {
     }
     #flash {
-      padding-bottom: 1rem;
+      padding-bottom: 0.7rem;
       margin-left: 0.7rem;
     }
     #flashInside {
@@ -127,26 +127,26 @@ body {
   // main is the pics, scrool obj and the title box
   .main {
     // my page custom scroller
-    .dragWrapper {
-      width: 70%;
-      height: 25%;
-      position: absolute;
-      top: 0rem;
-      left: 15%;
-      z-index: -9;
-      touch-action: pan-y;
-      user-select: none;
-    }
-    .dragObj {
-      position: absolute;
-      top: 0rem;
-      left: 0;
-      #line {
-        height: 7vh;
-      }
-      #presser {
-      }
-    }
+    // .dragWrapper {
+    //   width: 70%;
+    //   height: 25%;
+    //   position: absolute;
+    //   top: 0rem;
+    //   left: 15%;
+    //   z-index: -9;
+    //   touch-action: pan-y;
+    //   user-select: none;
+    // }
+    // .dragObj {
+    //   position: absolute;
+    //   top: 0rem;
+    //   left: 0;
+    //   #line {
+    //     height: 7vh;
+    //   }
+    //   #presser {
+    //   }
+    // }
     // TITLES
     .Title__MainWrapper {
       position: fixed;

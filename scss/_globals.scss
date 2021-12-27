@@ -251,7 +251,7 @@ body {
   align-items: center;
   z-index: 99;
   transition: $trans-slow ease-out;
-  // display: none; /// hid
+  // display: none;
   #emoji-loader,
   #text-loader {
     height: 100px;
@@ -262,11 +262,14 @@ body {
 
   #emoji-loader {
     // emoji rotate when loading
-    font-size: 6rem;
+    font-size: 60px;
     animation: spin 2.6s infinite ease; //ease is funnier//linear
     // height and width to center the emoji for a absolute center rotation anchor
-    height: 7rem;
     width: 7rem;
+    height: 70px;
+
+    // justify-self: center;
+    transform-origin: center; //added
   }
 
   #text-loader {
