@@ -24,9 +24,10 @@ body {
   height: 100%;
   font-size: 1.8rem;
   font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
-
+  cursor: $cursor-pointer-hand;
   --bg-color: rgb(26, 21, 36);
   --text-color: #ffa8d6;
+  background-color: var(--bg-color);
   &.section1 {
     --bg-color: #000;
     --text-color: #ff4646;
@@ -210,6 +211,7 @@ body {
   }
   // main is the pics, scrool obj and the title box
   .main {
+    cursor: $cursor-pointer-hand;
     // my page custom scroller
     .dragWrapper {
       //   width: 70%;
@@ -245,7 +247,6 @@ body {
       display: grid;
       grid-template-columns: 4rem 20rem 4rem;
       text-align: center;
-
       .Title__Number {
         grid-column: 1;
 
@@ -254,6 +255,7 @@ body {
         flex-direction: column;
         font-size: 1.4rem;
         padding: 0.8rem;
+        transition: 0.5s;
       }
       .Title__Title {
         grid-column: 2;
@@ -262,12 +264,14 @@ body {
         padding-bottom: 1.3rem;
         border-left: 1.5px solid var(--text-color);
         border-right: 1.5px solid var(--text-color);
+        transition: 0.5s;
 
         #Title__Main {
           font-size: 1.8rem;
           // &::after {
           //   content: 'Mother & Methuselah';
           // }
+          transition: 0.5s;
         }
         #Title__Second {
           font-size: 1.3rem;
@@ -275,6 +279,7 @@ body {
           // &::after {
           //   content: 'the first Earth seed';
           // }
+          transition: 0.5s;
         }
       }
       .Title__SignAndEmoji {
@@ -292,6 +297,7 @@ body {
         }
         #epSign {
           border-bottom: 1.5px solid var(--text-color);
+          transition: 0.5s;
           font-size: 1.6rem;
           // &::after {
           //   content: '#';
@@ -326,6 +332,7 @@ body {
       color: var(--text-color);
       transition: 2s;
       overflow-x: hidden;
+      cursor: $cursor-pointer-hand;
       .panel-content {
         margin: 2rem;
         margin-top: 12vh;
@@ -340,6 +347,7 @@ body {
         height: calc(100vh - 12vh * 2);
       }
       .horizontal-wrapper {
+        cursor: $cursor-pointer-hand;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -349,7 +357,7 @@ body {
         .block {
           width: 100%;
           height: 100%;
-          border: 3px solid rgba(85, 204, 255, 0.057);
+          // border: 3px solid rgba(85, 204, 255, 0.057);
           // background-color: rgba(141, 230, 255, 0.05);
 
           display: flex;
@@ -362,7 +370,7 @@ body {
             height: 85vmin;
             margin: 0rem 5vw;
 
-            border: 3px solid rgba(52, 255, 21, 0.091);
+            // border: 3px solid rgba(52, 255, 21, 0.091);
             // background-color: rgba(198, 255, 141, 0.057);
 
             display: flex;

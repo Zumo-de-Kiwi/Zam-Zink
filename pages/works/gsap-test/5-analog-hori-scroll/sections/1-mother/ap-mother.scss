@@ -26,14 +26,51 @@ body {
   font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
 
   --bg-color: rgb(26, 21, 36);
-  --text-color: #ffa8d6;
+  --text-color: #ffffff;
+  background-color: var(--bg-color);
   &.section1 {
     --bg-color: #000;
-    --text-color: #ff4646;
+    --text-color: #ffffff;
   }
   &.section2 {
-    --bg-color: rgb(160, 127, 127);
-    --text-color: #7a0000;
+    --bg-color: rgb(215, 213, 224);
+    --text-color: #000;
+  }
+  &.section3 {
+    --bg-color: #000;
+    --text-color: #fff;
+  }
+  &.section4 {
+    --bg-color: #fff;
+    --text-color: rgb(245, 90, 90);
+  }
+  &.section5 {
+    --bg-color: rgb(0, 0, 0);
+    --text-color: rgb(233, 136, 223);
+  }
+  &.section6 {
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(215, 49, 63);
+  }
+  &.section7 {
+    --bg-color: rgb(222, 220, 48);
+    --text-color: rgb(27, 218, 157);
+  }
+  &.section8 {
+    --bg-color: rgb(44, 253, 255);
+    --text-color: rgb(228, 35, 238);
+  }
+  &.section9 {
+    --bg-color: rgb(242, 0, 255);
+    --text-color: rgb(255, 255, 255);
+  }
+  &.section10 {
+    --bg-color: rgb(227, 14, 79);
+    --text-color: rgb(12, 36, 254);
+  }
+  &.section11 {
+    --bg-color: rgb(12, 36, 254);
+    --text-color: rgb(7, 247, 171);
   }
   .left-arrow {
     position: fixed;
@@ -49,28 +86,9 @@ body {
         color: var(--bg-color);
       }
     }
-    // .logo-frame {
-    //   top: 1.4rem;
-    //   left: 5.9rem;
-    //   position: fixed;
-    //   .logo-svg {
-    //     width: 2.4rem; //adjust logo size
-    //     .hc-logo {
-    //       fill: rgb(240, 238, 225);
-    //       transition: opacity 2s;
-    //       opacity: 0.01;
-    //     }
-    //   }
-    // }
     &:hover {
       background-color: var(--text-color);
-      .logo-frame {
-        left: 6.4rem;
-        .hc-logo {
-          fill: $blue-purple-tech;
-          opacity: 1;
-        }
-      }
+      cursor: $cursor-pointer-hand;
     }
   }
   #header {
@@ -79,7 +97,7 @@ body {
     top: 1.2rem;
     z-index: 9;
     display: flex; // block;
-
+    cursor: $cursor-pointer-hand;
     .nav {
       display: flex;
       justify-content: center;
@@ -111,25 +129,58 @@ body {
   // main is the pics, scrool obj and the title box
   .main {
     // my page custom scroller
+    .info {
+      position: fixed;
+      right: 2rem;
+      bottom: 1.5rem;
+      z-index: 9;
+      display: flex; // block;
+
+      .info-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0.4rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        font-size: 1.3rem;
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
+        background-color: var(--bg-color);
+        transition: background-color 0.5s, color 0.4s;
+        &:hover {
+          background-color: var(--text-color);
+          color: var(--bg-color);
+        }
+      }
+      #no-info {
+        padding-bottom: 0.7rem;
+        margin-left: 0.7rem;
+      }
+      #Inside {
+        // display: hidden;
+      }
+    }
     .dragWrapper {
-      width: 70%;
-      height: 25%;
-      position: absolute;
-      top: 0rem;
-      left: 15%;
-      z-index: -9;
-      touch-action: pan-y;
-      user-select: none;
+      // width: 70%;
+      // height: 25%;
+      // position: absolute;
+      // top: 0rem;
+      // left: 15%;
+      // z-index: -9;
+      // touch-action: pan-y;
+      // user-select: none;
     }
     .dragObj {
-      position: absolute;
-      top: 0rem;
-      left: 0;
-      #line {
-        height: 7vh;
-      }
-      #presser {
-      }
+      // position: absolute;
+      // top: 0rem;
+      // left: 0;
+      // #line {
+      //   height: 7vh;
+      // }
+      // #presser {
+      // }
     }
     // TITLES
     .Title__MainWrapper {
@@ -214,7 +265,9 @@ body {
       background-color: var(--bg-color);
       color: var(--text-color);
       overflow-x: hidden;
+      cursor: $cursor-pointer-hand;
       .panel-content {
+        cursor: $cursor-pointer-hand;
         margin: 2rem;
         margin-top: 12vh;
         margin-bottom: 12vh;
@@ -295,6 +348,14 @@ body {
                         position: absolute;
                         object-fit: contain;
                       }
+                    }
+                    #pic-5 {
+                      // padding: 0rem 2rem;
+                      margin: 0px 8vw;
+                      // padding: 0px;
+                      inset: 0px;
+                      position: absolute;
+                      // object-fit: contain;
                     }
                   }
                 }

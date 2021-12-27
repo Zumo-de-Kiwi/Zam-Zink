@@ -27,6 +27,12 @@ const sec2 = document.querySelector('#sec2');
 const sec3 = document.querySelector('#sec3');
 const sec4 = document.querySelector('#sec4');
 const sec5 = document.querySelector('#sec5');
+const sec6 = document.querySelector('#sec6');
+const sec7 = document.querySelector('#sec7');
+const sec8 = document.querySelector('#sec8');
+const sec9 = document.querySelector('#sec9');
+const sec10 = document.querySelector('#sec10');
+const sec11 = document.querySelector('#sec11');
 
 ////////////////// SECTION　１　////////////
 ScrollTrigger.create({
@@ -106,22 +112,19 @@ const horizontalScroll = ScrollTrigger.create({
   pin: true,
   scrub: 1, //1 sec, smoothness physics
   end: () => '+=' + scrollContainer.offsetWidth,
-  // <Trying>
-
-  // <Trying/>
-  snap: {
-    duration: 0.7,
-    delay: 0,
-    ease: 'none',
-    //is like inertia: false,
-    snapTo: (value, self) => {
-      let snapped = snap(value);
-      if (snapped > value === self.direction > 0) {
-        return snapped;
-      }
-      return snapped + (self.direction > 0 ? snapBy : -snapBy);
-    },
-  },
+  // snap: {
+  //   duration: 0.7,
+  //   delay: 0,
+  //   ease: 'none',
+  //   //is like inertia: false,
+  //   snapTo: (value, self) => {
+  //     let snapped = snap(value);
+  //     if (snapped > value === self.direction > 0) {
+  //       return snapped;
+  //     }
+  //     return snapped + (self.direction > 0 ? snapBy : -snapBy);
+  //   },
+  // },
 });
 
 // total scroll amount divided by the total distance that the sections move gives us the ratio we can apply to the pointer movement so that it fits.
@@ -139,53 +142,3 @@ var drag = Draggable.create('.proxy', {
     );
   },
 })[0];
-
-//// ORIGINAL AP-MOTHER /////
-// //HORIZONTAL SCROLL
-// gsap.registerPlugin(ScrollTrigger);
-// const sections = document.querySelectorAll('.block');
-// const scrollContainer = document.querySelector('.panel2');
-// const snapBy = 1 / (sections.length - 1);
-// const snap = gsap.utils.snap(snapBy);
-
-// const scrollTween = gsap.to(sections, {
-//   xPercent: -100 * (sections.length - 1),
-//   ease: 'none',
-// });
-
-// const horizontalScroll = ScrollTrigger.create({
-//   animation: scrollTween,
-//   trigger: scrollContainer,
-//   pin: true,
-//   scrub: 1, //1 sec, smoothness physics
-//   end: () => '+=' + scrollContainer.offsetWidth,
-//   snap: {
-//     duration: 0.7,
-//     delay: 0,
-//     ease: 'none',
-//     // inertia: false,
-//     snapTo: (value, self) => {
-//       let snapped = snap(value);
-//       if (snapped > value === self.direction > 0) {
-//         return snapped;
-//       }
-//       return snapped + (self.direction > 0 ? snapBy : -snapBy);
-//     },
-//   },
-// });
-
-// // total scroll amount divided by the total distance that the sections move gives us the ratio we can apply to the pointer movement so that it fits.
-// var dragRatio =
-//   scrollContainer.offsetWidth / (window.innerWidth * (sections.length - 1));
-// var drag = Draggable.create('.proxy', {
-//   trigger: scrollContainer,
-//   type: 'x',
-//   onPress() {
-//     this.startScroll = horizontalScroll.scroll();
-//   },
-//   onDrag() {
-//     horizontalScroll.scroll(
-//       this.startScroll - (this.x - this.startX) * dragRatio
-//     );
-//   },
-// })[0];
