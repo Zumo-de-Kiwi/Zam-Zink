@@ -523,12 +523,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 article,
 aside,
 div,
@@ -556,13 +550,13 @@ body.section1 {
 }
 
 body.section2 {
-  --bg-color: rgb(215, 213, 224);
+  --bg-color: rgb(224, 213, 216);
   --text-color: #000;
 }
 
 body.section3 {
   --bg-color: #000;
-  --text-color: #fff;
+  --text-color: rgb(237, 233, 126);
 }
 
 body.section4 {
@@ -572,7 +566,7 @@ body.section4 {
 
 body.section5 {
   --bg-color: rgb(0, 0, 0);
-  --text-color: rgb(233, 136, 223);
+  --text-color: rgb(225, 161, 219);
 }
 
 body.section6 {
@@ -581,7 +575,7 @@ body.section6 {
 }
 
 body.section7 {
-  --bg-color: rgb(222, 220, 48);
+  --bg-color: rgb(255, 251, 0);
   --text-color: rgb(27, 218, 157);
 }
 
@@ -607,19 +601,23 @@ body.section11 {
 
 body .left-arrow {
   position: fixed;
-  border: 1px solid var(--text-color);
-  transition: 0.2s;
   height: 3.5rem;
   top: 1.5rem;
   padding: 0.3rem 0rem;
+  transition: 2s;
+  border: 1px solid var(--text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 body .left-arrow .link-a {
-  color: var(--text-color);
+  color: inherit;
   font-size: 2.2rem;
+  transition: inherit;
 }
 
 body .left-arrow .link-a:hover {
+  transition: 0.3s;
   color: var(--bg-color);
 }
 
@@ -663,104 +661,55 @@ body #header #flash {
 
 body .main .info {
   position: fixed;
+  left: 2rem;
   right: 2rem;
   bottom: 1.5rem;
   z-index: 9;
   display: flex;
+  width: calc(100% - 4rem);
+  justify-content: space-between;
 }
 
 body .main .info .info-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.4rem;
+  padding: 0.6rem;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  font-size: 1.3rem;
   color: var(--text-color);
   border: 1px solid var(--text-color);
   background-color: var(--bg-color);
-  transition: background-color 0.5s, color 0.4s;
+  transition: 1.5s;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body .main .info .info-btn:hover {
   background-color: var(--text-color);
   color: var(--bg-color);
+  transition: 0.5s;
+}
+
+body .main .info #serious-info {
+  font-size: 1.8rem;
+  padding: 0.65rem;
 }
 
 body .main .info #no-info {
-  padding-bottom: 0.7rem;
-  margin-left: 0.7rem;
-}
-
-body .main .Title__MainWrapper {
-  position: fixed;
-  bottom: calc(5vh + 2rem);
-  left: calc(50vw - 28rem / 2);
-  z-index: 9;
-  color: var(--text-color);
-  border: 1.5px solid var(--text-color);
-  background-color: var(--bg-color);
-  display: grid;
-  grid-template-columns: 4rem 20rem 4rem;
-  text-align: center;
-}
-
-body .main .Title__MainWrapper .Title__Number {
-  grid-column: 1;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  font-size: 1.4rem;
-  padding: 0.8rem;
-}
-
-body .main .Title__MainWrapper .Title__Title {
-  grid-column: 2;
-  width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1.3rem;
-  border-left: 1.5px solid var(--text-color);
-  border-right: 1.5px solid var(--text-color);
-}
-
-body .main .Title__MainWrapper .Title__Title #Title__Main {
-  font-size: 1.8rem;
-}
-
-body .main .Title__MainWrapper .Title__Title #Title__Second {
-  font-size: 1.3rem;
-  margin-top: 0.5rem;
-}
-
-body .main .Title__MainWrapper .Title__SignAndEmoji {
-  grid-column: 3;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-body .main .Title__MainWrapper .Title__SignAndEmoji #epSign,
-body .main .Title__MainWrapper .Title__SignAndEmoji #epEmoji {
-  padding: 1rem 1rem;
-  font-size: 1.8rem;
-}
-
-body .main .Title__MainWrapper .Title__SignAndEmoji #epSign {
-  border-bottom: 1.5px solid var(--text-color);
-  font-size: 1.6rem;
-}
-
-body .main .Title__MainWrapper .Title__SignAndEmoji #epEmoji {
+  font-size: 1.5rem;
   color: transparent;
   text-shadow: 0px 0px 0px var(--text-color);
-  opacity: 0.3;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
-body .main .Title__MainWrapper:hover #epEmoji {
+body .main .info #no-info div {
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+body .main .info #no-info:hover div {
   color: var(--text-color);
   opacity: 1;
 }
@@ -773,6 +722,7 @@ body .main .panel {
   align-items: center;
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: 2s;
   overflow-x: hidden;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
@@ -783,7 +733,6 @@ body .main .panel .panel-content {
   margin-top: 12vh;
   margin-bottom: 12vh;
   padding: 1rem;
-  border: 3px solid rgba(250, 172, 109, 0.132);
   width: 66%;
   display: flex;
   justify-content: center;
@@ -801,8 +750,6 @@ body .main .panel .horizontal-wrapper {
 body .main .panel .horizontal-wrapper .block {
   width: 100%;
   height: 100%;
-  border: 3px solid rgba(85, 204, 255, 0.057);
-  background-color: rgba(141, 230, 255, 0.05);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -810,11 +757,10 @@ body .main .panel .horizontal-wrapper .block {
 }
 
 body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem {
-  width: 85vmin;
-  height: 85vmin;
+  width: 90vmin;
+  height: 93vmin;
   margin: 0rem 5vw;
-  border: 3px solid rgba(52, 255, 21, 0.091);
-  background-color: rgba(198, 255, 141, 0.057);
+  border: 3px solid rgba(89, 227, 82, 0.091);
   display: flex;
   align-items: center;
   position: relative;
@@ -860,10 +806,25 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView_
   inset: 0px;
   position: absolute;
   object-fit: contain;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-1 {
+  margin: 0vh 0vw 0vh 0vw;
+  inset: 0px;
+  overflow: visible;
+  position: absolute;
 }
 
 body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-5 {
   margin: 0px 8vw;
+  inset: 0px;
+  position: absolute;
+}
+
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-10 {
+  margin: 31vh 6vw 0vh 15vw;
   inset: 0px;
   position: absolute;
 }

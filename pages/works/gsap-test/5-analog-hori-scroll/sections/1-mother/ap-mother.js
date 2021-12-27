@@ -49,8 +49,8 @@ ScrollTrigger.create({
 //////////////// SECTION　2　//////////////
 ScrollTrigger.create({
   trigger: sec2,
-  start: () => 'top top-=' + window.innerWidth * 0.06,
-  end: () => '+=' + window.innerWidth * 0.25,
+  start: () => 'top top-=' - window.innerWidth * 0.01, //have a negative window
+  end: () => '+=' + window.innerWidth * 0.15,
   toggleClass: { targets: body, className: 'section2' },
 });
 // console.log(`sec2: + ${sec2.offsetWidth}`);
@@ -58,22 +58,71 @@ ScrollTrigger.create({
 //////////////// SECTION　3　/////////////////
 ScrollTrigger.create({
   trigger: sec3,
-  start: () => 'top top-=' + window.innerWidth * 0.28,
-  end: () => '+=' + window.innerWidth * 0.3,
+  start: () => 'top top-=' + window.innerWidth * 0.05,
+  end: () => '+=' + window.innerWidth * 0.15,
   toggleClass: { targets: body, className: 'section3' },
 });
 //////////////// SECTION　4　//////////////////
 ScrollTrigger.create({
   trigger: sec4,
-  start: () => 'top top-=' + window.innerWidth * 0.5,
-  end: () => '+=' + window.innerWidth * 0.53,
+  start: () => 'top top-=' + window.innerWidth * 0.14,
+  end: () => '+=' + window.innerWidth * 0.22,
   toggleClass: { targets: body, className: 'section4' },
 });
 //////////////// SECTION　5　//////////////////
 ScrollTrigger.create({
   trigger: sec5,
-  start: () => 'top top-=' + window.innerWidth * 0.75,
-  end: () => '+=' + window.innerWidth * 0.8,
+  start: () => 'top top-=' + window.innerWidth * 0.22,
+  end: () => '+=' + window.innerWidth * 0.32,
+  toggleClass: { targets: body, className: 'section5' },
+});
+//////////////// SECTION　6　//////////////////
+ScrollTrigger.create({
+  trigger: sec6,
+  start: () => 'top top-=' + window.innerWidth * 0.31,
+  end: () => '+=' + window.innerWidth * 0.4,
+  toggleClass: { targets: body, className: 'section6' },
+});
+//////////////// SECTION　7　//////////////////
+ScrollTrigger.create({
+  trigger: sec7,
+  start: () => 'top top-=' + window.innerWidth * 0.4,
+  end: () => '+=' + window.innerWidth * 0.49,
+  toggleClass: { targets: body, className: 'section7' },
+});
+//////////////// SECTION　8　//////////////////
+ScrollTrigger.create({
+  trigger: sec8,
+  start: () => 'top top-=' + window.innerWidth * 0.49,
+  end: () => '+=' + window.innerWidth * 0.58,
+  toggleClass: { targets: body, className: 'section8' },
+});
+//////////////// SECTION　9　//////////////////
+ScrollTrigger.create({
+  trigger: sec9,
+  start: () => 'top top-=' + window.innerWidth * 0.58,
+  end: () => '+=' + window.innerWidth * 0.68,
+  toggleClass: { targets: body, className: 'section9' },
+});
+//////////////// SECTION　10　//////////////////
+ScrollTrigger.create({
+  trigger: sec10,
+  start: () => 'top top-=' + window.innerWidth * 0.68,
+  end: () => '+=' + window.innerWidth * 0.32,
+  toggleClass: { targets: body, className: 'section10' },
+});
+//////////////// SECTION　11　//////////////////
+ScrollTrigger.create({
+  trigger: sec11,
+  start: () => 'top top-=' + window.innerWidth * 0.93,
+  end: () => '+=' + window.innerWidth * 0.99,
+  toggleClass: { targets: body, className: 'section11' },
+});
+//////////////// SECTION　11　//////////////////
+ScrollTrigger.create({
+  trigger: sec5,
+  start: () => 'top top-=' + window.innerWidth * 0.23,
+  end: () => '+=' + window.innerWidth * 0.32,
   toggleClass: { targets: body, className: 'section5' },
 });
 ////////////////////////////////////////////////
