@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
+
 //////////////// CHANGE COLORS /////////////////////
-////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 //https://codepen.io/stonkol/pen/YzrEBja?editors=0110
 
@@ -94,53 +94,30 @@ ScrollTrigger.create({
 ScrollTrigger.create({
   trigger: sec8,
   start: () => 'top top-=' + window.innerWidth * 0.49,
-  end: () => '+=' + window.innerWidth * 0.58,
+  end: () => '+=' + window.innerWidth * 0.59,
   toggleClass: { targets: body, className: 'section8' },
 });
 //////////////// SECTION　9　//////////////////
 ScrollTrigger.create({
   trigger: sec9,
-  start: () => 'top top-=' + window.innerWidth * 0.58,
-  end: () => '+=' + window.innerWidth * 0.68,
+  start: () => 'top top-=' + window.innerWidth * 0.59,
+  end: () => '+=' + window.innerWidth * 0.69,
   toggleClass: { targets: body, className: 'section9' },
 });
 //////////////// SECTION　10　//////////////////
 ScrollTrigger.create({
   trigger: sec10,
-  start: () => 'top top-=' + window.innerWidth * 0.68,
-  end: () => '+=' + window.innerWidth * 0.32,
+  start: () => 'top top-=' + window.innerWidth * 0.69,
+  end: () => '+=' + window.innerWidth * 0.79,
   toggleClass: { targets: body, className: 'section10' },
 });
 //////////////// SECTION　11　//////////////////
 ScrollTrigger.create({
   trigger: sec11,
-  start: () => 'top top-=' + window.innerWidth * 0.93,
-  end: () => '+=' + window.innerWidth * 0.99,
+  start: () => 'top top-=' + window.innerWidth * 0.79,
+  end: () => '+=' + window.innerWidth * 1,
   toggleClass: { targets: body, className: 'section11' },
 });
-//////////////// SECTION　11　//////////////////
-ScrollTrigger.create({
-  trigger: sec5,
-  start: () => 'top top-=' + window.innerWidth * 0.23,
-  end: () => '+=' + window.innerWidth * 0.32,
-  toggleClass: { targets: body, className: 'section5' },
-});
-////////////////////////////////////////////////
-///////////////////////////////////////////////
-/////////// learning GSAP STUFF
-// const blocks = gsap.utils.toArray('.block');
-// blocks.forEach(block => {
-//   gsap.to(block, {
-//     x: 300,
-//     scrollTrigger: {
-//       trigger: block,
-//       // start: 'left 40%', //when block left is 40% from left viewport
-//       // following two lines: Start animation mid-viewport, but reset it offscreen
-//       start: 'center 70%', //when the center of the object arrives to the top of the viewport
-//       toggleActions: 'play none none reset',
-//     },
-//   });
-// });
 
 ///////////////////////////////////////////
 /////////  HORIZONTAL SCROLL  /////////////

@@ -61,10 +61,10 @@ body {
   }
   &.section10 {
     --bg-color: rgb(227, 14, 79);
-    --text-color: rgb(12, 36, 254);
+    --text-color: rgb(6, 30, 247);
   }
   &.section11 {
-    --bg-color: rgb(12, 36, 254);
+    --bg-color: rgb(0, 25, 250);
     --text-color: rgb(7, 247, 171);
   }
   .left-arrow {
@@ -141,8 +141,6 @@ body {
       justify-content: space-between;
       .info-btn {
         padding: 0.6rem;
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
 
         color: var(--text-color);
         border: 1px solid var(--text-color);
@@ -163,11 +161,16 @@ body {
       #serious-info {
         font-size: 1.8rem;
         padding: 0.65rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        height: 4.3rem;
       }
       #no-info {
         font-size: 1.5rem;
         color: transparent;
         text-shadow: 0px 0px 0px var(--text-color);
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
         cursor: pointer;
         div {
           transition: 0.3s;
@@ -223,18 +226,16 @@ body {
           width: 100%;
           height: 100%;
           // border: 3px solid rgba(71, 200, 255, 0.084);
-          // background-color: rgba(141, 230, 255, 0.05);
-
           display: flex;
           justify-content: center;
           align-items: center;
           font-size: 3rem;
           .ScollView__ScrollItem {
-            width: 90vmin;
-            height: 93vmin;
-            margin: 0rem 5vw;
+            width: 100vmin;
+            height: 100vmin;
+            margin: 0rem 0vw;
 
-            border: 3px solid rgba(89, 227, 82, 0.091);
+            border: 3px solid rgba(129, 129, 129, 0.153);
             // background-color: rgba(198, 255, 141, 0.057);
 
             display: flex;
@@ -266,6 +267,10 @@ body {
                     width: 100%;
                     height: 100%;
                     picture {
+                      margin: 10vh 6vw 10vh 6vw; //t r b l
+                      inset: 0px;
+                      overflow: visible;
+                      position: absolute;
                       img {
                         min-width: 100%;
                         max-width: 100%;
@@ -281,13 +286,37 @@ body {
                       }
                     }
                     #pic-1 {
-                      margin: 0vh 0vw 0vh 0vw; //t r b l
+                      margin: 0vh 0vw 5vh 0vw; //t r b l
                       inset: 0px;
-                      overflow: visible;
+                      position: absolute;
+                    }
+                    #pic-2 {
+                      margin: 25vh 2vw 0vh 14vw; //t r b l
+                      inset: 0px;
+                      position: absolute;
+                    }
+                    #pic-3 {
+                      margin: 0vh 13vw 23vh 7vw; //t r b l
+                      inset: 0px;
+                      position: absolute;
+                    }
+                    #pic-4 {
+                      margin: 10vh 0vw 2vh 15vw; //t r b l
+                      inset: 0px;
                       position: absolute;
                     }
                     #pic-5 {
-                      margin: 0px 8vw;
+                      margin: 10vh 10vw 12vh 16vw; //t r b l
+                      inset: 0px;
+                      position: absolute;
+                    }
+                    #pic-6 {
+                      margin: 0vh 13vw 31vh 9vw; //t r b l
+                      inset: 0px;
+                      position: absolute;
+                    }
+                    #pic-8 {
+                      margin: 7vh 7vw 31vh 13vw; //t r b l
                       inset: 0px;
                       position: absolute;
                     }

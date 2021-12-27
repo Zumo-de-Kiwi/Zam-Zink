@@ -54,7 +54,7 @@ body {
         content: 'Back Street';
       }
       #Title__Second::after {
-        content: 'When you are strange faces comes out of he rain';
+        content: 'Faces comes out of the rain';
       }
       #epSign::after {
         content: '@';
@@ -130,17 +130,18 @@ body {
   }
   .left-arrow {
     position: fixed;
-    transition: 0.5s;
+    transition: 1.5s;
     border: 1px solid var(--text-color);
     height: 3.5rem;
     top: 1.5rem;
     padding: 0.23rem 0.3rem;
     .link-a {
       padding: 0.7rem;
-      transition: 0.4s;
       color: var(--text-color);
       font-size: 2.2rem;
+      transition: inherit;
       &:hover {
+        transition: 0.4s;
         color: var(--bg-color);
       }
     }
@@ -187,10 +188,11 @@ body {
       color: var(--text-color);
       border: 1px solid var(--text-color);
       background-color: var(--bg-color);
-      transition: background-color 0.5s, color 0.4s;
+      transition: 1.5s;
       &:hover {
         background-color: var(--text-color);
         color: var(--bg-color);
+        transition: 0.5s;
       }
     }
     #whyAnalog {
@@ -236,7 +238,7 @@ body {
       color: var(--text-color);
       border: 1.5px solid var(--text-color);
       background-color: var(--bg-color);
-      transition: 1s;
+      transition: 1.5s;
 
       display: grid;
       grid-template-columns: 4rem 20rem 4rem;
@@ -249,7 +251,7 @@ body {
         flex-direction: column;
         font-size: 1.4rem;
         padding: 0.8rem;
-        transition: 0.5s;
+        transition: inherit;
       }
       .Title__Title {
         grid-column: 2;
@@ -258,14 +260,14 @@ body {
         padding-bottom: 1.3rem;
         border-left: 1.5px solid var(--text-color);
         border-right: 1.5px solid var(--text-color);
-        transition: 0.5s;
+        transition: 1.5s;
 
         #Title__Main {
           font-size: 1.8rem;
           // &::after {
           //   content: 'Mother & Methuselah';
           // }
-          transition: 0.5s;
+          transition: inherit;
         }
         #Title__Second {
           font-size: 1.3rem;
@@ -273,7 +275,7 @@ body {
           // &::after {
           //   content: 'the first Earth seed';
           // }
-          transition: 0.5s;
+          transition: inherit;
         }
       }
       .Title__SignAndEmoji {
@@ -284,6 +286,7 @@ body {
         justify-content: space-evenly;
         flex-direction: column;
         align-items: stretch;
+        transition: inherit;
         #epSign,
         #epEmoji {
           padding: 1rem 1rem;
@@ -293,6 +296,7 @@ body {
           border-bottom: 1.5px solid var(--text-color);
           transition: 0.5s;
           font-size: 1.6rem;
+          transition: inherit;
           // &::after {
           //   content: '#';
           // }
@@ -407,6 +411,7 @@ body {
                         inset: 0px;
                         position: absolute;
                         object-fit: contain;
+                        font-size: 1rem;
                       }
                     }
                   }

@@ -584,7 +584,7 @@ body.section2 .Title__MainWrapper #Title__Main::after {
 }
 
 body.section2 .Title__MainWrapper #Title__Second::after {
-  content: 'When you are strange faces comes out of he rain';
+  content: 'Faces comes out of the rain';
 }
 
 body.section2 .Title__MainWrapper #epSign::after {
@@ -672,7 +672,7 @@ body.section5 .Title__MainWrapper #epEmoji::after {
 
 body .left-arrow {
   position: fixed;
-  transition: 0.5s;
+  transition: 1.5s;
   border: 1px solid var(--text-color);
   height: 3.5rem;
   top: 1.5rem;
@@ -681,12 +681,13 @@ body .left-arrow {
 
 body .left-arrow .link-a {
   padding: 0.7rem;
-  transition: 0.4s;
   color: var(--text-color);
   font-size: 2.2rem;
+  transition: inherit;
 }
 
 body .left-arrow .link-a:hover {
+  transition: 0.4s;
   color: var(--bg-color);
 }
 
@@ -738,12 +739,13 @@ body #header .nav {
   color: var(--text-color);
   border: 1px solid var(--text-color);
   background-color: var(--bg-color);
-  transition: background-color 0.5s, color 0.4s;
+  transition: 1.5s;
 }
 
 body #header .nav:hover {
   background-color: var(--text-color);
   color: var(--bg-color);
+  transition: 0.5s;
 }
 
 body #header #flash {
@@ -763,7 +765,7 @@ body .main .Title__MainWrapper {
   color: var(--text-color);
   border: 1.5px solid var(--text-color);
   background-color: var(--bg-color);
-  transition: 1s;
+  transition: 1.5s;
   display: grid;
   grid-template-columns: 4rem 20rem 4rem;
   text-align: center;
@@ -776,7 +778,7 @@ body .main .Title__MainWrapper .Title__Number {
   flex-direction: column;
   font-size: 1.4rem;
   padding: 0.8rem;
-  transition: 0.5s;
+  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__Title {
@@ -786,18 +788,18 @@ body .main .Title__MainWrapper .Title__Title {
   padding-bottom: 1.3rem;
   border-left: 1.5px solid var(--text-color);
   border-right: 1.5px solid var(--text-color);
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 body .main .Title__MainWrapper .Title__Title #Title__Main {
   font-size: 1.8rem;
-  transition: 0.5s;
+  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__Title #Title__Second {
   font-size: 1.3rem;
   margin-top: 0.5rem;
-  transition: 0.5s;
+  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji {
@@ -807,6 +809,7 @@ body .main .Title__MainWrapper .Title__SignAndEmoji {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: stretch;
+  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji #epSign,
@@ -819,6 +822,7 @@ body .main .Title__MainWrapper .Title__SignAndEmoji #epSign {
   border-bottom: 1.5px solid var(--text-color);
   transition: 0.5s;
   font-size: 1.6rem;
+  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji #epEmoji {
@@ -925,6 +929,7 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView_
   inset: 0px;
   position: absolute;
   object-fit: contain;
+  font-size: 1rem;
 }
 
 body .main #footer {
