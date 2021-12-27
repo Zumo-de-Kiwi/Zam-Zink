@@ -30,22 +30,108 @@ body {
   &.section1 {
     --bg-color: #000;
     --text-color: #ff4646;
+    .Title__MainWrapper {
+      .episode::after {
+        content: '1';
+      }
+      #Title__Main::after {
+        content: 'Mother & Methuselah';
+      }
+      #Title__Second::after {
+        content: 'the first Earth seed';
+      }
+      #epSign::after {
+        content: '#';
+      }
+      #epEmoji::after {
+        content: '🐔';
+      }
+    }
   }
   &.section2 {
     --bg-color: #f9d1cf;
     --text-color: #000;
+    .Title__MainWrapper {
+      .episode::after {
+        content: '2';
+      }
+      #Title__Main::after {
+        content: 'Back Street';
+      }
+      #Title__Second::after {
+        content: 'When you are strange faces comes out of he rain';
+      }
+      #epSign::after {
+        content: '@';
+      }
+      #epEmoji::after {
+        content: '🧂';
+      }
+    }
   }
+
   &.section3 {
     --bg-color: #33d17c;
     --text-color: #000;
+    .Title__MainWrapper {
+      .episode::after {
+        content: '3';
+      }
+      #Title__Main::after {
+        content: 'Friends & Chips';
+      }
+      #Title__Second::after {
+        content: 'spicy and sweat';
+      }
+      #epSign::after {
+        content: '⁉';
+      }
+      #epEmoji::after {
+        content: '🍥';
+      }
+    }
   }
   &.section4 {
     --bg-color: #3e44c8;
     --text-color: #fff;
+    .Title__MainWrapper {
+      .episode::after {
+        content: '4';
+      }
+      #Title__Main::after {
+        content: 'Coming Soon'; //Shadow & Sharpie
+      }
+      #Title__Second::after {
+        content: 'between Jan. & Dec.'; //Like topping ingredients on the pizza
+      }
+      #epSign::after {
+        content: 'π';
+      }
+      #epEmoji::after {
+        content: '🍙';
+      }
+    }
   }
   &.section5 {
     --bg-color: #fff23f;
     --text-color: #000;
+    .Title__MainWrapper {
+      .episode::after {
+        content: '5';
+      }
+      #Title__Main::after {
+        content: 'Coming Soon'; //Double Chesse
+      }
+      #Title__Second::after {
+        content: 'on February 29th'; //I like it more than double beef
+      }
+      #epSign::after {
+        content: '“';
+      }
+      #epEmoji::after {
+        content: '🍕';
+      }
+    }
   }
   .left-arrow {
     position: fixed;
@@ -172,17 +258,23 @@ body {
       .Title__Title {
         grid-column: 2;
         width: 100%;
-        // padding: 1.2rem;
         padding-top: 1.5rem;
         padding-bottom: 1.3rem;
         border-left: 1.5px solid var(--text-color);
         border-right: 1.5px solid var(--text-color);
+
         #Title__Main {
           font-size: 1.8rem;
+          // &::after {
+          //   content: 'Mother & Methuselah';
+          // }
         }
         #Title__Second {
           font-size: 1.3rem;
           margin-top: 0.5rem;
+          // &::after {
+          //   content: 'the first Earth seed';
+          // }
         }
       }
       .Title__SignAndEmoji {
@@ -193,7 +285,6 @@ body {
         justify-content: space-evenly;
         flex-direction: column;
         align-items: stretch;
-        // justify-content: stretch;
         #epSign,
         #epEmoji {
           padding: 1rem 1rem;
@@ -202,13 +293,18 @@ body {
         #epSign {
           border-bottom: 1.5px solid var(--text-color);
           font-size: 1.6rem;
-          // -webkit-text-stroke: 1px rgb(255, 134, 134);
+          // &::after {
+          //   content: '#';
+          // }
         }
         #epEmoji {
           color: transparent;
           text-shadow: 0px 0px 0px var(--text-color);
           opacity: 0.3;
           transition: 0.3s;
+          // &::after {
+          //   content: '🐔';
+          // }
         }
       }
       &:hover {

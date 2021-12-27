@@ -554,9 +554,49 @@ body.section1 {
   --text-color: #ff4646;
 }
 
+body.section1 .Title__MainWrapper .episode::after {
+  content: '1';
+}
+
+body.section1 .Title__MainWrapper #Title__Main::after {
+  content: 'Mother & Methuselah';
+}
+
+body.section1 .Title__MainWrapper #Title__Second::after {
+  content: 'the first Earth seed';
+}
+
+body.section1 .Title__MainWrapper #epSign::after {
+  content: '#';
+}
+
+body.section1 .Title__MainWrapper #epEmoji::after {
+  content: '🐔';
+}
+
 body.section2 {
   --bg-color: #f9d1cf;
   --text-color: #000;
+}
+
+body.section2 .Title__MainWrapper .episode::after {
+  content: '2';
+}
+
+body.section2 .Title__MainWrapper #Title__Main::after {
+  content: 'Back Street';
+}
+
+body.section2 .Title__MainWrapper #Title__Second::after {
+  content: 'When you are strange faces comes out of he rain';
+}
+
+body.section2 .Title__MainWrapper #epSign::after {
+  content: '@';
+}
+
+body.section2 .Title__MainWrapper #epEmoji::after {
+  content: '🧂';
 }
 
 body.section3 {
@@ -564,14 +604,74 @@ body.section3 {
   --text-color: #000;
 }
 
+body.section3 .Title__MainWrapper .episode::after {
+  content: '3';
+}
+
+body.section3 .Title__MainWrapper #Title__Main::after {
+  content: 'Friends & Chips';
+}
+
+body.section3 .Title__MainWrapper #Title__Second::after {
+  content: 'spicy and sweat';
+}
+
+body.section3 .Title__MainWrapper #epSign::after {
+  content: '⁉';
+}
+
+body.section3 .Title__MainWrapper #epEmoji::after {
+  content: '🍥';
+}
+
 body.section4 {
   --bg-color: #3e44c8;
   --text-color: #fff;
 }
 
+body.section4 .Title__MainWrapper .episode::after {
+  content: '4';
+}
+
+body.section4 .Title__MainWrapper #Title__Main::after {
+  content: 'Coming Soon';
+}
+
+body.section4 .Title__MainWrapper #Title__Second::after {
+  content: 'between Jan. & Dec.';
+}
+
+body.section4 .Title__MainWrapper #epSign::after {
+  content: 'π';
+}
+
+body.section4 .Title__MainWrapper #epEmoji::after {
+  content: '🍙';
+}
+
 body.section5 {
   --bg-color: #fff23f;
   --text-color: #000;
+}
+
+body.section5 .Title__MainWrapper .episode::after {
+  content: '5';
+}
+
+body.section5 .Title__MainWrapper #Title__Main::after {
+  content: 'Coming Soon';
+}
+
+body.section5 .Title__MainWrapper #Title__Second::after {
+  content: 'on February 29th';
+}
+
+body.section5 .Title__MainWrapper #epSign::after {
+  content: '“';
+}
+
+body.section5 .Title__MainWrapper #epEmoji::after {
+  content: '🍕';
 }
 
 body .left-arrow {

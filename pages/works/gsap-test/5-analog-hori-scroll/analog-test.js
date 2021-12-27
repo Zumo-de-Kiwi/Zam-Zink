@@ -147,16 +147,14 @@ ScrollTrigger.create({
       (maxWidth / (maxWidth - window.innerWidth)),
   end: () =>
     '+=' + sec1.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
-  duration: 1,
   toggleClass: { targets: body, className: 'section1' },
 });
 
 //////////////// SECTION　2　//////////////
 ScrollTrigger.create({
   trigger: sec2,
-  start: () => 'top top-=' + window.innerWidth * 0.12,
-  end: () => '+=' + window.innerWidth * 0.17,
-  duration: 1,
+  start: () => 'top top-=' + window.innerWidth * 0.06,
+  end: () => '+=' + window.innerWidth * 0.25,
   toggleClass: { targets: body, className: 'section2' },
 });
 // console.log(`sec2: + ${sec2.offsetWidth}`);
@@ -166,8 +164,6 @@ ScrollTrigger.create({
   trigger: sec3,
   start: () => 'top top-=' + window.innerWidth * 0.28,
   end: () => '+=' + window.innerWidth * 0.3,
-  markers: true,
-  // duration: 5,
   toggleClass: { targets: body, className: 'section3' },
 });
 //////////////// SECTION　4　//////////////////
@@ -175,7 +171,6 @@ ScrollTrigger.create({
   trigger: sec4,
   start: () => 'top top-=' + window.innerWidth * 0.5,
   end: () => '+=' + window.innerWidth * 0.53,
-  // duration: 1,
   toggleClass: { targets: body, className: 'section4' },
 });
 //////////////// SECTION　5　//////////////////
@@ -183,7 +178,6 @@ ScrollTrigger.create({
   trigger: sec5,
   start: () => 'top top-=' + window.innerWidth * 0.75,
   end: () => '+=' + window.innerWidth * 0.8,
-  // duration: 1,
   toggleClass: { targets: body, className: 'section5' },
 });
 ////////////////////////////////////////////////
