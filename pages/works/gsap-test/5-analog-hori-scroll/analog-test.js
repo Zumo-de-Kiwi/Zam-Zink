@@ -77,9 +77,9 @@ gsap.registerPlugin(ScrollTrigger);
 // }
 const sectionsForWidth = gsap.utils.toArray('section'); //sections for know the width
 let maxWidth = 0;
-
+console.log(window.innerWidth * 0.17);
 const getMaxWidth = () => {
-  maxWidth = 0; //sectionsForWidth.offsetWidth* ((100-66)/2);//the leftest part of the page without a section
+  maxWidth = 0; //0;; //sectionsForWidth.offsetWidth* ((100-66)/2);//the leftest part of the page without a section
   sectionsForWidth.forEach(section => {
     maxWidth += section.offsetWidth;
     console.log(maxWidth);
@@ -101,20 +101,91 @@ ScrollTrigger.addEventListener('refreshInit', getMaxWidth);
 //   },
 // });
 
-sectionsForWidth.forEach((sct, i) => {
-  ScrollTrigger.create({
-    trigger: sct,
-    start: () =>
-      'top top-=' +
-      (sct.offsetLeft - window.innerWidth / 2) *
-        (maxWidth / (maxWidth - window.innerWidth)),
-    end: () =>
-      '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
-    duration: 1,
-    toggleClass: { targets: sct, className: 'active' },
-  });
+// sectionsForWidth.forEach((sct, i) => {
+//   ScrollTrigger.create({
+//     trigger: sct,
+//     start: () =>
+//       'top top-=' +
+//       (sct.offsetLeft - window.innerWidth / 2) *
+//         (maxWidth / (maxWidth - window.innerWidth)),
+//     end: () =>
+//       '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+//     duration: 1,
+//     toggleClass: { targets: sct, className: 'active' },
+//   });
+// });
+
+////////////////////////////
+///// MY DIY CODE //////////
+////////////////////////////
+const body = document.querySelector('.body');
+///// SECTIONS
+const sec1 = document.querySelector('#sec1');
+const sec2 = document.querySelector('#sec2');
+const sec3 = document.querySelector('#sec3');
+const sec4 = document.querySelector('#sec4');
+const sec5 = document.querySelector('#sec5');
+
+////////////////// ORIGINAL SECTION　１　////////////
+// ScrollTrigger.create({
+//   trigger: sec1,
+//   start: () =>
+//     'top top-=' +
+//     (sec1.offsetLeft - window.innerWidth / 2) *
+//       (maxWidth / (maxWidth - window.innerWidth)),
+//   end: () =>
+//     '+=' + sec1.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+//   duration: 1,
+//   toggleClass: { targets: body, className: 'section1' },
+// });
+////////////////// SECTION　１　////////////
+ScrollTrigger.create({
+  trigger: sec1,
+  start: () =>
+    'top top-=' +
+    (sec1.offsetLeft - window.innerWidth / 2) *
+      (maxWidth / (maxWidth - window.innerWidth)),
+  end: () =>
+    '+=' + sec1.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+  duration: 1,
+  toggleClass: { targets: body, className: 'section1' },
 });
 
+//////////////// SECTION　2　//////////////
+ScrollTrigger.create({
+  trigger: sec2,
+  start: () => 'top top-=' + window.innerWidth * 0.12,
+  end: () => '+=' + window.innerWidth * 0.17,
+  duration: 1,
+  toggleClass: { targets: body, className: 'section2' },
+});
+// console.log(`sec2: + ${sec2.offsetWidth}`);
+
+//////////////// SECTION　3　/////////////////
+ScrollTrigger.create({
+  trigger: sec3,
+  start: () => 'top top-=' + window.innerWidth * 0.28,
+  end: () => '+=' + window.innerWidth * 0.3,
+  markers: true,
+  // duration: 5,
+  toggleClass: { targets: body, className: 'section3' },
+});
+//////////////// SECTION　4　//////////////////
+ScrollTrigger.create({
+  trigger: sec4,
+  start: () => 'top top-=' + window.innerWidth * 0.5,
+  end: () => '+=' + window.innerWidth * 0.53,
+  // duration: 1,
+  toggleClass: { targets: body, className: 'section4' },
+});
+//////////////// SECTION　5　//////////////////
+ScrollTrigger.create({
+  trigger: sec5,
+  start: () => 'top top-=' + window.innerWidth * 0.75,
+  end: () => '+=' + window.innerWidth * 0.8,
+  // duration: 1,
+  toggleClass: { targets: body, className: 'section5' },
+});
 ////////////////////////////////////////////////
 ///////////////////////////////////////////////
 /////////// learning GSAP STUFF

@@ -25,40 +25,38 @@ body {
   font-size: 1.8rem;
   font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
 
-  --bg-color: rgb(255, 255, 255);
-  --text-color: rgb(0, 0, 0);
-  // --bg-color: #000;
-  // --text-color: #ffff00;
-  transition: 1.3s ease-out;
-  .section1 {
+  --bg-color: rgb(26, 21, 36);
+  --text-color: #ffa8d6;
+  &.section1 {
     --bg-color: #000;
     --text-color: #ff4646;
   }
-  .section2 {
+  &.section2 {
     --bg-color: #f9d1cf;
     --text-color: #000;
   }
-  .section3 {
+  &.section3 {
     --bg-color: #33d17c;
     --text-color: #000;
   }
-  .section4 {
+  &.section4 {
     --bg-color: #3e44c8;
     --text-color: #fff;
   }
-  .section5 {
+  &.section5 {
     --bg-color: #fff23f;
     --text-color: #000;
   }
   .left-arrow {
     position: fixed;
+    transition: 0.5s;
     border: 1px solid var(--text-color);
-    transition: 0.2s;
     height: 3.5rem;
     top: 1.5rem;
     padding: 0.23rem 0.3rem;
     .link-a {
       padding: 0.7rem;
+      transition: 0.4s;
       color: var(--text-color);
       font-size: 2.2rem;
       &:hover {
@@ -108,7 +106,7 @@ body {
       color: var(--text-color);
       border: 1px solid var(--text-color);
       background-color: var(--bg-color);
-      transition: 0.2s;
+      transition: background-color 0.5s, color 0.4s;
       &:hover {
         background-color: var(--text-color);
         color: var(--bg-color);
@@ -127,26 +125,26 @@ body {
   // main is the pics, scrool obj and the title box
   .main {
     // my page custom scroller
-    // .dragWrapper {
-    //   width: 70%;
-    //   height: 25%;
-    //   position: absolute;
-    //   top: 0rem;
-    //   left: 15%;
-    //   z-index: -9;
-    //   touch-action: pan-y;
-    //   user-select: none;
-    // }
-    // .dragObj {
-    //   position: absolute;
-    //   top: 0rem;
-    //   left: 0;
-    //   #line {
-    //     height: 7vh;
-    //   }
-    //   #presser {
-    //   }
-    // }
+    .dragWrapper {
+      //   width: 70%;
+      //   height: 25%;
+      //   position: absolute;
+      //   top: 0rem;
+      //   left: 15%;
+      //   z-index: -9;
+      //   touch-action: pan-y;
+      //   user-select: none;
+    }
+    .dragObj {
+      //   position: absolute;
+      //   top: 0rem;
+      //   left: 0;
+      //   #line {
+      //     height: 7vh;
+      //   }
+      //   #presser {
+      //   }
+    }
     // TITLES
     .Title__MainWrapper {
       position: fixed;
@@ -156,6 +154,7 @@ body {
       color: var(--text-color);
       border: 1.5px solid var(--text-color);
       background-color: var(--bg-color);
+      transition: 1s;
 
       display: grid;
       grid-template-columns: 4rem 20rem 4rem;
@@ -229,13 +228,14 @@ body {
 
       background-color: var(--bg-color);
       color: var(--text-color);
+      transition: 2s;
       overflow-x: hidden;
       .panel-content {
         margin: 2rem;
         margin-top: 12vh;
         margin-bottom: 12vh;
         padding: 1rem;
-        border: 3px solid rgba(250, 172, 109, 0.132);
+        // border: 3px solid rgba(250, 172, 109, 0.132);
         width: 66%;
 
         display: flex;
@@ -254,7 +254,7 @@ body {
           width: 100%;
           height: 100%;
           border: 3px solid rgba(85, 204, 255, 0.057);
-          background-color: rgba(141, 230, 255, 0.05);
+          // background-color: rgba(141, 230, 255, 0.05);
 
           display: flex;
           justify-content: center;
@@ -267,7 +267,7 @@ body {
             margin: 0rem 5vw;
 
             border: 3px solid rgba(52, 255, 21, 0.091);
-            background-color: rgba(198, 255, 141, 0.057);
+            // background-color: rgba(198, 255, 141, 0.057);
 
             display: flex;
             align-items: center;
