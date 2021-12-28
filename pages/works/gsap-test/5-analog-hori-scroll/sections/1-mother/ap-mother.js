@@ -127,13 +127,15 @@ ScrollTrigger.create({
 var wrapper = document.querySelectorAll('.info-wrapper')[0];
 var content = document.querySelectorAll('.content-info')[0];
 var expandBtn = document.querySelectorAll('.info-btn')[0];
+console.log(wrapper, content);
 
 expandBtn.addEventListener('click', startTest);
 
 function startTest() {
   var a, b;
+  console.log(expandBtn);
   // check state
-  if (expandBtn.classList.contains('clicked')) {
+  if (content.classList.contains('clicked')) {
     b = '-=clicked';
   } else {
     b = '+=clicked';
@@ -142,10 +144,14 @@ function startTest() {
   a = new TimelineLite({
     paused: true,
   });
-  a.to(box, 0.5, {
-    className: b,
-    ease: Power1.ease, //Power3.easeInOut
-  });
+  a.to(
+    wrapper, //box,
+    0.5,
+    {
+      className: b,
+      ease: Power1.ease, //Power3.easeInOut
+    }
+  );
   a.to(
     content, //el,
     0.5, //secs

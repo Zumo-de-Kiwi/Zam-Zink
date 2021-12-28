@@ -661,16 +661,19 @@ body #header #flash {
 
 body .main .info {
   position: fixed;
-  left: 2rem;
-  right: 2rem;
-  bottom: 1.5rem;
+  bottom: 6rem;
   z-index: 9;
-  display: flex;
-  width: calc(100% - 4rem);
-  justify-content: space-between;
+  width: 100%;
 }
 
-body .main .info .info-btn {
+body .main .info .info-wrapper {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+body .main .info .info-wrapper .info-btn {
+  z-index: 19;
   padding: 0.6rem;
   color: var(--text-color);
   border: 1px solid var(--text-color);
@@ -683,13 +686,18 @@ body .main .info .info-btn {
   align-items: center;
 }
 
-body .main .info .info-btn:hover {
+body .main .info .info-wrapper .info-btn:hover {
   background-color: var(--text-color);
   color: var(--bg-color);
   transition: 0.5s;
 }
 
-body .main .info #no-info {
+body .main .info .info-wrapper#no-info-wrapper {
+  position: absolute;
+  left: 2rem;
+}
+
+body .main .info .info-wrapper#no-info-wrapper #no-info {
   height: 100%;
   font-size: 1.5rem;
   color: transparent;
@@ -699,60 +707,64 @@ body .main .info #no-info {
   cursor: pointer;
 }
 
-body .main .info #no-info div {
+body .main .info .info-wrapper#no-info-wrapper #no-info div {
   transition: 0.3s;
   opacity: 0.7;
   cursor: pointer;
 }
 
-body .main .info #no-info:hover div {
+body .main .info .info-wrapper#no-info-wrapper #no-info:hover div {
   color: var(--text-color);
   opacity: 1;
 }
 
-body .main .info .info-wrapper {
-  width: auto;
-  height: auto;
+body .main .info .info-wrapper#serious-wrapper {
+  position: absolute;
+  right: 1rem;
 }
 
-body .main .info .info-wrapper .content-info {
+body .main .info .info-wrapper#serious-wrapper .content-info {
   color: var(--text-color);
   border: 1px solid var(--text-color);
   background-color: var(--bg-color);
-  height: 4rem;
-  width: auto;
+  height: 10rem;
+  width: 13rem;
   transform-origin: bottom right;
 }
 
-body .main .info .info-wrapper .content-info.clicked {
+body .main .info .info-wrapper#serious-wrapper .content-info.clicked {
   height: 50vh;
   max-width: 80vw;
+  position: relative;
+  display: grid;
+  overflow-y: scroll;
 }
 
-body .main .info .info-wrapper .content-info.clicked #serious-info {
+body .main .info .info-wrapper#serious-wrapper .content-info.clicked #serious-info {
   content: 'Close Me';
   transition: inherit;
+  position: absolute;
 }
 
-body .main .info .info-wrapper .content-info.clicked .box-text {
+body .main .info .info-wrapper#serious-wrapper .content-info.clicked .box-text {
   display: block;
   opacity: 1;
   transition: 0.3s;
 }
 
-body .main .info .info-wrapper .content-info #serious-info {
+body .main .info .info-wrapper#serious-wrapper .content-info #serious-info {
   font-size: 1.8rem;
   padding: 0.65rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
 }
 
-body .main .info .info-wrapper .content-info #serious-info::after {
+body .main .info .info-wrapper#serious-wrapper .content-info #serious-info::after {
   content: ' # ... # ';
   transition: inherit;
 }
 
-body .main .info .info-wrapper .content-info .box-text {
+body .main .info .info-wrapper#serious-wrapper .content-info .box-text {
   display: hidden;
   opacity: 0;
 }
