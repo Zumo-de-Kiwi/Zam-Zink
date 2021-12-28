@@ -689,15 +689,8 @@ body .main .info .info-btn:hover {
   transition: 0.5s;
 }
 
-body .main .info #serious-info {
-  font-size: 1.8rem;
-  padding: 0.65rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  height: 4.3rem;
-}
-
 body .main .info #no-info {
+  height: 100%;
   font-size: 1.5rem;
   color: transparent;
   text-shadow: 0px 0px 0px var(--text-color);
@@ -715,6 +708,53 @@ body .main .info #no-info div {
 body .main .info #no-info:hover div {
   color: var(--text-color);
   opacity: 1;
+}
+
+body .main .info .info-wrapper {
+  width: auto;
+  height: auto;
+}
+
+body .main .info .info-wrapper .content-info {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  background-color: var(--bg-color);
+  height: 4rem;
+  width: auto;
+  transform-origin: bottom right;
+}
+
+body .main .info .info-wrapper .content-info.clicked {
+  height: 50vh;
+  max-width: 80vw;
+}
+
+body .main .info .info-wrapper .content-info.clicked #serious-info {
+  content: 'Close Me';
+  transition: inherit;
+}
+
+body .main .info .info-wrapper .content-info.clicked .box-text {
+  display: block;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+body .main .info .info-wrapper .content-info #serious-info {
+  font-size: 1.8rem;
+  padding: 0.65rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+body .main .info .info-wrapper .content-info #serious-info::after {
+  content: ' # ... # ';
+  transition: inherit;
+}
+
+body .main .info .info-wrapper .content-info .box-text {
+  display: hidden;
+  opacity: 0;
 }
 
 body .main .panel {

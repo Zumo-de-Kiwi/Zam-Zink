@@ -119,6 +119,45 @@ ScrollTrigger.create({
   toggleClass: { targets: body, className: 'section11' },
 });
 
+/////////////////////////////////////////////////
+////////////// EXPAND BOX (rig.btm)　//////////
+/////////////////////////////////////////////////
+//https://codepen.io/stonkol/pen/wvrpyjQ//
+// box -> wraper, el->expandBtn, content
+var wrapper = document.querySelectorAll('.info-wrapper')[0];
+var content = document.querySelectorAll('.content-info')[0];
+var expandBtn = document.querySelectorAll('.info-btn')[0];
+
+expandBtn.addEventListener('click', startTest);
+
+function startTest() {
+  var a, b;
+  // check state
+  if (expandBtn.classList.contains('clicked')) {
+    b = '-=clicked';
+  } else {
+    b = '+=clicked';
+  }
+  // animate
+  a = new TimelineLite({
+    paused: true,
+  });
+  a.to(box, 0.5, {
+    className: b,
+    ease: Power1.ease, //Power3.easeInOut
+  });
+  a.to(
+    content, //el,
+    0.5, //secs
+    {
+      className: b,
+      ease: Power1.ease, //Power3.easeInOut
+    },
+    0
+  );
+  a.play();
+}
+
 ///////////////////////////////////////////
 /////////  HORIZONTAL SCROLL  /////////////
 // gsap.registerPlugin(ScrollTrigger);//written above
