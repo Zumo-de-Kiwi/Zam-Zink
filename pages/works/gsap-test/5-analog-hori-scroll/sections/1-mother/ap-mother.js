@@ -11,7 +11,7 @@ const getMaxWidth = () => {
   maxWidth = 0; //sectionsForWidth.offsetWidth* ((100-66)/2);
   sectionsForWidth.forEach(section => {
     maxWidth += section.offsetWidth;
-    console.log(maxWidth);
+    // console.log(maxWidth);
   });
 };
 getMaxWidth();
@@ -124,45 +124,69 @@ ScrollTrigger.create({
 /////////////////////////////////////////////////
 //https://codepen.io/stonkol/pen/wvrpyjQ//
 // box -> wraper, el->expandBtn, content
-var wrapper = document.querySelectorAll('.info-wrapper')[0];
-var content = document.querySelectorAll('.content-info')[0];
-var expandBtn = document.querySelectorAll('.info-btn')[0];
-console.log(wrapper, content);
+// var wrapper = document.querySelectorAll('.info-wrapper')[0];
+// var seriousWrapper = document.querySelectorAll('#serious-wrapper')[0];
+// // var content = document.querySelectorAll('.content-info')[0];
+// var realContent = document.querySelectorAll('#real-content-info')[0];
+// var seriousBtn = document.querySelectorAll('#serious-info-btn')[0];
+// var wrapper = document.querySelector('.info-wrapper');
+var seriousWrapper = document.querySelector('#serious-wrapper');
+var realContent = document.querySelector('#real-content-info');
+var seriousBtn = document.querySelector('#serious-info-btn');
+console.log(seriousWrapper, realContent, seriousBtn);
 
-expandBtn.addEventListener('click', startTest);
-
-function startTest() {
-  var a, b;
-  console.log(expandBtn);
-  // check state
-  if (content.classList.contains('clicked')) {
-    b = '-=clicked';
-  } else {
-    b = '+=clicked';
+/////jonas /////////
+let open = 0;
+const openInfo = function () {
+  if (open == 0) {
+    realContent.classList.add('clicked');
+    seriousWrapper.classList.add('clicked');
+    console.log('open');
+    open = 1;
+  } else if (open == 1) {
+    realContent.classList.remove('clicked');
+    seriousWrapper.classList.remove('clicked');
+    open = 0;
+    console.log('close');
   }
-  // animate
-  a = new TimelineLite({
-    paused: true,
-  });
-  a.to(
-    wrapper, //box,
-    0.5,
-    {
-      className: b,
-      ease: Power1.ease, //Power3.easeInOut
-    }
-  );
-  a.to(
-    content, //el,
-    0.5, //secs
-    {
-      className: b,
-      ease: Power1.ease, //Power3.easeInOut
-    },
-    0
-  );
-  a.play();
-}
+};
+
+seriousBtn.addEventListener('click', openInfo);
+//////// pen /////
+// function openInfo() {
+//   var a, b;
+//   console.log(seriousBtn);
+//   // check state
+//   if (realContent.classList.contains('clicked')) {
+//     b = '-=clicked';
+//     console.log('hide content');
+//   } else {
+//     b = '+=clicked';
+//     console.log('see content');
+//   }
+//   // animate
+//   a = new TimelineLite({
+//     paused: true,
+//   });
+//   a.to(
+//     seriousWrapper, //box,
+//     0.5,
+//     {
+//       className: b,
+//       ease: Power1.ease, //Power3.easeInOut
+//     }
+//   );
+//   a.to(
+//     realContent, //el,
+//     0.5, //secs
+//     {
+//       className: b,
+//       ease: Power1.ease, //Power3.easeInOut
+//     },
+//     0
+//   );
+//   a.play();
+// }
 
 ///////////////////////////////////////////
 /////////  HORIZONTAL SCROLL  /////////////
