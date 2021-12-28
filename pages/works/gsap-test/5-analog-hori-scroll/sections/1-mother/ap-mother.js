@@ -141,11 +141,13 @@ const openInfo = function () {
   if (open == 0) {
     realContent.classList.add('clicked');
     seriousWrapper.classList.add('clicked');
+    seriousBtn.classList.add('clicked');
     console.log('open');
     open = 1;
   } else if (open == 1) {
     realContent.classList.remove('clicked');
     seriousWrapper.classList.remove('clicked');
+    seriousBtn.classList.remove('clicked');
     open = 0;
     console.log('close');
   }
