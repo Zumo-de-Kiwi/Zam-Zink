@@ -221,6 +221,7 @@ body #trampolin-wrapper #trampolineEmoji {
   overflow: hidden;
   bottom: 2.3rem;
   /* Place the button at the bottom of the page */
+  user-select: none;
   right: 1rem;
   z-index: 18;
   /* Make sure it does not overlap */
@@ -769,24 +770,30 @@ body .main .info #serious-wrapper.clicked {
 
 body .main .info #serious-wrapper #real-content-info {
   background-color: var(--bg-color);
-  transition: 0.7s;
-  height: 0rem;
-  width: 20rem;
-  transform-origin: bottom right;
+  border: 1px solid transparent;
+  transition: border 1.6s, background-color 1s, color 0.4s, height 0.6s, width 0.5s;
+  height: 2rem;
+  width: 2rem;
+  will-change: transform;
+  transform: translate(14rem, -0.5rem);
 }
 
 body .main .info #serious-wrapper #real-content-info .box-text {
   display: hidden;
   opacity: 0;
   color: transparent;
-  transition: 1s;
+}
+
+body .main .info #serious-wrapper #real-content-info .box-text #header-h1 {
+  text-align: center;
 }
 
 body .main .info #serious-wrapper #real-content-info.clicked {
   color: var(--text-color);
   background-color: var(--bg-color);
   border: 1px solid var(--text-color);
-  transition: inherit;
+  transform: translate(0rem, 0rem);
+  transition: border 1s, background-color 2s, color 2s, height 0.6s;
   height: 50vh;
   width: 100%;
   overflow-y: scroll;
@@ -797,7 +804,7 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text {
   display: block;
   opacity: 1;
   color: var(--text-color);
-  transition: color 3.4s;
+  transition: color 2.5s;
   max-width: 50rem;
   margin: 0px auto;
   font-variation-settings: "MONO" 0.1, "CASL" 0.1, "wght" 400, "slnt" 0;
@@ -814,7 +821,7 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text#header-h1
   font-variation-settings: "MONO" 0.1, "CASL" 0, "wght" 500, "slnt" -12;
 }
 
-body .main .info #serious-wrapper #real-content-info.clicked .box-text#header-h3 {
+body .main .info #serious-wrapper #real-content-info.clicked .box-text.header-h3 {
   font-size: 2.2rem;
   padding-bottom: 4rem;
   font-variation-settings: "MONO" 0.4, "CASL" 0, "wght" 400, "slnt" 0;
@@ -830,6 +837,58 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text.final-ps 
   font-size: 1.4rem;
   padding-bottom: 2rem;
   font-variation-settings: "MONO" 0.1, "CASL" 0, "wght" 300, "slnt" -10;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text i {
+  font-variation-settings: "MONO" 0.1, "CASL" 0, "wght" 400, "slnt" -12;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text strong {
+  font-variation-settings: "MONO" 1, "CASL" 0.5, "wght" 690;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text.centered {
+  text-align: center;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text.bigtext {
+  font-size: 1.8rem;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text.padding-top {
+  padding-top: 3rem;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text .mini-btm-separation {
+  padding-bottom: 1rem;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text.no-indent {
+  text-indent: 0ch;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text .demon-words {
+  font-size: 0.9rem;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text a {
+  color: inherit;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text ol {
+  counter-reset: cupcake;
+  padding-left: 1rem;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text ol li {
+  counter-increment: cupcake;
+  padding-bottom: 1rem;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text ol li:before {
+  content: counters(cupcake, ".") " ";
+  /* Whatever custom styles you want here */
+  font-variation-settings: "MONO" 0.1, "CASL" 0, "wght" 620, "slnt" -10;
 }
 
 body .main .panel {
@@ -878,7 +937,6 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem {
   width: calc(50vw + 50vh);
   height: 100vmin;
   margin: 0rem 0vw;
-  border: 3px solid rgba(129, 129, 129, 0.153);
   display: flex;
   align-items: center;
   position: relative;

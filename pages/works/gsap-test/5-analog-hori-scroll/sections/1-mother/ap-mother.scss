@@ -238,22 +238,29 @@ body {
         }
         #real-content-info {
           background-color: var(--bg-color);
-          transition: 1s;
-          height: 0rem;
-          width: 20rem;
-          transform-origin: bottom right;
+          border: 1px solid transparent;
+          transition: border 1.6s, background-color 1s, color 0.4s, height 0.6s,
+            width 0.5s;
+          height: 2rem;
+          width: 2rem;
+          will-change: transform;
+          transform: translate(14rem, -0.5rem);
+
           .box-text {
             display: hidden;
             opacity: 0;
             color: transparent;
-            transition: inherit;
+            #header-h1 {
+              text-align: center;
+            }
           }
           &.clicked {
             color: var(--text-color);
             background-color: var(--bg-color);
             border: 1px solid var(--text-color);
+            transform: translate(0rem, 0rem);
+            transition: border 1s, background-color 2s, color 2s, height 0.6s;
 
-            transition: inherit;
             height: 50vh;
             width: 100%;
             overflow-y: scroll;
@@ -262,7 +269,7 @@ body {
               display: block;
               opacity: 1;
               color: var(--text-color);
-              transition: color 3.4s;
+              transition: color 2.5s;
               max-width: 50rem;
               margin: 0px auto;
 
@@ -270,6 +277,7 @@ body {
                 'wght' $font-weight-lighter, $slnt;
               text-indent: 3ch;
               line-height: 1.5;
+
               &#header-h1 {
                 text-indent: 0px;
                 font-size: 3.3rem;
@@ -279,13 +287,14 @@ body {
                 font-variation-settings: 'MONO' 0.1, 'CASL' 0,
                   'wght' $font-weight-light, 'slnt' -12;
               }
-              &#header-h3 {
+              &.header-h3 {
                 font-size: 2.2rem;
                 padding-bottom: 4rem;
                 font-variation-settings: 'MONO' 0.4, 'CASL' 0,
                   'wght' $font-weight-lighter, $slnt;
                 line-height: 1.35;
               }
+
               &.paragraphs {
                 font-size: 1.4rem;
                 padding-bottom: 2rem;
@@ -295,6 +304,51 @@ body {
                 padding-bottom: 2rem;
                 font-variation-settings: 'MONO' 0.1, 'CASL' 0,
                   'wght' $font-weight-lightest, 'slnt' -10;
+              }
+
+              i {
+                font-variation-settings: 'MONO' 0.1, 'CASL' 0,
+                  'wght' $font-weight-lighter, 'slnt' -12;
+              }
+              strong {
+                font-variation-settings: 'MONO' 1, 'CASL' 0.5,
+                  'wght' $font-weight-bold;
+              }
+              &.centered {
+                text-align: center;
+              }
+              &.bigtext {
+                font-size: 1.8rem;
+              }
+              &.padding-top {
+                padding-top: 3rem;
+              }
+              .mini-btm-separation {
+                padding-bottom: 1rem;
+              }
+              &.no-indent {
+                text-indent: 0ch;
+              }
+              .demon-words {
+                font-size: 0.9rem;
+              }
+              a {
+                color: inherit;
+              }
+              ol {
+                counter-reset: cupcake;
+                padding-left: 1rem;
+                li {
+                  // list-style: none;
+                  counter-increment: cupcake;
+                  padding-bottom: 1rem;
+                  &:before {
+                    content: counters(cupcake, '.') ' ';
+                    /* Whatever custom styles you want here */
+                    font-variation-settings: 'MONO' 0.1, 'CASL' 0,
+                      'wght' $font-weight-normal, 'slnt' -10;
+                  }
+                }
               }
             }
           }
@@ -347,9 +401,6 @@ body {
             width: calc(50vw + 50vh); //100vmin
             height: 100vmin;
             margin: 0rem 0vw;
-
-            // border: 3px solid rgba(129, 129, 129, 0.153);
-            // background-color: rgba(198, 255, 141, 0.057);
 
             display: flex;
             align-items: center;

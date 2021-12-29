@@ -37,7 +37,7 @@ body {
   }
   &.section4 {
     --bg-color: rgb(52, 2, 149);
-    --text-color: rgb(14, 45, 24);
+    --text-color: rgb(139, 255, 176);
   }
   &.section5 {
     --bg-color: rgb(0, 210, 128);
@@ -56,13 +56,13 @@ body {
     --text-color: rgb(233, 226, 189);
   }
   &.section9 {
-    --bg-color: rgb(255, 135, 137);
+    --bg-color: rgb(255, 255, 255);
     --text-color: rgb(28, 28, 28);
   }
-  // &.section10 {
-  //   --bg-color: rgb(227, 14, 79);
-  //   --text-color: rgb(6, 30, 247);
-  // }
+  &.section10 {
+    --bg-color: rgb(166, 92, 232);
+    --text-color: rgb(89, 249, 134);
+  }
   // &.section11 {
   //   --bg-color: rgb(0, 25, 250);
   //   --text-color: rgb(7, 247, 171);
@@ -241,15 +241,18 @@ body {
 
         #real-content-info {
           background-color: var(--bg-color);
-          transition: 0.7s;
-          height: 0rem;
-          width: 20rem;
-          transform-origin: bottom right;
+          border: 1px solid transparent;
+          transition: border 1.6s, background-color 1s, color 0.4s, height 0.6s,
+            width 0.5s;
+          height: 2rem;
+          width: 2rem;
+          will-change: transform;
+          transform: translate(14rem, -0.5rem);
+
           .box-text {
             display: hidden;
             opacity: 0;
             color: transparent;
-            // transition: 0.5s;
             #header-h1 {
               text-align: center;
             }
@@ -258,8 +261,9 @@ body {
             color: var(--text-color);
             background-color: var(--bg-color);
             border: 1px solid var(--text-color);
-            transition: 0.45s;
-            // transition: border 0.3s;
+            transform: translate(0rem, 0rem);
+            transition: border 1s, background-color 2s, color 2s, height 0.6s;
+
             height: 50vh;
             width: 100%;
             overflow-y: scroll;
@@ -276,6 +280,7 @@ body {
                 'wght' $font-weight-lighter, $slnt;
               text-indent: 3ch;
               line-height: 1.5;
+
               &#header-h1 {
                 text-indent: 0px;
                 font-size: 3.3rem;
@@ -285,13 +290,14 @@ body {
                 font-variation-settings: 'MONO' 0.1, 'CASL' 0,
                   'wght' $font-weight-light, 'slnt' -12;
               }
-              &#header-h3 {
+              &.header-h3 {
                 font-size: 2.2rem;
                 padding-bottom: 4rem;
                 font-variation-settings: 'MONO' 0.4, 'CASL' 0,
                   'wght' $font-weight-lighter, $slnt;
                 line-height: 1.35;
               }
+
               &.paragraphs {
                 font-size: 1.4rem;
                 padding-bottom: 2rem;
@@ -301,6 +307,51 @@ body {
                 padding-bottom: 2rem;
                 font-variation-settings: 'MONO' 0.1, 'CASL' 0,
                   'wght' $font-weight-lightest, 'slnt' -10;
+              }
+
+              i {
+                font-variation-settings: 'MONO' 0.1, 'CASL' 0,
+                  'wght' $font-weight-lighter, 'slnt' -12;
+              }
+              strong {
+                font-variation-settings: 'MONO' 1, 'CASL' 0.5,
+                  'wght' $font-weight-bold;
+              }
+              &.centered {
+                text-align: center;
+              }
+              &.bigtext {
+                font-size: 1.8rem;
+              }
+              &.padding-top {
+                padding-top: 3rem;
+              }
+              .mini-btm-separation {
+                padding-bottom: 1rem;
+              }
+              &.no-indent {
+                text-indent: 0ch;
+              }
+              .demon-words {
+                font-size: 0.9rem;
+              }
+              a {
+                color: inherit;
+              }
+              ol {
+                counter-reset: cupcake;
+                padding-left: 1rem;
+                li {
+                  // list-style: none;
+                  counter-increment: cupcake;
+                  padding-bottom: 1rem;
+                  &:before {
+                    content: counters(cupcake, '.') ' ';
+                    /* Whatever custom styles you want here */
+                    font-variation-settings: 'MONO' 0.1, 'CASL' 0,
+                      'wght' $font-weight-normal, 'slnt' -10;
+                  }
+                }
               }
             }
           }
@@ -448,6 +499,9 @@ body {
               }
             }
           }
+          // &#sec5 {
+          //   width: 200%;
+          // }
           &#final-sec {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -501,8 +555,7 @@ body {
                 opacity: 1;
                 color: var(--bg-color);
                 background-color: var(--text-color);
-                cursor: $cursor-arrow-hand;
-                // cursor: $cursor-pointer-filter;
+                cursor: $cursor-pointer-filter;
               }
             }
           }

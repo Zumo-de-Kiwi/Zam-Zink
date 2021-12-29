@@ -221,6 +221,7 @@ body #trampolin-wrapper #trampolineEmoji {
   overflow: hidden;
   bottom: 2.3rem;
   /* Place the button at the bottom of the page */
+  user-select: none;
   right: 1rem;
   z-index: 18;
   /* Make sure it does not overlap */

@@ -31,7 +31,7 @@ const sec6 = document.querySelector('#sec6');
 const sec7 = document.querySelector('#sec7');
 const sec8 = document.querySelector('#sec8');
 const sec9 = document.querySelector('#sec9');
-// const sec10 = document.querySelector('#sec10');
+const sec10 = document.querySelector('#sec10');
 // const sec11 = document.querySelector('#sec11');
 
 ////////////////// SECTION　１　////////////
@@ -49,8 +49,8 @@ ScrollTrigger.create({
 //////////////// SECTION　2　//////////////
 ScrollTrigger.create({
   trigger: sec2,
-  start: () => 'top top-=' + window.innerWidth * 0.01, //have a negative window
-  end: () => '+=' + window.innerWidth * 0.1,
+  start: () => 'top top-=' - window.innerWidth * 0.001, //have a negative window
+  end: () => '+=' + window.innerWidth * 0.2,
   toggleClass: { targets: body, className: 'section2' },
 });
 // console.log(`sec2: + ${sec2.offsetWidth}`);
@@ -58,22 +58,22 @@ ScrollTrigger.create({
 //////////////// SECTION　3　/////////////////
 ScrollTrigger.create({
   trigger: sec3,
-  start: () => 'top top-=' + window.innerWidth * 0.09,
+  start: () => 'top top-=' + window.innerWidth * 0.06,
   end: () => '+=' + window.innerWidth * 0.15,
   toggleClass: { targets: body, className: 'section3' },
 });
 //////////////// SECTION　4　//////////////////
 ScrollTrigger.create({
   trigger: sec4,
-  start: () => 'top top-=' + window.innerWidth * 0.19,
+  start: () => 'top top-=' + window.innerWidth * 0.13,
   end: () => '+=' + window.innerWidth * 0.3,
   toggleClass: { targets: body, className: 'section4' },
 });
 //////////////// SECTION　5　//////////////////
 ScrollTrigger.create({
   trigger: sec5,
-  start: () => 'top top-=' + window.innerWidth * 0.3,
-  end: () => '+=' + window.innerWidth * 0.32,
+  start: () => 'top top-=' + window.innerWidth * 0.2,
+  end: () => '+=' + window.innerWidth * 0.6,
   toggleClass: { targets: body, className: 'section5' },
 });
 //////////////// SECTION　6　//////////////////
@@ -86,31 +86,31 @@ ScrollTrigger.create({
 //////////////// SECTION　7　//////////////////
 ScrollTrigger.create({
   trigger: sec7,
-  start: () => 'top top-=' + window.innerWidth * 0.51,
+  start: () => 'top top-=' + window.innerWidth * 0.48,
   end: () => '+=' + window.innerWidth * 0.65,
   toggleClass: { targets: body, className: 'section7' },
 });
 //////////////// SECTION　8　//////////////////
 ScrollTrigger.create({
   trigger: sec8,
-  start: () => 'top top-=' + window.innerWidth * 0.65,
+  start: () => 'top top-=' + window.innerWidth * 0.57,
   end: () => '+=' + window.innerWidth * 0.8,
   toggleClass: { targets: body, className: 'section8' },
 });
 //////////////// SECTION　9　//////////////////
 ScrollTrigger.create({
   trigger: sec9,
-  start: () => 'top top-=' + window.innerWidth * 0.74,
+  start: () => 'top top-=' + window.innerWidth * 0.66,
   end: () => '+=' + window.innerWidth * 1,
   toggleClass: { targets: body, className: 'section9' },
 });
-//////////////// SECTION　10　//////////////////
-// ScrollTrigger.create({
-//   trigger: sec10,
-//   start: () => 'top top-=' + window.innerWidth * 0.69,
-//   end: () => '+=' + window.innerWidth * 0.79,
-//   toggleClass: { targets: body, className: 'section10' },
-// });
+////////////// SECTION　10　//////////////////
+ScrollTrigger.create({
+  trigger: sec10,
+  start: () => 'top top-=' + window.innerWidth * 0.76,
+  end: () => '+=' + window.innerWidth * 0.79,
+  toggleClass: { targets: body, className: 'section10' },
+});
 // //////////////// SECTION　11　//////////////////
 // ScrollTrigger.create({
 //   trigger: sec11,
@@ -122,9 +122,10 @@ ScrollTrigger.create({
 /////////////////////////////////////////////////
 ////////////// EXPAND BOX (rig.btm)　//////////
 /////////////////////////////////////////////////
-var seriousWrapper = document.querySelector('#serious-wrapper');
-var realContent = document.querySelector('#real-content-info');
-var seriousBtn = document.querySelector('#serious-info-btn');
+const panels = document.querySelector('.panel');
+const seriousWrapper = document.querySelector('#serious-wrapper');
+const realContent = document.querySelector('#real-content-info');
+const seriousBtn = document.querySelector('#serious-info-btn');
 console.log(seriousWrapper, realContent, seriousBtn);
 
 let open = 0;
@@ -145,6 +146,7 @@ const openInfo = function () {
 };
 
 seriousBtn.addEventListener('click', openInfo);
+panels.addEventListener('click', openInfo);
 
 ///////////////////////////////////////////
 /////////  HORIZONTAL SCROLL  /////////////

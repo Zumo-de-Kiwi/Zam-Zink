@@ -122,9 +122,10 @@ ScrollTrigger.create({
 /////////////////////////////////////////////////
 ////////////// EXPAND BOX (rig.btm)　//////////
 /////////////////////////////////////////////////
-var seriousWrapper = document.querySelector('#serious-wrapper');
-var realContent = document.querySelector('#real-content-info');
-var seriousBtn = document.querySelector('#serious-info-btn');
+const panels = document.querySelector('.panel');
+const seriousWrapper = document.querySelector('#serious-wrapper');
+const realContent = document.querySelector('#real-content-info');
+const seriousBtn = document.querySelector('#serious-info-btn');
 console.log(seriousWrapper, realContent, seriousBtn);
 
 let open = 0;
@@ -145,6 +146,7 @@ const openInfo = function () {
 };
 
 seriousBtn.addEventListener('click', openInfo);
+panels.addEventListener('click', openInfo);
 
 ///////////////////////////////////////////
 /////////  HORIZONTAL SCROLL  /////////////

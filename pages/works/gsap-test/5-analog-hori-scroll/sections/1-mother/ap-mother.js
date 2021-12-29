@@ -122,20 +122,12 @@ ScrollTrigger.create({
 /////////////////////////////////////////////////
 ////////////// EXPAND BOX (rig.btm)　//////////
 /////////////////////////////////////////////////
-//https://codepen.io/stonkol/pen/wvrpyjQ//
-// box -> wraper, el->expandBtn, content
-// var wrapper = document.querySelectorAll('.info-wrapper')[0];
-// var seriousWrapper = document.querySelectorAll('#serious-wrapper')[0];
-// // var content = document.querySelectorAll('.content-info')[0];
-// var realContent = document.querySelectorAll('#real-content-info')[0];
-// var seriousBtn = document.querySelectorAll('#serious-info-btn')[0];
-// var wrapper = document.querySelector('.info-wrapper');
-var seriousWrapper = document.querySelector('#serious-wrapper');
-var realContent = document.querySelector('#real-content-info');
-var seriousBtn = document.querySelector('#serious-info-btn');
+const panels = document.querySelector('.panel');
+const seriousWrapper = document.querySelector('#serious-wrapper');
+const realContent = document.querySelector('#real-content-info');
+const seriousBtn = document.querySelector('#serious-info-btn');
 console.log(seriousWrapper, realContent, seriousBtn);
 
-/////jonas /////////
 let open = 0;
 const openInfo = function () {
   if (open == 0) {
@@ -154,6 +146,8 @@ const openInfo = function () {
 };
 
 seriousBtn.addEventListener('click', openInfo);
+panels.addEventListener('click', openInfo);
+
 //////// pen /////
 // function openInfo() {
 //   var a, b;
