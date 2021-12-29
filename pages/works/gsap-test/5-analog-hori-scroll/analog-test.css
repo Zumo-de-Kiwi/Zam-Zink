@@ -2,7 +2,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   min-height: 100vh;
   scroll-behavior: smooth;
 }
@@ -103,11 +103,11 @@ body .left-arrow .link-a {
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: #b9cabf;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
 body .left-arrow .link-a #left-arrow {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
 
@@ -197,11 +197,11 @@ body ul {
 
 body a {
   color: #5f3fd5;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 body a:active {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
 body #trampolin-wrapper {
@@ -232,7 +232,7 @@ body #trampolin-wrapper #trampolineEmoji {
   font-size: 3.3rem;
   transition: 0.15s;
   opacity: 0.33;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
 @media (max-width: 768px) {
@@ -250,7 +250,7 @@ body #trampolin-wrapper #trampolineEmoji {
 
 body #trampolin-wrapper #trampolineEmoji:hover {
   opacity: 1;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
 
@@ -540,7 +540,7 @@ body {
   height: 100%;
   font-size: 1.8rem;
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   --bg-color: rgb(26, 21, 36);
   --text-color: #ffa8d6;
   background-color: var(--bg-color);
@@ -755,7 +755,7 @@ body #header #flash {
 }
 
 body .main {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body .main .Title__MainWrapper {
@@ -779,7 +779,6 @@ body .main .Title__MainWrapper .Title__Number {
   flex-direction: column;
   font-size: 1.4rem;
   padding: 0.8rem;
-  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__Title {
@@ -789,18 +788,16 @@ body .main .Title__MainWrapper .Title__Title {
   padding-bottom: 1.3rem;
   border-left: 1.5px solid var(--text-color);
   border-right: 1.5px solid var(--text-color);
-  transition: 1.5s;
+  transition: border 1.5s;
 }
 
 body .main .Title__MainWrapper .Title__Title #Title__Main {
   font-size: 1.8rem;
-  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__Title #Title__Second {
   font-size: 1.3rem;
   margin-top: 0.5rem;
-  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji {
@@ -810,27 +807,23 @@ body .main .Title__MainWrapper .Title__SignAndEmoji {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: stretch;
-  transition: inherit;
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji #epSign,
 body .main .Title__MainWrapper .Title__SignAndEmoji #epEmoji {
   padding: 1rem 1rem;
-  font-size: 1.8rem;
+  transition: border 1s;
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji #epSign {
-  border-bottom: 1.5px solid var(--text-color);
-  transition: 0.5s;
   font-size: 1.6rem;
-  transition: inherit;
+  border-bottom: 1.5px solid var(--text-color);
 }
 
 body .main .Title__MainWrapper .Title__SignAndEmoji #epEmoji {
   color: transparent;
   text-shadow: 0px 0px 0px var(--text-color);
   opacity: 0.3;
-  transition: 0.3s;
 }
 
 body .main .Title__MainWrapper:hover #epEmoji {
@@ -848,11 +841,11 @@ body .main .panel {
   color: var(--text-color);
   transition: 2s;
   overflow-x: hidden;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
 }
 
 body .main .panel .panel-content {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   margin: 2rem;
   margin-top: 12vh;
   margin-bottom: 12vh;
@@ -865,7 +858,7 @@ body .main .panel .panel-content {
 }
 
 body .main .panel .horizontal-wrapper {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👆</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
