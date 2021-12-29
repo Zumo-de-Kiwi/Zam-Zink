@@ -545,48 +545,48 @@ body {
 }
 
 body.section1 {
-  --bg-color: rgb(245, 241, 240);
-  --text-color: #244121;
+  --bg-color: rgb(44, 180, 214);
+  --text-color: #fcf0ff;
 }
 
 body.section2 {
-  --bg-color: rgb(255, 163, 183);
-  --text-color: #000;
+  --bg-color: rgb(255, 199, 69);
+  --text-color: rgb(38, 37, 37);
 }
 
 body.section3 {
-  --bg-color: rgb(226, 236, 234);
-  --text-color: rgb(77, 77, 77);
+  --bg-color: rgb(226, 3, 86);
+  --text-color: rgb(33, 29, 29);
 }
 
 body.section4 {
-  --bg-color: rgb(252, 232, 89);
+  --bg-color: rgb(52, 2, 149);
   --text-color: rgb(14, 45, 24);
 }
 
 body.section5 {
-  --bg-color: rgb(252, 134, 91);
-  --text-color: rgb(244, 244, 244);
+  --bg-color: rgb(0, 210, 128);
+  --text-color: rgb(34, 34, 34);
 }
 
 body.section6 {
-  --bg-color: rgb(105, 148, 218);
-  --text-color: rgb(244, 244, 244);
+  --bg-color: rgb(60, 179, 202);
+  --text-color: rgb(0, 0, 0);
 }
 
 body.section7 {
-  --bg-color: rgb(50, 173, 161);
-  --text-color: rgb(255, 255, 255);
+  --bg-color: rgb(255, 199, 69);
+  --text-color: rgb(38, 37, 37);
 }
 
 body.section8 {
-  --bg-color: rgb(8, 23, 5);
+  --bg-color: rgb(166, 1, 89);
   --text-color: rgb(233, 226, 189);
 }
 
 body.section9 {
-  --bg-color: rgb(254, 209, 208);
-  --text-color: rgb(62, 62, 62);
+  --bg-color: rgb(255, 135, 137);
+  --text-color: rgb(28, 28, 28);
 }
 
 body .left-arrow {
@@ -718,7 +718,7 @@ body .main .info .info-btn#serious-info-btn {
 }
 
 body .main .info .info-btn#serious-info-btn::after {
-  content: '@ ... @';
+  content: '⁉ ... ⁉';
   transition: 1s;
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0;
 }
@@ -779,14 +779,17 @@ body .main .info #serious-wrapper #real-content-info .box-text {
   display: hidden;
   opacity: 0;
   color: transparent;
-  transition: 1s;
+}
+
+body .main .info #serious-wrapper #real-content-info .box-text #header-h1 {
+  text-align: center;
 }
 
 body .main .info #serious-wrapper #real-content-info.clicked {
   color: var(--text-color);
   background-color: var(--bg-color);
   border: 1px solid var(--text-color);
-  transition: inherit;
+  transition: 0.45s;
   height: 50vh;
   width: 100%;
   overflow-y: scroll;
@@ -797,7 +800,7 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text {
   display: block;
   opacity: 1;
   color: var(--text-color);
-  transition: color 3.4s;
+  transition: color 2.5s;
   max-width: 50rem;
   margin: 0px auto;
   font-variation-settings: "MONO" 0.1, "CASL" 0.1, "wght" 400, "slnt" 0;
@@ -884,19 +887,13 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem {
   position: relative;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion {
-  flex: 1 0 auto;
-  width: 100%;
-  height: 100%;
-}
-
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper {
   width: 100%;
   color: inherit;
   background-color: transparent;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img {
   max-height: 100%;
   position: absolute;
   z-index: 5;
@@ -904,7 +901,7 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView_
   height: 100%;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner {
   display: block;
   overflow: hidden;
   position: absolute;
@@ -914,14 +911,14 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView_
   height: 100%;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner picture {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner picture {
   margin: 6vh 4vw 6vh 4vw;
   inset: 0px;
   overflow: visible;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner picture img {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner picture img {
   min-width: 100%;
   max-width: 100%;
   min-height: 100%;
@@ -935,49 +932,49 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView_
   transition: 0.5s;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-1 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-1 {
   margin: 0vh 0vw 5vh 0vw;
   inset: 0px;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-2 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-2 {
   margin: 25vh 2vw 0vh 14vw;
   inset: 0px;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-3 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-3 {
   margin: 0vh 13vw 23vh 7vw;
   inset: 0px;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-4 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-4 {
   margin: 10vh 0vw 2vh 15vw;
   inset: 0px;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-5 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-5 {
   margin: 10vh 10vw 12vh 16vw;
   inset: 0px;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-6 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-6 {
   margin: 0vh 13vw 31vh 9vw;
   inset: 0px;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-8 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-8 {
   margin: 7vh 7vw 31vh 13vw;
   inset: 0px;
   position: absolute;
 }
 
-body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-10 {
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner #pic-10 {
   margin: 31vh 6vw 0vh 15vw;
   inset: 0px;
   position: absolute;
@@ -1033,7 +1030,7 @@ body .main .panel .horizontal-wrapper .block#final-sec a:hover {
   opacity: 1;
   color: var(--bg-color);
   background-color: var(--text-color);
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🔎</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
 body .main #footer {

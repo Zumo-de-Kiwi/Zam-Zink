@@ -24,40 +24,40 @@ body {
 
   background-color: var(--bg-color);
   &.section1 {
-    --bg-color: rgb(245, 241, 240);
-    --text-color: #244121;
+    --bg-color: rgb(44, 180, 214);
+    --text-color: #fcf0ff;
   }
   &.section2 {
-    --bg-color: rgb(255, 163, 183);
-    --text-color: #000;
+    --bg-color: rgb(255, 199, 69);
+    --text-color: rgb(38, 37, 37);
   }
   &.section3 {
-    --bg-color: rgb(226, 236, 234);
-    --text-color: rgb(77, 77, 77);
+    --bg-color: rgb(226, 3, 86);
+    --text-color: rgb(33, 29, 29);
   }
   &.section4 {
-    --bg-color: rgb(252, 232, 89);
+    --bg-color: rgb(52, 2, 149);
     --text-color: rgb(14, 45, 24);
   }
   &.section5 {
-    --bg-color: rgb(252, 134, 91);
-    --text-color: rgb(244, 244, 244);
+    --bg-color: rgb(0, 210, 128);
+    --text-color: rgb(34, 34, 34);
   }
   &.section6 {
-    --bg-color: rgb(105, 148, 218);
-    --text-color: rgb(244, 244, 244);
+    --bg-color: rgb(60, 179, 202);
+    --text-color: rgb(0, 0, 0);
   }
   &.section7 {
-    --bg-color: rgb(50, 173, 161);
-    --text-color: rgb(255, 255, 255);
+    --bg-color: rgb(255, 199, 69);
+    --text-color: rgb(38, 37, 37);
   }
   &.section8 {
-    --bg-color: rgb(8, 23, 5);
+    --bg-color: rgb(166, 1, 89);
     --text-color: rgb(233, 226, 189);
   }
   &.section9 {
-    --bg-color: rgb(254, 209, 208);
-    --text-color: rgb(62, 62, 62);
+    --bg-color: rgb(255, 135, 137);
+    --text-color: rgb(28, 28, 28);
   }
   // &.section10 {
   //   --bg-color: rgb(227, 14, 79);
@@ -191,7 +191,7 @@ body {
           padding-right: 1rem;
           padding-bottom: 1rem;
           &::after {
-            content: '@ ... @';
+            content: '⁉ ... ⁉';
             transition: 1s;
             font-variation-settings: 'MONO' 1, 'CASL' 0,
               'wght' $font-weight-light, $slnt;
@@ -238,6 +238,7 @@ body {
         &.clicked {
           width: clamp(300px, 700px, 90vw);
         }
+
         #real-content-info {
           background-color: var(--bg-color);
           transition: 0.7s;
@@ -248,14 +249,17 @@ body {
             display: hidden;
             opacity: 0;
             color: transparent;
-            transition: 1s;
+            // transition: 0.5s;
+            #header-h1 {
+              text-align: center;
+            }
           }
           &.clicked {
             color: var(--text-color);
             background-color: var(--bg-color);
             border: 1px solid var(--text-color);
-
-            transition: inherit;
+            transition: 0.45s;
+            // transition: border 0.3s;
             height: 50vh;
             width: 100%;
             overflow-y: scroll;
@@ -264,7 +268,7 @@ body {
               display: block;
               opacity: 1;
               color: var(--text-color);
-              transition: color 3.4s;
+              transition: color 2.5s;
               max-width: 50rem;
               margin: 0px auto;
 
@@ -497,7 +501,8 @@ body {
                 opacity: 1;
                 color: var(--bg-color);
                 background-color: var(--text-color);
-                cursor: $cursor-pointer-filter;
+                cursor: $cursor-arrow-hand;
+                // cursor: $cursor-pointer-filter;
               }
             }
           }
