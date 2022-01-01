@@ -607,15 +607,10 @@ body {
   padding-bottom: 7vh;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.5vw + 0.4vw + 30px);
-  font-variation-settings: "MONO" 0, "CASL" 0.4, "wght" 800, "slnt" 0;
+  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 800, "slnt" 0;
   text-align: left;
   color: #4d435b;
   word-spacing: 0.7px;
-}
-
-.main .content_wrap .content-name .coma {
-  position: relative;
-  margin-left: calc( -3px * 1vw);
 }
 
 .main .content_wrap .content-name .complete-name {
@@ -895,6 +890,7 @@ footer .footer #githublink a {
 
 footer .footer #githublink a:hover {
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -17, "CRSV" 0;
+  color: white;
 }
 
 @media (min-width: 320px) {

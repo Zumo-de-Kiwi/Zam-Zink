@@ -90,18 +90,18 @@ body {
       // padding-top: 10vh;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
-      font-variation-settings: $MONO, 'CASL' 0.4, 'wght' $font-weight-heavy,
+      font-variation-settings: 'MONO' 0.2, 'CASL' 0.2, 'wght' $font-weight-heavy,
         $slnt;
       text-align: left;
       color: $sutil-dark-purple-gray-color;
       word-spacing: 0.7px;
 
-      .coma {
-        position: relative;
-        margin-left: calc(
-          -3px * 1vw
-        ); //-13px // move the coma and the following words to the left
-      }
+      // .coma {
+      //   position: relative;
+      //   margin-left: calc(
+      //     5px * 1vw
+      //   ); //-13px // move the coma and the following words to the left
+      // }
 
       .complete-name {
         color: $sutil-dark-purple-gray-color;
@@ -378,6 +378,7 @@ footer {
         &:hover {
           font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter,
             'slnt' -17, 'CRSV' 0;
+          color: rgb(255, 255, 255);
         }
       }
     }

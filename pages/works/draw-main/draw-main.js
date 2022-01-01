@@ -75,25 +75,3 @@ btnScroll.addEventListener('click', function (e) {
   main.scrollIntoView({ behavior: 'smooth' });
   // console.log(btnScrollTo, leftArrow);
 });
-
-//////// backup
-//tab navbar selector
-// //for css:
-// [data-tab-content] {
-//     display: none;
-//   }
-//   .active[data-tab-content] {
-//     display: block;
-//   }
-// const tabs = document.querySelectorAll(['[data-tab-target']);
-// const tabContents = document.querySelectorAll('[data-tab-content]');
-
-// tabs.forEach(tab => {
-//   tab.addEventListener('click', () => {
-//     const target = document.querySelector(tab.dataset.tabTarget);
-//     tabContents.forEach(tabContent => {
-//       tabContent.classList.remove('active');
-//     });
-//     target.classList.add('active');
-//   });
-// });
