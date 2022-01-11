@@ -2,11 +2,12 @@
 @import '../../../scss/globals';
 
 body {
-  // height: 100%;
   ///////////////////////////////////////////
-  font-family: 'Space Grotesk', sans-serif;
+  $ff-space-grotesk: 'Space Grotesk', Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  $ff-grotesk-mono: 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
   ///////////////////////////////////////////
-  width: 100vw;
   $design-bg-color: #ccae90; //#dac6b2;
   $design-plastic-color: rgb(51, 148, 103);
   $design-color-green: rgb(51, 148, 103);
@@ -14,10 +15,14 @@ body {
   $design-color-red: rgb(215, 61, 69);
   $design-text-color: hsl(0, 0%, 21%);
   $design-white-color: rgb(244, 242, 235);
+  ///////////////////////////////////////////
+  font-family: $ff-space-grotesk;
+  // font-family: $ff-grotesk-mono;
   background-color: $design-bg-color;
+  width: 100vw;
   font-weight: 300;
-  // font-size: 2rem;
   position: relative;
+  // font-size: 2rem;
 
   .preloader {
     transition: $trans-slow ease-out;
@@ -32,29 +37,26 @@ body {
     }
   }
   .absolute-nav {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     top: 0rem;
     z-index: 19;
     display: flex;
     align-items: center;
 
     .left-arrow {
+      top: 1rem;
+      @media (max-width: 768px) {
+        top: 1rem;
+      }
       .link-a {
-        color: $design-text-color;
+        color: $design-bg-color;
         &:hover {
-          color: $design-text-color;
+          color: $design-bg-color;
         }
       }
     }
-    ////// HAMBURGER /////
-    .menu-btn__burger {
-      &::after,
-      &::before {
-        background-color: $design-text-color;
-      }
-    }
   }
-
   header {
   }
 
@@ -66,15 +68,15 @@ body {
     font-weight: 400;
     .main-header {
       width: 100%;
-      line-height: 8rem;
-      height: 8rem;
+      line-height: 6rem;
+      height: 6rem;
       text-align: center;
-      box-shadow: 0px 0.3rem 0.3rem #463a2f;
+      box-shadow: 0px 0.3rem 0.6rem #463a2f, 0px 0.15rem 0.2rem #1a1817;
       h1 {
-        color: rgb(62, 62, 62);
-        background-color: rgb(245, 243, 230);
+        color: $design-bg-color;
+        background-color: $design-text-color;
         font-weight: 700;
-        font-size: 3.3rem;
+        font-size: 2.3rem;
       }
     }
     .designSections {
@@ -84,23 +86,81 @@ body {
           1fr
         );
       gap: 1rem;
-      .place-holders {
+      // for the two the wrapper holders
+      // total frame h:1400
+      // green header h:100
+      .frame-holder {
         grid-column: 2;
         margin-top: 7rem;
+        position: relative;
+        .imgs-wrapper {
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          // margin-top: 7rem;
+          position: absolute;
+          top: 7%;
+          .inner-wrapper-rel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
+      // green part
       #green-holder {
+        #green-holder-img {
+        }
+        .green-imgs-wrapper {
+          .inner-wrapper-rel {
+          }
+          // for all the green imgs
+          .green-imgs {
+            position: absolute;
+            left: 1.3%;
+            right: 1.3%;
+            width: 12%; //initial width
+          }
+          #cactus {
+            left: 5.4%;
+            top: 2.5%;
+            width: 21.5%;
+          }
+          #out-stock {
+            top: 69%;
+            left: 4.9%;
+            font-size: 2.27vw;
+            width: 25%;
+            color: $design-color-green;
+          }
+        }
       }
+
+      // red part
       #red-holder {
         margin-bottom: 7rem;
+        #red-holder-img {
+        }
+        .red-imgs-wrapper {
+          // for all the red imgs
+          .red-imgs {
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+          }
+        }
       }
     }
 
     #trampolin-wrapper {
     }
+    // box brown footer
     .footer {
       z-index: 1;
+      // position: absolute;
+      // bottom: 0px;
 
-      height: 23rem;
+      height: 29rem;
       width: 100%;
       background: rgb(154, 138, 112);
       background-image: url('img/footer-cardboard.webp');
@@ -133,6 +193,10 @@ body {
           text-align: center;
           h2 {
             text-transform: uppercase;
+            font-weight: 500;
+          }
+          div {
+            padding: 0.5rem;
           }
         }
         .footer-r {
@@ -146,7 +210,8 @@ body {
             justify-self: end;
             text-align: right;
             div {
-              padding: 0.65rem;
+              padding: 1.1rem;
+              font-weight: 500;
             }
           }
         }

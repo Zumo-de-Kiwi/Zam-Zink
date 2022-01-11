@@ -353,9 +353,9 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
-  width: 100vw;
+  font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: #ccae90;
+  width: 100vw;
   font-weight: 300;
   position: relative;
 }
@@ -376,23 +376,29 @@ body .preloader #text-loader {
 }
 
 body .absolute-nav {
-  position: fixed;
+  position: absolute;
   top: 0rem;
   z-index: 19;
   display: flex;
   align-items: center;
 }
 
+body .absolute-nav .left-arrow {
+  top: 1rem;
+}
+
+@media (max-width: 768px) {
+  body .absolute-nav .left-arrow {
+    top: 1rem;
+  }
+}
+
 body .absolute-nav .left-arrow .link-a {
-  color: #363636;
+  color: #ccae90;
 }
 
 body .absolute-nav .left-arrow .link-a:hover {
-  color: #363636;
-}
-
-body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {
-  background-color: #363636;
+  color: #ccae90;
 }
 
 body main {
@@ -404,17 +410,17 @@ body main {
 
 body main .main-header {
   width: 100%;
-  line-height: 8rem;
-  height: 8rem;
+  line-height: 6rem;
+  height: 6rem;
   text-align: center;
-  box-shadow: 0px 0.3rem 0.3rem #463a2f;
+  box-shadow: 0px 0.3rem 0.6rem #463a2f, 0px 0.15rem 0.2rem #1a1817;
 }
 
 body main .main-header h1 {
-  color: #3e3e3e;
-  background-color: #f5f3e6;
+  color: #ccae90;
+  background-color: #363636;
   font-weight: 700;
-  font-size: 3.3rem;
+  font-size: 2.3rem;
 }
 
 body main .designSections {
@@ -423,18 +429,60 @@ body main .designSections {
   gap: 1rem;
 }
 
-body main .designSections .place-holders {
+body main .designSections .frame-holder {
   grid-column: 2;
   margin-top: 7rem;
+  position: relative;
+}
+
+body main .designSections .frame-holder .imgs-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 7%;
+}
+
+body main .designSections .frame-holder .imgs-wrapper .inner-wrapper-rel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body main .designSections #green-holder .green-imgs-wrapper .green-imgs {
+  position: absolute;
+  left: 1.3%;
+  right: 1.3%;
+  width: 12%;
+}
+
+body main .designSections #green-holder .green-imgs-wrapper #cactus {
+  left: 5.4%;
+  top: 2.5%;
+  width: 21.5%;
+}
+
+body main .designSections #green-holder .green-imgs-wrapper #out-stock {
+  top: 69%;
+  left: 4.9%;
+  font-size: 2.27vw;
+  width: 25%;
+  color: #339467;
 }
 
 body main .designSections #red-holder {
   margin-bottom: 7rem;
 }
 
+body main .designSections #red-holder .red-imgs-wrapper .red-imgs {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
 body main .footer {
   z-index: 1;
-  height: 23rem;
+  height: 29rem;
   width: 100%;
   background: #9a8a70;
   background-image: url("img/footer-cardboard.webp");
@@ -472,6 +520,11 @@ body main .footer #footer-wrapper .footer-l {
 
 body main .footer #footer-wrapper .footer-l h2 {
   text-transform: uppercase;
+  font-weight: 500;
+}
+
+body main .footer #footer-wrapper .footer-l div {
+  padding: 0.5rem;
 }
 
 body main .footer #footer-wrapper .footer-r {
@@ -487,5 +540,6 @@ body main .footer #footer-wrapper .footer-r .sub-wrapper {
 }
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper div {
-  padding: 0.65rem;
+  padding: 1.1rem;
+  font-weight: 500;
 }

@@ -1,8 +1,9 @@
 // Smoth scrolling to a section
+// const main = document.querySelector('.main');
+
+const header = document.querySelector('.main-header');
 const btnScroll = document.querySelector('.toTopBtn');
-// const btnScrollTo = document.querySelector('.toTopBtn');
-// const leftArrow = document.querySelector('.left-arrow');
 btnScroll.addEventListener('click', function (e) {
-  main.scrollIntoView({ behavior: 'smooth' });
-  // console.log(btnScrollTo, leftArrow);
+  header.scrollIntoView({ behavior: 'smooth' });
+  console.log(btnScrollTo, header);
 });
