@@ -417,11 +417,30 @@ body main .main-header h1 {
   font-size: 3.3rem;
 }
 
+body main .designSections {
+  display: grid;
+  grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
+  gap: 1rem;
+}
+
+body main .designSections .place-holders {
+  grid-column: 2;
+  margin-top: 7rem;
+}
+
+body main .designSections #red-holder {
+  margin-bottom: 7rem;
+}
+
 body main .footer {
   z-index: 1;
-  position: relative;
+  height: 23rem;
   width: 100%;
   background: #9a8a70;
+  background-image: url("img/footer-cardboard.webp");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
 }
 
 body main .footer #footer-wrapper {
@@ -446,6 +465,9 @@ body main .footer #footer-wrapper .footer-part a:hover {
 
 body main .footer #footer-wrapper .footer-l {
   grid-column: 1;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
 }
 
 body main .footer #footer-wrapper .footer-l h2 {
@@ -454,6 +476,16 @@ body main .footer #footer-wrapper .footer-l h2 {
 
 body main .footer #footer-wrapper .footer-r {
   grid-column: 2;
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-self: end;
   text-align: right;
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper div {
+  padding: 0.65rem;
 }

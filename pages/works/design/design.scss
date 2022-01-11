@@ -77,16 +77,36 @@ body {
         font-size: 3.3rem;
       }
     }
+    .designSections {
+      display: grid;
+      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+          7%,
+          1fr
+        );
+      gap: 1rem;
+      .place-holders {
+        grid-column: 2;
+        margin-top: 7rem;
+      }
+      #green-holder {
+      }
+      #red-holder {
+        margin-bottom: 7rem;
+      }
+    }
 
     #trampolin-wrapper {
     }
     .footer {
       z-index: 1;
-      position: relative;
-      // height: 50vh;
-      // bottom: 0px;
+
+      height: 23rem;
       width: 100%;
       background: rgb(154, 138, 112);
+      background-image: url('img/footer-cardboard.webp');
+      background-position: center;
+      background-repeat: repeat-x;
+      background-size: cover;
 
       #footer-wrapper {
         height: 100%;
@@ -108,14 +128,27 @@ body {
         }
         .footer-l {
           grid-column: 1;
+          align-self: center;
+          justify-self: center;
+          text-align: center;
           h2 {
             text-transform: uppercase;
           }
         }
         .footer-r {
           grid-column: 2;
-          justify-self: end;
-          text-align: right;
+
+          .sub-wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-content: space-around;
+            justify-self: end;
+            text-align: right;
+            div {
+              padding: 0.65rem;
+            }
+          }
         }
       }
     }
