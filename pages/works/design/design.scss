@@ -7,12 +7,12 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   ///////////////////////////////////////////
   width: 100vw;
-  //   $my-paper-color: hsl(35, 16%, 92%);
-  //   $muji-cover: hsl(30, 2%, 24%);
+  //   $design-bg-color: hsl(35, 16%, 92%);
+  //   $design-text-color: hsl(30, 2%, 24%);
   $design-bg-color: hsl(0, 0%, 100%);
   $design-plastic-color: hsl(0, 0%, 57%);
   $design-text-color: hsl(0, 0%, 21%);
-  background-color: $my-paper-color;
+  background-color: $design-bg-color;
   font-weight: 300;
   // font-size: 2rem;
   //   font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' $font-weight-normal,$slnt;
@@ -20,14 +20,14 @@ body {
 
   .preloader {
     transition: $trans-slow ease-out;
-    background: $my-paper-color;
+    background: $design-plastic-color;
     #emoji-loader {
       animation: jump 1.5s ease 0.3s infinite alternate;
     }
     #text-loader {
       padding-top: 12rem;
-      color: $muji-cover;
-      font-size: $font-size-normal;
+      color: $design-text-color;
+      font-size: 2.3rem;
     }
   }
   .absolute-nav {
@@ -39,9 +39,9 @@ body {
 
     .left-arrow {
       .link-a {
-        color: $muji-cover;
+        color: $design-text-color;
         &:hover {
-          color: $muji-cover;
+          color: $design-text-color;
         }
       }
     }
@@ -49,7 +49,7 @@ body {
     .menu-btn__burger {
       &::after,
       &::before {
-        background-color: $muji-cover;
+        background-color: $design-text-color;
       }
     }
   }
@@ -83,7 +83,7 @@ body {
     //         a {
     //           // z-index: 29;
     //           position: relative;
-    //           color: $muji-cover;
+    //           color: $design-text-color;
     //           text-decoration: none;
     //           font-size: 2rem;
     //           font-variation-settings: 'wght' $font-weight-light;
@@ -248,18 +248,18 @@ body {
   }
 
   main {
-    background: $my-paper-color;
+    background: $design-bg-color;
     // height: 600vh;
     position: relative;
     display: grid;
     font-weight: 400;
     h1 {
       width: 100%;
-      text-align: center;
-      padding: 10rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      margin-bottom: 4rem;
+      //   text-align: center;
+      //   padding: 10rem;
+      //   padding-left: 2rem;
+      //   padding-right: 2rem;
+      //   margin-bottom: 4rem;
       color: rgb(62, 62, 62);
       background-color: rgb(245, 243, 230);
       font-weight: 500;
@@ -301,7 +301,7 @@ body {
         z-index: -1;
         text-decoration-color: transparent;
 
-        color: $my-paper-color;
+        color: $design-bg-color;
         font-size: 1.8rem;
         align-self: center;
         transition: $trans-normal;

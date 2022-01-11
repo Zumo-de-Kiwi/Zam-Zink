@@ -354,14 +354,14 @@ body #trampolin-wrapper #trampolineEmoji:active {
 body {
   font-family: 'Space Grotesk', sans-serif;
   width: 100vw;
-  background-color: #eeebe7;
+  background-color: white;
   font-weight: 300;
   position: relative;
 }
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #eeebe7;
+  background: #919191;
 }
 
 body .preloader #emoji-loader {
@@ -370,8 +370,8 @@ body .preloader #emoji-loader {
 
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: #3e3d3c;
-  font-size: calc(0.5vw + 0.3vw + 13px);
+  color: #363636;
+  font-size: 2.3rem;
 }
 
 body .absolute-nav {
@@ -383,19 +383,19 @@ body .absolute-nav {
 }
 
 body .absolute-nav .left-arrow .link-a {
-  color: #3e3d3c;
+  color: #363636;
 }
 
 body .absolute-nav .left-arrow .link-a:hover {
-  color: #3e3d3c;
+  color: #363636;
 }
 
 body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {
-  background-color: #3e3d3c;
+  background-color: #363636;
 }
 
 body main {
-  background: #eeebe7;
+  background: white;
   position: relative;
   display: grid;
   font-weight: 400;
@@ -403,11 +403,6 @@ body main {
 
 body main h1 {
   width: 100%;
-  text-align: center;
-  padding: 10rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 4rem;
   color: #3e3e3e;
   background-color: #f5f3e6;
   font-weight: 500;
@@ -443,7 +438,7 @@ body #footer #wrapper span {
 body #footer #wrapper .morePrj {
   z-index: -1;
   text-decoration-color: transparent;
-  color: #eeebe7;
+  color: white;
   font-size: 1.8rem;
   align-self: center;
   transition: 0.3s;
