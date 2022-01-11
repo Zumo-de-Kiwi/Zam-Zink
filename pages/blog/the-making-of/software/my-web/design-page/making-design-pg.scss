@@ -1,5 +1,5 @@
-@import '../../../scss/variables';
-@import '../../../scss/globals';
+@import '../../../../../../scss/variables';
+@import '../../../../../../scss/globals';
 
 body {
   // height: 100%;
@@ -7,7 +7,7 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   ///////////////////////////////////////////
   width: 100vw;
-  $design-bg-color: #ccae90; //#dac6b2;
+  $design-bg-color: white;
   $design-plastic-color: rgb(51, 148, 103);
   $design-color-green: rgb(51, 148, 103);
   $design-color-yellow: rgb(245, 221, 59);
