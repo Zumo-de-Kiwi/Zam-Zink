@@ -13,9 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
       rel="stylesheet"
     />
-    <!-- GROTESK -->
+    <!--SPACE(GROTESK + MONO) -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <!------------------CSS-------------------->
@@ -31,7 +31,8 @@
   <body>
     <!------------PRE LOADER------------------>
     <div class="preloader">
-      <p id="emoji-loader">💭🧠</p>
+      <p id="emoji-loader">🧠</p>
+      <!-- 💭 -->
       <p id="text-loader">It all comes out from connexions.</p>
     </div>
     <div class="absolute-nav">
@@ -99,11 +100,14 @@
     </header>
 
     <main class="main">
-      <h1>Design</h1>
+      <div class="main-header">
+        <h1>Designs</h1>
+      </div>
+
       <div id="drawSections">
         <!-- NOODLES -->
         <div id="noodlesDraws" class="drawSection">
-          <h2 class="title"><span class="titleSign">*</span>Noodles</h2>
+          <!-- <h2 class="title"><span class="titleSign">*</span>Noodles</h2> -->
 
           <picture id="">
             <source srcset="" loading="lazy" type="image/webp" />
@@ -115,31 +119,6 @@
         <!-- CAFE -->
         <div id="cafeDraws" class="drawSection"></div>
 
-        <!-- DODO -->
-        <div id="dodoDraws" class="drawSection">
-          <h2 class="title"><span class="titleSign">&</span>Dodo</h2>
-        </div>
-
-        <!-- SKETCH -->
-        <div id="sketchDraws" class="drawSection">
-          <span class="titleSign">?</span>
-          <h2 class="title">Sketch</h2>
-        </div>
-
-        <!-- RANDOM -->
-        <div id="randomDraws" class="drawSection">
-          <h2 class="title"><span class="titleSign">#</span>Random</h2>
-
-          <!-- <h3 id="fin1">結</h3>
-          <h3 id="fin3">F</h3>
-          <picture id="rabbit">
-            <source srcset="https://i.ibb.co/JqNLy0Y/rabbit.jpg"" loading="lazy"
-            type="image/jpg" width="100px" />
-            <img src="" alt="rabbit" loading="lazy" type="image/jpg" />
-          </picture>
-          <h3 id="fin2">尾</h3>
-          <h3 id="fin4">N</h3> -->
-        </div>
         <div id="trampolin-wrapper">
           <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🦵</a>
         </div>
@@ -147,19 +126,32 @@
 
       <div id="footer">
         <div id="wrapper">
-          <div id="nextPrj">
-            <a
-              class="morePrj"
-              href="/pages/works/analog-photo/analog-photo.html"
-              >next project
-            </a>
-            <span id="Rarrow">-></span>
+          <!-- L SIDE -->
+          <div class="footer-l">
+            <div class="sub-wrapper">
+              <h2>other projects</h2>
+              <div>
+                <a href="../gsap-test/5-analog-hori-scroll/analog-test.html"
+                  >photography</a
+                >
+              </div>
+              <div>
+                <a href="../draw-main/draw-main.html">
+                  drawings<br />sketches</a
+                >
+              </div>
+            </div>
           </div>
-          <div id="prevPrj">
-            <span id="Larrow"><-</span>
-            <a class="morePrj" href="/pages/works/pientan-app/pientan.html"
-              >prev. project
-            </a>
+
+          <!-- R SIDE -->
+          <div class="footer-r">
+            <div class="sub-wrapper">
+              <div class="arrrow"></div>
+              <div><a href="/index.html"></a></div>
+              <div><a href="../../contact/contact.html">contact</a></div>
+              <div><a href="../../about-me/about_me.html">about me</a></div>
+              <div><a href="">about this page</a></div>
+            </div>
           </div>
         </div>
       </div>

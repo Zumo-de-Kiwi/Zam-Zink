@@ -53,6 +53,7 @@ body {
     'slnt' $slnt;
   // Typographic tweaks!Add accessible line-height Improve text rendering
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   //line-height: 1.5; //https://www.joshwcomeau.com/css/custom-css-reset/
 

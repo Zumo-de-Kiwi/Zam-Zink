@@ -54,6 +54,7 @@ body {
   font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
@@ -610,6 +611,7 @@ body .left-arrow .link-a {
   color: inherit;
   font-size: 2.2rem;
   transition: inherit;
+  transition: 0s;
 }
 
 body .left-arrow .link-a:hover {
@@ -940,7 +942,6 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem {
   width: calc(50vw + 50vh);
   height: 100vmin;
   margin: 0rem 0vw;
-  border: 3px solid rgba(129, 129, 129, 0.153);
   display: flex;
   align-items: center;
   position: relative;

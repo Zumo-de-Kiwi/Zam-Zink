@@ -54,6 +54,7 @@ body {
   font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" "slnt" 0;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
@@ -354,14 +355,14 @@ body #trampolin-wrapper #trampolineEmoji:active {
 body {
   font-family: 'Space Grotesk', sans-serif;
   width: 100vw;
-  background-color: white;
+  background-color: #ccae90;
   font-weight: 300;
   position: relative;
 }
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #919191;
+  background: #339467;
 }
 
 body .preloader #emoji-loader {
@@ -371,7 +372,7 @@ body .preloader #emoji-loader {
 body .preloader #text-loader {
   padding-top: 12rem;
   color: #363636;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
 body .absolute-nav {
@@ -395,128 +396,38 @@ body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burge
 }
 
 body main {
-  background: white;
+  background: #ccae90;
   position: relative;
   display: grid;
   font-weight: 400;
 }
 
-body main h1 {
+body main .main-header {
   width: 100%;
+  line-height: 8rem;
+  height: 8rem;
+  text-align: center;
+  box-shadow: 0px 1rem 1rem #463a2f;
+}
+
+body main .main-header h1 {
   color: #3e3e3e;
   background-color: #f5f3e6;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 3.3rem;
 }
 
 body #footer {
-  z-index: 0;
+  z-index: 1;
   position: relative;
-  height: 50vh;
   bottom: 0px;
   width: 100%;
-  background: #b1b1b1;
-  display: grid;
-  grid-template-columns: 1fr 360px 1fr;
+  background: #9a8a70;
 }
 
 body #footer #wrapper {
-  z-index: -1;
-  grid-column: 2;
+  height: 100%;
+  width: 100%;
   display: grid;
-  justify-content: center;
-  gap: 4rem;
-  grid-template-rows: 1fr 4rem 4rem 1fr;
-  color: white;
-}
-
-body #footer #wrapper span {
-  transition: 0.3s;
-  margin: 0.5rem;
-}
-
-body #footer #wrapper .morePrj {
-  z-index: -1;
-  text-decoration-color: transparent;
-  color: white;
-  font-size: 1.8rem;
-  align-self: center;
-  transition: 0.3s;
-}
-
-body #footer #wrapper .morePrj:hover {
-  text-decoration-color: white;
-}
-
-body #footer #wrapper .morePrj:active {
-  text-decoration-color: white;
-}
-
-body #footer #wrapper #nextPrj {
-  grid-row: 2;
-  margin-left: 0rem;
-}
-
-body #footer #wrapper #nextPrj:hover #Rarrow {
-  margin-left: 1rem;
-}
-
-body #footer #wrapper #nextPrj:active #Rarrow {
-  margin-left: 1rem;
-}
-
-body #footer #wrapper #prevPrj {
-  grid-row: 3;
-  margin-right: 0rem;
-}
-
-body #footer #wrapper #prevPrj:hover #Larrow {
-  margin-right: 1rem;
-}
-
-body #footer #wrapper #prevPrj:active #Larrow {
-  margin-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  body #footer {
-    height: 40vh;
-  }
-  body #footer #wrapper {
-    grid-column: 1/ 4;
-    justify-content: center;
-    grid-template-rows: 1fr 4rem 4rem 1fr;
-  }
-  body #footer #wrapper .morePrj {
-    font-size: 2rem;
-    align-self: center;
-    transition: 0.3s;
-  }
-  body #footer #wrapper .morePrj:hover {
-    text-decoration-color: white;
-  }
-  body #footer #wrapper .morePrj:active {
-    text-decoration-color: white;
-  }
-  body #footer #wrapper #nextPrj {
-    grid-row: 2;
-    justify-self: start;
-    margin-left: 0rem;
-  }
-  body #footer #wrapper #nextPrj:hover #Rarrow {
-    margin-left: 1rem;
-  }
-  body #footer #wrapper #nextPrj:active #Rarrow {
-    margin-left: 1rem;
-  }
-  body #footer #wrapper #prevPrj {
-    grid-row: 3;
-    margin-right: 0rem;
-  }
-  body #footer #wrapper #prevPrj:hover #Larrow {
-    margin-right: 1rem;
-  }
-  body #footer #wrapper #prevPrj:active #Larrow {
-    margin-right: 1rem;
-  }
+  grid-template-columns: 1fr 1fr;
 }

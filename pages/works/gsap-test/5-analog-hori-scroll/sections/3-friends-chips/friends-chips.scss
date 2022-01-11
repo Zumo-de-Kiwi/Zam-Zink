@@ -81,6 +81,7 @@ body {
       color: inherit;
       font-size: 2.2rem;
       transition: inherit;
+      transition: 0s;
       &:hover {
         transition: 0.3s;
         color: var(--bg-color);
@@ -406,7 +407,7 @@ body {
             height: 100vmin;
             margin: 0rem 0vw;
 
-            border: 3px solid rgba(129, 129, 129, 0.153);
+            // border: 3px solid rgba(129, 129, 129, 0.153);
 
             display: flex;
             align-items: center;
