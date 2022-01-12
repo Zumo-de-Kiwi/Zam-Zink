@@ -8,7 +8,7 @@ body {
   $ff-grotesk-mono: 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
   ///////////////////////////////////////////
-  $design-bg-color: #ccae90; //#dac6b2;
+  $design-bg-color: hsl(30, 37%, 68%); //#dac6b2;
   $design-plastic-color: rgb(51, 148, 103);
   $design-color-green: rgb(51, 148, 103);
   $design-color-yellow: rgb(245, 221, 59);
@@ -28,11 +28,16 @@ body {
     transition: $trans-slow ease-out;
     background: $design-plastic-color;
     #emoji-loader {
-      animation: jump 1.5s ease 0.3s infinite alternate;
+      animation: jump 3s ease-out 0.3s infinite alternate;
+    }
+    @keyframes jump {
+      to {
+        transform: translateY(0.7rem);
+      }
     }
     #text-loader {
       padding-top: 12rem;
-      color: $design-text-color;
+      color: $design-color-yellow;
       font-size: 1.8rem;
     }
   }
@@ -120,25 +125,271 @@ body {
             left: 1.3%;
             right: 1.3%;
             width: 12%; //initial width
+            will-change: transform;
+            transition: transform 0.3s, filter 0.06s;
+
+            filter: sepia(100%) hue-rotate(102deg) saturate(240%)
+              brightness(93%);
+            &:hover {
+              transform: scale(1.01);
+              filter: none;
+            }
           }
           #cactus {
             left: 5.4%;
             top: 2.5%;
             width: 21.5%;
+            &:hover {
+            }
           }
+          .pawn-wrapper {
+            left: 31.6%;
+            // top: 2.5%;
+            width: 170px;
+            height: 187px;
+            position: absolute;
+            z-index: 1;
+            #pawn {
+              top: 20%;
+              left: 23%;
+              width: 31%;
+            }
+          }
+
+          .ligther_element-wrapper {
+            z-index: 2;
+            left: 32.2%;
+            width: 17.7%;
+            height: 32.9%;
+            filter: none;
+            pointer-events: none;
+            .lighter-toogle {
+              z-index: 2;
+              top: 40%;
+              left: 13%;
+              width: 80%;
+              height: 60%;
+              position: absolute;
+              pointer-events: all;
+              &:hover #lighter {
+                transform: rotateZ(-2deg);
+              }
+              // fIRE
+              .lighter-fire {
+                filter: none;
+                width: 80%;
+                top: -61%;
+                left: -4%;
+                opacity: 0%;
+                z-index: 2;
+                pointer-events: none;
+                &#lighter-fire1 {
+                  // opacity: 0%;
+                }
+                &#lighter-fire2 {
+                  // opacity: 0%;
+                }
+              }
+              /////////////////
+              // FIRE ANIM ////
+              /////////////////
+              &:hover > #lighter-fire1 {
+                opacity: 100%;
+                animation: fire1 1.2s linear 0s infinite;
+              }
+              &:hover > #lighter-fire2 {
+                animation: fire2 1.2s linear 0s infinite;
+              }
+              @keyframes fire1 {
+                0% {
+                  opacity: 100%;
+                }
+                49% {
+                  opacity: 100%;
+                }
+                50% {
+                  opacity: 0%;
+                }
+                100% {
+                  opacity: 00%;
+                }
+              }
+              @keyframes fire2 {
+                0% {
+                  opacity: 0%;
+                }
+                49% {
+                  opacity: 0%;
+                }
+                50% {
+                  opacity: 100%;
+                }
+                100% {
+                  opacity: 100%;
+                }
+              }
+              #lighter {
+                left: 24%;
+                top: 11%;
+                width: 62%;
+                // pointer-events: none; //
+              }
+            }
+          }
+
+          #scissors {
+            left: 52.1%;
+            top: 3.6%;
+            width: 17.7%;
+          }
+          #read-me {
+            left: 81.8%;
+            top: 2.8%;
+            width: 11.9%;
+          }
+          #planet {
+            left: 73.4%;
+            top: 19.35%;
+            width: 21.9%;
+          }
+          .comb {
+            left: 9.8%;
+            top: 34.4%;
+            width: 10.7%;
+            transform: rotateZ(180deg);
+            filter: none;
+            &:hover {
+              transform: rotateZ(180deg);
+              // filter: none;
+            }
+            &#comb-normal {
+            }
+            &#comb-hover {
+              opacity: 0%;
+              transition: 0.3s;
+              &:hover {
+                opacity: 100%;
+              }
+            }
+          }
+          #pen {
+            left: 32.3%;
+            top: 36.35%;
+            width: 64%;
+          }
+
+          .ikea {
+            left: 36%;
+            top: 44.9%;
+            width: 33%;
+            z-index: 1;
+            filter: none;
+            &#ikea {
+              pointer-events: none;
+            }
+            &#ikea-light {
+              z-index: 0;
+              opacity: 0%;
+              transition: 0.3s;
+              top: 44.8%;
+              left: 35%;
+              &:hover {
+                opacity: 100%;
+                transform: translateY(-3px);
+              }
+            }
+          }
+
+          #radio {
+            left: 69%;
+            top: 44%;
+            width: 25.1%;
+            transform: rotateZ(180deg);
+            &:hover {
+              transform: rotateZ(180deg) scale(1.015);
+            }
+          }
+
+          .pixar {
+            left: 78.6%;
+            top: 58.7%;
+            width: 15.4%;
+            filter: none;
+            &#pixar {
+            }
+            &#pixar-light {
+              left: 78.4%;
+              top: 58.5%;
+              width: 24%;
+              opacity: 0%;
+              transition: 0.3s;
+              &:hover {
+                opacity: 100%;
+              }
+            }
+          }
+
           #out-stock {
-            top: 69%;
-            left: 4.9%;
-            font-size: 2.27vw;
-            width: 25%;
-            color: $design-color-green;
+            top: 64.2%;
+            left: 1.3%;
+            width: 30.8%;
+            filter: none;
+            &:hover {
+              filter: opacity(66%);
+              transform: scale(0.98);
+            }
+          }
+
+          // WEATHER
+          .weather {
+            top: 83.6%;
+            left: 6.3%;
+            width: 21%;
+            opacity: 0%;
+            &#rain {
+              z-index: -2;
+            }
+            &#lightning {
+              z-index: -1;
+            }
+          }
+          #weather {
+            top: 80.6%;
+            left: 6.3%;
+            width: 21%;
+            // hover not working
+            &:hover ~ #rain {
+              opacity: 100%;
+            }
+          }
+
+          #glasses {
+            top: 71.6%;
+            left: 47%;
+            width: 11%;
+            transform: rotateZ(90deg);
+            &:hover {
+              transform: rotateZ(90deg) scale(1.01);
+            }
+          }
+          #poker {
+            top: 80%;
+            left: 80%;
+            width: 12.7%;
+            transform: rotateZ(-90deg);
+            filter: none;
+            &:hover {
+              filter: invert(1) hue-rotate(180deg);
+              // filter: invert(1) grayscale(0.1) hue-rotate(100deg);
+              // transform: rotateZ(-90deg) scale(1.01);
+            }
           }
         }
       }
 
       // red part
       #red-holder {
-        margin-bottom: 7rem;
+        margin-bottom: 17rem;
         #red-holder-img {
         }
         .red-imgs-wrapper {
@@ -164,7 +415,7 @@ body {
       width: 100%;
       background: rgb(154, 138, 112);
       background-image: url('img/footer-cardboard.webp');
-      background-position: center;
+      background-position: center top;
       background-repeat: repeat-x;
       background-size: cover;
 
@@ -210,8 +461,14 @@ body {
             justify-self: end;
             text-align: right;
             div {
-              padding: 1.1rem;
+              padding: 1.2rem;
               font-weight: 500;
+              .r-links {
+                padding: 1rem;
+              }
+              .arrow {
+                font-size: 2.5rem;
+              }
             }
           }
         }
