@@ -1,4 +1,6 @@
+///////////////////////////////////////
 ////////////// Font Family ////////////
+///////////////////////////////////////
 $ff-recursive: 'Recursive', 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji',
   color-emoji;
@@ -7,7 +9,12 @@ $ff-recursive-bold: 'Recursive', 'Arial Black', 'Helvetica Neue Bold',
 $ff-recursive-mono: 'Recursive', SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace;
 
+$ff-space-grotesk: 'Space Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
+$ff-grotesk-mono: 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace;
+///////////////////////////////////////
 ////// Variable Font Default //////////
+///////////////////////////////////////
 $MONO: 'MONO' 0; //Monospace
 $CASL: 'CASL' 0.3; // Casual
 $wght: 'wght' 500;
@@ -17,7 +24,9 @@ $CRSV: 'CRSV' 0; // 0.5 is Auto Cursive
 // "MONO" var(--MONO), "CASL" var(--CASL),
 //     "slnt" var(--slnt), "CRSV" var(--CRSV);
 
+///////////////////////////////////////
 //////////// COLORS ///////////////
+///////////////////////////////////////
 $background-color: hsl(40, 33%, 98%);
 $background-selected-color: hsl(58, 100%, 51%);
 
@@ -50,7 +59,10 @@ $font-weight-normal: 620;
 $font-weight-light: 500;
 $font-weight-lighter: 400;
 $font-weight-lightest: 300;
+
+///////////////////////////////////////
 ///////////// SIZE ////////////////////
+///////////////////////////////////////
 $font-size-imcrement: 0.5;
 $font-size-nacho: calc(#{$font-size-imcrement}vw + 0.8vw + 40px); //6rem
 $font-size-huge: calc(#{$font-size-imcrement}vw + 0.4vw + 30px); //3.7rem;
@@ -60,7 +72,9 @@ $font-size-small: calc(#{$font-size-imcrement}vw - 0vw + 12px); //1.6rem;
 $font-size-information: calc(#{$font-size-imcrement}vw - 0vw + 8px); //1.3rem;
 $font-size-linkNumber: calc(0.4vw + 7px); //0.8rem;
 
+///////////////////////////////////////
 ///////////////// GRADIENT ///////////////
+///////////////////////////////////////
 $linear-gradient-purple-blue: linear-gradient(
   90deg,
   rgba(126, 21, 220, 1) 0%,
@@ -71,7 +85,10 @@ $about-mid-gradient: linear-gradient(
   rgba(98, 27, 197, 1) 0%,
   rgba(191, 222, 242, 1) 100%
 );
+
+///////////////////////////////////////
 ///////////////// Transition ///////////////
+///////////////////////////////////////
 $trans-fast: 0.15s;
 $trans-normal: 0.3s;
 $trans-slow: 0.45s;
@@ -83,50 +100,10 @@ $delay-fast: 0.1s;
 $delay-normal: 0.16s;
 $delay-slow: 0.314s;
 
+///////////////////////////////////////
+///////////////////////////////////////
 ///////////////// CURSORS ///////////////
-// original
-// $cursor-pointer-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:21px;'><text y='57%'>👆</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-pointer-hand-flip: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>☝️</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-startreck-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='54%'>🖖</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-please-fingers: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🤞</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-yeah-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>✌️</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-arrow-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👈</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-right-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👉</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-pointer-down-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>👇</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-pointer-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:23px;'><text y='57%'>🔎</text></svg>")
-//     16 0,
-//   auto;
-// $cursor-say-hi: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>👋</text></svg>")
-//     16 0,
-//   auto;
-
-// $cursor-contact-mail: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>💌 </text></svg>")
-//     16 0,
-//   auto;
-
-// $cursor-about-me: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>👁‍🗨</text></svg>")
-//     16 0,
-//   auto;
-
-// $cursor-flash-light: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' id='wave' style='fill:black;font-size:23px;'><text y='57%'>🔦</text></svg>")
-//     16 0,
-//   auto;
+///////////////////////////////////////
 $cursor-pointer-hand: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>")
     16 0,
   auto;
