@@ -437,7 +437,7 @@ body main .designSections {
 
 body main .designSections .frame-holder {
   grid-column: 2;
-  margin-top: 7rem;
+  margin-top: 11rem;
   position: relative;
 }
 
@@ -453,6 +453,10 @@ body main .designSections .frame-holder .imgs-wrapper .inner-wrapper-rel {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+body main .designSections #green-holder {
+  margin-top: 8rem;
 }
 
 body main .designSections #green-holder .green-imgs-wrapper .green-imgs {
@@ -476,15 +480,15 @@ body main .designSections #green-holder .green-imgs-wrapper #cactus {
 
 body main .designSections #green-holder .green-imgs-wrapper .pawn-wrapper {
   left: 31.6%;
-  width: 170px;
-  height: 187px;
+  width: 19%;
+  height: 14.1%;
   position: absolute;
   z-index: 1;
 }
 
 body main .designSections #green-holder .green-imgs-wrapper .pawn-wrapper #pawn {
-  top: 20%;
-  left: 23%;
+  top: 19%;
+  left: 24%;
   width: 31%;
 }
 
@@ -735,8 +739,7 @@ body main .designSections #red-holder .red-imgs-wrapper .red-imgs {
   width: 12%;
   will-change: transform;
   transition: transform 0.3s, filter 0.06s;
-  filter: saturate(90%);
-  filter: sepia(3%) saturate(95%);
+  filter: saturate(92%);
 }
 
 body main .designSections #red-holder .red-imgs-wrapper .red-imgs:hover {
@@ -745,15 +748,94 @@ body main .designSections #red-holder .red-imgs-wrapper .red-imgs:hover {
 }
 
 body main .designSections #red-holder .red-imgs-wrapper #chupa {
-  left: 5.4%;
-  top: 2.5%;
-  width: 21.5%;
+  left: 7%;
+  top: 10.4%;
+  width: 18.3%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper #chupa:hover {
+  animation: lsdColor 1.3s linear 0s infinite;
+}
+
+@keyframes lsdColor {
+  0% {
+    filter: sepia(100%) hue-rotate(0deg) saturate(400%);
+  }
+  100% {
+    filter: sepia(100%) hue-rotate(360deg) saturate(400%);
+  }
 }
 
 body main .designSections #red-holder .red-imgs-wrapper #crab {
-  left: 32.4%;
-  top: 2.5%;
-  width: 25.5%;
+  left: 35.8%;
+  top: 6.1%;
+  width: 30.7%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper .swirl {
+  left: 75.6%;
+  top: 8.7%;
+  width: 19.7%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper .swirl#swirl-white {
+  opacity: 0%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper .swirl#swirl-white:hover {
+  opacity: 100%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper #ketchup {
+  left: 53.6%;
+  top: 17.4%;
+  width: 19%;
+  transform: rotateZ(-90deg);
+}
+
+body main .designSections #red-holder .red-imgs-wrapper #ketchup:hover {
+  transform: scale(1.01) rotateZ(-90deg);
+}
+
+body main .designSections #red-holder .red-imgs-wrapper #strawberry {
+  left: 6%;
+  top: 67%;
+  width: 16%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper #eatme {
+  left: 34%;
+  top: 70%;
+  width: 13.3%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper #eatme:hover {
+  transform: rotateZ(2deg);
+}
+
+body main .designSections #red-holder .red-imgs-wrapper .yiTiaou {
+  left: 64.6%;
+  top: 58%;
+  width: 26.5%;
+  transform: rotateZ(40deg);
+  filter: none;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper .yiTiaou:hover {
+  transform: rotateZ(38deg) scale(1.01);
+  filter: none;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper .yiTiaou#banana {
+  opacity: 0%;
+}
+
+body main .designSections #red-holder .red-imgs-wrapper .yiTiaou#banana:hover {
+  opacity: 100%;
+}
+
+body main #trampolin-wrapper #trampolineEmoji {
+  opacity: 0.5;
 }
 
 body main .footer {

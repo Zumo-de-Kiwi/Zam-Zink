@@ -90,7 +90,7 @@ body {
 
       .frame-holder {
         grid-column: 2;
-        margin-top: 7rem;
+        margin-top: 11rem;
         position: relative;
         .imgs-wrapper {
           width: 100%;
@@ -109,6 +109,7 @@ body {
       // green header h:100
       // green part
       #green-holder {
+        margin-top: 8rem;
         #green-holder-img {
         }
         .green-imgs-wrapper {
@@ -135,14 +136,14 @@ body {
           }
           .pawn-wrapper {
             left: 31.6%;
-            // top: 2.5%;
-            width: 170px;
-            height: 187px;
+            // top: 2%;
+            width: 19%; //140px;
+            height: 14.1%; // 170px;;
             position: absolute;
             z-index: 1;
             #pawn {
-              top: 20%;
-              left: 23%;
+              top: 19%;
+              left: 24%;
               width: 31%;
             }
           }
@@ -388,8 +389,7 @@ body {
             width: 12%; //initial width
             will-change: transform;
             transition: transform 0.3s, filter 0.06s;
-            filter: saturate(90%);
-            filter: sepia(3%) saturate(95%);
+            filter: saturate(92%);
             &:hover {
               transform: scale(1.01);
               filter: none;
@@ -397,20 +397,89 @@ body {
           }
 
           #chupa {
-            left: 5.4%;
-            top: 2.5%;
-            width: 21.5%;
+            left: 7%;
+            top: 10.4%;
+            width: 18.3%;
+            &:hover {
+              animation: lsdColor 1.3s linear 0s infinite; //alternate
+            }
+            @keyframes lsdColor {
+              0% {
+                filter: sepia(100%) hue-rotate(0deg) saturate(400%);
+              }
+              100% {
+                filter: sepia(100%) hue-rotate(360deg) saturate(400%);
+              }
+            }
           }
           #crab {
-            left: 32.4%;
-            top: 2.5%;
-            width: 25.5%;
+            left: 35.8%;
+            top: 6.1%;
+            width: 30.7%;
+          }
+          .swirl {
+            left: 75.6%;
+            top: 8.7%;
+            width: 19.7%;
+            &#swirl-red {
+            }
+            &#swirl-white {
+              opacity: 0%;
+              &:hover {
+                opacity: 100%;
+                // transform: rotateZ(9deg);
+              }
+            }
+          }
+          #ketchup {
+            left: 53.6%;
+            top: 17.4%;
+            width: 19%;
+            transform: rotateZ(-90deg);
+            &:hover {
+              transform: scale(1.01) rotateZ(-90deg);
+            }
+          }
+          #strawberry {
+            left: 6%;
+            top: 67%;
+            width: 16%;
+          }
+          #eatme {
+            left: 34%;
+            top: 70%;
+            width: 13.3%;
+            &:hover {
+              transform: rotateZ(2deg);
+            }
+          }
+          .yiTiaou {
+            left: 64.6%;
+            top: 58%;
+            width: 26.5%;
+            transform: rotateZ(40deg);
+            filter: none;
+            &:hover {
+              transform: rotateZ(38deg) scale(1.01);
+              filter: none;
+            }
+            &#banana {
+              opacity: 0%;
+              &:hover {
+                opacity: 100%;
+              }
+            }
+            &#chilli {
+            }
           }
         }
       }
     }
 
     #trampolin-wrapper {
+      #trampolineEmoji {
+        opacity: 0.5;
+      }
     }
     // box brown footer
     .footer {
