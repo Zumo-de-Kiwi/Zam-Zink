@@ -581,6 +581,11 @@ body main .subpage-wrapper .subpage-content #egg {
   filter: grayscale(100%) opacity(75%);
 }
 
+body main .subpage-wrapper .subpage-content-2 {
+  grid-column: 2;
+  width: 100%;
+}
+
 body main #trampolin-wrapper #trampolineEmoji {
   opacity: 0.6;
 }

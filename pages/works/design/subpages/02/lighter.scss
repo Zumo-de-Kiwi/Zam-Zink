@@ -3,8 +3,6 @@
 
 body {
   ///////////////////////////////////////////
-  //  $design-bg-color: hsl(30, 37%, 68%); //#dac6b2;
-  // $design-plastic-color: rgb(51, 148, 103);
   $design-color-green: rgb(51, 148, 103);
   $design-color-yellow: rgb(245, 221, 59);
   $design-color-red: rgb(215, 61, 69);
@@ -19,6 +17,7 @@ body {
   width: 100vw;
   font-weight: 300;
   position: relative;
+
   .preloader {
     transition: $trans-slow ease-out;
     background: $design-subpg-bg;
@@ -48,9 +47,6 @@ body {
       width: 100%;
       .left-arrow {
         top: 1rem !important;
-        // @media (max-width: 768px) {
-        //   top: 1rem;
-        // }
         .link-a {
           color: $design-text-color;
         }
@@ -70,7 +66,10 @@ body {
     }
   }
   main {
+    // background: $design-subpg-bg;
     display: grid;
+    // font-weight: 400;
+
     .subpage-wrapper {
       display: grid;
       grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
@@ -217,6 +216,11 @@ body {
           padding-top: 15%;
           filter: grayscale(100%) opacity(75%);
         }
+      }
+      // whats next
+      .subpage-content-2 {
+        grid-column: 2;
+        width: 100%;
       }
     }
 
