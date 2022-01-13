@@ -421,10 +421,9 @@ body main {
 body main .subpage-wrapper {
   display: grid;
   grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
-  gap: 1rem;
 }
 
-body main .subpage-wrapper .subpage-content {
+body main .subpage-wrapper .subpage-content-1 {
   grid-column: 2;
   width: 100%;
   position: relative;
@@ -432,39 +431,31 @@ body main .subpage-wrapper .subpage-content {
   grid-template-columns: repeat(3, 1fr);
 }
 
-body main .subpage-wrapper .subpage-content .hero-image {
+body main .subpage-wrapper .subpage-content-1 .hero-image {
   width: 100%;
 }
 
-body main .subpage-wrapper .subpage-content .normal-image {
+body main .subpage-wrapper .subpage-content-1 .normal-image {
   width: 30%;
 }
 
-body main .subpage-wrapper .subpage-content .small-image {
+body main .subpage-wrapper .subpage-content-1 .small-image {
   width: 19%;
 }
 
-body main .subpage-wrapper .subpage-content .txt-l {
+body main .subpage-wrapper .subpage-content-1 .txt-l {
   text-align: left;
 }
 
-body main .subpage-wrapper .subpage-content .txt-c {
+body main .subpage-wrapper .subpage-content-1 .txt-c {
   text-align: center;
 }
 
-body main .subpage-wrapper .subpage-content .txt-r {
+body main .subpage-wrapper .subpage-content-1 .txt-r {
   text-align: right;
 }
 
-body main .subpage-wrapper .subpage-content #dino-browser {
-  grid-column: 1/ 4;
-  width: 90%;
-  margin: 0px auto;
-  margin-top: 16rem;
-  margin-bottom: 13rem;
-}
-
-body main .subpage-wrapper .subpage-content .www {
+body main .subpage-wrapper .subpage-content-1 .www {
   font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 200;
   text-transform: uppercase;
@@ -472,118 +463,165 @@ body main .subpage-wrapper .subpage-content .www {
   margin-bottom: 0.3rem;
 }
 
-body main .subpage-wrapper .subpage-content .w-texts {
+body main .subpage-wrapper .subpage-content-1 .w-texts {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-body main .subpage-wrapper .subpage-content .w-texts .w-para {
+body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
   margin-bottom: 4rem;
   margin-right: 19%;
   font-size: 1.6rem;
 }
 
-body main .subpage-wrapper .subpage-content .info-text {
+body main .subpage-wrapper .subpage-content-1 .info-text {
   font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   padding: 0.5rem;
 }
 
-body main .subpage-wrapper .subpage-content .cl-1 {
+body main .subpage-wrapper .subpage-content-1 .margin-top {
+  grid-column: 1 / 4;
+  margin: 6rem;
+  grid-row: 1;
+}
+
+body main .subpage-wrapper .subpage-content-1 .cl-1 {
   grid-column: 1;
 }
 
-body main .subpage-wrapper .subpage-content #why {
+body main .subpage-wrapper .subpage-content-1 #why {
   grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content .why-text1 {
+body main .subpage-wrapper .subpage-content-1 .why-text1 {
+  padding-top: 6rem;
+  grid-row: 2;
+}
+
+body main .subpage-wrapper .subpage-content-1 .tsai-wrapper {
   grid-row: 3;
+  display: flex;
 }
 
-body main .subpage-wrapper .subpage-content .why-text2 {
-  grid-row: 4;
+body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-1 {
+  width: 50%;
 }
 
-body main .subpage-wrapper .subpage-content #blues-exp {
-  padding-top: 30%;
-  width: 70%;
-  opacity: 20%;
-  filter: contrast(11%);
-  transition: 1s;
-  padding-left: 10%;
-  padding-bottom: 0px;
+body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-2 {
+  width: 50%;
 }
 
-body main .subpage-wrapper .subpage-content #blues-exp:hover {
-  filter: none;
-  opacity: 100%;
-}
-
-body main .subpage-wrapper .subpage-content #blues-txt {
+body main .subpage-wrapper .subpage-content-1 #up-txt {
+  grid-row: 5;
   font-size: 1.3rem;
-  width: 70%;
+  padding-top: 100%;
   text-align: right;
-  transform: translateY(-3rem);
   padding-left: 10%;
 }
 
-body main .subpage-wrapper .subpage-content .cl-2 {
+body main .subpage-wrapper .subpage-content-1 .download-stickers {
+  grid-row: 6;
+  text-align: right;
+  padding-bottom: 30%;
+  padding-top: 110%;
+}
+
+body main .subpage-wrapper .subpage-content-1 .download-stickers h4 {
+  padding-bottom: 0.3rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .download-stickers .link {
+  padding-bottom: 0.7rem;
+  color: #464646;
+}
+
+body main .subpage-wrapper .subpage-content-1 .download-stickers .link:hover {
+  color: #38e907;
+}
+
+body main .subpage-wrapper .subpage-content-1 .cl-2 {
   grid-column: 2;
 }
 
-body main .subpage-wrapper .subpage-content #paper-face {
-  width: 68%;
-  padding-left: 8%;
-  padding-top: 17%;
+body main .subpage-wrapper .subpage-content-1 #english-veg {
+  z-index: -1;
+  width: 47%;
   grid-row: 2 / 4;
+  position: sticky;
+  top: 0rem;
+  justify-self: center;
+  transform: translateY(5rem);
 }
 
-body main .subpage-wrapper .subpage-content #what {
-  grid-row: 4;
-  padding-left: 3rem;
+body main .subpage-wrapper .subpage-content-1 #all-stickers {
+  z-index: 5;
+  grid-row: 5 / 7;
+  margin-bottom: 18rem;
 }
 
-body main .subpage-wrapper .subpage-content .what-text1 {
-  padding-top: 6rem;
-  grid-row: 4;
-  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-body main .subpage-wrapper .subpage-content #vincent {
-  padding-top: 6rem;
-  grid-row: 5;
-  width: 83%;
-}
-
-body main .subpage-wrapper .subpage-content .cl-3 {
+body main .subpage-wrapper .subpage-content-1 .cl-3 {
   grid-column: 3;
 }
 
-body main .subpage-wrapper .subpage-content #where {
+body main .subpage-wrapper .subpage-content-1 #what {
   grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content .where-text1 {
+body main .subpage-wrapper .subpage-content-1 .what-text1 {
+  grid-row: 2;
+  padding-top: 6rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-3 {
+  grid-row: 3;
+  width: 50%;
+}
+
+body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-4 {
+  width: 50%;
   grid-row: 3;
 }
 
-body main .subpage-wrapper .subpage-content #radio {
-  grid-row: 4;
-  width: 87%;
-  justify-self: center;
-  margin-bottom: 0%;
+body main .subpage-wrapper .subpage-content-1 #down-txt {
+  grid-row: 6;
+  font-size: 1.3rem;
+  padding-top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-body main .subpage-wrapper .subpage-content #egg {
-  grid-row: 5;
-  width: 40%;
-  place-self: center;
-  padding-top: 15%;
-  filter: grayscale(100%) opacity(75%);
-}
-
-body main .subpage-wrapper .subpage-content-2 {
-  grid-column: 2;
+body main .subpage-wrapper .subpage-content-1 #sticker-banner::before {
+  grid-row: 9;
   width: 100%;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  content: 'This is the next Sticker Pack I am preparing';
+  color: #484848;
+  background-color: #36f860e9;
+  grid-column: 1/ 4;
+  border-radius: 25px 25px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 #sticker-banner {
+  width: 100%;
+  grid-row: 9;
+  grid-column: 1/ 4;
+}
+
+body main .subpage-wrapper .subpage-content-1 #sticker-banner::after {
+  grid-row: 9;
+  width: 100%;
+  padding-bottom: 3rem;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  content: '';
+  color: #484848;
+  background-color: #36f860d9;
+  grid-column: 1/ 4;
+  border-radius: 0px 0px 25px 25px;
 }
 
 body main #trampolin-wrapper #trampolineEmoji {
@@ -594,7 +632,7 @@ body main .footer {
   z-index: 19;
   height: 29rem;
   width: 100%;
-  background: #f0f0f0;
+  background: #91ffab;
   margin-top: 12rem;
 }
 
