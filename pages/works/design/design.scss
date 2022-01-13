@@ -236,6 +236,9 @@ body {
             left: 81.8%;
             top: 2.8%;
             width: 11.9%;
+            &:hover {
+              transform: rotateZ(-2deg);
+            }
           }
           #planet {
             left: 73.4%;

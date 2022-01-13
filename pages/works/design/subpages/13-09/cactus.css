@@ -354,7 +354,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  background-color: #ccad8f;
+  background-color: white;
   width: 100vw;
   font-weight: 300;
   position: relative;
@@ -362,7 +362,7 @@ body {
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #339467;
+  background: white;
 }
 
 body .preloader #emoji-loader {
@@ -377,7 +377,8 @@ body .preloader #emoji-loader {
 
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: #f5dd3b;
+  color: #363636;
+  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.8rem;
 }
 
@@ -400,15 +401,15 @@ body .absolute-nav .left-arrow {
 }
 
 body .absolute-nav .left-arrow .link-a {
-  color: #ccad8f;
+  color: white;
 }
 
 body .absolute-nav .left-arrow .link-a:hover {
-  color: #ccad8f;
+  color: white;
 }
 
 body main {
-  background: #ccad8f;
+  background: white;
   position: relative;
   display: grid;
   font-weight: 400;
@@ -423,419 +424,25 @@ body main .main-header {
 }
 
 body main .main-header h1 {
-  color: #ccad8f;
+  color: white;
   background-color: #363636;
   font-weight: 700;
   font-size: 2.3rem;
 }
 
-body main .designSections {
+body main .subpage-wrapper {
   display: grid;
   grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
   gap: 1rem;
 }
 
-body main .designSections .frame-holder {
+body main .subpage-wrapper .subpage-content {
   grid-column: 2;
-  margin-top: 11rem;
-  position: relative;
-}
-
-body main .designSections .frame-holder .imgs-wrapper {
   width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-  top: 7%;
 }
 
-body main .designSections .frame-holder .imgs-wrapper .inner-wrapper-rel {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-body main .designSections #green-holder {
-  margin-top: 8rem;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .green-imgs {
-  position: absolute;
-  width: 12%;
-  will-change: transform;
-  transition: transform 0.3s, filter 0.06s;
-  filter: sepia(23%);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .green-imgs:hover {
-  transform: scale(1.01);
-  filter: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #cactus {
-  left: 5.4%;
-  top: 2.5%;
-  width: 21.5%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .pawn-wrapper {
-  left: 31.6%;
-  width: 19%;
-  height: 14.1%;
-  position: absolute;
-  z-index: 1;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .pawn-wrapper #pawn {
-  top: 19%;
-  left: 24%;
-  width: 31%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ligther_element-wrapper {
-  z-index: 2;
-  left: 32.2%;
-  width: 17.7%;
-  height: 32.9%;
-  filter: none;
-  pointer-events: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ligther_element-wrapper .lighter-toogle {
-  z-index: 2;
-  top: 40%;
-  left: 13%;
-  width: 80%;
-  height: 60%;
-  position: absolute;
-  pointer-events: all;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ligther_element-wrapper .lighter-toogle:hover #lighter {
-  transform: rotateZ(-2deg);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ligther_element-wrapper .lighter-toogle .lighter-fire {
-  filter: none;
-  width: 80%;
-  top: -61%;
-  left: -4%;
-  opacity: 0%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ligther_element-wrapper .lighter-toogle:hover > #lighter-fire1 {
-  opacity: 100%;
-  animation: fire1 1.2s linear 0s infinite;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ligther_element-wrapper .lighter-toogle:hover > #lighter-fire2 {
-  animation: fire2 1.2s linear 0s infinite;
-}
-
-@keyframes fire1 {
-  0% {
-    opacity: 100%;
-  }
-  49% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 00%;
-  }
-}
-
-@keyframes fire2 {
-  0% {
-    opacity: 0%;
-  }
-  49% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ligther_element-wrapper .lighter-toogle #lighter {
-  left: 24%;
-  top: 11%;
-  width: 62%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #scissors {
-  left: 52.1%;
-  top: 3.6%;
-  width: 17.7%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #read-me {
-  left: 81.8%;
-  top: 2.8%;
-  width: 11.9%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #read-me:hover {
-  transform: rotateZ(-2deg);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #planet {
-  left: 73.4%;
-  top: 19.35%;
-  width: 21.9%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .comb {
-  left: 9.8%;
-  top: 34.4%;
-  width: 10.7%;
-  transform: rotateZ(180deg);
-  filter: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .comb:hover {
-  transform: rotateZ(180deg);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .comb#comb-hover {
-  opacity: 0%;
-  transition: 0.3s;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .comb#comb-hover:hover {
-  opacity: 100%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #pen {
-  left: 32.3%;
-  top: 36.35%;
-  width: 64%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ikea {
-  left: 36%;
-  top: 44.9%;
-  width: 33%;
-  z-index: 1;
-  filter: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ikea#ikea {
-  pointer-events: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ikea#ikea-light {
-  z-index: 0;
-  opacity: 0%;
-  transition: 0.3s;
-  top: 44.8%;
-  left: 35%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .ikea#ikea-light:hover {
-  opacity: 100%;
-  transform: translateY(-3px);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #radio {
-  left: 69%;
-  top: 44%;
-  width: 25.1%;
-  transform: rotateZ(180deg);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #radio:hover {
-  transform: rotateZ(180deg) scale(1.015);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .pixar {
-  left: 78.6%;
-  top: 58.7%;
-  width: 15.4%;
-  filter: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .pixar#pixar-light {
-  left: 78.4%;
-  top: 58.5%;
-  width: 24%;
-  opacity: 0%;
-  transition: 0.3s;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .pixar#pixar-light:hover {
-  opacity: 100%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #out-stock {
-  top: 64.2%;
-  left: 1.3%;
-  width: 30.8%;
-  filter: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #out-stock:hover {
-  filter: opacity(66%);
-  transform: scale(0.98);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .weather {
-  top: 83.6%;
-  left: 6.3%;
-  width: 21%;
-  opacity: 0%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .weather#rain {
-  z-index: -2;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper .weather#lightning {
-  z-index: -1;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #weather {
-  top: 80.6%;
-  left: 6.3%;
-  width: 21%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #weather:hover ~ #rain {
-  opacity: 100%;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #glasses {
-  top: 71.6%;
-  left: 47%;
-  width: 11%;
-  transform: rotateZ(90deg);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #glasses:hover {
-  transform: rotateZ(90deg) scale(1.01);
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #poker {
-  top: 80%;
-  left: 80%;
-  width: 12.7%;
-  transform: rotateZ(-90deg);
-  filter: none;
-}
-
-body main .designSections #green-holder .green-imgs-wrapper #poker:hover {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-body main .designSections #red-holder {
-  margin-bottom: 17rem;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .red-imgs {
-  position: absolute;
-  width: 12%;
-  will-change: transform;
-  transition: transform 0.3s, filter 0.06s;
-  filter: saturate(92%);
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .red-imgs:hover {
-  transform: scale(1.01);
-  filter: none;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #chupa {
-  left: 7%;
-  top: 10.4%;
-  width: 18.3%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #chupa:hover {
-  animation: lsdColor 1.3s linear 0s infinite;
-}
-
-@keyframes lsdColor {
-  0% {
-    filter: sepia(100%) hue-rotate(0deg) saturate(400%);
-  }
-  100% {
-    filter: sepia(100%) hue-rotate(360deg) saturate(400%);
-  }
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #crab {
-  left: 35.8%;
-  top: 6.1%;
-  width: 30.7%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .swirl {
-  left: 75.6%;
-  top: 8.7%;
-  width: 19.7%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .swirl#swirl-white {
-  opacity: 0%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .swirl#swirl-white:hover {
-  opacity: 100%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #ketchup {
-  left: 53.6%;
-  top: 17.4%;
-  width: 19%;
-  transform: rotateZ(-90deg);
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #ketchup:hover {
-  transform: scale(1.01) rotateZ(-90deg);
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #strawberry {
-  left: 6%;
-  top: 67%;
-  width: 16%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #eatme {
-  left: 34%;
-  top: 70%;
-  width: 13.3%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper #eatme:hover {
-  transform: rotateZ(2deg);
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .yiTiaou {
-  left: 64.6%;
-  top: 58%;
-  width: 26.5%;
-  transform: rotateZ(40deg);
-  filter: none;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .yiTiaou:hover {
-  transform: rotateZ(38deg) scale(1.01);
-  filter: none;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .yiTiaou#banana {
-  opacity: 0%;
-}
-
-body main .designSections #red-holder .red-imgs-wrapper .yiTiaou#banana:hover {
-  opacity: 100%;
+body main .subpage-wrapper .subpage-content #dino-browser {
+  width: 90%;
 }
 
 body main #trampolin-wrapper #trampolineEmoji {

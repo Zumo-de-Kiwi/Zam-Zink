@@ -1,0 +1,182 @@
+@import '../../../../../scss/variables';
+@import '../../../../../scss/globals';
+
+body {
+  ///////////////////////////////////////////
+  //  $design-bg-color: hsl(30, 37%, 68%); //#dac6b2;
+  // $design-plastic-color: rgb(51, 148, 103);
+  $design-color-green: rgb(51, 148, 103);
+  $design-color-yellow: rgb(245, 221, 59);
+  $design-color-red: rgb(215, 61, 69);
+  $design-text-color: hsl(0, 0%, 21%);
+  $design-white-color: rgb(244, 242, 235);
+  $design-subpg-bg: hsl(0, 0%, 100%);
+  ///////////////////////////////////////////
+  font-family: $ff-space-grotesk;
+  // font-family: $ff-grotesk-mono;
+  background-color: $design-subpg-bg;
+  width: 100vw;
+  font-weight: 300;
+  position: relative;
+  // font-size: 2rem;
+
+  .preloader {
+    transition: $trans-slow ease-out;
+    background: $design-subpg-bg;
+    #emoji-loader {
+      animation: jump 3s ease-out 0.3s infinite alternate;
+    }
+    @keyframes jump {
+      to {
+        transform: translateY(0.7rem);
+      }
+    }
+    #text-loader {
+      padding-top: 12rem;
+      color: $design-text-color;
+      font-family: $ff-grotesk-mono;
+      font-size: 1.8rem;
+    }
+  }
+  .absolute-nav {
+    // position: fixed;
+    position: absolute;
+    top: 0rem;
+    z-index: 19;
+    display: flex;
+    align-items: center;
+
+    .left-arrow {
+      top: 1rem;
+      @media (max-width: 768px) {
+        top: 1rem;
+      }
+      .link-a {
+        color: $design-subpg-bg;
+        &:hover {
+          color: $design-subpg-bg;
+        }
+      }
+    }
+  }
+  header {
+  }
+  main {
+    background: $design-subpg-bg;
+    // height: 600vh;
+    position: relative;
+    display: grid;
+    font-weight: 400;
+    .main-header {
+      width: 100%;
+      line-height: 6rem;
+      height: 6rem;
+      text-align: center;
+      box-shadow: 0px 0.3rem 0.6rem #463a2f, 0px 0.15rem 0.2rem #1a1817;
+      h1 {
+        color: $design-subpg-bg;
+        background-color: $design-text-color;
+        font-weight: 700;
+        font-size: 2.3rem;
+      }
+    }
+    .subpage-wrapper {
+      display: grid;
+      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+          7%,
+          1fr
+        );
+      gap: 1rem;
+      .subpage-content {
+        grid-column: 2;
+        width: 100%;
+        .hero-image {
+        }
+        .normal-image {
+        }
+        .small-image {
+        }
+        .textbox {
+        }
+        #dino-browser {
+          width: 90%;
+        }
+      }
+    }
+
+    #trampolin-wrapper {
+      #trampolineEmoji {
+        opacity: 0.5;
+      }
+    }
+    // box brown footer
+    .footer {
+      z-index: 1;
+      // position: absolute;
+      // bottom: 0px;
+
+      height: 29rem;
+      width: 100%;
+      background: rgb(154, 138, 112);
+      background-image: url('img/footer-cardboard.webp');
+      background-position: center top;
+      background-repeat: repeat-x;
+      background-size: cover;
+
+      #footer-wrapper {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        color: $design-white-color;
+        .footer-part {
+          a {
+            color: $design-white-color;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+              color: $design-white-color;
+            }
+          }
+        }
+        .footer-l {
+          grid-column: 1;
+          align-self: center;
+          justify-self: center;
+          text-align: center;
+          h2 {
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+          div {
+            padding: 0.5rem;
+          }
+        }
+        .footer-r {
+          grid-column: 2;
+
+          .sub-wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-content: space-around;
+            justify-self: end;
+            text-align: right;
+            div {
+              padding: 1.2rem;
+              font-weight: 500;
+              .r-links {
+                padding: 1rem;
+              }
+              .arrow {
+                font-size: 2.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
