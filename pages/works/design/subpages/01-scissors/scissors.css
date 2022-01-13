@@ -497,65 +497,17 @@ body main .subpage-wrapper .subpage-content-1 .why-text1 {
   grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content-1 .tsai-wrapper {
-  grid-row: 3;
-  display: flex;
-}
-
-body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-1 {
-  width: 50%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-2 {
-  width: 50%;
-}
-
-body main .subpage-wrapper .subpage-content-1 #up-txt {
-  grid-row: 5;
-  font-size: 1.3rem;
-  padding-top: 100%;
-  text-align: right;
-  padding-left: 10%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .download-stickers {
-  grid-row: 6;
-  text-align: right;
-  padding-bottom: 30%;
-  padding-top: 110%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .download-stickers h4 {
-  padding-bottom: 0.3rem;
-}
-
-body main .subpage-wrapper .subpage-content-1 .download-stickers .link {
-  padding-bottom: 0.7rem;
-  color: #464646;
-}
-
-body main .subpage-wrapper .subpage-content-1 .download-stickers .link:hover {
-  color: #38e907;
-}
-
 body main .subpage-wrapper .subpage-content-1 .cl-2 {
   grid-column: 2;
 }
 
-body main .subpage-wrapper .subpage-content-1 #english-veg {
-  z-index: -1;
-  width: 47%;
-  grid-row: 2 / 4;
-  position: sticky;
-  top: 0rem;
-  justify-self: center;
-  transform: translateY(5rem);
+body main .subpage-wrapper .subpage-content-1 #where {
+  grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content-1 #all-stickers {
-  z-index: 5;
-  grid-row: 5 / 7;
-  margin-bottom: 18rem;
+body main .subpage-wrapper .subpage-content-1 .where-text1 {
+  padding-top: 6rem;
+  grid-row: 2;
 }
 
 body main .subpage-wrapper .subpage-content-1 .cl-3 {
@@ -571,57 +523,157 @@ body main .subpage-wrapper .subpage-content-1 .what-text1 {
   padding-top: 6rem;
 }
 
-body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-3 {
-  grid-row: 3;
-  width: 50%;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper {
+  grid-column: 1 / 4;
 }
 
-body main .subpage-wrapper .subpage-content-1 .tsai-wrapper #tsai-l-4 {
-  width: 50%;
-  grid-row: 3;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 {
+  grid-row: 4;
 }
 
-body main .subpage-wrapper .subpage-content-1 #down-txt {
-  grid-row: 6;
-  font-size: 1.3rem;
-  padding-top: 20%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-body main .subpage-wrapper .subpage-content-1 #sticker-banner::before {
-  grid-row: 9;
-  width: 100%;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 #el-1-up {
+  font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   padding-top: 7rem;
-  padding-bottom: 2rem;
-  font-size: 1.6rem;
+  font-size: 6rem;
+  transform: translateY(1.5rem);
+  font-weight: 900;
   text-align: center;
-  display: block;
-  content: 'This is the next Sticker Pack I am preparing';
-  color: #484848;
-  background-color: #36f860e9;
-  grid-column: 1/ 4;
+  color: #e56b92;
   border-radius: 25px 25px 0px 0px;
 }
 
-body main .subpage-wrapper .subpage-content-1 #sticker-banner {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 #el-1 {
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 1rem;
+  background-color: #e56b92;
   width: 100%;
   grid-row: 9;
   grid-column: 1/ 4;
 }
 
-body main .subpage-wrapper .subpage-content-1 #sticker-banner::after {
-  grid-row: 9;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 #el-1-down {
+  padding-bottom: 7rem;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-align: center;
+  color: #e56b92;
+  border-radius: 25px 25px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-2 {
+  grid-row: 5;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-2 #el-2-up {
+  font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding-top: 7rem;
+  font-size: 6rem;
+  transform: translateY(1.5rem);
+  font-weight: 900;
+  text-align: center;
+  color: #fcbd33;
+  border-radius: 25px 25px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-2 #el-2 {
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  border-radius: 1rem;
+  background-color: #fcbd33;
   width: 100%;
-  padding-bottom: 3rem;
-  font-size: 1.6rem;
+  grid-row: 9;
+  grid-column: 1/ 4;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-2 #el-2::after {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
   text-align: center;
   display: block;
-  content: '';
-  color: #484848;
-  background-color: #36f860d9;
+  color: white;
+  content: '↑ She is one of my carziest friend ↑';
+  background-color: #fcbd33;
   grid-column: 1/ 4;
   border-radius: 0px 0px 25px 25px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-2 #el-2-down {
+  padding-bottom: 7rem;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-align: center;
+  color: #f5b70b;
+  border-radius: 25px 25px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 {
+  grid-row: 6;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 #el-3-up {
+  font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding-top: 7rem;
+  font-size: 6rem;
+  transform: translateY(1.5rem);
+  font-weight: 900;
+  text-align: center;
+  color: #3a57a2;
+  border-radius: 25px 25px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 #el-3::before {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+  display: block;
+  color: white;
+  content: '↓ by Nobuhiko Obayashi ↓';
+  background-color: #3a57a2;
+  grid-column: 1/ 4;
+  border-radius: 0px 0px 25px 25px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 #el-3 {
+  padding-right: 15%;
+  padding-left: 15%;
+  border-radius: 1rem;
+  background: linear-gradient(#3a57a2, #b8bcf0);
+  width: 100%;
+  grid-row: 9;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 #el-3::after {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  display: block;
+  color: white;
+  content: 'ハ ウ ス';
+  background-color: #a43229;
+  grid-column: 1/ 4;
+  border-radius: 0px 0px 25px 25px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 #el-3-down {
+  padding-bottom: 7rem;
+  font-size: 1.5rem;
+  width: 60%;
+  margin: 0px auto;
+  font-weight: 900;
+  text-align: center;
+  color: #a43229;
+  border-radius: 25px 25px 0px 0px;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
@@ -641,11 +693,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   padding-left: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #3f54cd;
+  background: #3a57a2;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #60b5ff;
+  background: #b8bcf0;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
@@ -661,7 +713,7 @@ body main .footer {
   z-index: 19;
   height: 29rem;
   width: 100%;
-  background: #91ffab;
+  background: #a43229;
   margin-top: 12rem;
 }
 
@@ -672,7 +724,7 @@ body main .footer #footer-wrapper {
   grid-template-columns: minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px) minmax(7%, 1fr);
   gap: 2rem;
   padding: 2rem;
-  color: #363636;
+  color: white;
 }
 
 body main .footer #footer-wrapper .footer-part a {

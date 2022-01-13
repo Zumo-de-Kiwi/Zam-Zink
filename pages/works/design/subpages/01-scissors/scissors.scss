@@ -1,0 +1,513 @@
+@import '../../../../../scss/variables';
+@import '../../../../../scss/globals';
+
+body {
+  ///////////////////////////////////////////
+  $design-color-green: rgb(51, 148, 103);
+  $design-color-yellow: rgb(245, 221, 59);
+  $design-color-red: rgb(215, 61, 69);
+  $design-text-color: hsl(0, 0%, 21%);
+  $design-white-color: rgb(244, 242, 235);
+  $design-subpg-bg: hsl(0, 0%, 100%);
+  ///////////////////////////////////////////
+  font-family: $ff-space-grotesk;
+  // font-family: $ff-grotesk-mono;
+  // font-family: $ff-tourney;
+  background-color: $design-subpg-bg;
+  width: 100vw;
+  font-weight: 300;
+  position: relative;
+
+  .preloader {
+    transition: $trans-slow ease-out;
+    background: $design-subpg-bg;
+    #emoji-loader {
+      animation: jump 3s ease-out 0.3s infinite alternate;
+    }
+    @keyframes jump {
+      to {
+        transform: translateY(0.7rem);
+      }
+    }
+    #text-loader {
+      padding-top: 12rem;
+      color: $design-text-color;
+      font-family: $ff-grotesk-mono;
+      font-size: 1.8rem;
+    }
+  }
+  header {
+    .absolute-nav {
+      position: absolute; //fixed
+      top: 0rem;
+      z-index: 19;
+      display: flex;
+      align-items: center;
+      height: 6rem;
+      width: 100%;
+      .left-arrow {
+        top: 1rem !important;
+        .link-a {
+          color: $design-text-color;
+        }
+      }
+      .main-header {
+        line-height: 6rem;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0.3rem 0.6rem #b1b1b1, 0px 0.15rem 0.2rem #d8d8d8;
+        h1 {
+          color: $design-text-color;
+          background-color: $design-subpg-bg;
+          font-weight: 700;
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+  main {
+    display: grid; //trampemoji
+    .subpage-wrapper {
+      display: grid;
+      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+          7%,
+          1fr
+        );
+      .subpage-content-1 {
+        grid-column: 2;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .hero-image {
+          width: 100%;
+        }
+        .normal-image {
+          width: 30%;
+        }
+        .small-image {
+          width: 19%;
+        }
+        // text-align
+        .txt-l {
+          text-align: left;
+        }
+        .txt-c {
+          text-align: center;
+        }
+        .txt-r {
+          text-align: right;
+        }
+        .www {
+          font-family: $ff-tourney;
+          font-weight: 200;
+          text-transform: uppercase;
+          font-size: 5rem;
+          margin-bottom: 0.3rem;
+        }
+        // .w-box {
+        .w-texts {
+          font-family: $ff-space-grotesk;
+          // font-family: $ff-grotesk-mono;
+          .w-para {
+            margin-bottom: 4rem;
+            margin-right: 19%;
+            font-size: 1.6rem;
+          }
+        }
+        .info-text {
+          font-family: $ff-grotesk-mono;
+          padding: 0.5rem;
+        }
+
+        //MARGIN TOP
+        .margin-top {
+          // height: 200rem;
+          grid-column: 1 / 4;
+          margin: 6rem;
+          grid-row: 1;
+        }
+
+        ////////////////////////
+        // COLUMN 1 ////////////
+        .cl-1 {
+          grid-column: 1;
+        }
+        #why {
+          grid-row: 2;
+        }
+        .why-text1 {
+          padding-top: 6rem;
+          grid-row: 2;
+        }
+        // .wrapper-1 {
+        //   grid-row: 4;
+        //   #el-1 {
+        //     width: 50%;
+        //   }
+        // }
+        // #up-txt {
+        //   grid-row: 5;
+        //   font-size: 1.3rem;
+        //   padding-top: 100%;
+        //   text-align: right;
+        //   padding-left: 10%;
+        // }
+        // .download-stickers {
+        //   grid-row: 6;
+        //   text-align: right;
+        //   padding-bottom: 30%;
+        //   padding-top: 110%;
+        //   h4 {
+        //     padding-bottom: 0.3rem;
+        //   }
+        //   .link {
+        //     padding-bottom: 0.7rem;
+        //     color: rgb(70, 70, 70);
+        //     &:hover {
+        //       color: rgb(56, 233, 7);
+        //     }
+        //   }
+        // }
+        ////////////////////////
+        // COLUMN 2 ///////////
+        .cl-2 {
+          grid-column: 2;
+        }
+        #where {
+          grid-row: 2;
+        }
+        .where-text1 {
+          padding-top: 6rem;
+          grid-row: 2;
+        }
+        // #all-stickers {
+        //   z-index: 5;
+        //   grid-row: 5 / 7;
+        //   margin-bottom: 18rem;
+        // }
+        ////////////////////////
+        // COLUMN 3 //////////
+        .cl-3 {
+          grid-column: 3;
+        }
+        #what {
+          grid-row: 2;
+        }
+        .what-text1 {
+          grid-row: 2;
+          padding-top: 6rem;
+        }
+
+        // #down-txt {
+        //   grid-row: 6;
+        //   font-size: 1.3rem;
+        //   padding-top: 20%;
+        //   padding-left: 10%;
+        //   padding-right: 10%;
+        // }
+
+        ////////// PART 2 ////////
+        ////////// FULL-SIZE ////////
+        .full-wrapper {
+          grid-column: 1 / 4;
+          // padding-bottom: 2rem;
+          // WILSON
+          &.wrapper-1 {
+            grid-row: 4;
+            #el-1-up {
+              font-family: $ff-tourney;
+              // width: 100%;
+              padding-top: 7rem;
+              font-size: 6rem;
+              transform: translateY(1.5rem);
+              font-weight: 900;
+              text-align: center;
+              // display: block;
+              // content: 'WILSON';
+              // background-color: #949f97e9;
+              color: rgb(229, 107, 146);
+              // grid-column: 1/ 4;
+              border-radius: 25px 25px 0px 0px;
+            }
+            #el-1 {
+              padding-right: 15%;
+              padding-left: 15%;
+              padding-top: 3%;
+              padding-bottom: 3%;
+              border-radius: 1rem;
+              background-color: rgb(229, 107, 146);
+              width: 100%;
+              grid-row: 9;
+              grid-column: 1/ 4;
+            }
+            #el-1-down {
+              padding-bottom: 7rem;
+              font-size: 1.7rem;
+              // transform: translateY(1.5rem);
+              font-weight: 900;
+              text-align: center;
+              // display: block;
+              // background-color: #949f97e9;
+              color: rgb(229, 107, 146);
+              // grid-column: 1/ 4;
+              border-radius: 25px 25px 0px 0px;
+            }
+          }
+
+          &.wrapper-2 {
+            grid-row: 5;
+            #el-2-up {
+              font-family: $ff-tourney;
+              // width: 100%;
+              padding-top: 7rem;
+              font-size: 6rem;
+              transform: translateY(1.5rem);
+              font-weight: 900;
+              text-align: center;
+              // display: block;
+              // content: 'WILSON';
+              // background-color: #949f97e9;
+              color: #fcbd33;
+              // grid-column: 1/ 4;
+              border-radius: 25px 25px 0px 0px;
+            }
+            #el-2 {
+              padding-right: 15%;
+              padding-left: 15%;
+              padding-top: 3%;
+              padding-bottom: 1%;
+              border-radius: 1rem;
+              background-color: #fcbd33;
+              width: 100%;
+              grid-row: 9;
+              grid-column: 1/ 4;
+            }
+            #el-2::after {
+              // grid-row: 9;
+              width: 100%;
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              font-size: 1.7rem;
+              text-align: center;
+              display: block;
+              color: white;
+              content: '↑ She is one of my carziest friend ↑';
+              background-color: #fcbd33;
+              grid-column: 1/ 4;
+              border-radius: 0px 0px 25px 25px;
+            }
+            #el-2-down {
+              padding-bottom: 7rem;
+              font-size: 1.7rem;
+              // transform: translateY(1.5rem);
+              font-weight: 900;
+              text-align: center;
+              // display: block;
+              // background-color: #949f97e9;
+              color: #f5b70b;
+              // grid-column: 1/ 4;
+              border-radius: 25px 25px 0px 0px;
+            }
+          }
+          // HOUSE
+          &.wrapper-3 {
+            grid-row: 6;
+            #el-3-up {
+              font-family: $ff-tourney;
+              // width: 100%;
+              padding-top: 7rem;
+              font-size: 6rem;
+              transform: translateY(1.5rem);
+              font-weight: 900;
+              text-align: center;
+              // display: block;
+              // content: 'WILSON';
+              // background-color: #949f97e9;
+              color: #3a57a2;
+              // grid-column: 1/ 4;
+              border-radius: 25px 25px 0px 0px;
+            }
+            #el-3::before {
+              width: 100%;
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              font-size: 1.7rem;
+              text-align: center;
+              display: block;
+              color: white;
+              content: '↓ by Nobuhiko Obayashi ↓';
+              background-color: #3a57a2;
+              grid-column: 1/ 4;
+              border-radius: 0px 0px 25px 25px;
+            }
+            #el-3 {
+              padding-right: 15%;
+              padding-left: 15%;
+              // padding-top: 3%;
+              // padding-bottom: 1%;
+              border-radius: 1rem;
+              background: linear-gradient(#3a57a2, #b8bcf0);
+              width: 100%;
+              grid-row: 9;
+              // grid-column: 1/ 4;
+            }
+            // LEFTSIDE
+            // #el-3::before {
+            //   // grid-row: 9;
+            //   // content: 'ハウス';
+            //   width: 100%;
+            //   padding-top: 1rem;
+            //   padding-bottom: 1rem;
+            //   font-size: 1.7rem;
+            //   text-align: center;
+            //   display: block;
+            //   color: white;
+            //   content: '↑ She is one of my carziest friend ↑';
+            //   background-color: #fcbd33;
+            //   grid-column: 1/ 4;
+            //   border-radius: 0px 0px 25px 25px;
+            // }
+            #el-3::after {
+              width: 100%;
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              font-size: 3rem;
+              text-align: center;
+              display: block;
+              color: white;
+              content: 'ハ ウ ス';
+              background-color: #a43229;
+              grid-column: 1/ 4;
+              border-radius: 0px 0px 25px 25px;
+            }
+            #el-3-down {
+              padding-bottom: 7rem;
+              font-size: 1.5rem;
+              width: 60%;
+              margin: 0px auto;
+              // transform: translateY(1.5rem);
+              font-weight: 900;
+              text-align: center;
+              // display: block;
+              // background-color: #949f97e9;
+              color: #a43229;
+              // grid-column: 1/ 4;
+              border-radius: 25px 25px 0px 0px;
+            }
+          }
+        }
+        .btn-wrapper {
+          grid-row: 10;
+          grid-column: 1/ 4;
+          display: flex;
+          justify-content: space-around;
+          .btns {
+            text-align: center;
+            font-size: 2.3rem;
+            height: 6rem;
+            line-height: 6rem;
+            min-width: 18%;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            border-radius: 2rem;
+            transition: 0.15s;
+            background: #3a57a2;
+            &:hover {
+              background: #b8bcf0;
+            }
+            a {
+              text-decoration: none;
+              color: white;
+            }
+            &.prev {
+            }
+            &.back-design {
+            }
+            &.next {
+            }
+          }
+        }
+      }
+    }
+
+    #trampolin-wrapper {
+      #trampolineEmoji {
+        opacity: 0.6;
+      }
+    }
+    // footer
+    .footer {
+      z-index: 19;
+      height: 29rem;
+      width: 100%;
+      background: #a43229; //rgb(240, 240, 240);
+      margin-top: 12rem;
+
+      #footer-wrapper {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns:
+          minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px)
+          minmax(7%, 1fr); // 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        color: white;
+        .footer-part {
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .footer-l {
+          grid-column: 1 /3;
+          align-self: center;
+          justify-self: center;
+          text-align: center;
+          h2 {
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+          div {
+            padding: 0.5rem;
+          }
+        }
+        .footer-r {
+          grid-column: 3;
+
+          .sub-wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-content: space-around;
+            justify-self: end;
+            text-align: right;
+
+            div {
+              padding: 1.2rem;
+              font-weight: 500;
+              .r-links {
+                padding: 1rem;
+              }
+              #making-of {
+                &::after {
+                  content: 'the making of';
+                }
+                &:hover::after {
+                  content: 'the Design Page';
+                }
+              }
+              .arrow {
+                font-size: 2.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
