@@ -354,7 +354,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  background-color: white;
+  background-color: #254351;
   width: 100vw;
   font-weight: 300;
   position: relative;
@@ -362,7 +362,7 @@ body {
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: white;
+  background: #254351;
 }
 
 body .preloader #emoji-loader {
@@ -377,7 +377,7 @@ body .preloader #emoji-loader {
 
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: #363636;
+  color: white;
   font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.8rem;
 }
@@ -397,19 +397,19 @@ body header .absolute-nav .left-arrow {
 }
 
 body header .absolute-nav .left-arrow .link-a {
-  color: #363636;
+  color: black;
 }
 
 body header .absolute-nav .main-header {
   line-height: 6rem;
   width: 100%;
   text-align: center;
-  box-shadow: 0px 0.3rem 0.6rem #b1b1b1, 0px 0.15rem 0.2rem #d8d8d8;
+  box-shadow: 0px 0.3rem 0.6rem #282b4a, 0px 0.15rem 0.2rem #1a1729;
 }
 
 body header .absolute-nav .main-header h1 {
-  color: #363636;
-  background-color: white;
+  color: black;
+  background-color: #1f2438;
   font-weight: 700;
   font-size: 2.3rem;
 }
@@ -433,7 +433,7 @@ body main .subpage-wrapper .subpage-content-1 {
 
 body main .subpage-wrapper .subpage-content-1 .www {
   font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-weight: 200;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 5rem;
   margin-bottom: 0.3rem;
@@ -469,11 +469,13 @@ body main .subpage-wrapper .subpage-content-1 .cl-1 {
 
 body main .subpage-wrapper .subpage-content-1 #why {
   grid-row: 2;
+  margin-bottom: 0px;
+  align-self: end;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 {
-  grid-row: 2;
-  margin-top: 5.3rem;
+  padding-top: 0.5rem;
+  grid-row: 3;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 .w-para {
@@ -497,6 +499,14 @@ body main .subpage-wrapper .subpage-content-1 .where-text1 .w-para {
   margin-right: 1%;
 }
 
+body main .subpage-wrapper .subpage-content-1 .where-text2 {
+  grid-row: 3;
+}
+
+body main .subpage-wrapper .subpage-content-1 .where-text2 .w-para {
+  margin-right: 1%;
+}
+
 body main .subpage-wrapper .subpage-content-1 .cl-3 {
   grid-column: 3;
 }
@@ -506,7 +516,7 @@ body main .subpage-wrapper .subpage-content-1 #what {
 }
 
 body main .subpage-wrapper .subpage-content-1 .what-text1 {
-  grid-row: 2;
+  grid-row: 2 / 4;
   margin-top: 5.3rem;
   margin-right: 25%;
   font-size: 1.5rem;
@@ -516,93 +526,10 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper {
   grid-column: 1 / 4;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper span {
-  font-size: 2.1rem;
-  font-weight: 700;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper {
-  margin-top: 5rem;
-  position: relative;
-  height: 60rem;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads {
-  position: absolute;
-  width: 13%;
-  filter: grayscale(100%) contrast(70%);
-  will-change: transform;
-  transition: 0.4s;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads:hover {
-  filter: none;
-  transform: scale(1.3);
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#gif {
-  z-index: 1;
-  position: sticky;
-  top: 35%;
-  left: 40%;
-  width: 200px;
-  mix-blend-mode: multiply;
-  filter: none;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#gif:hover {
-  filter: none;
-  transform: none;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#blur {
-  top: 0%;
-  right: 6%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#bw {
-  bottom: 43%;
-  left: 76%;
-  position: sticky;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#che {
-  bottom: 71%;
-  left: 26%;
-  position: sticky;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#duo {
-  bottom: 17%;
-  right: 9%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#lila {
-  top: 39%;
-  right: 24%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#pel {
-  position: sticky;
-  bottom: 15%;
-  right: 3%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#rosa {
-  bottom: 37%;
-  left: 3%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#tigre {
-  bottom: 2%;
-  left: 18%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.bread-wrapper .breads#verano {
-  top: 10%;
-  bottom: 5%;
-  left: 61%;
-  position: sticky;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper#lamp {
+  margin-left: 10%;
+  margin-right: 10%;
+  filter: brightness(109%);
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
@@ -620,16 +547,16 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   font-size: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #76eef0;
+  background: #342222;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #ffbbde;
+  background: green;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
   text-decoration: none;
-  color: white;
+  color: #fff8f8;
   height: 6rem;
   line-height: 6rem;
   min-width: 18%;
@@ -658,7 +585,7 @@ body main .footer {
   z-index: 19;
   height: 29rem;
   width: 100%;
-  background: #e6e6e6;
+  background: #1f2438;
   margin-top: 12rem;
 }
 
@@ -669,7 +596,7 @@ body main .footer #footer-wrapper {
   grid-template-columns: minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px) minmax(7%, 1fr);
   gap: 2rem;
   padding: 2rem;
-  color: #505050;
+  color: white;
 }
 
 body main .footer #footer-wrapper .footer-part a {
