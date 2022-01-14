@@ -104,11 +104,11 @@ body .left-arrow .link-a {
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: #b9cabf;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
 body .left-arrow .link-a #left-arrow {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
 
@@ -233,7 +233,7 @@ body #trampolin-wrapper #trampolineEmoji {
   font-size: 3.3rem;
   transition: 0.15s;
   opacity: 0.33;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
 @media (max-width: 768px) {
@@ -251,7 +251,7 @@ body #trampolin-wrapper #trampolineEmoji {
 
 body #trampolin-wrapper #trampolineEmoji:hover {
   opacity: 1;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
 
@@ -404,6 +404,7 @@ body header .absolute-nav .main-header {
   line-height: 6rem;
   width: 100%;
   text-align: center;
+  box-shadow: 0px 0.3rem 0.6rem #b1b1b1, 0px 0.15rem 0.2rem #d8d8d8;
 }
 
 body header .absolute-nav .main-header h1 {
@@ -468,15 +469,16 @@ body main .subpage-wrapper .subpage-content-1 .cl-1 {
 }
 
 body main .subpage-wrapper .subpage-content-1 #why {
+  grid-row: 3;
   text-align: right;
   margin-right: 33%;
-  transform: translateY(-63%);
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 {
+  grid-row: 3;
   margin-left: 10%;
   margin-right: 18%;
-  transform: translateY(-41%);
+  margin-top: 5.3rem;
 }
 
 body main .subpage-wrapper .subpage-content-1 .cl-2 {
@@ -513,104 +515,79 @@ body main .subpage-wrapper .subpage-content-1 .cl-3 {
   grid-column: 3;
 }
 
+body main .subpage-wrapper .subpage-content-1 #where {
+  grid-row: 3;
+  padding-left: 30%;
+  padding-bottom: 36rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .where-text1 {
+  padding-left: 31%;
+  margin-top: 5.3rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .where-text1 .w-para {
+  margin-right: 1%;
+}
+
 body main .subpage-wrapper .subpage-content-1 .full-wrapper {
   grid-column: 1 / 4;
-  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.step {
-  margin-top: 11rem;
-  font-size: 2rem;
-  text-align: center;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #cat {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #blue {
+  grid-column: 1;
+  grid-row: 1 /3;
+  align-self: center;
   justify-self: center;
+  width: 78%;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#step-1 {
-  grid-row: 4;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #cien {
+  grid-column: 2;
+  grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#logo-form {
-  z-index: -1;
-  grid-row: 4;
-  margin: 10rem 19rem;
-  margin-top: 12.5rem;
-  margin-bottom: 1rem;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#step-2 {
-  grid-row: 5;
-  margin-top: 2rem;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#info-ul {
-  grid-row: 6;
-  font-size: 1.6rem;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#info-ul ul {
-  display: flex;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#info-ul ul li {
-  margin-right: 10%;
-  list-style: upper-roman;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#logo-color {
-  transform: translateY(-1.5rem);
-  grid-row: 7;
-  margin-top: 0rem;
-  margin-left: 15%;
-  margin-right: 15%;
-  filter: opacity(87%);
-  transition: 0.3s;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#logo-color:hover {
-  filter: none;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#step-3 {
-  grid-row: 8;
-  margin-top: 8rem;
-  width: 50%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#on-web {
-  grid-row: 9;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #ever {
+  grid-column: 1;
+  grid-row: 1 /3;
+  align-self: center;
+  justify-self: center;
   width: 66%;
-  justify-self: center;
-  filter: grayscale(30%);
-  transition: 0.3s;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#on-web:hover {
-  filter: none;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #tien {
+  grid-column: 2;
+  grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#on-card {
-  grid-row: 10;
-  margin-bottom: 8rem;
-  width: 48%;
-  transform: rotateZ(-90deg);
-  justify-self: center;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #64 {
+  grid-column: 2;
+  grid-row: 1;
+  transform: scale(1.9);
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
+  margin-top: 7rem;
+  margin-bottom: 13rem;
   grid-row: 12;
   grid-column: 1/ 4;
   display: flex;
   justify-content: space-around;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   text-align: center;
   font-size: 2rem;
-  height: 6rem;
-  line-height: 6rem;
-  min-width: 18%;
-  padding-right: 2rem;
-  padding-left: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
   background: #25bb68;
@@ -623,6 +600,24 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
   text-decoration: none;
   color: white;
+  height: 6rem;
+  line-height: 6rem;
+  min-width: 18%;
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.prev a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.back-design a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.next a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
 }
 
 body main #trampolin-wrapper #trampolineEmoji {

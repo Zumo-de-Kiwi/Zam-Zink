@@ -104,11 +104,11 @@ body .left-arrow .link-a {
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: #b9cabf;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
 body .left-arrow .link-a #left-arrow {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
 
@@ -233,7 +233,7 @@ body #trampolin-wrapper #trampolineEmoji {
   font-size: 3.3rem;
   transition: 0.15s;
   opacity: 0.33;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
 @media (max-width: 768px) {
@@ -251,7 +251,7 @@ body #trampolin-wrapper #trampolineEmoji {
 
 body #trampolin-wrapper #trampolineEmoji:hover {
   opacity: 1;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
 
@@ -583,11 +583,11 @@ body footer #trampolineEmoji {
   font-size: 3.5rem;
   /* Increase font size */
   transition: 0.15s;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
 body footer #trampolineEmoji:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: scale(1.1);
 }
 
