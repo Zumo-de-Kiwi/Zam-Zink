@@ -421,10 +421,9 @@ body main {
 body main .subpage-wrapper {
   display: grid;
   grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
-  gap: 1rem;
 }
 
-body main .subpage-wrapper .subpage-content {
+body main .subpage-wrapper .subpage-content-1 {
   grid-column: 2;
   width: 100%;
   position: relative;
@@ -432,157 +431,146 @@ body main .subpage-wrapper .subpage-content {
   grid-template-columns: repeat(3, 1fr);
 }
 
-body main .subpage-wrapper .subpage-content .hero-image {
-  width: 100%;
-}
-
-body main .subpage-wrapper .subpage-content .normal-image {
-  width: 30%;
-}
-
-body main .subpage-wrapper .subpage-content .small-image {
-  width: 19%;
-}
-
-body main .subpage-wrapper .subpage-content .txt-l {
-  text-align: left;
-}
-
-body main .subpage-wrapper .subpage-content .txt-c {
-  text-align: center;
-}
-
-body main .subpage-wrapper .subpage-content .txt-r {
-  text-align: right;
-}
-
-body main .subpage-wrapper .subpage-content #dino-browser {
-  grid-column: 1/ 4;
-  width: 90%;
-  margin: 0px auto;
-  margin-top: 16rem;
-  margin-bottom: 13rem;
-}
-
-body main .subpage-wrapper .subpage-content .www {
+body main .subpage-wrapper .subpage-content-1 .www {
   font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 5rem;
   margin-bottom: 0.3rem;
+  grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content .w-texts {
+body main .subpage-wrapper .subpage-content-1 .w-texts {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  grid-row: 3;
 }
 
-body main .subpage-wrapper .subpage-content .w-texts .w-para {
-  margin-bottom: 4rem;
+body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
+  font-size: 1.5rem;
   margin-right: 19%;
-  font-size: 1.6rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-body main .subpage-wrapper .subpage-content .info-text {
+body main .subpage-wrapper .subpage-content-1 .info-text {
   font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   padding: 0.5rem;
 }
 
-body main .subpage-wrapper .subpage-content .cl-1 {
+body main .subpage-wrapper .subpage-content-1 .margin-top {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  margin-bottom: 13rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .cl-1 {
   grid-column: 1;
 }
 
-body main .subpage-wrapper .subpage-content #why {
+body main .subpage-wrapper .subpage-content-1 #why {
   grid-row: 2;
-}
-
-body main .subpage-wrapper .subpage-content .why-text1 {
-  grid-row: 3;
-}
-
-body main .subpage-wrapper .subpage-content .why-text2 {
-  grid-row: 4;
-}
-
-body main .subpage-wrapper .subpage-content #blues-exp {
-  padding-top: 30%;
-  width: 70%;
-  opacity: 20%;
-  filter: contrast(11%);
-  transition: 1s;
-  padding-left: 10%;
-  padding-bottom: 0px;
-}
-
-body main .subpage-wrapper .subpage-content #blues-exp:hover {
-  filter: none;
-  opacity: 100%;
-}
-
-body main .subpage-wrapper .subpage-content #blues-txt {
-  font-size: 1.3rem;
-  width: 70%;
+  grid-column: 1;
   text-align: right;
-  transform: translateY(-3rem);
-  padding-left: 10%;
 }
 
-body main .subpage-wrapper .subpage-content .cl-2 {
+body main .subpage-wrapper .subpage-content-1 .why-text1 {
+  text-align: right;
+  grid-row: 2;
+  margin-left: 30%;
+  margin-top: 5.3rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .why-text1 .w-para {
+  margin-right: 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .cl-2 {
   grid-column: 2;
 }
 
-body main .subpage-wrapper .subpage-content #paper-face {
-  width: 68%;
-  padding-left: 8%;
-  padding-top: 17%;
-  grid-row: 2 / 4;
-}
-
-body main .subpage-wrapper .subpage-content #what {
-  grid-row: 4;
-  padding-left: 3rem;
-}
-
-body main .subpage-wrapper .subpage-content .what-text1 {
-  padding-top: 6rem;
-  grid-row: 4;
-  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-body main .subpage-wrapper .subpage-content #vincent {
-  padding-top: 6rem;
-  grid-row: 5;
-  width: 83%;
-}
-
-body main .subpage-wrapper .subpage-content .cl-3 {
+body main .subpage-wrapper .subpage-content-1 .cl-3 {
   grid-column: 3;
 }
 
-body main .subpage-wrapper .subpage-content #where {
+body main .subpage-wrapper .subpage-content-1 #what {
   grid-row: 2;
 }
 
-body main .subpage-wrapper .subpage-content .where-text1 {
-  grid-row: 3;
+body main .subpage-wrapper .subpage-content-1 .what-text1 {
+  grid-row: 2;
+  margin-top: 5.3rem;
+  margin-right: 25%;
+  font-size: 1.5rem;
 }
 
-body main .subpage-wrapper .subpage-content #radio {
-  grid-row: 4;
-  width: 87%;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper span {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 {
+  margin-top: 6rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü {
+  grid-column: 1;
+  grid-row: 1 /3;
+  align-self: center;
   justify-self: center;
-  margin-bottom: 0%;
+  width: 67%;
+  will-change: transform;
+  transition: 0.3s;
 }
 
-body main .subpage-wrapper .subpage-content #egg {
-  grid-row: 5;
-  width: 40%;
-  place-self: center;
-  padding-top: 15%;
-  filter: grayscale(100%) opacity(75%);
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü:hover {
+  box-shadow: 0px 0px 25px #e6ded1, 0px 0px 5px #bdb4a1;
+  transform: scale(1.2);
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper {
-  margin-top: 7rem;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #text {
+  grid-column: 2;
+  grid-row: 1 /3;
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 7%;
+  text-align: justify;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 {
+  margin-top: 5%;
+  grid-row: 7;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #text {
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+  margin-left: 27%;
+  text-align: justify;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas {
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  width: 53%;
+  transition: 0.3s;
+  will-change: transform;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas:hover {
+  box-shadow: 0px 0px 20px #b7abce, 0px 0px 5px #38275e;
+  transform: scale(1.13);
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
+  margin-top: 10rem;
   grid-row: 12;
   grid-column: 1/ 4;
   display: flex;
@@ -591,19 +579,19 @@ body main .subpage-wrapper .subpage-content .btn-wrapper {
   padding-right: 9%;
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper .btns {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   text-align: center;
   font-size: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #4444a9;
+  background: #5f24bd;
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper .btns:hover {
-  background: #f5da3e;
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+  background: #f56f3e;
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper .btns a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
   text-decoration: none;
   color: white;
   height: 6rem;
@@ -614,15 +602,15 @@ body main .subpage-wrapper .subpage-content .btn-wrapper .btns a {
   padding-left: 4rem;
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper .btns.prev a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.prev a {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper .btns.back-design a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.back-design a {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper .btns.next a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.next a {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
 }
 
@@ -634,7 +622,7 @@ body main .footer {
   z-index: 19;
   height: 29rem;
   width: 100%;
-  background: #f0f0f0;
+  background: #e6e6e6;
   margin-top: 12rem;
 }
 
@@ -645,7 +633,7 @@ body main .footer #footer-wrapper {
   grid-template-columns: minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px) minmax(7%, 1fr);
   gap: 2rem;
   padding: 2rem;
-  color: #363636;
+  color: #505050;
 }
 
 body main .footer #footer-wrapper .footer-part a {

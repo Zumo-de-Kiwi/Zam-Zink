@@ -433,7 +433,7 @@ body main .subpage-wrapper .subpage-content-1 {
 
 body main .subpage-wrapper .subpage-content-1 .www {
   font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-weight: 900;
+  font-weight: 200;
   text-transform: uppercase;
   font-size: 5rem;
   margin-bottom: 0.3rem;
@@ -469,29 +469,23 @@ body main .subpage-wrapper .subpage-content-1 .cl-1 {
 
 body main .subpage-wrapper .subpage-content-1 #why {
   grid-row: 2;
-  grid-column: 1 /3;
-  text-align: center;
-  margin-right: 10%;
-}
-
-body main .subpage-wrapper .subpage-content-1 #why span {
-  font-weight: 700;
-  font-size: 4.3rem;
+  grid-column: 1;
+  text-align: right;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 {
   text-align: right;
   grid-row: 2;
+  margin-left: 30%;
   margin-top: 5.3rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .why-text1 .w-para {
+  margin-right: 0px;
 }
 
 body main .subpage-wrapper .subpage-content-1 .cl-2 {
   grid-column: 2;
-}
-
-body main .subpage-wrapper .subpage-content-1 .why-text2 {
-  grid-row: 2;
-  margin-top: 5.3rem;
 }
 
 body main .subpage-wrapper .subpage-content-1 .cl-3 {
@@ -505,6 +499,7 @@ body main .subpage-wrapper .subpage-content-1 #what {
 body main .subpage-wrapper .subpage-content-1 .what-text1 {
   grid-row: 2;
   margin-top: 5.3rem;
+  margin-right: 25%;
   font-size: 1.5rem;
 }
 
@@ -512,93 +507,70 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper {
   grid-column: 1 / 4;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#bw {
-  margin: 10%;
-  margin-top: 7%;
-  grid-column: 1/ 4;
-  grid-row: 5;
-  display: block;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper span {
+  font-size: 2.1rem;
+  font-weight: 700;
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 {
-  grid-row: 6;
+  margin-top: 6rem;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #info {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü {
   grid-column: 1;
-  grid-row: 1;
-  align-self: end;
-  justify-self: end;
-  margin: 15%;
-  margin-right: 3%;
-  margin-bottom: 9%;
+  grid-row: 1 /3;
+  align-self: center;
+  justify-self: center;
+  width: 67%;
+  will-change: transform;
+  transition: 0.3s;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #label-1 {
-  grid-column: 1;
-  grid-row: 2;
-  margin-left: 37%;
-  margin-right: 5%;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü:hover {
+  box-shadow: 0px 0px 25px #e6ded1, 0px 0px 5px #bdb4a1;
+  transform: scale(1.2);
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #label-2 {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #text {
   grid-column: 2;
   grid-row: 1 /3;
   align-self: center;
   justify-self: center;
-  width: 70%;
   padding-bottom: 7%;
+  text-align: justify;
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 {
-  margin-top: 7%;
+  margin-top: 5%;
   grid-row: 7;
-  height: 87%;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #mockup {
-  grid-column: 1/ 3;
-  grid-row: 1;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #text {
+  grid-column: 1;
   align-self: center;
   justify-self: center;
-  width: 100%;
+  margin-left: 27%;
+  text-align: justify;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #bye {
-  font-size: 7rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 800;
-  grid-column: 1/ 3;
-  grid-row: 2;
-  place-self: center;
-  text-align: center;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 .texts {
-  grid-row: 2;
-  align-self: start;
-  width: 50%;
-  text-align: right;
-  color: #555555;
-  font-size: 1.5rem;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 .texts#r-text {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas {
   grid-column: 2;
-  justify-self: end;
-  transform: rotateZ(90deg) scale(-1, 1) translateX(-12rem) translateY(-7rem);
+  align-self: center;
+  justify-self: center;
+  width: 53%;
+  transition: 0.3s;
+  will-change: transform;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 .texts#l-text {
-  grid-column: 1;
-  transform: rotateZ(-90deg) translateX(-12rem) translateY(-7rem);
-  justify-self: start;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas:hover {
+  box-shadow: 0px 0px 20px #b7abce, 0px 0px 5px #38275e;
+  transform: scale(1.13);
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
+  margin-top: 10rem;
   grid-row: 12;
   grid-column: 1/ 4;
   display: flex;
@@ -612,11 +584,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   font-size: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #4444a9;
+  background: #5f24bd;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #f5da3e;
+  background: #f56f3e;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
