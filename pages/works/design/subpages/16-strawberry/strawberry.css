@@ -354,7 +354,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  background-color: #d73d45;
+  background-color: white;
   width: 100vw;
   font-weight: 300;
   position: relative;
@@ -362,7 +362,7 @@ body {
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #d73d45;
+  background: white;
 }
 
 body .preloader #emoji-loader {
@@ -397,19 +397,19 @@ body header .absolute-nav .left-arrow {
 }
 
 body header .absolute-nav .left-arrow .link-a {
-  color: black;
+  color: #363636;
 }
 
 body header .absolute-nav .main-header {
   line-height: 6rem;
   width: 100%;
   text-align: center;
-  box-shadow: 0px 0.3rem 0.6rem #914343, 0px 0.15rem 0.2rem #742222;
+  box-shadow: 0px 0.3rem 0.6rem #dadada, 0px 0.15rem 0.2rem #b0b0b0;
 }
 
 body header .absolute-nav .main-header h1 {
-  color: black;
-  background-color: #339467;
+  color: #363636;
+  background-color: white;
   font-weight: 700;
   font-size: 2.3rem;
 }
@@ -420,7 +420,7 @@ body main {
 
 body main .subpage-wrapper {
   display: grid;
-  grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
+  grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(7%, 1fr);
 }
 
 body main .subpage-wrapper .subpage-content-1 {
@@ -438,19 +438,20 @@ body main .subpage-wrapper .subpage-content-1 .www {
   font-size: 5rem;
   margin-bottom: 0.3rem;
   grid-row: 2;
-  color: #f5dd3b;
+}
+
+body main .subpage-wrapper .subpage-content-1 .pixel {
+  image-rendering: pixelated;
 }
 
 body main .subpage-wrapper .subpage-content-1 .w-texts {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #f5dd3b;
   grid-row: 3;
-  margin-right: 17%;
+  /* Searching for some food to draw I discovered the amazing world of strawberries, whose pores grow leaves. If there is one fruit comparable to fonts, it is the strawberry. I think of every pore as a word. A well chosen font is like adding chocolate or cream, giving a good taste to the user’s mouth. */
 }
 
 body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
-  font-size: 1.5rem;
-  margin-top: 2%;
+  font-size: 1.6rem;
   margin-bottom: 2%;
 }
 
@@ -469,15 +470,16 @@ body main .subpage-wrapper .subpage-content-1 .cl-1 {
   grid-column: 1;
 }
 
-body main .subpage-wrapper .subpage-content-1 #why {
+body main .subpage-wrapper .subpage-content-1 #why-pixel {
   grid-row: 2;
   margin-bottom: 0px;
-  align-self: end;
+  image-rendering: pixelated;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 {
-  padding-top: 0.5rem;
-  grid-row: 3;
+  grid-row: 2;
+  margin-top: 5.3rem;
+  margin-right: 17%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 .w-para {
@@ -488,24 +490,21 @@ body main .subpage-wrapper .subpage-content-1 .cl-2 {
   grid-column: 2;
 }
 
-body main .subpage-wrapper .subpage-content-1 #where {
+body main .subpage-wrapper .subpage-content-1 #where-pixel {
   grid-row: 2;
+  margin-bottom: 0px;
+  image-rendering: pixelated;
+  margin-left: 7%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .where-text1 {
   grid-row: 2;
   margin-top: 5.3rem;
+  margin-right: 29%;
+  margin-left: 7%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .where-text1 .w-para {
-  margin-right: 1%;
-}
-
-body main .subpage-wrapper .subpage-content-1 .where-text2 {
-  grid-row: 3;
-}
-
-body main .subpage-wrapper .subpage-content-1 .where-text2 .w-para {
   margin-right: 1%;
 }
 
@@ -513,14 +512,17 @@ body main .subpage-wrapper .subpage-content-1 .cl-3 {
   grid-column: 3;
 }
 
-body main .subpage-wrapper .subpage-content-1 #what {
+body main .subpage-wrapper .subpage-content-1 #what-pixel {
   grid-row: 2;
+  margin-bottom: 0px;
+  image-rendering: pixelated;
+  margin-left: 1%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .what-text1 {
-  grid-row: 2 / 4;
+  grid-row: 2;
+  margin-left: 1%;
   margin-top: 5.3rem;
-  margin-right: 25%;
   font-size: 1.5rem;
 }
 
@@ -528,10 +530,62 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper {
   grid-column: 1 / 4;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#lamp {
-  margin-left: 10%;
-  margin-right: 10%;
-  filter: brightness(109%);
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.fonts {
+  margin-top: 4rem;
+  grid-row: 3;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.four {
+  grid-row: 4;
+  margin: 6%;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: 9%;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper {
+  grid-row: 5;
+  display: grid;
+  gap: 10%;
+  grid-template-columns: 1fr 1.7fr 2fr;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper .a-font {
+  grid-column: 1 /4;
+  grid-row: 1;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper .a-font img {
+  width: 100%;
+  object-fit: contain;
+  place-self: center;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper #text-1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper #text-2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper #text-3 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare-emoji {
+  grid-row: 6;
+  margin-top: 5rem;
+  margin-right: 1rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare-emoji img {
+  width: 100%;
+  object-fit: contain;
+  place-self: center;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
@@ -549,11 +603,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   font-size: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #f5dd3b;
+  background: #cdcdcd;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #339467;
+  background: #262626;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
@@ -587,7 +641,7 @@ body main .footer {
   z-index: 19;
   height: 29rem;
   width: 100%;
-  background: #339467;
+  background: black;
   margin-top: 12rem;
 }
 
@@ -607,6 +661,7 @@ body main .footer #footer-wrapper .footer-part a {
 }
 
 body main .footer #footer-wrapper .footer-part a:hover {
+  color: #b6b6b6;
   text-decoration: underline;
 }
 
