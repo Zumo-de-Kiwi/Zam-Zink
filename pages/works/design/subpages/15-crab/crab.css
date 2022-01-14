@@ -377,7 +377,7 @@ body .preloader #emoji-loader {
 
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: white;
+  color: #f4c7cd;
   font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.8rem;
 }
@@ -397,18 +397,18 @@ body header .absolute-nav .left-arrow {
 }
 
 body header .absolute-nav .left-arrow .link-a {
-  color: black;
+  color: #254351;
 }
 
 body header .absolute-nav .main-header {
   line-height: 6rem;
   width: 100%;
   text-align: center;
-  box-shadow: 0px 0.3rem 0.6rem #282b4a, 0px 0.15rem 0.2rem #1a1729;
+  box-shadow: 0px 0.3rem 0.6rem #282b4a, 0px 0.15rem 0.2rem #100e1d;
 }
 
 body header .absolute-nav .main-header h1 {
-  color: black;
+  color: #254351;
   background-color: #1f2438;
   font-weight: 700;
   font-size: 2.3rem;
@@ -420,7 +420,7 @@ body main {
 
 body main .subpage-wrapper {
   display: grid;
-  grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
+  grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(7%, 1fr);
 }
 
 body main .subpage-wrapper .subpage-content-1 {
@@ -443,11 +443,11 @@ body main .subpage-wrapper .subpage-content-1 .www {
 body main .subpage-wrapper .subpage-content-1 .w-texts {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   grid-row: 3;
-  margin-right: 17%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
   font-size: 1.5rem;
+  text-align: justify;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -470,16 +470,44 @@ body main .subpage-wrapper .subpage-content-1 .cl-1 {
 body main .subpage-wrapper .subpage-content-1 #why {
   grid-row: 2;
   margin-bottom: 0px;
-  align-self: end;
+  color: #a69aca;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 {
-  padding-top: 0.5rem;
-  grid-row: 3;
+  grid-row: 2;
+  color: #a69aca;
+  margin-top: 5.3rem;
+  margin-right: 17%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 .w-para {
   margin-right: 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 #info-1 {
+  grid-row: 5;
+  color: #a69aca;
+  text-align: right;
+  padding: 0px;
+  padding-right: 4rem;
+  font-size: 1.6rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 #make {
+  margin-top: 3rem;
+  grid-row: 5 / 7;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  transition: 0.3s;
+  opacity: 0.7;
+  will-change: transform;
+  overflow: hidden;
+}
+
+body main .subpage-wrapper .subpage-content-1 #make:hover {
+  opacity: 1;
+  transform: scale(1.3) translateX(-1rem) translateY(0.3rem);
 }
 
 body main .subpage-wrapper .subpage-content-1 .cl-2 {
@@ -488,11 +516,16 @@ body main .subpage-wrapper .subpage-content-1 .cl-2 {
 
 body main .subpage-wrapper .subpage-content-1 #where {
   grid-row: 2;
+  color: #f4c7cd;
+  margin-left: 7%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .where-text1 {
   grid-row: 2;
+  color: #f4c7cd;
   margin-top: 5.3rem;
+  margin-right: 7%;
+  margin-left: 7%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .where-text1 .w-para {
@@ -500,11 +533,14 @@ body main .subpage-wrapper .subpage-content-1 .where-text1 .w-para {
 }
 
 body main .subpage-wrapper .subpage-content-1 .where-text2 {
-  grid-row: 3;
+  grid-row: 5 /7;
+  color: #f4c7cd;
+  margin-right: 2%;
+  margin-left: 17%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .where-text2 .w-para {
-  margin-right: 1%;
+  margin-right: 0%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .cl-3 {
@@ -513,12 +549,22 @@ body main .subpage-wrapper .subpage-content-1 .cl-3 {
 
 body main .subpage-wrapper .subpage-content-1 #what {
   grid-row: 2;
+  margin-left: 12%;
+  color: #f8e9e5;
 }
 
 body main .subpage-wrapper .subpage-content-1 .what-text1 {
-  grid-row: 2 / 4;
+  grid-row: 2;
+  margin-left: 12%;
+  color: #f8e9e5;
   margin-top: 5.3rem;
-  margin-right: 25%;
+  font-size: 1.5rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .what-text2 {
+  grid-row: 5 / 7;
+  margin-left: 15%;
+  color: #f8e9e5;
   font-size: 1.5rem;
 }
 
@@ -526,10 +572,18 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper {
   grid-column: 1 / 4;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper#lamp {
-  margin-left: 10%;
-  margin-right: 10%;
-  filter: brightness(109%);
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.img-wrapper {
+  width: 100%;
+  height: 100%;
+  grid-row: 4;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.img-wrapper #slump img {
+  width: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
@@ -547,16 +601,20 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   font-size: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #342222;
+  background: #729797;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: green;
+  background: #8073ca;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a {
+  color: #faecda;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
   text-decoration: none;
-  color: #fff8f8;
+  color: #254351;
   height: 6rem;
   line-height: 6rem;
   min-width: 18%;
@@ -596,7 +654,7 @@ body main .footer #footer-wrapper {
   grid-template-columns: minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px) minmax(7%, 1fr);
   gap: 2rem;
   padding: 2rem;
-  color: white;
+  color: #a69aca;
 }
 
 body main .footer #footer-wrapper .footer-part a {
@@ -605,6 +663,7 @@ body main .footer #footer-wrapper .footer-part a {
 }
 
 body main .footer #footer-wrapper .footer-part a:hover {
+  color: #faecda;
   text-decoration: underline;
 }
 
