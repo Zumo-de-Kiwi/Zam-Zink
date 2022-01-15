@@ -687,16 +687,13 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
   grid-column: 1/ 4;
   display: flex;
   justify-content: space-around;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   text-align: center;
-  font-size: 2.3rem;
-  height: 6rem;
-  line-height: 6rem;
-  min-width: 18%;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  font-size: 1.8rem;
   border-radius: 2rem;
   transition: 0.15s;
   background: #3a57a2;
@@ -709,6 +706,24 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
   text-decoration: none;
   color: white;
+  height: 6rem;
+  line-height: 6rem;
+  min-width: 18%;
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.prev a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.back-design a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.next a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
 }
 
 body main #trampolin-wrapper #trampolineEmoji {
