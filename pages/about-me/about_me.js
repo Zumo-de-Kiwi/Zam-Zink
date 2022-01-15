@@ -1,20 +1,3 @@
-// HIDE / SHOW
-// Examples
-// const modal = document.querySelector('.modal');
-// const overlay = document.querySelector('.overlay');
-// const btnCloseModal = document.querySelector('.close-modal');
-// const btnsOpenModal = document.querySelectorAll('.show-modal');
-
-// const openModal = function () {
-//   modal.classList.remove('hidden'); // You can even add classes
-//   overlay.classList.remove('hidden');
-// };
-
-// const closeModal = function () {
-//   modal.classList.add('hidden'); //add the hidden class back
-//   overlay.classList.add('hidden');
-// };
-
 /////  DO IT ////
 const leftArrow = document.getElementById('leftArrow');
 const closeBtn = document.querySelector('.closeBtn');
@@ -199,49 +182,7 @@ boringSide.addEventListener('click', boringPressed);
 comicalSide.addEventListener('click', comicalPressed);
 closeBtn.addEventListener('click', closeBtnPressed);
 aboutMe.addEventListener('click', aboutMePressed);
-// boringSide.addEventListener('click', openOrClose(1));
-// comicalSide.addEventListener('click', openOrClose(2));
-// closeBtn.addEventListener('click', openOrClose(3));
 
-// const isBoring = function () {
-//   let boringOpened = 0;
-//   let wannaCloseBoring = 0;
-//   const isBoring = function () {
-//     wannaCloseBoring++;
-//   };
-
-//   if (boringOpened == 0) {
-//     boringOpened++;
-//     openBoring();
-//   } else if (boringOpened == 1 && wannaCloseBoring == 1) {
-//     boringOpened = 0;
-//     wannaCloseBoring = 0;
-//     closeBoring();
-//   } else if (boringOpened == 1) {
-//     boringOpened = 0;
-//     closeBoring();
-//   }
-// boringSide.addEventListener('click', isBoring);
-// comicalSide.addEventListener('click', wannaCloseBoring);
-// closeBtn.addEventListener('click', isBoring);
-// };
-///////// WHEN CLICK ////////////
-// let comicalOpened = 0;
-// const isComical = function () {
-//   if (comicalOpened == 0) {
-//     comicalOpened++;
-//     openComical();
-//   } else {
-//     comicalOpened = 0;
-//     closeComical();
-//   }
-// };
-// //// if comical is opened
-// comicalSide.addEventListener('click', isComical);
-// closeBtn.addEventListener('click', isComical);
-// boringSide.addEventListener('click', isComical);
-//// if comical is opened
-//
 //
 //
 //
@@ -252,12 +193,12 @@ let pNum = 1;
 const p1 =
   'I come from a Mediterranean village which has an onion as a coat of arms to an island with surplus of Silicon Pies and a chicken as an enemy.';
 const p2 =
-  ' My perfect day is the day which I learn something new. From learn a eggy technology to a outlandish dish. Btw, friends are a good source.';
+  ' My perfect day is the day when I learn something new. From learning an eggy technology to an outlandish dish. Btw, friends are a good source.';
 const p3 =
   'If my hobbies would count as badges, I will fill my scout jacket pretty soon.';
 const p4 =
   'I really appreciated an out-of-box design, listening a open-minder song or watch a non-cliche film is welcomed.';
-const p5 = 'You realy want more about me?';
+const p5 = 'You really want more about me?';
 const p6 = 'Really!? The Midnight Gospel is one of my favourite series, too.';
 const pComical = 'One photo tells more than a thousand words.';
 

@@ -562,7 +562,7 @@ body {
 .main .navigation .logo-frame .logo-svg {
   width: 60px;
   height: 30px;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
 .main .navigation .logo-frame .logo-svg:hover .hc-logo {
@@ -697,6 +697,11 @@ body {
   transition: 0.5s ease-out;
   text-decoration-color: #a48cee;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
+}
+
+.main .content_wrap .content-portfolio .link.coming {
+  color: #545454;
+  text-decoration: underline;
 }
 
 .main .content_wrap .content-portfolio .link:hover {

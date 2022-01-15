@@ -35,7 +35,7 @@ body {
       .logo-svg {
         width: 60px;
         height: 30px; // svg size
-        cursor: $cursor-arrow-hand;
+        cursor: $cursor-pointer-down-hand;
         &:hover {
           .hc-logo {
             fill: $sutil-dark-purple-gray-color;
@@ -178,7 +178,6 @@ body {
 
       .link {
         position: relative;
-
         color: $font-linked-color;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0.1,
           'wght' $font-weight-normal, $slnt;
@@ -186,6 +185,11 @@ body {
 
         text-decoration-color: $underline-color;
         cursor: $cursor-please-fingers;
+
+        &.coming {
+          color: rgb(84, 84, 84);
+          text-decoration: underline;
+        }
         &:hover {
           // color: $font-linked-hover-color;
           font-variation-settings: 'MONO' 0.2, 'CASL' 0.6,
