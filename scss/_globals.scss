@@ -264,7 +264,13 @@ body {
   #emoji-loader {
     // emoji rotate when loading
     font-size: 60px;
-    animation: spin 2.6s infinite ease; //ease is funnier//linear
+    animation: jump 2.6s infinite ease alternate;
+    @keyframes jump {
+      to {
+        transform: translateY(0.7rem);
+      }
+    }
+    //ease is funnier//linear
     // height and width to center the emoji for a absolute center rotation anchor
     width: 7rem;
     height: 70px;

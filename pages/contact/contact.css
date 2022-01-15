@@ -283,10 +283,16 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 .preloader #emoji-loader {
   font-size: 60px;
-  animation: spin 2.6s infinite ease;
+  animation: jump 2.6s infinite ease alternate;
   width: 7rem;
   height: 70px;
   transform-origin: center;
+}
+
+@keyframes jump {
+  to {
+    transform: translateY(0.7rem);
+  }
 }
 
 .preloader #text-loader {

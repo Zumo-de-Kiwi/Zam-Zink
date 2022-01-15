@@ -342,8 +342,8 @@ body {
           // }
           //////////// PART 3 ////////
           &.kare {
-            grid-row: 8;
-            margin-top: 5rem;
+            grid-row: 9;
+            // margin-top: 5rem;
             // margin-right: 1rem;
             img {
               width: 100%;
@@ -357,10 +357,10 @@ body {
           font-size: 1.5rem;
           grid-row: 6;
           text-align: justify;
-          grid-column: 1 /3;
-          margin-top: 11%;
+          grid-column: 2;
+          margin-top: 17%;
           margin-right: 11%;
-          margin-left: 15%;
+          margin-left: 23%;
         }
         .chess-grid {
           grid-row: 6/ 8;
@@ -368,7 +368,7 @@ body {
           width: 79%;
           place-self: center;
           margin-right: 35%;
-          margin-top: 15%;
+          margin-top: 3%;
         }
         .face-id {
           grid-column: 1 / 3;
@@ -391,13 +391,13 @@ body {
         ////////// 3 BTN ////////
         .btn-wrapper {
           margin-top: 10rem;
-          grid-row: 12;
+          grid-row: 8;
           grid-column: 1/ 4;
           display: flex;
           justify-content: left; //space-around;
           width: 100%;
-          position: relative;
           padding-left: 2%; //9%;
+          position: relative;
           // padding-right: 9%;
           background: rgb(235, 235, 235);
           .btns {
@@ -465,9 +465,8 @@ body {
       z-index: 19;
       height: 29rem;
       width: 100%;
-      background: black; //rgb(240, 240, 240);
-      // background: #e6e6e6; //rgb(240, 240, 240);
-      margin-top: 12rem;
+      bottom: 0px;
+      position: absolute;
 
       #footer-wrapper {
         height: 100%;
@@ -478,21 +477,19 @@ body {
           minmax(7%, 1fr); // 1fr 1fr;
         gap: 2rem;
         padding: 2rem;
-        color: rgb(255, 255, 255);
-        // color: rgb(80, 80, 80);
+        color: white;
         .footer-part {
           a {
             color: inherit;
             text-decoration: none;
             &:hover {
-              color: rgb(182, 182, 182);
               text-decoration: underline;
             }
           }
         }
         .footer-l {
           grid-column: 1 /3;
-          align-self: center;
+          align-self: end;
           justify-self: center;
           text-align: center;
           h2 {
@@ -505,17 +502,17 @@ body {
         }
         .footer-r {
           grid-column: 3;
-
+          margin-right: 8%;
           .sub-wrapper {
-            height: 100%;
+            height: 60%;
             display: flex;
             flex-direction: column;
-            // align-content: space-around;
             justify-self: end;
             text-align: right;
-
+            align-self: end;
             div {
               padding: 1.2rem;
+              // padding-top: 2.2rem;
               font-weight: 500;
               .r-links {
                 padding: 1rem;

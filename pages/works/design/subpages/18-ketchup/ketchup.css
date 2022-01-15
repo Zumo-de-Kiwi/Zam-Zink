@@ -283,10 +283,16 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 .preloader #emoji-loader {
   font-size: 60px;
-  animation: spin 2.6s infinite ease;
+  animation: jump 2.6s infinite ease alternate;
   width: 7rem;
   height: 70px;
   transform-origin: center;
+}
+
+@keyframes jump {
+  to {
+    transform: translateY(0.7rem);
+  }
 }
 
 .preloader #text-loader {
@@ -611,8 +617,7 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 #text-2 {
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare {
-  grid-row: 8;
-  margin-top: 5rem;
+  grid-row: 9;
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare img {
@@ -625,10 +630,10 @@ body main .subpage-wrapper .subpage-content-1 #text-3 {
   font-size: 1.5rem;
   grid-row: 6;
   text-align: justify;
-  grid-column: 1 /3;
-  margin-top: 11%;
+  grid-column: 2;
+  margin-top: 17%;
   margin-right: 11%;
-  margin-left: 15%;
+  margin-left: 23%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .chess-grid {
@@ -637,7 +642,7 @@ body main .subpage-wrapper .subpage-content-1 .chess-grid {
   width: 79%;
   place-self: center;
   margin-right: 35%;
-  margin-top: 15%;
+  margin-top: 3%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .face-id {
@@ -660,13 +665,13 @@ body main .subpage-wrapper .subpage-content-1 #text-4 {
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
   margin-top: 10rem;
-  grid-row: 12;
+  grid-row: 8;
   grid-column: 1/ 4;
   display: flex;
   justify-content: left;
   width: 100%;
-  position: relative;
   padding-left: 2%;
+  position: relative;
   background: #ebebeb;
 }
 
@@ -730,8 +735,8 @@ body main .footer {
   z-index: 19;
   height: 29rem;
   width: 100%;
-  background: black;
-  margin-top: 12rem;
+  bottom: 0px;
+  position: absolute;
 }
 
 body main .footer #footer-wrapper {
@@ -750,13 +755,12 @@ body main .footer #footer-wrapper .footer-part a {
 }
 
 body main .footer #footer-wrapper .footer-part a:hover {
-  color: #b6b6b6;
   text-decoration: underline;
 }
 
 body main .footer #footer-wrapper .footer-l {
   grid-column: 1 /3;
-  align-self: center;
+  align-self: end;
   justify-self: center;
   text-align: center;
 }
@@ -772,14 +776,16 @@ body main .footer #footer-wrapper .footer-l div {
 
 body main .footer #footer-wrapper .footer-r {
   grid-column: 3;
+  margin-right: 8%;
 }
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper {
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-self: end;
   text-align: right;
+  align-self: end;
 }
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper div {
