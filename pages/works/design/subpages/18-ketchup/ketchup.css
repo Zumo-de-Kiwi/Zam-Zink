@@ -377,7 +377,7 @@ body .preloader #emoji-loader {
 
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: white;
+  color: #a3a3a3;
   font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.8rem;
 }
@@ -490,11 +490,31 @@ body main .subpage-wrapper .subpage-content-1 .cl-2 {
 
 body main .subpage-wrapper .subpage-content-1 .why-text2 {
   grid-row: 2;
-  margin-right: 9%;
+  margin-right: 12%;
+  margin-left: 3%;
+  text-align: justify;
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text2 .w-para {
   margin-right: 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 #mac-gif {
+  grid-row: 2;
+  height: 51%;
+  align-self: end;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  background-image: url("../sub-img/18-ketchup/MAC-84x2.gif");
+  background-image: url("https://i.ibb.co/d5jrphV/MAC-84x2.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+body main .subpage-wrapper .subpage-content-1 #mac-gif:hover, body main .subpage-wrapper .subpage-content-1 #mac-gif:active {
+  transform: scale(1.9) translateY(-3.8rem) translateX(-0.5rem);
 }
 
 body main .subpage-wrapper .subpage-content-1 .cl-3 {
@@ -503,12 +523,13 @@ body main .subpage-wrapper .subpage-content-1 .cl-3 {
 
 body main .subpage-wrapper .subpage-content-1 #what {
   grid-row: 2;
+  margin-left: 12%;
 }
 
 body main .subpage-wrapper .subpage-content-1 .what-text1 {
   grid-row: 2;
-  margin-left: 1%;
   margin-top: 5.3rem;
+  margin-left: 11%;
   font-size: 1.5rem;
 }
 
@@ -516,62 +537,125 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper {
   grid-column: 1 / 4;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.fonts {
-  margin-top: 4rem;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper#stickers {
   grid-row: 3;
+  margin-top: 6%;
+  margin-bottom: 23%;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.four {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper#stickers img {
+  width: 100%;
+  object-fit: contain;
+  place-self: center;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.download {
+  grid-row: 3;
+  width: 100%;
+  margin-top: 126%;
+  justify-self: center;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.download a {
+  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding: 0% 2%;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: black;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.download a:hover {
+  color: blue;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper#where {
   grid-row: 4;
-  margin: 6%;
-  margin-left: 17%;
-  margin-right: 17%;
-  margin-bottom: 9%;
+  justify-self: center;
+  margin-bottom: 2.4rem;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 {
   grid-row: 5;
-  display: grid;
-  gap: 10%;
-  grid-template-columns: 1fr 1.7fr 2fr;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper .a-font {
-  grid-column: 1 /4;
-  grid-row: 1;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 #text-1 {
+  z-index: 1;
+  position: absolute;
+  top: 11%;
+  margin-right: 63%;
+  margin-left: 11%;
+  text-align: right;
+  background-color: white;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper .a-font img {
-  width: 100%;
-  object-fit: contain;
-  place-self: center;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 .mac {
+  z-index: -1;
+  width: 36%;
+  margin-left: 35%;
+  margin-right: 33%;
+  filter: grayscale(90%) brightness(109%);
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper #text-1 {
-  grid-column: 1;
-  grid-row: 2;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-1 #text-2 {
+  position: absolute;
+  background-color: white;
+  top: 11%;
+  margin-right: 11%;
+  margin-left: 63%;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper #text-2 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper #text-3 {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare-emoji {
-  grid-row: 6;
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare {
+  grid-row: 8;
   margin-top: 5rem;
-  margin-right: 1rem;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare-emoji img {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.kare img {
   width: 100%;
   object-fit: contain;
   place-self: center;
+}
+
+body main .subpage-wrapper .subpage-content-1 #text-3 {
+  font-size: 1.5rem;
+  grid-row: 6;
+  text-align: justify;
+  grid-column: 1 /3;
+  margin-top: 11%;
+  margin-right: 11%;
+  margin-left: 15%;
+}
+
+body main .subpage-wrapper .subpage-content-1 .chess-grid {
+  grid-row: 6/ 8;
+  grid-column: 3;
+  width: 79%;
+  place-self: center;
+  margin-right: 35%;
+  margin-top: 15%;
+}
+
+body main .subpage-wrapper .subpage-content-1 .face-id {
+  grid-column: 1 / 3;
+  grid-row: 7;
+  margin-top: 1.3%;
+  width: 9%;
+  margin-left: 27%;
+}
+
+body main .subpage-wrapper .subpage-content-1 #text-4 {
+  grid-column: 1 / 3;
+  grid-row: 7;
+  text-align: justify;
+  margin-top: 2%;
+  margin-right: 11%;
+  margin-left: 37%;
+  font-size: 1.2rem;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
@@ -579,32 +663,46 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
   grid-row: 12;
   grid-column: 1/ 4;
   display: flex;
-  justify-content: space-around;
-  padding-left: 9%;
-  padding-right: 9%;
+  justify-content: left;
+  width: 100%;
+  position: relative;
+  padding-left: 2%;
+  background: #ebebeb;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   text-align: center;
   font-size: 2rem;
-  border-radius: 2rem;
-  transition: 0.15s;
-  background: #cdcdcd;
-}
-
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #262626;
+  transition: 0.05s;
+  background: #ebebeb;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   text-decoration: none;
+  height: 3.5rem;
   color: black;
-  height: 6rem;
-  line-height: 6rem;
-  min-width: 18%;
-  padding: 2rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
+  line-height: 3.5rem;
+  min-width: 10%;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+  background: black;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a {
+  color: white;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.apple {
+  font-size: 2.5rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.apple a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>👋</text></svg>") 16 0, auto;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.prev a {
@@ -617,6 +715,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.back-design a {
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.next a {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.time {
+  position: absolute;
+  right: 2%;
 }
 
 body main #trampolin-wrapper #trampolineEmoji {
