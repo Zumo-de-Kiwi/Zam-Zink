@@ -108,7 +108,7 @@
 
               <!-- PAWN 😇-->
               <div class="pawn-wrapper">
-                <a href="">
+                <a id="pawn-open">
                   <picture id="pawn" class="green-imgs">
                     <source srcset="" type="image/webp" />
                     <source
@@ -191,8 +191,8 @@
               ></a>
 
               <!-- README 📚-->
-              <a href="subpages/03-planet/planet.html"
-                ><picture id="read-me" class="green-imgs">
+              <a id="read-me-open">
+                <picture id="read-me" class="green-imgs">
                   <source srcset="" type="image/webp" />
                   <source
                     srcset="https://i.ibb.co/WK4hxbY/readme-mini.png"
@@ -202,8 +202,9 @@
                     src="img/green/readme-mini.png"
                     alt="read me"
                     type="image/png"
-                  /> </picture
-              ></a>
+                  />
+                </picture>
+              </a>
 
               <!-- PLANET 🌍-->
               <a href="subpages/03-planet/planet.html"
@@ -250,12 +251,13 @@
                     src="img/green/peine-hover-1.webp"
                     alt=""
                     type="image/webp"
-                  /> </picture
-              ></a>
+                  />
+                </picture>
+              </a>
 
               <!-- PEN ✏️-->
-              <a href="subpages/04-pen/pen.html"
-                ><picture id="pen" class="green-imgs">
+              <a href="subpages/04-pen/pen.html">
+                <picture id="pen" class="green-imgs">
                   <source srcset="" type="image/webp" />
                   <source
                     srcset="https://i.ibb.co/8XnSLDY/muji-pen-mini-2.png"
@@ -265,8 +267,9 @@
                     src="img/green/muji-pen-mini-2.png"
                     alt=""
                     type="image/png"
-                  /> </picture
-              ></a>
+                  />
+                </picture>
+              </a>
 
               <!-- CHAIR 🦵🦵-->
               <picture id="ikea" class="green-imgs ikea">
@@ -282,8 +285,8 @@
                 />
               </picture>
               <!-- CHAIR 🦵🦵 💡-->
-              <a href=""
-                ><picture id="ikea-light" class="green-imgs ikea">
+              <a href="subpages/08-chair/chair.html">
+                <picture id="ikea-light" class="green-imgs ikea">
                   <source srcset="" type="image/webp" />
                   <source
                     srcset="https://i.ibb.co/WPL6sCk/ikea-mini-light-7.png"
@@ -293,8 +296,9 @@
                     src="img/green/ikea-mini-light-7.png"
                     alt=""
                     type="image/png"
-                  /> </picture
-              ></a>
+                  />
+                </picture>
+              </a>
 
               <!-- RADIO 📻 -->
               <a href="subpages/07-radio/radio.html"
@@ -311,8 +315,9 @@
                     src="img/green/radio-out-5.webp"
                     alt=""
                     type="image/webp"
-                  /> </picture
-              ></a>
+                  />
+                </picture>
+              </a>
 
               <!-- PIXAR 💡-->
               <picture id="pixar" class="green-imgs pixar">
@@ -353,20 +358,22 @@
               </a>
 
               <!-- OUT OF STOCK 🏷-->
-              <picture id="out-stock" class="green-imgs">
-                <source srcset="" loading="lazy" type="image/webp" />
-                <source
-                  srcset="https://i.ibb.co/4pHh9q7/out-stock-1.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/green/out-stock-1.png"
-                  alt=""
-                  loading="lazy"
-                  type="image/png"
-                />
-              </picture>
+              <a id="out-open">
+                <picture id="out-stock" class="green-imgs">
+                  <source srcset="" loading="lazy" type="image/webp" />
+                  <source
+                    srcset="https://i.ibb.co/4pHh9q7/out-stock-1.png"
+                    loading="lazy"
+                    type="image/png"
+                  />
+                  <img
+                    src="img/green/out-stock-1.png"
+                    alt=""
+                    loading="lazy"
+                    type="image/png"
+                  />
+                </picture>
+              </a>
 
               <!-- WEATHER 🌦-->
               <a href="subpages/13-09/cactus.html"
@@ -603,7 +610,7 @@
             ></a>
 
             <!-- EAT ME -->
-            <a href="">
+            <a id="eatme-open">
               <picture id="eatme" class="red-imgs">
                 <source srcset="" loading="lazy" type="image/webp" />
                 <source
@@ -661,6 +668,102 @@
               </picture>
             </a>
           </div>
+        </div>
+
+        <!-- MODALS -->
+        <div class="modals">
+          <div class="bg-modal hidden"></div>
+          <a class="x-btn hidden">&times;</a>
+          <div id="pawn-modal" class="modal hidden">
+            <h2>404</h2>
+            <h5>The pawn page is not found</h5>
+            <p>
+              Just like a pawn, who only receives orders and does not have
+              freedom of expression.
+            </p>
+          </div>
+          <div id="read-modal" class="modal hidden">
+            <div class="ascii">
+              <pre>
+ ______   _______   ___     ______         ____    ___   _______   
+              | ____ \ | _____/  / _ \   |_ ___ \       |_   \  /  _| | _____/
+              | |__/ / | |____  / /_\ \   | |  \ \       |    \/   |  | |____ 
+              | __  /  |  ___/ | _____ |  | |  | |       | |\   /| |  |  ___/ 
+              | | \ \  | |____ | |   | |  | |__/ /       | | \_/ | |  | |_____
+              |_|  \_\ |_____//___\ /___\|______/       |___|   |___| |______/</pre
+              >
+            </div>
+            <div class="part-1">
+              <div class="block-text block-1">
+                <h3>The Design Concept</h3>
+                <p>
+                  My main inspiration for wrapping my designs harmonically
+                  together is using the frames of the Gundam when they are just
+                  building pieces waiting to be assembled.
+                </p>
+              </div>
+              <div class="block-text block-2">
+                <h3>About This Page</h3>
+                <p>
+                  This is my Design Page, where you can find my design works,
+                  divided into two sections one for vector designs and the other
+                  focused on pixel Art.
+                </p>
+              </div>
+              <div class="block-text block-3">
+                <h3>What I learned</h3>
+                <p>
+                  Some of the reference items helped me discover the beauty of
+                  design, i. e. they taught me that something with a valuable
+                  design is not only visually attractive but is also endowed
+                  with a satisfactory usability; for example, a building
+                  entrance door that you can intuitively know whether you need
+                  to pull or push, the wheel of an iPod which you know how to
+                  handle immediately, an easy to read magazine layout or a
+                  website that guides you with its UX patterns throughout its
+                  interface.
+                </p>
+              </div>
+              <div class="block-text block-4">
+                <h3>A tribute</h3>
+                <p>
+                  This design page is also a tribute to many of my design
+                  references, which come from the fields of architecture,
+                  animation, interior design and industrial design. They all
+                  make our lives easier or more comfortable. I can’t imagine
+                  living one hundred years ago without many items that nowadays
+                  we use on a daily basis.
+                </p>
+              </div>
+            </div>
+            <div class="part-2">
+              <h3>How To Use</h3>
+              <p>
+                There is a WHY and WHAT section in every work. Some will have
+                WHERE as well.
+              </p>
+            </div>
+            <div class="part-3">
+              <h6>why</h6>
+              <p>
+                Where I state why I choose that object to represent my work, and
+                explain the design process behind it.
+              </p>
+              <h6>where</h6>
+              <p>
+                Where I briefly describe either the historical context of this
+                work, where the inspiration comes from or where this topic
+                originated.
+              </p>
+              <h6>what</h6>
+              <p>
+                Where I outline what this project is about, its purpose, my
+                source of inspiration, the process and other details.
+              </p>
+            </div>
+          </div>
+          <div id="out-modal" class="modal hidden"></div>
+          <div id="eat-modal" class="modal hidden"></div>
         </div>
 
         <div id="trampolin-wrapper">

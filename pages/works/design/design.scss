@@ -276,7 +276,7 @@ body {
             top: 44.9%;
             width: 33%;
             z-index: 1;
-            filter: none;
+            // filter: grayscale(11%);
             &#ikea {
               pointer-events: none;
             }
@@ -350,6 +350,7 @@ body {
             top: 80.6%;
             left: 6.3%;
             width: 21%;
+            filter: grayscale(17%);
             // hover not working
             &:hover ~ #rain {
               opacity: 100%;
@@ -475,6 +476,78 @@ body {
             &#chilli {
             }
           }
+        }
+      }
+
+      .modals {
+        grid-column: 2;
+        z-index: 19;
+        // position: relative;
+        .hidden {
+          display: none;
+        }
+        .modal {
+          position: fixed;
+          position: absolute;
+          top: 50%; //
+          left: 50%; //
+          transform: translate(-50%, -50%); //
+
+          // margin: 15%;
+          border: 3px solid black;
+          border-radius: 5px;
+          padding: 6rem; //10%
+
+          width: 80%;
+          // max-width: 70ch;
+          background-color: white;
+          color: hsl(0, 0%, 21%);
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+
+          transform: translate(-50%, -50%);
+          // overflow: scroll;
+
+          transition: 0.3s;
+          &#pawn-modal {
+            h2 {
+              font-family: $ff-tourney;
+              font-weight: 300;
+            }
+          }
+          &#read-modal {
+          }
+          &#out-modal {
+          }
+          &#eat-modal {
+          }
+          // &.active-modal {
+          //   margin: 13%; // put a little less than the .modal
+          // }
+        }
+        .x-btn {
+          position: fixed;
+          top: 5rem;
+          right: 5rem;
+          z-index: 49;
+
+          color: rgb(108, 107, 107);
+          font-size: 5rem;
+
+          padding: 1rem;
+          transition: 0.3s;
+          &:hover {
+            color: rgb(34, 34, 34);
+          }
+        }
+        .bg-modal {
+          z-index: 29;
+          position: fixed;
+          // position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.33);
         }
       }
     }

@@ -630,7 +630,6 @@ body main .designSections #green-holder .green-imgs-wrapper .ikea {
   top: 44.9%;
   width: 33%;
   z-index: 1;
-  filter: none;
 }
 
 body main .designSections #green-holder .green-imgs-wrapper .ikea#ikea {
@@ -711,6 +710,7 @@ body main .designSections #green-holder .green-imgs-wrapper #weather {
   top: 80.6%;
   left: 6.3%;
   width: 21%;
+  filter: grayscale(17%);
 }
 
 body main .designSections #green-holder .green-imgs-wrapper #weather:hover ~ #rain {
@@ -842,6 +842,64 @@ body main .designSections #red-holder .red-imgs-wrapper .yiTiaou#banana {
 
 body main .designSections #red-holder .red-imgs-wrapper .yiTiaou#banana:hover {
   opacity: 100%;
+}
+
+body main .designSections .modals {
+  grid-column: 2;
+  z-index: 19;
+}
+
+body main .designSections .modals .hidden {
+  display: none;
+}
+
+body main .designSections .modals .modal {
+  position: fixed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10%;
+  width: 80%;
+  max-width: 70ch;
+  background-color: white;
+  color: #363636;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+  transition: 0.3s;
+}
+
+body main .designSections .modals .modal#pawn-modal h2 {
+  font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 300;
+}
+
+body main .designSections .modals .x-btn {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  z-index: 49;
+  color: #6c6b6b;
+  font-size: 5rem;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+body main .designSections .modals .x-btn:hover {
+  color: #222222;
+}
+
+body main .designSections .modals .bg-modal {
+  z-index: 29;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.33);
 }
 
 body main #trampolin-wrapper #trampolineEmoji {
