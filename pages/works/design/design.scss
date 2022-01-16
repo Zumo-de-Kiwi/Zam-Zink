@@ -487,50 +487,67 @@ body {
           display: none;
         }
         .modal {
-          position: fixed;
-          position: absolute;
+          position: fixed; // position: absolute;
           top: 50%; //
           left: 50%; //
-          transform: translate(-50%, -50%); //
+          transform: translate(-50%, -50%);
+          z-index: 29;
 
-          // margin: 15%;
-          border: 3px solid black;
+          border: 5px solid $design-text-color;
           border-radius: 5px;
           padding: 6rem; //10%
 
           width: 80%;
-          // max-width: 70ch;
+          max-width: 69ch;
           background-color: white;
-          color: hsl(0, 0%, 21%);
-          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+          color: $design-text-color;
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.33);
 
-          transform: translate(-50%, -50%);
-          // overflow: scroll;
-
+          overflow: scroll;
           transition: 0.3s;
+          // &.active-modal {
+          //   margin: 13%; // put a little less than the .modal
+          // }
           &#pawn-modal {
             h2 {
               font-family: $ff-tourney;
-              font-weight: 300;
+              font-weight: 470;
+              // margin-bottom: 1rem;
+              font-size: 7rem;
+            }
+            h3 {
+              margin: 1rem;
+              margin-left: 0rem;
+            }
+            p {
+              font-size: 1.3rem;
             }
           }
           &#read-modal {
+            max-width: 89ch;
+            pre {
+            }
+            .part-1 {
+            }
+            .part-2 {
+            }
           }
           &#out-modal {
           }
           &#eat-modal {
+            pre {
+            }
+            .part-1 {
+            }
           }
-          // &.active-modal {
-          //   margin: 13%; // put a little less than the .modal
-          // }
         }
         .x-btn {
           position: fixed;
-          top: 5rem;
-          right: 5rem;
+          top: -1rem;
+          right: 1.3rem;
           z-index: 49;
 
-          color: rgb(108, 107, 107);
+          color: rgb(116, 116, 116);
           font-size: 5rem;
 
           padding: 1rem;
@@ -540,7 +557,18 @@ body {
           }
         }
         .bg-modal {
-          z-index: 29;
+          z-index: 59;
+          position: fixed;
+          // position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          // cursor: $cursor-please-fingers;
+        }
+        .shadow-layer {
+          z-index: 9;
           position: fixed;
           // position: absolute;
           top: 0;
