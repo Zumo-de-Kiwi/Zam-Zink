@@ -610,6 +610,7 @@ body {
 
 .main .content_wrap .content-name {
   margin-bottom: 7vh;
+  margin-left: 1.7rem;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.5vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 800, "slnt" 0;
@@ -630,7 +631,7 @@ body {
   text-decoration: underline;
   text-decoration-color: #b9cabf;
   transition: 0.45s ease;
-  will-change: transition;
+  will-change: font-family;
 }
 
 .main .content_wrap .content-name .complete-name .first-name::after,
@@ -639,7 +640,7 @@ body {
   color: rgba(0, 0, 0, 0);
   position: absolute;
   text-align: center;
-  bottom: -1rem;
+  bottom: -0.2rem;
   width: 100%;
   height: 0;
   left: 0;

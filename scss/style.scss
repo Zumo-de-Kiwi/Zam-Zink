@@ -141,7 +141,7 @@ body {
     ///////// Hi, I am Héctor /////////
     .content-name {
       margin-bottom: 7vh;
-      // padding-top: 10vh;
+      margin-left: 1.7rem;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0.2, 'wght' $font-weight-heavy,
@@ -156,7 +156,6 @@ body {
       //     5px * 1vw
       //   ); //-13px // move the coma and the following words to the left
       // }
-
       .complete-name {
         color: $sutil-dark-purple-gray-color;
         cursor: $cursor-please-fingers;
@@ -168,14 +167,14 @@ body {
           text-decoration-color: $font-sutil-gray-color;
 
           transition: $trans-slow ease;
-          will-change: transition;
+          will-change: font-family;
           &::after {
             font-size: $font-size-small;
             color: $transparent;
 
             position: absolute;
             text-align: center;
-            bottom: -1rem;
+            bottom: -0.2rem;
             width: 100%;
             height: 0;
             left: 0;

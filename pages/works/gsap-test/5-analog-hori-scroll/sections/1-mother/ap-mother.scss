@@ -339,9 +339,10 @@ body {
                 // for having a more sexy underline
                 text-decoration: none;
                 position: relative;
+                white-space: nowrap; //ATTENTION: if you have a long <a> this make it no braekable.
                 &::after {
                   position: absolute;
-                  height: 0.11em;
+                  height: 0.12rem;
                   bottom: -0.13rem;
                   content: '';
 
@@ -353,8 +354,7 @@ body {
                   left: 0;
                   right: 0;
                   width: 97%;
-                  background: green;
-                  // background: var(--text-color);
+                  background: var(--text-color);
                   opacity: 0.6;
                 }
                 /* optional hover classes used with anmiation */
