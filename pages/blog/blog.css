@@ -637,45 +637,52 @@ body main .blogSections .sections-holder .section .hidden {
   display: none;
 }
 
-body main .blogSections .sections-holder .section a {
+@media (min-width: 900px) {
+  body main .blogSections .sections-holder .section .articles-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+body main .blogSections .sections-holder .section .articles-holder a {
   text-decoration: none;
 }
 
-body main .blogSections .sections-holder .section a:hover h3 {
+body main .blogSections .sections-holder .section .articles-holder a:hover h3 {
   color: #6c5ffc;
 }
 
-body main .blogSections .sections-holder .section a .article {
+body main .blogSections .sections-holder .section .articles-holder a .article {
   padding: 3.5rem;
-  margin-bottom: 4rem;
+  margin: 34px;
   border-radius: 2rem;
   background-color: white;
   color: #21232c;
 }
 
-body main .blogSections .sections-holder .section a .article h3 {
+body main .blogSections .sections-holder .section .articles-holder a .article h3 {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 2rem;
 }
 
-body main .blogSections .sections-holder .section a .article p {
+body main .blogSections .sections-holder .section .articles-holder a .article p {
   font-size: 1.5rem;
 }
 
-body main .blogSections .sections-holder .section a .article h6 {
+body main .blogSections .sections-holder .section .articles-holder a .article h6 {
   padding-top: 2rem;
   font-size: 1.5rem;
   font-weight: 900;
   text-decoration: underline;
 }
 
-body main .blogSections .sections-holder .section a .article h6:hover {
+body main .blogSections .sections-holder .section .articles-holder a .article h6:hover {
   color: #6c5ffc;
 }
 
-body main .blogSections .sections-holder .section #make-intro h6 {
+body main .blogSections .sections-holder .section .articles-holder #make-intro h6 {
   padding-left: 1rem;
   text-decoration: none;
 }

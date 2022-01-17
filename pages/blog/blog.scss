@@ -107,55 +107,63 @@ body {
             .art-numbers {
             }
           }
-          @media (min-width: 900px) {
-          }
+
           .hidden {
             display: none;
           }
-          /// EVERY BLOG /////
-          a {
-            text-decoration: none;
-            &:hover {
-              h3 {
-                color: $blue-purple-tech;
-              }
+          .articles-holder {
+            @media (min-width: 900px) {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
             }
-
-            &.article {
-              padding: 3.5rem;
-              margin-bottom: 4rem;
-              border-radius: 2rem;
-              background-color: $blog-color-box;
-              color: $blog-text-color;
-
-              h3 {
-                font-family: $ff-sans-serif;
-                font-size: 2rem;
-                font-weight: 900;
-                margin-bottom: 2rem;
-              }
-              p {
-                font-size: 1.5rem;
-              }
-              h6 {
-                padding-top: 2rem;
-                font-size: 1.5rem;
-                font-weight: 900;
-                text-decoration: underline;
-                &:hover {
+            /// EVERY BLOG /////
+            a {
+              text-decoration: none;
+              &:hover {
+                h3 {
                   color: $blue-purple-tech;
                 }
               }
+
+              .article {
+                padding: 3.5rem;
+                margin: 34px;
+                // margin-bottom: 3.5rem;
+                // margin-left: 2rem;
+                // margin-right: 2rem;
+                border-radius: 2rem;
+                background-color: $blog-color-box;
+                color: $blog-text-color;
+
+                h3 {
+                  font-family: $ff-sans-serif;
+                  font-size: 2rem;
+                  font-weight: 900;
+                  margin-bottom: 2rem;
+                }
+                p {
+                  font-size: 1.5rem;
+                }
+                h6 {
+                  padding-top: 2rem;
+                  font-size: 1.5rem;
+                  font-weight: 900;
+                  text-decoration: underline;
+                  &:hover {
+                    color: $blue-purple-tech;
+                  }
+                }
+              }
             }
-          }
-          #make-intro {
-            h6 {
-              // padding-top: 1.5rem;
-              padding-left: 1rem;
-              text-decoration: none;
+            #make-intro {
+              h6 {
+                // padding-top: 1.5rem;
+                padding-left: 1rem;
+                text-decoration: none;
+              }
             }
-          }
-          #make-design {
+            #make-design {
+            }
           }
         }
 
