@@ -666,7 +666,7 @@ body main .ingredients :after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #d6d6d6;
+  background-color: #cccccc;
 }
 
 body main #center-box {

@@ -15,7 +15,14 @@ body {
 
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr minmax(90%, 60ch) 1fr;
+  grid-template-columns: minmax(2rem, 1fr) minmax(200px, 610px) minmax(
+      2rem,
+      1fr
+    );
+  // minmax(7%, 1fr) minmax(300px, 900px) minmax(
+  //         7%,
+  //         1fr
+  //       );
   gap: 2rem;
 
   //logo home filter contact about me
@@ -24,11 +31,12 @@ body {
 
     height: 6rem;
     display: flex;
-    width: 93%;
+    width: 100%;
+    // max-width: 700px;
     justify-content: flex-end;
     padding-top: 3rem;
-    padding-right: 2vw;
-    padding-left: 2vw;
+    // padding-right: 2vw;
+    // padding-left: 2vw;
     // transition: all $trans-slow; // INitial fx when enter the page
     .logo-frame {
       margin-right: auto;
@@ -82,11 +90,57 @@ body {
 
   .content_wrap {
     grid-column: 2;
-    display: grid;
+    margin-top: 9vh;
+    // display: grid;
+    // @media (min-width: 320px) {
+    //   margin-top: 4vh;
+    //   padding-left: 5vw;
+    //   padding-right: 5vw;
+    //   .content-name {
+    //     padding-bottom: 5vh;
+    //     text-align: left;
+    //   }
+    // }
 
+    // @media (min-width: 576.02px) {
+    //   margin-top: 9vh;
+    //   padding-left: 7vw;
+    //   padding-right: 6vw;
+    //   .content-name {
+    //     padding-bottom: 7vh;
+    //     text-align: left;
+    //   }
+    // }
+
+    // @media (min-width: 768px) {
+    //   margin-top: 13vh;
+    //   // padding-top: 13vh; //need to change
+    //   padding-left: 7vw;
+    //   padding-right: 6vw;
+    //   .content-name {
+    //     padding-bottom: 8vh;
+    //     text-align: center;
+    //     // padding-right: 11.5vh;
+    //   }
+    // }
+
+    // @media (min-width: 1024px) {
+    //   padding-left: 13vw;
+    //   padding-right: 13vw;
+    //   .content-name {
+    //     padding-bottom: 10vh;
+    //     text-align: center;
+    //     // padding-right: 11.5vh;
+    //   }
+    // }
+
+    // @media (min-width: 1400px) {
+    //   padding-left: 20vw;
+    //   padding-right: 20vw;
+    // }
     ///////// Hi, I am Héctor /////////
     .content-name {
-      padding-bottom: 7vh;
+      margin-bottom: 7vh;
       // padding-top: 10vh;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
@@ -176,19 +230,35 @@ body {
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' var(--main-weight),
         $slnt;
 
+      //link and link number WRAPPER
+      .link-wrapper {
+      }
+      // a
       .link {
         position: relative;
+        white-space: nowrap; //for no break the link to the next  line
         color: $font-linked-color;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0.1,
           'wght' $font-weight-normal, $slnt;
-        transition: 0.5s ease-out;
 
         text-decoration-color: $underline-color;
         cursor: $cursor-please-fingers;
 
+        transition: 0.43s ease-out;
+        // for coming projects
         &.coming {
-          color: rgb(84, 84, 84);
+          color: rgb(107, 104, 116);
           text-decoration: underline;
+          text-decoration-color: rgb(107, 104, 116);
+          &::after {
+            content: 'Video projects';
+          }
+          &:hover {
+            text-decoration-color: rgb(107, 104, 116);
+            &::after {
+              content: '[C🙃ming Soon]';
+            }
+          }
         }
         &:hover {
           // color: $font-linked-hover-color;
@@ -201,16 +271,18 @@ body {
         }
       }
 
+      // mini linked number
       .link-number {
-        // mini linked number
         color: $font-linked-color;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0,
           'wght' $font-weight-bolder;
+        font-size: $font-size-linkNumber;
+        text-decoration: none;
+
         position: relative;
         left: -6.5px;
         top: -7px;
         margin-left: 0px;
-        font-size: $font-size-linkNumber;
       }
 
       .pixelLink {
@@ -385,78 +457,6 @@ footer {
           color: rgb(255, 255, 255);
         }
       }
-    }
-  }
-}
-
-/////////////////////////////////////////////////////////
-/////////////// MEDIA QUERY Bootstrap 5 ///////////////////
-/////////////////////////////////////////////////////////
-//Why subtract .02px? Browsers don’t currently support range context queries, so we work around the limitations of min- and max- prefixes and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision.
-// X-Small devices (portrait phones, more than 320px)
-@media (min-width: 320px) {
-  .main {
-    .content_wrap {
-      margin-top: 4vh;
-      padding-left: 5vw;
-      padding-right: 5vw;
-      .content-name {
-        padding-bottom: 5vh;
-        text-align: left;
-      }
-    }
-  }
-}
-// Small devices (landscape phones, more than 576px)
-@media (min-width: 576.02px) {
-  .content-wrap {
-    margin-top: 11vh;
-    padding-left: 7vw;
-    padding-right: 6vw;
-    .content-name {
-      padding-bottom: 7vh;
-      text-align: left;
-    }
-  }
-}
-// Medium devices (tablets, more than 768px)
-@media (min-width: 768px) {
-  .main {
-    .content_wrap {
-      margin-top: 17vh;
-      // padding-top: 13vh; //need to change
-      padding-left: 7vw;
-      padding-right: 6vw;
-      .content-name {
-        padding-bottom: 8vh;
-        text-align: center;
-        // padding-right: 11.5vh;
-      }
-    }
-  }
-}
-// Large devices (desktops, more than 992px)
-@media (min-width: 1024px) {
-  .main {
-    .content_wrap {
-      // padding-bottom: 19vh;
-
-      padding-left: 13vw;
-      padding-right: 13vw;
-      .content-name {
-        padding-bottom: 10vh;
-        text-align: center;
-        // padding-right: 11.5vh;
-      }
-    }
-  }
-}
-// X-Large devices (large desktops, more than 1400px)
-@media (min-width: 1400px) {
-  .main {
-    .content_wrap {
-      padding-left: 20vw;
-      padding-right: 20vw;
     }
   }
 }

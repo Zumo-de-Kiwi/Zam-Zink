@@ -540,7 +540,7 @@ body {
   height: 100%;
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr minmax(90%, 60ch) 1fr;
+  grid-template-columns: minmax(2rem, 1fr) minmax(200px, 610px) minmax(2rem, 1fr);
   gap: 2rem;
 }
 
@@ -548,11 +548,9 @@ body {
   grid-column: 2;
   height: 6rem;
   display: flex;
-  width: 93%;
+  width: 100%;
   justify-content: flex-end;
   padding-top: 3rem;
-  padding-right: 2vw;
-  padding-left: 2vw;
 }
 
 .main .navigation .logo-frame {
@@ -607,11 +605,11 @@ body {
 
 .main .content_wrap {
   grid-column: 2;
-  display: grid;
+  margin-top: 9vh;
 }
 
 .main .content_wrap .content-name {
-  padding-bottom: 7vh;
+  margin-bottom: 7vh;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.5vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 800, "slnt" 0;
@@ -692,16 +690,30 @@ body {
 
 .main .content_wrap .content-portfolio .link {
   position: relative;
+  white-space: nowrap;
   color: #5f3fd5;
   font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 620, "slnt" 0;
-  transition: 0.5s ease-out;
   text-decoration-color: #a48cee;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
+  transition: 0.43s ease-out;
 }
 
 .main .content_wrap .content-portfolio .link.coming {
-  color: #545454;
+  color: #6b6874;
   text-decoration: underline;
+  text-decoration-color: #6b6874;
+}
+
+.main .content_wrap .content-portfolio .link.coming::after {
+  content: 'Video projects';
+}
+
+.main .content_wrap .content-portfolio .link.coming:hover {
+  text-decoration-color: #6b6874;
+}
+
+.main .content_wrap .content-portfolio .link.coming:hover::after {
+  content: '[C🙃ming Soon]';
 }
 
 .main .content_wrap .content-portfolio .link:hover {
@@ -716,11 +728,12 @@ body {
 .main .content_wrap .content-portfolio .link-number {
   color: #5f3fd5;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 740;
+  font-size: calc(0.4vw + 7px);
+  text-decoration: none;
   position: relative;
   left: -6.5px;
   top: -7px;
   margin-left: 0px;
-  font-size: calc(0.4vw + 7px);
 }
 
 .main .content_wrap .content-portfolio .pixelLink #pixel {
@@ -903,58 +916,4 @@ footer .footer #githublink a {
 footer .footer #githublink a:hover {
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -17, "CRSV" 0;
   color: white;
-}
-
-@media (min-width: 320px) {
-  .main .content_wrap {
-    margin-top: 4vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-  .main .content_wrap .content-name {
-    padding-bottom: 5vh;
-    text-align: left;
-  }
-}
-
-@media (min-width: 576.02px) {
-  .content-wrap {
-    margin-top: 11vh;
-    padding-left: 7vw;
-    padding-right: 6vw;
-  }
-  .content-wrap .content-name {
-    padding-bottom: 7vh;
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  .main .content_wrap {
-    margin-top: 17vh;
-    padding-left: 7vw;
-    padding-right: 6vw;
-  }
-  .main .content_wrap .content-name {
-    padding-bottom: 8vh;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main .content_wrap {
-    padding-left: 13vw;
-    padding-right: 13vw;
-  }
-  .main .content_wrap .content-name {
-    padding-bottom: 10vh;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1400px) {
-  .main .content_wrap {
-    padding-left: 20vw;
-    padding-right: 20vw;
-  }
 }

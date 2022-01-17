@@ -886,12 +886,13 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text a {
   color: inherit;
   text-decoration: none;
   position: relative;
+  white-space: nowrap;
   /* optional hover classes used with anmiation */
 }
 
 body .main .info #serious-wrapper #real-content-info.clicked .box-text a::after {
   position: absolute;
-  height: 0.11em;
+  height: 0.12rem;
   bottom: -0.13rem;
   content: '';
   transition: 0.3s;
