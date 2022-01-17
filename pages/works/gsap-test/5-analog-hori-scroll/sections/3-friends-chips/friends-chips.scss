@@ -339,6 +339,33 @@ body {
               }
               a {
                 color: inherit;
+                // for having a more sexy underline
+                text-decoration: none;
+                position: relative;
+                &::after {
+                  position: absolute;
+                  height: 0.11em;
+                  bottom: -0.13rem;
+                  content: '';
+
+                  // will-change: width;
+                  transition: 0.3s;
+                  transition: opacity 0.3s, background 2s;
+                  /* center - (optional) use with adjusting width   */
+                  margin: 0 auto;
+                  left: 0;
+                  right: 0;
+                  width: 97%;
+                  // background: green;
+                  background: var(--text-color);
+                  opacity: 0.6;
+                }
+                /* optional hover classes used with anmiation */
+                &:hover::after {
+                  width: 100%;
+                  // background: inherit;
+                  opacity: 1;
+                }
               }
               ol {
                 counter-reset: cupcake;
@@ -531,10 +558,8 @@ body {
               grid-row: 4;
               font-size: 1.6rem;
               align-self: end;
-              // line-height: 2;
             }
             a {
-              // align-self: start;
               grid-row: 5;
 
               font-size: 1.4rem;
@@ -568,46 +593,6 @@ body {
     #footer {
       position: absolute;
       position: fixed;
-      // #trampolin-wrapper {
-      //   position: fixed;
-      //   height: 4vh;
-      //   width: 100vw;
-      //   left: 0px;
-      //   inset: 0px;
-      //   top: 0px; // in desktop is 0px
-      //   display: flex;
-      //   align-items: flex-end; //start
-      //   justify-content: right;
-      //   overflow: hidden;
-      //   #trampolineEmoji {
-      //     position: fixed; /* Fixed/sticky position */
-      //     overflow: hidden;
-      //     bottom: 2.3rem; /* Place the button at the bottom of the page */
-      //     right: 1rem;
-      //     @media (max-width: 768px) {
-      //       bottom: 1rem;
-      //       right: 0.6rem;
-      //     }
-      //     text-align: center;
-      //     text-decoration: none;
-      //     padding: 2rem; /* Some padding */
-      //     font-size: 3.3rem;
-      //     @media (max-width: 768px) {
-      //       font-size: 2.3rem;
-      //     }
-      //     transition: $trans-fast;
-      //     opacity: 0.33;
-      //     cursor: $cursor-pointer-hand-flip;
-      //     &:hover {
-      //       opacity: 1;
-      //       cursor: $cursor-pointer-hand-flip;
-      //       transform: translateY(-0.2rem);
-      //     }
-      //     &:active {
-      //       transform: translateY(0.2rem);
-      //     }
-      //   }
-      // }
     }
     .proxy {
       position: absolute;

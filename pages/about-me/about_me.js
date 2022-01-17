@@ -193,7 +193,7 @@ let pNum = 1;
 const p1 =
   'I come from a Mediterranean village which has an onion as a coat of arms to an island with surplus of Silicon Pies and a chicken as an enemy.';
 const p2 =
-  ' My perfect day is the day when I learn something new. From learning an eggy technology to an outlandish dish. Btw, friends are a good source.';
+  ' My perfect day is the day when I learn something new. From learning an "eggy" technology to an outlandish dish. Btw, friends are a good source of learning and inspiration.';
 const p3 =
   'If my hobbies would count as badges, I will fill my scout jacket pretty soon.';
 const p4 =

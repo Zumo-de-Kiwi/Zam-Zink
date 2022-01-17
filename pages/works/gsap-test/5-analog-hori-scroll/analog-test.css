@@ -908,6 +908,13 @@ body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView_
   z-index: 5;
   width: 100%;
   height: 100%;
+  will-change: transform;
+  transform: scale(0.93);
+  transition: 0.4s ease-out;
+}
+
+body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img:hover {
+  transform: scale(1);
 }
 
 body .main .panel .horizontal-wrapper .block .ScollView__ScrollItem .ScrollView__Motion .ThumbnailScroll__ImgWrapper .ThumbnailScroll__Img .ThumbnailScroll__Inner {

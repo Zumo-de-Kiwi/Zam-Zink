@@ -837,16 +837,16 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text#header-h1
   font-variation-settings: "MONO" 0.1, "CASL" 0, "wght" 500, "slnt" -12;
 }
 
-body .main .info #serious-wrapper #real-content-info.clicked .box-text.header-h3 {
+body .main .info #serious-wrapper #real-content-info.clicked .box-text#header-h3 {
   font-size: 2.3rem;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
   font-variation-settings: "MONO" 0.7, "CASL" 0, "wght" 400, "slnt" 0;
   line-height: 1.35;
 }
 
 body .main .info #serious-wrapper #real-content-info.clicked .box-text.paragraphs {
   font-size: 1.6rem;
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 body .main .info #serious-wrapper #real-content-info.clicked .box-text.final-ps {
@@ -889,6 +889,30 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text .demon-wo
 
 body .main .info #serious-wrapper #real-content-info.clicked .box-text a {
   color: inherit;
+  text-decoration: none;
+  position: relative;
+  /* optional hover classes used with anmiation */
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text a::after {
+  position: absolute;
+  height: 0.11em;
+  bottom: -0.13rem;
+  content: '';
+  transition: 0.3s;
+  transition: opacity 0.3s, background 2s;
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 97%;
+  background: green;
+  opacity: 0.6;
+}
+
+body .main .info #serious-wrapper #real-content-info.clicked .box-text a:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 body .main .info #serious-wrapper #real-content-info.clicked .box-text ol {
@@ -901,7 +925,7 @@ body .main .info #serious-wrapper #real-content-info.clicked .box-text ol li {
   padding-bottom: 1rem;
 }
 
-body .main .info #serious-wrapper #real-content-info.clicked .box-text ol li:before {
+body .main .info #serious-wrapper #real-content-info.clicked .box-text ol li::before {
   content: counters(cupcake, ".") " ";
   /* Whatever custom styles you want here */
   font-variation-settings: "MONO" 0.1, "CASL" 0, "wght" 620, "slnt" -10;

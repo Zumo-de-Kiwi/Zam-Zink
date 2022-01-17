@@ -289,9 +289,9 @@ body {
                 font-variation-settings: 'MONO' 0.1, 'CASL' 0,
                   'wght' $font-weight-light, 'slnt' -12;
               }
-              &.header-h3 {
+              &#header-h3 {
                 font-size: 2.3rem;
-                padding-bottom: 5rem;
+                margin-bottom: 5rem;
                 font-variation-settings: 'MONO' 0.7, 'CASL' 0,
                   'wght' $font-weight-lighter, $slnt;
                 line-height: 1.35;
@@ -299,7 +299,7 @@ body {
 
               &.paragraphs {
                 font-size: 1.6rem;
-                padding-bottom: 3rem;
+                margin-bottom: 3rem;
               }
               &.final-ps {
                 font-size: 1.6rem;
@@ -336,6 +336,33 @@ body {
               }
               a {
                 color: inherit;
+                // for having a more sexy underline
+                text-decoration: none;
+                position: relative;
+                &::after {
+                  position: absolute;
+                  height: 0.11em;
+                  bottom: -0.13rem;
+                  content: '';
+
+                  // will-change: width;
+                  transition: 0.3s;
+                  transition: opacity 0.3s, background 2s;
+                  /* center - (optional) use with adjusting width   */
+                  margin: 0 auto;
+                  left: 0;
+                  right: 0;
+                  width: 97%;
+                  background: green;
+                  // background: var(--text-color);
+                  opacity: 0.6;
+                }
+                /* optional hover classes used with anmiation */
+                &:hover::after {
+                  width: 100%;
+                  // background: inherit;
+                  opacity: 1;
+                }
               }
               ol {
                 counter-reset: cupcake;
@@ -344,7 +371,7 @@ body {
                   // list-style: none;
                   counter-increment: cupcake;
                   padding-bottom: 1rem;
-                  &:before {
+                  &::before {
                     content: counters(cupcake, '.') ' ';
                     /* Whatever custom styles you want here */
                     font-variation-settings: 'MONO' 0.1, 'CASL' 0,

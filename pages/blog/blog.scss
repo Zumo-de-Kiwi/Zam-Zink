@@ -3,56 +3,243 @@
 @import '../../scss/variables';
 @import '../../scss/mixins';
 @import '../../scss/font-anim-keyframes';
-
 body {
-  // background-color: $underline-color;
-  font-family: $ff-recursive;
-  font-variation-settings: 'MONO' 1, $CASL, 'wght' $font-weight-normal, $slnt;
-  font-size: $font-size-normal;
-  /////////////// | V | V | V | V | V | V | V /////////////
+  ///////////////////////////////////////////
+  $blog-text-color: rgb(33, 35, 44);
+  $blog-color-box: rgb(255, 255, 255);
+  $blog-color-bg: rgb(239, 241, 245);
+  $blog-color-lila: rgb(208, 213, 244);
 
-  ///////////// SECOND PAGE /////////////
-  main {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    background: rgb(233, 255, 234);
+  $design-color-green: rgb(51, 148, 103);
+  $design-color-yellow: rgb(245, 221, 59);
+  $design-color-red: rgb(215, 61, 69);
+  ///////////////////////////////////////////
+  font-family: $ff-space-grotesk;
+  // font-family: $ff-grotesk-mono;
+  background-color: $blog-color-bg;
+  width: 100vw;
+  font-weight: 300;
+  position: relative;
+  // font-size: 2rem;
 
-    // BACK ARROW
-    .left-arrow {
-      .link-a {
-        color: $spotify-text-green;
-        &:hover {
-          color: $skillshare-green;
-        }
-      }
-      .hc-logo {
-        fill: transparent; //$font-sutil-gray-color;
-        fill: $skillshare-green;
-      }
-      &:hover {
-        .hc-logo {
-          fill: $skillshare-green;
-        }
+  .preloader {
+    transition: $trans-slow ease-out;
+    background: $blog-color-bg;
+    #emoji-loader {
+      animation: jump 3s ease-out 0.3s infinite alternate;
+    }
+    @keyframes jump {
+      to {
+        transform: translateY(0.7rem);
       }
     }
-
-    // MAIN CONTENT
-    .content {
+    #text-loader {
+      padding-top: 12rem;
+      color: $blog-text-color;
+      font-size: 1.8rem;
     }
   }
+  .absolute-nav {
+    position: fixed;
+    // position: absolute;
+    top: 0rem;
+    z-index: 19;
+    display: flex;
+    align-items: center;
 
-  footer {
-    height: 41vh;
-    background-color: $spotify-text-green;
-    color: beige;
-    #footer-div {
-      padding: 3rem;
+    .left-arrow {
+      top: 1rem;
+      @media (max-width: 768px) {
+        top: 1rem;
+      }
+      .link-a {
+        color: $blog-text-color;
+        &:hover {
+          color: $blog-text-color;
+        }
+      }
     }
-    a {
-      color: $skillshare-green;
-      &:hover {
-        color: white;
+  }
+  header {
+  }
+  main {
+    background: $blog-color-bg;
+    // height: 600vh;
+    position: relative;
+    display: grid;
+    font-weight: 400;
+    .main-header {
+      width: 100%;
+      line-height: 6rem;
+      height: 6rem;
+      text-align: center;
+      box-shadow: 0px 0.3rem 0.6rem #0000001e, 0px 0.15rem 0.2rem #00000017;
+      h1 {
+        color: $blog-text-color;
+        background-color: $blog-color-bg;
+        font-weight: 700;
+        font-size: 2.3rem;
+      }
+    }
+    .blogSections {
+      display: grid;
+      grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(
+          7%,
+          1fr
+        );
+      gap: 1rem;
+
+      .sections-holder {
+        grid-column: 2;
+        margin-top: 7rem;
+        margin-bottom: 11rem;
+        position: relative;
+        .section {
+          .section-top {
+            margin: 2rem;
+            .section-header {
+              margin-left: 2rem;
+              font-family: $ff-sans-serif;
+              font-size: 2.7rem;
+              text-transform: uppercase;
+              font-weight: 700;
+            }
+            .art-numbers {
+            }
+          }
+          .hidden {
+            display: none;
+          }
+          a {
+            text-decoration: none;
+            &:hover {
+              h3 {
+                color: $blue-purple-tech;
+              }
+            }
+            .article {
+              padding: 3.5rem;
+              margin-bottom: 4rem;
+              border-radius: 2rem;
+              background-color: $blog-color-box;
+              color: $blog-text-color;
+              h3 {
+                font-family: $ff-sans-serif;
+                font-size: 2rem;
+                font-weight: 900;
+                margin-bottom: 2rem;
+              }
+              p {
+                font-size: 1.5rem;
+              }
+              h6 {
+                padding-top: 2rem;
+                font-size: 1.5rem;
+                font-weight: 900;
+                text-decoration: underline;
+                &:hover {
+                  color: $blue-purple-tech;
+                }
+              }
+            }
+          }
+          #make-intro {
+            // #p-2 {
+            //   display: none;
+            // }
+            // &:hover {
+            //   #p-2 {
+            //     display: block;
+            //   }
+            // }
+          }
+          #make-design {
+          }
+        }
+
+        .imgs-wrapper {
+          // width: 100%;
+          // height: 100%;
+          // z-index: 1;
+          // // margin-top: 7rem;
+          // position: absolute;
+          // top: 7%;
+          // .inner-wrapper-rel {
+          //   position: relative;
+          //   width: 100%;
+          //   height: 100%;
+          // }
+        }
+      }
+    }
+
+    #trampolin-wrapper {
+      #trampolineEmoji {
+        opacity: 0.5;
+      }
+    }
+    .footer {
+      z-index: 1;
+      // position: absolute;
+      // position: fixed;
+      bottom: 0px;
+      height: 29rem;
+      width: 100%;
+      background: $blog-color-lila;
+
+      #footer-wrapper {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        color: black;
+        .footer-part {
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+              color: inherit;
+            }
+          }
+        }
+        .footer-l {
+          grid-column: 1;
+          align-self: center;
+          justify-self: center;
+          text-align: center;
+          h2 {
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+          div {
+            padding: 0.5rem;
+          }
+        }
+        .footer-r {
+          grid-column: 2;
+
+          .sub-wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-content: space-around;
+            justify-self: end;
+            text-align: right;
+            div {
+              padding: 1.2rem;
+              font-weight: 500;
+              .r-links {
+                padding: 1rem;
+              }
+              .arrow {
+                font-size: 2.5rem;
+              }
+            }
+          }
+        }
       }
     }
   }
