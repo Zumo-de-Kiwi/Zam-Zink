@@ -675,6 +675,11 @@ body main .blogSections .sections-holder .section a .article h6:hover {
   color: #6c5ffc;
 }
 
+body main .blogSections .sections-holder .section #make-intro h6 {
+  padding-left: 1rem;
+  text-decoration: none;
+}
+
 body main #trampolin-wrapper #trampolineEmoji {
   opacity: 0.5;
 }

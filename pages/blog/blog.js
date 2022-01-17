@@ -5,3 +5,17 @@ btnScroll.addEventListener('click', function (e) {
   main.scrollIntoView({ behavior: 'smooth' });
   // console.log(btnScrollTo, leftArrow);
 });
+
+// EVENT
+const makeIntro = document.querySelector('#make-intro');
+const introP2 = document.querySelector('#intro-p-2');
+const moreIntro = document.querySelector('.more-intro');
+console.log('Close triggers: ' + makeIntro);
+
+/////////// FUNCS ///////////////
+// PAWN
+const expandIntro = function () {
+  moreIntro.classList.add('hidden');
+  introP2.classList.remove('hidden');
+};
+makeIntro.addEventListener('click', expandIntro);
