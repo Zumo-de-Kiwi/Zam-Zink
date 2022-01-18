@@ -90,64 +90,19 @@ body {
 
   .content_wrap {
     grid-column: 2;
-    margin-top: 9vh;
-    // display: grid;
-    // @media (min-width: 320px) {
-    //   margin-top: 4vh;
-    //   padding-left: 5vw;
-    //   padding-right: 5vw;
-    //   .content-name {
-    //     padding-bottom: 5vh;
-    //     text-align: left;
-    //   }
-    // }
+    margin-top: 11vh;
 
-    // @media (min-width: 576.02px) {
-    //   margin-top: 9vh;
-    //   padding-left: 7vw;
-    //   padding-right: 6vw;
-    //   .content-name {
-    //     padding-bottom: 7vh;
-    //     text-align: left;
-    //   }
-    // }
-
-    // @media (min-width: 768px) {
-    //   margin-top: 13vh;
-    //   // padding-top: 13vh; //need to change
-    //   padding-left: 7vw;
-    //   padding-right: 6vw;
-    //   .content-name {
-    //     padding-bottom: 8vh;
-    //     text-align: center;
-    //     // padding-right: 11.5vh;
-    //   }
-    // }
-
-    // @media (min-width: 1024px) {
-    //   padding-left: 13vw;
-    //   padding-right: 13vw;
-    //   .content-name {
-    //     padding-bottom: 10vh;
-    //     text-align: center;
-    //     // padding-right: 11.5vh;
-    //   }
-    // }
-
-    // @media (min-width: 1400px) {
-    //   padding-left: 20vw;
-    //   padding-right: 20vw;
-    // }
     ///////// Hi, I am Héctor /////////
     .content-name {
       margin-bottom: 7vh;
-      margin-left: 1.7rem;
+      // margin-left: 1.3rem;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0.2, 'wght' $font-weight-heavy,
         $slnt;
       text-align: left;
-      color: $sutil-dark-purple-gray-color;
+      // color: $sutil-dark-purple-gray-color;
+      color: rgb(112, 112, 112);
       word-spacing: 0.7px;
 
       // .coma {
@@ -157,7 +112,7 @@ body {
       //   ); //-13px // move the coma and the following words to the left
       // }
       .complete-name {
-        color: $sutil-dark-purple-gray-color;
+        color: rgb(116, 116, 116);
         cursor: $cursor-please-fingers;
         text-decoration: none;
         .first-name,
@@ -395,7 +350,7 @@ footer {
     .line {
       text-align: center;
       span {
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-variation-settings: 'MONO' 0.8, 'CASL' 0, 'wght' $font-weight-light,
           $slnt;
         color: $background-color;

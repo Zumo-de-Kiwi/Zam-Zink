@@ -64,7 +64,7 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(0.5vw + 0.4vw + 30px);
+  font-size: calc(0vw + 0.4vw + 30px);
 }
 
 body .left-arrow {
@@ -301,7 +301,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   font-family: Monaco, Consolas, 'Courier New', monospace;
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
 }
 
 .preload-finish {
@@ -550,7 +550,7 @@ body .preloader #emoji-loader {
 body .preloader #text-loader {
   padding-top: 12rem;
   color: #3e3d3c;
-  font-size: calc(0.5vw + 0.3vw + 13px);
+  font-size: calc(0vw + 0.3vw + 13px);
 }
 
 body .absolute-nav {
@@ -818,8 +818,8 @@ body main #drawSections #noodlesDraws picture {
 body main #drawSections #noodlesDraws #hidro {
   place-self: center;
   padding-top: 10vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 body main #drawSections #noodlesDraws #lin-club {
@@ -1048,18 +1048,18 @@ body main #drawSections #randomDraws #fin4 {
   body main #drawSections #noodlesDraws #hidro {
     place-self: center;
     padding-top: 5vh;
-    padding-left: calc(5vw + 15rem);
-    padding-right: calc(5vw + 15rem);
+    padding-left: calc(5vw + 23rem);
+    padding-right: calc(5vw + 23rem);
   }
   body main #drawSections #noodlesDraws #pistola {
     padding-top: 7vh;
-    padding-left: calc(5vw + 5rem);
-    padding-right: calc(5vw + 5rem);
+    padding-left: calc(5vw + 9rem);
+    padding-right: calc(5vw + 9rem);
     padding-bottom: 13vh;
   }
   body main #drawSections #noodlesDraws #lin-club {
-    padding-left: calc(5vw + 7rem);
-    padding-right: calc(5vw + 7rem);
+    padding-left: calc(5vw + 9rem);
+    padding-right: calc(5vw + 9rem);
     padding-bottom: 0vh;
   }
   body main #drawSections #noodlesDraws #flora-color {
@@ -1291,114 +1291,78 @@ body main #drawSections #randomDraws #fin4 {
   }
 }
 
-body #footer {
-  z-index: 0;
-  position: relative;
-  height: 50vh;
-  bottom: 0px;
+body .footer {
+  z-index: 19;
+  height: 29rem;
   width: 100%;
-  background: #85c288;
+  background: #f0f0f0;
+  color: #85c288;
+  margin-top: 2rem;
+}
+
+body .footer #footer-wrapper {
+  height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 360px 1fr;
+  grid-template-columns: minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px) minmax(7%, 1fr);
+  gap: 2rem;
+  padding: 2rem;
 }
 
-body #footer #wrapper {
-  z-index: -1;
-  grid-column: 2;
-  display: grid;
-  justify-content: center;
-  gap: 4rem;
-  grid-template-rows: 1fr 4rem 4rem 1fr;
-  color: white;
+body .footer #footer-wrapper .footer-part a {
+  color: inherit;
+  text-decoration: none;
 }
 
-body #footer #wrapper span {
-  transition: 0.3s;
-  margin: 0.5rem;
+body .footer #footer-wrapper .footer-part a:hover {
+  color: #f4b5c2;
 }
 
-body #footer #wrapper .morePrj {
-  z-index: -1;
-  text-decoration-color: transparent;
-  color: #eeebe7;
-  font-size: 1.8rem;
+body .footer #footer-wrapper .footer-l {
+  grid-column: 1 /3;
   align-self: center;
-  transition: 0.3s;
+  justify-self: center;
+  text-align: center;
 }
 
-body #footer #wrapper .morePrj:hover {
-  text-decoration-color: white;
+body .footer #footer-wrapper .footer-l h2 {
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-body #footer #wrapper .morePrj:active {
-  text-decoration-color: white;
+body .footer #footer-wrapper .footer-l div {
+  padding: 0.5rem;
 }
 
-body #footer #wrapper #nextPrj {
-  grid-row: 2;
-  margin-left: 0rem;
+body .footer #footer-wrapper .footer-r {
+  grid-column: 3;
 }
 
-body #footer #wrapper #nextPrj:hover #Rarrow {
-  margin-left: 1rem;
+body .footer #footer-wrapper .footer-r .sub-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  text-align: right;
 }
 
-body #footer #wrapper #nextPrj:active #Rarrow {
-  margin-left: 1rem;
+body .footer #footer-wrapper .footer-r .sub-wrapper div {
+  padding: 1.2rem;
+  font-weight: 500;
 }
 
-body #footer #wrapper #prevPrj {
-  grid-row: 3;
-  margin-right: 0rem;
+body .footer #footer-wrapper .footer-r .sub-wrapper div .r-links {
+  padding: 1rem;
 }
 
-body #footer #wrapper #prevPrj:hover #Larrow {
-  margin-right: 1rem;
+body .footer #footer-wrapper .footer-r .sub-wrapper div #making-of::after {
+  content: 'the making of';
 }
 
-body #footer #wrapper #prevPrj:active #Larrow {
-  margin-right: 1rem;
+body .footer #footer-wrapper .footer-r .sub-wrapper div #making-of:hover::after {
+  content: 'the Drawing Page';
 }
 
-@media (min-width: 768px) {
-  body #footer {
-    height: 40vh;
-  }
-  body #footer #wrapper {
-    grid-column: 1/ 4;
-    justify-content: center;
-    grid-template-rows: 1fr 4rem 4rem 1fr;
-  }
-  body #footer #wrapper .morePrj {
-    font-size: 2rem;
-    align-self: center;
-    transition: 0.3s;
-  }
-  body #footer #wrapper .morePrj:hover {
-    text-decoration-color: white;
-  }
-  body #footer #wrapper .morePrj:active {
-    text-decoration-color: white;
-  }
-  body #footer #wrapper #nextPrj {
-    grid-row: 2;
-    justify-self: start;
-    margin-left: 0rem;
-  }
-  body #footer #wrapper #nextPrj:hover #Rarrow {
-    margin-left: 1rem;
-  }
-  body #footer #wrapper #nextPrj:active #Rarrow {
-    margin-left: 1rem;
-  }
-  body #footer #wrapper #prevPrj {
-    grid-row: 3;
-    margin-right: 0rem;
-  }
-  body #footer #wrapper #prevPrj:hover #Larrow {
-    margin-right: 1rem;
-  }
-  body #footer #wrapper #prevPrj:active #Larrow {
-    margin-right: 1rem;
-  }
+body .footer #footer-wrapper .footer-r .sub-wrapper div .arrow {
+  font-size: 2.5rem;
 }

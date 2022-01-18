@@ -64,7 +64,7 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(0.5vw + 0.4vw + 30px);
+  font-size: calc(0vw + 0.4vw + 30px);
 }
 
 body .left-arrow {
@@ -301,7 +301,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   font-family: Monaco, Consolas, 'Courier New', monospace;
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
 }
 
 .preload-finish {
@@ -533,7 +533,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 620, "slnt" 0;
-  font-size: calc(0.5vw + 0.3vw + 13px);
+  font-size: calc(0vw + 0.3vw + 13px);
   /* The bitton to show the stuff */
   /* CLASSES TO MAKE MODAL WORK */
 }
@@ -579,7 +579,7 @@ body main .left-arrow:hover .hc-logo {
 body main .closeBtn {
   z-index: 99;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 400;
-  font-size: calc(0.5vw + 0.4vw + 30px);
+  font-size: calc(0vw + 0.4vw + 30px);
   color: #232522;
   padding: 4rem;
   padding-left: 6rem;
@@ -595,7 +595,7 @@ body main .closeBtn:hover {
 
 body main .titles {
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400;
-  font-size: calc(0.5vw + 0vw + 18px);
+  font-size: calc(0vw + 0vw + 18px);
   color: #232522;
   align-self: center;
   justify-self: center;
@@ -690,7 +690,7 @@ body main #center-box #center-content {
 body main #center-box #center-content #center-Ps {
   grid-column: 1/ 4;
   grid-row: 2 / 3;
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
   position: relative;
 }
 
@@ -725,7 +725,7 @@ body main #center-box #center-content #more-btns .more-btn {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   font-weight: 500;
   text-align: center;
-  font-size: calc(0.5vw - 0vw + 8px);
+  font-size: calc(0vw - 0vw + 8px);
   margin: 0px auto;
   border: 2px solid #333333;
   border-radius: 1.1rem;
@@ -887,15 +887,15 @@ body footer #footer-inside a {
 }
 
 body footer #footer-inside #who-really {
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
 }
 
 body footer #footer-inside #how-this-page {
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
 }
 
 body footer #footer-inside #contact {
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
   text-align: end;
 }
 
@@ -904,7 +904,7 @@ body footer #footer-inside #contact a {
 }
 
 body footer #footer-inside #cmyk {
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
   text-align: end;
   filter: grayscale(100%);
 }

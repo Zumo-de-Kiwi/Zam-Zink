@@ -318,8 +318,8 @@ body {
         #hidro {
           place-self: center;
           padding-top: 10vw;
-          padding-left: 2vw;
-          padding-right: 2vw;
+          padding-left: 5vw;
+          padding-right: 5vw;
         }
         #pistola {
         }
@@ -549,18 +549,18 @@ body {
           #hidro {
             place-self: center;
             padding-top: 5vh;
-            padding-left: calc(5vw + 15rem);
-            padding-right: calc(5vw + 15rem);
+            padding-left: calc(5vw + 23rem);
+            padding-right: calc(5vw + 23rem);
           }
           #pistola {
             padding-top: 7vh;
-            padding-left: calc(5vw + 5rem);
-            padding-right: calc(5vw + 5rem);
+            padding-left: calc(5vw + 9rem);
+            padding-right: calc(5vw + 9rem);
             padding-bottom: 13vh;
           }
           #lin-club {
-            padding-left: calc(5vw + 7rem);
-            padding-right: calc(5vw + 7rem);
+            padding-left: calc(5vw + 9rem);
+            padding-right: calc(5vw + 9rem);
             padding-bottom: 0vh;
           }
           #flora-color {
@@ -818,134 +818,207 @@ body {
     #trampolin-wrapper {
     }
   }
-  #footer {
-    z-index: 0;
-    position: relative;
-    height: 50vh;
-    bottom: 0px;
+
+  // DESIGN FOOTER
+  .footer {
+    z-index: 19;
+    height: 29rem;
     width: 100%;
-    background: rgb(133, 194, 136);
+    // background: rgb(133, 194, 136);
+    // color: $my-paper-color;
+    background: rgb(240, 240, 240);
+    color: rgb(133, 194, 136);
+    margin-top: 2rem;
 
-    display: grid;
-    grid-template-columns: 1fr 360px 1fr;
-    #wrapper {
-      z-index: -1;
-      grid-column: 2;
-
+    #footer-wrapper {
+      height: 100%;
+      width: 100%;
       display: grid;
-      justify-content: center;
-      gap: 4rem;
-      grid-template-rows: 1fr 4rem 4rem 1fr;
-      color: white;
+      grid-template-columns:
+        minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px)
+        minmax(7%, 1fr); // 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
 
-      span {
-        transition: $trans-normal;
-        margin: 0.5rem;
+      .footer-part {
+        a {
+          color: inherit;
+          text-decoration: none;
+          &:hover {
+            color: rgb(244, 181, 194);
+            // text-decoration: underline;
+          }
+        }
       }
-      .morePrj {
-        //a
-        z-index: -1;
-        text-decoration-color: transparent;
-
-        color: $my-paper-color;
-        font-size: 1.8rem;
+      .footer-l {
+        grid-column: 1 /3;
         align-self: center;
-        transition: $trans-normal;
-
-        &:hover {
-          text-decoration-color: white;
+        justify-self: center;
+        text-align: center;
+        h2 {
+          text-transform: uppercase;
+          font-weight: 500;
         }
-        &:active {
-          text-decoration-color: white;
-        }
-      }
-      #nextPrj {
-        grid-row: 2;
-
-        margin-left: 0rem;
-        &:hover {
-          #Rarrow {
-            margin-left: 1rem;
-          }
-        }
-        &:active {
-          #Rarrow {
-            margin-left: 1rem;
-          }
+        div {
+          padding: 0.5rem;
         }
       }
-      #prevPrj {
-        grid-row: 3;
+      .footer-r {
+        grid-column: 3;
 
-        margin-right: 0rem;
-        &:hover {
-          #Larrow {
-            margin-right: 1rem;
-          }
-        }
-        &:active {
-          #Larrow {
-            margin-right: 1rem;
-          }
-        }
-      }
-    }
-  }
+        .sub-wrapper {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-self: end;
+          text-align: right;
 
-  // for desktop
-  @media (min-width: 768px) {
-    #footer {
-      // position: sticky;
-      height: 40vh;
-      #wrapper {
-        grid-column: 1/ 4;
-        justify-content: center;
-        grid-template-rows: 1fr 4rem 4rem 1fr;
-        // color: white;
-        .morePrj {
-          //a
-          font-size: 2rem;
-          align-self: center;
-          transition: $trans-normal;
-
-          &:hover {
-            text-decoration-color: white;
-          }
-          &:active {
-            text-decoration-color: white;
-          }
-        }
-        #nextPrj {
-          grid-row: 2;
-          justify-self: start;
-          margin-left: 0rem;
-          &:hover {
-            #Rarrow {
-              margin-left: 1rem;
+          div {
+            padding: 1.2rem;
+            font-weight: 500;
+            .r-links {
+              padding: 1rem;
             }
-          }
-          &:active {
-            #Rarrow {
-              margin-left: 1rem;
+            #making-of {
+              &::after {
+                content: 'the making of';
+              }
+              &:hover::after {
+                content: 'the Drawing Page';
+              }
             }
-          }
-        }
-        #prevPrj {
-          grid-row: 3;
-
-          margin-right: 0rem;
-          &:hover {
-            #Larrow {
-              margin-right: 1rem;
-            }
-          }
-          &:active {
-            #Larrow {
-              margin-right: 1rem;
+            .arrow {
+              font-size: 2.5rem;
             }
           }
         }
       }
     }
+  } // ORIGINAL FOOTER
+  #footer {
+    // z-index: 0;
+    // position: relative;
+    // height: 50vh;
+    // bottom: 0px;
+    // width: 100%;
+    // background: rgb(133, 194, 136);
+
+    // display: grid;
+    // grid-template-columns: 1fr 360px 1fr; // for desktop
+    // @media (min-width: 768px) {
+    //   // position: sticky;
+    //   height: 40vh;
+    //   #wrapper {
+    //     grid-column: 1/ 4;
+    //     justify-content: center;
+    //     grid-template-rows: 1fr 4rem 4rem 1fr;
+    //     // color: white;
+    //     .morePrj {
+    //       //a
+    //       font-size: 2rem;
+    //       align-self: center;
+    //       transition: $trans-normal;
+
+    //       &:hover {
+    //         text-decoration-color: white;
+    //       }
+    //       &:active {
+    //         text-decoration-color: white;
+    //       }
+    //     }
+    //     #nextPrj {
+    //       grid-row: 2;
+    //       justify-self: start;
+    //       margin-left: 0rem;
+    //       &:hover {
+    //         #Rarrow {
+    //           margin-left: 1rem;
+    //         }
+    //       }
+    //       &:active {
+    //         #Rarrow {
+    //           margin-left: 1rem;
+    //         }
+    //       }
+    //     }
+    //     #prevPrj {
+    //       grid-row: 3;
+
+    //       margin-right: 0rem;
+    //       &:hover {
+    //         #Larrow {
+    //           margin-right: 1rem;
+    //         }
+    //       }
+    //       &:active {
+    //         #Larrow {
+    //           margin-right: 1rem;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    // #wrapper {
+    //   z-index: -1;
+    //   grid-column: 2;
+
+    //   display: grid;
+    //   justify-content: center;
+    //   gap: 4rem;
+    //   grid-template-rows: 1fr 4rem 4rem 1fr;
+    //   color: white;
+
+    //   span {
+    //     transition: $trans-normal;
+    //     margin: 0.5rem;
+    //   }
+    //   .morePrj {
+    //     //a
+    //     z-index: -1;
+    //     text-decoration-color: transparent;
+
+    //     color: $my-paper-color;
+    //     font-size: 1.8rem;
+    //     align-self: center;
+    //     transition: $trans-normal;
+
+    //     &:hover {
+    //       text-decoration-color: white;
+    //     }
+    //     &:active {
+    //       text-decoration-color: white;
+    //     }
+    //   }
+    //   #nextPrj {
+    //     grid-row: 2;
+
+    //     margin-left: 0rem;
+    //     &:hover {
+    //       #Rarrow {
+    //         margin-left: 1rem;
+    //       }
+    //     }
+    //     &:active {
+    //       #Rarrow {
+    //         margin-left: 1rem;
+    //       }
+    //     }
+    //   }
+    //   #prevPrj {
+    //     grid-row: 3;
+
+    //     margin-right: 0rem;
+    //     &:hover {
+    //       #Larrow {
+    //         margin-right: 1rem;
+    //       }
+    //     }
+    //     &:active {
+    //       #Larrow {
+    //         margin-right: 1rem;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }

@@ -64,7 +64,7 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(0.5vw + 0.4vw + 30px);
+  font-size: calc(0vw + 0.4vw + 30px);
 }
 
 body .left-arrow {
@@ -301,7 +301,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   font-family: Monaco, Consolas, 'Courier New', monospace;
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
 }
 
 .preload-finish {
@@ -579,7 +579,7 @@ body {
 
 .main .navigation ul li {
   display: inline-block;
-  font-size: calc(0.5vw + 0vw + 18px);
+  font-size: calc(0vw + 0vw + 18px);
   font-variation-settings: "MONO" 0, "CASL" 0.1, "wght" 620, "slnt" 0;
 }
 
@@ -605,22 +605,21 @@ body {
 
 .main .content_wrap {
   grid-column: 2;
-  margin-top: 9vh;
+  margin-top: 11vh;
 }
 
 .main .content_wrap .content-name {
   margin-bottom: 7vh;
-  margin-left: 1.7rem;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-size: calc(0.5vw + 0.4vw + 30px);
+  font-size: calc(0vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 800, "slnt" 0;
   text-align: left;
-  color: #4d435b;
+  color: #707070;
   word-spacing: 0.7px;
 }
 
 .main .content_wrap .content-name .complete-name {
-  color: #4d435b;
+  color: #747474;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   text-decoration: none;
 }
@@ -636,7 +635,7 @@ body {
 
 .main .content_wrap .content-name .complete-name .first-name::after,
 .main .content_wrap .content-name .complete-name .family-name::after {
-  font-size: calc(0.5vw - 0vw + 12px);
+  font-size: calc(0vw - 0vw + 12px);
   color: rgba(0, 0, 0, 0);
   position: absolute;
   text-align: center;
@@ -678,7 +677,7 @@ body {
 }
 
 .main .content_wrap .content-portfolio {
-  font-size: calc(0.5vw + 0vw + 18px);
+  font-size: calc(0vw + 0vw + 18px);
   text-align: left;
   letter-spacing: -0.32px;
   line-height: 1.5;
@@ -854,7 +853,7 @@ footer .footer .line {
 }
 
 footer .footer .line span {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
   padding: 12px;
@@ -865,7 +864,7 @@ footer .footer .line span {
 
 @media (max-width: 800px) {
   footer .footer .line span {
-    font-size: calc(0.5vw - 0vw + 12px);
+    font-size: calc(0vw - 0vw + 12px);
     line-height: 2.4rem;
     padding-bottom: 20vh;
   }
@@ -895,14 +894,14 @@ footer .footer .line .dangerSpan {
   footer .footer .line {
     padding-left: 2px;
     padding-right: 12px;
-    font-size: calc(0.5vw - 0vw + 12px);
+    font-size: calc(0vw - 0vw + 12px);
   }
 }
 
 footer .footer #githublink {
   color: #00ff84;
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
-  font-size: calc(0.5vw - 0vw + 8px);
+  font-size: calc(0vw - 0vw + 8px);
   text-align: center;
   padding: 1.6vh;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🖖</text></svg>") 16 0, auto;
