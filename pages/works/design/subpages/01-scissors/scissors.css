@@ -486,7 +486,7 @@ body main .subpage-wrapper .subpage-content-1 .info-text {
 
 body main .subpage-wrapper .subpage-content-1 .margin-top {
   grid-column: 1 / 4;
-  margin: 6rem;
+  margin: 5rem;
   grid-row: 1;
 }
 
@@ -604,7 +604,7 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-2 #el-2::aft
   text-align: center;
   display: block;
   color: white;
-  content: '↑ She is one of my carziest friend ↑';
+  content: '↑ She is one of my craziest friend ↑';
   background-color: #fcbd33;
   grid-column: 1/ 4;
   border-radius: 0px 0px 25px 25px;

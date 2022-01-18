@@ -231,6 +231,10 @@ body {
             left: 52.1%;
             top: 3.6%;
             width: 17.7%;
+            filter: sepia(100%) hue-rotate(95deg) saturate(170%);
+            &:hover {
+              filter: none;
+            }
           }
           #read-me {
             left: 81.8%;
@@ -244,13 +248,17 @@ body {
             left: 73.4%;
             top: 19.35%;
             width: 21.9%;
+            // filter: sepia(100%) hue-rotate(95deg) saturate(170%);
+            // &:hover {
+            //   filter: none;
+            // }
           }
           .comb {
             left: 9.8%;
             top: 34.4%;
             width: 10.7%;
             transform: rotateZ(180deg);
-            filter: none;
+
             &:hover {
               transform: rotateZ(180deg);
               // filter: none;
@@ -258,6 +266,7 @@ body {
             &#comb-normal {
             }
             &#comb-hover {
+              filter: none;
               opacity: 0%;
               transition: 0.3s;
               &:hover {
@@ -276,7 +285,6 @@ body {
             top: 44.9%;
             width: 33%;
             z-index: 1;
-            // filter: grayscale(11%);
             &#ikea {
               pointer-events: none;
             }
@@ -503,7 +511,7 @@ body {
           color: $design-text-color;
           box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.33);
 
-          overflow: scroll;
+          overflow-y: scroll;
           transition: 0.3s;
           // &.active-modal {
           //   margin: 13%; // put a little less than the .modal

@@ -580,6 +580,11 @@ body main .designSections #green-holder .green-imgs-wrapper #scissors {
   left: 52.1%;
   top: 3.6%;
   width: 17.7%;
+  filter: sepia(100%) hue-rotate(95deg) saturate(170%);
+}
+
+body main .designSections #green-holder .green-imgs-wrapper #scissors:hover {
+  filter: none;
 }
 
 body main .designSections #green-holder .green-imgs-wrapper #read-me {
@@ -603,7 +608,6 @@ body main .designSections #green-holder .green-imgs-wrapper .comb {
   top: 34.4%;
   width: 10.7%;
   transform: rotateZ(180deg);
-  filter: none;
 }
 
 body main .designSections #green-holder .green-imgs-wrapper .comb:hover {
@@ -611,6 +615,7 @@ body main .designSections #green-holder .green-imgs-wrapper .comb:hover {
 }
 
 body main .designSections #green-holder .green-imgs-wrapper .comb#comb-hover {
+  filter: none;
   opacity: 0%;
   transition: 0.3s;
 }
@@ -867,7 +872,7 @@ body main .designSections .modals .modal {
   background-color: white;
   color: #363636;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.33);
-  overflow: scroll;
+  overflow-y: scroll;
   transition: 0.3s;
 }
 

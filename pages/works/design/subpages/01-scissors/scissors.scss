@@ -124,7 +124,7 @@ body {
         .margin-top {
           // height: 200rem;
           grid-column: 1 / 4;
-          margin: 6rem;
+          margin: 5rem;
           grid-row: 1;
         }
 
@@ -140,35 +140,7 @@ body {
           padding-top: 6rem;
           grid-row: 2;
         }
-        // .wrapper-1 {
-        //   grid-row: 4;
-        //   #el-1 {
-        //     width: 50%;
-        //   }
-        // }
-        // #up-txt {
-        //   grid-row: 5;
-        //   font-size: 1.3rem;
-        //   padding-top: 100%;
-        //   text-align: right;
-        //   padding-left: 10%;
-        // }
-        // .download-stickers {
-        //   grid-row: 6;
-        //   text-align: right;
-        //   padding-bottom: 30%;
-        //   padding-top: 110%;
-        //   h4 {
-        //     padding-bottom: 0.3rem;
-        //   }
-        //   .link {
-        //     padding-bottom: 0.7rem;
-        //     color: rgb(70, 70, 70);
-        //     &:hover {
-        //       color: rgb(56, 233, 7);
-        //     }
-        //   }
-        // }
+
         ////////////////////////
         // COLUMN 2 ///////////
         .cl-2 {
@@ -181,11 +153,6 @@ body {
           padding-top: 6rem;
           grid-row: 2;
         }
-        // #all-stickers {
-        //   z-index: 5;
-        //   grid-row: 5 / 7;
-        //   margin-bottom: 18rem;
-        // }
         ////////////////////////
         // COLUMN 3 //////////
         .cl-3 {
@@ -198,14 +165,6 @@ body {
           grid-row: 2;
           padding-top: 6rem;
         }
-
-        // #down-txt {
-        //   grid-row: 6;
-        //   font-size: 1.3rem;
-        //   padding-top: 20%;
-        //   padding-left: 10%;
-        //   padding-right: 10%;
-        // }
 
         ////////// PART 2 ////////
         ////////// FULL-SIZE ////////
@@ -292,7 +251,7 @@ body {
               text-align: center;
               display: block;
               color: white;
-              content: '↑ She is one of my carziest friend ↑';
+              content: '↑ She is one of my craziest friend ↑';
               background-color: #fcbd33;
               grid-column: 1/ 4;
               border-radius: 0px 0px 25px 25px;

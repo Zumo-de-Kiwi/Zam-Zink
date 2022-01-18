@@ -108,12 +108,6 @@ body {
           grid-row: 1;
           margin: 6rem;
         }
-        // HERO IMG
-        // #hero-outline {
-        //   grid-column: 1 / 4;
-        //   grid-row: 2;
-        //   margin-bottom: 10%;
-        // }
 
         ////////////////////////
         // COLUMN 1 ////////////
@@ -135,8 +129,6 @@ body {
         .why-text2 {
           grid-row: 6 /8;
           text-align: right;
-          .w-para {
-          }
         }
         #pink {
           grid-row: 4;
@@ -158,7 +150,7 @@ body {
           grid-column: 2;
         }
         #what {
-          padding-top: 7rem;
+          padding-top: 3rem;
           grid-row: 2;
           text-align: center;
         }
