@@ -8,7 +8,8 @@ body {
   $blog-color-bg: rgb(239, 241, 245);
   $blog-color-lila: rgb(208, 213, 244);
   ///////////////////////////////////////////
-  font-family: $ff-space-grotesk;
+  // font-family: $ff-space-grotesk;
+  font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
   // font-family: $ff-grotesk-mono;
   background-color: $blog-color-bg;
   width: 100vw;
@@ -43,13 +44,17 @@ body {
 
     .left-arrow {
       top: 1.5rem;
+
       @media (max-width: 768px) {
         top: 1rem;
       }
       .link-a {
+        font-family: 'Mochiy Pop P One', sans-serif;
         color: $blog-text-color;
+        opacity: 0.5;
+        font-size: 3rem;
         &:hover {
-          color: $blog-text-color;
+          opacity: 0.7;
         }
       }
     }
@@ -57,23 +62,22 @@ body {
   header {
     .main-header {
       width: 100%;
-      line-height: 7.3rem;
-      height: 7.3rem;
+      line-height: 19rem;
+      height: 19rem;
       text-align: center;
       z-index: 1;
       box-shadow: 0px 0.3rem 0.6rem #0000001e, 0px 0.15rem 0.2rem #00000017;
       h1 {
         color: $blog-text-color;
-        opacity: 0.4;
+        opacity: 0.3;
         background-color: $blog-color-bg;
-        font-weight: 900;
-        font-size: 3.1rem;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        font-size: 3.7rem;
       }
     }
   }
   main {
     background: $blog-color-bg;
-    // height: 600vh;
     position: relative;
     display: grid;
     font-weight: 400;
@@ -88,20 +92,30 @@ body {
 
       .sections-holder {
         grid-column: 2;
-        margin-top: 7rem;
+        margin-top: 2rem;
         margin-bottom: 11rem;
         position: relative;
         .section {
           .section-top {
-            margin: 2rem;
+            margin: 1.3rem;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .section-header {
-              margin-left: 2rem;
-              font-family: $ff-sans-serif;
-              font-size: 2.7rem;
+              margin-left: 5.3rem;
+              // font-family: 'Mochiy Pop P One', sans-serif;
+              font-size: 3.4rem;
               text-transform: uppercase;
-              font-weight: 700;
+              font-weight: 400;
             }
             .art-numbers {
+              display: none;
+              @media (min-width: 700px) {
+                font-size: 1.7rem;
+                display: block;
+                padding-right: 4rem;
+              }
             }
           }
           .hidden {
@@ -119,11 +133,12 @@ body {
               .article {
                 padding: 3.5rem;
                 margin: 31px;
+                margin-top: 13px;
                 border-radius: 2rem;
                 background-color: $blog-color-box;
                 color: $blog-text-color;
                 h3 {
-                  font-family: $ff-sans-serif;
+                  // font-family: $ff-sans-serif;
                   font-size: 2rem;
                   font-weight: 900;
                   margin-bottom: 2rem;

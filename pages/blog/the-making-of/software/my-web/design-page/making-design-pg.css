@@ -410,6 +410,7 @@ body header .absolute-nav .left-arrow .link-a {
   color: #21232c;
   opacity: 0.5;
   font-size: 3rem;
+  padding: 2rem;
 }
 
 body header .absolute-nav .left-arrow .link-a:hover {
@@ -499,11 +500,46 @@ body main .blog-wrapper .ps-wrapper .no-margin-btm {
   margin-bottom: 0rem;
 }
 
+body main .blog-wrapper .ps-wrapper .margin-top {
+  margin-top: 2rem;
+}
+
 body main .blog-wrapper .ps-wrapper .paragraph {
   font-size: 1.9rem;
   margin-bottom: 30px;
   line-height: 1.4;
   font-weight: 400;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph .light-text {
+  font-weight: 200;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph a {
+  color: #21232c;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph a:hover {
+  color: #7686ff;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph i {
+  font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 650, 'slnt' 0;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph code {
+  font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
+  background-color: #eff1f5;
+  padding: 4px 6px;
+  border-radius: 5px;
+  margin: 0px 3px;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph strong {
+  font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 700, 'slnt' 0;
 }
 
 @media (max-width: 800px) {
@@ -545,6 +581,49 @@ body main .blog-wrapper .hidden {
   display: none;
 }
 
+body main .btn-wrapper {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+body main .btn-wrapper .btns {
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 2rem;
+  transition: 0.15s;
+  background: #7686ff;
+}
+
+body main .btn-wrapper .btns:hover {
+  background: #21232c;
+}
+
+body main .btn-wrapper .btns a {
+  text-decoration: none;
+  color: white;
+  height: 6rem;
+  line-height: 6rem;
+  min-width: 18%;
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+body main .btn-wrapper .btns.prev a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body main .btn-wrapper .btns.back-design a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>☝️</text></svg>") 16 0, auto;
+}
+
+body main .btn-wrapper .btns.next a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
+}
+
 body main #trampolin-wrapper #trampolineEmoji {
   opacity: 0.5;
 }
@@ -554,9 +633,9 @@ body main .footer {
   margin-top: 11rem;
   border-radius: 2rem 2rem 0rem 0rem;
   bottom: 0px;
-  height: 27rem;
+  height: 29rem;
   width: 100%;
-  background: #d0d5f4;
+  background: #ced9f5;
 }
 
 body main .footer #footer-wrapper {
@@ -566,7 +645,7 @@ body main .footer #footer-wrapper {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
-  color: black;
+  color: #21232c;
 }
 
 body main .footer #footer-wrapper .footer-part a {
@@ -589,7 +668,6 @@ body main .footer #footer-wrapper .footer-l {
 body main .footer #footer-wrapper .footer-l h2 {
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 0.9rem;
 }
 
 body main .footer #footer-wrapper .footer-l div {
@@ -620,4 +698,12 @@ body main .footer #footer-wrapper .footer-r .sub-wrapper div .r-links {
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper div .arrow {
   font-size: 2.5rem;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  opacity: 0.6;
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper div .arrow:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  transform: scaleY(-0.7rem);
 }

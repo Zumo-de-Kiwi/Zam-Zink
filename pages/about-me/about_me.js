@@ -193,12 +193,12 @@ let pNum = 1;
 const p1 =
   'I come from a Mediterranean village which has an onion as a coat of arms to an island with surplus of Silicon Pies and a chicken as an enemy.';
 const p2 =
-  ' My perfect day is the day when I learn something new. From learning an "eggy" technology to an outlandish dish. Btw, friends are a good source of learning and inspiration.';
+  ' My perfect day is when I learn something new, from an eggy technology to an outlandish dish. Btw, friends are a good source of learning and inspiration.';
 const p3 =
-  'If my hobbies would count as badges, I will fill my scout jacket pretty soon.';
+  'If my hobbies counted as badges, I would fill my scout jacket pretty soon.';
 const p4 =
-  'I really appreciated an out-of-box design, listening a open-minder song or watch a non-cliche film is welcomed.';
-const p5 = 'You really want more about me?';
+  'I really enjoy contemplating an out-of-box design, listening to an open-minded song or watching a non-cliché film.';
+const p5 = 'Do you really wish to know more about me?';
 const p6 = 'Really!? The Midnight Gospel is one of my favourite series, too.';
 const pComical = 'One photo tells more than a thousand words.';
 

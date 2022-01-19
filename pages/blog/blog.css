@@ -359,7 +359,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: #eff1f5;
   width: 100vw;
   font-weight: 300;
@@ -406,17 +406,20 @@ body .absolute-nav .left-arrow {
 }
 
 body .absolute-nav .left-arrow .link-a {
+  font-family: 'Mochiy Pop P One', sans-serif;
   color: #21232c;
+  opacity: 0.5;
+  font-size: 3rem;
 }
 
 body .absolute-nav .left-arrow .link-a:hover {
-  color: #21232c;
+  opacity: 0.7;
 }
 
 body header .main-header {
   width: 100%;
-  line-height: 7.3rem;
-  height: 7.3rem;
+  line-height: 19rem;
+  height: 19rem;
   text-align: center;
   z-index: 1;
   box-shadow: 0px 0.3rem 0.6rem #0000001e, 0px 0.15rem 0.2rem #00000017;
@@ -424,10 +427,10 @@ body header .main-header {
 
 body header .main-header h1 {
   color: #21232c;
-  opacity: 0.4;
+  opacity: 0.3;
   background-color: #eff1f5;
-  font-weight: 900;
-  font-size: 3.1rem;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 3.7rem;
 }
 
 body main {
@@ -445,21 +448,36 @@ body main .blogSections {
 
 body main .blogSections .sections-holder {
   grid-column: 2;
-  margin-top: 7rem;
+  margin-top: 2rem;
   margin-bottom: 11rem;
   position: relative;
 }
 
 body main .blogSections .sections-holder .section .section-top {
-  margin: 2rem;
+  margin: 1.3rem;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body main .blogSections .sections-holder .section .section-top .section-header {
-  margin-left: 2rem;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 2.7rem;
+  margin-left: 5.3rem;
+  font-size: 3.4rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+body main .blogSections .sections-holder .section .section-top .art-numbers {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  body main .blogSections .sections-holder .section .section-top .art-numbers {
+    font-size: 1.7rem;
+    display: block;
+    padding-right: 4rem;
+  }
 }
 
 body main .blogSections .sections-holder .section .hidden {
@@ -477,13 +495,13 @@ body main .blogSections .sections-holder .section .articles-holder a:hover h3 {
 body main .blogSections .sections-holder .section .articles-holder a .article {
   padding: 3.5rem;
   margin: 31px;
+  margin-top: 13px;
   border-radius: 2rem;
   background-color: white;
   color: #21232c;
 }
 
 body main .blogSections .sections-holder .section .articles-holder a .article h3 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 2rem;
