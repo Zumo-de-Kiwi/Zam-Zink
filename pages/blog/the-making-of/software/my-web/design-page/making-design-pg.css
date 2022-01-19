@@ -359,75 +359,204 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
-  width: 100vw;
-  background-color: white;
+  font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: #eff1f5;
   font-weight: 300;
   position: relative;
 }
 
 body .preloader {
   transition: 0.45s ease-out;
-  background: #339467;
+  background: #eff1f5;
 }
 
 body .preloader #emoji-loader {
-  animation: jump 1.5s ease 0.3s infinite alternate;
+  animation: jump 3s ease-out 0.3s infinite alternate;
+}
+
+@keyframes jump {
+  to {
+    transform: translateY(0.7rem);
+  }
 }
 
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: #363636;
+  color: #21232c;
   font-size: 1.8rem;
 }
 
-body .absolute-nav {
-  position: fixed;
-  top: 0rem;
-  z-index: 19;
-  display: flex;
-  align-items: center;
+body header {
+  margin-top: 9rem;
+  margin-bottom: 13rem;
 }
 
-body .absolute-nav .left-arrow .link-a {
-  color: #363636;
+body header .absolute-nav {
+  text-align: center;
 }
 
-body .absolute-nav .left-arrow .link-a:hover {
-  color: #363636;
+body header .absolute-nav .left-arrow {
+  top: 0.9rem;
 }
 
-body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {
-  background-color: #363636;
+@media (max-width: 768px) {
+  body header .absolute-nav .left-arrow {
+    top: 1rem;
+  }
+}
+
+body header .absolute-nav .left-arrow .link-a {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: #21232c;
+  opacity: 0.5;
+  font-size: 3rem;
+}
+
+body header .absolute-nav .left-arrow .link-a:hover {
+  opacity: 0.7;
+}
+
+body header .absolute-nav h1 {
+  color: #21232c;
+  opacity: 0.4;
+  background-color: #eff1f5;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 3.7rem;
+}
+
+body header .absolute-nav h1 span {
+  opacity: 0.31;
+  font-size: 2.7rem;
+}
+
+@media (max-width: 900px) {
+  body header .absolute-nav h1 span {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  body header {
+    z-index: -1;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  body header .absolute-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .absolute-nav h1 {
+    transform: rotate(90deg);
+    align-self: center;
+    hyphens: auto;
+    opacity: 0.2;
+    max-width: 21rem;
+    margin-right: 0px;
+    font-size: 4.7rem;
+  }
 }
 
 body main {
-  background: white;
+  background: #eff1f5;
   position: relative;
   display: grid;
   font-weight: 400;
 }
 
-body main .main-header {
-  width: 100%;
-  line-height: 8rem;
-  height: 8rem;
-  text-align: center;
-  box-shadow: 0px 0.3rem 0.3rem #463a2f;
+body main .blog-wrapper {
+  display: grid;
+  grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
 }
 
-body main .main-header h1 {
-  color: #3e3e3e;
-  background-color: #f5f3e6;
+body main .blog-wrapper .ps-wrapper {
+  grid-column: 2;
+  padding: 5rem;
+  padding-top: 4.1rem;
+  margin-bottom: 7rem;
+  border-radius: 3rem;
+  background-color: white;
+  color: #21232c;
+}
+
+body main .blog-wrapper .ps-wrapper .p-header {
+  font-size: 2.7rem;
+  text-transform: uppercase;
   font-weight: 700;
-  font-size: 3.3rem;
+}
+
+body main .blog-wrapper .ps-wrapper h2 {
+  margin-top: 6.1rem;
+  margin-bottom: 2rem;
+  font-size: 7rem;
+}
+
+body main .blog-wrapper .ps-wrapper .no-margin-top {
+  margin-top: 0rem;
+}
+
+body main .blog-wrapper .ps-wrapper .no-margin-btm {
+  margin-bottom: 0rem;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph {
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  body main .blog-wrapper {
+    grid-template-columns: 0px 1fr 0px;
+    width: 100%;
+  }
+  body main .blog-wrapper .ps-wrapper {
+    grid-column: 2;
+    padding: 8%;
+    padding-top: 4.1rem;
+    margin-bottom: 7rem;
+    border-radius: 3rem;
+  }
+  body main .blog-wrapper .ps-wrapper .p-header {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  body main .blog-wrapper .ps-wrapper h2 {
+    margin-top: 6.1rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+  }
+  body main .blog-wrapper .ps-wrapper .no-margin-top {
+    margin-top: 0rem;
+  }
+  body main .blog-wrapper .ps-wrapper .no-margin-btm {
+    margin-bottom: 0rem;
+  }
+  body main .blog-wrapper .ps-wrapper .paragraph {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+}
+
+body main .blog-wrapper .hidden {
+  display: none;
+}
+
+body main #trampolin-wrapper #trampolineEmoji {
+  opacity: 0.5;
 }
 
 body main .footer {
   z-index: 1;
-  position: relative;
+  margin-top: 11rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+  bottom: 0px;
+  height: 27rem;
   width: 100%;
-  background: #9a8a70;
+  background: #d0d5f4;
 }
 
 body main .footer #footer-wrapper {
@@ -437,29 +566,58 @@ body main .footer #footer-wrapper {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
-  color: #f4f2eb;
+  color: black;
 }
 
 body main .footer #footer-wrapper .footer-part a {
-  color: #f4f2eb;
+  color: inherit;
   text-decoration: none;
 }
 
 body main .footer #footer-wrapper .footer-part a:hover {
   text-decoration: underline;
-  color: #f4f2eb;
+  color: inherit;
 }
 
 body main .footer #footer-wrapper .footer-l {
   grid-column: 1;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
 }
 
 body main .footer #footer-wrapper .footer-l h2 {
   text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+
+body main .footer #footer-wrapper .footer-l div {
+  padding: 0.5rem;
 }
 
 body main .footer #footer-wrapper .footer-r {
   grid-column: 2;
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
   justify-self: end;
   text-align: right;
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper div {
+  padding: 1.6rem;
+  font-weight: 500;
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper div .r-links {
+  padding: 1rem;
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper div .arrow {
+  font-size: 2.5rem;
 }
