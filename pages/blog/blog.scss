@@ -1,8 +1,6 @@
-/////// a complete page full of arrows
 @import '../../scss/globals';
 @import '../../scss/variables';
-@import '../../scss/mixins';
-@import '../../scss/font-anim-keyframes';
+
 body {
   ///////////////////////////////////////////
   $blog-text-color: rgb(33, 35, 44);
@@ -10,9 +8,9 @@ body {
   $blog-color-bg: rgb(239, 241, 245);
   $blog-color-lila: rgb(208, 213, 244);
 
-  $design-color-green: rgb(51, 148, 103);
-  $design-color-yellow: rgb(245, 221, 59);
-  $design-color-red: rgb(215, 61, 69);
+  // $design-color-green: rgb(51, 148, 103);
+  // $design-color-yellow: rgb(245, 221, 59);
+  // $design-color-red: rgb(215, 61, 69);
   ///////////////////////////////////////////
   font-family: $ff-space-grotesk;
   // font-family: $ff-grotesk-mono;
@@ -112,10 +110,6 @@ body {
             display: none;
           }
           .articles-holder {
-            @media (min-width: 900px) {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-            }
             /// EVERY BLOG /////
             a {
               text-decoration: none;
@@ -124,17 +118,12 @@ body {
                   color: $blue-purple-tech;
                 }
               }
-
               .article {
                 padding: 3.5rem;
-                margin: 34px;
-                // margin-bottom: 3.5rem;
-                // margin-left: 2rem;
-                // margin-right: 2rem;
+                margin: 31px;
                 border-radius: 2rem;
                 background-color: $blog-color-box;
                 color: $blog-text-color;
-
                 h3 {
                   font-family: $ff-sans-serif;
                   font-size: 2rem;
@@ -148,21 +137,39 @@ body {
                   padding-top: 2rem;
                   font-size: 1.5rem;
                   font-weight: 900;
-                  text-decoration: underline;
+                  text-decoration: none;
+                  // text-decoration-color: rgb(187, 187, 187);
                   &:hover {
                     color: $blue-purple-tech;
                   }
                 }
               }
             }
-            #make-intro {
-              h6 {
-                // padding-top: 1.5rem;
-                padding-left: 1rem;
-                text-decoration: none;
+            .making-of-article {
+              &#make-intro {
+                // grid-column: 1 / 3;
+                h6 {
+                  // padding-top: 1.5rem;
+                  padding-left: 1rem;
+                  text-decoration: none;
+                }
+              }
+              &#make-design {
               }
             }
-            #make-design {
+            ////// DESKTOP //////////////
+            @media (min-width: 900px) {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              a {
+                .article {
+                  margin: 23px;
+                  // padding: 1rem;
+                }
+              }
+              #make-intro {
+                grid-column: 1 / 3;
+              }
             }
           }
         }

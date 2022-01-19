@@ -358,179 +358,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes variableOpacity {
-  0% {
-    opacity: 100%;
-  }
-  66% {
-    opacity: 33%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes gifFrame1 {
-  0% {
-    opacity: 100%;
-  }
-  24% {
-    opacity: 100%;
-  }
-  25% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@keyframes gifFrame2 {
-  0% {
-    opacity: 0%;
-  }
-  24% {
-    opacity: 0%;
-  }
-  25% {
-    opacity: 100%;
-  }
-  49% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@keyframes gifFrame3 {
-  0% {
-    opacity: 0%;
-  }
-  49% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  75% {
-    opacity: 100%;
-  }
-  76% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@keyframes gifFrame4 {
-  0% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 0%;
-  }
-  76% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes brujula {
-  to {
-    transform: rotateZ(23deg);
-  }
-}
-
-@keyframes jump {
-  to {
-    transform: translateY(1rem);
-  }
-}
-
-@keyframes goLeft {
-  to {
-    transform: translateX(-0.6rem);
-  }
-}
-
-@keyframes navbarAppears {
-  from {
-    transform: translateX(5rem);
-    opacity: 20%;
-  }
-  to {
-    transform: translateX(0rem);
-    opacity: 100%;
-  }
-}
-
-@keyframes widthness {
-  0% {
-    font-variation-settings: "wght" 500;
-  }
-  30% {
-    font-variation-settings: "wght" 800;
-  }
-  70% {
-    font-variation-settings: "wght" 620;
-  }
-  100% {
-    font-variation-settings: "wght" 500;
-  }
-}
-
-@keyframes slintness {
-  0% {
-    font-variation-settings: 'slnt' 0, 'CRSV' 1;
-  }
-  40% {
-    font-variation-settings: 'slnt' -15, 'CRSV' 1;
-  }
-  100% {
-    font-variation-settings: 'slnt' 0, 'CRSV' 1;
-  }
-}
-
-@keyframes waveHand {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(20deg);
-  }
-  20% {
-    transform: rotate(-10deg);
-  }
-  30% {
-    transform: rotate(20deg);
-  }
-  40% {
-    transform: rotate(-6deg);
-  }
-  50% {
-    transform: rotate(12deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 body {
   font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: #eff1f5;
@@ -637,13 +464,6 @@ body main .blogSections .sections-holder .section .hidden {
   display: none;
 }
 
-@media (min-width: 900px) {
-  body main .blogSections .sections-holder .section .articles-holder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 body main .blogSections .sections-holder .section .articles-holder a {
   text-decoration: none;
 }
@@ -654,7 +474,7 @@ body main .blogSections .sections-holder .section .articles-holder a:hover h3 {
 
 body main .blogSections .sections-holder .section .articles-holder a .article {
   padding: 3.5rem;
-  margin: 34px;
+  margin: 31px;
   border-radius: 2rem;
   background-color: white;
   color: #21232c;
@@ -675,16 +495,29 @@ body main .blogSections .sections-holder .section .articles-holder a .article h6
   padding-top: 2rem;
   font-size: 1.5rem;
   font-weight: 900;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 body main .blogSections .sections-holder .section .articles-holder a .article h6:hover {
   color: #6c5ffc;
 }
 
-body main .blogSections .sections-holder .section .articles-holder #make-intro h6 {
+body main .blogSections .sections-holder .section .articles-holder .making-of-article#make-intro h6 {
   padding-left: 1rem;
   text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  body main .blogSections .sections-holder .section .articles-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main .blogSections .sections-holder .section .articles-holder a .article {
+    margin: 23px;
+  }
+  body main .blogSections .sections-holder .section .articles-holder #make-intro {
+    grid-column: 1 / 3;
+  }
 }
 
 body main #trampolin-wrapper #trampolineEmoji {

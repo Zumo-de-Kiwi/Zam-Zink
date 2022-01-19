@@ -8,6 +8,7 @@ btnScroll.addEventListener('click', function (e) {
 
 // EVENT
 const makeIntro = document.querySelector('#make-intro');
+const fullWidth = document.querySelector('.full-width');
 const introP2 = document.querySelector('#intro-p-2');
 const moreIntro = document.querySelector('.more-intro');
 console.log('Close triggers: ' + makeIntro);
@@ -15,6 +16,7 @@ console.log('Close triggers: ' + makeIntro);
 /////////// FUNCS ///////////////
 // PAWN
 const expandIntro = function () {
+  // makeIntro.classList.add('fullWidth');
   moreIntro.classList.add('hidden');
   introP2.classList.remove('hidden');
 };

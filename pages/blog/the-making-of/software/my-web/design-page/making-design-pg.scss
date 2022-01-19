@@ -80,13 +80,15 @@ body {
 
     #trampolin-wrapper {
     }
+
     .footer {
       z-index: 1;
-      position: relative;
-      // height: 50vh;
-      // bottom: 0px;
+      // position: absolute;
+      // position: fixed;
+      bottom: 0px;
+      height: 29rem;
       width: 100%;
-      background: rgb(154, 138, 112);
+      background: $blog-color-lila;
 
       #footer-wrapper {
         height: 100%;
@@ -95,27 +97,51 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
         padding: 2rem;
-        color: $design-white-color;
+        color: black;
         .footer-part {
           a {
-            color: $design-white-color;
+            color: inherit;
             text-decoration: none;
             &:hover {
               text-decoration: underline;
-              color: $design-white-color;
+              color: inherit;
             }
           }
         }
         .footer-l {
           grid-column: 1;
+          align-self: center;
+          justify-self: center;
+          text-align: center;
           h2 {
             text-transform: uppercase;
+            font-weight: 500;
+          }
+          div {
+            padding: 0.5rem;
           }
         }
         .footer-r {
           grid-column: 2;
-          justify-self: end;
-          text-align: right;
+
+          .sub-wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-content: space-around;
+            justify-self: end;
+            text-align: right;
+            div {
+              padding: 1.2rem;
+              font-weight: 500;
+              .r-links {
+                padding: 1rem;
+              }
+              .arrow {
+                font-size: 2.5rem;
+              }
+            }
+          }
         }
       }
     }
