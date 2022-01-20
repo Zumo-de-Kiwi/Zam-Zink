@@ -495,7 +495,6 @@ body main .blog-wrapper .ps-wrapper h2 {
 body main .blog-wrapper .ps-wrapper .paragraph {
   font-size: 1.9rem;
   margin-bottom: 30px;
-  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -526,7 +525,6 @@ body main .blog-wrapper .ps-wrapper .paragraph code {
   background-color: #eff1f5;
   padding: 2px 7px;
   border-radius: 5px;
-  margin: 0px 3px;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph strong {
@@ -555,22 +553,35 @@ body main .blog-wrapper .ps-wrapper picture {
   position: relative;
   border-radius: 10px;
   margin-bottom: 6.1rem;
+  margin-top: 3rem;
 }
 
 body main .blog-wrapper .ps-wrapper picture img {
   margin: 0px auto;
-  width: 70%;
+  width: 65%;
+  transition: 0.35s ease-out;
 }
 
 body main .blog-wrapper .ps-wrapper picture::after {
   position: absolute;
   bottom: -2.9rem;
   width: 100%;
-  font-size: 0.76em;
+  font-size: 0.8em;
   background-color: white;
   text-align: center;
-  opacity: 0.6;
+  opacity: 0.5;
   line-height: 1.2;
+  transition: 0.35s ease-out;
+}
+
+body main .blog-wrapper .ps-wrapper picture:hover img {
+  transform: scale(1.2) translateY(1.5rem);
+}
+
+body main .blog-wrapper .ps-wrapper picture:hover::after {
+  opacity: 0.79;
+  font-size: 1em;
+  padding: 0.7rem;
 }
 
 body main .blog-wrapper .ps-wrapper picture.round-edges img {
@@ -708,7 +719,7 @@ body main .btn-wrapper .btns.next a::after {
 }
 
 body main #trampolin-wrapper #trampolineEmoji {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 body main .footer {
@@ -718,7 +729,7 @@ body main .footer {
   bottom: 0px;
   height: 33rem;
   width: 100%;
-  background: #ced9f5;
+  background: #d0daf2;
   display: grid;
   grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(7%, 1fr);
 }
@@ -742,36 +753,39 @@ body main .footer #footer-wrapper .footer-part a:hover {
   color: inherit;
 }
 
-body main .footer #footer-wrapper .footer-l {
-  grid-column: 1;
-}
-
-body main .footer #footer-wrapper .footer-l .sub-wrapper {
-  height: 100%;
+body main .footer #footer-wrapper .footer-part .sub-wrapper {
   display: flex;
   flex-direction: column;
+  align-content: space-around;
   justify-content: space-around;
-  text-align: left;
+  height: 100%;
 }
 
-body main .footer #footer-wrapper .footer-l .sub-wrapper div {
-  padding-left: 1rem;
+body main .footer #footer-wrapper .footer-part .sub-wrapper div {
   font-weight: 500;
 }
 
-body main .footer #footer-wrapper .footer-l .sub-wrapper div .links {
-  padding: 1.2rem;
-  margin-bottom: 0.7rem;
-}
-
-body main .footer #footer-wrapper .footer-l .sub-wrapper div .footer-header {
+body main .footer #footer-wrapper .footer-part .sub-wrapper div .footer-header {
   font-size: 3rem;
   font-family: 'Mochiy Pop P One', sans-serif;
   opacity: 0.27;
 }
 
-body main .footer #footer-wrapper .footer-l .sub-wrapper div .footer-header span {
-  font-size: 0.7em;
+body main .footer #footer-wrapper .footer-part .sub-wrapper div .footer-header span {
+  font-size: 0.5em;
+}
+
+body main .footer #footer-wrapper .footer-l {
+  grid-column: 1;
+}
+
+body main .footer #footer-wrapper .footer-l .sub-wrapper div {
+  padding-right: 1rem;
+}
+
+body main .footer #footer-wrapper .footer-l .sub-wrapper div .r-links {
+  padding: 1.2rem;
+  margin-bottom: 0.7rem;
 }
 
 body main .footer #footer-wrapper .footer-l .sub-wrapper div .out-of-order {
@@ -794,16 +808,11 @@ body main .footer #footer-wrapper .footer-m {
 }
 
 body main .footer #footer-wrapper .footer-m .sub-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  justify-content: center;
   text-align: center;
 }
 
 body main .footer #footer-wrapper .footer-m .sub-wrapper div {
   padding: 1.6rem;
-  font-weight: 500;
 }
 
 body main .footer #footer-wrapper .footer-m .sub-wrapper div .m-links {
@@ -812,14 +821,18 @@ body main .footer #footer-wrapper .footer-m .sub-wrapper div .m-links {
 }
 
 body main .footer #footer-wrapper .footer-m .sub-wrapper div .arrow {
-  font-size: 2.5rem;
-  font-family: 'Mochiy Pop P One', sans-serif;
-  opacity: 0.6;
+  font-size: 3.7rem;
+  font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 720, 'slnt' 0;
+  opacity: 0.5;
+  color: white;
+  transition: 0.3s;
+  padding: 1rem;
 }
 
 body main .footer #footer-wrapper .footer-m .sub-wrapper div .arrow:hover {
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 1;
   transform: scaleY(-0.7rem);
 }
 
@@ -828,31 +841,16 @@ body main .footer #footer-wrapper .footer-r {
 }
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   text-align: right;
 }
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper div {
-  padding-right: 1rem;
-  font-weight: 500;
+  padding-left: 1rem;
 }
 
-body main .footer #footer-wrapper .footer-r .sub-wrapper div .r-links {
+body main .footer #footer-wrapper .footer-r .sub-wrapper div .links {
   padding: 1.2rem;
   margin-bottom: 0.7rem;
-}
-
-body main .footer #footer-wrapper .footer-r .sub-wrapper div .footer-header {
-  font-size: 3rem;
-  font-family: 'Mochiy Pop P One', sans-serif;
-  opacity: 0.27;
-}
-
-body main .footer #footer-wrapper .footer-r .sub-wrapper div .footer-header span {
-  font-size: 0.7em;
 }
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper div .out-of-order {
