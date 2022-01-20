@@ -1,5 +1,5 @@
-@import '../../../../../../scss/variables';
 @import '../../../../../../scss/globals';
+@import '../../../../../../scss/variables';
 
 body {
   ///////////////////////////////////////////
@@ -98,13 +98,13 @@ body {
 
     .blog-wrapper {
       display: grid;
-      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+      grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
           7%,
           1fr
         );
       .ps-wrapper {
         grid-column: 2;
-        padding: 5rem;
+        padding: 7rem;
         padding-top: 4.1rem;
         margin-bottom: 7rem;
 
@@ -121,6 +121,52 @@ body {
           margin-bottom: 2rem;
           font-size: 7rem;
         }
+
+        //////// PARAGRAPHS ///////////
+        .paragraph {
+          font-size: 1.9rem;
+          margin-bottom: 30px;
+          line-height: 1.5;
+          font-weight: 400;
+          .light-text {
+            font-weight: 200;
+          }
+          a {
+            color: $blog-text-color;
+            transition: 0.23s;
+            &:hover {
+              color: $blue-purple-tech;
+            }
+          }
+          i {
+            opacity: 0.87;
+            font-size: 1.03em;
+            font-family: $ff-recursive-bold;
+            font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 650, 'slnt' 0;
+          }
+          code {
+            font-size: 0.93em;
+            font-family: $ff-recursive-bold;
+            font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
+            background-color: $blog-color-bg;
+            padding: 2px 7px;
+            border-radius: 5px;
+            margin: 0px 3px;
+          }
+          strong {
+            font-size: 1.04em;
+            font-family: $ff-recursive-bold;
+            font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 700,
+              'slnt' 0;
+          }
+          b {
+          }
+          .nowrap {
+            white-space: nowrap;
+          }
+        }
+
+        //////// MARGIN STYLES ///////////
         .no-margin-top {
           margin-top: 0rem;
         }
@@ -130,40 +176,41 @@ body {
         .margin-top {
           margin-top: 2rem;
         }
-        .paragraph {
-          font-size: 1.9rem;
-          margin-bottom: 30px;
-          line-height: 1.4;
-          font-weight: 400;
-          .light-text {
-            font-weight: 200;
+
+        //////// IMAGES ///////////
+        picture {
+          position: relative;
+          border-radius: 10px;
+          margin-bottom: 6.1rem;
+          img {
+            margin: 0px auto;
+            width: 70%;
           }
-          a {
-            color: $blog-text-color;
-            // text-decoration-color: rgb(174, 174, 174);
-            // font-weight: 500;
-            &:hover {
-              color: $blog-color-purple;
+          &::after {
+            position: absolute;
+            bottom: -2.9rem;
+            width: 100%;
+
+            font-size: 0.76em;
+            background-color: $blog-color-box;
+            text-align: center;
+            opacity: 0.6;
+            line-height: 1.2;
+          }
+          &.round-edges {
+            img {
+              border-radius: 1rem;
             }
           }
-          i {
-            font-family: $ff-recursive-bold;
-            font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 650, 'slnt' 0;
+          &#real-gundam {
+            &::after {
+              content: 'A real Gundam, used to mount a complete Gundam figure.';
+            }
           }
-          code {
-            font-family: $ff-recursive-bold;
-            font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
-            background-color: $blog-color-bg;
-            padding: 4px 6px;
-            border-radius: 5px;
-            margin: 0px 3px;
-          }
-          strong {
-            font-family: $ff-recursive-bold;
-            font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 700,
-              'slnt' 0;
-          }
-          b {
+          &#penny-web {
+            &::after {
+              content: 'A screenshot from penny website.';
+            }
           }
         }
       }
@@ -216,9 +263,12 @@ body {
 
         border-radius: 2rem;
         transition: 0.15s;
-        background: $blog-color-purple;
+        background: $blue-purple-tech;
+        opacity: 0.7;
+
         &:hover {
-          background: $blog-text-color;
+          opacity: 1;
+          // background: $blog-text-color;
         }
         a {
           text-decoration: none;
@@ -230,19 +280,62 @@ body {
           padding-right: 4rem;
           padding-left: 4rem;
         }
+
         &.prev {
           a {
+            &::after {
+              content: '< prev';
+            }
             cursor: $cursor-arrow-hand;
           }
         }
         &.back-design {
           a {
+            &::after {
+              content: '¿return?';
+            }
             cursor: $cursor-pointer-hand-flip;
           }
         }
         &.next {
           a {
+            &::after {
+              content: 'next >';
+            }
             cursor: $cursor-right-hand;
+          }
+        }
+        @media (max-width: 700px) {
+          text-align: center;
+          font-size: 2rem;
+
+          border-radius: 2rem;
+          a {
+            // justify-self: center;
+            font-family: 'Mochiy Pop P One', sans-serif;
+            text-decoration: none;
+            color: white;
+            height: 6rem;
+            line-height: 6rem;
+            // min-width: 3%;
+            padding: 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+          }
+          &.prev {
+            a::after {
+              content: '<';
+            }
+          }
+          &.back-design {
+            a::after {
+              content: 'back';
+            }
+          }
+          &.next {
+            a::after {
+              content: '>';
+            }
           }
         }
       }
@@ -255,22 +348,24 @@ body {
     .footer {
       z-index: 1;
       margin-top: 11rem;
-      // position: absolute;
-      // position: fixed;
       border-radius: 2rem 2rem 0rem 0rem;
       bottom: 0px;
-      height: 29rem;
+      height: 33rem;
       width: 100%;
       background: $blog-color-lila;
+      display: grid;
 
+      grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
+          7%,
+          1fr
+        );
       #footer-wrapper {
+        grid-column: 2;
         height: 100%;
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
         padding: 2rem;
         color: $blog-text-color;
+        display: grid;
         .footer-part {
           a {
             color: inherit;
@@ -278,40 +373,72 @@ body {
             &:hover {
               text-decoration: underline;
               color: inherit;
-              // transform: scaleY(1rem);
             }
           }
         }
-        .footer-l {
-          grid-column: 1;
-          // gap: 1rem;
-          align-self: center;
-          justify-self: center;
-          text-align: center;
-          h2 {
-            text-transform: uppercase;
-            font-weight: 500;
-            // margin-bottom: 0.5rem;
-          }
-          div {
-            padding: 0.5rem;
+
+        .footer-part {
+          .sub-wrapper {
           }
         }
-        .footer-r {
-          grid-column: 2;
-
+        // LEFT SIDE
+        .footer-l {
+          grid-column: 1;
           .sub-wrapper {
             height: 100%;
             display: flex;
             flex-direction: column;
-            align-content: space-between;
-            justify-self: end;
-            text-align: right;
+            justify-content: space-around;
+            text-align: left;
+            div {
+              padding-left: 1rem;
+              font-weight: 500;
+              .links {
+                padding: 1.2rem;
+                margin-bottom: 0.7rem;
+              }
+              .footer-header {
+                font-size: 3rem;
+                font-family: 'Mochiy Pop P One', sans-serif;
+                opacity: 0.27;
+                span {
+                  font-size: 0.7em;
+                }
+              }
+              .out-of-order {
+                text-decoration: none;
+                opacity: 0.4;
+                &::after {
+                  content: 'Home Page';
+                  text-decoration: line-through;
+                }
+                &:hover {
+                  &::after {
+                    content: 'Working On';
+                    text-decoration: line-through;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // MID PART
+        .footer-m {
+          grid-column: 2;
+          .sub-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            // justify-self: center;
+            justify-content: center;
+            text-align: center;
             div {
               padding: 1.6rem;
               font-weight: 500;
-              .r-links {
+              .m-links {
                 padding: 1rem;
+                color: $blog-color-box;
               }
               .arrow {
                 font-size: 2.5rem;
@@ -322,8 +449,48 @@ body {
                   opacity: 0.8;
                   transform: scaleY(-0.7rem);
                 }
-                // font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-                // font-weight: 800;
+              }
+            }
+          }
+        }
+
+        // RIGHT PART
+        .footer-r {
+          grid-column: 3;
+          .sub-wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: right;
+            div {
+              padding-right: 1rem;
+              font-weight: 500;
+              .r-links {
+                padding: 1.2rem;
+                margin-bottom: 0.7rem;
+              }
+              .footer-header {
+                font-size: 3rem;
+                font-family: 'Mochiy Pop P One', sans-serif;
+                opacity: 0.27;
+                span {
+                  font-size: 0.7em;
+                }
+              }
+              .out-of-order {
+                text-decoration: none;
+                opacity: 0.4;
+                &::after {
+                  content: 'Home Page';
+                  text-decoration: line-through;
+                }
+                &:hover {
+                  &::after {
+                    content: 'Working On';
+                    text-decoration: line-through;
+                  }
+                }
               }
             }
           }

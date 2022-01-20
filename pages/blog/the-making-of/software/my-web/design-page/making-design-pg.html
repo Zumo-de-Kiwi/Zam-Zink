@@ -15,7 +15,7 @@
     />
     <!-- POPPINS + MOCHIY -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap"
       rel="stylesheet"
     />
     <!------------------CSS-------------------->
@@ -68,7 +68,7 @@
           </p>
 
           <p class="paragraph">
-            In the <b>brainstorming</b> process I came up with
+            In the <strong>brainstorming</strong> process I came up with
             <code> 6 options</code> to build this page. First of all, I
             organized my ideas on paper, in my notebook, where I used many more
             sheets than for the rest of my webpages. As I wished to make it
@@ -82,11 +82,31 @@
             <span class="light-text"
               >(the objects framed inside every subframe)</span
             >
-            displayed on the gundam plastic board I need 20 elements, each
-            representing a different digital graphic project. Although there are
-            20 of them displayed on the final page, originally I had created
-            over 40, but later discarded half of them.
+            displayed on the
+            <span id="gundam" class="img-on-hover no-wrap"
+              >gundam plastic board</span
+            >
+            I need 20 elements, each representing a different digital graphic
+            project. Although there are <code>20</code> of them displayed on the
+            final page, originally I had created over <code>40</code> , but
+            later discarded half of them.
           </p>
+
+          <picture id="real-gundam" class="round-edges">
+            <source
+              srcset="https://i.ibb.co/R36HYW2/real-gundam-placa.jpg"
+              loading="lazy"
+              type="image/jpg"
+            />
+            <img src="../img/real-gundam-placa.jpeg" alt="" type="image/jpg" />
+          </picture>
+
+          <!-- <picture id="">
+            <source srcset="" loading="lazy" type="image/webp" />
+            <source srcset="" loading="lazy" type="image/png" />
+            <img src="img/" alt="" loading="lazy" type="image/webp" />
+          </picture> -->
+
           <p class="paragraph">
             The following step was writing a description of each project. Some
             months ago I saw
@@ -102,17 +122,26 @@
             white spaces. Decisions like these help the user to feel oriented in
             each section. I fell in love with this way of describing a project.
           </p>
+
+          <picture id="penny-web" class="round-edges">
+            <source
+              srcset="https://i.ibb.co/R9YJ1WD/pennybanks-web.webp"
+              loading="lazy"
+              type="image/webp"
+            />
+            <img src="../img/pennybanks-web.webp" alt="" type="image/webp" />
+          </picture>
         </div>
 
         <div class="btn-wrapper">
           <div class="prev btns">
-            <a href="../photo-page/making-photo-pg.html">< prev</a>
+            <a href="../photo-page/making-photo-pg.html"></a>
           </div>
           <div class="back-design btns">
-            <a href="../../../../blog.html">¿return?</a>
+            <a href="../../../../blog.html"></a>
           </div>
           <div class="next btns">
-            <a href="../draw-page/making-draw-pg.html">next ></a>
+            <a href="../draw-page/making-draw-pg.html"></a>
           </div>
         </div>
 
@@ -125,20 +154,52 @@
           <!-- L SIDE -->
           <div class="footer-l footer-part">
             <div class="sub-wrapper">
-              <h2>my works</h2>
+              <div>
+                <div class="footer-header"><span>More</span><br />My Works</div>
+              </div>
               <div>
                 <a
+                  class="links"
                   href="../../../../../works/gsap-test/5-analog-hori-scroll/analog-test.html"
                   >photography</a
                 >
               </div>
               <div>
-                <a href="../../../../../works/draw-main/draw-main.html">
+                <a
+                  class="links"
+                  href="../../../../../works/draw-main/draw-main.html"
+                >
                   drawings</a
                 >
               </div>
               <div>
-                <a href="../../../../../works/design/design.html"> designs</a>
+                <a class="links" href="../../../../../works/design/design.html">
+                  designs</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- MID SIDE -->
+          <div class="footer-m footer-part">
+            <div class="sub-wrapper">
+              <div>
+                <a href="#top" class="r-links arrow" title="Go to the top">
+                  <br />
+                  ↑
+                </a>
+                <!-- 🦵 -->
+              </div>
+              <div><a href="/index.html" class="m-links">home</a></div>
+              <div>
+                <a href="../../../../../contact/contact.html" class="m-links"
+                  >contact</a
+                >
+              </div>
+              <div>
+                <a href="../../../../../about-me/about_me.html" class="m-links"
+                  >about me</a
+                >
               </div>
             </div>
           </div>
@@ -147,21 +208,20 @@
           <div class="footer-r footer-part">
             <div class="sub-wrapper">
               <div>
-                <a href="#top" class="r-links arrow" title="Go to the top">
-                  ↑
-                </a>
-                <!-- 🦵 -->
+                <div class="footer-header">
+                  <span>More</span><br />Making Of
+                </div>
               </div>
-              <div><a href="/index.html" class="r-links">home</a></div>
+              <div>
+                <a href="/index.html" class="r-links">Drawing Page</a>
+              </div>
               <div>
                 <a href="../../../../../contact/contact.html" class="r-links"
-                  >contact</a
+                  >Photo Page</a
                 >
               </div>
               <div>
-                <a href="../../../../../about-me/about_me.html" class="r-links"
-                  >about me</a
-                >
+                <a class="r-links out-of-order"></a>
               </div>
             </div>
           </div>
