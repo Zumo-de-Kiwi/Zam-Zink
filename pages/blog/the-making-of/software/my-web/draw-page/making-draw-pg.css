@@ -389,6 +389,7 @@ body .preloader #text-loader {
 body header {
   margin-top: 9rem;
   margin-bottom: 13rem;
+  overflow: hidden;
 }
 
 body header .absolute-nav {
@@ -427,13 +428,8 @@ body header .absolute-nav h1 {
 
 body header .absolute-nav h1 span {
   opacity: 0.31;
-  font-size: 2.7rem;
-}
-
-@media (max-width: 900px) {
-  body header .absolute-nav h1 span {
-    display: none;
-  }
+  font-size: 2.3rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 700px) {
@@ -448,11 +444,10 @@ body header .absolute-nav h1 span {
     justify-content: center;
   }
   body header .absolute-nav h1 {
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(-10%);
     align-self: center;
-    hyphens: auto;
     opacity: 0.2;
-    max-width: 21rem;
+    max-width: 25rem;
     margin-right: 0px;
     font-size: 4.7rem;
   }
@@ -467,7 +462,7 @@ body main {
 
 body main .blog-wrapper {
   display: grid;
-  grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(7%, 1fr);
+  grid-template-columns: minmax(7%, 1fr) minmax(200px, 900px) minmax(7%, 1fr);
 }
 
 body main .blog-wrapper .ps-wrapper {
@@ -481,25 +476,25 @@ body main .blog-wrapper .ps-wrapper {
 }
 
 body main .blog-wrapper .ps-wrapper .p-header {
-  font-size: 2.7rem;
+  font-size: 4rem;
   text-transform: uppercase;
-  font-weight: 700;
-}
-
-body main .blog-wrapper .ps-wrapper h2 {
+  font-weight: 300;
+  font-size: 7rem;
   margin-top: 6.1rem;
   margin-bottom: 2rem;
-  font-size: 7rem;
+  text-align: center;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph {
-  font-size: 1.9rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
-body main .blog-wrapper .ps-wrapper .paragraph .light-text {
-  font-weight: 200;
+body main .blog-wrapper .ps-wrapper .paragraph.bigger-p {
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph a {
@@ -511,20 +506,38 @@ body main .blog-wrapper .ps-wrapper .paragraph a:hover, body main .blog-wrapper 
   color: #6c5ffc;
 }
 
+body main .blog-wrapper .ps-wrapper .paragraph .light-text {
+  font-weight: 200;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph .nowrap {
+  white-space: nowrap;
+}
+
 body main .blog-wrapper .ps-wrapper .paragraph .italic {
   opacity: 0.87;
-  font-size: 1.03em;
+  font-size: 1.02em;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 650, 'slnt' -13;
+  font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 650, 'slnt' -13;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph .scale13 {
+  font-size: 1.4em;
+  font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 600, 'slnt' 0;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph .t-a-center {
+  text-align: center;
+  margin: 0px auto;
+  justify-self: center;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph code {
-  font-size: 0.93em;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
   background-color: #eff1f5;
-  padding: 2px 7px;
-  border-radius: 5px;
+  padding: 3px 8px;
+  border-radius: 0.7rem;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph strong {
@@ -533,8 +546,22 @@ body main .blog-wrapper .ps-wrapper .paragraph strong {
   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 700, 'slnt' 0;
 }
 
-body main .blog-wrapper .ps-wrapper .paragraph .nowrap {
-  white-space: nowrap;
+body main .blog-wrapper .ps-wrapper .paragraph b {
+  font-weight: 600;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph ol {
+  counter-reset: cupcake;
+  padding-left: 1rem;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph ol li {
+  counter-increment: cupcake;
+  padding-bottom: 1rem;
+}
+
+body main .blog-wrapper .ps-wrapper .paragraph ol li:before {
+  content: counters(cupcake, ".") " ";
 }
 
 body main .blog-wrapper .ps-wrapper .no-margin-top {
@@ -545,8 +572,12 @@ body main .blog-wrapper .ps-wrapper .no-margin-btm {
   margin-bottom: 0rem;
 }
 
-body main .blog-wrapper .ps-wrapper .margin-top {
+body main .blog-wrapper .ps-wrapper .margin-top-2 {
   margin-top: 2rem;
+}
+
+body main .blog-wrapper .ps-wrapper .margin-top-10 {
+  margin-top: 10rem;
 }
 
 body main .blog-wrapper .ps-wrapper picture {
@@ -592,8 +623,15 @@ body main .blog-wrapper .ps-wrapper picture#real-gundam::after {
   content: 'A real Gundam, used to mount a complete Gundam figure.';
 }
 
-body main .blog-wrapper .ps-wrapper picture#penny-web::after {
-  content: 'A screenshot from penny website.';
+body main .blog-wrapper .ps-wrapper picture#comeau-web::after {
+  content: 'A screenshot from Josh Comeau.';
+}
+
+body main .blog-wrapper .ps-wrapper picture#comeau-web:hover::after, body main .blog-wrapper .ps-wrapper picture#comeau-web:active::after {
+  bottom: -5.7rem;
+  opacity: 0.79;
+  font-size: 1em;
+  padding: 0.7rem;
 }
 
 @media (max-width: 800px) {
@@ -609,13 +647,10 @@ body main .blog-wrapper .ps-wrapper picture#penny-web::after {
     border-radius: 3rem;
   }
   body main .blog-wrapper .ps-wrapper .p-header {
-    font-size: 2.7rem;
     text-transform: uppercase;
-    font-weight: 700;
-  }
-  body main .blog-wrapper .ps-wrapper h2 {
+    font-weight: 400;
     margin-top: 6.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 5rem;
   }
   body main .blog-wrapper .ps-wrapper .no-margin-top {
