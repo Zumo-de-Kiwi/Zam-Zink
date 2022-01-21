@@ -6,8 +6,8 @@ body {
   $blog-text-color: rgb(33, 35, 44);
   $blog-color-box: rgb(255, 255, 255);
   $blog-color-bg: rgb(239, 241, 245);
+  $blog-font-selected: rgb(230, 233, 240);
   $blog-color-lila: rgb(208, 218, 242);
-  $blog-font-selected: rgb(203, 213, 238);
   $blog-color-purple: rgb(118, 134, 255);
   ///////////////////////////////////////////
   // font-family: 'Mochiy Pop P One', sans-serif;
@@ -151,7 +151,7 @@ body {
             font-size: 0.93em;
             font-family: $ff-recursive-bold;
             font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
-            background-color: $blog-color-bg;
+            background-color: $blog-font-selected;
             padding: 2px 7px;
             border-radius: 5px;
             // margin: 0px 3px;

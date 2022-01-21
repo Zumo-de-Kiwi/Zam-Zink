@@ -6,8 +6,8 @@ body {
   $blog-text-color: rgb(33, 35, 44);
   $blog-color-box: rgb(255, 255, 255);
   $blog-color-bg: rgb(239, 241, 245);
+  $blog-font-selected: rgb(230, 233, 240);
   $blog-color-lila: rgb(208, 218, 242);
-  $blog-font-selected: rgb(203, 213, 238);
   $blog-color-purple: rgb(118, 134, 255);
   ///////////////////////////////////////////
   // font-family: 'Mochiy Pop P One', sans-serif;
@@ -131,7 +131,6 @@ body {
             font-size: 1.2em;
             font-weight: 300;
           }
-
           a {
             color: $blog-text-color;
             transition: 0.23s;
@@ -153,6 +152,21 @@ body {
             font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 650,
               'slnt' -13;
           }
+          .gradient-text {
+            font-size: 1.1em;
+            background: -webkit-linear-gradient(
+              140deg,
+              rgb(43, 43, 220),
+              rgb(126, 66, 245),
+              rgb(219, 85, 210),
+              rgb(245, 66, 66),
+              rgb(245, 144, 66),
+              rgb(255, 194, 41)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
           .scale13 {
             font-size: 1.4em;
             font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 600, 'slnt' 0;
@@ -165,29 +179,26 @@ body {
           code {
             font-family: $ff-recursive-bold;
             font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
-            background-color: $blog-color-bg;
+            background-color: $blog-font-selected;
             padding: 3px 8px;
-            border-radius: 0.7rem;
+            border-radius: 0.4rem;
             // margin: 0px 3px;
           }
           strong {
             font-size: 1.04em;
             font-family: $ff-recursive-bold;
-            font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 700,
+            font-variation-settings: 'MONO' 0.3, 'CASL' 0.7, 'wght' 700,
               'slnt' 0;
           }
           b {
             font-weight: 600;
           }
-          ol {
-            counter-reset: cupcake;
-            padding-left: 1rem;
-            li {
-              counter-increment: cupcake;
-              padding-bottom: 1rem;
-              &:before {
-                content: counters(cupcake, '.') ' ';
-              }
+          .after-hover {
+            &::after {
+              content: 'artistic';
+            }
+            &:hover::after {
+              content: '(artsy )';
             }
           }
         }
@@ -245,26 +256,26 @@ body {
               border-radius: 1rem;
             }
           }
-          &#real-gundam {
+          &#color-secs {
             &::after {
-              content: 'A real Gundam, used to mount a complete Gundam figure.';
+              content: 'How is the code for every section.';
             }
           }
-          &#comeau-web {
-            &::after {
-              // bottom: -4rem;
-              content: 'A screenshot from Josh Comeau.';
-            }
-            &:hover,
-            &:active {
-              &::after {
-                bottom: -5.7rem;
-                opacity: 0.79;
-                font-size: 1em;
-                padding: 0.7rem;
-              }
-            }
-          }
+          // &#comeau-web {
+          //   &::after {
+          //     // bottom: -4rem;
+          //     content: 'A screenshot from Josh Comeau.';
+          //   }
+          //   &:hover,
+          //   &:active {
+          //     &::after {
+          //       bottom: -5.7rem;
+          //       opacity: 0.79;
+          //       font-size: 1em;
+          //       padding: 0.7rem;
+          //     }
+          //   }
+          // }
         }
       }
       @media (max-width: 800px) {

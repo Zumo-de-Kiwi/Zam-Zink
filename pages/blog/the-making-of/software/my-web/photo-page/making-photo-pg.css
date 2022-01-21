@@ -521,6 +521,14 @@ body main .blog-wrapper .ps-wrapper .paragraph .italic {
   font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 650, 'slnt' -13;
 }
 
+body main .blog-wrapper .ps-wrapper .paragraph .gradient-text {
+  font-size: 1.1em;
+  background: -webkit-linear-gradient(140deg, #2b2bdc, #7e42f5, #db55d2, #f54242, #f59042, #ffc229);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body main .blog-wrapper .ps-wrapper .paragraph .scale13 {
   font-size: 1.4em;
   font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 600, 'slnt' 0;
@@ -535,33 +543,27 @@ body main .blog-wrapper .ps-wrapper .paragraph .t-a-center {
 body main .blog-wrapper .ps-wrapper .paragraph code {
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
-  background-color: #eff1f5;
+  background-color: #e6e9f0;
   padding: 3px 8px;
-  border-radius: 0.7rem;
+  border-radius: 0.4rem;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph strong {
   font-size: 1.04em;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
-  font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 700, 'slnt' 0;
+  font-variation-settings: 'MONO' 0.3, 'CASL' 0.7, 'wght' 700, 'slnt' 0;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph b {
   font-weight: 600;
 }
 
-body main .blog-wrapper .ps-wrapper .paragraph ol {
-  counter-reset: cupcake;
-  padding-left: 1rem;
+body main .blog-wrapper .ps-wrapper .paragraph .after-hover::after {
+  content: 'artistic';
 }
 
-body main .blog-wrapper .ps-wrapper .paragraph ol li {
-  counter-increment: cupcake;
-  padding-bottom: 1rem;
-}
-
-body main .blog-wrapper .ps-wrapper .paragraph ol li:before {
-  content: counters(cupcake, ".") " ";
+body main .blog-wrapper .ps-wrapper .paragraph .after-hover:hover::after {
+  content: '(artsy )';
 }
 
 body main .blog-wrapper .ps-wrapper .no-margin-top {
@@ -619,19 +621,8 @@ body main .blog-wrapper .ps-wrapper picture.round-edges img {
   border-radius: 1rem;
 }
 
-body main .blog-wrapper .ps-wrapper picture#real-gundam::after {
-  content: 'A real Gundam, used to mount a complete Gundam figure.';
-}
-
-body main .blog-wrapper .ps-wrapper picture#comeau-web::after {
-  content: 'A screenshot from Josh Comeau.';
-}
-
-body main .blog-wrapper .ps-wrapper picture#comeau-web:hover::after, body main .blog-wrapper .ps-wrapper picture#comeau-web:active::after {
-  bottom: -5.7rem;
-  opacity: 0.79;
-  font-size: 1em;
-  padding: 0.7rem;
+body main .blog-wrapper .ps-wrapper picture#color-secs::after {
+  content: 'How is the code for every section.';
 }
 
 @media (max-width: 800px) {

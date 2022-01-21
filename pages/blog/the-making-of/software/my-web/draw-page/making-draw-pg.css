@@ -535,7 +535,7 @@ body main .blog-wrapper .ps-wrapper .paragraph .t-a-center {
 body main .blog-wrapper .ps-wrapper .paragraph code {
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
-  background-color: #eff1f5;
+  background-color: #e6e9f0;
   padding: 3px 8px;
   border-radius: 0.7rem;
 }
