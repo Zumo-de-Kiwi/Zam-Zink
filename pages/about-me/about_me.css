@@ -741,7 +741,6 @@ body main #center-box #center-content .text-char {
   grid-row: 3;
   height: 100%;
   width: 100%;
-  border: 3px solid rgba(255, 0, 0, 0.185);
   justify-self: end;
   display: flex;
   justify-content: end;
@@ -750,37 +749,83 @@ body main #center-box #center-content .text-char {
 
 body main #center-box #center-content .text-char .innerWrapper {
   transform: translateY(20%);
-  border: 3px solid rgba(145, 198, 255, 0.125);
   width: 100%;
   height: 100%;
 }
 
 body main #center-box #center-content .text-char .innerWrapper svg {
   overflow: visible;
+  transition: 0.3s;
+  transition: font-variation-settings 0.5s, fill 0.3s, transform 0.5s;
+}
+
+body main #center-box #center-content .text-char .innerWrapper svg .text-alien-chars {
+  will-change: transition;
+  transition: inherit;
+  font-family: 'Recursive', sans-serif;
+  fill: #1d1d1d;
 }
 
 body main #center-box #center-content .text-char .innerWrapper svg #theC {
   fill: #e3e3e3;
-  font-family: 'Recursive', sans-serif;
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000;
 }
 
-body main #center-box #center-content .text-char .innerWrapper svg #theL-E {
-  fill: #0e0e0e;
-  font-family: 'Recursive', sans-serif;
-  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 400;
+body main #center-box #center-content .text-char .innerWrapper svg .theL-E {
+  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
 }
 
-body main #center-box #center-content .text-char .innerWrapper svg #theR-E {
-  fill: #131313;
-  font-family: 'Recursive', sans-serif;
-  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 400;
+body main #center-box #center-content .text-char .innerWrapper svg .theR-E {
+  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
+}
+
+body main #center-box #center-content .text-char .innerWrapper svg .normal {
+  animation: blinkE 7s linear infinite;
+  will-change: opacity;
+}
+
+@keyframes blinkE {
+  0% {
+    opacity: 100%;
+  }
+  33% {
+    opacity: 100%;
+  }
+  34% {
+    opacity: 0%;
+  }
+  36% {
+    opacity: 0%;
+  }
+  37% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 100%;
+  }
+  86% {
+    opacity: 0%;
+  }
+  88% {
+    opacity: 0%;
+  }
+  89% {
+    opacity: 100%;
+  }
+  97% {
+    opacity: 100%;
+  }
+  98% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 
 body main #center-box #center-content .text-char .innerWrapper svg #theO {
-  fill: #373737;
-  font-family: 'Recursive', sans-serif;
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500;
+  transition: font-variation-settings 0.5s, fill 0.3s, transform 0.3s;
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400;
 }
 
 body main #center-box #center-content #more-btns {
@@ -792,6 +837,50 @@ body main #center-box #center-content #more-btns {
   margin-right: 5%;
   margin-top: 1rem;
   overflow: visible;
+}
+
+body main #center-box #center-content #more-btns:hover ~ .text-char .innerWrapper svg #theC {
+  animation: colorFlow 1.7s infinite alternate;
+  font-family: 'Recursive', sans-serif;
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740;
+}
+
+@keyframes colorFlow {
+  0% {
+    fill: #e3e3e3;
+  }
+  20% {
+    fill: #f1eaf5;
+  }
+  50% {
+    fill: #f0f0ea;
+  }
+  100% {
+    fill: #ede9e9;
+  }
+}
+
+body main #center-box #center-content #more-btns:hover ~ .text-char .innerWrapper svg .theL-E {
+  transform: scale(1.1) translate(-6%, -14%);
+  fill: #3a3a3a;
+  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 400;
+}
+
+body main #center-box #center-content #more-btns:hover ~ .text-char .innerWrapper svg .theR-E {
+  transform: scale(1.1) translate(-3.5%, -14%);
+  fill: #292929;
+  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 400;
+}
+
+body main #center-box #center-content #more-btns:hover ~ .text-char .innerWrapper svg #theO {
+  transform: scale(1.2) translate(-9%, -20%);
+  fill: #282828;
+  font-variation-settings: "MONO" 1, "CASL" 0.5, "wght" 500;
+}
+
+body main #center-box #center-content #more-btns:active ~ .text-char .innerWrapper svg #theO {
+  transform: scale(1.6) translate(-19.3%, -39%);
+  font-variation-settings: "MONO" 1, "CASL" 0.5, "wght" 620;
 }
 
 body main #center-box #center-content #more-btns .more-btn {
