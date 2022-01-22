@@ -7,8 +7,10 @@ body {
   // height: 100%;
   width: 100vw;
   $my-paper-color: hsl(35, 16%, 92%);
+  $my-paper-color-Bside: rgb(245, 243, 230);
+  $rabbit-green: rgb(133, 194, 136);
   $muji-cover: hsl(30, 2%, 24%);
-  background-color: $my-paper-color;
+  // background-color: $my-paper-color;
 
   // font-size: 2rem;
   font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' $font-weight-normal,
@@ -245,29 +247,34 @@ body {
   }
 
   main {
-    background: $my-paper-color;
+    // background: $my-paper-color;
     // height: 600vh;
     position: relative;
     display: grid;
-    h1 {
+    .top-info {
       width: 100%;
-      text-align: center;
-      text-transform: uppercase;
+      position: sticky;
+      background-color: $my-paper-color-Bside;
+      top: 0;
       padding: 10rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      margin-bottom: 4rem;
       color: rgb(62, 62, 62);
-      background-color: rgb(245, 243, 230);
-      font-size: 3.3rem;
-      font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-bolder,
-        'slnt' -7;
-      // background-color: white;
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3.3rem;
+        font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-bolder,
+          'slnt' -7;
+      }
     }
-    #drawSections {
-      // height: 400vh;
-      z-index: 2;
 
+    #drawSections {
+      box-shadow: 0px -0.7px 2.7px -21px rgba(0, 0, 0, 0.022),
+        0px -1.8px 6.9px -21px rgba(0, 0, 0, 0.031),
+        0px -3.7px 14.2px -21px rgba(0, 0, 0, 0.039),
+        0px -7.7px 29.2px -21px rgba(0, 0, 0, 0.048),
+        0px -21px 80px -21px rgba(0, 0, 0, 0.07);
+      z-index: 2;
+      background: $my-paper-color;
       display: grid;
       grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(
           7%,
@@ -492,7 +499,7 @@ body {
         #fin4 {
           grid-row: 12;
           text-align: center;
-          color: rgb(133, 194, 136);
+          color: $rabbit-green;
           font-weight: 400;
           font-size: 2.3rem;
           padding-bottom: 9rem;
@@ -799,7 +806,7 @@ body {
           #fin4 {
             grid-row: 12;
             text-align: center;
-            color: rgb(133, 194, 136);
+            color: $rabbit-green;
             font-weight: 400;
             font-size: 2.3rem;
             padding-bottom: 17rem;
@@ -823,11 +830,8 @@ body {
     z-index: 19;
     height: 29rem;
     width: 100%;
-    // background: rgb(133, 194, 136);
-    // color: $my-paper-color;
-    background: rgb(240, 240, 240);
-    color: rgb(133, 194, 136);
-    margin-top: 2rem;
+    background: $my-paper-color-Bside;
+    color: $rabbit-green;
 
     #footer-wrapper {
       height: 100%;
@@ -845,12 +849,11 @@ body {
           text-decoration: none;
           &:hover {
             color: rgb(244, 181, 194);
-            // text-decoration: underline;
           }
         }
       }
       .footer-l {
-        grid-column: 1 /3;
+        grid-column: 2;
         align-self: center;
         justify-self: center;
         text-align: center;
@@ -859,12 +862,11 @@ body {
           font-weight: 500;
         }
         div {
-          padding: 0.5rem;
+          padding-top: 2.3rem;
         }
       }
       .footer-r {
         grid-column: 3;
-
         .sub-wrapper {
           height: 100%;
           display: flex;
@@ -893,131 +895,5 @@ body {
         }
       }
     }
-  } // ORIGINAL FOOTER
-  #footer {
-    // z-index: 0;
-    // position: relative;
-    // height: 50vh;
-    // bottom: 0px;
-    // width: 100%;
-    // background: rgb(133, 194, 136);
-
-    // display: grid;
-    // grid-template-columns: 1fr 360px 1fr; // for desktop
-    // @media (min-width: 768px) {
-    //   // position: sticky;
-    //   height: 40vh;
-    //   #wrapper {
-    //     grid-column: 1/ 4;
-    //     justify-content: center;
-    //     grid-template-rows: 1fr 4rem 4rem 1fr;
-    //     // color: white;
-    //     .morePrj {
-    //       //a
-    //       font-size: 2rem;
-    //       align-self: center;
-    //       transition: $trans-normal;
-
-    //       &:hover {
-    //         text-decoration-color: white;
-    //       }
-    //       &:active {
-    //         text-decoration-color: white;
-    //       }
-    //     }
-    //     #nextPrj {
-    //       grid-row: 2;
-    //       justify-self: start;
-    //       margin-left: 0rem;
-    //       &:hover {
-    //         #Rarrow {
-    //           margin-left: 1rem;
-    //         }
-    //       }
-    //       &:active {
-    //         #Rarrow {
-    //           margin-left: 1rem;
-    //         }
-    //       }
-    //     }
-    //     #prevPrj {
-    //       grid-row: 3;
-
-    //       margin-right: 0rem;
-    //       &:hover {
-    //         #Larrow {
-    //           margin-right: 1rem;
-    //         }
-    //       }
-    //       &:active {
-    //         #Larrow {
-    //           margin-right: 1rem;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-    // #wrapper {
-    //   z-index: -1;
-    //   grid-column: 2;
-
-    //   display: grid;
-    //   justify-content: center;
-    //   gap: 4rem;
-    //   grid-template-rows: 1fr 4rem 4rem 1fr;
-    //   color: white;
-
-    //   span {
-    //     transition: $trans-normal;
-    //     margin: 0.5rem;
-    //   }
-    //   .morePrj {
-    //     //a
-    //     z-index: -1;
-    //     text-decoration-color: transparent;
-
-    //     color: $my-paper-color;
-    //     font-size: 1.8rem;
-    //     align-self: center;
-    //     transition: $trans-normal;
-
-    //     &:hover {
-    //       text-decoration-color: white;
-    //     }
-    //     &:active {
-    //       text-decoration-color: white;
-    //     }
-    //   }
-    //   #nextPrj {
-    //     grid-row: 2;
-
-    //     margin-left: 0rem;
-    //     &:hover {
-    //       #Rarrow {
-    //         margin-left: 1rem;
-    //       }
-    //     }
-    //     &:active {
-    //       #Rarrow {
-    //         margin-left: 1rem;
-    //       }
-    //     }
-    //   }
-    //   #prevPrj {
-    //     grid-row: 3;
-
-    //     margin-right: 0rem;
-    //     &:hover {
-    //       #Larrow {
-    //         margin-right: 1rem;
-    //       }
-    //     }
-    //     &:active {
-    //       #Larrow {
-    //         margin-right: 1rem;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }

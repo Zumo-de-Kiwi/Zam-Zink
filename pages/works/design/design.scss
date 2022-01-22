@@ -80,7 +80,7 @@ body {
     }
     .designSections {
       display: grid;
-      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+      grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(
           7%,
           1fr
         );
@@ -674,12 +674,10 @@ body {
     // box brown footer
     .footer {
       z-index: 1;
-      // position: absolute;
-      // bottom: 0px;
 
       height: 29rem;
       width: 100%;
-      background: rgb(154, 138, 112);
+      background: rgb(172, 155, 128);
       background-image: url('img/footer-cardboard.webp');
       background-position: center top;
       background-repeat: repeat-x;
@@ -713,11 +711,12 @@ body {
             font-weight: 500;
           }
           div {
-            padding: 0.5rem;
+            padding: 1rem;
           }
         }
         .footer-r {
           grid-column: 2;
+          margin-right: calc(7% + 1rem);
 
           .sub-wrapper {
             height: 100%;

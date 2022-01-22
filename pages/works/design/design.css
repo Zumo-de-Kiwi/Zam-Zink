@@ -28,6 +28,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  user-select: none;
 }
 
 /*7. Remove built-in form typography styles*/
@@ -437,7 +438,7 @@ body main .main-header h1 {
 
 body main .designSections {
   display: grid;
-  grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
+  grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(7%, 1fr);
   gap: 1rem;
 }
 
@@ -1037,7 +1038,7 @@ body main .footer {
   z-index: 1;
   height: 29rem;
   width: 100%;
-  background: #9a8a70;
+  background: #ac9b80;
   background-image: url("img/footer-cardboard.webp");
   background-position: center top;
   background-repeat: repeat-x;
@@ -1077,11 +1078,12 @@ body main .footer #footer-wrapper .footer-l h2 {
 }
 
 body main .footer #footer-wrapper .footer-l div {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 body main .footer #footer-wrapper .footer-r {
   grid-column: 2;
+  margin-right: calc(7% + 1rem);
 }
 
 body main .footer #footer-wrapper .footer-r .sub-wrapper {
