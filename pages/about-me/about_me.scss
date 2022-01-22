@@ -6,10 +6,14 @@
 body {
   // width: 100%;
   font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-normal, $slnt;
-  // background-color: $underline-color;
-  // font-family: $ff-recursive;
   font-size: $font-size-normal;
-
+  font-size: 1.5rem;
+  @media (min-width: 800px) {
+    font-size: 1.7rem;
+  }
+  @media (min-width: 1300px) {
+    font-size: 2rem;
+  }
   main {
     display: grid;
     grid-template-columns: minmax(8vw, 10rem) 1fr minmax(8vw, 10rem);
@@ -28,14 +32,15 @@ body {
       grid-column: 1;
       grid-row: 1;
       place-self: center;
+      margin-top: 1rem;
       .link-a {
         height: 70%;
         padding: 0rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        // padding-top: 50rem;
+        padding-right: 2rem;
         color: $font-black;
-        font-variation-settings: 'MONO' 0, 'CASL' 0.3,
-          'wght' $font-weight-lightest;
+        font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-light;
         &:hover {
           color: $font-black;
         }
@@ -52,7 +57,7 @@ body {
     .closeBtn {
       z-index: 99;
       font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' $font-weight-lighter;
-      font-size: $font-size-huge;
+      font-size: 2.3em;
       color: $font-black;
       padding: 4rem;
       padding-left: 6rem;
@@ -69,14 +74,14 @@ body {
     // THE FOUR TITLES
     .titles {
       font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' $font-weight-lighter;
-      font-size: $font-size-big;
+      font-size: 1.5em;
       color: $font-black;
 
       align-self: center;
       justify-self: center;
       text-align: center;
 
-      width: 30rem;
+      min-width: 37rem;
       text-decoration: underline;
       text-decoration-color: $light-gray;
 
@@ -89,42 +94,42 @@ body {
         font-variation-settings: 'MONO' 1, 'CASL' 0.1,
           'wght' $font-weight-normal;
       }
-    }
-    #about-me {
-      grid-column: 2/ 3;
-      grid-row: 1 / 2;
-      text-decoration: none;
-      cursor: $cursor-pointer-down-hand;
-      &:hover {
+      &#about-me {
+        grid-column: 2/ 3;
+        grid-row: 1 / 2;
         text-decoration: none;
-        font-variation-settings: 'MONO' 1, 'CASL' 0.1,
-          'wght' $font-weight-lightest;
+        cursor: $cursor-pointer-down-hand;
+        &:hover {
+          text-decoration: none;
+          font-variation-settings: 'MONO' 1, 'CASL' 0.1,
+            'wght' $font-weight-lightest;
+        }
+      }
+      &#boring-side {
+        transform: rotate(-90deg);
+        grid-column: 1/ 2;
+        grid-row: 2 / 3;
+        cursor: $cursor-right-hand;
+      }
+      &#comical-side {
+        transform: rotate(90deg);
+        grid-column: 3/ 4;
+        grid-row: 2 / 3;
+        cursor: $cursor-arrow-hand;
+      }
+      &#bottom-side {
+        transform: rotate(180deg);
+        grid-column: 2/ 3;
+        grid-row: 3 / 4;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+          font-variation-settings: 'MONO' 1, 'CASL' 0.1,
+            'wght' $font-weight-lightest;
+        }
       }
     }
 
-    #boring-side {
-      transform: rotate(-90deg);
-      grid-column: 1/ 2;
-      grid-row: 2 / 3;
-      cursor: $cursor-right-hand;
-    }
-    #comical-side {
-      transform: rotate(90deg);
-      grid-column: 3/ 4;
-      grid-row: 2 / 3;
-      cursor: $cursor-arrow-hand;
-    }
-    #bottom-side {
-      transform: rotate(180deg);
-      grid-column: 2/ 3;
-      grid-row: 3 / 4;
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-        font-variation-settings: 'MONO' 1, 'CASL' 0.1,
-          'wght' $font-weight-lightest;
-      }
-    }
     .ingredients {
       width: clamp(280px, 25%, 380px);
       z-index: 6;
@@ -137,7 +142,6 @@ body {
       // A darker bg
       :after {
         z-index: 5;
-
         position: absolute;
         top: 50%;
         left: 50%;
@@ -152,14 +156,15 @@ body {
       // border: 1px solid rgb(240, 240, 240);
       display: grid;
       place-items: center;
+
       #center-content {
         // border: 1px solid rgb(232, 232, 232);
         height: 100%;
         z-index: 1;
-
+        line-height: 1.4;
         display: grid;
         place-items: center;
-        width: clamp(300px, 70%, 55ch);
+        width: clamp(300px, 70%, 50ch);
         height: clamp(300px, 30vh, 40vh);
 
         grid-template-columns: 1fr 1fr 1fr;
@@ -168,7 +173,25 @@ body {
         #center-Ps {
           grid-column: 1/ 4;
           grid-row: 2 / 3;
-          font-size: $font-size-small;
+          a {
+            color: inherit;
+            text-decoration: underline;
+            &#spain {
+              &:hover {
+                cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>🧅</text></svg>")
+                    16 0,
+                  auto;
+              }
+            }
+            &#taiwan {
+              &:hover {
+                cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>🍦</text></svg>")
+                    16 0,
+                  auto;
+              }
+            }
+          }
+
           position: relative;
           .center-p {
             font-variation-settings: 'MONO' 1, 'CASL' 0,
@@ -184,39 +207,66 @@ body {
             }
           }
         }
-        #my-pixel-pic {
+        .text-char {
           grid-column: 1/ 3;
           grid-row: 3;
+          height: 93%;
+          width: 70%;
+          border: 3px solid red;
+          position: relative;
+          #c-bg,
+          .eye,
+          .mouth {
+            position: absolute;
+          }
+
+          #c-bg {
+            top: 0px;
+            left: 0px;
+            transform: rotateZ(90deg);
+            transform-origin: center;
+            opacity: 0.4;
+            font-size: 8em;
+          }
+          .eye {
+          }
         }
+        // #my-pixel-pic {
+        //   grid-column: 1/ 3;
+        //   grid-row: 3;
+        // }
         #more-btns {
-          align-self: start;
           grid-column: 2 /4;
           grid-row: 3;
+          align-self: start;
+          justify-self: end;
+
+          margin-right: 13%;
+          // margin-top: 1rem;
           overflow: visible;
           //btn
           .more-btn {
             cursor: $cursor-please-fingers;
             font-weight: 500;
             text-align: center;
-            font-size: $font-size-information;
+            font-size: 0.8em;
             margin: 0px auto;
+
             //style the btn
             border: 2px solid $dark-gray;
             border-radius: 1.1rem;
             height: 3.8rem;
             padding: 0.2rem 1rem;
-            margin: 0.2rem;
-            margin-top: 1rem;
+
             background-color: white;
 
             transition: $trans-normal;
             will-change: transform;
             &:hover {
-              border: 2.4px solid $dark-gray;
-              transform: translateY(-0.1rem);
+              transform: translateY(-0.13rem);
             }
             &:active {
-              transform: translateY(0.15rem);
+              transform: translateY(0.17rem);
             }
           }
         }
@@ -227,26 +277,19 @@ body {
         opacity: 100%;
         z-index: 2;
         transition: $trans-normal;
-        // #comical-text {
-        //   text-align: center;
-        //   z-index: 3;
-        // }
         @keyframes toUpRight {
           to {
             transform: translate(2rem, -2rem);
-            // no use margin=> margin-top: 0rem;margin-left: 4rem;
           }
         }
         @keyframes toDownLeft {
           to {
             transform: translate(-2.3rem, 2rem);
-            // no use margin=> margin-top: 0rem;margin-left: 4rem;
           }
         }
         @keyframes toUpLeft {
           to {
             transform: translate(-2.6rem, -3rem);
-            // no use margin=> margin-top: 0rem;margin-left: 4rem;
           }
         }
         @keyframes lToR {
@@ -274,16 +317,13 @@ body {
           }
         }
         .comical-pic {
-          // will-change: transform;
+          will-change: transform;
           position: absolute;
           border-radius: 7px;
-          // z-index: 2;
-          // GRAYSCALE
           -webkit-filter: grayscale(
             1
           ); /* Google Chrome, Safari 6+ & Opera 15+ */
           filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-          // transition: $trans-fast;
           &:hover {
             -webkit-filter: grayscale(0);
             filter: none;
@@ -349,30 +389,50 @@ body {
 
   footer {
     height: 41%;
-    display: grid;
     background-color: $light-gray;
     #footer-inside {
+      // display: grid;
       padding: 3rem;
+      h2 {
+        margin-bottom: 0.5rem;
+        font-size: 5em;
+      }
       a {
         color: black;
+        &:hover {
+          opacity: 0.5;
+        }
       }
-      #who-really {
-        font-size: $font-size-small;
+      p {
+        margin-bottom: 1rem;
+        font-size: 1em;
+        line-height: 1.4;
       }
-      #how-this-page {
-        font-size: $font-size-small;
-      }
+      // #who-really {
+      //   // max-width: 50%;
+      // }
+      // #how-this-page {
+      // }
       #contact {
-        font-size: $font-size-small;
         text-align: end;
         a {
           padding: 1rem;
         }
       }
       #cmyk {
-        font-size: $font-size-small;
+        font-size: 1.07em;
         text-align: end;
         filter: grayscale(100%);
+        transition: 2.9s;
+        a {
+          text-decoration: none;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &:hover {
+          filter: none;
+        }
         #cyan {
           color: cyan;
         }
@@ -387,52 +447,80 @@ body {
         }
       }
     }
+    @media (min-width: 800px) {
+      overflow-y: hidden;
+      #footer-inside {
+        display: grid;
+        // gap: 2rem;
+        max-height: 71vh;
+        h2 {
+          grid-column: 1;
+          grid-row: 1 / 3;
+          font-size: 5em;
+          line-height: 1;
+          // word-break: break-all;
+        }
+
+        #who-really {
+          // max-width: 50%;
+          grid-column: 2;
+        }
+        #how-this-page {
+          grid-column: 2;
+        }
+
+        #contact {
+          grid-column: 2;
+        }
+        #cmyk {
+          grid-column: 2;
+        }
+      }
+    }
+    @media (min-width: 1400px) {
+      overflow-y: hidden;
+      #footer-inside {
+        display: grid;
+        gap: 1.7rem;
+        max-height: 71vh;
+        max-width: 61vw;
+        h2 {
+          max-width: 37vw;
+          justify-self: end;
+          grid-column: 1;
+          grid-row: 1 / 7;
+          font-size: 8em;
+          line-height: 1;
+          // word-break: break-all;
+        }
+        #who-really {
+          // max-width: 50%;
+          grid-column: 2;
+          grid-row: 1;
+        }
+        #how-this-page {
+          grid-column: 2;
+          grid-row: 3;
+        }
+
+        #contact {
+          grid-column: 2;
+          grid-row: 4;
+        }
+        #cmyk {
+          grid-column: 2;
+          grid-row: 2;
+        }
+      }
+    }
   }
 
   //////////////////////////////
   /////////////////////////////
   //////////// FOR JS /////////
   /* The bitton to show the stuff */
-  // .show-modal{
-  // }
   /* CLASSES TO MAKE MODAL WORK */
   .hidden {
     display: none;
   }
 }
-/* X button */
-// .close-modal {
-//   /*write this in the html for show the X button <button class="close-modal">&times;</button> */
-//   position: absolute;
-//   top: 1.2rem;
-//   right: 2rem;
-//   font-size: 5rem;
-//   color: #333;
-//   cursor: pointer;
-//   border: none;
-//   background: none;
-// }
-//// the ingredients and my pics can be set with this
-// .modal {
-//   // position: absolute;
-//   // top: 50%;
-//   // left: 50%;
-//   // transform: translate(-50%, -50%);
-//   // width: 70%;
-//   background-color: white;
-//   // padding: 6rem;
-//   // border-radius: 5px;
-//   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-//   z-index: 10;
-// }
-/// the backgraund that will show when pressed a btn
-// .overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: $light-gray;
-//   // backdrop-filter: blur(3px);
-//   z-index: 5;
-// }

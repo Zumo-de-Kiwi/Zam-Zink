@@ -28,11 +28,8 @@ body {
     height: 6rem;
     display: flex;
     width: 100%;
-    // max-width: 700px;
     justify-content: flex-end;
     padding-top: 3rem;
-    // padding-right: 2vw;
-    // padding-left: 2vw;
     // transition: all $trans-slow; // INitial fx when enter the page
     .logo-frame {
       margin-right: auto;
@@ -197,14 +194,14 @@ body {
         transition: 0.43s ease-out;
         // for coming projects
         &.coming {
-          color: rgb(107, 104, 116);
+          color: $font-light-gray;
           text-decoration: underline;
-          text-decoration-color: rgb(107, 104, 116);
+          text-decoration-color: $font-light-gray;
           &::after {
             content: 'Video projects';
           }
           &:hover {
-            text-decoration-color: rgb(107, 104, 116);
+            text-decoration-color: $font-light-gray;
             &::after {
               content: '[C🙃ming Soon]';
             }

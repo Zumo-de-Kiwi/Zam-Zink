@@ -7,7 +7,8 @@ const comicalPics = document.getElementById('comical-pics');
 // const centerContent = document.getElementById('center-content');
 const centerPs = document.getElementById('center-Ps');
 const moreBtns = document.getElementById('more-btns');
-const myPixelPic = document.getElementById('my-pixel-pic');
+// const myPixelPic = document.getElementById('my-pixel-pic');
+const textChar = document.querySelector('.text-char');
 
 const titles = document.querySelectorAll('.titles');
 const aboutMe = document.getElementById('about-me');
@@ -21,7 +22,7 @@ console.log(ingredients);
 const openComical = function () {
   centerPs.classList.add('hidden');
   moreBtns.classList.add('hidden');
-  myPixelPic.classList.add('hidden');
+  textChar.classList.add('hidden');
 
   comicalPics.classList.remove('hidden');
   // atenuate sides
@@ -56,7 +57,7 @@ const closeComical = function () {
 const openBoring = function () {
   centerPs.classList.add('hidden');
   moreBtns.classList.add('hidden');
-  myPixelPic.classList.add('hidden');
+  textChar.classList.add('hidden');
 
   ingredients.classList.remove('hidden');
   // atenuate sides
@@ -191,7 +192,9 @@ let btnNum = 1;
 let pNum = 1;
 
 const p1 =
-  'I come from a Mediterranean village which has an onion as a coat of arms to an island with surplus of Silicon Pies and a chicken as an enemy.';
+  'I come from a town where all the proper names ends up with "ll". To another where circling a stick will make you end up with a a cotton candy.';
+// Take a bamboo stick and take a circle outside and you will get marshmallows
+// with surplus of Silicon Pies and a chicken as an enemy
 const p2 =
   ' My perfect day is when I learn something new, from an eggy technology to an outlandish dish. Btw, friends are a good source of learning and inspiration.';
 const p3 =

@@ -32,7 +32,7 @@
           ><span id="leftArrow"><</span></a
         >
         <!-- <span id="arrowLine">___________________</span> -->
-        <a class="back logo-frame">
+        <a class="back logo-frame" href="../../index.html">
           <svg
             class="logo-svg"
             clip-rule="evenodd"
@@ -60,11 +60,19 @@
       <h2 class="titles" id="bottom-side">THE BOTTOM SIDE</h2>
 
       <!-- BORING SIDE PIC -->
-      <img
-        class="ingredients hidden"
-        src="ingredients.jpeg"
-        alt="nutrition label about me"
-      />
+      <picture class="ingredients hidden">
+        <source
+          srcset="https://i.ibb.co/VgGn12C/ingredients-3.webp"
+          type="image/webp"
+        />
+        <source
+          srcset="https://i.ibb.co/DVtYjjX/ingredients-3.png"
+          type="image/png"
+        />
+        <img src="ingredients-3.webp" alt="" type="image/webp" />
+      </picture>
+      <!-- <img src="ingredients.jpeg" alt="nutrition label about me" /> -->
+
       <div id="center-box">
         <!-- the photos of the comical side -->
         <div id="comical-pics" class="hidden">
@@ -126,14 +134,32 @@
             alt="me baby"
           />
         </div>
+
         <!-- content in the center -->
         <div id="center-content">
+          <!-- EMOJI -->
+          <div id="ceba"></div>
+          <div id="tainan"></div>
           <!-- about me center parragraphs -->
           <div id="center-Ps">
             <p class="center-p" id="p1">
-              I come from a Mediterranean village which has an onion as a coat
-              of arms to an island with surplus of Silicon Pies and a chicken as
-              an enemy.
+              I come from a Mediterranean
+              <a
+                id="spain"
+                href="https://goo.gl/maps/ttreVPBPpJ5xmXDB7"
+                target="_blank"
+                rel="noopener noreferrer"
+                >town</a
+              >
+              which has an onion on his coat of arms. To
+              <a
+                href="https://goo.gl/maps/npQ9tcDnbLDxYVPt8"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="taiwan"
+                >another</a
+              >
+              located in an island, where chicken put Kinder eggs.
             </p>
           </div>
           <!-- btn more -->
@@ -143,11 +169,19 @@
             </button>
           </div>
           <!-- my pixel ver -->
-          <img
+          <div class="text-char">
+            <div id="c-bg">c</div>
+            <div class="eye left normal" id="eye-l-nrm">é</div>
+            <div class="eye left blink hidden" id="eye-l-blink">e</div>
+            <div class="eye right normal" id="eye-r-normal">é</div>
+            <div class="eye right blink hidden" id="eye-r-blink">e</div>
+            <div class="mouth" id="normal-mouth">o</div>
+          </div>
+          <!-- <img
             id="my-pixel-pic"
             src="https://via.placeholder.com/128x128"
             alt="my-pic"
-          />
+          /> -->
         </div>
       </div>
     </main>
@@ -155,24 +189,35 @@
     <footer>
       <div id="footer-inside">
         <h2>BOTTOM OF THE PACKAGE</h2>
+        <!-- <div class="part-1"> -->
         <p id="who-really">
           Tell me, who really pays attention to the bottom of the package?
         </p>
         <p id="how-this-page">
-          <a href="../blog/blog.html">How</a>did I come out with these pages?
+          <a href="../blog/blog.html">How</a> did I come out with these pages?
+        </p>
+        <!-- </div> -->
+
+        <!-- <div class="part-2"> -->
+        <p id="cmyk">
+          <a
+            href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/crazy-expression-symbology-and-crazier-cmyk-maps/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span id="cyan">c </span>
+            <span id="magenta">m </span><span id="yellow">y </span>
+            <span id="black">k</span></a
+          >
         </p>
         <p id="contact">
           <a href="../contact/contact.html">contact</a>this guy
         </p>
-        <p id="cmyk">
-          <span id="cyan">c </span><span id="magenta">m </span
-          ><span id="yellow">y </span><span id="black">k</span>
-        </p>
-        <!-- cmyk, every letter with his corresponded color -->
+        <!-- </div> -->
         <!-- <a id="to-top" class="toTopBtn">back to the top</a> -->
       </div>
     </footer>
     <script src="about_me.js"></script>
-    <script src="/js/app.js"></script>
+    <!-- <script src="/js/app.js"></script> -->
   </body>
 </html>

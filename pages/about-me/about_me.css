@@ -64,7 +64,7 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(0vw + 0.4vw + 30px);
+  font-size: calc(0.3vw + 0.4vw + 30px);
 }
 
 body .left-arrow {
@@ -301,7 +301,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   font-family: Monaco, Consolas, 'Courier New', monospace;
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
-  font-size: calc(0vw - 0vw + 12px);
+  font-size: calc(0.3vw - 0vw + 12px);
 }
 
 .preload-finish {
@@ -533,9 +533,22 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 620, "slnt" 0;
-  font-size: calc(0vw + 0.3vw + 13px);
+  font-size: calc(0.3vw + 0.3vw + 13px);
+  font-size: 1.5rem;
   /* The bitton to show the stuff */
   /* CLASSES TO MAKE MODAL WORK */
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    font-size: 2rem;
+  }
 }
 
 body main {
@@ -553,15 +566,16 @@ body main .left-arrow {
   grid-column: 1;
   grid-row: 1;
   place-self: center;
+  margin-top: 1rem;
 }
 
 body main .left-arrow .link-a {
   height: 70%;
   padding: 0rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   color: #232522;
-  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 300;
+  font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
 }
 
 body main .left-arrow .link-a:hover {
@@ -579,7 +593,7 @@ body main .left-arrow:hover .hc-logo {
 body main .closeBtn {
   z-index: 99;
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 400;
-  font-size: calc(0vw + 0.4vw + 30px);
+  font-size: 2.3em;
   color: #232522;
   padding: 4rem;
   padding-left: 6rem;
@@ -595,12 +609,12 @@ body main .closeBtn:hover {
 
 body main .titles {
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400;
-  font-size: calc(0vw + 0vw + 18px);
+  font-size: 1.5em;
   color: #232522;
   align-self: center;
   justify-self: center;
   text-align: center;
-  width: 30rem;
+  min-width: 37rem;
   text-decoration: underline;
   text-decoration-color: #a6a6a6;
   will-change: transform;
@@ -613,40 +627,40 @@ body main .titles:hover {
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 620;
 }
 
-body main #about-me {
+body main .titles#about-me {
   grid-column: 2/ 3;
   grid-row: 1 / 2;
   text-decoration: none;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
-body main #about-me:hover {
+body main .titles#about-me:hover {
   text-decoration: none;
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 300;
 }
 
-body main #boring-side {
+body main .titles#boring-side {
   transform: rotate(-90deg);
   grid-column: 1/ 2;
   grid-row: 2 / 3;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
 }
 
-body main #comical-side {
+body main .titles#comical-side {
   transform: rotate(90deg);
   grid-column: 3/ 4;
   grid-row: 2 / 3;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
-body main #bottom-side {
+body main .titles#bottom-side {
   transform: rotate(180deg);
   grid-column: 2/ 3;
   grid-row: 3 / 4;
   text-decoration: none;
 }
 
-body main #bottom-side:hover {
+body main .titles#bottom-side:hover {
   text-decoration: none;
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 300;
 }
@@ -679,9 +693,10 @@ body main #center-box {
 body main #center-box #center-content {
   height: 100%;
   z-index: 1;
+  line-height: 1.4;
   display: grid;
   place-items: center;
-  width: clamp(300px, 70%, 55ch);
+  width: clamp(300px, 70%, 50ch);
   height: clamp(300px, 30vh, 40vh);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -690,8 +705,20 @@ body main #center-box #center-content {
 body main #center-box #center-content #center-Ps {
   grid-column: 1/ 4;
   grid-row: 2 / 3;
-  font-size: calc(0vw - 0vw + 12px);
   position: relative;
+}
+
+body main #center-box #center-content #center-Ps a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+body main #center-box #center-content #center-Ps a#spain:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>🧅</text></svg>") 16 0, auto;
+}
+
+body main #center-box #center-content #center-Ps a#taiwan:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>🍦</text></svg>") 16 0, auto;
 }
 
 body main #center-box #center-content #center-Ps .center-p {
@@ -709,15 +736,36 @@ body main #center-box #center-content #center-Ps .center-p span:hover {
   text-decoration: none;
 }
 
-body main #center-box #center-content #my-pixel-pic {
+body main #center-box #center-content .text-char {
   grid-column: 1/ 3;
   grid-row: 3;
+  height: 93%;
+  width: 70%;
+  border: 3px solid red;
+  position: relative;
+}
+
+body main #center-box #center-content .text-char #c-bg,
+body main #center-box #center-content .text-char .eye,
+body main #center-box #center-content .text-char .mouth {
+  position: absolute;
+}
+
+body main #center-box #center-content .text-char #c-bg {
+  top: 0px;
+  left: 0px;
+  transform: rotateZ(90deg);
+  transform-origin: center;
+  opacity: 0.4;
+  font-size: 8em;
 }
 
 body main #center-box #center-content #more-btns {
-  align-self: start;
   grid-column: 2 /4;
   grid-row: 3;
+  align-self: start;
+  justify-self: end;
+  margin-right: 13%;
   overflow: visible;
 }
 
@@ -725,26 +773,23 @@ body main #center-box #center-content #more-btns .more-btn {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
   font-weight: 500;
   text-align: center;
-  font-size: calc(0vw - 0vw + 8px);
+  font-size: 0.8em;
   margin: 0px auto;
   border: 2px solid #333333;
   border-radius: 1.1rem;
   height: 3.8rem;
   padding: 0.2rem 1rem;
-  margin: 0.2rem;
-  margin-top: 1rem;
   background-color: white;
   transition: 0.3s;
   will-change: transform;
 }
 
 body main #center-box #center-content #more-btns .more-btn:hover {
-  border: 2.4px solid #333333;
-  transform: translateY(-0.1rem);
+  transform: translateY(-0.13rem);
 }
 
 body main #center-box #center-content #more-btns .more-btn:active {
-  transform: translateY(0.15rem);
+  transform: translateY(0.17rem);
 }
 
 body main #center-box #comical-pics {
@@ -799,6 +844,7 @@ body main #center-box #comical-pics {
 }
 
 body main #center-box #comical-pics .comical-pic {
+  will-change: transform;
   position: absolute;
   border-radius: 7px;
   /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -874,7 +920,6 @@ body main #center-box #comical-pics #my-pic-9 {
 
 body footer {
   height: 41%;
-  display: grid;
   background-color: #a6a6a6;
 }
 
@@ -882,20 +927,26 @@ body footer #footer-inside {
   padding: 3rem;
 }
 
+body footer #footer-inside h2 {
+  margin-bottom: 0.5rem;
+  font-size: 5em;
+}
+
 body footer #footer-inside a {
   color: black;
 }
 
-body footer #footer-inside #who-really {
-  font-size: calc(0vw - 0vw + 12px);
+body footer #footer-inside a:hover {
+  opacity: 0.5;
 }
 
-body footer #footer-inside #how-this-page {
-  font-size: calc(0vw - 0vw + 12px);
+body footer #footer-inside p {
+  margin-bottom: 1rem;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 body footer #footer-inside #contact {
-  font-size: calc(0vw - 0vw + 12px);
   text-align: end;
 }
 
@@ -904,9 +955,22 @@ body footer #footer-inside #contact a {
 }
 
 body footer #footer-inside #cmyk {
-  font-size: calc(0vw - 0vw + 12px);
+  font-size: 1.07em;
   text-align: end;
   filter: grayscale(100%);
+  transition: 2.9s;
+}
+
+body footer #footer-inside #cmyk a {
+  text-decoration: none;
+}
+
+body footer #footer-inside #cmyk a:hover {
+  opacity: 1;
+}
+
+body footer #footer-inside #cmyk:hover {
+  filter: none;
 }
 
 body footer #footer-inside #cmyk #cyan {
@@ -925,8 +989,70 @@ body footer #footer-inside #cmyk #black {
   color: black;
 }
 
+@media (min-width: 800px) {
+  body footer {
+    overflow-y: hidden;
+  }
+  body footer #footer-inside {
+    display: grid;
+    max-height: 71vh;
+  }
+  body footer #footer-inside h2 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    font-size: 5em;
+    line-height: 1;
+  }
+  body footer #footer-inside #who-really {
+    grid-column: 2;
+  }
+  body footer #footer-inside #how-this-page {
+    grid-column: 2;
+  }
+  body footer #footer-inside #contact {
+    grid-column: 2;
+  }
+  body footer #footer-inside #cmyk {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 1400px) {
+  body footer {
+    overflow-y: hidden;
+  }
+  body footer #footer-inside {
+    display: grid;
+    gap: 1.7rem;
+    max-height: 71vh;
+    max-width: 61vw;
+  }
+  body footer #footer-inside h2 {
+    max-width: 37vw;
+    justify-self: end;
+    grid-column: 1;
+    grid-row: 1 / 7;
+    font-size: 8em;
+    line-height: 1;
+  }
+  body footer #footer-inside #who-really {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  body footer #footer-inside #how-this-page {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  body footer #footer-inside #contact {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  body footer #footer-inside #cmyk {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
 body .hidden {
   display: none;
 }
-
-/* X button */

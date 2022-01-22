@@ -73,11 +73,11 @@ body {
 
 .container {
   height: 100%;
-  width: 100%;
+  // width: 100%;
 
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr minmax(100%, 60ch) 1fr;
+  grid-template-columns: 1fr minmax(100%, 50ch) 1fr;
   #subcontainer {
     grid-column: 2;
 
@@ -108,6 +108,11 @@ body {
     }
     .p2 {
       grid-row: 4;
+    }
+    .italic {
+      font-size: 1.02em;
+      font-family: $ff-recursive-bold;
+      font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 500, 'slnt' -13;
     }
     #mailFrame {
       // grid-column: 2;

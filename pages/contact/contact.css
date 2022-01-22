@@ -64,7 +64,7 @@ body ::selection {
 }
 
 body h1 {
-  font-size: calc(0vw + 0.4vw + 30px);
+  font-size: calc(0.3vw + 0.4vw + 30px);
 }
 
 body .left-arrow {
@@ -301,7 +301,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   font-family: Monaco, Consolas, 'Courier New', monospace;
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
-  font-size: calc(0vw - 0vw + 12px);
+  font-size: calc(0.3vw - 0vw + 12px);
 }
 
 .preload-finish {
@@ -604,10 +604,9 @@ body {
 
 .container {
   height: 100%;
-  width: 100%;
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr minmax(100%, 60ch) 1fr;
+  grid-template-columns: 1fr minmax(100%, 50ch) 1fr;
 }
 
 .container #subcontainer {
@@ -631,7 +630,7 @@ body {
 .container #subcontainer p {
   text-align: center;
   color: #a6a6a6;
-  font-size: calc(0vw + 0.3vw + 13px);
+  font-size: calc(0.3vw + 0.3vw + 13px);
 }
 
 .container #subcontainer .p1 {
@@ -640,6 +639,12 @@ body {
 
 .container #subcontainer .p2 {
   grid-row: 4;
+}
+
+.container #subcontainer .italic {
+  font-size: 1.02em;
+  font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
+  font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 500, 'slnt' -13;
 }
 
 .container #subcontainer #mailFrame {
@@ -657,7 +662,7 @@ body {
 
 .container #subcontainer #mailFrame a #mailText {
   font-variation-settings: "MONO" 1, "CASL" 0.2, "wght" 500;
-  font-size: calc(0vw + 0.3vw + 13px);
+  font-size: calc(0.3vw + 0.3vw + 13px);
   transition: font-variation-settings 0.5s ease;
   font-size: calc(3vw + 12px);
   user-select: none;
