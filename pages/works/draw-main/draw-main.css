@@ -754,7 +754,7 @@ body main .top-info {
   position: sticky;
   background-color: #f5f3e6;
   top: 0;
-  padding: 10rem;
+  padding: 10rem 2rem;
   color: #3e3e3e;
 }
 
@@ -763,10 +763,66 @@ body main .top-info h1 {
   text-transform: uppercase;
   font-size: 3.3rem;
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740, "slnt" -7;
+  margin-bottom: 9rem;
+}
+
+body main .top-info .info-text {
+  max-width: 49ch;
+  margin: 0px auto;
+}
+
+body main .top-info .info-text .para {
+  padding-bottom: 2.33rem;
+  line-height: 1.4;
+}
+
+body main .top-info .info-text #classified {
+  opacity: 0.6;
+  font-size: 0.83em;
+}
+
+body main .top-info .info-text .hov-secs {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+body main .top-info .info-text .hov-secs:hover {
+  opacity: 0.3;
+}
+
+body main .top-info .info-text .dynamic-el-wrapper {
+  width: 100%;
+  margin-top: 0.3rem;
+  display: flex;
+  overflow: visible;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+body main .top-info .info-text .dynamic-el-wrapper .hover-el {
+  display: none;
+}
+
+body main .top-info .info-text .making-link-wrapper {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body main .top-info .info-text .making-link-wrapper .link-to-blog {
+  color: inherit;
+  margin: 0px auto;
+  text-align: center;
+}
+
+body main .top-info .info-text .making-link-wrapper .link-to-blog:hover {
+  color: #5f3fd5;
 }
 
 body main #drawSections {
-  box-shadow: 0px -0.7px 2.7px -21px rgba(0, 0, 0, 0.022), 0px -1.8px 6.9px -21px rgba(0, 0, 0, 0.031), 0px -3.7px 14.2px -21px rgba(0, 0, 0, 0.039), 0px -7.7px 29.2px -21px rgba(0, 0, 0, 0.048), 0px -21px 80px -21px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px -0.7px 2.7px -11px rgba(0, 0, 0, 0.022), 0px -1.8px 6.9px -11px rgba(0, 0, 0, 0.031), 0px -3.7px 14.2px -11px rgba(0, 0, 0, 0.039), 0px -7.7px 29.2px -11px rgba(0, 0, 0, 0.048), 0px -21px 80px -11px rgba(0, 0, 0, 0.07);
   z-index: 2;
   background: #eeebe7;
   display: grid;
@@ -1020,9 +1076,10 @@ body main #drawSections #randomDraws #fin4 {
 }
 
 @media (min-width: 768px) {
-  body main h1 {
-    padding: 10rem;
+  body main .top-info {
     padding-top: 17rem;
+  }
+  body main .top-info h1 {
     font-size: 3.7rem;
   }
   body main #drawSections {
