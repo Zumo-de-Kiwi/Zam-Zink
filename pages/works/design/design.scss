@@ -731,6 +731,14 @@ body {
               .r-links {
                 padding: 1rem;
               }
+              #making-of {
+                &::after {
+                  content: 'the making of';
+                }
+                &:hover::after {
+                  content: 'the Design Page';
+                }
+              }
               .arrow {
                 font-size: 2.5rem;
               }

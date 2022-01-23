@@ -596,7 +596,7 @@ body main .blog-wrapper .ps-wrapper picture.round-edges img {
 }
 
 body main .blog-wrapper .ps-wrapper picture#real-gundam::after {
-  content: 'A real Gundam, used to mount a complete Gundam figure.';
+  content: 'A real Gundam, used to assemble a complete Gundam figure.';
 }
 
 body main .blog-wrapper .ps-wrapper picture#penny-web::after {

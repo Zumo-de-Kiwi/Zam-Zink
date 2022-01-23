@@ -1103,6 +1103,14 @@ body main .footer #footer-wrapper .footer-r .sub-wrapper div .r-links {
   padding: 1rem;
 }
 
+body main .footer #footer-wrapper .footer-r .sub-wrapper div #making-of::after {
+  content: 'the making of';
+}
+
+body main .footer #footer-wrapper .footer-r .sub-wrapper div #making-of:hover::after {
+  content: 'the Design Page';
+}
+
 body main .footer #footer-wrapper .footer-r .sub-wrapper div .arrow {
   font-size: 2.5rem;
 }

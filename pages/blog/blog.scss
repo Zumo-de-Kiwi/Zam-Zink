@@ -99,20 +99,30 @@ body {
           .section-top {
             margin: 1.3rem;
             margin-bottom: 0;
-            line-height: 0.7;
+            line-height: 1.3;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            // MOBILE
             .section-header {
-              margin-left: 4.4rem;
-              // font-family: 'Mochiy Pop P One', sans-serif;
+              margin-left: 2rem;
               font-size: 3.4rem;
               text-transform: uppercase;
               font-weight: 400;
             }
             .art-numbers {
               display: none;
-              @media (min-width: 700px) {
+            }
+            // DESKTOP
+            @media (min-width: 700px) {
+              line-height: 0.7;
+              .section-header {
+                margin-left: 4.4rem;
+                font-size: 3.4rem;
+                text-transform: uppercase;
+                font-weight: 400;
+              }
+              .art-numbers {
                 font-size: 1.7rem;
                 display: block;
                 padding-right: 4rem;
