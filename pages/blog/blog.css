@@ -457,13 +457,14 @@ body main .blogSections .sections-holder {
 body main .blogSections .sections-holder .section .section-top {
   margin: 1.3rem;
   margin-bottom: 0;
+  line-height: 0.7;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 body main .blogSections .sections-holder .section .section-top .section-header {
-  margin-left: 5.3rem;
+  margin-left: 4.4rem;
   font-size: 3.4rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -495,7 +496,9 @@ body main .blogSections .sections-holder .section .articles-holder a:hover h3 {
 
 body main .blogSections .sections-holder .section .articles-holder a .article {
   padding: 3.5rem;
-  margin: 31px;
+  margin: 3rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
   margin-top: 13px;
   border-radius: 2rem;
   background-color: white;
@@ -534,7 +537,7 @@ body main .blogSections .sections-holder .section .articles-holder .making-of-ar
     grid-template-columns: 1fr 1fr;
   }
   body main .blogSections .sections-holder .section .articles-holder a .article {
-    margin: 23px;
+    margin: 2rem;
   }
   body main .blogSections .sections-holder .section .articles-holder #make-intro {
     grid-column: 1 / 3;

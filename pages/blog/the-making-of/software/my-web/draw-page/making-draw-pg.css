@@ -524,7 +524,8 @@ body main .blog-wrapper .ps-wrapper .paragraph .italic {
 
 body main .blog-wrapper .ps-wrapper .paragraph .scale13 {
   font-size: 1.4em;
-  font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 600, 'slnt' 0;
+  font-variation-settings: 'MONO' 0, 'CASL' 0, 'wght' 600;
+  margin-bottom: 0.4rem;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph .t-a-center {
