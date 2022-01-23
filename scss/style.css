@@ -613,7 +613,7 @@ body {
   margin-bottom: 7vh;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.3vw + 0.4vw + 30px);
-  font-variation-settings: "MONO" 0.2, "CASL" 0.2, "wght" 800, "slnt" 0;
+  font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 800, "slnt" 0;
   text-align: left;
   color: #707070;
   word-spacing: 0.7px;
@@ -689,6 +689,10 @@ body {
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" var(--main-weight), "slnt" 0;
 }
 
+.main .content_wrap .content-portfolio .link-wrapper {
+  text-decoration: none;
+}
+
 .main .content_wrap .content-portfolio .link {
   position: relative;
   white-space: nowrap;
@@ -732,8 +736,8 @@ body {
   font-size: calc(0.4vw + 7px);
   text-decoration: none;
   position: relative;
-  left: -6.5px;
-  top: -7px;
+  left: 0.1rem;
+  top: -0.7rem;
   margin-left: 0px;
 }
 
@@ -769,6 +773,7 @@ body {
 .main .content_wrap #oneMore {
   text-decoration: none;
   position: relative;
+  margin-bottom: 23rem;
 }
 
 .main .content_wrap #oneMore #dotsss {
@@ -819,7 +824,6 @@ footer {
   justify-content: center;
   -ms-flex-pack: center;
   position: relative;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 
 footer .footer {
@@ -829,7 +833,7 @@ footer .footer {
   margin: 0 auto;
   padding-top: 1rem;
   margin-bottom: 1.3rem;
-  max-width: 800px;
+  max-width: 730px;
   border-radius: 19px;
 }
 
@@ -851,9 +855,12 @@ footer .footer .closeBtn:hover {
 
 footer .footer .line {
   text-align: center;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 footer .footer .line span {
+  white-space: nowrap;
   font-size: 1.7rem;
   font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
@@ -863,52 +870,62 @@ footer .footer .line span {
   line-height: 3rem;
 }
 
-@media (max-width: 800px) {
-  footer .footer .line span {
-    font-size: calc(0.3vw - 0vw + 12px);
-    line-height: 2.4rem;
-    padding-bottom: 20vh;
-  }
+footer .footer .line .footerSpan {
+  will-change: font-variation-settings;
 }
 
-footer .footer .line .workingSpan {
+footer .footer .line .footerSpan a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .footer .line .footerSpan a.github {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🖖</text></svg>") 16 0, auto;
+}
+
+footer .footer .line .footerSpan.workingSpan {
   animation: widthness 2s ease 10;
-  will-change: transform;
   color: #00ff84;
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
 
-footer .footer .line .dangerSpan {
-  will-change: transform;
+footer .footer .line .footerSpan.dangerSpan {
   animation: slintness 2s ease 10s 17;
   color: #eff1f5;
   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 730px) {
   footer .footer {
+    font-size: 1rem;
     bottom: 0px;
     margin-bottom: 0rem;
     border-radius: 0px;
-    padding: 1.3rem;
+    padding: 0.3rem;
   }
   footer .footer .line {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  footer .footer .line span {
+    font-size: 1.4rem;
+    line-height: 2;
+    padding-bottom: 20vh;
     padding-left: 2px;
-    padding-right: 12px;
-    font-size: calc(0.3vw - 0vw + 12px);
+    padding-right: 2px;
   }
 }
 
 footer .footer #githublink {
   color: #00ff84;
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
-  font-size: calc(0.3vw - 0vw + 8px);
+  font-size: calc(0.4vw + 7px);
   text-align: center;
   padding: 1.6vh;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🖖</text></svg>") 16 0, auto;
 }
 
 footer .footer #githublink a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🖖</text></svg>") 16 0, auto;
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -3;
   color: inherit;
   transition: 0.45s;
@@ -917,4 +934,10 @@ footer .footer #githublink a {
 footer .footer #githublink a:hover {
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -17, "CRSV" 0;
   color: white;
+}
+
+@media (max-width: 478px) {
+  footer {
+    display: none;
+  }
 }
