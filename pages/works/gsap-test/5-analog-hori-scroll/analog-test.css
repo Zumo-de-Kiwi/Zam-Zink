@@ -686,6 +686,7 @@ body .left-arrow {
   height: 3.5rem;
   top: 1.5rem;
   padding: 0.23rem 0.3rem;
+  z-index: 6;
 }
 
 body .left-arrow .link-a {
@@ -757,9 +758,94 @@ body #header .nav:hover {
   transition: 0.5s;
 }
 
-body #header #flash {
+body #header .nav#whyAnalog {
+  text-decoration: none;
+  z-index: 3;
+}
+
+body #header .nav#flash-btn {
+  z-index: 12;
   padding-bottom: 0.7rem;
   margin-left: 0.7rem;
+}
+
+body #header .nav#flash-btn::after {
+  content: ':;';
+}
+
+body #header .nav#flash-btn.clicked {
+  transform: translateY(-0.7rem);
+  padding-bottom: 0.3rem;
+}
+
+body #header .nav#flash-btn.clicked::after {
+  content: 'X';
+  padding: 0.5rem;
+  font-size: 1.4em;
+}
+
+body #header .flash-wrapper {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  z-index: 11;
+  height: 1px;
+  width: 1rem;
+  border: 1.5px solid transparent;
+  background-color: var(--bg-color);
+  color: transparent;
+  transition: border 1s, background-color 2s, height 0.3s, width 0.3s;
+}
+
+body #header .flash-wrapper .flash-content {
+  transition: inherit;
+  display: none;
+}
+
+body #header .flash-wrapper.clicked {
+  z-index: 11;
+  transition: border 1s, background-color 2s, color 0.5s, height 0.6s, width 0.5s;
+  padding: 2rem;
+  height: 66vh;
+  width: clamp(200px, 50ch, 90vw);
+  overflow-y: scroll;
+  font-variation-settings: "MONO" 0.3, "CASL" 0, "wght" 400, "slnt" 0;
+  background-color: var(--bg-color);
+  border: 1.5px solid var(--text-color);
+  color: var(--text-color);
+}
+
+body #header .flash-wrapper.clicked .flash-content {
+  display: block;
+}
+
+body #header .flash-wrapper.clicked .flash-content h3 {
+  font-size: 1.5em;
+  margin: 3rem;
+  margin-top: 2rem;
+}
+
+body #header .flash-wrapper.clicked .flash-content p {
+  margin-bottom: 2rem;
+  font-size: 0.9em;
+}
+
+body #header .flash-wrapper.clicked .flash-content a {
+  color: inherit;
+  width: 100%;
+  text-align: right;
+}
+
+body #header .overlay-exit {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 200vw;
+  height: 200vh;
+  transform: translateY(-1.7rem) translateX(-84%);
 }
 
 body .main {

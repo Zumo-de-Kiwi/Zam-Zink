@@ -528,6 +528,12 @@ body main .blog-wrapper .ps-wrapper .paragraph code {
   border-radius: 5px;
 }
 
+@media (max-width: 800px) {
+  body main .blog-wrapper .ps-wrapper .paragraph code {
+    padding: 1px 5px;
+  }
+}
+
 body main .blog-wrapper .ps-wrapper .paragraph strong {
   font-size: 1.04em;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
@@ -581,7 +587,7 @@ body main .blog-wrapper .ps-wrapper picture:hover img, body main .blog-wrapper .
 
 body main .blog-wrapper .ps-wrapper picture:hover::after, body main .blog-wrapper .ps-wrapper picture:active::after {
   opacity: 0.79;
-  font-size: 1em;
+  font-size: 0.93em;
   padding: 0.7rem;
 }
 

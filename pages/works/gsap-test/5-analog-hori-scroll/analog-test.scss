@@ -135,6 +135,7 @@ body {
     height: 3.5rem;
     top: 1.5rem;
     padding: 0.23rem 0.3rem;
+    z-index: 6;
     .link-a {
       padding: 0.7rem;
       color: var(--text-color);
@@ -194,17 +195,97 @@ body {
         color: var(--bg-color);
         transition: 0.5s;
       }
+      &#whyAnalog {
+        text-decoration: none;
+        z-index: 3;
+      }
+      &#flash-btn {
+        z-index: 12;
+        padding-bottom: 0.7rem;
+        margin-left: 0.7rem;
+        &::after {
+          content: ':;';
+        }
+        &.clicked {
+          transform: translateY(-0.7rem);
+          padding-bottom: 0.3rem;
+          &::after {
+            content: 'X';
+            padding: 0.5rem;
+            font-size: 1.4em;
+          }
+        }
+      }
     }
-    #whyAnalog {
+
+    .flash-wrapper {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      z-index: 11;
+
+      height: 1px;
+      width: 1rem;
+
+      border: 1.5px solid transparent;
+      background-color: var(--bg-color);
+      color: transparent;
+      transition: border 1s, background-color 2s, height 0.3s, width 0.3s;
+
+      .flash-content {
+        transition: inherit;
+        display: none;
+      }
+      &.clicked {
+        z-index: 11;
+        transition: border 1s, background-color 2s, color 0.5s, height 0.6s,
+          width 0.5s;
+        padding: 2rem;
+
+        height: 66vh;
+        width: clamp(200px, 50ch, 90vw);
+        // max-width: 55ch;
+        overflow-y: scroll;
+        font-variation-settings: 'MONO' 0.3, 'CASL' 0,
+          'wght' $font-weight-lighter, 'slnt' 0;
+        background-color: var(--bg-color);
+        border: 1.5px solid var(--text-color);
+        color: var(--text-color);
+        .flash-content {
+          display: block;
+          h3 {
+            font-size: 1.5em;
+            margin: 3rem;
+            margin-top: 2rem;
+          }
+          p {
+            margin-bottom: 2rem;
+            font-size: 0.9em;
+          }
+          a {
+            color: inherit;
+            width: 100%;
+            text-align: right;
+            // padding-top: 4rem;
+          }
+        }
+      }
     }
-    #flash {
-      padding-bottom: 0.7rem;
-      margin-left: 0.7rem;
-    }
-    #flashInside {
-      // display: hidden;
+    .overlay-exit {
+      z-index: 3;
+      // display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 200vw;
+      height: 200vh;
+      transform: translateY(-1.7rem) translateX(-84%);
+      // background-color: rgba(0, 0, 0, 0.297);
     }
   }
+
   // main is the pics, scrool obj and the title box
   .main {
     cursor: $cursor-pointer-hand;
@@ -229,6 +310,7 @@ body {
       //   #presser {
       //   }
     }
+
     // TITLES
     .Title__MainWrapper {
       position: fixed;
@@ -262,18 +344,14 @@ body {
         border-right: 1.5px solid var(--text-color);
         transition: border 1.5s;
 
+        // 'Mother & Methuselah';
         #Title__Main {
           font-size: 1.8rem;
-          // &::after {
-          //   content: 'Mother & Methuselah';
-          // }
         }
+        //  'the first Earth seed';
         #Title__Second {
           font-size: 1.3rem;
           margin-top: 0.5rem;
-          // &::after {
-          //   content: 'the first Earth seed';
-          // }
         }
       }
       .Title__SignAndEmoji {
@@ -290,20 +368,16 @@ body {
           // font-size: 1.8rem;
           transition: border 1s;
         }
+        //   content: '#';
         #epSign {
           font-size: 1.6rem;
           border-bottom: 1.5px solid var(--text-color);
-          // &::after {
-          //   content: '#';
-          // }
         }
+        //   content: '🐔';
         #epEmoji {
           color: transparent;
           text-shadow: 0px 0px 0px var(--text-color);
           opacity: 0.3;
-          // &::after {
-          //   content: '🐔';
-          // }
         }
       }
       &:hover {
@@ -353,7 +427,6 @@ body {
           height: 100%;
           // border: 3px solid rgba(85, 204, 255, 0.057);
           // background-color: rgba(141, 230, 255, 0.05);
-
           display: flex;
           justify-content: center;
           align-items: center;
@@ -363,10 +436,8 @@ body {
             width: 85vmin;
             height: 85vmin;
             margin: 0rem 5vw;
-
             // border: 3px solid rgba(52, 255, 21, 0.091);
             // background-color: rgba(198, 255, 141, 0.057);
-
             display: flex;
             align-items: center;
             position: relative;
@@ -430,46 +501,6 @@ body {
     #footer {
       position: absolute;
       position: fixed;
-      // #trampolin-wrapper {
-      //   position: fixed;
-      //   height: 4vh;
-      //   width: 100vw;
-      //   left: 0px;
-      //   inset: 0px;
-      //   top: 0px; // in desktop is 0px
-      //   display: flex;
-      //   align-items: flex-end; //start
-      //   justify-content: right;
-      //   overflow: hidden;
-      //   #trampolineEmoji {
-      //     position: fixed; /* Fixed/sticky position */
-      //     overflow: hidden;
-      //     bottom: 2.3rem; /* Place the button at the bottom of the page */
-      //     right: 1rem;
-      //     @media (max-width: 768px) {
-      //       bottom: 1rem;
-      //       right: 0.6rem;
-      //     }
-      //     text-align: center;
-      //     text-decoration: none;
-      //     padding: 2rem; /* Some padding */
-      //     font-size: 3.3rem;
-      //     @media (max-width: 768px) {
-      //       font-size: 2.3rem;
-      //     }
-      //     transition: $trans-fast;
-      //     opacity: 0.33;
-      //     cursor: $cursor-pointer-hand-flip;
-      //     &:hover {
-      //       opacity: 1;
-      //       cursor: $cursor-pointer-hand-flip;
-      //       transform: translateY(-0.2rem);
-      //     }
-      //     &:active {
-      //       transform: translateY(0.2rem);
-      //     }
-      //   }
-      // }
     }
     .proxy {
       position: absolute;

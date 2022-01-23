@@ -154,7 +154,9 @@ body {
             background-color: $blog-font-selected;
             padding: 2px 7px;
             border-radius: 5px;
-            // margin: 0px 3px;
+            @media (max-width: 800px) {
+              padding: 1px 5px;
+            }
           }
           strong {
             font-size: 1.04em;
@@ -210,7 +212,7 @@ body {
             }
             &::after {
               opacity: 0.79;
-              font-size: 1em;
+              font-size: 0.93em;
               padding: 0.7rem;
             }
           }

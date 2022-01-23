@@ -663,11 +663,6 @@ body #header .nav:hover {
   color: var(--bg-color);
 }
 
-body #header #flash {
-  padding-bottom: 1rem;
-  margin-left: 0.7rem;
-}
-
 body .main .info {
   position: fixed;
   bottom: 0rem;
@@ -782,7 +777,7 @@ body .main .info #serious-wrapper {
 }
 
 body .main .info #serious-wrapper.clicked {
-  width: clamp(300px, 800px, 93vw);
+  width: clamp(280px, 800px, 90vw);
 }
 
 body .main .info #serious-wrapper #real-content-info {

@@ -116,15 +116,15 @@ body {
         color: var(--bg-color);
       }
     }
-    #whyAnalog {
-    }
-    #flash {
-      padding-bottom: 1rem;
-      margin-left: 0.7rem;
-    }
-    #flashInside {
-      // display: hidden;
-    }
+    // #whyAnalog {
+    // }
+    // #flash {
+    //   padding-bottom: 1rem;
+    //   margin-left: 0.7rem;
+    // }
+    // #flashInside {
+    //   // display: hidden;
+    // }
   }
   // main is the pics, scrool obj and the title box
   .main {
@@ -235,7 +235,7 @@ body {
         bottom: 2.1rem;
         z-index: 15;
         &.clicked {
-          width: clamp(300px, 800px, 93vw);
+          width: clamp(280px, 800px, 90vw);
         }
 
         #real-content-info {
@@ -587,46 +587,6 @@ body {
     #footer {
       position: absolute;
       position: fixed;
-      // #trampolin-wrapper {
-      //   position: fixed;
-      //   height: 4vh;
-      //   width: 100vw;
-      //   left: 0px;
-      //   inset: 0px;
-      //   top: 0px; // in desktop is 0px
-      //   display: flex;
-      //   align-items: flex-end; //start
-      //   justify-content: right;
-      //   overflow: hidden;
-      //   #trampolineEmoji {
-      //     position: fixed; /* Fixed/sticky position */
-      //     overflow: hidden;
-      //     bottom: 2.3rem; /* Place the button at the bottom of the page */
-      //     right: 1rem;
-      //     @media (max-width: 768px) {
-      //       bottom: 1rem;
-      //       right: 0.6rem;
-      //     }
-      //     text-align: center;
-      //     text-decoration: none;
-      //     padding: 2rem; /* Some padding */
-      //     font-size: 3.3rem;
-      //     @media (max-width: 768px) {
-      //       font-size: 2.3rem;
-      //     }
-      //     transition: $trans-fast;
-      //     opacity: 0.33;
-      //     cursor: $cursor-pointer-hand-flip;
-      //     &:hover {
-      //       opacity: 1;
-      //       cursor: $cursor-pointer-hand-flip;
-      //       transform: translateY(-0.2rem);
-      //     }
-      //     &:active {
-      //       transform: translateY(0.2rem);
-      //     }
-      //   }
-      // }
     }
     .proxy {
       position: absolute;

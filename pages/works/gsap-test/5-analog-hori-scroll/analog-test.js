@@ -1,4 +1,37 @@
 gsap.registerPlugin(ScrollTrigger);
+
+////////////////////////////
+///// RIGHT TOP BTN //////////
+////////////////////////////
+const flashBtn = document.querySelector('#flash-btn');
+const flashWrapper = document.querySelector('.flash-wrapper');
+const overlayExit = document.querySelector('.overlay-exit');
+
+const openMaking = function () {
+  flashWrapper.classList.add('clicked');
+  flashBtn.classList.add('clicked');
+  overlayExit.classList.remove('hidden');
+};
+const closeMaking = function () {
+  flashWrapper.classList.remove('clicked');
+  flashBtn.classList.remove('clicked');
+  overlayExit.classList.add('hidden');
+};
+
+let isMakingOpen = 0;
+const openOrClose = function () {
+  if (isMakingOpen === 0) {
+    isMakingOpen = 1;
+    openMaking();
+  } else if (isMakingOpen === 1) {
+    isMakingOpen = 0;
+    closeMaking();
+  }
+};
+
+flashBtn.addEventListener('click', openOrClose);
+overlayExit.addEventListener('click', closeMaking);
+
 //change colors
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
