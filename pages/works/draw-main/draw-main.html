@@ -261,29 +261,63 @@
       <div class="top-info">
         <h1>d r a w i n g s</h1>
         <div class="info-text">
-          <div class="para">
+          <div class="para para-1">
             On this page you will find some samples of drawings I have made. A
             few of them were drawn when I was only five years old, but most of
             them are more recent.
           </div>
           <!-- <div class="read-more">Read More</div> -->
           <div>
-            <span id="classified"
+            <span class="para para-2"
               >I have classified my works into five groups, according to their
               theme:</span
             >
 
             <br />
+            <!-- onmouseout="hideEx(this)" -->
             <div class="hov-secs">
-              <span id="hov-arc" class="hovered">Architecture, </span>
-              <span id="hov-dodo" class="hovered">Dodo, </span>
-              <span id="hov-rand" class="hovered">Random, </span>
-              <span id="hov-nood" class="hovered">Noodles</span> and
-              <span id="hov-nood" class="hovered">Sketches.</span>
+              <span
+                id="hov-arc"
+                class="hovered"
+                onmouseover="showEx(1)"
+                onmouseout="hideEx(1)"
+                >Architecture,</span
+              >
+              <span
+                id="hov-dodo"
+                class="hovered"
+                hover="displayEx(dodo)"
+                onmouseover="showEx(2)"
+                onmouseout="hideEx(2)"
+                >Dodo,</span
+              >
+              <span
+                id="hov-rand"
+                onmouseover="showEx(3)"
+                onmouseout="hideEx(3)"
+                class="hovered"
+                >Random,</span
+              >
+              <span
+                id="hov-nood"
+                onmouseover="showEx(4)"
+                onmouseout="hideEx(4)"
+                class="hovered"
+                >Noodles</span
+              >
+              and
+              <span
+                id="hov-skt"
+                onmouseover="showEx(5)"
+                onmouseout="hideEx(5)"
+                class="hovered"
+                >Sketches.</span
+              >
             </div>
 
             <div class="dynamic-el-wrapper">
-              (
+              <span class="parentesis">(</span>
+              <div class="hover-me">↑ hover us ↑</div>
               <div class="hover-el" id="explain-arch">
                 e. g. homes, public buildings, city maps
               </div>
@@ -301,14 +335,14 @@
               <div class="hover-el" id="explain-sk">
                 of multiple topics and for diverse purposes
               </div>
-              )
+              <span class="parentesis">)</span>
             </div>
           </div>
           <div class="making-link-wrapper">
             <a
               class="link-to-blog"
               href="../../blog/the-making-of/software/my-web/draw-page/making-draw-pg.html"
-              >> Making Of <
+              >the Making of ➚
             </a>
           </div>
         </div>

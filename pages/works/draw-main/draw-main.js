@@ -3,12 +3,74 @@
 // var length = path.getTotalLength();
 // console.log(length);
 
-/////////// HAMBURGER BTN /////
+///////////  TOP EXPLAIN ///////////
+/// Titles ////
+const hovSecs = document.querySelector('.hov-secs');
+// titles
+const hovArc = document.querySelector('#hov-arc');
+const hovDodo = document.querySelector('#hov-dodo');
+const hovRand = document.querySelector('#hov-rand');
+const hovNood = document.querySelector('#hov-nood');
+const hovSkt = document.querySelector('#hov-skt');
+/// dynamic explain ////
+const dyElWrapper = document.querySelector('.dynamic-el-wrapper');
+const exArch = document.querySelector('#explain-arch');
+const exDodo = document.querySelector('#explain-dodo');
+const exRand = document.querySelector('#explain-rand');
+const exNood = document.querySelector('#explain-nood');
+const exSk = document.querySelector('#explain-sk');
+console.log(dyElWrapper, exArch);
+
+// FUNC
+function showEx(exp) {
+  if (exp === 1) {
+    exArch.style.display = 'block';
+  } else if (exp === 2) {
+    exDodo.style.display = 'block';
+  } else if (exp === 3) {
+    exRand.style.display = 'block';
+  } else if (exp === 4) {
+    exNood.style.display = 'block';
+  } else if (exp === 5) {
+    exSk.style.display = 'block';
+  } else {
+    console.log('hérror');
+  }
+}
+function hideEx(exp) {
+  if (exp === 1) {
+    exArch.style.display = 'none';
+  } else if (exp === 2) {
+    exDodo.style.display = 'none';
+  } else if (exp === 3) {
+    exRand.style.display = 'none';
+  } else if (exp === 4) {
+    exNood.style.display = 'none';
+  } else if (exp === 5) {
+    exSk.style.display = 'none';
+  } else {
+    console.log('hérror');
+  }
+}
+
+// function showEx(exArch) {
+//   // console.log(arc);
+//   exArch.style.display = 'block';
+//   // if (exArch === el) {
+//   //   console.log(el);
+//   //   el.style.display = 'block';
+//   // } else if (dodo === el) {
+//   //   console.log(el);
+//   //   exDodo.style.display = 'block';
+//   // } else {
+//   // }
+// }
+
+//////////////////////////////////////////
+/////////// HAMBURGER BTN ///////////////
 const menuBtn = document.querySelector('.menu-btn');
-// const navBar = document.querySelector('#draw-types');
 const navBar = document.querySelector('.header');
 const main = document.querySelector('.main');
-// const leftArrow = document.querySelector('.left-arrow');
 
 let menuOpen = false;
 const closeOrOpenNav = function () {
@@ -21,7 +83,6 @@ const closeOrOpenNav = function () {
     leftArrow.classList.remove('anim-hidden');
     menuBtn.classList.remove('open');
     navBar.classList.remove('anim-show');
-    // navBar.classList.add('anim-hidden');
     menuOpen = false;
   }
 };
@@ -29,7 +90,6 @@ const closeNav = function () {
   leftArrow.classList.remove('anim-hidden');
   menuBtn.classList.remove('open');
   navBar.classList.remove('anim-show');
-  // navBar.classList.add('anim-hidden');
 };
 menuBtn.addEventListener('click', closeOrOpenNav);
 main.addEventListener('click', closeNav);
