@@ -534,11 +534,11 @@ body main .subpage-wrapper .subpage-content-1 #where {
 
 body main .subpage-wrapper .subpage-content-1 .where-text1 {
   padding-left: 4%;
-  padding-right: 7%;
   grid-row: 4 / 6;
 }
 
 body main .subpage-wrapper .subpage-content-1 .where-text2 {
+  padding-left: 4%;
   grid-row: 6 /8;
 }
 
