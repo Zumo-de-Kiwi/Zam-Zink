@@ -29,6 +29,7 @@ svg {
   display: block;
   max-width: 100%;
   user-select: none;
+  -webkit-user-drag: none;
 }
 
 /*7. Remove built-in form typography styles*/
@@ -407,6 +408,7 @@ body .absolute-nav .left-arrow {
 }
 
 body .absolute-nav .left-arrow .link-a {
+  padding-right: 3rem;
   color: #ccad8f;
 }
 

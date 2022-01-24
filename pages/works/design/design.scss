@@ -17,7 +17,6 @@ body {
   width: 100vw;
   font-weight: 300;
   position: relative;
-  // font-size: 2rem;
 
   .preloader {
     transition: $trans-slow ease-out;
@@ -50,6 +49,7 @@ body {
         top: 1rem;
       }
       .link-a {
+        padding-right: 3rem;
         color: $design-bg-color;
         &:hover {
           color: $design-bg-color;

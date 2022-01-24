@@ -29,6 +29,7 @@ svg {
   display: block;
   max-width: 100%;
   user-select: none;
+  -webkit-user-drag: none;
 }
 
 /*7. Remove built-in form typography styles*/
@@ -384,7 +385,7 @@ body .preloader #emoji-loader {
 
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: white;
+  color: #363636;
   font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.8rem;
 }
