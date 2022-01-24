@@ -659,6 +659,7 @@ body main .titles#bottom-side {
   grid-column: 2/ 3;
   grid-row: 3 / 4;
   text-decoration: none;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
 body main .titles#bottom-side:hover {
@@ -715,7 +716,7 @@ body main #center-box #center-content #center-Ps a {
 }
 
 body main #center-box #center-content #center-Ps a#spain:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='57%'>🧅</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='25' height='31' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🧅</text></svg>") 16 0, auto;
 }
 
 body main #center-box #center-content #center-Ps a#taiwan:hover {

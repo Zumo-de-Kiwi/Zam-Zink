@@ -1,4 +1,3 @@
-/////  DO IT ////
 const leftArrow = document.getElementById('leftArrow');
 const closeBtn = document.querySelector('.closeBtn');
 const boringBtn = document.querySelector('.boringBtn');
@@ -7,8 +6,8 @@ const comicalPics = document.getElementById('comical-pics');
 // const centerContent = document.getElementById('center-content');
 const centerPs = document.getElementById('center-Ps');
 const moreBtns = document.getElementById('more-btns');
-// const myPixelPic = document.getElementById('my-pixel-pic');
-const textChar = document.querySelector('.text-char');
+const innerWrapper = document.querySelector('.innerWrapper'); // this is the Character text myPixelPic
+const footer = document.querySelector('#footer-inside');
 
 const titles = document.querySelectorAll('.titles');
 const aboutMe = document.getElementById('about-me');
@@ -17,39 +16,46 @@ const comicalSide = document.getElementById('comical-side');
 const bottomSide = document.getElementById('bottom-side');
 console.log(ingredients);
 
-////////// FUNCTIONS //////////////
-/////// COMICAL //////////
+////////// FUNCTIONS ////////////////
+
+/// to footer SMOOTH SCROOL ///
+bottomSide.addEventListener('click', function (e) {
+  footer.scrollIntoView({ behavior: 'smooth' });
+});
+
+/////////////////// COMICAL //////////////////
 const openComical = function () {
   centerPs.classList.add('hidden');
   moreBtns.classList.add('hidden');
-  textChar.classList.add('hidden');
+  innerWrapper.classList.add('hidden');
+  // textChar.classList.add('hidden');
 
   comicalPics.classList.remove('hidden');
   // atenuate sides
   aboutMe.style.color = 'hsl(0, 0%, 84%)';
   bottomSide.style.color = 'hsl(0, 0%, 84%)';
-  boringSide.style.color = 'hsl(0, 0%, 84%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  boringSide.style.color = 'hsl(0, 0%, 84%)';
   boringSide.style.textDecoration = 'none';
   //  <   X
   leftArrow.classList.add('hidden');
   closeBtn.classList.remove('hidden');
-  // comicalSide.style.fontWeight = '620';
   comicalSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0.7,'wght' 620";
 };
 const closeComical = function () {
   centerPs.classList.remove('hidden');
   moreBtns.classList.remove('hidden');
+  innerWrapper.classList.remove('hidden');
+
   comicalPics.classList.add('hidden');
   // atenuate sides
   aboutMe.style.color = 'hsl(100, 4%, 14%)';
   bottomSide.style.color = 'hsl(100, 4%, 14%)';
-  boringSide.style.color = 'hsl(100, 4%, 14%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  boringSide.style.color = 'hsl(100, 4%, 14%)';
   boringSide.style.textDecoration = 'underline';
   //  <   X
   leftArrow.classList.remove('hidden');
   closeBtn.classList.add('hidden');
   // VF
-  // comicalSide.style.fontWeight = '620';
   comicalSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0.1, 'wght' 500";
 };
 
@@ -57,38 +63,38 @@ const closeComical = function () {
 const openBoring = function () {
   centerPs.classList.add('hidden');
   moreBtns.classList.add('hidden');
-  textChar.classList.add('hidden');
+  innerWrapper.classList.add('hidden');
+  // textChar.classList.add('hidden');
 
   ingredients.classList.remove('hidden');
   // atenuate sides
   aboutMe.style.color = 'hsl(0, 0%, 84%)';
   bottomSide.style.color = 'hsl(0, 0%, 84%)';
-  comicalSide.style.color = 'hsl(0, 0%, 84%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  comicalSide.style.color = 'hsl(0, 0%, 84%)';
   comicalSide.style.textDecoration = 'none';
   //  <   X
   leftArrow.classList.add('hidden');
   closeBtn.classList.remove('hidden');
   // boringBtn.classList.remove('hidden');
-  // comicalSide.style.fontWeight = '620';
   boringSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0,'wght' 620";
 };
 const closeBoring = function () {
   centerPs.classList.remove('hidden');
   moreBtns.classList.remove('hidden');
-  comicalPics.classList.add('hidden');
+  innerWrapper.classList.remove('hidden');
 
+  comicalPics.classList.add('hidden');
   ingredients.classList.add('hidden');
   // atenuate sides
   aboutMe.style.color = 'hsl(100, 4%, 14%)';
   bottomSide.style.color = 'hsl(100, 4%, 14%)';
-  comicalSide.style.color = 'hsl(100, 4%, 14%)'; //   document.getElementById('boring-side').style.color = 'gray';
+  comicalSide.style.color = 'hsl(100, 4%, 14%)';
   comicalSide.style.textDecoration = 'underline';
   //  <   X
   leftArrow.classList.remove('hidden');
   closeBtn.classList.add('hidden');
   // boringBtn.classList.add('hidden');
   // VF
-  // comicalSide.style.fontWeight = '620';
   boringSide.style.fontVariationSettings = "'MONO' 1, 'CASL' 0.1, 'wght' 500";
 };
 
