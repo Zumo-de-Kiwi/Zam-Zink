@@ -565,7 +565,6 @@ body {
 }
 
 .main .navigation .logo-frame .logo-svg {
-  width: 60px;
   height: 30px;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👇</text></svg>") 16 0, auto;
 }

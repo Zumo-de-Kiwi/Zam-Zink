@@ -8,9 +8,9 @@ body {
   $blog-color-bg: rgb(239, 241, 245);
   $blog-font-selected: rgb(230, 233, 240);
   $blog-color-lila: rgb(208, 218, 242);
-  $blog-color-purple: rgb(118, 134, 255);
-  $color-arduino-blue: rgb(41, 102, 144);
-  $color-arduino-green: rgb(2, 143, 147);
+
+  $color-primary: rgb(242, 171, 64);
+  $color-secondary: rgb(2, 120, 147);
   ///////////////////////////////////////////
   // font-family: 'Mochiy Pop P One', sans-serif;
   font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -363,7 +363,7 @@ body {
 
         border-radius: 2rem;
         transition: 0.15s;
-        background: $color-arduino-blue;
+        background: $color-primary;
         opacity: 0.85;
 
         &:hover,
@@ -454,7 +454,7 @@ body {
       bottom: 0px;
 
       width: 100%;
-      background: $color-arduino-green;
+      background: $color-secondary;
 
       display: grid;
       grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
@@ -546,7 +546,7 @@ body {
               //   color: $blog-color-box;
               //   &:hover,
               //   &:active {
-              //     color: $color-arduino-green;
+              //     color: $color-secondary;
               //   }
               // }
             }
@@ -624,9 +624,9 @@ body {
 //   $blog-color-bg: rgb(239, 241, 245);
 //   $blog-font-selected: rgb(230, 233, 240);
 //   $blog-color-lila: rgb(208, 218, 242);
-//   $blog-color-purple: rgb(118, 134, 255);
-//   $color-arduino-blue: rgb(41, 102, 144);
-//   $color-arduino-green: rgb(2, 143, 147);
+//   $color-primary: rgb(118, 134, 255);
+//   $color-primary: rgb(41, 102, 144);
+//   $color-secondary: rgb(2, 143, 147);
 //   ///////////////////////////////////////////
 //   // font-family: 'Mochiy Pop P One', sans-serif;
 //   font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -991,7 +991,7 @@ body {
 //       bottom: 0px;
 
 //       width: 100%;
-//       background: $color-arduino-green;
+//       background: $color-secondary;
 
 //       display: grid;
 //       grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
@@ -1083,7 +1083,7 @@ body {
 //               //   color: $blog-color-box;
 //               //   &:hover,
 //               //   &:active {
-//               //     color: $color-arduino-green;
+//               //     color: $color-secondary;
 //               //   }
 //               // }
 //             }

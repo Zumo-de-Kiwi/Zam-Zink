@@ -727,7 +727,7 @@ body main .btn-wrapper .btns {
   font-size: 1.7rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #296690;
+  background: #31d228;
   opacity: 0.85;
 }
 
@@ -807,7 +807,7 @@ body main .footer {
   border-radius: 2rem 2rem 0rem 0rem;
   bottom: 0px;
   width: 100%;
-  background: #028f93;
+  background: #ffe02d;
   display: grid;
   grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(7%, 1fr);
 }
