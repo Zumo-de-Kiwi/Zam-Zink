@@ -1,5 +1,5 @@
-@import '../../../scss/globals';
-@import '../../../scss/variables';
+@import '../../../../scss/globals';
+@import '../../../../scss/variables';
 
 body {
   ///////////////////////////////////////////
@@ -298,21 +298,6 @@ body {
             &::after {
               content: 'main tools used for the project';
             }
-          }
-          &#comeau-web {
-            // &::after {
-            //   // bottom: -4rem;
-            //   content: 'A screenshot from Josh Comeau.';
-            // }
-            // &:hover,
-            // &:active {
-            //   &::after {
-            //     bottom: -5.7rem;
-            //     opacity: 0.79;
-            //     font-size: 1em;
-            //     padding: 0.7rem;
-            //   }
-            // }
           }
         }
       }
@@ -616,3 +601,515 @@ body {
     }
   }
 }
+
+// body {
+//   ///////////////////////////////////////////
+//   $blog-text-color: rgb(33, 35, 44);
+//   $blog-color-box: rgb(255, 255, 255);
+//   $blog-color-bg: rgb(239, 241, 245);
+//   $blog-font-selected: rgb(230, 233, 240);
+//   $blog-color-lila: rgb(208, 218, 242);
+//   $blog-color-purple: rgb(118, 134, 255);
+//   $color-arduino-blue: rgb(41, 102, 144);
+//   $color-arduino-green: rgb(2, 143, 147);
+//   ///////////////////////////////////////////
+//   // font-family: 'Mochiy Pop P One', sans-serif;
+//   font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
+//   background-color: $blog-color-bg;
+//   font-weight: 300;
+//   position: relative;
+
+//   .preloader {
+//     transition: $trans-slow ease-out;
+//     background: $blog-color-bg;
+//     #emoji-loader {
+//       animation: jump 3s ease-out 0.3s infinite alternate;
+//     }
+//     @keyframes jump {
+//       to {
+//         transform: translateY(0.7rem);
+//       }
+//     }
+//     #text-loader {
+//       padding-top: 12rem;
+//       color: $blog-text-color;
+//       font-size: 1.8rem;
+//     }
+//   }
+
+//   header {
+//     margin-top: 5rem;
+//     margin-bottom: 9rem;
+//     .absolute-nav {
+//       text-align: center;
+//       .left-arrow {
+//         top: 0.9rem;
+//         @media (max-width: 768px) {
+//           top: 1rem;
+//         }
+//         .link-a {
+//           font-family: 'Mochiy Pop P One', sans-serif;
+//           color: $blog-text-color;
+//           opacity: 0.5;
+//           font-size: 3rem;
+//           padding: 2rem;
+//           &:hover,
+//           &:active {
+//             opacity: 0.7;
+//           }
+//         }
+//       }
+//       h1 {
+//         span {
+//           opacity: 0.31;
+//           font-size: 2.7rem;
+//           @media (max-width: 900px) {
+//             display: none;
+//           }
+//         }
+//         color: $blog-text-color;
+//         opacity: 0.4;
+//         background-color: $blog-color-bg;
+//         font-family: 'Mochiy Pop P One', sans-serif;
+//         font-size: 3.7rem;
+//       }
+//     }
+//     @media (max-width: 700px) {
+//       z-index: -1;
+//       margin-top: 0rem;
+//       margin-bottom: 0rem;
+//       .absolute-nav {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         h1 {
+//           transform: rotate(90deg);
+//           align-self: center;
+//           hyphens: auto;
+//           // word-wrap: break-word;
+//           opacity: 0.2;
+//           max-width: 21rem;
+//           margin-right: 0px;
+//           font-size: 4.7rem;
+//         }
+//       }
+//     }
+//   }
+//   main {
+//     background: $blog-color-bg;
+//     position: relative;
+//     display: grid;
+//     font-weight: 400;
+
+//     .blog-wrapper {
+//       display: grid;
+//       grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
+//           7%,
+//           1fr
+//         );
+//       .ps-wrapper {
+//         grid-column: 2;
+//         padding: 7rem;
+//         padding-top: 4.1rem;
+//         margin-bottom: 7rem;
+
+//         border-radius: 3rem;
+//         background-color: $blog-color-box;
+//         color: $blog-text-color;
+//         .p-header {
+//           font-size: 2.7rem;
+//           text-transform: uppercase;
+//           font-weight: 700;
+//         }
+//         h2 {
+//           margin-top: 6.1rem;
+//           margin-bottom: 2rem;
+//           font-size: 7rem;
+//         }
+
+//         //////// PARAGRAPHS ///////////
+//         .paragraph {
+//           font-size: 1.9rem;
+//           margin-bottom: 30px;
+//           // line-height: 1.5;
+//           font-weight: 400;
+//           .light-text {
+//             font-weight: 200;
+//           }
+//           a {
+//             color: $blog-text-color;
+//             transition: 0.23s;
+//             &:hover,
+//             &:active {
+//               color: $blue-purple-tech;
+//             }
+//           }
+//           .italic {
+//             opacity: 0.87;
+//             font-size: 1.03em;
+//             font-family: $ff-recursive-bold;
+//             font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 650, 'slnt' -13;
+//           }
+//           code {
+//             font-size: 0.93em;
+//             font-family: $ff-recursive-bold;
+//             font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
+//             background-color: $blog-font-selected;
+//             padding: 2px 7px;
+//             border-radius: 5px;
+//             @media (max-width: 800px) {
+//               padding: 1px 5px;
+//             }
+//           }
+//           strong {
+//             font-size: 1.04em;
+//             font-family: $ff-recursive-bold;
+//             font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 700,
+//               'slnt' 0;
+//           }
+//           b {
+//           }
+//           .nowrap {
+//             white-space: nowrap;
+//           }
+//         }
+
+//         //////// MARGIN STYLES ///////////
+//         .no-margin-top {
+//           margin-top: 0rem;
+//         }
+//         .no-margin-btm {
+//           margin-bottom: 0rem;
+//         }
+//         .margin-top {
+//           margin-top: 2rem;
+//         }
+
+//         //////// IMAGES ///////////
+//         picture {
+//           position: relative;
+//           border-radius: 10px;
+//           margin-bottom: 6.1rem;
+//           margin-top: 3rem;
+//           img {
+//             margin: 0px auto;
+//             width: 65%;
+//             transition: 0.35s ease-out;
+//           }
+//           &::after {
+//             position: absolute;
+//             bottom: -2.9rem;
+//             width: 100%;
+
+//             font-size: 0.8em;
+//             background-color: $blog-color-box;
+//             text-align: center;
+//             opacity: 0.5;
+//             line-height: 1.2;
+//             transition: 0.35s ease-out;
+//           }
+//           &:hover,
+//           &:active {
+//             img {
+//               transform: scale(1.2) translateY(1.5rem);
+//             }
+//             &::after {
+//               opacity: 0.79;
+//               font-size: 0.93em;
+//               padding: 0.7rem;
+//             }
+//           }
+//           &.round-edges {
+//             img {
+//               border-radius: 1rem;
+//             }
+//           }
+//           &#real-gundam {
+//             &::after {
+//               content: 'A real Gundam, used to assemble a complete Gundam figure.';
+//             }
+//           }
+//           &#penny-web {
+//             &::after {
+//               content: 'A screenshot from penny website.';
+//             }
+//           }
+//         }
+//       }
+//       @media (max-width: 800px) {
+//         grid-template-columns: 0px 1fr 0px;
+//         width: 100%;
+//         .ps-wrapper {
+//           grid-column: 2;
+//           padding: 8%;
+//           padding-top: 4.1rem;
+//           margin-bottom: 7rem;
+//           border-radius: 3rem;
+
+//           .p-header {
+//             font-size: 2.7rem;
+//             text-transform: uppercase;
+//             font-weight: 700;
+//           }
+//           h2 {
+//             margin-top: 6.1rem;
+//             margin-bottom: 2rem;
+//             font-size: 5rem;
+//           }
+//           .no-margin-top {
+//             margin-top: 0rem;
+//           }
+//           .no-margin-btm {
+//             margin-bottom: 0rem;
+//           }
+//           .paragraph {
+//             font-size: 1.6rem;
+//             margin-bottom: 30px;
+//             line-height: 1.4;
+//           }
+//         }
+//       }
+//       .hidden {
+//         display: none;
+//       }
+//     }
+//     .btn-wrapper {
+//       grid-column: 2;
+//       display: flex;
+//       justify-content: space-around;
+//       padding-left: 9%;
+//       padding-right: 9%;
+//       .btns {
+//         text-align: center;
+//         font-size: 1.7rem;
+
+//         border-radius: 2rem;
+//         transition: 0.15s;
+//         background: $color-arduino-blue;
+//         opacity: 0.85;
+
+//         &:hover,
+//         &:active {
+//           opacity: 0.7;
+//         }
+//         a {
+//           text-decoration: none;
+//           color: white;
+//           height: 6rem;
+//           line-height: 6rem;
+//           min-width: 18%;
+//           padding: 2rem;
+//           padding-right: 4rem;
+//           padding-left: 4rem;
+//         }
+
+//         &.prev {
+//           a {
+//             &::after {
+//               content: '< prev';
+//             }
+//             cursor: $cursor-arrow-hand;
+//           }
+//         }
+//         &.back-design {
+//           a {
+//             &::after {
+//               content: '¿return?';
+//             }
+//             cursor: $cursor-pointer-hand-flip;
+//           }
+//         }
+//         &.next {
+//           a {
+//             &::after {
+//               content: 'next >';
+//             }
+//             cursor: $cursor-right-hand;
+//           }
+//         }
+//         @media (max-width: 700px) {
+//           text-align: center;
+//           font-size: 2rem;
+
+//           border-radius: 2rem;
+//           a {
+//             // justify-self: center;
+//             font-family: 'Mochiy Pop P One', sans-serif;
+//             text-decoration: none;
+//             color: white;
+//             height: 6rem;
+//             line-height: 6rem;
+//             // min-width: 3%;
+//             padding: 2rem;
+//             padding-right: 3rem;
+//             padding-left: 3rem;
+//           }
+//           &.prev {
+//             a::after {
+//               content: '<';
+//             }
+//           }
+//           &.back-design {
+//             a::after {
+//               content: 'back';
+//             }
+//           }
+//           &.next {
+//             a::after {
+//               content: '>';
+//             }
+//           }
+//         }
+//       }
+//     }
+//     #trampolin-wrapper {
+//       #trampolineEmoji {
+//         opacity: 0.7;
+//       }
+//     }
+
+//     ////////////// FOOTER ////////////////
+//     .footer {
+//       z-index: 1;
+//       margin-top: 11rem;
+//       border-radius: 2rem 2rem 0rem 0rem;
+//       bottom: 0px;
+
+//       width: 100%;
+//       background: $color-arduino-green;
+
+//       display: grid;
+//       grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
+//           7%,
+//           1fr
+//         );
+
+//       #footer-wrapper {
+//         grid-column: 2;
+//         height: 100%;
+//         width: 100%;
+
+//         padding: 3rem;
+//         display: grid;
+
+//         .footer-part {
+//           .sub-wrapper {
+//             display: flex;
+//             flex-direction: column;
+//             align-content: space-around;
+//             justify-content: space-around;
+//             height: 100%;
+//             div {
+//               padding-top: 1.2rem;
+//               padding-bottom: 1.2rem;
+//               font-weight: 500;
+//               .footer-header {
+//                 line-height: 1.2;
+//                 font-size: 3.7rem;
+//                 font-family: 'Mochiy Pop P One', sans-serif;
+//                 opacity: 0.23;
+//                 span {
+//                   font-size: 0.41em;
+//                   margin-bottom: -1rem;
+//                 }
+//               }
+//               // <a>
+//               .links {
+//                 font-size: 1.6rem;
+//                 padding-top: 1.2rem;
+//                 padding-bottom: 1.2rem;
+
+//                 color: $blog-color-box;
+//                 text-decoration: none;
+//                 transition: 0.3s;
+//                 &:hover,
+//                 &:active {
+//                   opacity: 0.6;
+//                 }
+//               }
+//             }
+//           }
+//         }
+
+//         // // LEFT PART
+//         .footer-l {
+//         }
+
+//         // MID PART
+//         .footer-m {
+//           // grid-column: 2;
+//           .sub-wrapper {
+//             // text-align: center;
+//             div {
+//               .arrow {
+//                 font-size: 3.4rem;
+//                 opacity: 1;
+//                 line-height: 1.6;
+//               }
+//             }
+//           }
+//         }
+
+//         // RIGHT SIDE
+//         .footer-r {
+//         }
+
+//         // MOBILE
+//         @media (max-width: 768px) {
+//           padding: 2rem;
+//           .footer-part {
+//             margin-bottom: 2rem;
+//             .sub-wrapper {
+//               div {
+//                 // margin-top: 20rem;
+//                 padding-top: 0rem;
+//                 padding-bottom: 0.5rem;
+//                 .footer-header {
+//                   font-size: 3rem;
+//                 }
+//                 // <a>
+//                 .links {
+//                   font-size: 1.5rem;
+//                 }
+//               }
+//             }
+//           }
+//           // .footer-l {
+//           //   grid-row: 1;
+//           // }
+//           .footer-m {
+//             grid-row: 2;
+//             .sub-wrapper {
+//               text-align: center;
+//             }
+//           }
+//           .footer-r {
+//             grid-row: 1;
+//             .sub-wrapper {
+//               // text-align: right;
+//             }
+//           }
+//         }
+
+//         // DESKTOP
+//         @media (min-width: 768px) {
+//           // .footer-l {
+//           //   grid-column: 1;
+//           // }
+//           .footer-m {
+//             grid-column: 1;
+//             .sub-wrapper {
+//               // text-align: center;
+//             }
+//           }
+//           .footer-r {
+//             grid-column: 2;
+//             .sub-wrapper {
+//               text-align: right;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

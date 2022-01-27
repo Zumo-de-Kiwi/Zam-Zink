@@ -53,78 +53,166 @@
     <main class="main">
       <div class="blog-wrapper">
         <div class="ps-wrapper">
-          <!-- <span class="itallic"></span> -->
-          <!-- <p class="paragraph margin-top">
-            It is my wish to build an
-            <span class="italic">unconventional </span>page , by starting from
-            scratch and resorting to an
-            <span class="italic">offbeat</span> display. Although when I was
-            doing research on how to build my own website, I did visit and
-            analyze hundreds of pages, in the end no more than a dozen websites
-            remained in my memory, precisely those that made me feel that
-            designs and websites have no limits. Those inspiring sites spurred
-            me on to do my best and design a webpage that hopefully will also
-            make a <strong>positive</strong> impression on my visitors.
+          <h2 class="p-header">Why</h2>
+          <p class="paragraph">
+            Anything that can help you save time is welcome. As humans we have
+            improved our lives mainly by saving time on unnecessary/repetitive
+            tasks to do more productive work.
+          </p>
+          <p class="paragraph">
+            It is <strong>Eco Friendly</strong>. Connecting the lights to a
+            motion sensor is a good way of saving energy. It will be impossible
+            to forget to close the lights only when there is someone in that
+            space, furthermore it saves you money.
           </p>
 
-          <p class="paragraph">
-            In the <strong>brainstorming</strong> process I came up with
-            <code> 6 options</code> to build this page. First of all, I
-            organized my ideas on paper, in my notebook, where I used many more
-            sheets than for the rest of my webpages. As I wished to make it
-            different from the other pages I had seen on the Web, this time I
-            preferred not to take any inspiration from the Internet.
-          </p> -->
-
-          <p class="paragraph">
-            I certainly took my time to create the
-            <strong>graphic elements</strong> of this page. For the gundam
-            pieces
-            <span class="light-text"
-              >(the objects framed inside every subframe)</span
-            >
-            displayed on the
-            <span id="gundam" class="img-on-hover no-wrap"
-              >gundam plastic board</span
-            >
-            I need 20 elements, each representing a different digital graphic
-            project. Although there are <code>20</code> of them displayed on the
-            final online page, originally I had created over <code>40</code> ,
-            but later discarded half of them.
-          </p>
-
-          <!-- <picture id="real-gundam" class="round-edges">
+          <picture id="tools-pir" class="round-edges">
             <source
-              srcset="https://i.ibb.co/R36HYW2/real-gundam-placa.jpg"
-              type="image/jpg"
-            />
-            <img src="../img/real-gundam-placa.jpeg" alt="" type="image/jpg" />
-          </picture> -->
-
-          <p class="paragraph">
-            The following step was writing a description of each project. Some
-            months ago I saw
-            <a
-              href="https://pennybanks.com/muse"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Penny Bank's portfolio</a
-            >
-            , in which she described her projects with
-            <strong>Why</strong>, <strong>What</strong> and <strong>How</strong>
-            sections. In doing so, she considerably facilitates the reading
-            process. Another success of hers is the inclusion of very logical
-            white spaces. Decisions like these help the user to feel oriented in
-            each section. I fell in love with this way of describing a project.
-          </p>
-
-          <!-- <picture id="penny-web" class="round-edges">
-            <source
-              srcset="https://i.ibb.co/R9YJ1WD/pennybanks-web.webp"
+              srcset="https://i.ibb.co/DrcNqvN/tools-pir-2.webp"
               type="image/webp"
             />
-            <img src="../img/pennybanks-web.webp" alt="" type="image/webp" />
-          </picture> -->
+            <img src="img/tools-pir-2.webp" alt="" type="image/webp" />
+          </picture>
+
+          <!-- WHAT -->
+          <h2 class="p-header">what</h2>
+          <p class="paragraph">
+            The Hands-Free Light have an
+            <a
+              href="https://www.amazon.com/dp/B07KZW86YR/ref=cm_sw_em_r_mt_dp_MCSNJCFW0SZD106EKB8S"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Infrared Sensor</a
+            >
+            , an
+            <a
+              href="https://www.arduino.cc/en/Main/arduinoBoardUno&gt;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Arduino Uno</a
+            >, a
+            <a
+              href="https://www.amazon.com/dp/B07874KSLY/ref=cm_sw_em_r_mt_dp_QCF8DJ6SPDAJ3KW8XQVM?_encoding=UTF8&psc=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Relay</a
+            >
+            and a Lamp Base.
+          </p>
+
+          <iframe
+            id="totakeke"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4xmouwKKCmo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=4xmouwKKCmo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+          <div class="explain">
+            Testings before connecting all to the current.
+          </div>
+
+          <h2 class="p-header">how</h2>
+          <p class="paragraph">
+            The Infrared Sensor is a motion sensor, when it detects a motion it
+            will send a signal to the Arduino Uno. The Arduino is the
+            microcontroller which has a custom code written beforehand from the
+            computer and then transferred by a USB cable.
+            <br /><br />
+            When the Arduino receives the signal from the sensor it will process
+            that logic through the custom code, and do an action, in this case
+            will tell the relay to switch on. When the relay switch on the bulb
+            gets electrified.
+          </p>
+
+          <iframe
+            id="final-vid"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-6Oj11SAIyw?controls=0&showinfo=0&rel=0&loop=1&mute=1&playlist=-6Oj11SAIyw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="explain">
+            This is how I implemented the automated lights at home.
+          </div>
+
+          <h2 class="p-header">the code</h2>
+
+          <p class="paragraph real-code">
+            <!-- 
+            <span class="comments"></span>
+            <span class="state"></span>
+            <span class="parameters"></span>
+            <span class="ser-pin"></span>
+           -->
+
+            <span class="parameters">const int</span> SENSOR_PIN = 2;
+            <span class="comments"
+              >//Pin Digital-2 connected to output (middle) wire of
+              sensor(OUT)</span
+            ><br />
+            <span class="parameters">const int</span> RELAY_PIN = 4;
+            <span class="comments"
+              >//Pin Digital-4 which is connected to control relay</span
+            >
+            <br />
+            <br />
+            <span class="parameters">void</span>
+            <span class="state">setup</span>() { <br />
+            &nbsp;&nbsp;&nbsp;<span class="ser-pin">Serial.begin</span>(9600);
+            <span class="comments"
+              >//setup Serial Monitor to display information</span
+            ><br />
+            &nbsp;&nbsp;&nbsp;<span class="ser-pin">Serial.println</span
+            >("HC-SR501 sensor with 5V relay");
+            <br />
+            <br />&nbsp;&nbsp;&nbsp;<span class="ser-pin">pinMode</span
+            >(SENSOR_PIN, <span class="parameters">INPUT</span>);
+            <span class="comments"
+              >//Define SENSOR_PIN as Input from sensor</span
+            >
+            <br />&nbsp;&nbsp;&nbsp;<span class="ser-pin">pinMode</span
+            >(RELAY_PIN, <span class="parameters">OUTPUT</span>);
+            <span class="comments">//Define RELAY_PIN as OUTPUT for relay </span
+            ><br />}<br />
+
+            <!--  -->
+            <span class="parameters">void</span>
+            <span class="state">loop</span>() {<br />
+            &nbsp;&nbsp;&nbsp;<span class="parameters">int</span> motion =
+            <span class="ser-pin">digitalRead</span>(SENSOR_PIN);
+            <span class="comments"
+              >// read the sensor pin and stores it in "motion" variable</span
+            ><br />
+            <br />
+            &nbsp;&nbsp;&nbsp;<span class="state">if</span>(motion){
+            <span class="comments">// if motion is detected</span><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ser-pin"
+              >Serial.println</span
+            >("Motion detected"); <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ser-pin"
+              >digitalWrite</span
+            >(RELAY_PIN, <span class="parameters">LOW</span>);
+            <span class="comments">// Turn the relay ON</span><br />
+            &nbsp;&nbsp;&nbsp;}<br />
+            &nbsp;&nbsp;&nbsp;<span class="state">else</span>{<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ser-pin"
+              >Serial.println</span
+            >("No Motion");
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;digitalWrite(RELAY_PIN,<span
+              class="parameters"
+              >HIGH</span
+            >);
+            <span class="comments">// Turn the relay OFF</span>
+            <br />&nbsp;&nbsp;&nbsp;}<br />
+            &nbsp;&nbsp;&nbsp;<span class="ser-pin">delay</span>(300);<br />
+            }
+          </p>
         </div>
 
         <div class="btn-wrapper">
@@ -145,29 +233,6 @@
       </div>
       <div class="footer">
         <div id="footer-wrapper">
-          <!-- L SIDE -->
-          <!-- <div class="footer-l footer-part">
-            <div class="sub-wrapper">
-              <div>
-                <div class="footer-header">
-                  <span>MORE</span><br />Making Of
-                </div>
-              </div>
-              <div>
-                <a href="../draw-page/making-draw-pg.html" class="links"
-                  >Drawing Page</a
-                >
-              </div>
-              <div>
-                <a href="../photo-page/making-photo-pg.html" class="links"
-                  >Photo Page</a
-                >
-              </div>
-              <div>
-                <a class="links out-of-order"></a>
-              </div>
-            </div>
-          </div> -->
           <!-- MID SIDE -->
           <div class="footer-m footer-part">
             <div class="sub-wrapper">
