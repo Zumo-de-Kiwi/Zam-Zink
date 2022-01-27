@@ -140,7 +140,7 @@ body {
             }
           }
           .light-text {
-            font-weight: 200;
+            font-weight: 300;
           }
           .nowrap {
             white-space: nowrap;
@@ -156,12 +156,12 @@ body {
             font-size: 1.1em;
             background: -webkit-linear-gradient(
               140deg,
-              rgb(43, 43, 220),
-              rgb(126, 66, 245),
-              rgb(219, 85, 210),
-              rgb(245, 66, 66),
-              rgb(245, 144, 66),
-              rgb(255, 194, 41)
+              hsl(240, 72%, 52%),
+              hsl(260, 90%, 61%),
+              hsl(304, 65%, 60%),
+              hsl(0, 90%, 61%),
+              hsl(26, 90%, 61%),
+              hsl(43, 100%, 58%)
             );
             -webkit-background-clip: text;
             background-clip: text;

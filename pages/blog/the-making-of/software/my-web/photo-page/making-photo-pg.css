@@ -509,7 +509,7 @@ body main .blog-wrapper .ps-wrapper .paragraph a:hover, body main .blog-wrapper 
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph .light-text {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 body main .blog-wrapper .ps-wrapper .paragraph .nowrap {
@@ -525,7 +525,7 @@ body main .blog-wrapper .ps-wrapper .paragraph .italic {
 
 body main .blog-wrapper .ps-wrapper .paragraph .gradient-text {
   font-size: 1.1em;
-  background: -webkit-linear-gradient(140deg, #2b2bdc, #7e42f5, #db55d2, #f54242, #f59042, #ffc229);
+  background: -webkit-linear-gradient(140deg, #2c2cdd, #7e42f5, #db57d2, #f54242, #f59042, #ffc229);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
