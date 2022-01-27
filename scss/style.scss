@@ -9,6 +9,10 @@ body {
   // background-color: white; //$background-color;
   color: $font-black;
 }
+.special-char {
+  font-family: $ff-special-char;
+  line-height: inherit;
+}
 
 .main {
   height: 100%;
@@ -230,6 +234,20 @@ body {
         left: 0.1rem;
         top: -0.7rem;
         margin-left: 0px;
+      }
+
+      .with-hidden-span {
+        .hidden-span {
+          display: none;
+        }
+        &:hover {
+          .default-span {
+            display: none;
+          }
+          .hidden-span {
+            display: inline;
+          }
+        }
       }
 
       .pixelLink {

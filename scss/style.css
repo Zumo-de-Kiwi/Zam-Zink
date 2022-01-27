@@ -538,6 +538,11 @@ body {
   color: #232522;
 }
 
+.special-char {
+  font-family: "Menlo", "Noto Sans Symbols2", Arial Unicode MS, Zapf Dingbats, sans-serif;
+  line-height: inherit;
+}
+
 .main {
   height: 100%;
   display: grid;
@@ -740,6 +745,18 @@ body {
   left: 0.1rem;
   top: -0.7rem;
   margin-left: 0px;
+}
+
+.main .content_wrap .content-portfolio .with-hidden-span .hidden-span {
+  display: none;
+}
+
+.main .content_wrap .content-portfolio .with-hidden-span:hover .default-span {
+  display: none;
+}
+
+.main .content_wrap .content-portfolio .with-hidden-span:hover .hidden-span {
+  display: inline;
 }
 
 .main .content_wrap .content-portfolio .pixelLink #pixel {
