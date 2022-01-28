@@ -615,6 +615,12 @@ body {
   margin-bottom: 19rem;
 }
 
+@media (max-width: 478px) {
+  .main .content_wrap {
+    margin-bottom: 3rem;
+  }
+}
+
 .main .content_wrap .content-name {
   margin-bottom: 7vh;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;

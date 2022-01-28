@@ -86,6 +86,9 @@ body {
     grid-column: 2;
     margin-top: 11vh;
     margin-bottom: 19rem;
+    @media (max-width: 478px) {
+      margin-bottom: 3rem;
+    }
     ///////// Hi, I am Héctor /////////
     .content-name {
       margin-bottom: 7vh;

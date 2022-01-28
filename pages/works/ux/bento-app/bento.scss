@@ -67,7 +67,7 @@ body {
           opacity: 0.31;
           font-size: 2.3rem;
           text-transform: uppercase;
-          @media (max-width: 900px) {
+          @media (max-width: 700px) {
             display: none;
           }
         }
@@ -78,24 +78,24 @@ body {
         font-size: 3.7rem;
       }
     }
-    @media (max-width: 700px) {
-      z-index: -1;
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-      .absolute-nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        h1 {
-          transform: rotate(90deg) translateY(-10%);
-          align-self: center;
-          opacity: 0.2;
-          max-width: 25rem;
-          margin-right: 0px;
-          font-size: 4.7rem;
-        }
-      }
-    }
+    // @media (max-width: 700px) {
+    //   z-index: -1;
+    //   margin-top: 0rem;
+    //   margin-bottom: 0rem;
+    //   .absolute-nav {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     h1 {
+    //       transform: rotate(90deg) translateY(-10%);
+    //       align-self: center;
+    //       opacity: 0.2;
+    //       max-width: 25rem;
+    //       margin-right: 0px;
+    //       font-size: 4.7rem;
+    //     }
+    //   }
+    // }
   }
   main {
     // background: $blog-color-bg;
@@ -109,13 +109,10 @@ body {
     background-size: cover;
     .blog-wrapper {
       display: grid;
-      grid-template-columns: minmax(7%, 1fr) minmax(200px, 900px) minmax(
-          7%,
-          1fr
-        );
+      grid-template-columns: minmax(7%, 1fr) minmax(200px, 69ch) minmax(7%, 1fr);
       .ps-wrapper {
         grid-column: 2;
-        padding: 7rem;
+        // padding: 7rem;
         padding-top: 4.1rem;
         margin-bottom: 7rem;
 
@@ -198,33 +195,6 @@ body {
             padding: 3px 8px;
             border-radius: 0.7rem;
             // margin: 0px 3px;
-          }
-          &.real-code {
-            border-radius: 2rem;
-
-            padding: 3.3rem;
-            padding-top: 4.1rem;
-            padding-bottom: 4.1rem;
-            // padding-left: 4rem;
-            font-size: 0.83em;
-            background-color: rgb(31, 31, 31);
-            font-family: $ff-grotesk-mono;
-            color: white;
-
-            .comments {
-              font-size: 0.9em;
-              color: rgb(97, 97, 97);
-            }
-            // if else loop
-            .state {
-              color: rgb(255, 51, 255);
-            }
-            .parameters {
-              color: rgb(0, 247, 255);
-            }
-            .ser-pin {
-              color: rgb(255, 247, 0);
-            }
           }
           strong {
             font-size: 1.04em;
@@ -309,39 +279,39 @@ body {
         }
       }
       @media (max-width: 800px) {
-        grid-template-columns: 0px 1fr 0px;
-        width: 100%;
-        .ps-wrapper {
-          grid-column: 2;
-          padding: 8%;
-          padding-top: 4.1rem;
-          margin-bottom: 7rem;
-          border-radius: 3rem;
+        // grid-template-columns: 0px 1fr 0px;
+        // width: 100%;
+        // .ps-wrapper {
+        //   grid-column: 2;
+        //   padding: 8%;
+        //   padding-top: 4.1rem;
+        //   margin-bottom: 7rem;
+        //   border-radius: 3rem;
 
-          .p-header {
-            text-transform: uppercase;
-            font-weight: 400;
-            margin-top: 6.1rem;
-            margin-bottom: 3rem;
-            font-size: 5rem;
-          }
+        //   .p-header {
+        //     text-transform: uppercase;
+        //     font-weight: 400;
+        //     margin-top: 6.1rem;
+        //     margin-bottom: 3rem;
+        //     font-size: 5rem;
+        //   }
 
-          .no-margin-top {
-            margin-top: 0rem;
-          }
-          .no-margin-btm {
-            margin-bottom: 0rem;
-          }
-          .paragraph {
-            font-size: 1.6rem;
-            margin-bottom: 30px;
-            line-height: 1.4;
-          }
-        }
+        //   .no-margin-top {
+        //     margin-top: 0rem;
+        //   }
+        //   .no-margin-btm {
+        //     margin-bottom: 0rem;
+        //   }
+        //   .paragraph {
+        //     font-size: 1.6rem;
+        //     margin-bottom: 30px;
+        //     line-height: 1.4;
+        //   }
+        // }
       }
-      .hidden {
-        display: none;
-      }
+      // .hidden {
+      //   display: none;
+      // }
     }
     .btn-wrapper {
       grid-column: 2;
@@ -351,7 +321,7 @@ body {
       padding-right: 9%;
       .btns {
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 1.1em;
 
         border-radius: 2rem;
         transition: 0.15s;
@@ -371,16 +341,17 @@ body {
           padding: 2rem;
           padding-right: 4rem;
           padding-left: 4rem;
+          font-weight: 500;
         }
 
-        &.prev {
-          a {
-            &::after {
-              content: '< prev';
-            }
-            cursor: $cursor-arrow-hand;
-          }
-        }
+        // &.prev {
+        //   a {
+        //     &::after {
+        //       content: '< prev';
+        //     }
+        //     cursor: $cursor-arrow-hand;
+        //   }
+        // }
         &.back-design {
           a {
             &::after {
@@ -389,21 +360,20 @@ body {
             cursor: $cursor-pointer-hand-flip;
           }
         }
-        &.next {
-          a {
-            &::after {
-              content: 'next >';
-            }
-            cursor: $cursor-right-hand;
-          }
-        }
+        // &.next {
+        //   a {
+        //     &::after {
+        //       content: 'next >';
+        //     }
+        //     cursor: $cursor-right-hand;
+        //   }
+        // }
         @media (max-width: 700px) {
           text-align: center;
           font-size: 2rem;
 
           border-radius: 2rem;
           a {
-            // justify-self: center;
             font-family: 'Mochiy Pop P One', sans-serif;
             text-decoration: none;
             color: white;

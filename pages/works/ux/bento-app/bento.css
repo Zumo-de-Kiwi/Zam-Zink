@@ -437,30 +437,9 @@ body header .absolute-nav h1 span {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   body header .absolute-nav h1 span {
     display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  body header {
-    z-index: -1;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-  body header .absolute-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  body header .absolute-nav h1 {
-    transform: rotate(90deg) translateY(-10%);
-    align-self: center;
-    opacity: 0.2;
-    max-width: 25rem;
-    margin-right: 0px;
-    font-size: 4.7rem;
   }
 }
 
@@ -477,12 +456,11 @@ body main {
 
 body main .blog-wrapper {
   display: grid;
-  grid-template-columns: minmax(7%, 1fr) minmax(200px, 900px) minmax(7%, 1fr);
+  grid-template-columns: minmax(7%, 1fr) minmax(200px, 69ch) minmax(7%, 1fr);
 }
 
 body main .blog-wrapper .ps-wrapper {
   grid-column: 2;
-  padding: 7rem;
   padding-top: 4.1rem;
   margin-bottom: 7rem;
   border-radius: 3rem;
@@ -574,34 +552,6 @@ body main .blog-wrapper .ps-wrapper .paragraph code {
   border-radius: 0.7rem;
 }
 
-body main .blog-wrapper .ps-wrapper .paragraph.real-code {
-  border-radius: 2rem;
-  padding: 3.3rem;
-  padding-top: 4.1rem;
-  padding-bottom: 4.1rem;
-  font-size: 0.83em;
-  background-color: #1f1f1f;
-  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  color: white;
-}
-
-body main .blog-wrapper .ps-wrapper .paragraph.real-code .comments {
-  font-size: 0.9em;
-  color: #616161;
-}
-
-body main .blog-wrapper .ps-wrapper .paragraph.real-code .state {
-  color: #ff33ff;
-}
-
-body main .blog-wrapper .ps-wrapper .paragraph.real-code .parameters {
-  color: #00f7ff;
-}
-
-body main .blog-wrapper .ps-wrapper .paragraph.real-code .ser-pin {
-  color: #fff700;
-}
-
 body main .blog-wrapper .ps-wrapper .paragraph strong {
   font-size: 1.04em;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
@@ -685,42 +635,6 @@ body main .blog-wrapper .ps-wrapper picture#tools-pir::after {
   content: 'main tools used for the project';
 }
 
-@media (max-width: 800px) {
-  body main .blog-wrapper {
-    grid-template-columns: 0px 1fr 0px;
-    width: 100%;
-  }
-  body main .blog-wrapper .ps-wrapper {
-    grid-column: 2;
-    padding: 8%;
-    padding-top: 4.1rem;
-    margin-bottom: 7rem;
-    border-radius: 3rem;
-  }
-  body main .blog-wrapper .ps-wrapper .p-header {
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 6.1rem;
-    margin-bottom: 3rem;
-    font-size: 5rem;
-  }
-  body main .blog-wrapper .ps-wrapper .no-margin-top {
-    margin-top: 0rem;
-  }
-  body main .blog-wrapper .ps-wrapper .no-margin-btm {
-    margin-bottom: 0rem;
-  }
-  body main .blog-wrapper .ps-wrapper .paragraph {
-    font-size: 1.6rem;
-    margin-bottom: 30px;
-    line-height: 1.4;
-  }
-}
-
-body main .blog-wrapper .hidden {
-  display: none;
-}
-
 body main .btn-wrapper {
   grid-column: 2;
   display: flex;
@@ -731,7 +645,7 @@ body main .btn-wrapper {
 
 body main .btn-wrapper .btns {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.1em;
   border-radius: 2rem;
   transition: 0.15s;
   background: #31d228;
@@ -751,14 +665,7 @@ body main .btn-wrapper .btns a {
   padding: 2rem;
   padding-right: 4rem;
   padding-left: 4rem;
-}
-
-body main .btn-wrapper .btns.prev a {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
-}
-
-body main .btn-wrapper .btns.prev a::after {
-  content: '< prev';
+  font-weight: 500;
 }
 
 body main .btn-wrapper .btns.back-design a {
@@ -767,14 +674,6 @@ body main .btn-wrapper .btns.back-design a {
 
 body main .btn-wrapper .btns.back-design a::after {
   content: '¿return?';
-}
-
-body main .btn-wrapper .btns.next a {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
-}
-
-body main .btn-wrapper .btns.next a::after {
-  content: 'next >';
 }
 
 @media (max-width: 700px) {
