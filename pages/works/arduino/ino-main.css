@@ -495,7 +495,7 @@ body main .blog-wrapper .ps-wrapper .p-header {
 }
 
 body main .blog-wrapper .ps-wrapper iframe {
-  margin: 5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   justify-self: center;
   position: relative;

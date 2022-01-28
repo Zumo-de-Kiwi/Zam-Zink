@@ -27,7 +27,7 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!------------PRE LOADER------------------>
+    <!---------PRE LOADER----------->
     <div class="preloader">
       <p id="emoji-loader">⚛︎</p>
       <p id="text-loader">We all are star dust</p>
@@ -41,13 +41,7 @@
         <h1>
           <span>Arduino :<br /> </span> Automate Light
         </h1>
-        <!-- <div class="menu-btn">
-        <div class="menu-btn__burger"></div>
-      </div> -->
       </div>
-      <!-- <div class="main-header"> -->
-
-      <!-- </div> -->
     </header>
 
     <main class="main">
@@ -55,15 +49,21 @@
         <div class="ps-wrapper">
           <h2 class="p-header">Why</h2>
           <p class="paragraph">
-            Anything that can help you save time is welcome. As humans we have
+            Anything that can help you save time is welcome. As humans, we have
             improved our lives mainly by saving time on unnecessary/repetitive
-            tasks to do more productive work.
+            tasks, so that we can do more productive work instead.
           </p>
           <p class="paragraph">
             It is <strong>Eco Friendly</strong>. Connecting the lights to a
-            motion sensor is a good way of saving energy. It will be impossible
-            to forget to close the lights only when there is someone in that
-            space, furthermore it saves you money.
+            motion sensor is a good way of
+            <a
+              href="https://www.energy.gov/energysaver/lighting-controls"
+              target="_blank"
+              rel="noopener noreferrer"
+              >saving energy</a
+            >. Forget about having to switch off the lights. They will remain on
+            only when there is someone in that area. Furthermore, it saves you
+            money.
           </p>
 
           <picture id="tools-pir" class="round-edges">
@@ -77,7 +77,7 @@
           <!-- WHAT -->
           <h2 class="p-header">what</h2>
           <p class="paragraph">
-            The Hands-Free Light have an
+            The Hands-Free Light has an
             <a
               href="https://www.amazon.com/dp/B07KZW86YR/ref=cm_sw_em_r_mt_dp_MCSNJCFW0SZD106EKB8S"
               target="_blank"
@@ -97,7 +97,15 @@
               rel="noopener noreferrer"
               >Relay</a
             >
-            and a Lamp Base.
+            and a Lamp Base. Also I use jumper wires and a breadboard to make it
+            easier.
+          </p>
+          <p class="paragraph">
+            When the sensor detects a person entering the room, it will
+            <span class="italic">"tell"</span> the relay to
+            <strong>light up</strong> the bulb. Later on, after a certain period
+            of time, it will switch off automatically if there isn’t any
+            movement nearby.
           </p>
 
           <iframe
@@ -115,15 +123,17 @@
 
           <h2 class="p-header">how</h2>
           <p class="paragraph">
-            The Infrared Sensor is a motion sensor, when it detects a motion it
-            will send a signal to the Arduino Uno. The Arduino is the
-            microcontroller which has a custom code written beforehand from the
-            computer and then transferred by a USB cable.
+            The Infrared Sensor is a motion sensor. When it detects a motion, it
+            will send a signal to the Arduino Uno. The Arduino is a
+            microcontroller which has a <code>custom code</code> assigned
+            beforehand by the computer and then transferred by a USB cable.
             <br /><br />
-            When the Arduino receives the signal from the sensor it will process
-            that logic through the custom code, and do an action, in this case
-            will tell the relay to switch on. When the relay switch on the bulb
-            gets electrified.
+            When the Arduino <strong>receives</strong> the signal from the
+            sensor, it <strong>processes</strong> that logic through the
+            <code>custom code</code> , and does the expected
+            <strong>action</strong>, in this case,
+            <span class="italic">"tell"</span> the relay to switch on. When the
+            relay switches on, the bulb gets electricity.
           </p>
 
           <iframe
