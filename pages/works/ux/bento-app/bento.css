@@ -267,7 +267,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   right: 0;
   width: 100%;
   height: 100vh;
-  background: #d0d5fe;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,9 +389,13 @@ body .preloader #text-loader {
 }
 
 body header {
-  margin-top: 5rem;
   margin-bottom: 9rem;
   overflow: hidden;
+  position: sticky;
+  top: 0px;
+  z-index: 9;
+  background-color: white;
+  padding-bottom: 1rem;
 }
 
 body header .absolute-nav {
@@ -423,7 +427,6 @@ body header .absolute-nav .left-arrow .link-a:hover, body header .absolute-nav .
 body header .absolute-nav h1 {
   color: #21232c;
   opacity: 0.4;
-  background-color: #eff1f5;
   font-family: 'Mochiy Pop P One', sans-serif;
   font-size: 3.7rem;
 }
@@ -462,10 +465,14 @@ body header .absolute-nav h1 span {
 }
 
 body main {
-  background: #eff1f5;
+  background-color: white;
   position: relative;
   display: grid;
   font-weight: 400;
+  background-image: url("img_tree.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body main .blog-wrapper {

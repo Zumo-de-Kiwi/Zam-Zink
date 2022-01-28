@@ -248,13 +248,12 @@ body {
   right: 0;
   width: 100%;
   height: 100vh;
-  background: rgb(208, 213, 254);
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
   transition: $trans-slow ease-out;
-  // display: none;
   #emoji-loader,
   #text-loader {
     height: 100px;

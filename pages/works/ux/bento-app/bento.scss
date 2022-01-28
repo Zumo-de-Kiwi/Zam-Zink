@@ -7,8 +7,6 @@ body {
   $blog-color-box: rgb(255, 255, 255);
   $blog-color-bg: rgb(239, 241, 245);
   $blog-font-selected: rgb(230, 233, 240);
-  $blog-color-lila: rgb(208, 218, 242);
-  $blog-color-purple: rgb(118, 134, 255);
   $color-primary: rgb(49, 210, 40);
   $color-secondary: rgb(255, 224, 45);
   ///////////////////////////////////////////
@@ -37,9 +35,14 @@ body {
   }
 
   header {
-    margin-top: 5rem;
+    // margin-top: 5rem;
     margin-bottom: 9rem;
     overflow: hidden;
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+    background-color: $blog-color-box;
+    padding-bottom: 1rem;
     .absolute-nav {
       text-align: center;
       .left-arrow {
@@ -70,7 +73,7 @@ body {
         }
         color: $blog-text-color;
         opacity: 0.4;
-        background-color: $blog-color-bg;
+        // background-color: $blog-color-bg;
         font-family: 'Mochiy Pop P One', sans-serif;
         font-size: 3.7rem;
       }
@@ -95,11 +98,15 @@ body {
     }
   }
   main {
-    background: $blog-color-bg;
+    // background: $blog-color-bg;
+    background-color: $blog-color-box;
     position: relative;
     display: grid;
     font-weight: 400;
-
+    background-image: url('img_tree.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     .blog-wrapper {
       display: grid;
       grid-template-columns: minmax(7%, 1fr) minmax(200px, 900px) minmax(

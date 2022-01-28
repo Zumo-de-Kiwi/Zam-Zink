@@ -267,7 +267,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   right: 0;
   width: 100%;
   height: 100vh;
-  background: #d0d5fe;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;

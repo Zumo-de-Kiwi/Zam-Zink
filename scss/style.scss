@@ -1,12 +1,10 @@
+// @import 'mixins';
 @import 'globals';
 @import 'variables';
-@import 'mixins';
 @import 'font-anim-keyframes';
-///////////////// colors ///////////////
 
 body {
   height: 100%;
-  // background-color: white; //$background-color;
   color: $font-black;
 }
 .special-char {
@@ -38,7 +36,6 @@ body {
     .logo-frame {
       margin-right: auto;
       .logo-svg {
-        // width: 60px;
         height: 30px; // svg size
         cursor: $cursor-pointer-down-hand;
         &:hover {
@@ -88,18 +85,26 @@ body {
   .content_wrap {
     grid-column: 2;
     margin-top: 11vh;
-
+    margin-bottom: 19rem;
     ///////// Hi, I am Héctor /////////
     .content-name {
       margin-bottom: 7vh;
-      // margin-left: 1.3rem;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' $font-weight-heavy,
         $slnt;
       text-align: left;
-      color: rgb(112, 112, 112); //$sutil-dark-purple-gray-color
+      color: rgb(112, 112, 112);
       word-spacing: 0.7px;
+      &:hover {
+        .complete-name {
+          .first-name,
+          .family-name {
+            // text-decoration-color: $font-sutil-gray-color;
+            text-decoration-color: $spotify-text-green;
+          }
+        }
+      }
 
       // .coma {
       //   position: relative;
@@ -183,6 +188,17 @@ body {
       //link and link number WRAPPER
       .link-wrapper {
         text-decoration: none;
+      }
+      .l-line {
+        font-family: $ff-special-char;
+        color: $background-selected-color;
+        transition: 0.6s ease-out;
+      }
+      &:hover {
+        .l-line {
+          // color: $spotify-text-green;
+          color: $skillshare-green;
+        }
       }
       // a
       .link {
@@ -281,7 +297,7 @@ body {
     #oneMore {
       text-decoration: none;
       position: relative;
-      margin-bottom: 23rem;
+
       #dotsss {
         color: $font-linked-color;
       }
@@ -325,9 +341,9 @@ body {
 }
 
 footer {
-  @include flexbox();
-  @include align-items(center);
-  @include justify-content(center);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   .footer {
     position: fixed;
@@ -366,15 +382,6 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         line-height: 3rem;
-        @media (max-width: 730px) {
-          // span {
-          // font-size: 1.4rem;
-          // line-height: 2;
-          // padding-bottom: 20vh;
-          // padding-left: 2px;
-          // padding-right: 2px;
-          // }
-        }
       }
       //////////////////// FOOTER TEXT ANIMATIONS /////////////////
       .footerSpan {
