@@ -533,6 +533,10 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -697,30 +701,29 @@ body main #section #div1 {
 body main #section #div1 #p1 {
   grid-column: 2 / 5;
   grid-row: 1;
+  text-align: center;
   place-self: center;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
 body main #section #div1 #p1 #collect {
+  margin: 0px auto;
   filter: blur(0.3rem);
+  font-size: 0.9em;
   transition: 0.3s;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  position: relative;
 }
 
-body main #section #div1 #p1 #collect:hover {
-  filter: blur(0rem);
-}
-
-body main #section #div1 #p1 #collect:active {
+body main #section #div1 #p1 #collect:hover, body main #section #div1 #p1 #collect:active {
   filter: blur(0rem);
 }
 
 body main #section #div1 #p1 #touchMe {
   color: #9eb0c2;
-  font-size: 1.5rem;
-  padding-left: 28rem;
+  font-size: 0.8em;
 }
 
 body main #section #div1 #sweat {

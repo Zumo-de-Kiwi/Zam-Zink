@@ -2,6 +2,9 @@
 @import '../../../scss/mixins';
 @import '../../../scss/globals';
 @import '../../../scss/font-anim-keyframes';
+html {
+  overflow-x: hidden;
+}
 
 body {
   height: 100%;
@@ -165,25 +168,40 @@ body {
         #p1 {
           grid-column: 2 / 5;
           grid-row: 1;
+
+          // display: grid;
+          text-align: center;
           place-self: center;
           padding-top: 6rem;
           padding-bottom: 6rem;
           #collect {
+            margin: 0px auto;
             filter: blur(0.3rem);
+            font-size: 0.9em;
             transition: 0.3s;
             padding-bottom: 2rem;
             padding-top: 2rem;
-            &:hover {
-              filter: blur(0rem);
-            }
+            position: relative;
+            &:hover,
             &:active {
               filter: blur(0rem);
             }
           }
+          // &::after {
+          //   // position: absolute;
+          //   // top: 0px;
+          //   content: '↑ touch me ↑';
+          //   color: rgb(158, 176, 194);
+          //   font-size: 0.8em;
+          //   text-align: center;
+
+          //   margin: 0px auto;
+          // }
+
           #touchMe {
             color: rgb(158, 176, 194);
-            font-size: 1.5rem;
-            padding-left: 28rem;
+            font-size: 0.8em;
+            // padding-left: 28rem;
           }
         }
         #sweat {
