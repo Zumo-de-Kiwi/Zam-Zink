@@ -24,7 +24,7 @@ closeBtn.addEventListener('click', closeFooter);
 $(function () {
   count = 0;
   // wordsArray = ['Hej', 'Hey', '哈囉', 'Hola', '哩賀'];
-  wordsArray = ['¡Hola!', '哈囉 !', 'Hej!', '哩賀 !', 'Hey!'];
+  wordsArray = ['¡Hola!', '嗨!', 'Hej!', '哩賀 !', 'Bon dia!', 'Hey!'];
   setInterval(function () {
     count++;
     $('.change-hey').fadeOut(500, function () {
@@ -32,5 +32,5 @@ $(function () {
         .text(wordsArray[count % wordsArray.length])
         .fadeIn(500);
     });
-  }, 2300);
+  }, 3141);
 });

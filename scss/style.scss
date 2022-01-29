@@ -196,17 +196,13 @@ body {
       font-size: $font-size-big;
       @media (max-width: 768px) {
         // font-size: calc(0.7 * $font-size-big);
-        font-size: calc(0.3vw + 13px);
+        font-size: calc(0.6vw + 13px);
       }
 
       text-align: left;
       letter-spacing: -0.32px;
       line-height: 1.5;
-      // color: $font-gray;
       color: $font-light-gray;
-      // word-spacing: -0.2px;
-      // no working warning
-      // --main-weight: 600;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' 600, $slnt;
       will-change: font-variation-settings;
       //link and link number WRAPPER
@@ -229,7 +225,6 @@ body {
       }
       .l-line {
         font-family: $ff-special-char;
-        // color: $font-sutil-gray-color;
         color: $lighter-gray;
         transition: 0.6s ease-out;
       }
@@ -239,17 +234,10 @@ body {
         position: relative;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0.1,
           'wght' $font-weight-normal, $slnt;
-        // color: inherit;
-        // color: $sutil-dark-purple-gray-color;
         color: $font-linked-color;
 
-        // text-decoration-color: $sutil-dark-purple-gray-color;
         text-decoration-color: $font-sutil-gray-color;
-        // text-decoration-color: $lighter-gray;
         text-decoration-color: transparent;
-        // text-decoration-color: $underline-color;
-        // text-decoration: underline;
-        // text-decoration: none;
 
         cursor: $cursor-please-fingers;
 
@@ -258,15 +246,10 @@ body {
         // for coming projects
         &.coming {
           color: $font-light-gray;
-          // text-decoration: underline;
-          // text-decoration: none;
-          // text-decoration-color: $font-light-gray;
-          // text-decoration-color: inherit;
           &::after {
             content: 'Video projects';
           }
           &:hover {
-            // text-decoration-color: $font-light-gray;
             &::after {
               content: '[C🙃ming Soon]';
             }
@@ -378,6 +361,7 @@ body {
       @media (max-width: 740px) {
         #oneMoreText {
           color: transparent;
+          //
           #dotsss {
             color: transparent;
           }
@@ -385,6 +369,7 @@ body {
         #mailText {
           color: $font-black;
           right: 7vw;
+          display: none;
         }
       }
       &:hover {
@@ -401,6 +386,7 @@ body {
 footer {
   display: flex;
   align-items: center;
+  // align-items: center;
   justify-content: center;
   position: relative;
   .footer {
@@ -408,6 +394,7 @@ footer {
     bottom: 0px;
     background-color: $spotify-text-green;
     margin: 0 auto;
+    // padding-top: 1.3rem;
     padding-top: 1rem;
     margin-bottom: 1.3rem;
     max-width: 730px;
@@ -465,25 +452,6 @@ footer {
         }
       }
     }
-    @media (max-width: 730px) {
-      font-size: 1rem;
-      bottom: 0px;
-      margin-bottom: 0rem;
-      border-radius: 0px;
-      padding: 0.3rem;
-      .line {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        // font-size: 0.5em;
-        span {
-          font-size: 1.4rem;
-          line-height: 2;
-          padding-bottom: 20vh;
-          padding-left: 2px;
-          padding-right: 2px;
-        }
-      }
-    }
     #githublink {
       color: $skillshare-green;
       font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
@@ -508,8 +476,49 @@ footer {
         }
       }
     }
+    @media (max-width: 670px) {
+      position: relative;
+      font-size: 1rem;
+      bottom: 0px;
+      margin-bottom: 0rem;
+      width: 100%;
+      border-radius: 1.3rem 1.3rem 0rem 0rem;
+      padding-top: 2rem;
+      .closeBtn {
+        font-size: 1.7rem;
+        top: 0px;
+        // left: 0rem;
+        padding: 1rem;
+        &:hover {
+          font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
+          color: white;
+        }
+      }
+      .line {
+        // padding-left: 1px;
+        // padding-right: 1px;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        // font-size: 0.9em;
+        span {
+          font-size: calc(0.6vw + 0.9rem);
+          line-height: 1.8;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      #githublink {
+        color: $skillshare-green;
+        font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
+        font-size: calc(0.4vw + 7px);
+
+        // text-align: center;
+        margin-bottom: 0.8rem;
+        margin-top: 1.2rem;
+      }
+    }
   }
-  @media (max-width: 478px) {
-    display: none;
-  }
+  // @media (max-width: 478px) {
+  //   // display: none;
+  // }
 }
