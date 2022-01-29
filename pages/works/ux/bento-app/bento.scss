@@ -3,22 +3,25 @@
 
 body {
   ///////////////////////////////////////////
-  $blog-text-color: rgb(33, 35, 44);
-  $blog-color-box: rgb(255, 255, 255);
-  $blog-color-bg: rgb(239, 241, 245);
-  $blog-font-selected: rgb(230, 233, 240);
-  $color-primary: rgb(49, 210, 40);
-  $color-secondary: hsl(40, 96%, 56%);
+  $text-color: rgb(33, 35, 44);
+  $inner-bg: rgb(255, 255, 255);
+  $color-bg: rgb(239, 241, 245);
+  $code-bg: rgb(230, 233, 240);
+  // $app-red: rgb(49, 210, 40);
+  // $app-yellow: hsl(40, 96%, 56%);
+  $app-yellow: hsl(49, 100%, 54%);
+  $app-red: rgb(229, 53, 43);
+  $app-blue: hsl(198, 66%, 24%);
   ///////////////////////////////////////////
   // font-family: 'Mochiy Pop P One', sans-serif;
   font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
-  background-color: $blog-color-bg;
+  background-color: $color-bg;
   font-weight: 300;
   position: relative;
 
   .preloader {
     transition: $trans-slow ease-out;
-    background: $blog-color-bg;
+    background: $color-bg;
     #emoji-loader {
       animation: jump 3s ease-out 0.3s infinite alternate;
     }
@@ -29,7 +32,7 @@ body {
     }
     #text-loader {
       padding-top: 12rem;
-      color: $blog-text-color;
+      color: $text-color;
       font-size: 1.8rem;
     }
   }
@@ -41,7 +44,7 @@ body {
     position: sticky;
     top: 0px;
     z-index: 9;
-    background-color: $blog-color-box;
+    background-color: $inner-bg;
     padding-bottom: 1rem;
     box-shadow: 0px 3.1px 2.7px -16px rgba(0, 0, 0, 0.022),
       0px 7.7px 6.9px -16px rgba(0, 0, 0, 0.031),
@@ -55,7 +58,7 @@ body {
 
         .link-a {
           font-family: 'Mochiy Pop P One', sans-serif;
-          color: $blog-text-color;
+          color: $text-color;
           opacity: 0.5;
           font-size: 3rem;
           padding: 2rem;
@@ -81,9 +84,9 @@ body {
             display: none;
           }
         }
-        color: $blog-text-color;
+        color: $text-color;
         opacity: 0.4;
-        // background-color: $blog-color-bg;
+        // background-color: $color-bg;
         font-family: 'Mochiy Pop P One', sans-serif;
         font-size: 3.7rem;
       }
@@ -102,7 +105,7 @@ body {
     }
   }
   main {
-    background-color: $blog-color-box;
+    background-color: $inner-bg;
     position: relative;
     display: grid;
     font-weight: 400;
@@ -119,7 +122,7 @@ body {
       display: flex;
       justify-content: center;
       align-self: center;
-      background-color: $color-secondary;
+      background-color: $app-yellow;
 
       picture {
         img {
@@ -128,10 +131,21 @@ body {
           margin: 2rem;
         }
       }
+      a {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 0.67em;
+        color: rgb(255, 109, 46);
+        text-decoration: none;
+      }
     }
     .out-wrapper {
-      // position: sticky;
-      // top: 41rem;
+      box-shadow: 0px -3.1px 2.7px -16px rgba(0, 0, 0, 0.022),
+        0px 7.7px -6.9px -16px rgba(0, 0, 0, 0.031),
+        0px 15.8px -14.2px -16px rgba(0, 0, 0, 0.039),
+        0px 32.5px -29.2px -16px rgba(0, 0, 0, 0.048),
+        0px 89px -80px -16px rgba(0, 0, 0, 0.07);
       margin-top: 1rem;
       z-index: 2;
       width: 100%;
@@ -141,8 +155,8 @@ body {
       justify-content: center;
       border-radius: 2rem 2rem 0rem 0rem;
 
-      background-color: $blog-color-box;
-      color: $blog-text-color;
+      background-color: $inner-bg;
+      color: $text-color;
       .ps-wrapper {
         // grid-column: 2;
         max-width: 61ch;
@@ -160,6 +174,9 @@ body {
           margin-bottom: 2rem;
           text-align: center;
         }
+        // .content-grid-wrapper{
+
+        // }
         iframe {
           margin: 5rem;
           margin-bottom: 1rem;
@@ -188,7 +205,7 @@ body {
           }
 
           a {
-            color: $blog-text-color;
+            color: $text-color;
             transition: 0.23s;
             &:hover,
             &:active {
@@ -222,7 +239,7 @@ body {
           code {
             font-family: $ff-recursive-bold;
             font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'wght' 400, 'slnt' 0;
-            background-color: $blog-font-selected;
+            background-color: $code-bg;
             padding: 3px 8px;
             border-radius: 0.7rem;
             // margin: 0px 3px;
@@ -249,18 +266,35 @@ body {
           }
         }
 
-        //////// MARGIN STYLES ///////////
-        .no-margin-top {
-          margin-top: 0rem;
+        // //////// MARGIN STYLES //////////
+        // .no-margin-top {
+        //   margin-top: 0rem;
+        // }
+        // .no-margin-btm {
+        //   margin-bottom: 0rem;
+        // }
+        // .margin-top-2 {
+        //   margin-top: 2rem;
+        // }
+        // .margin-top-10 {
+        //   margin-top: 10rem;
+        // }
+
+        //////// GRID STYLES //////////
+        .col-1 {
+          grid-column: 1;
         }
-        .no-margin-btm {
-          margin-bottom: 0rem;
+        .col-2 {
+          grid-column: 2;
         }
-        .margin-top-2 {
-          margin-top: 2rem;
+        .col-3 {
+          grid-column: 3;
         }
-        .margin-top-10 {
-          margin-top: 10rem;
+        .col-12 {
+          grid-column: 1 / 3;
+        }
+        .col-23 {
+          grid-column: 2 / 4;
         }
 
         //////// IMAGES ///////////
@@ -280,7 +314,7 @@ body {
             width: 100%;
 
             font-size: 0.8em;
-            background-color: $blog-color-box;
+            background-color: $inner-bg;
             text-align: center;
             opacity: 0.5;
             line-height: 1.2;
@@ -322,7 +356,7 @@ body {
 
         border-radius: 2rem;
         transition: 0.15s;
-        background: $color-primary;
+        background: $app-red;
         opacity: 0.85;
 
         &:hover,
@@ -340,7 +374,25 @@ body {
           padding-left: 4rem;
           font-weight: 500;
         }
-
+        $cursor-cremallera-face: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>🤐</text></svg>")
+            16 0,
+          auto;
+        &.g-play {
+          a {
+            &::after {
+              content: 'Google Play';
+            }
+            cursor: $cursor-cremallera-face;
+          }
+        }
+        &.app-store {
+          a {
+            &::after {
+              content: 'App Store';
+            }
+            cursor: $cursor-cremallera-face;
+          }
+        }
         &.back-design {
           a {
             &::after {
@@ -366,19 +418,9 @@ body {
             padding-right: 3rem;
             padding-left: 3rem;
           }
-          &.prev {
-            a::after {
-              content: '<';
-            }
-          }
           &.back-design {
             a::after {
               content: 'back';
-            }
-          }
-          &.next {
-            a::after {
-              content: '>';
             }
           }
         }
@@ -393,24 +435,15 @@ body {
     ////////////// FOOTER ////////////////
     .footer {
       z-index: 11;
-      // margin-top: 11rem;
       border-radius: 2rem 2rem 0rem 0rem;
       bottom: 0px;
-      // position: relative;
-      // width: 100%;
-      background: $color-secondary;
+      background: $app-yellow;
 
       display: grid;
       grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
           7%,
           1fr
         );
-      // &::after {
-      //   height: 2rem;
-      //   border-radius: 2rem 2rem 0rem 0rem;
-      //   position: absolute;
-      //   top: -1rem;
-      // }
       #footer-wrapper {
         grid-column: 2;
         height: 100%;
@@ -446,7 +479,7 @@ body {
                 padding-top: 1.2rem;
                 padding-bottom: 1.2rem;
 
-                color: $blog-color-box;
+                color: $text-color;
                 text-decoration: none;
                 transition: 0.3s;
                 &:hover,

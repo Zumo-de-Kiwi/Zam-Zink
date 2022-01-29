@@ -17,35 +17,40 @@ body {
 
   display: grid;
   place-items: center;
-  grid-template-columns: minmax(2rem, 1fr) minmax(200px, 610px) minmax(
+  grid-template-columns: minmax(2rem, 1fr) minmax(200px, 690px) minmax(
       2rem,
       1fr
     );
-  gap: 2rem;
+  // gap: 2rem;
 
   //logo home filter contact about me
   .navigation {
     grid-column: 2;
 
-    height: 6rem;
+    // height: 4rem;
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    padding-top: 3rem;
+    padding-top: 2vh;
     // transition: all $trans-slow; // INitial fx when enter the page
+    &:hover {
+      .logo-frame.logo-svg.hc-logo {
+        fill: $sutil-dark-purple-gray-color;
+      }
+    }
     .logo-frame {
       margin-right: auto;
       .logo-svg {
-        height: 30px; // svg size
+        height: 2.5rem; // svg size
         cursor: $cursor-pointer-down-hand;
+        .hc-logo {
+          transition: $trans-slow;
+          fill: transparent;
+        }
         &:hover {
           .hc-logo {
             fill: $sutil-dark-purple-gray-color;
           }
-        }
-        .hc-logo {
-          transition: $trans-slow;
-          fill: $font-sutil-gray-color;
         }
       }
     }
@@ -58,10 +63,10 @@ body {
         font-size: $font-size-big;
         font-variation-settings: $MONO, 'CASL' 0.1, 'wght' $font-weight-normal,
           $slnt;
-
         a {
           padding: 0.5rem;
-          color: $font-sutil-gray-color;
+          // color: $font-sutil-gray-color;
+          color: $lighter-gray;
           text-decoration: none;
           cursor: $cursor-arrow-hand;
 
@@ -84,8 +89,8 @@ body {
 
   .content_wrap {
     grid-column: 2;
-    margin-top: 11vh;
-    margin-bottom: 19rem;
+    margin-top: 7vh;
+    margin-bottom: 9vh;
     @media (max-width: 478px) {
       margin-bottom: 3rem;
     }
@@ -96,77 +101,91 @@ body {
       font-size: $font-size-huge;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' $font-weight-heavy,
         $slnt;
-      text-align: left;
-      color: rgb(112, 112, 112);
-      word-spacing: 0.7px;
-      &:hover {
-        .complete-name {
-          .first-name,
-          .family-name {
-            // text-decoration-color: $font-sutil-gray-color;
-            text-decoration-color: $spotify-text-green;
-          }
-        }
+      // color: rgb(112, 112, 112);
+      color: $font-light-gray;
+      display: grid;
+      grid-template-columns: 1;
+
+      // HEY
+      .change-hey {
+        grid-row: 1;
+        font-family: 'Recursive', $ff-m-zh;
+        font-weight: 600;
+        font-size: 1.31em;
+        // color: $light-gray;
+        color: $font-sutil-gray-color;
+        // color: $lighter-gray;
+        color: $lighter-gray;
       }
 
-      // .coma {
-      //   position: relative;
-      //   margin-left: calc(
-      //     5px * 1vw
-      //   ); //-13px // move the coma and the following words to the left
-      // }
-      .complete-name {
-        color: rgb(116, 116, 116);
-        cursor: $cursor-please-fingers;
-        text-decoration: none;
-        .first-name,
-        .family-name {
-          position: relative;
-          text-decoration: underline;
-          text-decoration-color: $font-sutil-gray-color;
+      .i-am {
+        grid-row: 2;
+        margin-top: 1vh;
+        .complete-name {
+          grid-row: 2;
+          // grid-column: 1;
+          color: rgb(116, 116, 116);
+          cursor: $cursor-please-fingers;
+          text-decoration: none;
+          .first-name,
+          .family-name {
+            position: relative;
+            text-decoration: underline;
+            // text-decoration-color: $font-sutil-gray-color;
+            text-decoration-color: $lighter-gray;
 
-          transition: $trans-slow ease;
-          will-change: font-family;
-          &::after {
-            font-size: $font-size-small;
-            color: $transparent;
-
-            position: absolute;
-            text-align: center;
-            bottom: -0.2rem;
-            width: 100%;
-            height: 0;
-            left: 0;
-
-            transition: $trans-slow;
-            transition-delay: $delay-fast;
-            will-change: transform;
-          }
-          &:hover {
-            text-decoration-color: $spotify-text-green;
-            color: $font-linked-color;
+            transition: $trans-slow ease;
+            will-change: font-variation-settings;
             &::after {
-              color: $underline-color;
-              transform: translateY(-0.3rem);
+              font-size: $font-size-small;
+              color: $transparent;
+
+              position: absolute;
+              text-align: center;
+              bottom: -0.2rem;
+              width: 100%;
+              height: 0;
+              left: 0;
+
+              transition: $trans-slow;
+              transition-delay: $delay-fast;
+            }
+            &:hover {
+              text-decoration-color: $spotify-text-green;
+              color: $font-linked-color;
+              &::after {
+                color: $underline-color;
+                transform: translateY(-0.3rem);
+              }
+            }
+          }
+          .first-name {
+            &::after {
+              content: 'about me ⤴️';
+            }
+            &:hover {
+              // cursor: $cursor-say-hi;
+              font-variation-settings: $MONO, 'CASL' 1,
+                'wght' $font-weight-bolder, $slnt;
+            }
+          }
+          .family-name {
+            &::after {
+              content: 'contact ⤴️';
+            }
+            &:hover {
+              // cursor: $cursor-contact-mail;
+              font-variation-settings: $MONO, 'CASL' 0.1,
+                'wght' $font-weight-bolder, $slnt;
             }
           }
         }
-        .first-name {
-          &::after {
-            content: 'about me ⤴️';
-          }
-          &:hover {
-            font-variation-settings: $MONO, 'CASL' 1, 'wght' $font-weight-bolder,
-              $slnt;
-          }
-        }
-        .family-name {
-          &::after {
-            content: 'contact ⤴️';
-          }
-          &:hover {
-            font-variation-settings: $MONO, 'CASL' 0.1,
-              'wght' $font-weight-bolder, $slnt;
+        &:hover {
+          .complete-name {
+            .first-name,
+            .family-name {
+              text-decoration-color: $spotify-text-green;
+            }
           }
         }
       }
@@ -175,66 +194,115 @@ body {
     /////////// Works display~~~~[~~~]~~~[~~]~~~~~[~~~~]~~~ ////////////
     .content-portfolio {
       font-size: $font-size-big;
+      @media (max-width: 768px) {
+        // font-size: calc(0.7 * $font-size-big);
+        font-size: calc(0.3vw + 13px);
+      }
+
       text-align: left;
       letter-spacing: -0.32px;
       line-height: 1.5;
-      color: $font-gray;
+      // color: $font-gray;
       color: $font-light-gray;
-      word-spacing: -0.3px;
-
+      // word-spacing: -0.2px;
       // no working warning
-      --main-weight: 600;
-
-      font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' var(--main-weight),
-        $slnt;
-
+      // --main-weight: 600;
+      font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' 600, $slnt;
+      will-change: font-variation-settings;
       //link and link number WRAPPER
       .link-wrapper {
-        text-decoration: none;
+        // text-decoration: none;
+        white-space: nowrap; //for no break the link to the next  line
+        &.with-hidden-span {
+          .hidden-span {
+            display: none;
+          }
+          &:hover {
+            .default-span {
+              display: none;
+            }
+            .hidden-span {
+              display: inline;
+            }
+          }
+        }
       }
       .l-line {
         font-family: $ff-special-char;
-        color: $background-selected-color;
+        // color: $font-sutil-gray-color;
+        color: $lighter-gray;
         transition: 0.6s ease-out;
       }
-      &:hover {
-        .l-line {
-          // color: $spotify-text-green;
-          color: $skillshare-green;
-        }
-      }
+
       // a
       .link {
         position: relative;
-        white-space: nowrap; //for no break the link to the next  line
-        color: $font-linked-color;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0.1,
           'wght' $font-weight-normal, $slnt;
+        // color: inherit;
+        // color: $sutil-dark-purple-gray-color;
+        color: $font-linked-color;
 
-        text-decoration-color: $underline-color;
+        // text-decoration-color: $sutil-dark-purple-gray-color;
+        text-decoration-color: $font-sutil-gray-color;
+        // text-decoration-color: $lighter-gray;
+        text-decoration-color: transparent;
+        // text-decoration-color: $underline-color;
+        // text-decoration: underline;
+        // text-decoration: none;
+
         cursor: $cursor-please-fingers;
 
         transition: 0.43s ease-out;
+
         // for coming projects
         &.coming {
           color: $font-light-gray;
-          text-decoration: underline;
-          text-decoration-color: $font-light-gray;
+          // text-decoration: underline;
+          // text-decoration: none;
+          // text-decoration-color: $font-light-gray;
+          // text-decoration-color: inherit;
           &::after {
             content: 'Video projects';
           }
           &:hover {
-            text-decoration-color: $font-light-gray;
+            // text-decoration-color: $font-light-gray;
             &::after {
               content: '[C🙃ming Soon]';
             }
           }
         }
+        &.pixelLink {
+          #pixel {
+            display: none;
+          }
+          &:hover {
+            #mosaic {
+              display: none;
+            }
+            #pixel {
+              display: inline;
+              font-variation-settings: 'MONO' 0.735, 'CASL' 0.1, 'wght' 550;
+            }
+          }
+        }
+        &.angled-brackets {
+          color: transparent;
+          transition: 0.6s;
+          transition-delay: $delay-fast;
+          @media (max-width: 740px) {
+            color: $font-linked-hover-color;
+          }
+        }
+        &#playground:hover {
+          .angled-brackets {
+            color: $font-linked-color;
+          }
+        }
         &:hover {
-          // color: $font-linked-hover-color;
           font-variation-settings: 'MONO' 0.2, 'CASL' 0.6,
             'wght' $font-weight-bolder, $slnt;
-          text-decoration-color: $font-linked-color;
+          // text-decoration-color: $font-linked-color;
         }
         &:active {
           cursor: $cursor-yeah-hand;
@@ -243,6 +311,7 @@ body {
 
       // mini linked number
       .link-number {
+        // color: $sutil-dark-purple-gray-color;
         color: $font-linked-color;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0,
           'wght' $font-weight-bolder;
@@ -250,49 +319,35 @@ body {
         text-decoration: none;
 
         position: relative;
-        left: 0.1rem;
-        top: -0.7rem;
-        margin-left: 0px;
+        left: 0.2em;
+        top: -1em;
       }
 
-      .with-hidden-span {
-        .hidden-span {
-          display: none;
+      &:hover {
+        .l-line {
+          color: $skillshare-green;
         }
-        &:hover {
-          .default-span {
-            display: none;
-          }
-          .hidden-span {
-            display: inline;
-          }
-        }
-      }
+        .link {
+          color: $font-linked-color;
 
-      .pixelLink {
-        #pixel {
-          display: none;
-        }
-        &:hover {
-          #mosaic {
-            display: none;
+          // text-decoration-color: $sutil-dark-purple-gray-color;
+          // text-decoration-color: $font-linked-color;
+          text-decoration-color: $font-sutil-gray-color;
+          // text-decoration-color: $lighter-gray;
+          // text-decoration-color: $lighter-gray;
+          text-decoration: underline;
+          text-decoration-color: transparent;
+          transition: 0.4s;
+          &:hover {
+            text-decoration-color: $font-sutil-gray-color;
+            // text-decoration-color: $lighter-gray;
+            // text-decoration-color: $font-linked-color;
+            // text-decoration-color: $underline-color;
+            // text-decoration-color: $spotify-text-green;
+            text-decoration-color: transparent;
           }
-          #pixel {
-            display: inline;
-            font-variation-settings: 'MONO' 0.735, 'CASL' 0.1, 'wght' 550;
-          }
         }
-      }
-      .angled-brackets {
-        color: transparent;
-        transition: 0.6s;
-        transition-delay: $delay-fast;
-        @media (max-width: 740px) {
-          color: $font-linked-hover-color;
-        }
-      }
-      #playground:hover {
-        .angled-brackets {
+        .link-number {
           color: $font-linked-color;
         }
       }
@@ -435,8 +490,12 @@ footer {
       font-size: calc(0.4vw + 7px);
 
       text-align: center;
-      padding: 1.6vh;
+      margin-bottom: 1.7rem;
+      margin-top: 1rem;
+
       a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         cursor: $cursor-startreck-hand;
         font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter,
           'slnt' -3;

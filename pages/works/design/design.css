@@ -361,7 +361,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #ccad8f;
   width: 100vw;
   font-weight: 300;

@@ -361,7 +361,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: white;
   width: 100vw;
   font-weight: 300;
@@ -453,7 +453,7 @@ body main .subpage-wrapper .subpage-content-1 .pixel {
 }
 
 body main .subpage-wrapper .subpage-content-1 .w-texts {
-  font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   grid-row: 3;
   /* Searching for some food to draw I discovered the amazing world of strawberries, whose pores grow leaves. If there is one fruit comparable to fonts, it is the strawberry. I think of every pore as a word. A well chosen font is like adding chocolate or cream, giving a good taste to the user’s mouth. */
 }

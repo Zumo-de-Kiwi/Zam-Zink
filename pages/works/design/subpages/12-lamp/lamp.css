@@ -361,7 +361,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #d73d45;
   width: 100vw;
   font-weight: 300;
@@ -450,7 +450,7 @@ body main .subpage-wrapper .subpage-content-1 .www {
 }
 
 body main .subpage-wrapper .subpage-content-1 .w-texts {
-  font-family: "Space Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f5dd3b;
   grid-row: 3;
   margin-right: 17%;
