@@ -763,7 +763,7 @@ body {
 }
 
 .main .content_wrap .content-portfolio .link.coming::after {
-  content: 'Video projects';
+  content: 'Video Projects';
 }
 
 .main .content_wrap .content-portfolio .link.coming:hover::after {
