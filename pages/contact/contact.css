@@ -533,8 +533,9 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-body {
-  height: 95vh;
+body,
+html {
+  height: 100%;
 }
 
 .preloader {
@@ -606,19 +607,22 @@ body {
 
 .container {
   height: 100%;
+  position: relative;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr minmax(100%, 50ch) 1fr;
 }
 
 .container #subcontainer {
+  height: 100%;
   grid-column: 2;
   line-height: 1.5;
   display: grid;
-  grid-template-rows: 15% 1fr 10% 1fr 5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   width: clamp(250px, 80%, 60ch);
-  gap: 5rem;
-  place-items: center;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .container #subcontainer h1 {
@@ -639,10 +643,6 @@ body {
   grid-row: 2;
 }
 
-.container #subcontainer .p2 {
-  grid-row: 4;
-}
-
 .container #subcontainer .italic {
   font-size: 1.02em;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
@@ -650,6 +650,7 @@ body {
 }
 
 .container #subcontainer #mailFrame {
+  z-index: 2;
   grid-row: 3;
 }
 
@@ -695,11 +696,87 @@ body {
 .container #subcontainer #mailFrame:hover .wave {
   display: block;
   position: absolute;
-  z-index: -1;
+  pointer-events: none;
+  z-index: 2;
   place-self: end;
   animation-name: waveHand;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   top: 55%;
   left: 53%;
+}
+
+.container #subcontainer .p2 {
+  grid-row: 4;
+}
+
+.container #subcontainer .contacs {
+  grid-row: 5;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.container #subcontainer .contacs:hover a .moreContacts {
+  filter: grayscale(70%);
+  border: 1.3px solid #676767;
+  background-color: white;
+}
+
+.container #subcontainer .contacs a {
+  padding: 1.3rem;
+  height: 100%;
+  text-decoration: none;
+}
+
+.container #subcontainer .contacs a .moreContacts {
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: #e9e9e9;
+  border: 1.3px solid transparent;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+.container #subcontainer .contacs a .moreContacts span {
+  transition: inherit;
+  display: none;
+  font-size: 0.9em;
+  color: white;
+}
+
+.container #subcontainer .contacs a .moreContacts#job {
+  background-color: #b7eeff;
+}
+
+.container #subcontainer .contacs a .moreContacts#pics {
+  background-color: #b6c7ff;
+}
+
+.container #subcontainer .contacs a .moreContacts#pixel {
+  background-color: #ffde95;
+}
+
+.container #subcontainer .contacs a .moreContacts#code {
+  background-color: #a5ff98;
+}
+
+.container #subcontainer .contacs a .moreContacts:hover {
+  padding: 1rem;
+  opacity: 1;
+  filter: grayscale(0%);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+.container #subcontainer .contacs a .moreContacts:hover span {
+  display: block;
+  padding: 0rem;
+}
+
+.container #subcontainer .contacs a:hover .moreContacts {
+  filter: grayscale(30%);
 }
