@@ -5,7 +5,7 @@ html {
   font-size: 62.5%; //Now 10px is equal 1rem
   box-sizing: border-box;
   cursor: $cursor-pointer-hand;
-  min-height: 100vh;
+  // min-height: 100vh;
   scroll-behavior: smooth;
 }
 * {
@@ -238,6 +238,9 @@ body {
         transform: translateY(0.2rem);
       }
     }
+    @media (max-width: 768px) {
+      // display: none;
+    }
   }
 }
 //////////// PRE LOADER //////////////////////
@@ -261,9 +264,7 @@ body {
     text-align: center;
     margin: 0px auto;
   }
-
   #emoji-loader {
-    // emoji rotate when loading
     font-size: 60px;
     animation: jump 2.6s infinite ease alternate;
     @keyframes jump {
@@ -271,12 +272,8 @@ body {
         transform: translateY(0.7rem);
       }
     }
-    //ease is funnier//linear
-    // height and width to center the emoji for a absolute center rotation anchor
     width: 7rem;
     height: 70px;
-
-    // justify-self: center;
     transform-origin: center; //added
   }
 
@@ -284,10 +281,12 @@ body {
     font-weight: 500;
     padding-top: 10rem;
     font-family: Monaco, Consolas, 'Courier New', monospace;
-    // font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
     animation: variableOpacity 2s infinite linear;
     color: $sutil-dark-purple-gray-color;
     font-size: $font-size-small;
+    @media (max-width: 700px) {
+      font-size: 1.5rem;
+    }
   }
 }
 .preload-finish {
@@ -321,11 +320,7 @@ body {
 .show {
   display: block;
 }
-// .visuallyHidden {
-//   opacity: 0;
-// }
 .anim-show {
-  // opacity: 1;
   animation: showHidden 0.4s ease-out forwards;
   @keyframes showHidden {
     0% {

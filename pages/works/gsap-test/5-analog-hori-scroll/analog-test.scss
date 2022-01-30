@@ -12,6 +12,16 @@ nav,
 section {
   display: block;
 }
+img,
+picture,
+video,
+canvas,
+svg {
+  // display: block;
+  // max-width: 100%;
+  user-select: unset;
+  -webkit-user-drag: unset;
+}
 // #viewContainer
 body {
   overflow-x: hidden;

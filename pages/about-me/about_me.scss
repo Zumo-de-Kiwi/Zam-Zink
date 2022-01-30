@@ -24,7 +24,6 @@ body {
     margin: 0px auto;
 
     background: white;
-
     position: relative; // for place the photos of the comical
 
     // BACK ARROW 1/2 1/2
@@ -32,7 +31,7 @@ body {
       grid-column: 1;
       grid-row: 1;
       place-self: center;
-      margin-top: 1rem;
+      margin-top: 0rem; //1rem;;
       .link-a {
         height: 70%;
         padding: 0rem;
@@ -638,7 +637,9 @@ body {
       }
     }
   }
-
+  @media (max-width: 600px) {
+    font-size: 0.9em;
+  }
   //////////////////////////////
   /////////////////////////////
   //////////// FOR JS /////////

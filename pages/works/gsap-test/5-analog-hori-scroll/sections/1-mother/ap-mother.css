@@ -3,7 +3,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
-  min-height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -304,6 +303,12 @@ body #trampolin-wrapper #trampolineEmoji:active {
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
   font-size: calc(0.3vw - 0vw + 12px);
+}
+
+@media (max-width: 700px) {
+  .preloader #text-loader {
+    font-size: 1.5rem;
+  }
 }
 
 .preload-finish {
