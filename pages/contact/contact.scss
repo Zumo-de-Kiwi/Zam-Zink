@@ -87,7 +87,6 @@ html {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: clamp(250px, 80%, 60ch);
     gap: 1rem;
-    // place-items: center;
     justify-items: center;
     align-items: center;
     h1 {
@@ -95,7 +94,6 @@ html {
       text-align: center;
       align-self: end;
       color: rgb(237, 237, 237);
-      // margin-top: 3rem;
       font-variation-settings: 'MONO' 0.5, 'CASL' 0.1, 'wght' $font-weight-light;
     }
     p {
@@ -179,70 +177,91 @@ html {
 
     .contacs {
       grid-row: 5;
-
+      // display: grid;
+      // grid-template-rows: 1fr;
+      // grid-template-columns: repeat(4, 1fr);
+      height: 100%;
+      width: 100%;
       display: flex;
       align-items: center;
-      width: 70%;
-      // height: 100%;
-      justify-content: space-around;
+      justify-content: space-evenly; // center; //
+      justify-items: stretch;
       &:hover {
+        justify-content: center;
         a {
+          flex-basis: 25%;
           .moreContacts {
-            filter: grayscale(70%);
+            padding: 0.5rem;
             border: 1.3px solid rgb(103, 103, 103);
             background-color: rgb(255, 255, 255);
           }
         }
       }
       a {
-        padding: 1.3rem;
+        padding: 5%;
+        padding-top: 5%;
         height: 100%;
         text-decoration: none;
+        // flex-basis: 25%;
         .moreContacts {
           border-radius: 50%;
-          // height: 13px;
-          // width: 13px;
+          // margin: auto;
           padding: 0.5rem;
-          background-color: rgb(233, 233, 233);
+          background-color: rgb(232, 231, 231);
           border: 1.3px solid transparent;
-          filter: grayscale(100%);
           opacity: 0.7;
           transition: 0.4s;
-
           span {
             transition: inherit;
             display: none;
             font-size: 0.9em;
+            text-align: center;
             color: rgb(255, 255, 255);
           }
-          &#job {
-            background-color: rgb(183, 238, 255);
-          }
-          &#pics {
-            background-color: rgb(182, 199, 255);
-          }
-          &#pixel {
-            background-color: rgb(255, 222, 149);
-          }
-          &#code {
-            background-color: rgb(165, 255, 152);
-          }
           &:hover {
+            //   padding: 1rem;
+            //   opacity: 1;
+            //   border: none;
+            //   border-radius: 1rem;
+            //   padding: 0.4rem;
+            //   span {
+            //     display: block;
+            //     transform: scale(1);
+            //     padding: 0rem;
+            //   }
+          }
+        }
+        &:hover {
+          .moreContacts {
             padding: 1rem;
             opacity: 1;
-            filter: grayscale(0%);
             border: none;
             border-radius: 1rem;
             padding: 0.4rem;
             span {
               display: block;
+              // transform: scale(1);
               padding: 0rem;
+            }
+            &#job {
+              background-color: rgb(215, 215, 215);
+            }
+            &#pics {
+              background-color: rgb(126, 255, 135);
+            }
+            &#pixel {
+              background-color: rgb(255, 211, 101);
+            }
+            &#code {
+              background-color: rgb(192, 140, 255);
             }
           }
         }
-        &:hover {
+      }
+      &:hover {
+        a {
           .moreContacts {
-            filter: grayscale(30%);
+            border-radius: 1rem;
           }
         }
       }
