@@ -366,7 +366,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #eff1f5;
   font-weight: 300;
   position: relative;
