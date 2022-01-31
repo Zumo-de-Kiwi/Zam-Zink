@@ -5,24 +5,22 @@
 - [x] Separate the link of Hector and Cortes
 - [x] Hector Hover doesn't change undeline to green
 - [x] linked github icon
-- [ ] Animate bottom banner
+- [x] Animate bottom banner
 - [x] Link netlify to the working page
 
 1. Subpage
 
    1. About me
 
-      - [ ] Text
-      - [ ] Brainstorm Layout
+      - [x] Text
+      - [x] Brainstorm Layout
       - [ ] friends testimonials about me, that updates every 7s
-      - [ ] "Tips" about my hobbies, personality
-      - [ ] ...
-      - [ ] Super Arrowed 100vh intro
+      - [x] "Tips" about my hobbies, personality
+      - [Cancelled] Super Arrowed 100vh intro
 
    1. Contact me
-      - [ ] Text
-      - [ ] Brainstorm Layout
-      - [ ] ...
+      - [x] Text
+      - [x] Brainstorm Layout
 
 ## What's next?
 
@@ -31,34 +29,32 @@
 1. Hover on...
 
    - [ ] link a appears a big preview images or another stuff?
-   - [ ] hover on the **contact me** will appear the `email adress` and a `copy email` button.
+   - [cancelled] hover on the **contact me** will appear the `email adress` and a `copy email` button.
 
 1. link to more pages
 
-   - [ ] Choose the delay after clicked on the link
-   - [ ] How can I do a seamless transition while downloading the next page?
+   - [x] Choose the delay after clicked on the link
+   - [x] How can I do a seamless transition while downloading the next page?
 
 1. Contact me
 
-   - [ ] Real pic, svg, png draw or me in pixel art?
-   - [ ] how to show my avatar or pic
-   - [ ] one or more pics of me?
-   - [ ] in a pop up or full page?
+   - [x] Real pic, svg, png draw or me in pixel art?
+   - [x] how to show my avatar or pic
+   - [x] one or more pics of me?
+   - [x] in a pop up or full page?
 
 1. External links
 
-   - [ ] To open the mail app
-   - [ ] Github, Twitter, pixeljoint, Instagram, Dribble, Behance, Pinterest, Spotify....
+   - [x] Open the mail app
+   - [x] Github, Twitter, pixeljoint, Instagram, Dribble, Behance, Pinterest, Spotify....
 
 1. Responsive Web and Compatibility
 
    1. Browsers
 
-      - [ ] Safari
+      - [x] Safari
       - [ ] Firefox
-      - [ ] Chrome
-      - [ ] Edge
-      - [ ] Opera
+      - [x] Chrome(Edge, Opera, Brave)
 
    1. Devices
       - [ ] iOS phone

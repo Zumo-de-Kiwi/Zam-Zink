@@ -237,7 +237,8 @@ body {
 
         text-decoration-color: $font-sutil-gray-color;
         text-decoration-color: transparent;
-
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         cursor: $cursor-please-fingers;
 
         transition: 0.43s ease-out;
@@ -268,7 +269,7 @@ body {
             }
           }
         }
-        &.angled-brackets {
+        .angled-brackets {
           color: transparent;
           transition: 0.6s;
           transition-delay: $delay-fast;
