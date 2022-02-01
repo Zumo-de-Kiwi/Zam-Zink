@@ -482,9 +482,6 @@ body main {
 }
 
 body main .top-img-wrapper {
-  position: sticky;
-  position: -webkit-sticky;
-  display: block;
   top: 7rem;
   width: 100%;
   z-index: 1;
@@ -492,12 +489,6 @@ body main .top-img-wrapper {
   justify-content: center;
   align-self: center;
   background-color: #ffd414;
-}
-
-body main .top-img-wrapper picture img {
-  height: 31rem;
-  object-fit: contain;
-  margin: 2rem;
 }
 
 body main .top-img-wrapper a {
@@ -510,7 +501,6 @@ body main .top-img-wrapper a {
 }
 
 body main .out-wrapper {
-  box-shadow: 0px -3.1px 2.7px -16px rgba(0, 0, 0, 0.022), 0px 7.7px -6.9px -16px rgba(0, 0, 0, 0.031), 0px 15.8px -14.2px -16px rgba(0, 0, 0, 0.039), 0px 32.5px -29.2px -16px rgba(0, 0, 0, 0.048), 0px 89px -80px -16px rgba(0, 0, 0, 0.07);
   margin-top: 1rem;
   z-index: 2;
   width: 100%;
