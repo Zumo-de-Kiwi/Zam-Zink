@@ -438,7 +438,7 @@ body {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 place-items: center;
-                font-size: 1.1em;
+                font-size: 0.9em;
                 .inner-el {
                   padding: 2%;
                 }
@@ -447,31 +447,84 @@ body {
           }
         }
         .round-footer {
-          background-color: rgb(241, 241, 241);
+          background-color: rgb(235, 235, 235);
         }
       }
       &.comp-au-b {
-        background-color: rgb(241, 241, 241);
+        background-color: rgb(235, 235, 235);
         .ps-wrapper {
+          margin-top: 9rem;
+          padding: 0rem 2rem;
           text-align: center;
           display: grid;
+          border: 5px solid white;
+
           @media (min-width: 764px) {
             grid-template-columns: 1fr 1fr;
+            .sub-header {
+              grid-column: 1 / 3;
+            }
           }
-          // justify-items: stretch;
+          .sub-header {
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            z-index: 4;
+
+            font-size: 2em;
+            justify-self: center;
+            background-color: rgb(235, 233, 233);
+
+            transform: translateY(-2.7rem);
+            padding: 0rem 1.3rem;
+          }
+          &:hover {
+          }
           .group {
             padding: 0rem;
             border-radius: 2rem;
+            margin: 2rem 4rem 3rem 3rem;
+            // background-color: rgb(241, 241, 241);
+
+            display: grid;
+            @media (min-width: 764px) {
+              grid-template-columns: 2;
+              &.full-width {
+                grid-column: 1 / 3;
+              }
+            }
+            &.full-width {
+              .inner-group {
+                padding: 3rem 1.3rem;
+                text-align: left;
+                place-self: start start;
+                width: 100%;
+                .inner-el {
+                  justify-self: left;
+                  padding: 1.3rem 3rem;
+                }
+                b {
+                  font-weight: 600;
+                  font-size: 1.1em;
+                }
+              }
+            }
             .g-header {
               color: rgb(79, 79, 79);
-              font-size: 1.5;
+              font-size: 1.5em;
               font-weight: 300;
               margin-bottom: 1.5rem;
+              background-color: transparent;
+              // align-self: flex-start;
             }
             .inner-group {
               padding: 1.3rem;
               border-radius: 1.3rem;
-              font-size: 1em;
+              font-size: 0.8em;
+
+              display: grid;
+              grid-template-columns: 2;
+              grid-template-rows: 2;
+              align-self: flex-start;
               .inner-el {
                 padding: 1.3rem 1rem;
 
@@ -486,12 +539,12 @@ body {
                 &.gray {
                 }
                 &.money {
-                  font-size: 1.3em;
+                  font-size: 1.1em;
                   padding: 0.7rem;
-                  line-height: 1.3;
+                  line-height: 1.2;
                   border-radius: 1rem;
                   width: 9.3ch;
-                  margin: 1.1rem;
+                  margin: 0.64rem;
                   &.green {
                     background-color: rgba(74, 177, 50, 0.17);
                     border: 1.7px solid rgb(74, 177, 50);
@@ -518,28 +571,6 @@ body {
                   text-decoration-color: inherit;
                 }
               }
-            }
-          }
-
-          ///////// ALL THE GROUPS
-          // .part-b {
-          background-color: rgb(241, 241, 241);
-
-          display: grid;
-          @media (min-width: 764px) {
-            grid-template-columns: 2;
-          }
-          .group {
-            .g-header {
-              font-size: 1.6em;
-            }
-            .inner-group {
-              background-color: rgb(255, 255, 255);
-              display: grid;
-              grid-template-columns: 2;
-              grid-template-rows: 2;
-
-              font-size: 0.9em;
             }
           }
         }
