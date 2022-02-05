@@ -85,15 +85,10 @@ body {
         span {
           opacity: 0.31;
           font-size: 2.3rem;
-          // line-height: 4px;
           text-transform: uppercase;
-          // @media (max-width: 700px) {
-          //   display: none;
-          // }
         }
         color: $text-color;
         opacity: 0.4;
-        // background-color: $color-bg;
         font-family: 'Mochiy Pop P One', sans-serif;
         font-size: 3.7rem;
       }
@@ -104,7 +99,6 @@ body {
         align-items: center;
         justify-content: center;
         h1 {
-          // opacity: 0.2;
           line-height: 2;
           font-size: 2.7rem;
         }
@@ -151,7 +145,7 @@ body {
       background-color: $inner-bg;
       color: $text-color;
       .round-footer {
-        grid-column: 1 /4;
+        grid-column: 1 / 4;
         border-radius: 2rem 2rem 0rem 0rem;
         height: 2rem;
       }
@@ -359,14 +353,12 @@ body {
           padding: 2rem;
           margin: 3rem;
           border-radius: 2rem;
-
           .inner-group {
             border-radius: 1.2rem;
             background-color: rgb(255, 255, 255);
             padding: 2rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            place-items: center;
             font-size: 1.1em;
             .inner-el {
               padding: 1rem;
@@ -404,17 +396,14 @@ body {
             color: rgb(199, 199, 199);
             font-size: 0.9em;
           }
-
           .group {
             padding: 2rem;
             margin: 3rem;
-            border-radius: 2rem;
             background-color: rgb(241, 241, 241);
             display: grid;
             @media (min-width: 764px) {
               grid-template-columns: 1fr 1fr;
             }
-            // place-items: stretch;
             .Lpart {
               place-self: center;
               text-align: center;
@@ -437,7 +426,6 @@ body {
                 padding: 2rem;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                place-items: center;
                 font-size: 0.9em;
                 .inner-el {
                   padding: 2%;
@@ -454,11 +442,11 @@ body {
         background-color: rgb(235, 235, 235);
         .ps-wrapper {
           margin-top: 9rem;
-          padding: 0rem 2rem;
+          padding: 0rem 2rem 2rem 2rem;
           text-align: center;
-          display: grid;
-          border: 5px solid white;
-
+          border: 5px solid rgb(233, 233, 233);
+          transition: 0.7s ease-out;
+          // display: grid;
           @media (min-width: 764px) {
             grid-template-columns: 1fr 1fr;
             .sub-header {
@@ -473,17 +461,33 @@ body {
             font-size: 2em;
             justify-self: center;
             background-color: rgb(235, 233, 233);
-
             transform: translateY(-2.7rem);
             padding: 0rem 1.3rem;
           }
           &:hover {
+            border: 5px solid white;
+            // .sub-header {
+            // font-weight: 400;
+            // &.green {
+            //   color: $exp-green;
+            // }
+            // &.red {
+            //   color: $exp-red;
+            // }
+            // &.yellow {
+            //   color: $exp-yellow;
+            // }
+            // &.blue {
+            //   color: $exp-blue;
+            // }
+            // &.gray {
+            //   color: $exp-gray;
+            // }
+            // }
           }
           .group {
             padding: 0rem;
-            border-radius: 2rem;
             margin: 2rem 4rem 3rem 3rem;
-            // background-color: rgb(241, 241, 241);
 
             display: grid;
             @media (min-width: 764px) {
@@ -497,6 +501,7 @@ body {
                 padding: 3rem 1.3rem;
                 text-align: left;
                 place-self: start start;
+                // place-items: unset;
                 width: 100%;
                 .inner-el {
                   justify-self: left;
@@ -527,17 +532,6 @@ body {
               align-self: flex-start;
               .inner-el {
                 padding: 1.3rem 1rem;
-
-                &.green {
-                }
-                &.red {
-                }
-                &.yellow {
-                }
-                &.blue {
-                }
-                &.gray {
-                }
                 &.money {
                   font-size: 1.1em;
                   padding: 0.7rem;

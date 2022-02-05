@@ -504,7 +504,7 @@ body main .out-wrapper {
 }
 
 body main .out-wrapper .round-footer {
-  grid-column: 1 /4;
+  grid-column: 1 / 4;
   border-radius: 2rem 2rem 0rem 0rem;
   height: 2rem;
 }
@@ -724,7 +724,6 @@ body main .out-wrapper .ps-wrapper .group .inner-group {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
   font-size: 1.1em;
 }
 
@@ -776,7 +775,6 @@ body main .out-wrapper.comp-au-a .part-a p {
 body main .out-wrapper.comp-au-a .part-a .group {
   padding: 2rem;
   margin: 3rem;
-  border-radius: 2rem;
   background-color: #f1f1f1;
   display: grid;
 }
@@ -813,7 +811,6 @@ body main .out-wrapper.comp-au-a .part-a .group .Rpart .inner-group {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
   font-size: 0.9em;
 }
 
@@ -831,10 +828,10 @@ body main .out-wrapper.comp-au-b {
 
 body main .out-wrapper.comp-au-b .ps-wrapper {
   margin-top: 9rem;
-  padding: 0rem 2rem;
+  padding: 0rem 2rem 2rem 2rem;
   text-align: center;
-  display: grid;
-  border: 5px solid white;
+  border: 5px solid #e9e9e9;
+  transition: 0.7s ease-out;
 }
 
 @media (min-width: 764px) {
@@ -857,9 +854,12 @@ body main .out-wrapper.comp-au-b .ps-wrapper .sub-header {
   padding: 0rem 1.3rem;
 }
 
+body main .out-wrapper.comp-au-b .ps-wrapper:hover {
+  border: 5px solid white;
+}
+
 body main .out-wrapper.comp-au-b .ps-wrapper .group {
   padding: 0rem;
-  border-radius: 2rem;
   margin: 2rem 4rem 3rem 3rem;
   display: grid;
 }
