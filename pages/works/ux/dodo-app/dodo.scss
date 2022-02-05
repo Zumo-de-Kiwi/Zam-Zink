@@ -12,6 +12,11 @@ body {
   $app-yellow: hsl(49, 100%, 54%);
   $app-red: rgb(229, 53, 43);
   $app-blue: hsl(198, 66%, 24%);
+
+  $exp-green: rgba(74, 177, 50, 1);
+  $exp-red: rgba(222, 29, 19, 1);
+  $exp-yellow: rgba(255, 153, 0, 1);
+  $exp-blue: rgba(74, 107, 225, 1);
   ///////////////////////////////////////////
   // font-family: 'Mochiy Pop P One', sans-serif;
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -274,12 +279,18 @@ body {
           }
         }
         .round-footer {
-          background-color: rgb(255, 244, 118);
+          background-color: rgb(255, 243, 111);
         }
       }
       //design prosc
       &.design-pro {
-        background-color: rgb(255, 244, 118);
+        padding-bottom: 5rem;
+        background: linear-gradient(
+          rgb(255, 243, 111),
+          rgb(255, 251, 207),
+          rgb(255, 246, 151) 96%,
+          rgb(207, 247, 232) 99%
+        );
         // z-index: 3;
         .ps-wrapper {
           h2 {
@@ -290,27 +301,35 @@ body {
           }
         }
         .round-footer {
-          background-color: rgba(95, 237, 186, 1);
+          background-color: transparent;
+          // background-color: rgba(226, 245, 222, 1); //rgba(95, 237, 186, 1);
         }
       }
       &.user-re {
-        background-color: rgba(95, 237, 186, 1);
+        background: linear-gradient(
+          125deg,
+          rgb(207, 247, 232),
+          rgb(221, 255, 207),
+          rgb(126, 255, 208)
+        );
+
         .ps-wrapper {
           h2 {
-            color: white;
+            color: rgb(58, 179, 96);
             margin-bottom: 0rem;
           }
           div {
             text-align: center;
             margin-bottom: 5rem;
-            color: rgba(0, 62, 71, 0.4);
+            color: rgb(58, 179, 96);
+            opacity: 0.5;
             font-size: 1.2em;
           }
           img {
           }
         }
         .round-footer {
-          background-color: rgba(250, 231, 255, 1);
+          background-color: rgba(232, 237, 255, 1);
         }
       }
       &.user-jo {
@@ -329,6 +348,66 @@ body {
           img {
             width: 87%;
           }
+        }
+        .round-footer {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      &.comp-au {
+        background-color: rgb(255, 255, 255);
+        .ps-wrapper {
+          .green {
+            color: $exp-green;
+          }
+          .red {
+            color: $exp-red;
+          }
+          .yellow {
+            color: $exp-yellow;
+          }
+          .blue {
+            color: $exp-blue;
+          }
+
+          //////// INTRO EXP ///////////
+          .part-a {
+            background-color: white;
+            h2 {
+              color: rgb(104, 104, 104);
+              margin-bottom: 0rem;
+            }
+            p {
+              text-align: center;
+              margin-bottom: 8rem;
+              color: rgb(199, 199, 199);
+              font-size: 0.9em;
+            }
+          }
+
+          ///////// ALL THE GROUPS
+          .part-b {
+            background-color: rgba(241, 241, 241, 1);
+
+            display: grid;
+            @media (min-width: 764px) {
+              grid-template-columns: 2;
+            }
+            .group {
+              .g-header {
+                font-size: 1.6em;
+              }
+              .inner-group {
+                display: grid;
+                grid-template-columns: 2;
+                grid-template-rows: 2;
+
+                font-size: 0.9em;
+              }
+            }
+          }
+          // img {
+          //   width: 87%;
+          // }
         }
         .round-footer {
           background-color: rgb(254, 239, 191);

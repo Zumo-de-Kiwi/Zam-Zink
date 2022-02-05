@@ -647,11 +647,12 @@ body main .out-wrapper.header-main .ps-wrapper .r-top .figma {
 }
 
 body main .out-wrapper.header-main .round-footer {
-  background-color: #fff476;
+  background-color: #fff36f;
 }
 
 body main .out-wrapper.design-pro {
-  background-color: #fff476;
+  padding-bottom: 5rem;
+  background: linear-gradient(#fff36f, #fffbcf, #fff697 96%, #cff7e8 99%);
 }
 
 body main .out-wrapper.design-pro .ps-wrapper h2 {
@@ -663,27 +664,28 @@ body main .out-wrapper.design-pro .ps-wrapper img {
 }
 
 body main .out-wrapper.design-pro .round-footer {
-  background-color: #5fedba;
+  background-color: transparent;
 }
 
 body main .out-wrapper.user-re {
-  background-color: #5fedba;
+  background: linear-gradient(125deg, #cff7e8, #ddffcf, #7effd0);
 }
 
 body main .out-wrapper.user-re .ps-wrapper h2 {
-  color: white;
+  color: #3ab360;
   margin-bottom: 0rem;
 }
 
 body main .out-wrapper.user-re .ps-wrapper div {
   text-align: center;
   margin-bottom: 5rem;
-  color: rgba(0, 62, 71, 0.4);
+  color: #3ab360;
+  opacity: 0.5;
   font-size: 1.2em;
 }
 
 body main .out-wrapper.user-re .round-footer {
-  background-color: #fae7ff;
+  background-color: #e8edff;
 }
 
 body main .out-wrapper.user-jo {
@@ -707,6 +709,68 @@ body main .out-wrapper.user-jo .ps-wrapper img {
 }
 
 body main .out-wrapper.user-jo .round-footer {
+  background-color: white;
+}
+
+body main .out-wrapper.comp-au {
+  background-color: white;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .green {
+  color: #4ab132;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .red {
+  color: #de1d13;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .yellow {
+  color: #ff9900;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .blue {
+  color: #4a6be1;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .part-a {
+  background-color: white;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .part-a h2 {
+  color: #686868;
+  margin-bottom: 0rem;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .part-a p {
+  text-align: center;
+  margin-bottom: 8rem;
+  color: #c7c7c7;
+  font-size: 0.9em;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .part-b {
+  background-color: #f1f1f1;
+  display: grid;
+}
+
+@media (min-width: 764px) {
+  body main .out-wrapper.comp-au .ps-wrapper .part-b {
+    grid-template-columns: 2;
+  }
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .part-b .group .g-header {
+  font-size: 1.6em;
+}
+
+body main .out-wrapper.comp-au .ps-wrapper .part-b .group .inner-group {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  font-size: 0.9em;
+}
+
+body main .out-wrapper.comp-au .round-footer {
   background-color: #feefbf;
 }
 
