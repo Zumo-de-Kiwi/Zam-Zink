@@ -314,7 +314,7 @@ body {
         }
       }
       &.user-jo {
-        background-color: rgba(250, 231, 255, 1);
+        background-color: rgba(232, 237, 255, 1); //rgba(250, 231, 255, 1);
         .ps-wrapper {
           h2 {
             color: rgba(98, 124, 212, 1);
@@ -331,13 +331,13 @@ body {
           }
         }
         .round-footer {
-          background-color: rgb(255, 255, 255);
+          background-color: rgb(254, 239, 191);
         }
       }
 
       // RETURN
       &.return-btn {
-        background-color: rgb(136, 57, 215);
+        background-color: rgb(255, 241, 197);
         padding-top: 5rem;
         .btn-wrapper {
           padding-bottom: 5rem;
@@ -407,7 +407,7 @@ body {
           }
         }
         .round-footer {
-          background-color: gainsboro;
+          background-color: rgb(255, 255, 255);
         }
       }
     }
@@ -423,7 +423,7 @@ body {
       z-index: 11;
       // border-radius: 2rem 2rem 0rem 0rem;
       bottom: 0px;
-      background: gainsboro;
+      background: rgb(255, 255, 255);
 
       display: grid;
       grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(

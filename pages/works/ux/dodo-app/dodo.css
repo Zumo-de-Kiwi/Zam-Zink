@@ -687,7 +687,7 @@ body main .out-wrapper.user-re .round-footer {
 }
 
 body main .out-wrapper.user-jo {
-  background-color: #fae7ff;
+  background-color: #e8edff;
 }
 
 body main .out-wrapper.user-jo .ps-wrapper h2 {
@@ -707,11 +707,11 @@ body main .out-wrapper.user-jo .ps-wrapper img {
 }
 
 body main .out-wrapper.user-jo .round-footer {
-  background-color: white;
+  background-color: #feefbf;
 }
 
 body main .out-wrapper.return-btn {
-  background-color: #8839d7;
+  background-color: #fff1c5;
   padding-top: 5rem;
 }
 
@@ -783,7 +783,7 @@ body main .out-wrapper.return-btn .btn-wrapper .btns.back-design a::after {
 }
 
 body main .out-wrapper.return-btn .round-footer {
-  background-color: gainsboro;
+  background-color: white;
 }
 
 body main #trampolin-wrapper {
@@ -797,7 +797,7 @@ body main #trampolin-wrapper #trampolineEmoji {
 body main .footer {
   z-index: 11;
   bottom: 0px;
-  background: gainsboro;
+  background: white;
   display: grid;
   grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(7%, 1fr);
 }
