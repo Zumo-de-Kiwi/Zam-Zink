@@ -249,8 +249,9 @@ body {
             text-align: center;
             align-self: center;
             h1 {
-              font-size: 2.5em;
+              font-size: 2.3em;
               color: rgb(255, 255, 255);
+              font-family: 'Mochiy Pop P One', sans-serif;
             }
             h5 {
               opacity: 0.4;
@@ -259,17 +260,17 @@ body {
             }
           }
           .r-top {
-            border-left: 4px solid rgb(255, 208, 208);
+            border-left: 4px solid rgb(255, 233, 147);
             width: 100%;
-            height: 77%;
+            height: 100%;
             grid-column: 2;
-            justify-self: center;
-            align-self: center;
-            align-self: center;
+            display: grid;
+            align-content: center;
             .figma {
-              font-size: 0.8em;
-              text-align: center;
-              color: rgb(255, 238, 172);
+              padding: 0.4rem 11%;
+              font-size: 0.9em;
+              // text-align: center;
+              color: rgb(255, 233, 147);
             }
           }
         }
@@ -320,8 +321,6 @@ body {
             opacity: 0.5;
             font-size: 1.2em;
           }
-          img {
-          }
         }
         .round-footer {
           background-color: rgba(232, 237, 255, 1);
@@ -362,6 +361,7 @@ body {
             font-size: 1.1em;
             .inner-el {
               padding: 1rem;
+              justify-self: center;
               &.green {
                 color: $exp-green;
               }
@@ -441,7 +441,7 @@ body {
       &.comp-au-b {
         background-color: rgb(235, 235, 235);
         .ps-wrapper {
-          margin-top: 9rem;
+          margin-top: 4rem;
           padding: 0rem 2rem 2rem 2rem;
           text-align: center;
           border: 5px solid rgb(233, 233, 233);
@@ -460,7 +460,7 @@ body {
 
             font-size: 2em;
             justify-self: center;
-            background-color: rgb(235, 233, 233);
+            background-color: rgb(235, 235, 235);
             transform: translateY(-2.7rem);
             padding: 0rem 1.3rem;
           }
@@ -513,6 +513,7 @@ body {
               grid-template-rows: 2;
               align-self: flex-start;
               .inner-el {
+                // justify-self: center;
                 padding: 1.3rem 1rem;
                 &.money {
                   font-size: 1.1em;
@@ -521,6 +522,7 @@ body {
                   border-radius: 1rem;
                   width: 9.3ch;
                   margin: 0.64rem;
+                  // justify-self: center;
                   &.green {
                     background-color: rgba(74, 177, 50, 0.17);
                     border: 1.7px solid rgb(74, 177, 50);
@@ -690,7 +692,7 @@ body {
                 transition: 0.3s;
                 &:hover,
                 &:active {
-                  opacity: 0.6;
+                  color: $exp-blue;
                 }
               }
             }
@@ -712,8 +714,8 @@ body {
           }
         }
         // RIGHT SIDE
-        .footer-r {
-        }
+        // .footer-r {
+        // }
 
         // MOBILE
         @media (max-width: 400px) {
@@ -736,15 +738,15 @@ body {
           }
           .footer-m {
             grid-row: 2;
-            .sub-wrapper {
-              // text-align: center;
-            }
+            // .sub-wrapper {
+            // text-align: center;
+            // }
           }
           .footer-r {
             grid-row: 1;
-            .sub-wrapper {
-              // text-align: right;
-            }
+            // .sub-wrapper {
+            // text-align: right;
+            // }
           }
         }
 
@@ -752,9 +754,9 @@ body {
         @media (min-width: 400px) {
           .footer-m {
             grid-column: 1;
-            .sub-wrapper {
-              // text-align: center;
-            }
+            // .sub-wrapper {
+            // text-align: center;
+            // }
           }
           .footer-r {
             grid-column: 2;
