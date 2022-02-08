@@ -466,24 +466,6 @@ body {
           }
           &:hover {
             border: 5px solid white;
-            // .sub-header {
-            // font-weight: 400;
-            // &.green {
-            //   color: $exp-green;
-            // }
-            // &.red {
-            //   color: $exp-red;
-            // }
-            // &.yellow {
-            //   color: $exp-yellow;
-            // }
-            // &.blue {
-            //   color: $exp-blue;
-            // }
-            // &.gray {
-            //   color: $exp-gray;
-            // }
-            // }
           }
           .group {
             padding: 0rem;
@@ -569,13 +551,13 @@ body {
           }
         }
         .round-footer {
-          background-color: rgb(254, 239, 191);
+          background-color: rgb(241, 241, 241);
         }
       }
 
       // RETURN
       &.return-btn {
-        background-color: rgb(255, 241, 197);
+        background-color: rgb(241, 241, 241);
         padding-top: 5rem;
         .btn-wrapper {
           padding-bottom: 5rem;
@@ -593,12 +575,12 @@ body {
 
             border-radius: 2rem;
             transition: 0.15s;
-            background: $app-red;
+            background: rgb(39, 39, 39);
             opacity: 0.85;
 
             &:hover,
             &:active {
-              background-color: gold;
+              background-color: $exp-blue;
             }
             a {
               text-decoration: none;
@@ -661,7 +643,7 @@ body {
       z-index: 11;
       // border-radius: 2rem 2rem 0rem 0rem;
       bottom: 0px;
-      background: rgb(255, 255, 255);
+      background: white;
 
       display: grid;
       grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(

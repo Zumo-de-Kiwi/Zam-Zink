@@ -952,11 +952,11 @@ body main .out-wrapper.comp-au-b .ps-wrapper .group .inner-group .inner-el a {
 }
 
 body main .out-wrapper.comp-au-b .round-footer {
-  background-color: #feefbf;
+  background-color: #f1f1f1;
 }
 
 body main .out-wrapper.return-btn {
-  background-color: #fff1c5;
+  background-color: #f1f1f1;
   padding-top: 5rem;
 }
 
@@ -978,12 +978,12 @@ body main .out-wrapper.return-btn .btn-wrapper .btns {
   font-size: 1.1em;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #e5352b;
+  background: #272727;
   opacity: 0.85;
 }
 
 body main .out-wrapper.return-btn .btn-wrapper .btns:hover, body main .out-wrapper.return-btn .btn-wrapper .btns:active {
-  background-color: gold;
+  background-color: #4a6be1;
 }
 
 body main .out-wrapper.return-btn .btn-wrapper .btns a {
