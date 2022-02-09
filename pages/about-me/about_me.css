@@ -538,6 +538,10 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
+html {
+  width: 100%;
+}
+
 body {
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 620, "slnt" 0;
   font-size: calc(0.3vw + 0.3vw + 13px);
@@ -560,7 +564,7 @@ body {
 
 body main {
   display: grid;
-  grid-template-columns: minmax(8vw, 10rem) 1fr minmax(8vw, 10rem);
+  grid-template-columns: minmax(8%, 10rem) 1fr minmax(8%, 10rem);
   grid-template-rows: minmax(8vh, 8rem) 1fr minmax(8vh, 8rem);
   height: 100vh;
   width: 100%;
@@ -1042,6 +1046,7 @@ body main #center-box #comical-pics #my-pic-9 {
 
 body footer {
   height: 41%;
+  width: 100%;
   background-color: #a6a6a6;
 }
 

@@ -3,6 +3,9 @@
 @import '../../scss/mixins';
 @import '../../scss/font-anim-keyframes';
 
+html {
+  width: 100%;
+}
 body {
   // width: 100%;
   font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-normal, $slnt;
@@ -16,7 +19,7 @@ body {
   }
   main {
     display: grid;
-    grid-template-columns: minmax(8vw, 10rem) 1fr minmax(8vw, 10rem);
+    grid-template-columns: minmax(8%, 10rem) 1fr minmax(8%, 10rem);
     grid-template-rows: minmax(8vh, 8rem) 1fr minmax(8vh, 8rem);
     height: 100vh;
     width: 100%;
@@ -512,6 +515,7 @@ body {
 
   footer {
     height: 41%;
+    width: 100%;
     background-color: $light-gray;
     #footer-inside {
       // display: grid;

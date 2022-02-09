@@ -3,7 +3,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👆</text></svg>") 16 0, auto;
-  min-height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -267,7 +266,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   right: 0;
   width: 100%;
   height: 100vh;
-  background: #d0d5fe;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,6 +303,12 @@ body #trampolin-wrapper #trampolineEmoji:active {
   animation: variableOpacity 2s infinite linear;
   color: #4d435b;
   font-size: calc(0.3vw - 0vw + 12px);
+}
+
+@media (max-width: 700px) {
+  .preloader #text-loader {
+    font-size: 1.5rem;
+  }
 }
 
 .preload-finish {
@@ -357,6 +362,179 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
   100% {
     display: block;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes variableOpacity {
+  0% {
+    opacity: 100%;
+  }
+  66% {
+    opacity: 33%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes gifFrame1 {
+  0% {
+    opacity: 100%;
+  }
+  24% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame2 {
+  0% {
+    opacity: 0%;
+  }
+  24% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  49% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame3 {
+  0% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  76% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gifFrame4 {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  76% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes brujula {
+  to {
+    transform: rotateZ(23deg);
+  }
+}
+
+@keyframes jump {
+  to {
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes goLeft {
+  to {
+    transform: translateX(-0.6rem);
+  }
+}
+
+@keyframes navbarAppears {
+  from {
+    transform: translateX(5rem);
+    opacity: 20%;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 100%;
+  }
+}
+
+@keyframes widthness {
+  0% {
+    font-variation-settings: "wght" 500;
+  }
+  30% {
+    font-variation-settings: "wght" 800;
+  }
+  70% {
+    font-variation-settings: "wght" 620;
+  }
+  100% {
+    font-variation-settings: "wght" 500;
+  }
+}
+
+@keyframes slintness {
+  0% {
+    font-variation-settings: 'slnt' 0, 'CRSV' 1;
+  }
+  40% {
+    font-variation-settings: 'slnt' -15, 'CRSV' 1;
+  }
+  100% {
+    font-variation-settings: 'slnt' 0, 'CRSV' 1;
+  }
+}
+
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 

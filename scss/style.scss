@@ -3,37 +3,229 @@
 @import 'variables';
 @import 'font-anim-keyframes';
 
-body {
+html {
   height: 100%;
+}
+body {
+  min-height: 100%;
   color: $font-black;
 }
 .special-char {
   font-family: $ff-special-char;
   line-height: inherit;
 }
+//////////// PRE LOADER //////////////////////
+//// ALERT! don't put it inside the body/////
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transition: $trans-slow ease-out;
+  // #emoji-loader,
+  #text-loader,
+  .text-char {
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    margin: 0px auto;
+  }
+  /// TEXT CHAR
+  .text-char {
+    height: 66%;
+    width: 70%;
+    max-width: 70ch;
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    // justify-content: end;
+    align-items: center;
+    .innerWrapper {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.4s ease-out;
+      svg {
+        overflow: visible;
+        transition: 0.3s;
+        transition: font-variation-settings 1.5s, fill 0.3s, transform 0.5s;
+        // all the chars
+        .text-alien-chars {
+          will-change: transition;
+          transition: inherit;
+          // font-family: 'Recursive', sans-serif;
+          fill: rgba(85, 49, 215, 0.36); //rgb(29, 29, 29);
+        }
+
+        #theC {
+          will-change: transition;
+          transition: font-variation-settings 1s, color 0.3s, transform 0.3s;
+          font-variation-settings: 'MONO' 1, 'CASL' 0,
+            'wght' $font-weight-bolder;
+          // fill: rgba(232, 232, 232, 0.36);
+          animation: colorFlow 3s infinite; // alternate
+        }
+        @keyframes colorFlow {
+          0% {
+            fill: rgb(224, 238, 237);
+          }
+          20% {
+            fill: rgb(239, 234, 245);
+          }
+          50% {
+            fill: rgb(237, 239, 250);
+          }
+          100% {
+            fill: rgb(235, 233, 237);
+          }
+        }
+
+        .theL-E {
+          font-variation-settings: 'MONO' 0.1, 'CASL' 1,
+            'wght' $font-weight-lightest;
+        }
+        .theR-E {
+          font-variation-settings: 'MONO' 0.1, 'CASL' 1,
+            'wght' $font-weight-lightest;
+        }
+        // Make é disappear for BLINK
+        .normal {
+          animation: blinkE 7s linear infinite;
+          will-change: opacity;
+        }
+        @keyframes blinkE {
+          0% {
+            opacity: 100%;
+          }
+          33% {
+            opacity: 100%;
+          }
+          34% {
+            opacity: 0%;
+          }
+          36% {
+            opacity: 0%;
+          }
+          37% {
+            opacity: 100%;
+          }
+          85% {
+            opacity: 100%;
+          }
+          86% {
+            opacity: 0%;
+          }
+          88% {
+            opacity: 0%;
+          }
+          89% {
+            opacity: 100%;
+          }
+          97% {
+            opacity: 100%;
+          }
+          98% {
+            opacity: 0%;
+          }
+          100% {
+            opacity: 0%;
+          }
+        }
+        #theO {
+          transition: font-variation-settings 0.5s, fill 0.3s, transform 0.3s;
+          font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-light;
+        }
+      }
+    }
+  }
+  #emoji-loader {
+    // font-size: 60px;
+    // animation: jump 2.6s infinite ease alternate;
+    // @keyframes jump {
+    //   to {
+    //     transform: translateY(0.7rem);
+    //   }
+    // }
+    // width: 7rem;
+    // height: 70px;
+    // transform-origin: center; //added
+  }
+  #text-loader {
+    padding-top: 1rem;
+    // margin-bottom: 3rem;
+    animation: variableOpacity 2.3s infinite linear;
+
+    font-family: $ff-recursive-mono;
+    font-size: $font-size-normal;
+    @media (max-width: 700px) {
+      font-size: 1.5rem;
+    }
+  }
+  &.preload-finish {
+    opacity: 0; //need to be 0
+    pointer-events: none;
+    .text-char {
+      .innerWrapper {
+        transform: translateY(-7rem);
+        svg {
+          .text-alien-chars {
+            fill: transparent; //rgb(29, 29, 29);
+          }
+          .normal {
+            animation: none;
+          }
+          .theL-E {
+            font-variation-settings: inherit;
+            // font-variation-settings: 'MONO' 0.1, 'CASL' 1,
+            //   'wght' $font-weight-lightest;
+          }
+          .theR-E {
+            font-variation-settings: inherit;
+            // font-variation-settings: 'MONO' 0.1, 'CASL' 1,
+            //   'wght' $font-weight-lightest;
+          }
+          #theC {
+            animation: none;
+            font-variation-settings: inherit;
+            // transform: scale(1.3);
+            // font-variation-settings: 'MONO' 1, 'CASL' 0,
+            //   'wght' $font-weight-light;
+            fill: rgba(255, 255, 255, 0.4);
+          }
+        }
+      }
+    }
+    // #text-loader {
+    //   animation: none;
+    // }
+  }
+}
 
 .main {
-  height: 100%;
-
+  // height: 100%;
   display: grid;
   place-items: center;
   grid-template-columns: minmax(2rem, 1fr) minmax(200px, 690px) minmax(
       2rem,
       1fr
     );
-  // gap: 2rem;
 
   //logo home filter contact about me
   .navigation {
     grid-column: 2;
 
-    // height: 4rem;
     display: flex;
     width: 100%;
     justify-content: flex-end;
     padding-top: 2vh;
-    // transition: all $trans-slow; // INitial fx when enter the page
-    &:hover {
+    &:hover,
+    &:active {
       .logo-frame.logo-svg.hc-logo {
         fill: $sutil-dark-purple-gray-color;
       }
@@ -47,7 +239,8 @@ body {
           transition: $trans-slow;
           fill: transparent;
         }
-        &:hover {
+        &:hover,
+        &:active {
           .hc-logo {
             fill: $sutil-dark-purple-gray-color;
           }
@@ -71,7 +264,8 @@ body {
           cursor: $cursor-arrow-hand;
 
           transition: $trans-slow;
-          &:hover {
+          &:hover,
+          &:active {
             color: $sutil-dark-purple-gray-color;
           }
         }
@@ -89,6 +283,7 @@ body {
 
   .content_wrap {
     grid-column: 2;
+    min-height: 68vh; //new
     margin-top: 7vh;
     margin-bottom: 9vh;
     @media (max-width: 478px) {
@@ -149,7 +344,8 @@ body {
               transition: $trans-slow;
               transition-delay: $delay-fast;
             }
-            &:hover {
+            &:hover,
+            &:active {
               text-decoration-color: $spotify-text-green;
               color: $font-linked-color;
               &::after {
@@ -162,8 +358,8 @@ body {
             &::after {
               content: 'about me ⤴️';
             }
-            &:hover {
-              // cursor: $cursor-say-hi;
+            &:hover,
+            &:active {
               font-variation-settings: $MONO, 'CASL' 1,
                 'wght' $font-weight-bolder, $slnt;
             }
@@ -172,14 +368,15 @@ body {
             &::after {
               content: 'contact ⤴️';
             }
-            &:hover {
-              // cursor: $cursor-contact-mail;
+            &:hover,
+            &:active {
               font-variation-settings: $MONO, 'CASL' 0.1,
                 'wght' $font-weight-bolder, $slnt;
             }
           }
         }
-        &:hover {
+        &:hover,
+        &:active {
           .complete-name {
             .first-name,
             .family-name {
@@ -212,7 +409,8 @@ body {
           .hidden-span {
             display: none;
           }
-          &:hover {
+          &:hover,
+          &:active {
             .default-span {
               display: none;
             }
@@ -249,7 +447,8 @@ body {
           &::after {
             content: 'Video Projects';
           }
-          &:hover {
+          &:hover,
+          &:active {
             &::after {
               content: '[C🙃ming Soon]';
             }
@@ -259,7 +458,8 @@ body {
           #pixel {
             display: none;
           }
-          &:hover {
+          &:hover,
+          &:active {
             #mosaic {
               display: none;
             }
@@ -277,12 +477,14 @@ body {
             color: $font-linked-hover-color;
           }
         }
-        &#playground:hover {
+        &#playground:hover,
+        &#playground:active {
           .angled-brackets {
             color: $font-linked-color;
           }
         }
-        &:hover {
+        &:hover,
+        &:active {
           font-variation-settings: 'MONO' 0.2, 'CASL' 0.6,
             'wght' $font-weight-bolder, $slnt;
           // text-decoration-color: $font-linked-color;
@@ -306,27 +508,23 @@ body {
         top: -1em;
       }
 
-      &:hover {
+      &:hover,
+      &:active {
         .l-line {
           color: $skillshare-green;
         }
         .link {
           color: $font-linked-color;
 
-          // text-decoration-color: $sutil-dark-purple-gray-color;
-          // text-decoration-color: $font-linked-color;
+          // text-decoration-color: $sutil-dark-purple-gray-color;$font-linked-color;
           text-decoration-color: $font-sutil-gray-color;
-          // text-decoration-color: $lighter-gray;
           // text-decoration-color: $lighter-gray;
           text-decoration: underline;
           text-decoration-color: transparent;
           transition: 0.4s;
-          &:hover {
-            text-decoration-color: $font-sutil-gray-color;
-            // text-decoration-color: $lighter-gray;
-            // text-decoration-color: $font-linked-color;
-            // text-decoration-color: $underline-color;
-            // text-decoration-color: $spotify-text-green;
+          &:hover,
+          &:active {
+            text-decoration-color: $font-sutil-gray-color; //$font-linked-color;$underline-color $spotify-text-green;
             text-decoration-color: transparent;
           }
         }
@@ -352,7 +550,8 @@ body {
         font-variation-settings: 'MONO' 0.2, 'CASL' 0,
           'wght' $font-weight-normal;
 
-        &:hover {
+        &:hover,
+        &:active {
           text-decoration-color: $spotify-text-green;
           font-variation-settings: 'MONO' 0.2, 'CASL' 0,
             'wght' $font-weight-bold;
@@ -372,7 +571,8 @@ body {
           display: none;
         }
       }
-      &:hover {
+      &:hover,
+      &:active {
         #mailText {
           color: $font-linked-color;
           text-decoration: underline;
@@ -408,7 +608,8 @@ footer {
       left: 0.5rem;
       padding: 1.2rem;
       transition: $trans-normal;
-      &:hover {
+      &:hover,
+      &:active {
         font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
         color: white;
       }
@@ -469,7 +670,8 @@ footer {
           'slnt' -3;
         color: inherit;
         transition: $trans-slow;
-        &:hover {
+        &:hover,
+        &:active {
           font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter,
             'slnt' -17, 'CRSV' 0;
           color: rgb(255, 255, 255);
