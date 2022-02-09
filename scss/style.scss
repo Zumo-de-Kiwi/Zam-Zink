@@ -64,8 +64,10 @@ body {
         // }
         .svg-name {
           fill: hsl(253, 64%, 54%);
-          font-family: Arial, Helvetica, sans-serif;
+          // font-family: Arial, Helvetica, sans-serif;
           font-family: $ff-recursive;
+          font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500, 'slnt' 0,
+            'CRSV' 0;
           font-weight: 700;
           font-size: 0.7em;
         }
@@ -126,7 +128,6 @@ body {
           }
           60% {
             fill: hsl(265, 15%, 31%);
-            fill: hsl(265, 76%, 44%);
             fill: hsl(253, 64%, 54%);
           }
           80% {
@@ -143,19 +144,19 @@ body {
     .text-char {
       .innerWrapper {
         svg {
-          .normal {
-            animation: none;
-          }
+          // .normal {
+          //   animation: none;
+          // }
           .svg-name {
-            transform: translateY(11%);
+            // transform: translateY(-7%);
             animation: none;
           }
-          .theL-E {
-            transform: translateY(-17%);
-          }
-          .theR-E {
-            transform: translateY(-17%);
-          }
+          // .theL-E {
+          //   transform: translateY(-17%);
+          // }
+          // .theR-E {
+          //   transform: translateY(-17%);
+          // }
         }
       }
     }

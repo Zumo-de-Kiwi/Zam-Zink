@@ -589,8 +589,8 @@ body {
 
 .preloader .text-char .innerWrapper svg .svg-name {
   fill: #5f3fd5;
-  font-family: Arial, Helvetica, sans-serif;
   font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
+  font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500, 'slnt' 0, 'CRSV' 0;
   font-weight: 700;
   font-size: 0.7em;
 }
@@ -655,7 +655,6 @@ body {
   }
   60% {
     fill: #4d435b;
-    fill: #621bc5;
     fill: #5f3fd5;
   }
   80% {
@@ -669,21 +668,8 @@ body {
   pointer-events: none;
 }
 
-.preloader.preload-finish .text-char .innerWrapper svg .normal {
-  animation: none;
-}
-
 .preloader.preload-finish .text-char .innerWrapper svg .svg-name {
-  transform: translateY(11%);
   animation: none;
-}
-
-.preloader.preload-finish .text-char .innerWrapper svg .theL-E {
-  transform: translateY(-17%);
-}
-
-.preloader.preload-finish .text-char .innerWrapper svg .theR-E {
-  transform: translateY(-17%);
 }
 
 .main {
