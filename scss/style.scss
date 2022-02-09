@@ -9,6 +9,8 @@ html {
 body {
   min-height: 100%;
   color: $font-black;
+  position: relative;
+  // font-variation-settings: unset;
 }
 .special-char {
   font-family: $ff-special-char;
@@ -21,35 +23,29 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgb(255, 255, 255);
+
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
-  transition: $trans-slow ease-out;
-  // #emoji-loader,
-  #text-loader,
-  .text-char {
-    height: 100px;
-    position: absolute;
-    text-align: center;
-    margin: 0px auto;
-  }
-  /// TEXT CHAR
-  .text-char {
-    height: 66%;
-    width: 70%;
-    max-width: 70ch;
-    align-self: center;
-    justify-self: center;
 
+  transition: 0.3s;
+  transition: opacity 0.4s;
+
+  .text-char {
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
     display: flex;
-    // justify-content: end;
+    justify-content: center;
     align-items: center;
     .innerWrapper {
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      max-width: 70rem;
+      height: 55%;
       transition: transform 0.4s ease-out;
       svg {
         overflow: visible;
@@ -60,16 +56,87 @@ body {
           will-change: transition;
           transition: inherit;
           // font-family: 'Recursive', sans-serif;
-          fill: rgba(85, 49, 215, 0.36); //rgb(29, 29, 29);
+          fill: rgb(146, 145, 157); //rgb(29, 29, 29);
+        }
+
+        // NEW
+        #HC {
+          fill: rgb(65, 65, 65);
+          font-family: $ff-recursive;
+          transition: font-variation-settings 0.01s;
+          font-variation-settings: 'MONO' 0.1, 'CASL' 0.5, 'wght' 500,
+            'slnt' -10;
+          font-size: 0.7em;
+          animation: HCAnim 2s infinite;
+        }
+        @keyframes HCAnim {
+          //   0% {
+          //     font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 500, 'slnt' 0;
+          //     fill: rgb(116, 116, 116);
+          //   }
+          //   // 10% {
+          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 1000,
+          //   //     'slnt' 0;
+          //   // }
+          //   // 20% {
+          //   //   font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 500,
+          //   //     'slnt' -10;
+          //   // }
+          //   // 30% {
+          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
+          //   //     'slnt' 0;
+          //   // }
+          //   // 40% {
+          //   //   font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 800, 'slnt' 0;
+          //   // }
+          //   // 50% {
+          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
+          //   //     'slnt' 0;
+          //   // }
+          //   60% {
+          //     font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
+          //       'slnt' 0;
+          //   }
+          //   // 70% {
+          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
+          //   //     'slnt' 0;
+          //   // }
+          //   // 80% {
+          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 800,
+          //   //     'slnt' 0;
+          //   // }
+          //   // 90% {
+          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 300,
+          //   //     'slnt' 0;
+          //   // }
+          //   100% {
+          //     font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
+          //       'slnt' 0;
+          //   }
+        }
+        @keyframes HCAnim {
+          0% {
+            fill: hsl(245, 96%, 68%);
+          }
+          20% {
+            fill: hsl(253, 64%, 54%);
+          }
+          50% {
+            fill: hsl(265, 74%, 30%);
+          }
+          100% {
+            fill: hsl(265, 15%, 31%);
+          }
         }
 
         #theC {
+          opacity: 0;
           will-change: transition;
           transition: font-variation-settings 1s, color 0.3s, transform 0.3s;
           font-variation-settings: 'MONO' 1, 'CASL' 0,
             'wght' $font-weight-bolder;
           // fill: rgba(232, 232, 232, 0.36);
-          animation: colorFlow 3s infinite; // alternate
+          // animation: colorFlow 5s infinite; // alternate
         }
         @keyframes colorFlow {
           0% {
@@ -87,7 +154,7 @@ body {
         }
 
         .theL-E {
-          font-variation-settings: 'MONO' 0.1, 'CASL' 1,
+          font-variation-settings: 'MONO' 0.1, 'CASL' 0.5,
             'wght' $font-weight-lightest;
         }
         .theR-E {
@@ -96,7 +163,7 @@ body {
         }
         // Make é disappear for BLINK
         .normal {
-          animation: blinkE 7s linear infinite;
+          animation: blinkE 4s linear infinite;
           will-change: opacity;
         }
         @keyframes blinkE {
@@ -138,6 +205,7 @@ body {
           }
         }
         #theO {
+          opacity: 0;
           transition: font-variation-settings 0.5s, fill 0.3s, transform 0.3s;
           font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-light;
         }
@@ -156,47 +224,53 @@ body {
     // height: 70px;
     // transform-origin: center; //added
   }
-  #text-loader {
-    padding-top: 1rem;
-    // margin-bottom: 3rem;
-    animation: variableOpacity 2.3s infinite linear;
 
-    font-family: $ff-recursive-mono;
-    font-size: $font-size-normal;
-    @media (max-width: 700px) {
-      font-size: 1.5rem;
-    }
+  // OLD
+  #text-loader {
+    // padding-top: 1rem;
+    // // margin-bottom: 3rem;
+    // animation: variableOpacity 2.3s infinite linear;
+
+    // font-family: $ff-recursive-mono;
+    // font-size: $font-size-normal;
+    // @media (max-width: 700px) {
+    //   font-size: 1.5rem;
+    // }
   }
   &.preload-finish {
-    opacity: 0; //need to be 0
+    opacity: 0.4; //need to be 0
     pointer-events: none;
     .text-char {
       .innerWrapper {
         transform: translateY(-7rem);
         svg {
           .text-alien-chars {
-            fill: transparent; //rgb(29, 29, 29);
+            fill: rgba(228, 228, 228, 0.4); //rgb(29, 29, 29);
           }
           .normal {
             animation: none;
           }
+          #HC {
+            animation: none;
+            font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
+              'slnt' 0, 'CRSV' 0;
+          }
           .theL-E {
             font-variation-settings: inherit;
-            // font-variation-settings: 'MONO' 0.1, 'CASL' 1,
-            //   'wght' $font-weight-lightest;
+            font-variation-settings: 'MONO' 0.1, 'CASL' 1,
+              'wght' $font-weight-lightest;
           }
           .theR-E {
             font-variation-settings: inherit;
-            // font-variation-settings: 'MONO' 0.1, 'CASL' 1,
-            //   'wght' $font-weight-lightest;
+            font-variation-settings: 'MONO' 0.1, 'CASL' 1,
+              'wght' $font-weight-lightest;
           }
           #theC {
             animation: none;
             font-variation-settings: inherit;
-            // transform: scale(1.3);
-            // font-variation-settings: 'MONO' 1, 'CASL' 0,
-            //   'wght' $font-weight-light;
-            fill: rgba(255, 255, 255, 0.4);
+            font-variation-settings: 'MONO' 1, 'CASL' 0,
+              'wght' $font-weight-bolder;
+            fill: rgba(228, 228, 228, 0.4);
           }
         }
       }

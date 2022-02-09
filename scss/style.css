@@ -545,6 +545,7 @@ html {
 body {
   min-height: 100%;
   color: #232522;
+  position: relative;
 }
 
 .special-char {
@@ -557,36 +558,29 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
-  transition: 0.45s ease-out;
+  transition: 0.3s;
+  transition: opacity 0.4s;
 }
 
-.preloader #text-loader,
 .preloader .text-char {
-  height: 100px;
-  position: absolute;
+  height: 100%;
+  width: 100%;
   text-align: center;
-  margin: 0px auto;
-}
-
-.preloader .text-char {
-  height: 66%;
-  width: 70%;
-  max-width: 70ch;
-  align-self: center;
-  justify-self: center;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .preloader .text-char .innerWrapper {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  max-width: 70rem;
+  height: 55%;
   transition: transform 0.4s ease-out;
 }
 
@@ -599,14 +593,38 @@ body {
 .preloader .text-char .innerWrapper svg .text-alien-chars {
   will-change: transition;
   transition: inherit;
-  fill: rgba(85, 49, 215, 0.36);
+  fill: #92919d;
+}
+
+.preloader .text-char .innerWrapper svg #HC {
+  fill: #414141;
+  font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
+  transition: font-variation-settings 0.01s;
+  font-variation-settings: 'MONO' 0.1, 'CASL' 0.5, 'wght' 500, 'slnt' -10;
+  font-size: 0.7em;
+  animation: HCAnim 2s infinite;
+}
+
+@keyframes HCAnim {}@keyframes HCAnim {
+  0% {
+    fill: #6c5ffc;
+  }
+  20% {
+    fill: #5f3fd5;
+  }
+  50% {
+    fill: #431485;
+  }
+  100% {
+    fill: #4d435b;
+  }
 }
 
 .preloader .text-char .innerWrapper svg #theC {
+  opacity: 0;
   will-change: transition;
   transition: font-variation-settings 1s, color 0.3s, transform 0.3s;
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740;
-  animation: colorFlow 3s infinite;
 }
 
 @keyframes colorFlow {
@@ -625,7 +643,7 @@ body {
 }
 
 .preloader .text-char .innerWrapper svg .theL-E {
-  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
+  font-variation-settings: "MONO" 0.1, "CASL" 0.5, "wght" 300;
 }
 
 .preloader .text-char .innerWrapper svg .theR-E {
@@ -633,7 +651,7 @@ body {
 }
 
 .preloader .text-char .innerWrapper svg .normal {
-  animation: blinkE 7s linear infinite;
+  animation: blinkE 4s linear infinite;
   will-change: opacity;
 }
 
@@ -677,25 +695,13 @@ body {
 }
 
 .preloader .text-char .innerWrapper svg #theO {
+  opacity: 0;
   transition: font-variation-settings 0.5s, fill 0.3s, transform 0.3s;
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500;
 }
 
-.preloader #text-loader {
-  padding-top: 1rem;
-  animation: variableOpacity 2.3s infinite linear;
-  font-family: "Recursive", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: calc(0.3vw + 0.3vw + 13px);
-}
-
-@media (max-width: 700px) {
-  .preloader #text-loader {
-    font-size: 1.5rem;
-  }
-}
-
 .preloader.preload-finish {
-  opacity: 0;
+  opacity: 0.4;
   pointer-events: none;
 }
 
@@ -704,25 +710,33 @@ body {
 }
 
 .preloader.preload-finish .text-char .innerWrapper svg .text-alien-chars {
-  fill: transparent;
+  fill: rgba(228, 228, 228, 0.4);
 }
 
 .preloader.preload-finish .text-char .innerWrapper svg .normal {
   animation: none;
 }
 
+.preloader.preload-finish .text-char .innerWrapper svg #HC {
+  animation: none;
+  font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500, 'slnt' 0, 'CRSV' 0;
+}
+
 .preloader.preload-finish .text-char .innerWrapper svg .theL-E {
   font-variation-settings: inherit;
+  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
 }
 
 .preloader.preload-finish .text-char .innerWrapper svg .theR-E {
   font-variation-settings: inherit;
+  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
 }
 
 .preloader.preload-finish .text-char .innerWrapper svg #theC {
   animation: none;
   font-variation-settings: inherit;
-  fill: rgba(255, 255, 255, 0.4);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740;
+  fill: rgba(228, 228, 228, 0.4);
 }
 
 .main {
