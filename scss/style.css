@@ -564,7 +564,6 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 99;
-  transition: 0.3s;
   transition: opacity 0.4s;
 }
 
@@ -581,78 +580,27 @@ body {
   width: 70%;
   max-width: 70rem;
   height: 55%;
-  transition: transform 0.4s ease-out;
 }
 
 .preloader .text-char .innerWrapper svg {
   overflow: visible;
-  transition: 0.3s;
-  transition: font-variation-settings 1.5s, fill 0.3s, transform 0.5s;
+  transition: fill 0.3s, transform 0.5s;
 }
 
-.preloader .text-char .innerWrapper svg .text-alien-chars {
-  will-change: transition;
-  transition: inherit;
-  fill: #92919d;
-}
-
-.preloader .text-char .innerWrapper svg #HC {
-  fill: #414141;
+.preloader .text-char .innerWrapper svg .svg-name {
+  fill: #5f3fd5;
+  font-family: Arial, Helvetica, sans-serif;
   font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
-  transition: font-variation-settings 0.01s;
-  font-variation-settings: 'MONO' 0.1, 'CASL' 0.5, 'wght' 500, 'slnt' -10;
+  font-weight: 700;
   font-size: 0.7em;
-  animation: HCAnim 2s infinite;
 }
 
-@keyframes HCAnim {}@keyframes HCAnim {
-  0% {
-    fill: #6c5ffc;
-  }
-  20% {
-    fill: #5f3fd5;
-  }
-  50% {
-    fill: #431485;
-  }
-  100% {
-    fill: #4d435b;
-  }
+.preloader .text-char .innerWrapper svg #HCéé {
+  animation: blinkE 5s linear infinite, HCAnim 5s infinite alternate;
 }
 
-.preloader .text-char .innerWrapper svg #theC {
-  opacity: 0;
-  will-change: transition;
-  transition: font-variation-settings 1s, color 0.3s, transform 0.3s;
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740;
-}
-
-@keyframes colorFlow {
-  0% {
-    fill: #e0eeed;
-  }
-  20% {
-    fill: #efeaf5;
-  }
-  50% {
-    fill: #edeffa;
-  }
-  100% {
-    fill: #ebe9ed;
-  }
-}
-
-.preloader .text-char .innerWrapper svg .theL-E {
-  font-variation-settings: "MONO" 0.1, "CASL" 0.5, "wght" 300;
-}
-
-.preloader .text-char .innerWrapper svg .theR-E {
-  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
-}
-
-.preloader .text-char .innerWrapper svg .normal {
-  animation: blinkE 4s linear infinite;
-  will-change: opacity;
+.preloader .text-char .innerWrapper svg #HCee {
+  animation: HCAnim 5s infinite alternate;
 }
 
 @keyframes blinkE {
@@ -694,49 +642,48 @@ body {
   }
 }
 
-.preloader .text-char .innerWrapper svg #theO {
-  opacity: 0;
-  transition: font-variation-settings 0.5s, fill 0.3s, transform 0.3s;
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500;
+@keyframes HCAnim {
+  0% {
+    fill: #6c5ffc;
+  }
+  20% {
+    fill: #a48cee;
+  }
+  40% {
+    fill: #621bc5;
+    fill: #1dd75e;
+  }
+  60% {
+    fill: #4d435b;
+    fill: #621bc5;
+    fill: #5f3fd5;
+  }
+  80% {
+    fill: #6c5ffc;
+    fill: #00ff84;
+  }
 }
 
 .preloader.preload-finish {
-  opacity: 0.4;
+  opacity: 0;
   pointer-events: none;
-}
-
-.preloader.preload-finish .text-char .innerWrapper {
-  transform: translateY(-7rem);
-}
-
-.preloader.preload-finish .text-char .innerWrapper svg .text-alien-chars {
-  fill: rgba(228, 228, 228, 0.4);
 }
 
 .preloader.preload-finish .text-char .innerWrapper svg .normal {
   animation: none;
 }
 
-.preloader.preload-finish .text-char .innerWrapper svg #HC {
+.preloader.preload-finish .text-char .innerWrapper svg .svg-name {
+  transform: translateY(11%);
   animation: none;
-  font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500, 'slnt' 0, 'CRSV' 0;
 }
 
 .preloader.preload-finish .text-char .innerWrapper svg .theL-E {
-  font-variation-settings: inherit;
-  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
+  transform: translateY(-17%);
 }
 
 .preloader.preload-finish .text-char .innerWrapper svg .theR-E {
-  font-variation-settings: inherit;
-  font-variation-settings: "MONO" 0.1, "CASL" 1, "wght" 300;
-}
-
-.preloader.preload-finish .text-char .innerWrapper svg #theC {
-  animation: none;
-  font-variation-settings: inherit;
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740;
-  fill: rgba(228, 228, 228, 0.4);
+  transform: translateY(-17%);
 }
 
 .main {

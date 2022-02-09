@@ -31,9 +31,7 @@ body {
   align-items: center;
   z-index: 99;
 
-  transition: 0.3s;
   transition: opacity 0.4s;
-
   .text-char {
     height: 100%;
     width: 100%;
@@ -46,125 +44,36 @@ body {
       width: 70%;
       max-width: 70rem;
       height: 55%;
-      transition: transform 0.4s ease-out;
       svg {
         overflow: visible;
-        transition: 0.3s;
-        transition: font-variation-settings 1.5s, fill 0.3s, transform 0.5s;
-        // all the chars
-        .text-alien-chars {
-          will-change: transition;
-          transition: inherit;
-          // font-family: 'Recursive', sans-serif;
-          fill: rgb(146, 145, 157); //rgb(29, 29, 29);
-        }
+        transition: fill 0.3s, transform 0.5s;
+        // // all the chars
+        // transition: transform 0.5s ease-out;
 
-        // NEW
-        #HC {
-          fill: rgb(65, 65, 65);
-          font-family: $ff-recursive;
-          transition: font-variation-settings 0.01s;
-          font-variation-settings: 'MONO' 0.1, 'CASL' 0.5, 'wght' 500,
-            'slnt' -10;
-          font-size: 0.7em;
-          animation: HCAnim 2s infinite;
-        }
-        @keyframes HCAnim {
-          //   0% {
-          //     font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 500, 'slnt' 0;
-          //     fill: rgb(116, 116, 116);
-          //   }
-          //   // 10% {
-          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 1000,
-          //   //     'slnt' 0;
-          //   // }
-          //   // 20% {
-          //   //   font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 500,
-          //   //     'slnt' -10;
-          //   // }
-          //   // 30% {
-          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
-          //   //     'slnt' 0;
-          //   // }
-          //   // 40% {
-          //   //   font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 800, 'slnt' 0;
-          //   // }
-          //   // 50% {
-          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
-          //   //     'slnt' 0;
-          //   // }
-          //   60% {
-          //     font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
-          //       'slnt' 0;
-          //   }
-          //   // 70% {
-          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
-          //   //     'slnt' 0;
-          //   // }
-          //   // 80% {
-          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 800,
-          //   //     'slnt' 0;
-          //   // }
-          //   // 90% {
-          //   //   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 300,
-          //   //     'slnt' 0;
-          //   // }
-          //   100% {
-          //     font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
-          //       'slnt' 0;
-          //   }
-        }
-        @keyframes HCAnim {
-          0% {
-            fill: hsl(245, 96%, 68%);
-          }
-          20% {
-            fill: hsl(253, 64%, 54%);
-          }
-          50% {
-            fill: hsl(265, 74%, 30%);
-          }
-          100% {
-            fill: hsl(265, 15%, 31%);
-          }
-        }
-
-        #theC {
-          opacity: 0;
-          will-change: transition;
-          transition: font-variation-settings 1s, color 0.3s, transform 0.3s;
-          font-variation-settings: 'MONO' 1, 'CASL' 0,
-            'wght' $font-weight-bolder;
-          // fill: rgba(232, 232, 232, 0.36);
-          // animation: colorFlow 5s infinite; // alternate
-        }
-        @keyframes colorFlow {
-          0% {
-            fill: rgb(224, 238, 237);
-          }
-          20% {
-            fill: rgb(239, 234, 245);
-          }
-          50% {
-            fill: rgb(237, 239, 250);
-          }
-          100% {
-            fill: rgb(235, 233, 237);
-          }
-        }
-
-        .theL-E {
-          font-variation-settings: 'MONO' 0.1, 'CASL' 0.5,
-            'wght' $font-weight-lightest;
-        }
-        .theR-E {
-          font-variation-settings: 'MONO' 0.1, 'CASL' 1,
-            'wght' $font-weight-lightest;
-        }
+        // EE
+        // .text-alien-chars {
+        //   will-change: transition;
+        //   transition: inherit;
+        //   font-weight: 400;
+        //   fill: $font-light-gray;
+        // }
         // Make é disappear for BLINK
-        .normal {
-          animation: blinkE 4s linear infinite;
-          will-change: opacity;
+        // .normal {
+        //   animation: blinkE 5s linear infinite;
+        //   will-change: opacity;
+        // }
+        .svg-name {
+          fill: hsl(253, 64%, 54%);
+          font-family: Arial, Helvetica, sans-serif;
+          font-family: $ff-recursive;
+          font-weight: 700;
+          font-size: 0.7em;
+        }
+        #HCéé {
+          animation: blinkE 5s linear infinite, HCAnim 5s infinite alternate; //
+        }
+        #HCee {
+          animation: HCAnim 5s infinite alternate;
         }
         @keyframes blinkE {
           0% {
@@ -204,80 +113,52 @@ body {
             opacity: 0%;
           }
         }
-        #theO {
-          opacity: 0;
-          transition: font-variation-settings 0.5s, fill 0.3s, transform 0.3s;
-          font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' $font-weight-light;
+        @keyframes HCAnim {
+          0% {
+            fill: hsl(245, 96%, 68%);
+          }
+          20% {
+            fill: hsl(255, 74%, 74%);
+          }
+          40% {
+            fill: hsl(265, 76%, 44%);
+            fill: hsl(141, 76%, 48%);
+          }
+          60% {
+            fill: hsl(265, 15%, 31%);
+            fill: hsl(265, 76%, 44%);
+            fill: hsl(253, 64%, 54%);
+          }
+          80% {
+            fill: hsl(245, 96%, 68%);
+            fill: hsl(151, 100%, 50%);
+          }
         }
       }
     }
   }
-  #emoji-loader {
-    // font-size: 60px;
-    // animation: jump 2.6s infinite ease alternate;
-    // @keyframes jump {
-    //   to {
-    //     transform: translateY(0.7rem);
-    //   }
-    // }
-    // width: 7rem;
-    // height: 70px;
-    // transform-origin: center; //added
-  }
-
-  // OLD
-  #text-loader {
-    // padding-top: 1rem;
-    // // margin-bottom: 3rem;
-    // animation: variableOpacity 2.3s infinite linear;
-
-    // font-family: $ff-recursive-mono;
-    // font-size: $font-size-normal;
-    // @media (max-width: 700px) {
-    //   font-size: 1.5rem;
-    // }
-  }
   &.preload-finish {
-    opacity: 0.4; //need to be 0
+    opacity: 0; //need to be 0
     pointer-events: none;
     .text-char {
       .innerWrapper {
-        transform: translateY(-7rem);
         svg {
-          .text-alien-chars {
-            fill: rgba(228, 228, 228, 0.4); //rgb(29, 29, 29);
-          }
           .normal {
             animation: none;
           }
-          #HC {
+          .svg-name {
+            transform: translateY(11%);
             animation: none;
-            font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500,
-              'slnt' 0, 'CRSV' 0;
           }
           .theL-E {
-            font-variation-settings: inherit;
-            font-variation-settings: 'MONO' 0.1, 'CASL' 1,
-              'wght' $font-weight-lightest;
+            transform: translateY(-17%);
           }
           .theR-E {
-            font-variation-settings: inherit;
-            font-variation-settings: 'MONO' 0.1, 'CASL' 1,
-              'wght' $font-weight-lightest;
-          }
-          #theC {
-            animation: none;
-            font-variation-settings: inherit;
-            font-variation-settings: 'MONO' 1, 'CASL' 0,
-              'wght' $font-weight-bolder;
-            fill: rgba(228, 228, 228, 0.4);
+            transform: translateY(-17%);
           }
         }
       }
     }
-    // #text-loader {
-    //   animation: none;
-    // }
   }
 }
 
