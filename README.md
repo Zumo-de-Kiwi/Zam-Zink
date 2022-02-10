@@ -16,19 +16,25 @@
   - [x] #010 One more thing :active for iPad mobile
   - [x] #020 use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
   - [x] #021 Put char text for logo for home loading
+
+### 10
+
+- HOME
+
   - [F] #030 Put hover IMG on home links
   - [x] #040 appears a messenger bubble when click on the Stickers link, so you need to have external linked it
+
+- GLOBAL
+
+  - [x] #100 (adjust globally) emoji cursor to be in his top left corner
+
+### 11
 
 - ABOUT + CONTACT
 
   - [x] #060 host the pics of about me
-  - [ ] #070 about overflow on mobile
+  - [f] #070 about overflow on mobile
   - [ ] #080 put funny representation pic on hover over tainan and sabadell
-
-  - GLOBAL
-    - [ ] #100 (adjust globally) emoji cursor to be in his top left corner
-
-### 10
 
 - HOST
 
