@@ -34,3 +34,54 @@ $(function () {
     });
   }, 3141);
 });
+
+/////////////////////////////////
+/////////////////////////////////
+/////// POP UP STICKERS /////////
+/////////////////////////////////
+/////////////////////////////////
+const stickersLink = document.querySelector('#stickers-link');
+const stickersAll = document.querySelector('.stickers'); //all stickers pop up
+const bgClose = document.querySelector('.bg-close'); //bg-close
+const stickersX = document.querySelector('.stickers-x-btn');
+
+//////////////// FUNC //////////////////
+const openStickers = function () {
+  stickersAll.classList.add('open');
+  bgClose.classList.remove('hidden');
+};
+const closeStickers = function () {
+  stickersAll.classList.remove('open');
+  bgClose.classList.add('hidden');
+};
+
+let stickersOpen = 0;
+const openOrClose = function (whoClicked) {
+  console.log(whoClicked);
+  // whoclicked == 1 it need to be open
+  if (whoClicked == 1) {
+    stickersOpen = 1;
+    openStickers();
+  }
+  // whoclicked == 0 it need to be closed
+  else if (whoClicked == 0) {
+    stickersOpen = 0;
+  } else {
+    console.log('hérror on who clicked.');
+  }
+};
+
+const linkPressed = function () {
+  openOrClose(1);
+};
+const bgPressed = function () {
+  openOrClose(0);
+};
+const stickersXPressed = function () {
+  openOrClose(0);
+};
+
+stickersLink.addEventListener('click', linkPressed);
+bgClose.addEventListener('click', closeStickers);
+stickersX.addEventListener('click', closeStickers);
+// stickersX.addEventListener('click', stickersXPressed);

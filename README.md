@@ -4,7 +4,6 @@
 
 ### 8
 
--
 - OFFICE WORK
   - [x] #001 ORDER the to do list and deadlines
   - [x] #002 ORDER from easy to difficult
@@ -12,13 +11,13 @@
 
 ### 9
 
--
 - HOME
 
   - [x] #010 One more thing :active for iPad mobile
   - [x] #020 use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
   - [x] #021 Put char text for logo for home loading
-  - [ ] #030 Put hover IMG on home links
+  - [F] #030 Put hover IMG on home links
+  - [ ] #040 appears a messenger bubble when click on the Stickers link, so you need to have external linked it
 
 - ABOUT + CONTACT
 
