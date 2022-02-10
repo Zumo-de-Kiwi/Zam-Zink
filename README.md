@@ -17,11 +17,11 @@
   - [x] #020 use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
   - [x] #021 Put char text for logo for home loading
   - [F] #030 Put hover IMG on home links
-  - [ ] #040 appears a messenger bubble when click on the Stickers link, so you need to have external linked it
+  - [x] #040 appears a messenger bubble when click on the Stickers link, so you need to have external linked it
 
 - ABOUT + CONTACT
 
-  - [ ] #060 host the pics of about me
+  - [x] #060 host the pics of about me
   - [ ] #070 about overflow on mobile
   - [ ] #080 put funny representation pic on hover over tainan and sabadell
 
