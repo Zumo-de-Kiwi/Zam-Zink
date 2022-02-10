@@ -14,7 +14,7 @@
 - HOME
 
   - [x] #010 One more thing :active for iPad mobile
-  - [x] #020 use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
+  - [x] #020 Use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
   - [x] #021 Put char text for logo for home loading
 
 ### 10
@@ -32,9 +32,9 @@
 
 - ABOUT + CONTACT
 
-  - [x] #060 host the pics of about me
-  - [f] #070 about overflow on mobile
-  - [ ] #080 put funny representation pic on hover over tainan and sabadell
+  - [x] #060 Host the pics of about me
+  - [f] #070 About overflow on mobile
+  - [ ] #080 Put funny representation pic on hover over tainan and sabadell
 
 - HOST
 
@@ -90,8 +90,8 @@
 
 1. Hover on...
 
-   - [ ] link a appears a big preview images or another stuff?
-   - [cancelled] hover on the **contact me** will appear the `email adress` and a `copy email` button.
+   - [ ] link appears a big preview image or another stuff?
+   - [canceled] hover on the **contact me** will appear the `email address` and a `copy email` button.
 
 1. link to more pages
 
@@ -121,12 +121,12 @@
    1. Devices
       - [ ] iOS phone
       - [ ] iOS iPad
-      - [ ] Mac 13inch
-      - [ ] Mac 24inch
-      - [ ] Windows 13inch
-      - [ ] Windows 24inch
-      - [ ] Ubuntu 13inch
-      - [ ] Ubuntu 24ich
+      - [ ] Mac 13 inch
+      - [ ] Mac 24 inch
+      - [ ] Windows 13 inch
+      - [ ] Windows 24 inch
+      - [ ] Ubuntu 13 inch
+      - [ ] Ubuntu 24 ich
 
 ### Optional stuff
 
@@ -188,7 +188,7 @@ And have all the types of work you have like [roknol page](http://roknrol-2018.w
    - physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
    - Digital UX projects, apps and websites
    - FB frames, 3D pics, 360 pics.
-   - Telegram and Siganl Stickers.
+   - Telegram and Signal Stickers.
    - Posters and more
 
 3. **Draw** (Pixel-art, Cafe prj, Mau, dodo 128)
@@ -210,7 +210,7 @@ And have all the types of work you have like [roknol page](http://roknrol-2018.w
 
 Will display with icons
 
-1. Nigth/Light Mode (Ra Eye or a toggle)
+1. Night/Light Mode (Ra Eye or a toggle)
 2. A11y
 3. Contact me ([roknol](http://roknrol-2018.webflow.io/contact) makes a very clever one.)
 
@@ -227,15 +227,15 @@ ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tem
 
 -
 
-1. Bauhaus braun stetic?
+1. Bauhaus Braun stetic?
 2. The colors are from my favorite foods:
    i. the greenish black of the wax of the cheese
    ii. The salmon color
    iii. The potato wash out yellow
    iv. the sweety mid brown of the chocolate
-3. Comenzar con una pagina de entrada muy simple como en el de Eindhoven?
-4. Imagenes y diseños en vez de palabras, asi tambien sera mas sencillo cuando tengas que traducir la pagina.
-5. A11y buttom is an minimalist gingerbread Man
+3. Comenzar con una página de entrada muy simple como en el de Eindhoven?
+4. Imágenes y diseños en vez de palabras, así también será más sencillo cuando tengas que traducir la página.
+5. A11y button is an minimalist gingerbread Man
 6. The bottom like [this](https://royaldanishacademy.com/programme/graphic-communication-design), a swiss square and lines design.
 7. Scroll percentage bar in top of the page
 8. have a [selection color](https://www.vox.com) or the [text itself](https://www.davidebaratta.com/info)
