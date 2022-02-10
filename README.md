@@ -1,6 +1,63 @@
-# Website prototaipu
+# Héctor Cortés Personal Website
 
 ## Now working on
+
+### 8
+
+-
+- OFFICE WORK
+  - [x] #001 ORDER the to do list and deadlines
+  - [x] #002 ORDER from easy to difficult
+  - [x] #003 Numbered all the todos
+
+### 9
+
+-
+- HOME
+
+  - [x] #010 One more thing :active for iPad mobile
+  - [x] #020 use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
+  - [x] #021 Put char text for logo for home loading
+  - [ ] #030 Put hover IMG on home links
+
+- ABOUT + CONTACT
+
+  - [ ] #060 host the pics of about me
+  - [ ] #070 about overflow on mobile
+  - [ ] #080 put funny representation pic on hover over tainan and sabadell
+
+  - GLOBAL
+    - [ ] #100 (adjust globally) emoji cursor to be in his top left corner
+
+### 10
+
+- HOST
+
+  - [ ] #300 Add another free image hosting bauckup like imgbb [https://postimages.org/](https://postimages.org/)
+
+- UI
+
+  - [x] #310 Margin in #1 analog text between h3 and p
+
+- DESIGN
+
+  - [ ] #400 Ａ dd Ricardo Space crazy photo to scissors
+
+- BLOG
+
+  - [ ] #110 Arale 2001: A Space Odyssey
+  - [ ] #120 Analog #3 laugh is more important than what you could though, as a society humans have this function to make us live more united and stronger, also stronger to our immune system.
+  - [ ] #130 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
+  - [ ] #140 Put the design process webpage sketches pics
+
+- DRAW
+  - [ ] #200 Add Scanned of the sketches of making the web
+  - [ ] #210 Add jp-poster sketch
+  - [ ] #220 Update some draw pic with webp
+  - [ ] #230 The intro of café in DRAWINGS
+  - [ ] #240 Make DRAW more responsive
+
+## Finished
 
 - [x] Separate the link of Hector and Cortes
 - [x] Hector Hover doesn't change undeline to green
@@ -80,14 +137,14 @@
 - Every subpage have a color added/subtracted/variant/different contrast to the main page
 - The fonts remain the same
 
-1. Design
+1. Designs
 
    - Including: Case Studies
 
    - Layout
      1. Swiss/Figma like style
 
-1. Draw
+1. Drawings
 
 1. Photography
 

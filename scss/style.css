@@ -650,11 +650,12 @@ body {
     fill: #a48cee;
   }
   40% {
-    fill: #621bc5;
     fill: #1dd75e;
   }
   60% {
-    fill: #4d435b;
+    fill: #621bc5;
+  }
+  70% {
     fill: #5f3fd5;
   }
   80% {

@@ -47,21 +47,6 @@ body {
       svg {
         overflow: visible;
         transition: fill 0.3s, transform 0.5s;
-        // // all the chars
-        // transition: transform 0.5s ease-out;
-
-        // EE
-        // .text-alien-chars {
-        //   will-change: transition;
-        //   transition: inherit;
-        //   font-weight: 400;
-        //   fill: $font-light-gray;
-        // }
-        // Make é disappear for BLINK
-        // .normal {
-        //   animation: blinkE 5s linear infinite;
-        //   will-change: opacity;
-        // }
         .svg-name {
           fill: hsl(253, 64%, 54%);
           // font-family: Arial, Helvetica, sans-serif;
@@ -123,11 +108,12 @@ body {
             fill: hsl(255, 74%, 74%);
           }
           40% {
-            fill: hsl(265, 76%, 44%);
             fill: hsl(141, 76%, 48%);
           }
           60% {
-            fill: hsl(265, 15%, 31%);
+            fill: hsl(265, 76%, 44%);
+          }
+          70% {
             fill: hsl(253, 64%, 54%);
           }
           80% {
@@ -144,19 +130,9 @@ body {
     .text-char {
       .innerWrapper {
         svg {
-          // .normal {
-          //   animation: none;
-          // }
           .svg-name {
-            // transform: translateY(-7%);
             animation: none;
           }
-          // .theL-E {
-          //   transform: translateY(-17%);
-          // }
-          // .theR-E {
-          //   transform: translateY(-17%);
-          // }
         }
       }
     }
@@ -281,7 +257,6 @@ body {
           .family-name {
             position: relative;
             text-decoration: underline;
-            // text-decoration-color: $font-sutil-gray-color;
             text-decoration-color: $lighter-gray;
 
             transition: $trans-slow ease;
@@ -359,7 +334,6 @@ body {
       will-change: font-variation-settings;
       //link and link number WRAPPER
       .link-wrapper {
-        // text-decoration: none;
         white-space: nowrap; //for no break the link to the next  line
         &.with-hidden-span {
           .hidden-span {
@@ -422,6 +396,13 @@ body {
             #pixel {
               display: inline;
               font-variation-settings: 'MONO' 0.735, 'CASL' 0.1, 'wght' 550;
+            }
+          }
+        }
+        &.pop-up {
+          &#stickers-pop-up {
+            span {
+              // z-index: ;
             }
           }
         }
