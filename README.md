@@ -21,14 +21,21 @@
 
 - HOME
 
-  - [F] #030 Put hover IMG on home links
+  - [x] #01 One more thing :active for iPad mobile
+  - [x] #020 use your logo for home loading. pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
+  - [x] #021 Put char text for logo for home loading
+  - [F] #022 Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
+  - [F] #030 [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
   - [x] #040 appears a messenger bubble when click on the Stickers link, so you need to have external linked it
+  - [ ] #050 implement an animated char that change its variable when hover or not with trans/or not
 
 - GLOBAL
 
   - [x] #100 (adjust globally) emoji cursor to be in his top left corner
 
-### 11
+- UI
+
+  - [x] #310 Margin in #1 analog text between h3 and p
 
 - ABOUT + CONTACT
 
@@ -36,31 +43,76 @@
   - [f] #070 About overflow on mobile
   - [ ] #080 Put funny representation pic on hover over tainan and sabadell
 
-- HOST
-
-  - [ ] #300 Add another free image hosting bauckup like imgbb [https://postimages.org/](https://postimages.org/)
-
-- UI
-
-  - [x] #310 Margin in #1 analog text between h3 and p
-
-- DESIGN
-
-  - [ ] #400 Ａ dd Ricardo Space crazy photo to scissors
+### 11
 
 - BLOG
 
-  - [ ] #110 Arale 2001: A Space Odyssey
-  - [ ] #120 Analog #3 laugh is more important than what you could though, as a society humans have this function to make us live more united and stronger, also stronger to our immune system.
-  - [ ] #130 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
-  - [ ] #140 Put the design process webpage sketches pics
+  - [ ] #101 Arale 2001: A Space Odyssey
+  - [ ] #103 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
+  - [ ] #104 Put the design process webpage sketches pics
 
 - DRAW
+
   - [ ] #200 Add Scanned of the sketches of making the web
-  - [ ] #210 Add jp-poster sketch
-  - [ ] #220 Update some draw pic with webp
-  - [ ] #230 The intro of café in DRAWINGS
-  - [ ] #240 Make DRAW more responsive
+  - [ ] #201 Add jp-poster sketch
+  - [ ] #202 Update some big size draw pics with [webp]
+  - [ ] #203 The intro of café in DRAWINGS
+  - [ ] #204 Make DRAW more responsive
+
+### 12
+
+- SUBDESIGN
+
+  - [ ] #400 #1 add Ricardo Space crazy photo to scissors
+  - [ ] #402 #3 Behind process info
+  - [ ] #403 #6 Put the sketches
+  - [ ] #404 #11 Make bread have dfrt translate anim
+  - [ ] #405 #12 Put the lamp head
+  - [ ] #406 #17 blue wrapper word wrong (hours spennds)
+  - [ ] #407 #18 on the footer say it is kare
+  - [ ] #408 #19 download link to the game
+  - [ ] #409 #20 link to download the fb frame
+
+  - [ ] #450 #\* add active on the hover elements
+  - [ ] #451 #\* put wiki or other links
+  - [ ] #452 #\* change oldsubDESIGN footer-r>subwrapper> div padding to 1.1rem
+
+- DESIGN
+
+  - [x] #470 Adjust the size of the `<p>` `<footer>` and more to have smaller text on mobile.
+  - [ ] #471 Explaination on hover
+  - [ ] #472 Poner juntas al peón
+  - [ ] #473 Put weather FX
+  - [ ] #474 Herzt word is mis writted and the outline need to be thinner
+  - [ ] #475 Make the crab say no swinging when hover
+  - [ ] #476 Let visual fx come out form the radio in DESIGN home
+  - [ ] #477 Make the ASCII into two parts for every word for better resp
+
+- UX
+
+  - [ ] #600 put a sticky labelling the five cafe names on the comparison audit
+  - [ ] #601 in about talk the differences between the Chinese and latin based language layout, possibilities and limitations
+  - [ ] #602 nav menu on UX dodo
+
+### 13
+
+- PHOTO
+
+  - [ ] #70 improve the close modal of ANALOG with a overlay
+  - [ ] #71 improve close modal with external links and btn resolve it
+  - [ ] #72 make the Analog titles linkable
+  - [ ] #73 Appear a (You reacted with a [emoji] ) bubble when the user press on the emoji on the analog photo subpage
+  - [ ] #74 emojis on #2 #3 analog are not centre.
+  - [ ] #75 crop the few btm white lines of analog X out of order
+  - [ ] #76 mover y position friends and chips
+  - [ ] #77 pass the analog test code to the final direction
+
+- LOST OBJ
+
+  - [ ] #80 touch me on lost objects :active
+
+- HOST
+  - [ ] #30 free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 
 ## Finished
 

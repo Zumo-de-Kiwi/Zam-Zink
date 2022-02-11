@@ -873,15 +873,20 @@ body main .designSections .modals .modal {
   transform: translate(-50%, -50%);
   z-index: 29;
   border: 5px solid #363636;
-  border-radius: 5px;
+  border-radius: 1rem;
   padding: 6rem;
   width: 80%;
   max-width: 69ch;
+  max-height: 90vh;
+  overflow-y: auto;
   background-color: white;
   color: #363636;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.33);
-  overflow-y: scroll;
   transition: 0.3s;
+}
+
+body main .designSections .modals .modal .block-text p {
+  font-size: 1.6rem;
 }
 
 body main .designSections .modals .modal#pawn-modal {
@@ -1003,6 +1008,26 @@ body main .designSections .modals .modal#eat-modal .part-1 h3 {
   margin-bottom: 0.6rem;
 }
 
+@media (max-width: 800px) {
+  body main .designSections .modals .modal {
+    border-radius: 5px;
+    padding: 5%;
+    max-height: 100%;
+    width: 100%;
+  }
+  body main .designSections .modals .modal .block-text h3 {
+    margin: 0.3rem;
+    margin-left: 0rem;
+  }
+  body main .designSections .modals .modal .block-text p {
+    font-size: 1.3rem;
+  }
+  body main .designSections .modals .modal#eat-modal .part-1 {
+    margin-top: 3rem;
+    gap: 1.3rem;
+  }
+}
+
 body main .designSections .modals .x-btn {
   position: fixed;
   top: -1rem;
@@ -1050,6 +1075,12 @@ body main .footer {
   background-position: center top;
   background-repeat: repeat-x;
   background-size: cover;
+}
+
+@media (max-width: 800px) {
+  body main .footer {
+    font-size: 0.7em;
+  }
 }
 
 body main .footer #footer-wrapper {
