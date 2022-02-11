@@ -2,9 +2,11 @@
 
 ## Other wiki links of my site
 
-1. [Code Wiki](md/code-wiki.md): About technical related notes I make during the process of making my site
-2. [UI UX Wiki](md/ui-ux-wiki.md): Notes about visual-related and how to make a site.
-3. [Cool Webs](md/cool-webs.md): Which some of them inspired me to make my own site.
+- There are more notes on 'MD' folder:
+
+  1. [Code Wiki](https://github.com/Zumo-de-Kiwi/Zam-Zink/blob/main/MD/code-wiki.md): About technical related notes I make during the process of making my site
+  2. [UI UX Wiki](https://github.com/Zumo-de-Kiwi/Zam-Zink/blob/main/MD/ui-ux-wiki.md): Notes about visual-related and how to make a site.
+  3. [Cool Webs](https://github.com/Zumo-de-Kiwi/Zam-Zink/blob/main/MD/cool-webs.md): Which some of them inspired me to make my own site.
 
 ## Now working on
 
@@ -63,7 +65,7 @@
 
 - SUBDESIGN
 
-  - [ ] #400 #1 Add Ricardo Space crazy photo to scissors
+  - [x] #400 #1 Add Ricardo Space crazy photo to scissors
   - [ ] #402 #3 Behind process info
   - [ ] #403 #6 Put the sketches
   - [ ] #404 #11 Make bread have dfrt translate anim
@@ -124,7 +126,7 @@
   - [x] #a03 Numbered all the todos
   - [x] #a04 Text Correction and pass all the to-do from Notes
 
-- Old to-do [list](/MD/old-todo.md)
+- Old to-do [list](https://github.com/Zumo-de-Kiwi/Zam-Zink/blob/main/MD/old-todo.md)
 
 ## What's next?
 
@@ -163,9 +165,9 @@
    1. Devices
       - [ ] iOS phone
       - [ ] iOS iPad
-      - [ ] Mac 13 inch
-      - [ ] Mac 24 inch
-      - [ ] Windows 13 inch
+      - [x] Mac 13 inch
+      - [x] Mac 24 inch
+      - [x] Windows 13 inch
       - [ ] Windows 24 inch
       - [ ] Ubuntu 13 inch
       - [ ] Ubuntu 24 ich

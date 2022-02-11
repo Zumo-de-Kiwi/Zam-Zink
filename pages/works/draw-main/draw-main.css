@@ -538,6 +538,12 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
+@keyframes tourneyAnim {
+  to {
+    font-weight: 400;
+  }
+}
+
 body {
   width: 100%;
   font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 620, "slnt" 0;

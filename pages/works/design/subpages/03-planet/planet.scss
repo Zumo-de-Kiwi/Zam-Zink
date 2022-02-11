@@ -3,16 +3,11 @@
 
 body {
   ///////////////////////////////////////////
-  $design-color-green: rgb(51, 148, 103);
-  $design-color-yellow: rgb(245, 221, 59);
-  $design-color-red: rgb(215, 61, 69);
   $design-text-color: hsl(0, 0%, 21%);
   $design-white-color: rgb(244, 242, 235);
   $design-subpg-bg: hsl(0, 0%, 100%);
   ///////////////////////////////////////////
   font-family: $ff-space-grotesk;
-  // font-family: $ff-grotesk-mono;
-  // font-family: $ff-tourney;
   background-color: $design-subpg-bg;
   width: 100vw;
   font-weight: 300;
@@ -108,7 +103,6 @@ body {
         // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // font-family: $ff-grotesk-mono;
           .w-para {
             margin-bottom: 4rem;
             margin-right: 19%;
@@ -156,56 +150,16 @@ body {
         #pink {
           grid-row: 4;
           grid-column: 1 /3;
-          // padding-left: 10%;
           padding-right: 15%;
           padding-left: 20%;
         }
-        // .wrapper-1 {
-        //   grid-row: 4;
-        //   #el-1 {
-        //     width: 50%;
-        //   }
-        // }
-        // #up-txt {
-        //   grid-row: 5;
-        //   font-size: 1.3rem;
-        //   padding-top: 100%;
-        //   text-align: right;
-        //   padding-left: 10%;
-        // }
-        // .download-stickers {
-        //   grid-row: 6;
-        //   text-align: right;
-        //   padding-bottom: 30%;
-        //   padding-top: 110%;
-        //   h4 {
-        //     padding-bottom: 0.3rem;
-        //   }
-        //   .link {
-        //     padding-bottom: 0.7rem;
-        //     color: rgb(70, 70, 70);
-        //     &:hover {
-        //       color: rgb(56, 233, 7);
-        //     }
-        //   }
-        // }
+
         ////////////////////////
         // COLUMN 2 ///////////
         .cl-2 {
           grid-column: 2;
         }
-        // #where {
-        //   grid-row: 2;
-        // }
-        // .where-text1 {
-        //   padding-top: 6rem;
-        //   grid-row: 2;
-        // }
-        // #all-stickers {
-        //   z-index: 5;
-        //   grid-row: 5 / 7;
-        //   margin-bottom: 18rem;
-        // }
+
         ////////////////////////
         // COLUMN 3 //////////
         .cl-3 {
@@ -226,14 +180,6 @@ body {
           grid-row: 4;
           padding-top: 13rem;
         }
-
-        // #down-txt {
-        //   grid-row: 6;
-        //   font-size: 1.3rem;
-        //   padding-top: 20%;
-        //   padding-left: 10%;
-        //   padding-right: 10%;
-        // }
 
         ////////// PART 2 ////////
         ////////// FULL-SIZE ////////
@@ -437,9 +383,9 @@ body {
             font-size: 2rem;
             border-radius: 2rem;
             transition: 0.15s;
-            background: #684891;
+            background: #ff5ecc;
             &:hover {
-              background: #b8bcf0;
+              background: #ff84f1;
             }
             a {
               text-decoration: none;

@@ -672,6 +672,8 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 #el-3::aft
   text-align: center;
   display: block;
   color: white;
+  font-family: "Hiragino Kaku Gothic ProN", Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 600;
   content: 'ハ ウ ス';
   background-color: #a43229;
   grid-column: 1/ 4;
@@ -685,7 +687,82 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-3 #el-3-down
   margin: 0px auto;
   font-weight: 900;
   text-align: center;
-  color: #a43229;
+  color: #c44b42;
+  border-radius: 25px 25px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-4 {
+  grid-row: 7;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-4 #el-3-up {
+  font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding-top: 7rem;
+  font-size: 6rem;
+  transform: translateY(1.2rem);
+  font-weight: 900;
+  animation: to400Anim 1.7s infinite linear alternate;
+  transition: 0.3s;
+  text-align: center;
+  color: #1f1e24;
+  border-radius: 25px 25px 0px 0px;
+}
+
+@keyframes to400Anim {
+  to {
+    font-weight: 400;
+  }
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-4 #el-3::before {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.7rem;
+  text-align: center;
+  display: block;
+  color: #a17282;
+  content: '↓ roommate boriness ↓';
+  grid-column: 1/ 4;
+  border-radius: 0px 0px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-4 #el-3 {
+  padding-right: 15%;
+  padding-left: 15%;
+  border-radius: 1rem;
+  background: linear-gradient(20deg, #15130e, #322d34, #000000);
+  width: 100%;
+  grid-row: 9;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-4 #el-3 img {
+  box-shadow: 0px 3px 17px black;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-4 #el-3::after {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  display: block;
+  color: #ce9944;
+  font-family: "Hiragino Kaku Gothic ProN", Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  content: 'レ カ ロ';
+  grid-column: 1/ 4;
+  border-radius: 0px 0px 0px 0px;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.wrapper-4 #el-3-down {
+  padding-bottom: 7rem;
+  font-size: 1.5rem;
+  width: 60%;
+  margin: 0px auto;
+  font-weight: 900;
+  text-align: center;
+  color: #e6b05a;
   border-radius: 25px 25px 0px 0px;
 }
 
@@ -703,11 +780,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   font-size: 1.8rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #3a57a2;
+  background: #e3734a;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #b8bcf0;
+  background: #e6b05a;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
@@ -741,7 +818,7 @@ body main .footer {
   z-index: 19;
   height: 29rem;
   width: 100%;
-  background: #a43229;
+  background: #363636;
   margin-top: 12rem;
 }
 
@@ -752,7 +829,7 @@ body main .footer #footer-wrapper {
   grid-template-columns: minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px) minmax(7%, 1fr);
   gap: 2rem;
   padding: 2rem;
-  color: white;
+  color: #a2a2a2;
 }
 
 body main .footer #footer-wrapper .footer-part a {

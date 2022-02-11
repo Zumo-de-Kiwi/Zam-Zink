@@ -640,33 +640,66 @@ body main .subpage-wrapper .subpage-content-1 #sticker-banner::after {
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
   grid-row: 10;
   grid-column: 1/ 4;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: flex-start;
   padding-left: 9%;
   padding-right: 9%;
+  height: 10rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper:hover .btns {
+  border-bottom: 9px solid #91ffab;
+  border-right: 7px solid #3f54cd;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   text-align: center;
   font-size: 2rem;
+  max-width: 12ch;
   border-radius: 2rem;
-  transition: 0.15s;
-  background: #3f54cd;
-}
-
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #60b5ff;
+  border-bottom: 7px solid #91ffab;
+  border-right: 5px solid #3f54cd;
+  transition: color 0.3s, border 0.4s;
+  will-change: border;
+  background: #36f860d9;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
   text-decoration: none;
-  color: white;
+  color: #484848;
   height: 6rem;
   line-height: 6rem;
   min-width: 18%;
   padding: 2rem;
   padding-right: 4rem;
   padding-left: 4rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+  background: #3f54cd;
+  border-bottom: 9px solid #36f860d9;
+  border-right: 7px solid #91ffab;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a {
+  color: white;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover ~ .btns {
+  border-bottom: 7px solid #91ffab;
+  border-right: 5px solid #3f54cd;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active {
+  background: #3f54cd;
+  border-bottom: 3px solid #36f860d9;
+  border-right: 2px solid #91ffab;
+}
+
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active a {
+  color: white;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns.prev a {
