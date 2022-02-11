@@ -956,47 +956,49 @@ body main #drawSections #noodlesDraws #hidro {
 }
 
 body main #drawSections #noodlesDraws #lin-club {
+  padding-left: 7%;
+  padding-right: 7%;
   padding-bottom: 0rem;
 }
 
 body main #drawSections #noodlesDraws #flora-color {
-  padding-bottom: 5rem;
+  padding-bottom: 17%;
 }
 
 body main #drawSections #noodlesDraws #mr-cakebeef {
-  padding-right: 12vw;
   grid-column: 1 /3;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-right: 23%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 body main #drawSections #noodlesDraws #tijera-black {
-  padding-left: 12vw;
+  padding-left: 23%;
   grid-column: 2 /4;
 }
 
 body main #drawSections #dodoDraws #dodo-fapiaou {
-  padding-top: 6rem;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-top: 19%;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-bottom: 10rem;
 }
 
 body main #drawSections #dodoDraws #ropa-dodo {
-  padding-left: 12vw;
-  padding-right: 12vw;
+  padding-left: 11%;
+  padding-right: 29%;
   padding-bottom: 8rem;
 }
 
 body main #drawSections #dodoDraws #magnet-dodo {
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 29%;
+  padding-right: 29%;
   padding-bottom: 8rem;
 }
 
 body main #drawSections #dodoDraws #mosquito-dodo {
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 31%;
+  padding-right: 31%;
   padding-bottom: 8rem;
 }
 
@@ -1012,8 +1014,8 @@ body main #drawSections #dodoDraws #dodo-revolution {
 }
 
 body main #drawSections #dodoDraws #dodo-ojo {
-  padding-left: 10vw;
-  padding-right: 12vw;
+  padding-left: 47%;
+  padding-right: 13%;
   padding-bottom: 10rem;
 }
 
@@ -1022,19 +1024,19 @@ body main #drawSections #sketchDraws #zodiac-blue-red {
 }
 
 body main #drawSections #sketchDraws #sketch-diario-1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 6rem;
 }
 
 body main #drawSections #sketchDraws #rus-sketch {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 11%;
+  padding-right: 7%;
 }
 
 body main #drawSections #sketchDraws #manga {
-  padding-left: 12vw;
-  padding-right: 12vw;
+  padding-left: 13%;
+  padding-right: 13%;
 }
 
 body main #drawSections #randomDraws {
@@ -1059,7 +1061,7 @@ body main #drawSections #randomDraws #pato-gato {
 body main #drawSections #randomDraws #ancient-spanish {
   grid-column: 1/ 3;
   grid-row: 3/ 5;
-  padding-left: 10vw;
+  padding-left: 15%;
   padding-bottom: 5rem;
 }
 
@@ -1068,16 +1070,16 @@ body main #drawSections #randomDraws #penguin-banera {
   grid-row: 5;
   padding-left: 0vw;
   padding-right: 0vw;
-  padding-bottom: 22vh;
+  padding-bottom: 29%;
 }
 
 body main #drawSections #randomDraws #korean {
   grid-column: 1/ 4;
   grid-row: 5;
-  padding-top: 45rem;
+  padding-top: 57%;
   padding-left: 1rem;
   padding-right: 0.6rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7%;
 }
 
 body main #drawSections #randomDraws #citron-girl {
@@ -1092,16 +1094,16 @@ body main #drawSections #randomDraws #cat-arrow {
   grid-column: 1/ 3;
   grid-row: 6;
   padding-top: 14rem;
-  padding-right: 12vw;
-  padding-left: 2vw;
-  padding-bottom: 9vh;
+  padding-right: 19%;
+  padding-left: 5%;
+  padding-bottom: 17%;
 }
 
 body main #drawSections #randomDraws #beer-coleta {
   grid-column: 1/ 4;
   grid-row: 8;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 3%;
+  padding-left: 3%;
   padding-bottom: 16rem;
 }
 
@@ -1127,8 +1129,9 @@ body main #drawSections #randomDraws #rabbit {
   grid-column: 2;
   grid-row: 11;
   padding-bottom: 11rem;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body main #drawSections #randomDraws #fin2,
@@ -1303,14 +1306,18 @@ body main #drawSections #randomDraws #fin4 {
     padding-bottom: 9em;
   }
   body main #drawSections #sketchDraws #magnolia {
-    grid-column: 2/ 6;
+    grid-column: 2/ 8;
     padding-bottom: 13em;
+  }
+  body main #drawSections #sketchDraws #abuelo-jp {
+    grid-column: 1/ 9;
+    padding-bottom: 11em;
   }
   body main #drawSections #sketchDraws #manga {
     grid-column: 3/ 10;
   }
   body main #drawSections #sketchDraws #rus-sketch {
-    grid-column: 3/ 8;
+    grid-column: 2/ 9;
     padding: 11%;
     padding-bottom: 3em;
   }

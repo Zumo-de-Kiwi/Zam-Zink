@@ -441,21 +441,23 @@ body {
         #pistola {
         }
         #lin-club {
+          padding-left: 7%;
+          padding-right: 7%;
           padding-bottom: 0rem;
         }
         #flora-color {
-          padding-bottom: 5rem;
+          padding-bottom: 17%;
         }
         #election-draw {
         }
         #mr-cakebeef {
-          padding-right: 12vw;
           grid-column: 1 /3;
-          padding-top: 1rem;
-          padding-bottom: 3rem;
+          padding-right: 23%;
+          padding-top: 7%;
+          padding-bottom: 7%;
         }
         #tijera-black {
-          padding-left: 12vw;
+          padding-left: 23%;
           grid-column: 2 /4;
           // padding-bottom: 0rem;
         }
@@ -466,24 +468,24 @@ body {
       }
       #dodoDraws {
         #dodo-fapiaou {
-          padding-top: 6rem;
-          padding-left: 2vw;
-          padding-right: 2vw;
+          padding-top: 19%;
+          padding-left: 20%;
+          padding-right: 20%;
           padding-bottom: 10rem;
         }
         #ropa-dodo {
-          padding-left: 12vw;
-          padding-right: 12vw;
+          padding-left: 11%;
+          padding-right: 29%;
           padding-bottom: 8rem;
         }
         #magnet-dodo {
-          padding-left: 20vw;
-          padding-right: 20vw;
+          padding-left: 29%;
+          padding-right: 29%;
           padding-bottom: 8rem;
         }
         #mosquito-dodo {
-          padding-left: 20vw;
-          padding-right: 20vw;
+          padding-left: 31%;
+          padding-right: 31%;
           padding-bottom: 8rem;
         }
         #dodo-kagaroo {
@@ -496,8 +498,8 @@ body {
           display: none;
         }
         #dodo-ojo {
-          padding-left: 10vw;
-          padding-right: 12vw;
+          padding-left: 47%;
+          padding-right: 13%;
           padding-bottom: 10rem;
         }
       }
@@ -506,17 +508,17 @@ body {
           padding-left: 2rem;
         }
         #sketch-diario-1 {
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 5%;
+          padding-right: 5%;
           padding-bottom: 6rem;
         }
         #rus-sketch {
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 11%;
+          padding-right: 7%;
         }
         #manga {
-          padding-left: 12vw;
-          padding-right: 12vw;
+          padding-left: 13%;
+          padding-right: 13%;
         }
       }
       #archDraws {
@@ -540,7 +542,7 @@ body {
         #ancient-spanish {
           grid-column: 1/ 3;
           grid-row: 3/ 5;
-          padding-left: 10vw;
+          padding-left: 15%;
           padding-bottom: 5rem;
         }
         #penguin-banera {
@@ -548,15 +550,15 @@ body {
           grid-row: 5;
           padding-left: 0vw;
           padding-right: 0vw;
-          padding-bottom: 22vh;
+          padding-bottom: 29%;
         }
         #korean {
           grid-column: 1/ 4;
           grid-row: 5;
-          padding-top: 45rem;
+          padding-top: 57%;
           padding-left: 1rem;
           padding-right: 0.6rem;
-          padding-bottom: 5rem;
+          padding-bottom: 7%;
         }
 
         #citron-girl {
@@ -570,16 +572,15 @@ body {
           grid-column: 1/ 3;
           grid-row: 6;
           padding-top: 14rem;
-          padding-right: 12vw;
-          padding-left: 2vw;
-          padding-bottom: 9vh;
+          padding-right: 19%;
+          padding-left: 5%;
+          padding-bottom: 17%;
         }
         #beer-coleta {
           grid-column: 1/ 4;
           grid-row: 8;
-          // padding-top: 14rem;
-          padding-right: 2vw;
-          padding-left: 2vw;
+          padding-right: 3%;
+          padding-left: 3%;
           padding-bottom: 16rem;
         }
         #fin1,
@@ -602,8 +603,11 @@ body {
           grid-column: 2;
           grid-row: 11;
           padding-bottom: 11rem;
-          padding-left: 5vw;
-          padding-right: 5vw;
+          // padding-left: 13%;
+          // padding-right: 5vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         #fin2,
         #fin4 {
@@ -797,15 +801,19 @@ body {
             padding-bottom: 9em;
           }
           #magnolia {
-            grid-column: 2/ 6;
+            grid-column: 2/ 8;
             padding-bottom: 13em;
+          }
+          #abuelo-jp {
+            grid-column: 1/ 9;
+            padding-bottom: 11em;
           }
 
           #manga {
             grid-column: 3/ 10;
           }
           #rus-sketch {
-            grid-column: 3/ 8;
+            grid-column: 2/ 9;
             padding: 11%;
             padding-bottom: 3em;
           }

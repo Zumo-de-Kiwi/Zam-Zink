@@ -5,9 +5,10 @@
 ### 8
 
 - OFFICE WORK
-  - [x] #001 ORDER the to do list and deadlines
-  - [x] #002 ORDER from easy to difficult
-  - [x] #003 Numbered all the todos
+  - [x] #a01 ORDER the to do list and deadlines
+  - [x] #a02 ORDER from easy to difficult
+  - [x] #a03 Numbered all the todos
+  - [x] #a04 Text Correction and pass all the to-do from Notes
 
 ### 9
 
@@ -21,21 +22,14 @@
 
 - HOME
 
-  - [x] #01 One more thing :active for iPad mobile
-  - [x] #020 use your logo for home loading. pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
-  - [x] #021 Put char text for logo for home loading
   - [F] #022 Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
   - [F] #030 [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
-  - [x] #040 appears a messenger bubble when click on the Stickers link, so you need to have external linked it
-  - [ ] #050 implement an animated char that change its variable when hover or not with trans/or not
+  - [x] #040 Appears a messenger bubble when click on the Stickers link, so you need to have external linked it
+  - [ ] #050 Implement an animated char that change its variable when hover or not with trans/or not
 
 - GLOBAL
 
   - [x] #100 (adjust globally) emoji cursor to be in his top left corner
-
-- UI
-
-  - [x] #310 Margin in #1 analog text between h3 and p
 
 - ABOUT + CONTACT
 
@@ -43,39 +37,39 @@
   - [f] #070 About overflow on mobile
   - [ ] #080 Put funny representation pic on hover over tainan and sabadell
 
-### 11
-
 - BLOG
 
-  - [ ] #101 Arale 2001: A Space Odyssey
   - [ ] #103 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
   - [ ] #104 Put the design process webpage sketches pics
+  - [ ] #105 Add Scanned of the sketches of making the web
+
+### 11
 
 - DRAW
 
-  - [ ] #200 Add Scanned of the sketches of making the web
-  - [ ] #201 Add jp-poster sketch
-  - [ ] #202 Update some big size draw pics with [webp]
-  - [ ] #203 The intro of café in DRAWINGS
-  - [ ] #204 Make DRAW more responsive
+  - [x] #200 Add jp-poster sketch
+  - [x] #201 Update some big size (jpg>100kB) draw pics with [webp]
+  - [ ] #202 The intro of café in DRAWINGS
+  - [\] #203 Make DRAW more responsive
 
 ### 12
 
 - SUBDESIGN
 
-  - [ ] #400 #1 add Ricardo Space crazy photo to scissors
+  - [ ] #400 #1 Add Ricardo Space crazy photo to scissors
   - [ ] #402 #3 Behind process info
   - [ ] #403 #6 Put the sketches
   - [ ] #404 #11 Make bread have dfrt translate anim
   - [ ] #405 #12 Put the lamp head
   - [ ] #406 #17 blue wrapper word wrong (hours spennds)
-  - [ ] #407 #18 on the footer say it is kare
-  - [ ] #408 #19 download link to the game
-  - [ ] #409 #20 link to download the fb frame
+  - [ ] #407 #18 On the footer say it is kare
+  - [ ] #408 #19 Download link to the game
+  - [ ] #409 #20 Link to download the fb frame
+  - [ ] #410 Arale 2001: A Space Odyssey
 
-  - [ ] #450 #\* add active on the hover elements
-  - [ ] #451 #\* put wiki or other links
-  - [ ] #452 #\* change oldsubDESIGN footer-r>subwrapper> div padding to 1.1rem
+  - [ ] #450 #\* Add active on the hover elements
+  - [ ] #451 #\* Put wiki or other links
+  - [ ] #452 #\* Change oldsubDESIGN footer-r>subwrapper> div padding to 1.1rem
 
 - DESIGN
 
@@ -88,31 +82,48 @@
   - [ ] #476 Let visual fx come out form the radio in DESIGN home
   - [ ] #477 Make the ASCII into two parts for every word for better resp
 
+- HASHTAGS FOR:
+
+  - #0xx Home
+  - #1xx Global
+  - #2xx Draw
+  - #3xx Techni
+  - #40x Sub-Design
+  - #45x Sub-Design Global
+  - #47x Design Home
+  - #5xx
+  - #6xx UX
+  - #7xx Photo
+  - #8xx Small Sections
+  - #9xx -
+  - #axx Office Work
+
 - UX
 
-  - [ ] #600 put a sticky labelling the five cafe names on the comparison audit
-  - [ ] #601 in about talk the differences between the Chinese and latin based language layout, possibilities and limitations
-  - [ ] #602 nav menu on UX dodo
+  - [ ] #600 Put a sticky labelling the five cafe names on the comparison audit
+  - [ ] #601 In about talk the differences between the Chinese and latin based language layout, possibilities and limitations
+  - [ ] #602 Nav menu on UX dodo
 
 ### 13
 
 - PHOTO
 
-  - [ ] #70 improve the close modal of ANALOG with a overlay
-  - [ ] #71 improve close modal with external links and btn resolve it
-  - [ ] #72 make the Analog titles linkable
-  - [ ] #73 Appear a (You reacted with a [emoji] ) bubble when the user press on the emoji on the analog photo subpage
-  - [ ] #74 emojis on #2 #3 analog are not centre.
-  - [ ] #75 crop the few btm white lines of analog X out of order
-  - [ ] #76 mover y position friends and chips
-  - [ ] #77 pass the analog test code to the final direction
+  - [ ] #700 Improve the close modal of ANALOG with a overlay
+  - [ ] #701 Improve close modal with external links and btn resolve it
+  - [ ] #702 Make the Analog titles linkable
+  - [ ] #703 Appear a (You reacted with a [emoji] ) bubble when the user press on the emoji on the analog photo subpage
+  - [ ] #704 Emojis on #2 #3 analog are not centre.
+  - [ ] #705 Crop the few btm white lines of analog X out of order
+  - [ ] #706 Mover y position friends and chips
+  - [ ] #707 Pass the analog test code to the final direction
+  - [x] #708 Margin in #1 analog text between h3 and p
 
 - LOST OBJ
 
-  - [ ] #80 touch me on lost objects :active
+  - [x] #800 Touch me on lost objects :active
 
-- HOST
-  - [ ] #30 free hosting like imgbb [https://postimages.org/](https://postimages.org/)
+- Global
+  - [ ] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 
 ## Finished
 
