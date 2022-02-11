@@ -1,31 +1,39 @@
 # Héctor Cortés Personal Website
 
+## Other wiki links of my site
+
+1. [Code Wiki](md/code-wiki.md): About technical related notes I make during the process of making my site
+2. [UI UX Wiki](md/ui-ux-wiki.md): Notes about visual-related and how to make a site.
+3. [Cool Webs](md/cool-webs.md): Which some of them inspired me to make my own site.
+
 ## Now working on
 
-### 8
+- INDEX:
 
-- OFFICE WORK
-  - [x] #a01 ORDER the to do list and deadlines
-  - [x] #a02 ORDER from easy to difficult
-  - [x] #a03 Numbered all the todos
-  - [x] #a04 Text Correction and pass all the to-do from Notes
+  - #0xx Home
+  - #1xx Global
+  - #2xx Draw
+  - #3xx -
+  - #40x Sub-Design
+  - #45x Sub-Design Global
+  - #47x Design Home
+  - #5xx Blog
+  - #6xx UX
+  - #7xx Photo
+  - #8xx Small Sections
+  - #9xx -
+  - #axx Office Work
 
-### 9
+### 0. HOME
 
-- HOME
+- [x] #010 One more thing :active for iPad mobile
+- [x] #020 Use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
+- [x] #021 Put char text for logo for home loading
 
-  - [x] #010 One more thing :active for iPad mobile
-  - [x] #020 Use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
-  - [x] #021 Put char text for logo for home loading
-
-### 10
-
-- HOME
-
-  - [F] #022 Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
-  - [F] #030 [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
-  - [x] #040 Appears a messenger bubble when click on the Stickers link, so you need to have external linked it
-  - [ ] #050 Implement an animated char that change its variable when hover or not with trans/or not
+- [F] #022 Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
+- [F] #030 [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
+- [x] #040 Appears a messenger bubble when click on the Stickers link, so you need to have external linked it
+- [ ] #050 Implement an animated char that change its variable when hover or not with trans/or not
 
 - GLOBAL
 
@@ -39,9 +47,8 @@
 
 - BLOG
 
-  - [ ] #103 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
-  - [ ] #104 Put the design process webpage sketches pics
-  - [ ] #105 Add Scanned of the sketches of making the web
+  - [ ] #103 Put the design process webpage sketches pics
+  - [ ] #104 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
 
 ### 11
 
@@ -82,22 +89,6 @@
   - [ ] #476 Let visual fx come out form the radio in DESIGN home
   - [ ] #477 Make the ASCII into two parts for every word for better resp
 
-- HASHTAGS FOR:
-
-  - #0xx Home
-  - #1xx Global
-  - #2xx Draw
-  - #3xx Techni
-  - #40x Sub-Design
-  - #45x Sub-Design Global
-  - #47x Design Home
-  - #5xx
-  - #6xx UX
-  - #7xx Photo
-  - #8xx Small Sections
-  - #9xx -
-  - #axx Office Work
-
 - UX
 
   - [ ] #600 Put a sticky labelling the five cafe names on the comparison audit
@@ -123,29 +114,17 @@
   - [x] #800 Touch me on lost objects :active
 
 - Global
+
   - [ ] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 
-## Finished
+- OFFICE WORK
 
-- [x] Separate the link of Hector and Cortes
-- [x] Hector Hover doesn't change undeline to green
-- [x] linked github icon
-- [x] Animate bottom banner
-- [x] Link netlify to the working page
+  - [x] #a01 ORDER the to do list and deadlines
+  - [x] #a02 ORDER from easy to difficult
+  - [x] #a03 Numbered all the todos
+  - [x] #a04 Text Correction and pass all the to-do from Notes
 
-1. Subpage
-
-   1. About me
-
-      - [x] Text
-      - [x] Brainstorm Layout
-      - [ ] friends testimonials about me, that updates every 7s
-      - [x] "Tips" about my hobbies, personality
-      - [Cancelled] Super Arrowed 100vh intro
-
-   1. Contact me
-      - [x] Text
-      - [x] Brainstorm Layout
+- Old to-do [list](/MD/old-todo.md)
 
 ## What's next?
 
