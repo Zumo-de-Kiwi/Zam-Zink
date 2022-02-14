@@ -1,7 +1,5 @@
-// @import 'mixins';
 @import 'globals';
 @import 'variables';
-// @import 'font-anim-keyframes';
 
 html {
   height: 100%;
@@ -10,7 +8,6 @@ body {
   min-height: 100%;
   color: $font-black;
   position: relative;
-  // font-variation-settings: unset;
 }
 .special-char {
   font-family: $ff-special-char;
@@ -57,10 +54,10 @@ body {
           font-size: 0.7em;
         }
         #HCéé {
-          animation: blinkE 5s linear infinite, HCAnim 5s infinite alternate; //
+          animation: blinkE 5s linear infinite, HCAnim 9s infinite alternate; //
         }
         #HCee {
-          animation: HCAnim 5s infinite alternate;
+          animation: HCAnim 9s infinite alternate;
         }
         @keyframes blinkE {
           0% {
@@ -105,20 +102,34 @@ body {
             fill: hsl(245, 96%, 68%);
           }
           20% {
-            fill: hsl(255, 74%, 74%);
+            fill: hsl(255, 100%, 79%);
           }
-          40% {
+          30% {
+            fill: hsl(245, 96%, 68%);
+          }
+          47% {
             fill: hsl(141, 76%, 48%);
           }
-          60% {
-            fill: hsl(265, 76%, 44%);
+          53% {
+            fill: hsl(151, 100%, 50%);
+          }
+          57% {
+            fill: hsl(141, 76%, 48%);
           }
           70% {
+            fill: hsl(265, 76%, 44%);
+          }
+          77% {
             fill: hsl(253, 64%, 54%);
           }
-          80% {
-            fill: hsl(245, 96%, 68%);
+          83% {
+            fill: hsl(141, 76%, 48%);
+          }
+          91% {
             fill: hsl(151, 100%, 50%);
+          }
+          95% {
+            fill: hsl(141, 76%, 48%);
           }
         }
       }
@@ -673,7 +684,6 @@ body {
       @media (max-width: 740px) {
         #oneMoreText {
           color: transparent;
-          //
           #dotsss {
             color: transparent;
           }
@@ -746,27 +756,31 @@ footer {
       //////////////////// FOOTER TEXT ANIMATIONS /////////////////
       .footerSpan {
         will-change: font-variation-settings;
+
+        &.futureSpan {
+          color: $josh-blue-white;
+        }
+        &.workingSpan {
+          color: $josh-blue-white;
+          font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
+            'wght' $font-weight-light;
+        }
+        &.dangerSpan {
+          color: white;
+          font-variation-settings: 'MONO' 0.4, 'CASL' 0.5,
+            'wght' $font-weight-light, 'CRSV' 1;
+        }
         a {
           color: inherit;
-
           text-decoration: none;
           &.github {
             cursor: $cursor-startreck-hand;
           }
         }
-        &.workingSpan {
-          font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
-            'wght' $font-weight-light;
-        }
-        &.dangerSpan {
-          color: $josh-blue-white;
-          font-variation-settings: 'MONO' 0.4, 'CASL' 0.5,
-            'wght' $font-weight-light, 'CRSV' 1;
-        }
       }
     }
     #githublink {
-      color: rgb(242, 242, 242);
+      color: white;
       font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
       font-size: calc(0.4vw + 7px);
 
