@@ -568,11 +568,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   font-size: 2rem;
   border-radius: 2rem;
   transition: 0.15s;
-  background: #ff5ecc;
+  background: #dc3a78;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
-  background: #ff84f1;
+  background: #f261b1;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {

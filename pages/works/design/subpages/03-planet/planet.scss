@@ -125,8 +125,6 @@ body {
         #hero-outline {
           grid-column: 1 / 4;
           grid-row: 2;
-          // padding-left: 4%;
-          // padding-right: 4%;
           margin-bottom: 10%;
         }
 
@@ -383,9 +381,9 @@ body {
             font-size: 2rem;
             border-radius: 2rem;
             transition: 0.15s;
-            background: #ff5ecc;
+            background: #dc3a78;
             &:hover {
-              background: #ff84f1;
+              background: #f261b1;
             }
             a {
               text-decoration: none;

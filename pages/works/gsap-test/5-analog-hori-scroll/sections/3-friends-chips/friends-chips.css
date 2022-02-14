@@ -538,7 +538,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-@keyframes tourneyAnim {
+@keyframes to400Anim {
   to {
     font-weight: 400;
   }

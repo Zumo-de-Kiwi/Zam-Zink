@@ -365,185 +365,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes variableOpacity {
-  0% {
-    opacity: 100%;
-  }
-  66% {
-    opacity: 33%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes gifFrame1 {
-  0% {
-    opacity: 100%;
-  }
-  24% {
-    opacity: 100%;
-  }
-  25% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@keyframes gifFrame2 {
-  0% {
-    opacity: 0%;
-  }
-  24% {
-    opacity: 0%;
-  }
-  25% {
-    opacity: 100%;
-  }
-  49% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@keyframes gifFrame3 {
-  0% {
-    opacity: 0%;
-  }
-  49% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  75% {
-    opacity: 100%;
-  }
-  76% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@keyframes gifFrame4 {
-  0% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 0%;
-  }
-  76% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes brujula {
-  to {
-    transform: rotateZ(23deg);
-  }
-}
-
-@keyframes jump {
-  to {
-    transform: translateY(1rem);
-  }
-}
-
-@keyframes goLeft {
-  to {
-    transform: translateX(-0.6rem);
-  }
-}
-
-@keyframes navbarAppears {
-  from {
-    transform: translateX(5rem);
-    opacity: 20%;
-  }
-  to {
-    transform: translateX(0rem);
-    opacity: 100%;
-  }
-}
-
-@keyframes widthness {
-  0% {
-    font-variation-settings: "wght" 500;
-  }
-  30% {
-    font-variation-settings: "wght" 800;
-  }
-  70% {
-    font-variation-settings: "wght" 620;
-  }
-  100% {
-    font-variation-settings: "wght" 500;
-  }
-}
-
-@keyframes slintness {
-  0% {
-    font-variation-settings: 'slnt' 0, 'CRSV' 1;
-  }
-  40% {
-    font-variation-settings: 'slnt' -15, 'CRSV' 1;
-  }
-  100% {
-    font-variation-settings: 'slnt' 0, 'CRSV' 1;
-  }
-}
-
-@keyframes waveHand {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(20deg);
-  }
-  20% {
-    transform: rotate(-10deg);
-  }
-  30% {
-    transform: rotate(20deg);
-  }
-  40% {
-    transform: rotate(-6deg);
-  }
-  50% {
-    transform: rotate(12deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes tourneyAnim {
-  to {
-    font-weight: 400;
-  }
-}
-
 html {
   height: 100%;
 }
@@ -900,8 +721,70 @@ body {
   transition: 0.43s ease-out;
 }
 
-.main .content_wrap .content-portfolio .link.coming {
-  color: #82807d;
+.main .content_wrap .content-portfolio .link:hover, .main .content_wrap .content-portfolio .link:active {
+  font-variation-settings: "MONO" 0.2, "CASL" 0.6, "wght" 740, "slnt" 0;
+}
+
+.main .content_wrap .content-portfolio .link:active {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='25' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>✌️</text></svg>") 16 0, auto;
+}
+
+.main .content_wrap .content-portfolio .link.italic-fun:hover {
+  animation: italicFun 1s infinite ease-in alternate;
+}
+
+@keyframes italicFun {
+  0% {
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
+  }
+  100% {
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" -15, "CRSV" 0;
+  }
+}
+
+.main .content_wrap .content-portfolio .link.weight-fun:hover {
+  animation: weightFun 0.7s infinite ease alternate;
+}
+
+@keyframes weightFun {
+  0% {
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
+  }
+  100% {
+    font-variation-settings: "MONO" 0.2, "wght" 800, "slnt" 0, "CRSV" 0;
+  }
+}
+
+.main .content_wrap .content-portfolio .link.casual-fun:hover {
+  animation: casualFun 0.7s infinite ease alternate;
+}
+
+@keyframes casualFun {
+  0% {
+    font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 690, "slnt" 0;
+  }
+  100% {
+    font-variation-settings: "MONO" 0.2, "CASL" 0.9, "wght" 690, "slnt" 0;
+  }
+}
+
+.main .content_wrap .content-portfolio .link.cursive-fun:hover {
+  animation: cursiveFun 1s infinite linear alternate;
+}
+
+@keyframes cursiveFun {
+  0% {
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
+  }
+  49% {
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
+  }
+  50% {
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 1;
+  }
+  100% {
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 1;
+  }
 }
 
 .main .content_wrap .content-portfolio .link.coming::after {
@@ -909,6 +792,7 @@ body {
 }
 
 .main .content_wrap .content-portfolio .link.coming:hover::after, .main .content_wrap .content-portfolio .link.coming:active::after {
+  color: #82807d;
   content: '[C🙃ming Soon]';
 }
 
@@ -939,14 +823,6 @@ body {
 
 .main .content_wrap .content-portfolio .link#playground:hover .angled-brackets, .main .content_wrap .content-portfolio .link#playground:active .angled-brackets {
   color: #5f3fd5;
-}
-
-.main .content_wrap .content-portfolio .link:hover, .main .content_wrap .content-portfolio .link:active {
-  font-variation-settings: "MONO" 0.2, "CASL" 0.6, "wght" 740, "slnt" 0;
-}
-
-.main .content_wrap .content-portfolio .link:active {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='25' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
 .main .content_wrap .content-portfolio .link-number {
@@ -1140,7 +1016,8 @@ footer {
 footer .footer {
   position: fixed;
   bottom: 0px;
-  background-color: #1dd75e;
+  background-color: #bfbfbf;
+  transition: 0.5s;
   margin: 0 auto;
   padding-top: 1rem;
   margin-bottom: 1.3rem;
@@ -1150,18 +1027,13 @@ footer .footer {
 
 footer .footer .closeBtn {
   position: absolute;
-  color: #c1f1b0;
+  color: white;
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400, "slnt" 0;
   font-size: 2rem;
   top: 0rem;
   left: 0.5rem;
   padding: 1.2rem;
   transition: 0.3s;
-}
-
-footer .footer .closeBtn:hover, footer .footer .closeBtn:active {
-  font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
-  color: white;
 }
 
 footer .footer .line {
@@ -1173,7 +1045,7 @@ footer .footer .line {
 footer .footer .line span {
   white-space: nowrap;
   font-size: 1.7rem;
-  font-variation-settings: "MONO" 0.8, "CASL" 0, "wght" 500, "slnt" 0;
+  font-variation-settings: "MONO" 0.4, "CASL" 0, "wght" 500, "slnt" 0;
   color: #fcfaf8;
   padding: 12px;
   padding-left: 20px;
@@ -1195,15 +1067,13 @@ footer .footer .line .footerSpan a.github {
 }
 
 footer .footer .line .footerSpan.workingSpan {
-  animation: widthness 2s ease 10;
   color: #00ff84;
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
 
 footer .footer .line .footerSpan.dangerSpan {
-  animation: slintness 2s ease 10s 17;
   color: #eff1f5;
-  font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" 500, "CRSV" 1;
+  font-variation-settings: "MONO" 0.4, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }
 
 footer .footer #githublink {
@@ -1227,6 +1097,62 @@ footer .footer #githublink a {
 footer .footer #githublink a:hover, footer .footer #githublink a:active {
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -17, "CRSV" 0;
   color: white;
+}
+
+footer .footer:hover {
+  background-color: #1dd75e;
+  color: white;
+}
+
+footer .footer:hover .closeBtn {
+  color: #c1f1b0;
+}
+
+footer .footer:hover .closeBtn:hover, footer .footer:hover .closeBtn:active {
+  font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
+  color: white;
+}
+
+footer .footer:hover .footerSpan.workingSpan {
+  animation: widthness 2s ease infinite;
+  color: #00ff84;
+}
+
+@keyframes widthness {
+  0% {
+    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 300;
+  }
+  30% {
+    font-variation-settings: "MONO" 0.4, "CASL" 0.1, "wght" 690;
+  }
+  70% {
+    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 620;
+  }
+  100% {
+    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 300;
+  }
+}
+
+footer .footer:hover .footerSpan.dangerSpan {
+  animation: slintness 2s ease infinite;
+  color: #eff1f5;
+  font-variation-settings: "MONO" 0.4, "CASL" 0.5, "wght" 500, "CRSV" 1;
+}
+
+@keyframes slintness {
+  0% {
+    font-variation-settings: 'MONO' 0.4, 'CASL' 0.5, 'slnt' 0, 'CRSV' 1;
+  }
+  40% {
+    font-variation-settings: 'MONO' 0.4, 'CASL' 0.5, 'slnt' -15, 'CRSV' 1;
+  }
+  100% {
+    font-variation-settings: 'MONO' 0.4, 'CASL' 0.5, 'slnt' 0, 'CRSV' 1;
+  }
+}
+
+footer .footer:hover #githublink {
+  color: #00ff84;
 }
 
 @media (max-width: 670px) {

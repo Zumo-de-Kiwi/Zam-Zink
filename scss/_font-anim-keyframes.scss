@@ -147,11 +147,6 @@
     font-variation-settings: 'wght' $font-weight-light;
   }
 }
-// .dangerSpan {
-//   animation: slintness 2s ease infinite;
-//   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" $font-weight-light,
-//     "CRSV" 1;
-// }
 @keyframes slintness {
   0% {
     font-variation-settings: 'slnt' 0, 'CRSV' 1;
@@ -163,6 +158,11 @@
     font-variation-settings: 'slnt' 0, 'CRSV' 1;
   }
 }
+// .dangerSpan {
+//   animation: slintness 2s ease infinite;
+//   font-variation-settings: "MONO" 0.2, "CASL" 0.5, "wght" $font-weight-light,
+//     "CRSV" 1;
+// }
 
 // Emoji Wave hand
 // .wave {

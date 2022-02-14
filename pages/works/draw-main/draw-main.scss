@@ -692,8 +692,8 @@ body {
             padding-bottom: 23rem;
           }
           #election-draw {
-            padding-left: 29%;
-            padding-right: 29%;
+            padding-left: 17%;
+            padding-right: 17%;
             padding-bottom: 23rem;
           }
           #mr-cakebeef {
@@ -715,7 +715,9 @@ body {
             padding: 13%;
             padding-bottom: 7vh;
           }
-          #cafe-two-woman {
+          #bleu-island {
+            padding-left: 7%;
+            padding-right: 7%;
           }
         }
         #dodoDraws {
@@ -796,7 +798,7 @@ body {
             padding-top: 7em;
           }
           #sketch-diario-1 {
-            grid-column: 5/ 10;
+            grid-column: 4/ 10;
             padding: 3em;
             padding-bottom: 9em;
           }
@@ -805,28 +807,34 @@ body {
             padding-bottom: 13em;
           }
           #abuelo-jp {
-            grid-column: 1/ 9;
+            grid-column: 1/ 10;
             padding-bottom: 11em;
           }
 
           #manga {
-            grid-column: 3/ 10;
+            grid-column: 5/ 10;
           }
           #rus-sketch {
-            grid-column: 2/ 9;
+            grid-column: 2/ 7;
             padding: 11%;
+            padding-top: 3%;
             padding-bottom: 3em;
           }
         }
         #archDraws {
           display: grid;
-          gap: 15rem;
+          // gap: 7vh;
           place-items: center;
           picture {
             max-width: 600px;
+            // padding-bottom: ;
           }
+          // #trees {
+          //   margin-bottom: 0rem;
+          // }
         }
         #randomDraws {
+          margin-top: 7rem;
           display: grid;
           grid-template-columns: repeat(10, minmax(1rem, 12rem));
           position: relative;
@@ -841,10 +849,10 @@ body {
             // position: sticky;
             padding-top: 31rem;
             padding-bottom: 10rem;
-            padding-left: 0rem;
+            padding-left: 7rem;
           }
           #ancient-spanish {
-            grid-column: 1/ 5;
+            grid-column: 1/ 6;
             grid-row: 3/ 5;
             padding-left: 0vw;
             padding-bottom: 12rem;

@@ -538,7 +538,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-@keyframes tourneyAnim {
+@keyframes to400Anim {
   to {
     font-weight: 400;
   }
@@ -1212,8 +1212,8 @@ body main #drawSections #randomDraws #fin4 {
     padding-bottom: 23rem;
   }
   body main #drawSections #noodlesDraws #election-draw {
-    padding-left: 29%;
-    padding-right: 29%;
+    padding-left: 17%;
+    padding-right: 17%;
     padding-bottom: 23rem;
   }
   body main #drawSections #noodlesDraws #mr-cakebeef {
@@ -1231,6 +1231,10 @@ body main #drawSections #randomDraws #fin4 {
     padding-top: 1vh;
     padding: 13%;
     padding-bottom: 7vh;
+  }
+  body main #drawSections #cafeDraws #bleu-island {
+    padding-left: 7%;
+    padding-right: 7%;
   }
   body main #drawSections #dodoDraws {
     display: grid;
@@ -1307,7 +1311,7 @@ body main #drawSections #randomDraws #fin4 {
     padding-top: 7em;
   }
   body main #drawSections #sketchDraws #sketch-diario-1 {
-    grid-column: 5/ 10;
+    grid-column: 4/ 10;
     padding: 3em;
     padding-bottom: 9em;
   }
@@ -1316,26 +1320,27 @@ body main #drawSections #randomDraws #fin4 {
     padding-bottom: 13em;
   }
   body main #drawSections #sketchDraws #abuelo-jp {
-    grid-column: 1/ 9;
+    grid-column: 1/ 10;
     padding-bottom: 11em;
   }
   body main #drawSections #sketchDraws #manga {
-    grid-column: 3/ 10;
+    grid-column: 5/ 10;
   }
   body main #drawSections #sketchDraws #rus-sketch {
-    grid-column: 2/ 9;
+    grid-column: 2/ 7;
     padding: 11%;
+    padding-top: 3%;
     padding-bottom: 3em;
   }
   body main #drawSections #archDraws {
     display: grid;
-    gap: 15rem;
     place-items: center;
   }
   body main #drawSections #archDraws picture {
     max-width: 600px;
   }
   body main #drawSections #randomDraws {
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: repeat(10, minmax(1rem, 12rem));
     position: relative;
@@ -1350,10 +1355,10 @@ body main #drawSections #randomDraws #fin4 {
     grid-row: 2;
     padding-top: 31rem;
     padding-bottom: 10rem;
-    padding-left: 0rem;
+    padding-left: 7rem;
   }
   body main #drawSections #randomDraws #ancient-spanish {
-    grid-column: 1/ 5;
+    grid-column: 1/ 6;
     grid-row: 3/ 5;
     padding-left: 0vw;
     padding-bottom: 12rem;

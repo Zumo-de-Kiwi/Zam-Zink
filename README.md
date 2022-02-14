@@ -40,6 +40,7 @@
 - GLOBAL
 
   - [x] #100 (adjust globally) emoji cursor to be in his top left corner
+  - [ ] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 
 - ABOUT + CONTACT
 
@@ -52,8 +53,6 @@
   - [ ] #103 Put the design process webpage sketches pics
   - [ ] #104 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
 
-### 11
-
 - DRAW
 
   - [x] #200 Add jp-poster sketch
@@ -61,12 +60,10 @@
   - [ ] #202 The intro of café in DRAWINGS
   - [\] #203 Make DRAW more responsive
 
-### 12
-
 - SUBDESIGN
 
   - [x] #400 #1 Add Ricardo Space crazy photo to scissors
-  - [ ] #402 #3 Behind process info
+  - [ ] #402 #3 rcd_album Behind process info
   - [ ] #403 #6 Put the sketches
   - [ ] #404 #11 Make bread have dfrt translate anim
   - [ ] #405 #12 Put the lamp head
@@ -97,8 +94,6 @@
   - [ ] #601 In about talk the differences between the Chinese and latin based language layout, possibilities and limitations
   - [ ] #602 Nav menu on UX dodo
 
-### 13
-
 - PHOTO
 
   - [ ] #700 Improve the close modal of ANALOG with a overlay
@@ -114,10 +109,6 @@
 - LOST OBJ
 
   - [x] #800 Touch me on lost objects :active
-
-- Global
-
-  - [ ] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 
 - OFFICE WORK
 
