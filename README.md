@@ -60,14 +60,15 @@
 - [x] #400 #1 Add Ricardo Space crazy photo to scissors
 - [...] #402 #3 rcd_album Behind process info
 - [...] #403 #6 Put the sketches
-- [ ] #404 #11 Make bread have dfrt translate anim
+- [x] #404 #11 Make bread have dfrt translate anim
 - [ ] #405 #12 Put the lamp head on the corner
 - [ ] #406 #17 blue wrapper word wrong (hours spennds)
 - [ ] #407 #18 On the footer say it is kare
 - [ ] #408 #19 Download link to the game
 - [ ] #409 #20 Link to download the fb frame
-- [ ] #410 Arale 2001: A Space Odyssey
-- [x] #411 #4 place eraser pic centered
+- [x] #411 #4 Place eraser pic centered
+- [x] #412 #16 Add the video
+- [x] #413 #17 Correct the text in the teletext pics
 
 - [ ] #450 #\* Add active on the hover elements
 - [ ] #451 #\* Put wiki or other links
@@ -77,7 +78,7 @@
 - [x] #455 #\* Update all the btm-bnt
 - [ ] #456 #\* Center WWW on early subPages
 - [ ] #457 #\* Clean up some comments
-- [ ] #458 #\* more responsive on mobile with smaller text in the paragraphs
+- [x] #458 #\* more responsive on mobile with smaller text in the paragraphs
 
 ### 4 DESIGN
 
@@ -94,6 +95,7 @@
 
 - [ ] #503 Put the design process webpage sketches pics
 - [ ] #504 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
+- [ ] #505 Arale 2001: A Space Odyssey
 
 ### 6 UX
 

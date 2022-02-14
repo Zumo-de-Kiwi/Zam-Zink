@@ -503,11 +503,15 @@ body main .btn-wrapper .btns.next a::after {
     content: '<';
   }
   body main .btn-wrapper .btns.back-design a::after {
-    content: 'back';
+    content: 'return';
   }
   body main .btn-wrapper .btns.next a::after {
     content: '>';
   }
+}
+
+body main #trampolin-wrapper #trampolineEmoji {
+  opacity: 0.6;
 }
 
 body {

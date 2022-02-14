@@ -503,11 +503,15 @@ body main .btn-wrapper .btns.next a::after {
     content: '<';
   }
   body main .btn-wrapper .btns.back-design a::after {
-    content: 'back';
+    content: 'return';
   }
   body main .btn-wrapper .btns.next a::after {
     content: '>';
   }
+}
+
+body main #trampolin-wrapper #trampolineEmoji {
+  opacity: 0.6;
 }
 
 body .preloader {
@@ -597,7 +601,6 @@ body main .subpage-wrapper .subpage-content-1 .pixel {
 body main .subpage-wrapper .subpage-content-1 .w-texts {
   font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   grid-row: 3;
-  /* Searching for some food to draw I discovered the amazing world of strawberries, whose pores grow leaves. If there is one fruit comparable to fonts, it is the strawberry. I think of every pore as a word. A well chosen font is like adding chocolate or cream, giving a good taste to the user’s mouth. */
 }
 
 body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
@@ -688,15 +691,23 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.fonts {
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.four {
   grid-row: 4;
   margin: 6%;
-  margin-left: 17%;
-  margin-right: 17%;
+  width: 60%;
+  margin-top: 13rem;
+  justify-self: center;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.letters-loop {
+  grid-row: 4;
+  justify-self: center;
+  margin-top: 21%;
   margin-bottom: 9%;
+  filter: grayscale(100%) contrast(109%);
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.the-wrapper {
   grid-row: 5;
   display: grid;
-  gap: 10%;
+  gap: 10% 6%;
   grid-template-columns: 1fr 1.7fr 2fr;
 }
 
