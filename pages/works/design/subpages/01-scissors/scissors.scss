@@ -1,6 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
-// @import '../../../../../scss/_font-anim-keyframes.scss';
+@import '../sub-design-global.scss';
 
 body {
   //////////////////////////////////////////
@@ -109,6 +109,9 @@ body {
             margin-bottom: 4rem;
             margin-right: 19%;
             font-size: 1.6rem;
+            // @media (max-width: 768px) {
+            //   font-size: 0.7em;
+            // }
           }
         }
         .info-text {
@@ -393,47 +396,47 @@ body {
           }
         }
         .btn-wrapper {
-          grid-row: 10;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 5%;
-          padding-right: 5%;
+          // grid-row: 10;
+          // grid-column: 1/ 4;
+          // display: flex;
+          // justify-content: space-around;
+          // padding-left: 5%;
+          // padding-right: 5%;
           .btns {
-            text-align: center;
-            font-size: 1.8rem;
+            // text-align: center;
+            // font-size: 1.8rem;
 
-            border-radius: 2rem;
-            transition: 0.15s;
+            // border-radius: 2rem;
+            // transition: 0.15s;
             background: rgb(227, 115, 74);
             &:hover {
               background: rgb(230, 176, 90);
             }
             a {
-              text-decoration: none;
               color: white;
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
+              // text-decoration: none;
+              // height: 6rem;
+              // line-height: 6rem;
+              // min-width: 18%;
+              // padding: 2rem;
+              // padding-right: 4rem;
+              // padding-left: 4rem;
             }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
-            }
+            // &.prev {
+            //   a {
+            //     cursor: $cursor-arrow-hand;
+            //   }
+            // }
+            // &.back-design {
+            //   a {
+            //     cursor: $cursor-pointer-hand-flip;
+            //   }
+            // }
+            // &.next {
+            //   a {
+            //     cursor: $cursor-right-hand;
+            //   }
+            // }
           }
         }
       }

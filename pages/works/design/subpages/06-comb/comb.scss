@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -92,11 +93,9 @@ body {
         // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // font-family: $ff-grotesk-mono;
           grid-row: 3;
           .w-para {
             font-size: 1.6rem;
-            // margin: 8%;
             text-align: justify;
             margin-right: 23%;
             margin-top: 2%;
@@ -296,21 +295,6 @@ body {
               padding: 2rem;
               padding-right: 4rem;
               padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
             }
           }
         }

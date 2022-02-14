@@ -1,22 +1,12 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
-  ///////////////////////////////////////////
-  // $design-color-green: rgb(51, 148, 103);
-  // $design-color-yellow: rgb(245, 221, 59);
-  // $design-color-red: rgb(215, 61, 69);
-  // $design-white-color: rgb(244, 242, 235);
+  //////////////////////////////////////////
   $design-text-color: hsl(0, 0%, 21%);
   $design-subpg-bg: hsl(0, 0%, 100%);
   ///////////////////////////////////////////
-  font-family: $ff-space-grotesk;
-  // font-family: $ff-grotesk-mono;
-  // font-family: $ff-tourney;
-  background-color: $design-subpg-bg;
-  width: 100vw;
-  font-weight: 300;
-  position: relative;
 
   .preloader {
     transition: $trans-slow ease-out;
@@ -95,21 +85,13 @@ body {
         // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // color: yellow;
-          // font-family: $ff-grotesk-mono;
           grid-row: 3;
-          // margin-right: 17%;
 
           .w-para {
-            // line-height: 1.5;
             font-size: 1.6rem;
-            // font-family: $ff-grotesk-mono;
-            // font-weight: normal;
-            // line-height: 22px;
-            // margin: 8%;
-            // text-align: justify;
-            // margin-top: 2%;
-            // margin-bottom: 2%;
+            @media (max-width: 768px) {
+              font-size: 0.7em;
+            }
           }
         }
         .info-text {

@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -423,22 +424,9 @@ body {
           }
         }
         .btn-wrapper {
-          margin-top: 10rem;
-          grid-row: 12;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
-
-            // border-radius: 2rem;
-            transition: 0.15s;
+            border-radius: 0rem;
             border: 5px solid $design-tele-pink;
-            // background: rgb(205, 205, 205);
-
             &:hover {
               background: $design-tele-pink;
               a {
@@ -446,30 +434,9 @@ body {
               }
             }
             a {
-              text-decoration: none;
               color: $design-tele-pink;
-              height: 6rem;
-              // font-weight: 500;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 3rem; //4
-              padding-left: 3rem; //4
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
+              // height: 6rem;
+              // line-height: 6rem;
             }
           }
         }

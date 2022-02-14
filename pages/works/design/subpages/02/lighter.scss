@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -108,7 +109,6 @@ body {
         // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // font-family: $ff-grotesk-mono;
           .w-para {
             margin-bottom: 4rem;
             margin-right: 19%;
@@ -268,19 +268,19 @@ body {
           justify-items: center;
           align-items: flex-start;
           // justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
+          // padding-left: 9%;
+          // padding-right: 9%;
           height: 10rem;
           &:hover .btns {
             border-bottom: 9px solid #91ffab;
             border-right: 7px solid rgb(63, 84, 205);
           }
           .btns {
-            text-align: center;
-            font-size: 2rem;
+            // text-align: center;
+            // font-size: 2rem;
             // margin: 0rem 5%;
-            max-width: 12ch;
-            border-radius: 2rem;
+            // max-width: 12ch;
+            // border-radius: 2rem;
             border-bottom: 7px solid #91ffab;
             border-right: 5px solid rgb(63, 84, 205);
             transition: color 0.3s, border 0.4s;
@@ -288,15 +288,15 @@ body {
             background: #36f860d9; //gray; //rgb(63, 84, 205);
 
             a {
-              text-decoration: none;
+              // text-decoration: none;
 
               color: rgb(72, 72, 72);
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
+              // height: 6rem;
+              // line-height: 6rem;
+              // min-width: 18%;
+              // padding: 2rem;
+              // padding-right: 4rem;
+              // padding-left: 4rem;
             }
             &:hover {
               background: rgb(63, 84, 205);
@@ -318,21 +318,21 @@ body {
                 color: white;
               }
             }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
-            }
+            // &.prev {
+            //   a {
+            //     cursor: $cursor-arrow-hand;
+            //   }
+            // }
+            // &.back-design {
+            //   a {
+            //     cursor: $cursor-pointer-hand-flip;
+            //   }
+            // }
+            // &.next {
+            //   a {
+            //     cursor: $cursor-right-hand;
+            //   }
+            // }
           }
         }
       }

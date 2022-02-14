@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -390,32 +391,31 @@ body {
 
         ////////// 3 BTN ////////
         .btn-wrapper {
-          margin-top: 10rem;
+          // margin-top: 10rem;
           grid-row: 8;
-          grid-column: 1/ 4;
-          display: flex;
+          // grid-column: 1/ 4;
+          // display: flex;
           justify-content: left; //space-around;
           width: 100%;
-          padding-left: 2%; //9%;
           position: relative;
-          // padding-right: 9%;
+          padding-left: 2%; //9%;
+          padding-right: 0%;
           background: rgb(235, 235, 235);
           .btns {
-            text-align: center;
-            font-size: 2rem;
-            // border-radius: 2rem;
-            transition: 0.05s; // 0.15s;
+            // text-align: center;
+            // font-size: 2rem;
+            margin: 0rem;
+            border-radius: 0rem;
+            transition: 0.05s;
             background: rgb(235, 235, 235);
-
             a {
-              font-family: Arial, Helvetica, sans-serif; //
-              font-weight: 600;
-              text-decoration: none;
-              height: 3.5rem; //6rem;
+              font-family: Arial, Helvetica, sans-serif;
               color: black;
+              font-weight: 600;
+              height: 3.5rem; //6rem;
               line-height: 3.5rem; //6rem;
               min-width: 10%; //18%;
-              // padding: 2rem;
+              padding: 0rem;
               padding-right: 1.2rem; // 4rem;
               padding-left: 1.2rem; // 4rem;
             }
@@ -434,16 +434,42 @@ body {
             &.prev {
               a {
                 cursor: $cursor-arrow-hand;
+                &::after {
+                  content: '';
+                }
               }
             }
             &.back-design {
               a {
                 cursor: $cursor-pointer-hand-flip;
+                &::after {
+                  content: '';
+                }
               }
             }
             &.next {
               a {
                 cursor: $cursor-right-hand;
+                &::after {
+                  content: '';
+                }
+              }
+            }
+            @media (max-width: 900px) {
+              &.prev {
+                a::after {
+                  content: '';
+                }
+              }
+              &.back-design {
+                a::after {
+                  content: '';
+                }
+              }
+              &.next {
+                a::after {
+                  content: '';
+                }
               }
             }
             &.time {

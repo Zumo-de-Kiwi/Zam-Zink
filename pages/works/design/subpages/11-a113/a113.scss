@@ -1,18 +1,14 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
-  ///////////////////////////////////////////
-  // $design-color-green: rgb(51, 148, 103);
-  // $design-color-yellow: rgb(245, 221, 59);
-  // $design-color-red: rgb(215, 61, 69);
+  //////////////////////////////////////////
   $design-text-color: hsl(0, 0%, 21%);
   $design-white-color: rgb(244, 242, 235);
   $design-subpg-bg: hsl(0, 0%, 100%);
   ///////////////////////////////////////////
   font-family: $ff-space-grotesk;
-  // font-family: $ff-grotesk-mono;
-  // font-family: $ff-tourney;
   background-color: $design-subpg-bg;
   width: 100vw;
   font-weight: 300;
@@ -97,8 +93,6 @@ body {
 
           .w-para {
             font-size: 1.5rem;
-            // margin: 8%;
-            // text-align: justify;
             margin-top: 2%;
             margin-bottom: 2%;
           }
@@ -163,18 +157,8 @@ body {
           margin-top: 5.3rem;
           .w-para {
             margin-right: 1%;
-          } // padding-left: 4%;
-          // padding-right: 7%;
-          // grid-row: 4 / 6;
+          }
         }
-
-        // .why-text2 {
-        //   grid-row: 2;
-        //   // margin-left: 10%;
-        //   // margin-right: 18%;
-        //   margin-top: 5.3rem;
-        //   // transform: translateY(-41%);
-        // }
 
         ////////////////////////
         // COLUMN 3 //////////
@@ -183,10 +167,6 @@ body {
         }
         #what {
           grid-row: 2;
-          // grid-column: 1 / 3;
-          // margin-top: 3rem;
-          // margin-right: 11%;
-          // margin-left: 35%;
         }
         .what-text1 {
           grid-row: 2;
@@ -201,10 +181,6 @@ body {
         ////////// FULL-SIZE ////////
         .full-wrapper {
           grid-column: 1 / 4;
-          // padding-bottom: 2rem;
-          // display: grid;
-          // grid-template-columns: 1fr 1fr;
-          // grid-template-rows: 1fr 1fr; //
           span {
             font-size: 2.1rem;
             font-weight: 700;
@@ -217,11 +193,6 @@ body {
             .breads {
               position: absolute;
               width: 13%;
-              // grid-column: 1;
-              // grid-row: 1 /3;
-              // align-self: center;
-              // justify-self: center;
-              // width: 67%;
               filter: grayscale(100%) contrast(70%);
               will-change: transform;
               transition: 0.4s;
@@ -288,93 +259,12 @@ body {
               }
             }
           }
-          &.frame-wrapper-1 {
-            // margin-top: 6rem;
-
-            // #text {
-            //   grid-column: 2;
-            //   grid-row: 1 /3;
-            //   align-self: center;
-            //   justify-self: center;
-            //   padding-bottom: 7%;
-            //   text-align: justify;
-            // }
-          }
-          &.frame-wrapper-2 {
-            //   margin-top: 5%;
-            //   grid-row: 7;
-            //   // height: 87%;
-            //   #text {
-            //     grid-column: 1;
-            //     // grid-row: 1;
-            //     align-self: center;
-            //     justify-self: center;
-            //     // width: 100%;
-            //     margin-left: 27%;
-            //     text-align: justify;
-            //     span {
-            //       // margin-left: 20%;
-            //     }
-            //   }
-            //   #buscas {
-            //     grid-column: 2;
-            //     // grid-row: 1;
-            //     align-self: center;
-            //     justify-self: center;
-            //     width: 53%;
-            //     transition: 0.3s;
-            //     will-change: transform;
-            //     &:hover {
-            //       box-shadow: 0px 0px 20px rgb(183, 171, 206),
-            //         0px 0px 5px rgb(56, 39, 94);
-            //       transform: scale(1.13);
-            //     }
-            //   }
-          }
         }
         .btn-wrapper {
-          margin-top: 10rem;
-          grid-row: 12;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
-
-            border-radius: 2rem;
-            transition: 0.15s;
             background: #76eef0;
-
             &:hover {
               background: #ffbbde;
-            }
-            a {
-              text-decoration: none;
-              color: rgb(255, 255, 255);
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
             }
           }
         }

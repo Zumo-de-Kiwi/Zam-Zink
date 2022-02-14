@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -91,16 +92,16 @@ body {
         // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // font-family: $ff-grotesk-mono;
           grid-row: 3;
 
           .w-para {
             font-size: 1.5rem;
-            // margin: 8%;
-            // text-align: justify;
             margin-right: 19%;
             margin-top: 2%;
             margin-bottom: 2%;
+            @media (max-width: 768px) {
+              font-size: 0.7em;
+            }
           }
         }
         .info-text {
@@ -266,48 +267,10 @@ body {
           }
         }
         .btn-wrapper {
-          margin-top: 10rem;
-          grid-row: 12;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
-
-            border-radius: 2rem;
-            transition: 0.15s;
             background: #5f24bd;
-
             &:hover {
               background: #f56f3e;
-            }
-            a {
-              text-decoration: none;
-              color: white;
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
             }
           }
         }

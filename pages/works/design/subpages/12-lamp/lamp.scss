@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -149,10 +150,6 @@ body {
           .w-para {
             margin-right: 0px;
           }
-          // text-align: right;
-          // margin-left: 30%;
-          // margin-right: 18%;
-          // transform: translateY(-41%);
         }
 
         ////////////////////////
@@ -181,14 +178,6 @@ body {
           }
         }
 
-        // .why-text2 {
-        //   grid-row: 2;
-        //   // margin-left: 10%;
-        //   // margin-right: 18%;
-        //   margin-top: 5.3rem;
-        //   // transform: translateY(-41%);
-        // }
-
         ////////////////////////
         // COLUMN 3 //////////
         .cl-3 {
@@ -196,17 +185,11 @@ body {
         }
         #what {
           grid-row: 2;
-          // grid-column: 1 / 3;
-          // margin-top: 3rem;
-          // margin-right: 11%;
-          // margin-left: 35%;
         }
         .what-text1 {
           grid-row: 2 / 4;
-          // grid-column:  2;
           margin-top: 5.3rem;
           margin-right: 25%;
-          // margin-left: 13%;
           font-size: 1.5rem;
         }
 
@@ -220,180 +203,16 @@ body {
             margin-right: 10%;
             filter: brightness(109%);
           }
-          // padding-bottom: 2rem;
-          // display: grid;
-          // grid-template-columns: 1fr 1fr;
-          // grid-template-rows: 1fr 1fr; //
-          // span {
-          //   font-size: 2.1rem;
-          //   font-weight: 700;
-          // }
-          // &.bread-wrapper {
-          //   margin-top: 5rem;
-          //   position: relative;
-          //   height: 60rem;
-
-          //   .breads {
-          //     position: absolute;
-          //     width: 13%;
-          //     // grid-column: 1;
-          //     // grid-row: 1 /3;
-          //     // align-self: center;
-          //     // justify-self: center;
-          //     // width: 67%;
-          //     filter: grayscale(100%) contrast(70%);
-          //     will-change: transform;
-          //     transition: 0.4s;
-          //     &:hover {
-          //       filter: none;
-          //       transform: scale(1.3);
-          //     }
-          //     &#gif {
-          //       z-index: 1;
-          //       position: sticky;
-          //       top: 35%;
-          //       left: 40%;
-          //       width: 200px;
-          //       mix-blend-mode: multiply;
-          //       // opacity: 90%;
-          //       filter: none;
-          //       &:hover {
-          //         filter: none;
-          //         transform: none;
-          //       }
-          //     }
-          //     &#blur {
-          //       top: 0%;
-          //       right: 6%;
-          //     }
-          //     &#bw {
-          //       // z-index: -1;
-          //       bottom: 43%;
-          //       left: 76%;
-          //       position: sticky;
-          //     }
-          //     &#che {
-          //       bottom: 71%;
-          //       left: 26%;
-          //       position: sticky;
-          //     }
-          //     &#duo {
-          //       bottom: 17%;
-          //       right: 9%;
-          //     }
-          //     &#lila {
-          //       top: 39%;
-          //       right: 24%;
-          //     }
-          //     &#pel {
-          //       position: sticky;
-          //       bottom: 15%;
-          //       right: 3%;
-          //     }
-          //     &#rosa {
-          //       bottom: 37%;
-          //       left: 3%;
-          //     }
-          //     &#tigre {
-          //       bottom: 2%;
-          //       left: 18%;
-          //     }
-          //     &#verano {
-          //       // z-index: -1;
-          //       top: 10%;
-          //       bottom: 5%;
-          //       left: 61%;
-          //       position: sticky;
-          //     }
-          //   }
-          // }
-          &.frame-wrapper-1 {
-            // margin-top: 6rem;
-
-            // #text {
-            //   grid-column: 2;
-            //   grid-row: 1 /3;
-            //   align-self: center;
-            //   justify-self: center;
-            //   padding-bottom: 7%;
-            //   text-align: justify;
-            // }
-          }
-          &.frame-wrapper-2 {
-            //   margin-top: 5%;
-            //   grid-row: 7;
-            //   // height: 87%;
-            //   #text {
-            //     grid-column: 1;
-            //     // grid-row: 1;
-            //     align-self: center;
-            //     justify-self: center;
-            //     // width: 100%;
-            //     margin-left: 27%;
-            //     text-align: justify;
-            //     span {
-            //       // margin-left: 20%;
-            //     }
-            //   }
-            //   #buscas {
-            //     grid-column: 2;
-            //     // grid-row: 1;
-            //     align-self: center;
-            //     justify-self: center;
-            //     width: 53%;
-            //     transition: 0.3s;
-            //     will-change: transform;
-            //     &:hover {
-            //       box-shadow: 0px 0px 20px rgb(183, 171, 206),
-            //         0px 0px 5px rgb(56, 39, 94);
-            //       transform: scale(1.13);
-            //     }
-            //   }
-          }
         }
         .btn-wrapper {
-          margin-top: 10rem;
-          grid-row: 12;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
-
-            border-radius: 2rem;
-            transition: 0.15s;
             background: $design-color-yellow;
 
             &:hover {
               background: $design-color-green;
             }
             a {
-              text-decoration: none;
               color: rgb(0, 0, 0);
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
             }
           }
         }

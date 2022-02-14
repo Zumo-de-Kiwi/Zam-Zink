@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -89,12 +90,14 @@ body {
         // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // font-family: $ff-grotesk-mono;
           .w-para {
             font-size: 1.6rem;
             margin: 8%;
             margin-top: 2%;
             margin-bottom: 2%;
+            @media (max-width: 768px) {
+              font-size: 0.7em;
+            }
           }
         }
         .info-text {
@@ -157,6 +160,7 @@ body {
         }
         #eraser {
           grid-row: 5 /7;
+          place-self: center;
         }
         ////////////////////////
         // COLUMN 3 //////////
@@ -199,46 +203,31 @@ body {
           }
         }
         .btn-wrapper {
-          grid-row: 10;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
+          // grid-row: 10;
+          // grid-column: 1/ 4;
+          // display: flex;
+          // justify-content: space-around;
+          // padding-left: 9%;
+          // padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
+            // text-align: center;
+            // font-size: 2rem;
 
-            border-radius: 2rem;
-            transition: 0.15s;
+            // border-radius: 2rem;
+            // transition: 0.15s;
             background: #393636;
             &:hover {
               background: #a52c2c;
             }
             a {
-              text-decoration: none;
+              // text-decoration: none;
               color: white;
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
+              // height: 6rem;
+              // line-height: 6rem;
+              // min-width: 18%;
+              // padding: 2rem;
+              // padding-right: 4rem;
+              // padding-left: 4rem;
             }
           }
         }

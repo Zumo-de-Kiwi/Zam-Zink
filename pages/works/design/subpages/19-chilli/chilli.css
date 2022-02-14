@@ -368,9 +368,146 @@ body #trampolin-wrapper #trampolineEmoji:active {
 body {
   font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: white;
-  width: 100vw;
+  width: 100%;
   font-weight: 300;
   position: relative;
+}
+
+body .preloader {
+  transition: 0.45s ease-out;
+  background: white;
+}
+
+body .preloader #emoji-loader {
+  animation: jump 3s ease-out 0.3s infinite alternate;
+}
+
+@keyframes jump {
+  to {
+    transform: translateY(0.7rem);
+  }
+}
+
+body .preloader #text-loader {
+  padding-top: 12rem;
+  color: #363636;
+  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.8rem;
+}
+
+body main {
+  display: grid;
+}
+
+body main .subpage-wrapper {
+  display: grid;
+  grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(7%, 1fr);
+}
+
+body main .subpage-wrapper .subpage-content-1 .www {
+  font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  text-transform: uppercase;
+}
+
+body main .subpage-wrapper .subpage-content-1 .pixel {
+  image-rendering: pixelated;
+}
+
+@media (max-width: 768px) {
+  body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
+    font-size: 0.7em;
+  }
+}
+
+body main .subpage-wrapper .subpage-content-1 .info-text {
+  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body main .subpage-wrapper .subpage-content-1 .margin-top {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  margin-bottom: 13rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 .cl-1 {
+  grid-column: 1;
+}
+
+body main .subpage-wrapper .subpage-content-1 .cl-2 {
+  grid-column: 2;
+}
+
+body main .subpage-wrapper .subpage-content-1 .cl-3 {
+  grid-column: 3;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper {
+  grid-column: 1 / 4;
+}
+
+body main .btn-wrapper {
+  margin-top: 10rem;
+  grid-row: 12;
+  grid-column: 1/ 4;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+body main .btn-wrapper .btns {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  transition: 0.15s;
+}
+
+body main .btn-wrapper .btns a {
+  text-decoration: none;
+  color: white;
+  height: 6rem;
+  line-height: 6rem;
+  min-width: 18%;
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+body main .btn-wrapper .btns.prev a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body main .btn-wrapper .btns.prev a::after {
+  content: '< prev';
+}
+
+body main .btn-wrapper .btns.back-design a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='25' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>☝️</text></svg>") 16 0, auto;
+}
+
+body main .btn-wrapper .btns.back-design a::after {
+  content: '¿return?';
+}
+
+body main .btn-wrapper .btns.next a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👉</text></svg>") 16 0, auto;
+}
+
+body main .btn-wrapper .btns.next a::after {
+  content: 'next >';
+}
+
+@media (max-width: 900px) {
+  body main .btn-wrapper .btns.prev a::after {
+    content: '<';
+  }
+  body main .btn-wrapper .btns.back-design a::after {
+    content: 'back';
+  }
+  body main .btn-wrapper .btns.next a::after {
+    content: '>';
+  }
 }
 
 body .preloader {
@@ -464,6 +601,12 @@ body main .subpage-wrapper .subpage-content-1 .w-texts {
 
 body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
   font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  body main .subpage-wrapper .subpage-content-1 .w-texts .w-para {
+    font-size: 0.7em;
+  }
 }
 
 body main .subpage-wrapper .subpage-content-1 .info-text {

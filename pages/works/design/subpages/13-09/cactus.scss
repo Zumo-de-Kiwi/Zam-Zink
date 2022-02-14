@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -218,48 +219,11 @@ body {
           filter: grayscale(100%) opacity(75%);
         }
         .btn-wrapper {
-          margin-top: 7rem;
-          grid-row: 12;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
-
-            border-radius: 2rem;
-            transition: 0.15s;
             background: #4444a9;
 
             &:hover {
               background: #f5da3e;
-            }
-            a {
-              text-decoration: none;
-              color: white;
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
             }
           }
         }

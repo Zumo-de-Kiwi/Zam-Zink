@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -91,16 +92,16 @@ body {
         // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // font-family: $ff-grotesk-mono;
           grid-row: 3;
 
           .w-para {
             font-size: 1.5rem;
-            // margin: 8%;
-            // text-align: justify;
             margin-right: 19%;
             margin-top: 2%;
             margin-bottom: 2%;
+            @media (max-width: 768px) {
+              font-size: 0.7em;
+            }
           }
         }
         .info-text {
@@ -181,20 +182,6 @@ body {
           // margin-left: 13%;
           font-size: 1.5rem;
         }
-        // #where {
-        //   grid-row: 3;
-        //   padding-left: 30%;
-        //   padding-bottom: 36rem;
-        // }
-        // .where-text1 {
-        //   padding-left: 31%;
-        //   margin-top: 5.3rem;
-        //   .w-para {
-        //     margin-right: 1%;
-        //   } // padding-left: 4%;
-        //   // padding-right: 7%;
-        //   // grid-row: 4 / 6;
-        // }
 
         ////////// PART 2 ////////
         ////////// FULL-SIZE ////////
@@ -205,8 +192,6 @@ body {
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           &#bw {
-            // margin-top: 7rem;
-            // width: 100%;
             margin: 12%;
 
             margin-top: 7%;
@@ -223,7 +208,6 @@ body {
               justify-self: end;
               margin: 15%;
               margin-right: 3%;
-              // margin-left: 40%;
               margin-bottom: 9%;
             }
             #label-1 {
@@ -231,7 +215,6 @@ body {
               grid-row: 2;
               margin-left: 37%;
               margin-right: 5%;
-              // padding-bottom: 70%;
             }
             #label-2 {
               grid-column: 2;
@@ -262,7 +245,6 @@ body {
               grid-row: 2;
               place-self: center;
               text-align: center;
-              // justify-self: center;
             }
             .texts {
               grid-row: 2;
@@ -286,48 +268,10 @@ body {
           }
         }
         .btn-wrapper {
-          // margin-top: 7rem;
-          grid-row: 12;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
-
-            border-radius: 2rem;
-            transition: 0.15s;
             background: #4444a9;
-
             &:hover {
               background: #f5da3e;
-            }
-            a {
-              text-decoration: none;
-              color: white;
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
             }
           }
         }

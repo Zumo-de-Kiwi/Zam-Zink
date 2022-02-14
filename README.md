@@ -63,8 +63,8 @@
 - SUBDESIGN
 
   - [x] #400 #1 Add Ricardo Space crazy photo to scissors
-  - [ ] #402 #3 rcd_album Behind process info
-  - [ ] #403 #6 Put the sketches
+  - [...] #402 #3 rcd_album Behind process info
+  - [...] #403 #6 Put the sketches
   - [ ] #404 #11 Make bread have dfrt translate anim
   - [ ] #405 #12 Put the lamp head
   - [ ] #406 #17 blue wrapper word wrong (hours spennds)
@@ -72,10 +72,17 @@
   - [ ] #408 #19 Download link to the game
   - [ ] #409 #20 Link to download the fb frame
   - [ ] #410 Arale 2001: A Space Odyssey
+  - [x] #411 #4 place eraser pic centered
 
   - [ ] #450 #\* Add active on the hover elements
   - [ ] #451 #\* Put wiki or other links
   - [ ] #452 #\* Change oldsubDESIGN footer-r>subwrapper> div padding to 1.1rem
+  - [x] #453 #\* Add a global template for subdesign
+  - [ ] #454 #\* Improve the global template for subdesign
+  - [x] #455 #\* Update all the btm-bnt
+  - [ ] #456 #\* Center WWW on early subPages
+  - [ ] #457 #\* Clean up some comments
+  - [ ] #458 #\* more responsive on mobile with smaller text in the paragraphs
 
 - DESIGN
 

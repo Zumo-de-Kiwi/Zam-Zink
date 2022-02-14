@@ -1,5 +1,6 @@
 @import '../../../../../scss/variables';
 @import '../../../../../scss/globals';
+@import '../sub-design-global.scss';
 
 body {
   ///////////////////////////////////////////
@@ -107,6 +108,9 @@ body {
             margin-bottom: 4rem;
             margin-right: 19%;
             font-size: 1.6rem;
+            @media (max-width: 768px) {
+              font-size: 0.7em;
+            }
           }
         }
         .info-text {
@@ -136,20 +140,23 @@ body {
         #why {
           grid-row: 3;
           text-align: right;
+          align-self: flex-end;
+          padding-bottom: 7%;
         }
         .why-text1 {
-          padding-top: 6rem;
-          grid-row: 3;
+          grid-row: 4;
           text-align: right;
+          align-self: flex-start;
           .w-para {
             margin-right: 0rem;
           }
         }
         #pink {
-          grid-row: 4;
+          grid-row: 5 / 7;
           grid-column: 1 /3;
-          padding-right: 15%;
-          padding-left: 20%;
+          padding: 13%;
+          padding-bottom: 13%;
+          padding-left: 13%;
         }
 
         ////////////////////////
@@ -165,250 +172,61 @@ body {
         }
         #green {
           grid-column: 2/ 4;
-          grid-row: 3;
-          padding-right: 18%;
-          padding-left: 12%;
-          // padding-bottom: 10%;
+          grid-row: 3 / 5;
+          padding: 13%;
+          place-self: center;
         }
         #what {
-          padding-top: 7rem;
-          grid-row: 4;
+          grid-row: 5;
+          align-self: flex-end;
+          padding-bottom: 7%;
         }
         .what-text1 {
-          grid-row: 4;
-          padding-top: 13rem;
+          align-self: flex-start;
+          grid-row: 6;
+        }
+        picture {
+          img {
+            transition: 0.4s ease-out;
+            will-change: transform, box-shadow;
+            box-shadow: 0px 0px 2.7px -3px rgba(0, 0, 0, 0.022),
+              0px 0px 6.9px -3px rgba(0, 0, 0, 0.031);
+            &:hover {
+              transform: scale(1.13);
+              box-shadow: 0px 0px 2.7px -3px rgba(0, 0, 0, 0.022),
+                0px 0px 6.9px -3px rgba(0, 0, 0, 0.031),
+                0px 0px 14.2px -3px rgba(0, 0, 0, 0.039),
+                0px 0px 29.2px -3px rgba(0, 0, 0, 0.048),
+                0px 0px 80px -3px rgba(0, 0, 0, 0.07);
+            }
+          }
         }
 
-        ////////// PART 2 ////////
-        ////////// FULL-SIZE ////////
-        .full-wrapper {
-          //   grid-column: 1 / 4;
-          //   // padding-bottom: 2rem;
-          //   // WILSON
-          //   &.wrapper-1 {
-          //     grid-row: 4;
-          //     #el-1-up {
-          //       font-family: $ff-tourney;
-          //       // width: 100%;
-          //       padding-top: 7rem;
-          //       font-size: 6rem;
-          //       transform: translateY(1.5rem);
-          //       font-weight: 900;
-          //       text-align: center;
-          //       // display: block;
-          //       // content: 'WILSON';
-          //       // background-color: #949f97e9;
-          //       color: rgb(229, 107, 146);
-          //       // grid-column: 1/ 4;
-          //       border-radius: 25px 25px 0px 0px;
-          //     }
-          //     #el-1 {
-          //       padding-right: 15%;
-          //       padding-left: 15%;
-          //       padding-top: 3%;
-          //       padding-bottom: 3%;
-          //       border-radius: 1rem;
-          //       background-color: rgb(229, 107, 146);
-          //       width: 100%;
-          //       grid-row: 9;
-          //       grid-column: 1/ 4;
-          //     }
-          //     #el-1-down {
-          //       padding-bottom: 7rem;
-          //       font-size: 1.7rem;
-          //       // transform: translateY(1.5rem);
-          //       font-weight: 900;
-          //       text-align: center;
-          //       // display: block;
-          //       // background-color: #949f97e9;
-          //       color: rgb(229, 107, 146);
-          //       // grid-column: 1/ 4;
-          //       border-radius: 25px 25px 0px 0px;
-          //     }
-          //   }
-
-          //   &.wrapper-2 {
-          //     grid-row: 5;
-          //     #el-2-up {
-          //       font-family: $ff-tourney;
-          //       // width: 100%;
-          //       padding-top: 7rem;
-          //       font-size: 6rem;
-          //       transform: translateY(1.5rem);
-          //       font-weight: 900;
-          //       text-align: center;
-          //       // display: block;
-          //       // content: 'WILSON';
-          //       // background-color: #949f97e9;
-          //       color: #fcbd33;
-          //       // grid-column: 1/ 4;
-          //       border-radius: 25px 25px 0px 0px;
-          //     }
-          //     #el-2 {
-          //       padding-right: 15%;
-          //       padding-left: 15%;
-          //       padding-top: 3%;
-          //       padding-bottom: 1%;
-          //       border-radius: 1rem;
-          //       background-color: #fcbd33;
-          //       width: 100%;
-          //       grid-row: 9;
-          //       grid-column: 1/ 4;
-          //     }
-          //     #el-2::after {
-          //       // grid-row: 9;
-          //       width: 100%;
-          //       padding-top: 1rem;
-          //       padding-bottom: 1rem;
-          //       font-size: 1.7rem;
-          //       text-align: center;
-          //       display: block;
-          //       color: white;
-          //       content: '↑ She is one of my carziest friend ↑';
-          //       background-color: #fcbd33;
-          //       grid-column: 1/ 4;
-          //       border-radius: 0px 0px 25px 25px;
-          //     }
-          //     #el-2-down {
-          //       padding-bottom: 7rem;
-          //       font-size: 1.7rem;
-          //       // transform: translateY(1.5rem);
-          //       font-weight: 900;
-          //       text-align: center;
-          //       // display: block;
-          //       // background-color: #949f97e9;
-          //       color: #f5b70b;
-          //       // grid-column: 1/ 4;
-          //       border-radius: 25px 25px 0px 0px;
-          //     }
-          //   }
-          //   // HOUSE
-          //   &.wrapper-3 {
-          //     grid-row: 6;
-          //     #el-3-up {
-          //       font-family: $ff-tourney;
-          //       // width: 100%;
-          //       padding-top: 7rem;
-          //       font-size: 6rem;
-          //       transform: translateY(1.5rem);
-          //       font-weight: 900;
-          //       text-align: center;
-          //       // display: block;
-          //       // content: 'WILSON';
-          //       // background-color: #949f97e9;
-          //       color: #3a57a2;
-          //       // grid-column: 1/ 4;
-          //       border-radius: 25px 25px 0px 0px;
-          //     }
-          //     #el-3::before {
-          //       width: 100%;
-          //       padding-top: 1rem;
-          //       padding-bottom: 1rem;
-          //       font-size: 1.7rem;
-          //       text-align: center;
-          //       display: block;
-          //       color: white;
-          //       content: '↓ by Nobuhiko Obayashi ↓';
-          //       background-color: #3a57a2;
-          //       grid-column: 1/ 4;
-          //       border-radius: 0px 0px 25px 25px;
-          //     }
-          //     #el-3 {
-          //       padding-right: 15%;
-          //       padding-left: 15%;
-          //       // padding-top: 3%;
-          //       // padding-bottom: 1%;
-          //       border-radius: 1rem;
-          //       background: linear-gradient(#3a57a2, #b8bcf0);
-          //       width: 100%;
-          //       grid-row: 9;
-          //       // grid-column: 1/ 4;
-          //     }
-          //     // LEFTSIDE
-          //     // #el-3::before {
-          //     //   // grid-row: 9;
-          //     //   // content: 'ハウス';
-          //     //   width: 100%;
-          //     //   padding-top: 1rem;
-          //     //   padding-bottom: 1rem;
-          //     //   font-size: 1.7rem;
-          //     //   text-align: center;
-          //     //   display: block;
-          //     //   color: white;
-          //     //   content: '↑ She is one of my carziest friend ↑';
-          //     //   background-color: #fcbd33;
-          //     //   grid-column: 1/ 4;
-          //     //   border-radius: 0px 0px 25px 25px;
-          //     // }
-          //     #el-3::after {
-          //       width: 100%;
-          //       padding-top: 1rem;
-          //       padding-bottom: 1rem;
-          //       font-size: 3rem;
-          //       text-align: center;
-          //       display: block;
-          //       color: white;
-          //       content: 'ハ ウ ス';
-          //       background-color: #a43229;
-          //       grid-column: 1/ 4;
-          //       border-radius: 0px 0px 25px 25px;
-          //     }
-          //     #el-3-down {
-          //       padding-bottom: 7rem;
-          //       font-size: 1.5rem;
-          //       width: 60%;
-          //       margin: 0px auto;
-          //       // transform: translateY(1.5rem);
-          //       font-weight: 900;
-          //       text-align: center;
-          //       // display: block;
-          //       // background-color: #949f97e9;
-          //       color: #a43229;
-          //       // grid-column: 1/ 4;
-          //       border-radius: 25px 25px 0px 0px;
-          //     }
-          //   }
-        }
         .btn-wrapper {
-          grid-row: 10;
-          grid-column: 1/ 4;
-          display: flex;
-          justify-content: space-around;
-          padding-left: 9%;
-          padding-right: 9%;
+          // grid-row: 10;
+          // grid-column: 1/ 4;
+          // display: flex;
+          // justify-content: space-around;
+          // padding-left: 9%;
+          // padding-right: 9%;
           .btns {
-            text-align: center;
-            font-size: 2rem;
-            border-radius: 2rem;
-            transition: 0.15s;
+            // text-align: center;
+            // font-size: 2rem;
+            // border-radius: 2rem;
+            // transition: 0.15s;
             background: #dc3a78;
             &:hover {
               background: #f261b1;
             }
             a {
-              text-decoration: none;
-              color: white;
-              height: 6rem;
-              line-height: 6rem;
-              min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
-            }
-            &.prev {
-              a {
-                cursor: $cursor-arrow-hand;
-              }
-            }
-            &.back-design {
-              a {
-                cursor: $cursor-pointer-hand-flip;
-              }
-            }
-            &.next {
-              a {
-                cursor: $cursor-right-hand;
-              }
+              // text-decoration: none;
+              // color: white;
+              // height: 6rem;
+              // line-height: 6rem;
+              // min-width: 18%;
+              // padding: 2rem;
+              // padding-right: 4rem;
+              // padding-left: 4rem;
             }
           }
         }
