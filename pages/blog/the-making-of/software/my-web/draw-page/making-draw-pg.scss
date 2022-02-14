@@ -255,8 +255,25 @@ body {
           &#comeau-web {
             &::after {
               // bottom: -4rem;
-              content: 'A screenshot from Josh Comeau.';
+              content: "The animation on Josh Comeau's site.";
             }
+            &:hover,
+            &:active {
+              &::after {
+                bottom: -5.7rem;
+                opacity: 0.79;
+                font-size: 1em;
+                padding: 0.7rem;
+              }
+            }
+          }
+          &#my-drawing-site {
+            &::after {
+              // bottom: -4rem;
+              content: 'The animation on my Drawings site.';
+              transform: translateY(-4rem);
+            }
+            padding-bottom: 4rem;
             &:hover,
             &:active {
               &::after {
@@ -278,15 +295,19 @@ body {
           padding-top: 4.1rem;
           margin-bottom: 7rem;
           border-radius: 3rem;
+          font-size: 0.8em;
 
           .p-header {
             text-transform: uppercase;
             font-weight: 400;
             margin-top: 6.1rem;
             margin-bottom: 3rem;
-            font-size: 5rem;
+            font-size: 4rem;
           }
-
+          // &.bigger-p {
+          // font-size: 1.2em;
+          // font-weight: 300;
+          // }
           .no-margin-top {
             margin-top: 0rem;
           }
@@ -294,9 +315,12 @@ body {
             margin-bottom: 0rem;
           }
           .paragraph {
-            font-size: 1.6rem;
+            font-size: 1em;
             margin-bottom: 30px;
-            line-height: 1.4;
+            // line-height: 1.4;
+          }
+          picture::after {
+            font-size: 0.9em;
           }
         }
       }

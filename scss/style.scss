@@ -705,11 +705,14 @@ footer {
   .footer {
     position: fixed;
     bottom: 0px;
-    background-color: rgb(191, 191, 191); //rgb(143, 144, 193);
+    background-color: rgb(
+      220,
+      216,
+      216
+    ); // $lighter-gray; // ; //rgb(143, 144, 193);
     transition: 0.5s;
 
     margin: 0 auto;
-    // padding-top: 1.3rem;
     padding-top: 1rem;
     margin-bottom: 1.3rem;
     max-width: 730px;
@@ -733,7 +736,8 @@ footer {
         font-size: 1.7rem;
         font-variation-settings: 'MONO' 0.4, 'CASL' 0, 'wght' $font-weight-light,
           $slnt;
-        color: $background-color;
+        color: $light-gray; //rgb(165, 165, 165); //$light-gray; //$background-color;
+
         padding: 12px;
         padding-left: 20px;
         padding-right: 20px;
@@ -744,19 +748,17 @@ footer {
         will-change: font-variation-settings;
         a {
           color: inherit;
+
           text-decoration: none;
           &.github {
             cursor: $cursor-startreck-hand;
           }
         }
         &.workingSpan {
-          // animation: widthness 2s ease 10;
-          color: $skillshare-green;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
             'wght' $font-weight-light;
         }
         &.dangerSpan {
-          // animation: slintness 2s ease 10s 17;
           color: $josh-blue-white;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.5,
             'wght' $font-weight-light, 'CRSV' 1;
@@ -764,7 +766,7 @@ footer {
       }
     }
     #githublink {
-      color: $skillshare-green;
+      color: rgb(242, 242, 242);
       font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
       font-size: calc(0.4vw + 7px);
 
@@ -772,6 +774,9 @@ footer {
       margin-bottom: 1.7rem;
       margin-top: 1rem;
 
+      #heart::after {
+        content: '🤍';
+      }
       a {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -800,33 +805,36 @@ footer {
         }
       }
       .footerSpan {
-        &.workingSpan {
-          // font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
-          //   'wght' $font-weight-light;
-          animation: widthness 2s ease infinite;
+        &.futureSpan {
           color: $skillshare-green;
+          transition: 0.2s ease-in;
+          &:hover {
+            animation: none;
+          }
+        }
+        &.workingSpan {
+          color: $skillshare-green;
+          transition: 0.2s ease-in;
+          &:hover {
+            // color: $font-linked-color;
+            color: white;
+            animation: widthness 1s ease-out infinite alternate;
+          }
         }
         @keyframes widthness {
           0% {
             font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
-              'wght' $font-weight-lightest;
-          }
-          30% {
-            font-variation-settings: 'MONO' 0.4, 'CASL' 0.1,
-              'wght' $font-weight-bold;
-          }
-          70% {
-            font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
-              'wght' $font-weight-normal;
+              'wght' $font-weight-lighter;
           }
           100% {
             font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
-              'wght' $font-weight-lightest;
+              'wght' $font-weight-heavy;
           }
         }
         &.dangerSpan {
-          animation: slintness 2s ease infinite;
+          transition: 0.3s;
           color: $josh-blue-white;
+          animation: slintness 2s ease infinite;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.5,
             'wght' $font-weight-light, 'CRSV' 1;
         }
@@ -845,6 +853,9 @@ footer {
       }
       #githublink {
         color: $skillshare-green;
+        #heart::after {
+          content: '💚';
+        }
       }
     }
     @media (max-width: 670px) {

@@ -620,11 +620,12 @@ body main .blog-wrapper .ps-wrapper picture#penny-web::after {
     padding-top: 4.1rem;
     margin-bottom: 7rem;
     border-radius: 3rem;
+    font-size: 0.8em;
   }
   body main .blog-wrapper .ps-wrapper .p-header {
-    font-size: 2.7rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 4rem;
   }
   body main .blog-wrapper .ps-wrapper h2 {
     margin-top: 6.1rem;
@@ -638,9 +639,12 @@ body main .blog-wrapper .ps-wrapper picture#penny-web::after {
     margin-bottom: 0rem;
   }
   body main .blog-wrapper .ps-wrapper .paragraph {
-    font-size: 1.6rem;
+    font-size: 1em;
     margin-bottom: 30px;
     line-height: 1.4;
+  }
+  body main .blog-wrapper .ps-wrapper picture::after {
+    font-size: 0.9em;
   }
 }
 

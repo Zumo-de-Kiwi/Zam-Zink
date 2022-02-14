@@ -1016,7 +1016,7 @@ footer {
 footer .footer {
   position: fixed;
   bottom: 0px;
-  background-color: #bfbfbf;
+  background-color: #dcd8d8;
   transition: 0.5s;
   margin: 0 auto;
   padding-top: 1rem;
@@ -1046,7 +1046,7 @@ footer .footer .line span {
   white-space: nowrap;
   font-size: 1.7rem;
   font-variation-settings: "MONO" 0.4, "CASL" 0, "wght" 500, "slnt" 0;
-  color: #fcfaf8;
+  color: #a6a6a6;
   padding: 12px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1067,7 +1067,6 @@ footer .footer .line .footerSpan a.github {
 }
 
 footer .footer .line .footerSpan.workingSpan {
-  color: #00ff84;
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
 
@@ -1077,12 +1076,16 @@ footer .footer .line .footerSpan.dangerSpan {
 }
 
 footer .footer #githublink {
-  color: #00ff84;
+  color: #f2f2f2;
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
   font-size: calc(0.4vw + 7px);
   text-align: center;
   margin-bottom: 1.7rem;
   margin-top: 1rem;
+}
+
+footer .footer #githublink #heart::after {
+  content: '🤍';
 }
 
 footer .footer #githublink a {
@@ -1113,29 +1116,38 @@ footer .footer:hover .closeBtn:hover, footer .footer:hover .closeBtn:active {
   color: white;
 }
 
-footer .footer:hover .footerSpan.workingSpan {
-  animation: widthness 2s ease infinite;
+footer .footer:hover .footerSpan.futureSpan {
   color: #00ff84;
+  transition: 0.2s ease-in;
+}
+
+footer .footer:hover .footerSpan.futureSpan:hover {
+  animation: none;
+}
+
+footer .footer:hover .footerSpan.workingSpan {
+  color: #00ff84;
+  transition: 0.2s ease-in;
+}
+
+footer .footer:hover .footerSpan.workingSpan:hover {
+  color: white;
+  animation: widthness 1s ease-out infinite alternate;
 }
 
 @keyframes widthness {
   0% {
-    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 300;
-  }
-  30% {
-    font-variation-settings: "MONO" 0.4, "CASL" 0.1, "wght" 690;
-  }
-  70% {
-    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 620;
+    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 400;
   }
   100% {
-    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 300;
+    font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 800;
   }
 }
 
 footer .footer:hover .footerSpan.dangerSpan {
-  animation: slintness 2s ease infinite;
+  transition: 0.3s;
   color: #eff1f5;
+  animation: slintness 2s ease infinite;
   font-variation-settings: "MONO" 0.4, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }
 
@@ -1153,6 +1165,10 @@ footer .footer:hover .footerSpan.dangerSpan {
 
 footer .footer:hover #githublink {
   color: #00ff84;
+}
+
+footer .footer:hover #githublink #heart::after {
+  content: '💚';
 }
 
 @media (max-width: 670px) {

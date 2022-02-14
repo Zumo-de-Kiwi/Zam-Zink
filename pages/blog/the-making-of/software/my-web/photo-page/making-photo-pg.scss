@@ -287,13 +287,14 @@ body {
           padding-top: 4.1rem;
           margin-bottom: 7rem;
           border-radius: 3rem;
+          font-size: 0.8em;
 
           .p-header {
             text-transform: uppercase;
             font-weight: 400;
             margin-top: 6.1rem;
             margin-bottom: 3rem;
-            font-size: 5rem;
+            font-size: 4rem;
           }
 
           .no-margin-top {
@@ -303,9 +304,11 @@ body {
             margin-bottom: 0rem;
           }
           .paragraph {
-            font-size: 1.6rem;
+            font-size: 1em;
             margin-bottom: 30px;
-            line-height: 1.4;
+          }
+          picture::after {
+            font-size: 0.9em;
           }
         }
       }

@@ -242,16 +242,18 @@ body {
           padding-top: 4.1rem;
           margin-bottom: 7rem;
           border-radius: 3rem;
+          font-size: 0.8em;
 
           .p-header {
-            font-size: 2.7rem;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 400;
+            font-size: 4rem;
+            // font-size: 2.7rem;
           }
           h2 {
             margin-top: 6.1rem;
             margin-bottom: 2rem;
-            font-size: 5rem;
+            font-size: 5rem; //
           }
           .no-margin-top {
             margin-top: 0rem;
@@ -260,9 +262,13 @@ body {
             margin-bottom: 0rem;
           }
           .paragraph {
-            font-size: 1.6rem;
+            // font-size: 1.6rem;
+            font-size: 1em;
             margin-bottom: 30px;
             line-height: 1.4;
+          }
+          picture::after {
+            font-size: 0.9em;
           }
         }
       }
