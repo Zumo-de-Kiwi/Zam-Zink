@@ -12,20 +12,20 @@
 
 - INDEX:
 
-  #00x [Home](#0.-HOME)
-  #06x [Home](#0.-ABOUT-+-CONTACT)
-  #1xx [Global](#1.-GLOBAL)
-  #2xx [Draw](#2.-DRAW)
-  #3xx -
-  #40x [Sub-Design](#4.-SUBDESIGN)
-  #45x [Sub-Design-Global](#4.-DESIGN)
-  #47x [Design-Home](#4.-DESIGN)
+  - #00x [Home](#0.-HOME)
+  - #06x [Home](#0.-ABOUT-+-CONTACT)
+  - #1xx [Global](#1.-GLOBAL)
+  - #2xx [Draw](#2.-DRAW)
+  - #3xx -
+  - #40x [Sub-Design](#4.-SUBDESIGN)
+  - #45x [Sub-Design-Global](#4.-DESIGN)
+  - #47x [Design-Home](#4.-DESIGN)
 
-  #5xx [Blog](#5.-BLOG)
-  #6xx [UX](#6.-UX)
-  #7xx [Photo](#7.-PHOTO)
-  #8xx [Other-Works](#8.-OTHER-WORKS)
-  #axx [Office-Work](#A.-OFFICE-WORK)
+  - #5xx [Blog](#5.-BLOG)
+  - #6xx [UX](#6.-UX)
+  - #7xx [Photo](#7.-PHOTO)
+  - #8xx [Other-Works](#8.-OTHER-WORKS)
+  - #axx [Office-Work](#A.-OFFICE-WORK)
 
 ### 0. HOME
 
