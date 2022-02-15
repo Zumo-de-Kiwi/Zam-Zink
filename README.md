@@ -12,9 +12,9 @@
 
 - INDEX:
 
-  - #00x [Home](#0.-HOME)
-  - #06x [Home](#0.-ABOUT-+-CONTACT)
-  - #1xx [Global](#1.-GLOBAL)
+  - #00x [Home](#0.-home)
+  - #06x [About-Contact](#0.-ABOUT-+-CONTACT)
+  - #1xx [Global](#1.-global)
   - #2xx [Draw](#2.-DRAW)
   - #3xx -
   - #40x [Sub-Design](#4.-SUBDESIGN)
