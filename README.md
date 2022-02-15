@@ -10,7 +10,7 @@
 
 ## Now working on
 
-- To-do [list](https://github.com/Zumo-de-Kiwi/Zam-Zink/blob/main/MD/old-todo.md)
+- Here is my To-do [list](https://github.com/Zumo-de-Kiwi/Zam-Zink/blob/main/MD/todo-list.md).
 
 ## What's next?
 

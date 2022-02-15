@@ -64,6 +64,8 @@
 - [x] #413 #17 Correct the text in the teletext pics
 - [...] #414 #3.. Reajust some btm-btn
 
+## 4. SUBDESIGN (globally)
+
 - [ ] #450 #\* Add active on the hover elements
 - [ ] #451 #\* Put wiki or other links
 - [ ] #452 #\* Change oldsubDESIGN footer-r>subwrapper> div padding to 1.1rem
