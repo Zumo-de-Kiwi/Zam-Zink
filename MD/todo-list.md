@@ -20,20 +20,20 @@
 ## 0. HOME
 
 - [x] #010 One more thing :active for iPad mobile
-- [...] #012 Make my LOGO returns, maybe with buttons inside itself
+- [ ] #012 **...**Make my LOGO returns, maybe with buttons inside itself
 - [ ] #013 One more thing :active for iPad mobile
-- [F] #014 [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
+- [ ] #014 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
 - [ ] #015 Implement an animated char that change its variable when hover or not with trans/or not
 - [x] #020 Use your logo for home loading. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
 - [x] #021 Put char text for logo for home loading
-- [F] #022 Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
+- [ ] #022 **FUTURE** Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
 - [x] #040 Appears a messenger bubble when click on the Stickers link, so you need to have external linked it
 
 ## 0. ABOUT + CONTACT
 
 - [x] #060 Host the pics of about me
 - [ ] #061 Put funny representation pic on hover over tainan and sabadell
-- [f] #070 About overflow on mobile
+- [ ] #070 **FUTURE** About overflow on mobile
 
 ## 1. GLOBAL
 
@@ -46,13 +46,13 @@
 - [x] #200 Add jp-poster sketch
 - [x] #201 Update some big size (jpg>100kB) draw pics with [webp]
 - [ ] #202 The intro of café in DRAWINGS
-- [\] #203 Make DRAW more responsive
+- [ ] #203 Make DRAW more responsive
 
 ## 4. SUBDESIGN
 
 - [x] #400 #1 Add Ricardo Space crazy photo to scissors
-- [...] #402 #3 rcd_album Behind process info
-- [...] #403 #6 Put the sketches
+- [ ] #402 **...** #3 rcd_album Behind process info
+- [ ] #403 **...** #6 Put the sketches
 - [x] #404 #11 Make bread have dfrt translate anim
 - [ ] #405 #12 Put the lamp head on the corner
 - [ ] #406 #17 blue wrapper word wrong (hours spennds)
@@ -62,7 +62,7 @@
 - [x] #411 #4 Place eraser pic centered
 - [x] #412 #16 Add the video
 - [x] #413 #17 Correct the text in the teletext pics
-- [...] #414 #3.. Reajust some btm-btn
+- [ ] #414 **...** #3.. Reajust some btm-btn
 
 ## 4. SUBDESIGN (globally)
 
@@ -89,7 +89,7 @@
 
 ## 5. BLOG
 
-- [...] #503 Put the design process webpage sketches pics
+- [ ] #503 ...Put the design process webpage sketches pics
 - [ ] #504 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
 - [ ] #505 Arale 2001: A Space Odyssey
 
