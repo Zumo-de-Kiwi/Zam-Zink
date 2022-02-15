@@ -19,62 +19,61 @@
 
 ## 0. HOME
 
-- [x] #010 One more thing :active for iPad mobile
-- [ ] #012 **...**Make my LOGO returns, maybe with buttons inside itself
-- [ ] #013 One more thing :active for iPad mobile
+- [x] #010 One more thing `:active` for iPad mobile
+- [ ] #012 **...** Make my LOGO returns, maybe with`buttons` inside itself
+- [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
 - [ ] #014 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
-- [ ] #015 Implement an animated char that change its variable when hover or not with trans/or not
-- [x] #020 Use your logo for home loading. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
+- [x] #020 Use your logo for home `loading`. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
 - [x] #021 Put char text for logo for home loading
-- [ ] #022 **FUTURE** Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
+- [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a `@keyframe animation` directly
 - [x] #040 Appears a messenger bubble when click on the Stickers link, so you need to have external linked it
 
 ## 0. ABOUT + CONTACT
 
 - [x] #060 Host the pics of about me
-- [ ] #061 Put funny representation pic on hover over tainan and sabadell
-- [ ] #070 **FUTURE** About overflow on mobile
+- [ ] #061 Put funny representation pic on `hover` over tainan and sabadell
+- [ ] #070 **FUTURE** About `overflow` on mobile
 
 ## 1. GLOBAL
 
-- [x] #100 (adjust globally) emoji cursor to be in his top left corner
+- [x] #100 (adjust globally) emoji cursor to be in his `top left` corner
 - [ ] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
-- [x] #102 Improvements for emoji cursor be displayed well on Windows and Mac.
+- [x] #102 Improvements for emoji `cursor` be displayed well on Windows and Mac.
 
 ## 2. DRAW
 
 - [x] #200 Add jp-poster sketch
-- [x] #201 Update some big size (jpg>100kB) draw pics with [webp]
-- [ ] #202 The intro of café in DRAWINGS
+- [x] #201 Update some big size (jpg>100kB) draw pics with `webp`
+- [ ] #202 The intro of **café** in DRAWINGS
 - [ ] #203 Make DRAW more responsive
 
 ## 4. SUBDESIGN
 
-- [x] #400 #1 Add Ricardo Space crazy photo to scissors
-- [ ] #402 **...** #3 rcd_album Behind process info
-- [ ] #403 **...** #6 Put the sketches
-- [x] #404 #11 Make bread have dfrt translate anim
-- [ ] #405 #12 Put the lamp head on the corner
-- [ ] #406 #17 blue wrapper word wrong (hours spennds)
-- [ ] #407 #18 On the footer say it is kare
-- [ ] #408 #19 Download link to the game
-- [ ] #409 #20 Link to download the fb frame
-- [x] #411 #4 Place eraser pic centered
-- [x] #412 #16 Add the video
-- [x] #413 #17 Correct the text in the teletext pics
-- [ ] #414 **...** #3.. Reajust some btm-btn
+- [x] #400 **#1** Add Ricardo Space crazy photo to scissors
+- [ ] #402 **...** **#3** rcd_album Behind process info
+- [ ] #403 **...** **#6** Put the sketches
+- [x] #404 **#11** Make bread have dfrt translate `anim`
+- [ ] #405 **#12** Put the lamp head on the corner
+- [ ] #406 **#17** blue wrapper word wrong (hours spennds)
+- [ ] #407 **#18** On the `footer` say it is kare
+- [ ] #408 **#19** Download link to the game
+- [ ] #409 **#20** Link to download the fb frame
+- [x] #411 **#4** Place eraser pic centered
+- [x] #412 **#16** Add the video
+- [x] #413 **#17** Correct the `text` in the teletext pics
+- [ ] #414 **...** #3.. Reajust some `btm-btn`
 
 ## 4. SUBDESIGN (globally)
 
-- [ ] #450 #\* Add active on the hover elements
+- [ ] #450 #\* Add `active` on the `hover` elements
 - [ ] #451 #\* Put wiki or other links
-- [ ] #452 #\* Change oldsubDESIGN footer-r>subwrapper> div padding to 1.1rem
-- [x] #453 #\* Add a global template for subdesign
+- [ ] #452 #\* Change oldsubDESIGN `footer-r>subwrapper>` **div** `padding` to 1.1rem
+- [x] #453 #\* Add a **global** template for subdesign
 - [ ] #454 #\* Improve the global template for subdesign
-- [x] #455 #\* Update all the btm-bnt
-- [ ] #456 #\* Center WWW on early subPages
+- [x] #455 #\* Update all the `btm-bnt`
+- [ ] #456 #\* Center `WWW` on early subPages
 - [ ] #457 #\* Clean up some comments
-- [x] #458 #\* more responsive on mobile with smaller text in the paragraphs
+- [x] #458 #\* more responsive on mobile with smaller text in the `paragraphs`
 
 ## 4. DESIGN
 
