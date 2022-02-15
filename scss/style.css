@@ -1045,9 +1045,14 @@ footer .footer .closeBtn {
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400, "slnt" 0;
   font-size: 2rem;
   top: 0rem;
-  left: 0.5rem;
-  padding: 1.2rem;
+  padding: 1.1rem 1.7rem;
   transition: 0.3s;
+  right: 0rem;
+}
+
+footer .footer .closeBtn.onLeft {
+  right: unset;
+  left: 0rem;
 }
 
 footer .footer .line {

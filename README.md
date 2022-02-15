@@ -29,7 +29,7 @@
 ### 0. HOME
 
 - [x] #010 One more thing :active for iPad mobile
-- [x] #020 Use your logo for home loading. pop up uno tras de otro,, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
+- [x] #020 Use your logo for home loading. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
 - [x] #021 Put char text for logo for home loading
 
 - [F] #022 Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
@@ -83,12 +83,12 @@
 ### 4 DESIGN
 
 - [x] #470 Adjust the size of the `<p>` `<footer>` and more to have smaller text on mobile.
-- [ ] #471 Explaination on hover
+- [ ] #471 Explanation on hover
 - [ ] #472 Poner juntas al peón
 - [ ] #473 Put weather FX
-- [ ] #474 Herzt word is mis writted and the outline need to be thinner
+- [ ] #474 Hertz word is mis written and the outline need to be thinner
 - [ ] #475 Make the crab say no swinging when hover
-- [ ] #476 Let visual fx come out form the radio in DESIGN home
+- [ ] #476 Let visual fx come out from the radio in DESIGN home
 - [ ] #477 Make the ASCII into two parts for every word for better resp
 
 ### 5 BLOG

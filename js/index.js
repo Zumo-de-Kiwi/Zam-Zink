@@ -1,5 +1,10 @@
 /////////////////////////////////
-///////// preloader /////////
+/////// FOR HOME PAGE ///////////
+
+/////////////////////////////////
+/////////////////////////////////
+///////// preloader ////////////
+/////////////////////////////////
 /////////////////////////////////
 window.addEventListener('load', () => {
   const preloader = document.querySelector('.preloader');
@@ -7,18 +12,9 @@ window.addEventListener('load', () => {
 });
 
 /////////////////////////////////
-///////// Close btn /////////
-/////////////////////////////////
-const closeBtn = document.querySelector('.closeBtn');
-const footer = document.querySelector('.footer');
-
-const closeFooter = function () {
-  footer.classList.add('hidden');
-};
-closeBtn.addEventListener('click', closeFooter);
-
 /////////////////////////////////
 ////////// HEY CHANGES ///////////
+/////////////////////////////////
 /////////////////////////////////
 // VERSION D with fade
 $(function () {
@@ -85,3 +81,27 @@ stickersLink.addEventListener('click', linkPressed);
 bgClose.addEventListener('click', closeStickers);
 stickersX.addEventListener('click', closeStickers);
 // stickersX.addEventListener('click', stickersXPressed);
+
+/////////////////////////////////
+/////////////////////////////////
+///////// Close btn /////////////
+/////////////////////////////////
+/////////////////////////////////
+const closeBtn = document.querySelector('.closeBtn');
+const footer = document.querySelector('.footer');
+
+const closeFooter = function () {
+  footer.classList.add('hidden');
+};
+closeBtn.addEventListener('click', closeFooter);
+//////////////////////////////////
+///// place left for MAC /////////
+if (navigator.platform == 'MacIntel') {
+  closeBtn.classList.add('onLeft');
+}
+// For other user system properties: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_nav_all
+console.log(`OS: ${navigator.platform}`);
+console.log(`Browser CodeName: ${navigator.appCodeName}`);
+console.log(`Browser Name: ${navigator.appName}`);
+console.log(`Browser Language: ${navigator.language}`);
+console.log(`Cookies Enabled: ${navigator.cookieEnabled}`);
