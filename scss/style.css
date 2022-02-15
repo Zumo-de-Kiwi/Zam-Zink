@@ -105,11 +105,11 @@ body .left-arrow .link-a {
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: #b9cabf;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(14px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
 body .left-arrow .link-a #left-arrow {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(14px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
 
@@ -538,7 +538,7 @@ body {
 
 .main .navigation .logo-frame .logo-svg {
   height: 2.5rem;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👇</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
 .main .navigation .logo-frame .logo-svg .hc-logo {
@@ -565,7 +565,7 @@ body {
   padding: 0.5rem;
   color: #cccccc;
   text-decoration: none;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='27' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(14px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.45s;
 }
 
