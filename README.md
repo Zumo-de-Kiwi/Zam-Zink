@@ -13,19 +13,19 @@
 - INDEX:
 
   - #00x [Home](#0-home)
-  - #06x [About-Contact](#0-ABOUT-+-CONTACT)
-  - #1xx [Global](#1.-global)
-  - #2xx [Draw](#2.-draw)
+  - #06x [About-Contact](#0-about-+-contact)
+  - #1xx [Global](#1-global)
+  - #2xx [Draw](#2-draw)
   - #3xx -
-  - #40x [Sub-Design](#4subdesign)
+  - #40x [Sub-Design](#4-subdesign)
   - #45x [Sub-Design-Global](#4-design)
   - #47x [Design-Home](#4-design)
 
   - #5xx [Blog](#5-blog)
-  - #6xx [UX](#6.-UX)
-  - #7xx [Photo](#7-PHOTO)
-  - #8xx [Other-Works](#8.-OTHER-WORKS)
-  - #axx [Office-Work](#A.-OFFICE-WORK)
+  - #6xx [UX](#6-ux)
+  - #7xx [Photo](#7-photo)
+  - #8xx [Other-Works](#8-other-works)
+  - #axx [Office-Work](#a-office-work)
 
 ### 0. HOME
 
