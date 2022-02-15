@@ -12,51 +12,53 @@
 
 - INDEX:
 
-  0. #0xx Home
-  1. #1xx Global
-  2. #2xx Draw
-  3. #3xx -
-  4. #40x Sub-Design
-     #45x Sub-Design Global
-     #47x Design Home
-  5. #5xx Blog
-  6. #6xx UX
-  7. #7xx Photo
-  8. #8xx Small Sections
-  9. #9xx -
-  10. #axx Office Work
+  #00x [Home](#0.-HOME)
+  #06x [Home](#0.-ABOUT-+-CONTACT)
+  #1xx [Global](#1.-GLOBAL)
+  #2xx [Draw](#2.-DRAW)
+  #3xx -
+  #40x [Sub-Design](#4.-SUBDESIGN)
+  #45x [Sub-Design-Global](#4.-DESIGN)
+  #47x [Design-Home](#4.-DESIGN)
+
+  #5xx [Blog](#5.-BLOG)
+  #6xx [UX](#6.-UX)
+  #7xx [Photo](#7.-PHOTO)
+  #8xx [Other-Works](#8.-OTHER-WORKS)
+  #axx [Office-Work](#A.-OFFICE-WORK)
 
 ### 0. HOME
 
 - [x] #010 One more thing :active for iPad mobile
+- [...] #012 Make my log returns, maybe with buttons inside itself
+- [ ] #013 One more thing :active for iPad mobile
+- [F] #014 [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
+- [ ] #015 Implement an animated char that change its variable when hover or not with trans/or not
 - [x] #020 Use your logo for home loading. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
 - [x] #021 Put char text for logo for home loading
-
 - [F] #022 Make the loading your name changing its Variable Font Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a @keyframe animation directly
-- [F] #030 [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
 - [x] #040 Appears a messenger bubble when click on the Stickers link, so you need to have external linked it
-- [ ] #050 Implement an animated char that change its variable when hover or not with trans/or not
+
+### 0. ABOUT + CONTACT
+
+- [x] #060 Host the pics of about me
+- [ ] #061 Put funny representation pic on hover over tainan and sabadell
+- [f] #070 About overflow on mobile
 
 ### 1. GLOBAL
 
 - [x] #100 (adjust globally) emoji cursor to be in his top left corner
 - [ ] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
-- [ ] #102 Improvements for emoji cursor be displayed well on Windows and Mac.
+- [x] #102 Improvements for emoji cursor be displayed well on Windows and Mac.
 
-### 0 ABOUT + CONTACT
-
-- [x] #060 Host the pics of about me
-- [f] #070 About overflow on mobile
-- [ ] #080 Put funny representation pic on hover over tainan and sabadell
-
-### 2 DRAW
+### 2. DRAW
 
 - [x] #200 Add jp-poster sketch
 - [x] #201 Update some big size (jpg>100kB) draw pics with [webp]
 - [ ] #202 The intro of café in DRAWINGS
 - [\] #203 Make DRAW more responsive
 
-### 4 SUBDESIGN
+### 4. SUBDESIGN
 
 - [x] #400 #1 Add Ricardo Space crazy photo to scissors
 - [...] #402 #3 rcd_album Behind process info
@@ -70,6 +72,7 @@
 - [x] #411 #4 Place eraser pic centered
 - [x] #412 #16 Add the video
 - [x] #413 #17 Correct the text in the teletext pics
+- [...] #414 #3.. Reajust some btm-btn
 
 - [ ] #450 #\* Add active on the hover elements
 - [ ] #451 #\* Put wiki or other links
@@ -81,7 +84,7 @@
 - [ ] #457 #\* Clean up some comments
 - [x] #458 #\* more responsive on mobile with smaller text in the paragraphs
 
-### 4 DESIGN
+### 4. DESIGN
 
 - [x] #470 Adjust the size of the `<p>` `<footer>` and more to have smaller text on mobile.
 - [ ] #471 Explanation on hover
@@ -92,19 +95,19 @@
 - [ ] #476 Let visual fx come out from the radio in DESIGN home
 - [ ] #477 Make the ASCII into two parts for every word for better resp
 
-### 5 BLOG
+### 5. BLOG
 
 - [ ] #503 Put the design process webpage sketches pics
 - [ ] #504 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
 - [ ] #505 Arale 2001: A Space Odyssey
 
-### 6 UX
+### 6. UX
 
 - [ ] #600 Put a sticky labelling the five cafe names on the comparison audit
 - [ ] #601 In about talk the differences between the Chinese and latin based language layout, possibilities and limitations
 - [ ] #602 Nav menu on UX dodo
 
-### 7 PHOTO
+### 7. PHOTO
 
 - [ ] #700 Improve the close modal of ANALOG with a overlay
 - [ ] #701 Improve close modal with external links and btn resolve it
@@ -116,7 +119,7 @@
 - [ ] #707 Pass the analog test code to the final direction
 - [x] #708 Margin in #1 analog text between h3 and p
 
-### 8 OTHER WORKS
+### 8. OTHER WORKS
 
 - LOST OBJ
 

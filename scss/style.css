@@ -1125,6 +1125,48 @@ footer .footer #githublink a:hover, footer .footer #githublink a:active, footer 
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -17, "CRSV" 0;
 }
 
+footer .footer #githublink:hover a {
+  color: white;
+}
+
+@media (max-width: 670px) {
+  footer .footer {
+    position: relative;
+    font-size: 1rem;
+    bottom: 0px;
+    margin-bottom: 0rem;
+    width: 100%;
+    border-radius: 1.3rem 1.3rem 0rem 0rem;
+    padding-top: 2rem;
+  }
+  footer .footer .closeBtn {
+    font-size: 1.7rem;
+    top: 0px;
+    padding: 1rem;
+  }
+  footer .footer .closeBtn:hover {
+    font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
+    color: white;
+  }
+  footer .footer .line {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  footer .footer .line span {
+    font-size: calc(0.6vw + 0.9rem);
+    line-height: 1.8;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  footer .footer #githublink {
+    color: #eff1f5;
+    font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
+    font-size: calc(0.4vw + 7px);
+    padding-bottom: 0.8rem;
+    padding-top: 1.2rem;
+  }
+}
+
 footer .footer:hover {
   background-color: #1dd75e;
   color: white;
@@ -1192,46 +1234,4 @@ footer .footer:hover #githublink {
 
 footer .footer:hover #githublink #heart::after {
   content: '💚';
-}
-
-footer .footer #githublink:hover a {
-  color: white;
-}
-
-@media (max-width: 670px) {
-  footer .footer {
-    position: relative;
-    font-size: 1rem;
-    bottom: 0px;
-    margin-bottom: 0rem;
-    width: 100%;
-    border-radius: 1.3rem 1.3rem 0rem 0rem;
-    padding-top: 2rem;
-  }
-  footer .footer .closeBtn {
-    font-size: 1.7rem;
-    top: 0px;
-    padding: 1rem;
-  }
-  footer .footer .closeBtn:hover {
-    font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
-    color: white;
-  }
-  footer .footer .line {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-  }
-  footer .footer .line span {
-    font-size: calc(0.6vw + 0.9rem);
-    line-height: 1.8;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  footer .footer #githublink {
-    color: #00ff84;
-    font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
-    font-size: calc(0.4vw + 7px);
-    padding-bottom: 0.8rem;
-    padding-top: 1.2rem;
-  }
 }

@@ -813,6 +813,49 @@ footer {
         }
       }
     }
+
+    #githublink:hover a {
+      color: white;
+    }
+    @media (max-width: 670px) {
+      position: relative;
+      font-size: 1rem;
+      bottom: 0px;
+      margin-bottom: 0rem;
+      width: 100%;
+      border-radius: 1.3rem 1.3rem 0rem 0rem;
+      padding-top: 2rem;
+      .closeBtn {
+        font-size: 1.7rem;
+        top: 0px;
+        // left: 0rem;
+        padding: 1rem;
+        &:hover {
+          font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
+          color: white;
+        }
+      }
+      .line {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        // font-size: 0.9em;
+        span {
+          font-size: calc(0.6vw + 0.9rem);
+          line-height: 1.8;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      #githublink {
+        color: $josh-blue-white;
+        font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
+        font-size: calc(0.4vw + 7px);
+
+        // text-align: center;
+        padding-bottom: 0.8rem;
+        padding-top: 1.2rem;
+      }
+    }
     &:hover {
       background-color: $spotify-text-green;
       color: white;
@@ -876,48 +919,6 @@ footer {
         #heart::after {
           content: '💚';
         }
-      }
-    }
-    #githublink:hover a {
-      color: white;
-    }
-    @media (max-width: 670px) {
-      position: relative;
-      font-size: 1rem;
-      bottom: 0px;
-      margin-bottom: 0rem;
-      width: 100%;
-      border-radius: 1.3rem 1.3rem 0rem 0rem;
-      padding-top: 2rem;
-      .closeBtn {
-        font-size: 1.7rem;
-        top: 0px;
-        // left: 0rem;
-        padding: 1rem;
-        &:hover {
-          font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
-          color: white;
-        }
-      }
-      .line {
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
-        // font-size: 0.9em;
-        span {
-          font-size: calc(0.6vw + 0.9rem);
-          line-height: 1.8;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      }
-      #githublink {
-        color: $skillshare-green;
-        font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
-        font-size: calc(0.4vw + 7px);
-
-        // text-align: center;
-        padding-bottom: 0.8rem;
-        padding-top: 1.2rem;
       }
     }
   }

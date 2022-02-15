@@ -759,8 +759,8 @@ body main .subpage-wrapper .subpage-content-1 #sticker-banner::before {
   font-size: 1.6rem;
   text-align: center;
   display: block;
-  content: 'This is the next Sticker Pack I am preparing';
-  color: #484848;
+  content: '↓ This is the next Sticker Pack I am preparing ↓';
+  color: #373636;
   background-color: #36f860e9;
   grid-column: 1/ 4;
   border-radius: 25px 25px 0px 0px;
@@ -787,24 +787,18 @@ body main .subpage-wrapper .subpage-content-1 #sticker-banner::after {
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper {
-  grid-row: 10;
-  grid-column: 1/ 4;
+  margin-top: 2.3rem;
+  height: 9rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: flex-start;
-  height: 10rem;
-}
-
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper:hover .btns {
-  border-bottom: 9px solid #91ffab;
-  border-right: 7px solid #3f54cd;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   border-bottom: 7px solid #91ffab;
   border-right: 5px solid #3f54cd;
-  transition: color 0.3s, border 0.4s;
+  transition: color 0.3s, border 0.3s ease-out;
   will-change: border;
   background: #36f860d9;
 }
@@ -813,25 +807,23 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns a {
   color: #484848;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus {
+  margin-bottom: 4px;
   background: #3f54cd;
-  border-bottom: 9px solid #36f860d9;
-  border-right: 7px solid #91ffab;
+  border-bottom: 7px solid #36f860d9;
+  border-right: 3px solid #91ffab;
+  border-left: 3px solid #91ffab;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus a {
   color: white;
-}
-
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover ~ .btns {
-  border-bottom: 7px solid #91ffab;
-  border-right: 5px solid #3f54cd;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active {
   background: #3f54cd;
   border-bottom: 3px solid #36f860d9;
-  border-right: 2px solid #91ffab;
+  border-right: 2px solid #36f860d9;
+  border-left: 2px solid #91ffab;
 }
 
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active a {
