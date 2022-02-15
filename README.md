@@ -13,7 +13,7 @@
 - INDEX:
 
   - #00x [Home](#0-home)
-  - #06x [About-Contact](#0-about-+-contact)
+  - #06x [About-Contact](#0-about--contact)
   - #1xx [Global](#1-global)
   - #2xx [Draw](#2-draw)
   - #3xx -
