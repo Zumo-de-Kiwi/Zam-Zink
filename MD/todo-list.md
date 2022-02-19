@@ -23,6 +23,7 @@
 - [ ] #012 **...** Make my LOGO returns, maybe with`buttons` inside itself
 - [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
 - [ ] #014 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
+- [x] #015 Minor corections on the home page
 - [x] #020 Use your logo for home `loading`. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
 - [x] #021 Put char text for logo for home loading
 - [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a `@keyframe animation` directly
@@ -50,7 +51,7 @@
 ## 4. SUBDESIGN
 
 - [x] #400 **#1** Add Ricardo Space crazy photo to scissors
-- [ ] #402 **...** **#3** rcd_album Behind process info
+- [x] #402 **#3** rcd_album Behind process info
 - [ ] #403 **...** **#6** Put the sketches
 - [x] #404 **#11** Make bread have dfrt translate `anim`
 - [ ] #405 **#12** Put the lamp head on the corner
@@ -85,6 +86,7 @@
 - [ ] #475 Make the crab say no swinging when hover
 - [ ] #476 Let visual fx come out from the radio in DESIGN home
 - [ ] #477 Make the ASCII into two parts for every word for better resp
+- [ ] #478 Make the wrapper numers more understandable
 
 ## 5. BLOG
 

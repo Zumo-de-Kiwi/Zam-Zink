@@ -724,6 +724,21 @@ body main .subpage-wrapper .subpage-content-1 picture img:hover {
   box-shadow: 0px 0px 2.7px -3px rgba(0, 0, 0, 0.022), 0px 0px 6.9px -3px rgba(0, 0, 0, 0.031), 0px 0px 14.2px -3px rgba(0, 0, 0, 0.039), 0px 0px 29.2px -3px rgba(0, 0, 0, 0.048), 0px 0px 80px -3px rgba(0, 0, 0, 0.07);
 }
 
+body main .subpage-wrapper .subpage-content-1 picture#brainstorm {
+  grid-column: 1 / 4;
+  margin: 0px auto;
+  width: 70%;
+  margin-top: 4rem;
+}
+
+body main .subpage-wrapper .subpage-content-1 picture#brainstorm img {
+  filter: grayscale(97%) brightness(107%) saturate(67%);
+}
+
+body main .subpage-wrapper .subpage-content-1 picture#brainstorm img:hover {
+  filter: grayscale(0%) brightness(107%) saturate(90%);
+}
+
 body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   background: #dc3a78;
 }

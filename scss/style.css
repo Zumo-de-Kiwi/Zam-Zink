@@ -377,7 +377,7 @@ body {
 
 .special-char {
   font-family: Menlo, "Noto Sans Symbols2", "Arial Unicode MS", "Zapf Dingbats", sans-serif;
-  line-height: inherit;
+  line-height: 600;
 }
 
 .preloader {
@@ -610,7 +610,6 @@ body {
   font-family: "Recursive", Helvetica, Arial, "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-weight: 600;
   font-size: 1.31em;
-  color: #b9cabf;
   color: #cccccc;
 }
 
@@ -621,7 +620,7 @@ body {
 
 .main .content_wrap .content-name .i-am .complete-name {
   grid-row: 2;
-  color: #747474;
+  color: #a6a6a6;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
   text-decoration: none;
 }
@@ -720,6 +719,7 @@ body {
 .main .content_wrap .content-portfolio .l-line {
   font-family: Menlo, "Noto Sans Symbols2", "Arial Unicode MS", "Zapf Dingbats", sans-serif;
   color: #cccccc;
+  line-height: inherit;
   transition: 0.6s ease-out;
 }
 
@@ -783,21 +783,21 @@ body {
 }
 
 .main .content_wrap .content-portfolio .link.cursive-fun:hover {
-  animation: cursiveFun 1s infinite linear alternate;
+  animation: cursiveFun 0.7s infinite linear alternate;
 }
 
 @keyframes cursiveFun {
   0% {
-    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 1;
   }
   49% {
-    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 1;
   }
   50% {
-    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 1;
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
   }
   100% {
-    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 1;
+    font-variation-settings: "MONO" 0.2, "wght" 620, "slnt" 0, "CRSV" 0;
   }
 }
 
@@ -961,14 +961,7 @@ body {
 
 .main .content_wrap .content-portfolio:hover .link, .main .content_wrap .content-portfolio:active .link {
   color: #5f3fd5;
-  text-decoration-color: #b9cabf;
   text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: 0.4s;
-}
-
-.main .content_wrap .content-portfolio:hover .link:hover, .main .content_wrap .content-portfolio:hover .link:active, .main .content_wrap .content-portfolio:active .link:hover, .main .content_wrap .content-portfolio:active .link:active {
-  text-decoration-color: #b9cabf;
   text-decoration-color: transparent;
 }
 
@@ -996,7 +989,6 @@ body {
 }
 
 .main .content_wrap #oneMore #mailText:hover, .main .content_wrap #oneMore #mailText:active {
-  text-decoration-color: #1dd75e;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 690;
 }
 
@@ -1016,8 +1008,7 @@ body {
 
 .main .content_wrap #oneMore:hover #mailText, .main .content_wrap #oneMore:active #mailText {
   color: #5f3fd5;
-  text-decoration: underline;
-  text-decoration-color: #5f3fd5;
+  text-decoration: none;
 }
 
 footer {
