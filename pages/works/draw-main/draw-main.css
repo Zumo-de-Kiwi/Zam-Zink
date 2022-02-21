@@ -105,11 +105,11 @@ body .left-arrow .link-a {
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
   color: #b9cabf;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(14px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 
 body .left-arrow .link-a #left-arrow {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(14px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
 
@@ -1033,6 +1033,7 @@ body main #drawSections #sketchDraws #sketch-diario-1 {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 6rem;
+  filter: saturate(141%);
 }
 
 body main #drawSections #sketchDraws #rus-sketch {
@@ -1306,14 +1307,20 @@ body main #drawSections #randomDraws #fin4 {
     grid-row: 1;
     place-self: center;
   }
+  body main #drawSections #sketchDraws #sketch-diario-1 {
+    grid-column: 2/ 9;
+    padding: 7%;
+    padding-top: 23%;
+  }
   body main #drawSections #sketchDraws #zodiac-blue-red {
     grid-column: 1/ 7;
-    padding-top: 7em;
+    padding: 3%;
+    padding-bottom: 7%;
   }
-  body main #drawSections #sketchDraws #sketch-diario-1 {
+  body main #drawSections #sketchDraws #soft-robotics {
     grid-column: 4/ 10;
-    padding: 3em;
-    padding-bottom: 9em;
+    padding: 3%;
+    padding-bottom: 7%;
   }
   body main #drawSections #sketchDraws #magnolia {
     grid-column: 2/ 8;

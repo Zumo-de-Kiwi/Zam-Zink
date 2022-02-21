@@ -507,10 +507,13 @@ body {
         #zodiac-blue-red {
           padding-left: 2rem;
         }
+        #soft-robotics {
+        }
         #sketch-diario-1 {
           padding-left: 5%;
           padding-right: 5%;
           padding-bottom: 6rem;
+          filter: saturate(141%);
         }
         #rus-sketch {
           padding-left: 11%;
@@ -793,14 +796,20 @@ body {
             grid-row: 1;
             place-self: center;
           }
+          #sketch-diario-1 {
+            grid-column: 2/ 9;
+            padding: 7%;
+            padding-top: 23%;
+          }
           #zodiac-blue-red {
             grid-column: 1/ 7;
-            padding-top: 7em;
+            padding: 3%;
+            padding-bottom: 7%;
           }
-          #sketch-diario-1 {
+          #soft-robotics {
             grid-column: 4/ 10;
-            padding: 3em;
-            padding-bottom: 9em;
+            padding: 3%;
+            padding-bottom: 7%;
           }
           #magnolia {
             grid-column: 2/ 8;
