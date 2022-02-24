@@ -9,23 +9,25 @@ body {
   // color: $font-black;
   position: relative;
 
-  --background-color: #fff !important;
-  --background-light-color: #fcfaf8 !important;
-  --background-josh-bluish-color: #eff1f5 !important;
-  // --primary-heavier-font-color: #333333 !important;
+  --primary-tres-font-color: #333 !important;
+  --primary-cuatro-font-color: #444 !important;
   --primary-heavy-font-color: #5b5957 !important;
   --primary-normal-font-color: #82807d !important;
   --primary-light-font-color: #a6a6a6 !important;
   --primary-lighter-font-color: #ccc !important;
+  --background-footer-color: #dcd8d8 !important;
+  --background-josh-bluish-color: #eff1f5 !important;
+  --background-light-color: #fcfaf8 !important;
+  --background-color: #fff !important;
   --linked-font-color: #5f3fd5 !important;
   --secondary-normal-color: #1dd75e !important;
   --secondary-light-color: #00ff84 !important;
   --selected-color: #fff705 !important;
 }
-.special-char {
-  font-family: $ff-special-char;
-  line-height: 600;
-}
+// .special-char {
+//   font-family: $ff-special-char;
+//   line-height: 600;
+// }
 //////////// PRE LOADER //////////////////////
 //// ALERT! don't put it inside the body/////
 .preloader {
@@ -58,7 +60,7 @@ body {
         overflow: visible;
         transition: fill 0.3s, transform 0.5s;
         .svg-name {
-          fill: hsl(253, 64%, 54%);
+          fill: var(--linked-font-color); //hsl(253, 64%, 54%);
           // font-family: Arial, Helvetica, sans-serif;
           font-family: $ff-recursive;
           font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500, 'slnt' 0,
@@ -214,7 +216,6 @@ body {
           $slnt;
         a {
           padding: 0.5rem;
-          // color: $font-sutil-gray-color;
           color: var(--primary-lighter-font-color); //$lighter-gray;
           text-decoration: none;
           cursor: $cursor-arrow-hand;
@@ -222,7 +223,9 @@ body {
           transition: $trans-slow;
           &:hover,
           &:active {
-            color: $sutil-dark-purple-gray-color;
+            color: var(
+              --primary-heavier-font-color
+            ); //$sutil-dark-purple-gray-color;
           }
         }
         //about me
@@ -252,7 +255,6 @@ body {
       font-size: $font-size-huge;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' $font-weight-heavy,
         $slnt;
-      // color: rgb(112, 112, 112);
       color: var(
         --primary-normal-font-color
       ); // var(--primary-heavy-font-color ); change or not
@@ -266,22 +268,21 @@ body {
         font-family: 'Recursive', $ff-m-zh, $ff-emoji;
         font-weight: 600;
         font-size: 1.31em;
-        // color: $font-sutil-gray-color;
         color: var(--primary-lighter-font-color); // $lighter-gray;
       }
 
       .i-am {
         grid-row: 2;
         margin-top: 1vh;
+        // transition: $trans-slow ease;
         .complete-name {
           grid-row: 2;
-          // cursor: $cursor-please-fingers;
           color: inherit;
           text-decoration: none;
+
           .first-name,
           .family-name {
             position: relative;
-            // width: 100%;
 
             text-decoration: underline;
             text-decoration-color: var(
@@ -306,7 +307,6 @@ body {
             }
             &:hover,
             &:active {
-              text-decoration-color: $spotify-text-green;
               color: $font-linked-color;
               &::after {
                 color: $underline-color;
@@ -315,7 +315,6 @@ body {
             }
           }
           .first-name {
-            // width: 100%;
             &::after {
               content: 'about me ⤴️';
             }
@@ -341,7 +340,9 @@ body {
           .complete-name {
             .first-name,
             .family-name {
-              text-decoration-color: $spotify-text-green;
+              text-decoration-color: var(
+                --secondary-normal-color
+              ); //$spotify-text-green;
             }
           }
         }
@@ -358,7 +359,6 @@ body {
       text-align: left;
       letter-spacing: -0.32px;
       line-height: 1.5;
-      // line-height: calc(1em + 0.6rem);
       color: var(--primary-normal-font-color); // $font-light-gray;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' 600, $slnt;
       will-change: font-variation-settings;
@@ -393,7 +393,7 @@ body {
         position: relative;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0.1,
           'wght' $font-weight-normal, $slnt;
-        color: $font-linked-color;
+        color: var(--linked-font-color); //$font-linked-color;
 
         text-decoration-color: $font-sutil-gray-color;
         text-decoration-color: transparent;
@@ -522,7 +522,7 @@ body {
         &#playground:hover,
         &#playground:active {
           .angled-brackets {
-            color: $font-linked-color;
+            color: var(--linked-font-color); //$font-linked-color;
           }
         }
       }
@@ -530,7 +530,7 @@ body {
       // mini linked number
       .link-number {
         // color: $sutil-dark-purple-gray-color;
-        color: $font-linked-color;
+        color: var(--linked-font-color); //$font-linked-color;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0,
           'wght' $font-weight-bolder;
         font-size: $font-size-linkNumber;
@@ -661,7 +661,7 @@ body {
           color: $skillshare-green;
         }
         .link {
-          color: $font-linked-color;
+          color: var(--linked-font-color); //$font-linked-color;
           text-decoration: underline;
           text-decoration-color: transparent;
           // transition: 0.4s;
@@ -671,7 +671,7 @@ body {
           // }
         }
         .link-number {
-          color: $font-linked-color;
+          color: var(--linked-font-color); //$font-linked-color;
         }
       }
     }
@@ -680,7 +680,7 @@ body {
       position: relative;
 
       #dotsss {
-        color: $font-linked-color;
+        color: var(--linked-font-color); // $font-linked-color;
       }
       #mailText {
         position: absolute;
@@ -716,10 +716,8 @@ body {
       &:hover,
       &:active {
         #mailText {
-          color: $font-linked-color;
-          // text-decoration: underline;
+          color: var(--linked-font-color); //$font-linked-color;
           text-decoration: none;
-          // text-decoration-color: $font-linked-color;
         }
       }
     }
@@ -729,17 +727,12 @@ body {
 footer {
   display: flex;
   align-items: center;
-  // align-items: center;
   justify-content: center;
   position: relative;
   .footer {
     position: fixed;
     bottom: 0px;
-    background-color: rgb(
-      220,
-      216,
-      216
-    ); //var(--primary-lighter-font-color); // $lighter-gray;
+    background-color: var(--background-footer-color); // #dcd8d8;
     transition: 0.5s;
 
     margin: 0 auto;
@@ -784,10 +777,10 @@ footer {
         will-change: font-variation-settings;
 
         &.futureSpan {
-          color: $josh-blue-white;
+          color: var(--background-josh-bluish-color); //$josh-blue-white;
         }
         &.workingSpan {
-          color: $josh-blue-white;
+          color: var(--background-josh-bluish-color); //$josh-blue-white;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
             'wght' $font-weight-light;
         }
@@ -867,7 +860,7 @@ footer {
         }
       }
       #githublink {
-        color: $josh-blue-white;
+        color: var(--background-josh-bluish-color); //$josh-blue-white;
         font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
         font-size: calc(0.4vw + 7px);
 
@@ -915,7 +908,7 @@ footer {
         }
         &.dangerSpan {
           transition: 0.3s;
-          color: $josh-blue-white;
+          color: var(--background-josh-bluish-color); //$josh-blue-white;
           animation: slintness 2s ease infinite;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.5,
             'wght' $font-weight-light, 'CRSV' 1;

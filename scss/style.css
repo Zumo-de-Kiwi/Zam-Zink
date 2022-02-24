@@ -372,22 +372,20 @@ html {
 body {
   min-height: 100%;
   position: relative;
-  --background-color: #fff !important;
-  --background-light-color: #fcfaf8 !important;
-  --background-josh-bluish-color: #eff1f5 !important;
+  --primary-tres-font-color: #333 !important;
+  --primary-cuatro-font-color: #444 !important;
   --primary-heavy-font-color: #5b5957 !important;
   --primary-normal-font-color: #82807d !important;
   --primary-light-font-color: #a6a6a6 !important;
   --primary-lighter-font-color: #ccc !important;
+  --background-footer-color: #dcd8d8 !important;
+  --background-josh-bluish-color: #eff1f5 !important;
+  --background-light-color: #fcfaf8 !important;
+  --background-color: #fff !important;
   --linked-font-color: #5f3fd5 !important;
   --secondary-normal-color: #1dd75e !important;
   --secondary-light-color: #00ff84 !important;
   --selected-color: #fff705 !important;
-}
-
-.special-char {
-  font-family: Menlo, "Noto Sans Symbols2", "Arial Unicode MS", "Zapf Dingbats", sans-serif;
-  line-height: 600;
 }
 
 .preloader {
@@ -425,7 +423,7 @@ body {
 }
 
 .preloader .text-char .innerWrapper svg .svg-name {
-  fill: #5f3fd5;
+  fill: var(--linked-font-color);
   font-family: "Recursive", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-variation-settings: 'MONO' 0.3, 'CASL' 0.3, 'wght' 500, 'slnt' 0, 'CRSV' 0;
   font-weight: 700;
@@ -580,7 +578,7 @@ body {
 }
 
 .main .navigation ul li a:hover, .main .navigation ul li a:active {
-  color: #4d435b;
+  color: var(--primary-heavier-font-color);
 }
 
 .main .navigation ul li .nowPage {
@@ -660,7 +658,6 @@ body {
 .main .content_wrap .content-name .i-am .complete-name .first-name:hover, .main .content_wrap .content-name .i-am .complete-name .first-name:active,
 .main .content_wrap .content-name .i-am .complete-name .family-name:hover,
 .main .content_wrap .content-name .i-am .complete-name .family-name:active {
-  text-decoration-color: #1dd75e;
   color: #5f3fd5;
 }
 
@@ -690,7 +687,7 @@ body {
 .main .content_wrap .content-name .i-am:hover .complete-name .first-name,
 .main .content_wrap .content-name .i-am:hover .complete-name .family-name, .main .content_wrap .content-name .i-am:active .complete-name .first-name,
 .main .content_wrap .content-name .i-am:active .complete-name .family-name {
-  text-decoration-color: #1dd75e;
+  text-decoration-color: var(--secondary-normal-color);
 }
 
 .main .content_wrap .content-portfolio {
@@ -735,7 +732,7 @@ body {
 .main .content_wrap .content-portfolio .link {
   position: relative;
   font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 620, "slnt" 0;
-  color: #5f3fd5;
+  color: var(--linked-font-color);
   text-decoration-color: #b9cabf;
   text-decoration-color: transparent;
   padding-top: 1rem;
@@ -845,11 +842,11 @@ body {
 }
 
 .main .content_wrap .content-portfolio .link#playground:hover .angled-brackets, .main .content_wrap .content-portfolio .link#playground:active .angled-brackets {
-  color: #5f3fd5;
+  color: var(--linked-font-color);
 }
 
 .main .content_wrap .content-portfolio .link-number {
-  color: #5f3fd5;
+  color: var(--linked-font-color);
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 740;
   font-size: calc(0.3vw + 7px);
   text-decoration: none;
@@ -969,13 +966,13 @@ body {
 }
 
 .main .content_wrap .content-portfolio:hover .link, .main .content_wrap .content-portfolio:active .link {
-  color: #5f3fd5;
+  color: var(--linked-font-color);
   text-decoration: underline;
   text-decoration-color: transparent;
 }
 
 .main .content_wrap .content-portfolio:hover .link-number, .main .content_wrap .content-portfolio:active .link-number {
-  color: #5f3fd5;
+  color: var(--linked-font-color);
 }
 
 .main .content_wrap #oneMore {
@@ -984,7 +981,7 @@ body {
 }
 
 .main .content_wrap #oneMore #dotsss {
-  color: #5f3fd5;
+  color: var(--linked-font-color);
 }
 
 .main .content_wrap #oneMore #mailText {
@@ -1016,7 +1013,7 @@ body {
 }
 
 .main .content_wrap #oneMore:hover #mailText, .main .content_wrap #oneMore:active #mailText {
-  color: #5f3fd5;
+  color: var(--linked-font-color);
   text-decoration: none;
 }
 
@@ -1030,7 +1027,7 @@ footer {
 footer .footer {
   position: fixed;
   bottom: 0px;
-  background-color: #dcd8d8;
+  background-color: var(--background-footer-color);
   transition: 0.5s;
   margin: 0 auto;
   padding-top: 1rem;
@@ -1077,11 +1074,11 @@ footer .footer .line .footerSpan {
 }
 
 footer .footer .line .footerSpan.futureSpan {
-  color: #eff1f5;
+  color: var(--background-josh-bluish-color);
 }
 
 footer .footer .line .footerSpan.workingSpan {
-  color: #eff1f5;
+  color: var(--background-josh-bluish-color);
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
 
@@ -1159,7 +1156,7 @@ footer .footer #githublink:hover a {
     padding-right: 5px;
   }
   footer .footer #githublink {
-    color: #eff1f5;
+    color: var(--background-josh-bluish-color);
     font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
     font-size: calc(0.4vw + 7px);
     padding-bottom: 0.8rem;
@@ -1211,7 +1208,7 @@ footer .footer:hover .footerSpan.workingSpan:hover {
 
 footer .footer:hover .footerSpan.dangerSpan {
   transition: 0.3s;
-  color: #eff1f5;
+  color: var(--background-josh-bluish-color);
   animation: slintness 2s ease infinite;
   font-variation-settings: "MONO" 0.4, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }
