@@ -6,8 +6,21 @@ html {
 }
 body {
   min-height: 100%;
-  color: $font-black;
+  // color: $font-black;
   position: relative;
+
+  --background-color: #fff !important;
+  --background-light-color: #fcfaf8 !important;
+  --background-josh-bluish-color: #eff1f5 !important;
+  // --primary-heavier-font-color: #333333 !important;
+  --primary-heavy-font-color: #5b5957 !important;
+  --primary-normal-font-color: #82807d !important;
+  --primary-light-font-color: #a6a6a6 !important;
+  --primary-lighter-font-color: #ccc !important;
+  --linked-font-color: #5f3fd5 !important;
+  --secondary-normal-color: #1dd75e !important;
+  --secondary-light-color: #00ff84 !important;
+  --selected-color: #fff705 !important;
 }
 .special-char {
   font-family: $ff-special-char;
@@ -202,7 +215,7 @@ body {
         a {
           padding: 0.5rem;
           // color: $font-sutil-gray-color;
-          color: $lighter-gray;
+          color: var(--primary-lighter-font-color); //$lighter-gray;
           text-decoration: none;
           cursor: $cursor-arrow-hand;
 
@@ -240,7 +253,9 @@ body {
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' $font-weight-heavy,
         $slnt;
       // color: rgb(112, 112, 112);
-      color: $font-light-gray;
+      color: var(
+        --primary-normal-font-color
+      ); // var(--primary-heavy-font-color ); change or not
       display: grid;
       grid-template-columns: 1;
 
@@ -252,7 +267,7 @@ body {
         font-weight: 600;
         font-size: 1.31em;
         // color: $font-sutil-gray-color;
-        color: $lighter-gray;
+        color: var(--primary-lighter-font-color); // $lighter-gray;
       }
 
       .i-am {
@@ -269,7 +284,9 @@ body {
             // width: 100%;
 
             text-decoration: underline;
-            text-decoration-color: $lighter-gray;
+            text-decoration-color: var(
+              --primary-lighter-font-color
+            ); // $lighter-gray;
 
             transition: $trans-slow ease;
             will-change: font-variation-settings;
@@ -342,7 +359,7 @@ body {
       letter-spacing: -0.32px;
       line-height: 1.5;
       // line-height: calc(1em + 0.6rem);
-      color: $font-light-gray;
+      color: var(--primary-normal-font-color); // $font-light-gray;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' 600, $slnt;
       will-change: font-variation-settings;
       //link and link number WRAPPER
@@ -365,7 +382,7 @@ body {
       }
       .l-line {
         font-family: $ff-special-char;
-        color: $lighter-gray;
+        color: var(--primary-lighter-font-color); // $lighter-gray;
         line-height: inherit;
 
         transition: 0.6s ease-out;
@@ -466,13 +483,13 @@ body {
         // for coming projects
         &.coming {
           &::after {
-            // color: $font-light-gray;
+            // color:var(--primary-normal-font-color); // $font-light-gray;
             content: 'Video Projects';
           }
           &:hover,
           &:active {
             &::after {
-              color: $font-light-gray;
+              color: var(--primary-normal-font-color); //$font-light-gray;
               content: '[C🙃ming Soon]';
             }
           }
@@ -558,7 +575,7 @@ body {
             z-index: 7;
             .box {
               z-index: 7;
-              background-color: white;
+              background-color: var(--background-color); //white;
               padding: calc(0.4vw + 1.8rem);
 
               border-radius: 1.3rem;
@@ -722,7 +739,7 @@ footer {
       220,
       216,
       216
-    ); // $lighter-gray; // ; //rgb(143, 144, 193);
+    ); //var(--primary-lighter-font-color); // $lighter-gray;
     transition: 0.5s;
 
     margin: 0 auto;
@@ -732,7 +749,7 @@ footer {
     border-radius: 19px;
     .closeBtn {
       position: absolute;
-      color: white;
+      color: var(--background-color); //white;
       font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 400, $slnt;
       font-size: 2rem;
       top: 0rem;
@@ -755,7 +772,7 @@ footer {
         font-size: 1.7rem;
         font-variation-settings: 'MONO' 0.4, 'CASL' 0, 'wght' $font-weight-light,
           $slnt;
-        color: $light-gray; //rgb(165, 165, 165); //$light-gray; //$background-color;
+        color: var(--primary-light-font-color); // $light-gray;
 
         padding: 12px;
         padding-left: 20px;
@@ -775,7 +792,7 @@ footer {
             'wght' $font-weight-light;
         }
         &.dangerSpan {
-          color: white;
+          color: var(--background-color); // white;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.5,
             'wght' $font-weight-light, 'CRSV' 1;
         }
@@ -789,7 +806,7 @@ footer {
       }
     }
     #githublink {
-      color: white;
+      color: var(--background-color); // white;
       font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
       font-size: calc(0.4vw + 7px);
 
@@ -818,7 +835,7 @@ footer {
     }
 
     #githublink:hover a {
-      color: white;
+      color: var(--background-color); // white;
     }
     @media (max-width: 670px) {
       position: relative;
@@ -835,7 +852,7 @@ footer {
         padding: 1rem;
         &:hover {
           font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
-          color: white;
+          color: var(--background-color); //white;
         }
       }
       .line {
@@ -861,13 +878,13 @@ footer {
     }
     &:hover {
       background-color: $spotify-text-green;
-      color: white;
+      color: var(--background-color); //white;
       .closeBtn {
         color: rgb(193, 241, 176);
         &:hover,
         &:active {
           font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
-          color: white;
+          color: var(--background-color); // white;
         }
       }
       .footerSpan {
@@ -882,8 +899,7 @@ footer {
           color: $skillshare-green;
           transition: 0.2s ease-in;
           &:hover {
-            // color: $font-linked-color;
-            color: white;
+            color: var(--background-color); // white;
             animation: widthness 1s ease-out infinite alternate;
           }
         }

@@ -371,8 +371,18 @@ html {
 
 body {
   min-height: 100%;
-  color: #232522;
   position: relative;
+  --background-color: #fff !important;
+  --background-light-color: #fcfaf8 !important;
+  --background-josh-bluish-color: #eff1f5 !important;
+  --primary-heavy-font-color: #5b5957 !important;
+  --primary-normal-font-color: #82807d !important;
+  --primary-light-font-color: #a6a6a6 !important;
+  --primary-lighter-font-color: #ccc !important;
+  --linked-font-color: #5f3fd5 !important;
+  --secondary-normal-color: #1dd75e !important;
+  --secondary-light-color: #00ff84 !important;
+  --selected-color: #fff705 !important;
 }
 
 .special-char {
@@ -563,7 +573,7 @@ body {
 
 .main .navigation ul li a {
   padding: 0.5rem;
-  color: #cccccc;
+  color: var(--primary-lighter-font-color);
   text-decoration: none;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.45s;
@@ -599,7 +609,7 @@ body {
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.3vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 800, "slnt" 0;
-  color: #82807d;
+  color: var(--primary-normal-font-color);
   display: grid;
   grid-template-columns: 1;
 }
@@ -610,7 +620,7 @@ body {
   font-family: "Recursive", Helvetica, Arial, "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-weight: 600;
   font-size: 1.31em;
-  color: #cccccc;
+  color: var(--primary-lighter-font-color);
 }
 
 .main .content_wrap .content-name .i-am {
@@ -628,7 +638,7 @@ body {
 .main .content_wrap .content-name .i-am .complete-name .family-name {
   position: relative;
   text-decoration: underline;
-  text-decoration-color: #cccccc;
+  text-decoration-color: var(--primary-lighter-font-color);
   transition: 0.45s ease;
   will-change: font-variation-settings;
 }
@@ -688,7 +698,7 @@ body {
   text-align: left;
   letter-spacing: -0.32px;
   line-height: 1.5;
-  color: #82807d;
+  color: var(--primary-normal-font-color);
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 600, "slnt" 0;
   will-change: font-variation-settings;
 }
@@ -717,7 +727,7 @@ body {
 
 .main .content_wrap .content-portfolio .l-line {
   font-family: Menlo, "Noto Sans Symbols2", "Arial Unicode MS", "Zapf Dingbats", sans-serif;
-  color: #cccccc;
+  color: var(--primary-lighter-font-color);
   line-height: inherit;
   transition: 0.6s ease-out;
 }
@@ -805,7 +815,7 @@ body {
 }
 
 .main .content_wrap .content-portfolio .link.coming:hover::after, .main .content_wrap .content-portfolio .link.coming:active::after {
-  color: #82807d;
+  color: var(--primary-normal-font-color);
   content: '[C🙃ming Soon]';
 }
 
@@ -883,7 +893,7 @@ body {
 
 .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box {
   z-index: 7;
-  background-color: white;
+  background-color: var(--background-color);
   padding: calc(0.4vw + 1.8rem);
   border-radius: 1.3rem;
   box-shadow: 0px 0.8px 4.2px -6px rgba(0, 0, 0, 0.037), 0px 2px 10.6px -6px rgba(0, 0, 0, 0.053), 0px 4.1px 21.6px -6px rgba(0, 0, 0, 0.067), 0px 8.4px 44.5px -6px rgba(0, 0, 0, 0.083), 0px 23px 122px -6px rgba(0, 0, 0, 0.12);
@@ -1031,7 +1041,7 @@ footer .footer {
 
 footer .footer .closeBtn {
   position: absolute;
-  color: white;
+  color: var(--background-color);
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 400, "slnt" 0;
   font-size: 2rem;
   top: 0rem;
@@ -1055,7 +1065,7 @@ footer .footer .line span {
   white-space: nowrap;
   font-size: 1.7rem;
   font-variation-settings: "MONO" 0.4, "CASL" 0, "wght" 500, "slnt" 0;
-  color: #a6a6a6;
+  color: var(--primary-light-font-color);
   padding: 12px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1076,7 +1086,7 @@ footer .footer .line .footerSpan.workingSpan {
 }
 
 footer .footer .line .footerSpan.dangerSpan {
-  color: white;
+  color: var(--background-color);
   font-variation-settings: "MONO" 0.4, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }
 
@@ -1090,7 +1100,7 @@ footer .footer .line .footerSpan a.github {
 }
 
 footer .footer #githublink {
-  color: white;
+  color: var(--background-color);
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
   font-size: calc(0.4vw + 7px);
   text-align: center;
@@ -1116,7 +1126,7 @@ footer .footer #githublink a:hover, footer .footer #githublink a:active, footer 
 }
 
 footer .footer #githublink:hover a {
-  color: white;
+  color: var(--background-color);
 }
 
 @media (max-width: 670px) {
@@ -1136,7 +1146,7 @@ footer .footer #githublink:hover a {
   }
   footer .footer .closeBtn:hover {
     font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
-    color: white;
+    color: var(--background-color);
   }
   footer .footer .line {
     margin-right: 1.5rem;
@@ -1159,7 +1169,7 @@ footer .footer #githublink:hover a {
 
 footer .footer:hover {
   background-color: #1dd75e;
-  color: white;
+  color: var(--background-color);
 }
 
 footer .footer:hover .closeBtn {
@@ -1168,7 +1178,7 @@ footer .footer:hover .closeBtn {
 
 footer .footer:hover .closeBtn:hover, footer .footer:hover .closeBtn:active {
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
-  color: white;
+  color: var(--background-color);
 }
 
 footer .footer:hover .footerSpan.futureSpan {
@@ -1186,7 +1196,7 @@ footer .footer:hover .footerSpan.workingSpan {
 }
 
 footer .footer:hover .footerSpan.workingSpan:hover {
-  color: white;
+  color: var(--background-color);
   animation: widthness 1s ease-out infinite alternate;
 }
 

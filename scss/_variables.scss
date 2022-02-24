@@ -47,15 +47,15 @@ $CRSV: 'CRSV' 0; // 0.5 is Auto Cursive
 ///////////////////////////////////////
 //////////// COLORS ///////////////
 ///////////////////////////////////////
-$background-color: hsl(40, 33%, 98%);
+$background-color: #fcfaf8;
 $background-selected-color: hsl(58, 100%, 51%);
 
-$font-black: hsl(100, 4%, 14%);
-$dark-gray: hsl(0, 0%, 20%);
-$font-gray: hsl(30, 2%, 35%);
-$font-light-gray: hsl(30, 2%, 50%);
-$light-gray: hsl(0, 0%, 65%);
-$lighter-gray: hsl(0, 0%, 80%);
+$font-black: #232522;
+$dark-gray: #333333;
+$font-gray: #5b5957;
+$font-light-gray: #82807d;
+$light-gray: #a6a6a6;
+$lighter-gray: #cccccc;
 $font-sutil-gray-color: hsl(141, 14%, 76%);
 $sutil-dark-purple-gray-color: hsl(265, 15%, 31%);
 $font-dark-linked-color: hsl(265, 74%, 30%);
@@ -63,8 +63,8 @@ $font-dark-linked-color: hsl(265, 74%, 30%);
 $font-linked-color: hsl(253, 64%, 54%);
 $blue-purple-tech: hsl(245, 96%, 68%);
 $font-linked-hover-color: hsl(272, 94%, 52%);
-$font-low-contrast-color: hsl(200, 3%, 82%);
-$josh-blue-white: hsl(225, 25%, 95%);
+$font-low-contrast-color: #d0d2d2;
+$josh-blue-white: #eff1f5;
 $josh-light-blue: hsl(204, 66%, 85%);
 $underline-color: hsl(255, 74%, 74%);
 $transparent: rgba(0, 0, 0, 0);
