@@ -21,9 +21,9 @@
 
 - [ ] #001 `footer` coming soon put a expandable with more **coming soon**, **working on** and **future project**
 - [ ] #002 make the version in the `footer` a real-time-auto-updated version
-- [ ] #012 **...** Make my LOGO returns, maybe with`buttons` inside itself
+- [ ] #012 **...** Make my LOGO returns, maybe with `buttons` inside itself
 - [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
-- [ ] #014 **...** Add the sketch linkable to the DRAWINGS page
+- [x] #014 Add the sketch linkable to the DRAWINGS page
 
 - [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a `@keyframe animation` directly
 - [ ] #023 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
@@ -52,8 +52,8 @@
 
 - [ ] #202 The intro of **café** in DRAWINGS
 - [ ] #203 Make DRAW more responsive
-- [ ] #204 Put `::after` short descriptions of the draws.
-- [ ] #205 **...** Add more sketches from #2 Muji
+- [ ] #204 Put `::after` short descriptions of every drawing pic.
+- [x] #205 Add more sketches from #2 Muji
 
 - COMPLETED
 
@@ -65,7 +65,6 @@
 - [ ] #403 **...** **#6** Put the sketches
 
 - [ ] #405 **#12** Put the lamp head on the corner
-
 - [ ] #407 **#18** On the `footer` say it is kare
 - [ ] #408 **#19** Download link to the game
 - [ ] #409 **#20** Link to download the fb frame

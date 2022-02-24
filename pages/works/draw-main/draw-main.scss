@@ -390,7 +390,6 @@ body {
         );
       gap: 1rem;
       .drawSection {
-        // height: 300px;
         grid-column: 2;
         padding-bottom: 7rem;
       }
@@ -524,7 +523,19 @@ body {
           padding-right: 13%;
         }
       }
+
       #archDraws {
+        display: grid;
+        justify-items: center;
+        picture {
+          width: 83%;
+          padding-bottom: 3rem;
+        }
+        .flex-group {
+          display: flex;
+          flex-direction: column;
+          margin: 0px auto;
+        }
       }
       #randomDraws {
         display: grid;
@@ -644,8 +655,8 @@ body {
             1fr
           );
         // gap: 1rem;
-        .drawSection {
-        }
+        // .drawSection {
+        // }
         .title {
           // background-color: $my-paper-color;
           padding: 1.5rem;
@@ -813,11 +824,11 @@ body {
           }
           #magnolia {
             grid-column: 2/ 8;
-            padding-bottom: 13em;
+            padding-bottom: 13%;
           }
           #abuelo-jp {
             grid-column: 1/ 10;
-            padding-bottom: 11em;
+            padding-bottom: 11%;
           }
 
           #manga {
@@ -827,20 +838,52 @@ body {
             grid-column: 2/ 7;
             padding: 11%;
             padding-top: 3%;
-            padding-bottom: 3em;
+            padding-bottom: 3%;
           }
         }
         #archDraws {
-          display: grid;
-          // gap: 7vh;
-          place-items: center;
+          // display: grid;
+          // place-items: center;
           picture {
-            max-width: 600px;
+            max-width: 90%;
             // padding-bottom: ;
           }
-          // #trees {
-          //   margin-bottom: 0rem;
-          // }
+          #lecorbusier-scale {
+            width: 43%;
+            margin-top: 6%;
+          }
+          #trees {
+            width: 67%;
+            // margin-bottom: 0rem;
+          }
+
+          .flex-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            #lights-indoor {
+              margin-right: 2%;
+            }
+            #jacobsen {
+              margin-left: 2%;
+            }
+          }
+
+          #artek {
+            width: 50%;
+          }
+          #house-draw {
+            width: 67%;
+            justify-self: end;
+          }
+          #dk-island {
+            width: 59%;
+            justify-self: start;
+          }
+          #land-home {
+            width: 63%;
+          }
         }
         #randomDraws {
           margin-top: 7rem;

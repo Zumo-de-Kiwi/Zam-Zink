@@ -1046,6 +1046,22 @@ body main #drawSections #sketchDraws #manga {
   padding-right: 13%;
 }
 
+body main #drawSections #archDraws {
+  display: grid;
+  justify-items: center;
+}
+
+body main #drawSections #archDraws picture {
+  width: 83%;
+  padding-bottom: 3rem;
+}
+
+body main #drawSections #archDraws .flex-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
 body main #drawSections #randomDraws {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1324,11 +1340,11 @@ body main #drawSections #randomDraws #fin4 {
   }
   body main #drawSections #sketchDraws #magnolia {
     grid-column: 2/ 8;
-    padding-bottom: 13em;
+    padding-bottom: 13%;
   }
   body main #drawSections #sketchDraws #abuelo-jp {
     grid-column: 1/ 10;
-    padding-bottom: 11em;
+    padding-bottom: 11%;
   }
   body main #drawSections #sketchDraws #manga {
     grid-column: 5/ 10;
@@ -1337,14 +1353,43 @@ body main #drawSections #randomDraws #fin4 {
     grid-column: 2/ 7;
     padding: 11%;
     padding-top: 3%;
-    padding-bottom: 3em;
-  }
-  body main #drawSections #archDraws {
-    display: grid;
-    place-items: center;
+    padding-bottom: 3%;
   }
   body main #drawSections #archDraws picture {
-    max-width: 600px;
+    max-width: 90%;
+  }
+  body main #drawSections #archDraws #lecorbusier-scale {
+    width: 43%;
+    margin-top: 6%;
+  }
+  body main #drawSections #archDraws #trees {
+    width: 67%;
+  }
+  body main #drawSections #archDraws .flex-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main #drawSections #archDraws .flex-group #lights-indoor {
+    margin-right: 2%;
+  }
+  body main #drawSections #archDraws .flex-group #jacobsen {
+    margin-left: 2%;
+  }
+  body main #drawSections #archDraws #artek {
+    width: 50%;
+  }
+  body main #drawSections #archDraws #house-draw {
+    width: 67%;
+    justify-self: end;
+  }
+  body main #drawSections #archDraws #dk-island {
+    width: 59%;
+    justify-self: start;
+  }
+  body main #drawSections #archDraws #land-home {
+    width: 63%;
   }
   body main #drawSections #randomDraws {
     margin-top: 7rem;
