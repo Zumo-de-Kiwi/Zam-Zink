@@ -9,20 +9,24 @@ body {
   // color: $font-black;
   position: relative;
 
-  --primary-tres-font-color: #333 !important;
-  --primary-cuatro-font-color: #444 !important;
-  --primary-heavy-font-color: #5b5957 !important;
-  --primary-normal-font-color: #82807d !important;
-  --primary-light-font-color: #a6a6a6 !important;
-  --primary-lighter-font-color: #ccc !important;
-  --background-footer-color: #dcd8d8 !important;
-  --background-josh-bluish-color: #eff1f5 !important;
-  --background-light-color: #fcfaf8 !important;
+  // --triple-three-color: # 333 !important;
+  // --triple-five-color: # 555 !important;
+  // --triple-six-color: # 666 !important;
+  // --primary-normal-font-color: # 82807d !important;
+  // --primary-light-font: # a6a6a6 !important;
+  --triple-four-font: #444 !important;
+  --triple-seven-font: #777 !important;
+  --triple-eight-font: #888 !important;
+  --triple-nine-font: #999 !important;
+  --triple-c-font: #ccc !important;
+  --background-footer: #ddd !important;
+  --bg-josh-bluish: #eff1f5 !important;
   --background-color: #fff !important;
   --linked-font-color: #5f3fd5 !important;
   --secondary-normal-color: #1dd75e !important;
   --secondary-light-color: #00ff84 !important;
   --selected-color: #fff705 !important;
+  // --background-light-color: #fcfaf8 !important;
 }
 // .special-char {
 //   font-family: $ff-special-char;
@@ -185,7 +189,8 @@ body {
     &:hover,
     &:active {
       .logo-frame.logo-svg.hc-logo {
-        fill: $sutil-dark-purple-gray-color;
+        // fill: $sutil-dark-purple-gray-color;
+        fill: var(--triple-four-font);
       }
     }
     .logo-frame {
@@ -200,7 +205,8 @@ body {
         &:hover,
         &:active {
           .hc-logo {
-            fill: $sutil-dark-purple-gray-color;
+            // fill: $sutil-dark-purple-gray-color;
+            fill: var(--triple-four-font);
           }
         }
       }
@@ -216,7 +222,7 @@ body {
           $slnt;
         a {
           padding: 0.5rem;
-          color: var(--primary-lighter-font-color); //$lighter-gray;
+          color: var(--triple-c-font);
           text-decoration: none;
           cursor: $cursor-arrow-hand;
 
@@ -250,14 +256,12 @@ body {
     }
     ///////// Hi, I am Héctor /////////
     .content-name {
-      margin-bottom: 7vh;
+      margin-bottom: 9vh;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' $font-weight-heavy,
         $slnt;
-      color: var(
-        --primary-normal-font-color
-      ); // var(--primary-heavy-font-color ); change or not
+      color: var(--triple-seven-font); // change or not
       display: grid;
       grid-template-columns: 1;
 
@@ -268,12 +272,13 @@ body {
         font-family: 'Recursive', $ff-m-zh, $ff-emoji;
         font-weight: 600;
         font-size: 1.31em;
-        color: var(--primary-lighter-font-color); // $lighter-gray;
+        color: var(--triple-c-font);
       }
 
       .i-am {
         grid-row: 2;
         margin-top: 1vh;
+        // color: ;
         // transition: $trans-slow ease;
         .complete-name {
           grid-row: 2;
@@ -285,15 +290,13 @@ body {
             position: relative;
 
             text-decoration: underline;
-            text-decoration-color: var(
-              --primary-lighter-font-color
-            ); // $lighter-gray;
+            text-decoration-color: var(--triple-c-font);
 
             transition: $trans-slow ease;
             will-change: font-variation-settings;
             &::after {
               font-size: $font-size-small;
-              color: $transparent;
+              color: transparent;
 
               position: absolute;
               text-align: center;
@@ -305,11 +308,12 @@ body {
               transition: $trans-slow;
               transition-delay: $delay-fast;
             }
-            &:hover,
-            &:active {
-              color: $font-linked-color;
+            :hover,
+            :active,
+            :focus {
+              color: var(--linked-font-color);
               &::after {
-                color: $underline-color;
+                color: var(--secondary-normal-color); //$underline-color;
                 transform: translateY(-0.3rem);
               }
             }
@@ -319,7 +323,8 @@ body {
               content: 'about me ⤴️';
             }
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
               font-variation-settings: $MONO, 'CASL' 1,
                 'wght' $font-weight-bolder, $slnt;
             }
@@ -329,7 +334,8 @@ body {
               content: 'contact ⤴️';
             }
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
               font-variation-settings: $MONO, 'CASL' 0.1,
                 'wght' $font-weight-bolder, $slnt;
             }
@@ -340,9 +346,22 @@ body {
           .complete-name {
             .first-name,
             .family-name {
+              color: var(--triple-seven-font);
+              color: var(--linked-font-color);
+              // text-decoration-color: var(--triple-c-font);
               text-decoration-color: var(
                 --secondary-normal-color
               ); //$spotify-text-green;
+              &:hover,
+              &:active,
+              &:focus {
+                color: var(--linked-font-color);
+                text-decoration-color: var(--triple-c-font);
+                &::after {
+                  color: var(--secondary-normal-color); // $underline-color;
+                  transform: translateY(-0.3rem);
+                }
+              }
             }
           }
         }
@@ -359,7 +378,11 @@ body {
       text-align: left;
       letter-spacing: -0.32px;
       line-height: 1.5;
-      color: var(--primary-normal-font-color); // $font-light-gray;
+
+      // color: var(--triple-seven-font);
+      color: var(--triple-eight-font);
+      transition: 0.4s ease-out;
+
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' 600, $slnt;
       will-change: font-variation-settings;
       //link and link number WRAPPER
@@ -382,7 +405,7 @@ body {
       }
       .l-line {
         font-family: $ff-special-char;
-        color: var(--primary-lighter-font-color); // $lighter-gray;
+        color: var(--triple-c-font);
         line-height: inherit;
 
         transition: 0.6s ease-out;
@@ -395,11 +418,9 @@ body {
           'wght' $font-weight-normal, $slnt;
         color: var(--linked-font-color); //$font-linked-color;
 
-        text-decoration-color: $font-sutil-gray-color;
         text-decoration-color: transparent;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        cursor: $cursor-please-fingers;
 
         transition: 0.43s ease-out;
 
@@ -408,9 +429,6 @@ body {
         &:active {
           font-variation-settings: 'MONO' 0.2, 'CASL' 0.6,
             'wght' $font-weight-bolder, $slnt;
-        }
-        &:active {
-          cursor: $cursor-yeah-hand;
         }
 
         &.italic-fun:hover {
@@ -483,13 +501,12 @@ body {
         // for coming projects
         &.coming {
           &::after {
-            // color:var(--primary-normal-font-color); // $font-light-gray;
             content: 'Video Projects';
           }
           &:hover,
           &:active {
             &::after {
-              color: var(--primary-normal-font-color); //$font-light-gray;
+              color: var(--triple-seven-font); //$font-light-gray;
               content: '[C🙃ming Soon]';
             }
           }
@@ -529,7 +546,6 @@ body {
 
       // mini linked number
       .link-number {
-        // color: $sutil-dark-purple-gray-color;
         color: var(--linked-font-color); //$font-linked-color;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0,
           'wght' $font-weight-bolder;
@@ -657,21 +673,19 @@ body {
       // ALL LINKS
       &:hover,
       &:active {
+        //for gray text
+        color: var(--triple-nine-font);
         .l-line {
-          color: $skillshare-green;
+          color: var(--secondary-light-color); //$skillshare-green;
         }
         .link {
           color: var(--linked-font-color); //$font-linked-color;
           text-decoration: underline;
           text-decoration-color: transparent;
           // transition: 0.4s;
-          // &:hover,
-          // &:active {
-          //   text-decoration-color: transparent;
-          // }
         }
         .link-number {
-          color: var(--linked-font-color); //$font-linked-color;
+          color: var(--linked-font-color);
         }
       }
     }
@@ -680,14 +694,14 @@ body {
       position: relative;
 
       #dotsss {
-        color: var(--linked-font-color); // $font-linked-color;
+        color: var(--linked-font-color);
       }
       #mailText {
         position: absolute;
         display: block;
         left: -2ch;
         color: transparent;
-        // text-decoration: none;
+
         transition: $trans-normal;
         transition-delay: $delay-fast;
         font-variation-settings: 'MONO' 0.2, 'CASL' 0,
@@ -695,7 +709,6 @@ body {
 
         &:hover,
         &:active {
-          // text-decoration-color: $spotify-text-green;
           font-variation-settings: 'MONO' 0.2, 'CASL' 0,
             'wght' $font-weight-bold;
         }
@@ -716,7 +729,7 @@ body {
       &:hover,
       &:active {
         #mailText {
-          color: var(--linked-font-color); //$font-linked-color;
+          color: var(--linked-font-color);
           text-decoration: none;
         }
       }
@@ -732,7 +745,7 @@ footer {
   .footer {
     position: fixed;
     bottom: 0px;
-    background-color: var(--background-footer-color); // #dcd8d8;
+    background-color: var(--background-footer); // #dcd8d8;
     transition: 0.5s;
 
     margin: 0 auto;
@@ -765,7 +778,7 @@ footer {
         font-size: 1.7rem;
         font-variation-settings: 'MONO' 0.4, 'CASL' 0, 'wght' $font-weight-light,
           $slnt;
-        color: var(--primary-light-font-color); // $light-gray;
+        color: var(--triple-nine-font); //var(--primary-light-font);
 
         padding: 12px;
         padding-left: 20px;
@@ -777,10 +790,10 @@ footer {
         will-change: font-variation-settings;
 
         &.futureSpan {
-          color: var(--background-josh-bluish-color); //$josh-blue-white;
+          color: var(--bg-josh-bluish); //$josh-blue-white;
         }
         &.workingSpan {
-          color: var(--background-josh-bluish-color); //$josh-blue-white;
+          color: var(--bg-josh-bluish); //$josh-blue-white;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.2,
             'wght' $font-weight-light;
         }
@@ -860,7 +873,7 @@ footer {
         }
       }
       #githublink {
-        color: var(--background-josh-bluish-color); //$josh-blue-white;
+        color: var(--bg-josh-bluish); //$josh-blue-white;
         font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter, $slnt;
         font-size: calc(0.4vw + 7px);
 
@@ -873,7 +886,7 @@ footer {
       background-color: $spotify-text-green;
       color: var(--background-color); //white;
       .closeBtn {
-        color: rgb(193, 241, 176);
+        color: hsl(104, 70%, 82%);
         &:hover,
         &:active {
           font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
@@ -908,7 +921,7 @@ footer {
         }
         &.dangerSpan {
           transition: 0.3s;
-          color: var(--background-josh-bluish-color); //$josh-blue-white;
+          color: var(--bg-josh-bluish); //$josh-blue-white;
           animation: slintness 2s ease infinite;
           font-variation-settings: 'MONO' 0.4, 'CASL' 0.5,
             'wght' $font-weight-light, 'CRSV' 1;
@@ -927,7 +940,7 @@ footer {
         }
       }
       #githublink {
-        color: $skillshare-green;
+        color: var(--secondary-light-color); //$skillshare-green;
         #heart::after {
           content: '💚';
         }

@@ -372,15 +372,13 @@ html {
 body {
   min-height: 100%;
   position: relative;
-  --primary-tres-font-color: #333 !important;
-  --primary-cuatro-font-color: #444 !important;
-  --primary-heavy-font-color: #5b5957 !important;
-  --primary-normal-font-color: #82807d !important;
-  --primary-light-font-color: #a6a6a6 !important;
-  --primary-lighter-font-color: #ccc !important;
-  --background-footer-color: #dcd8d8 !important;
-  --background-josh-bluish-color: #eff1f5 !important;
-  --background-light-color: #fcfaf8 !important;
+  --triple-four-font: #444 !important;
+  --triple-seven-font: #777 !important;
+  --triple-eight-font: #888 !important;
+  --triple-nine-font: #999 !important;
+  --triple-c-font: #ccc !important;
+  --background-footer: #ddd !important;
+  --bg-josh-bluish: #eff1f5 !important;
   --background-color: #fff !important;
   --linked-font-color: #5f3fd5 !important;
   --secondary-normal-color: #1dd75e !important;
@@ -537,7 +535,7 @@ body {
 }
 
 .main .navigation:hover .logo-frame.logo-svg.hc-logo, .main .navigation:active .logo-frame.logo-svg.hc-logo {
-  fill: #4d435b;
+  fill: var(--triple-four-font);
 }
 
 .main .navigation .logo-frame {
@@ -555,7 +553,7 @@ body {
 }
 
 .main .navigation .logo-frame .logo-svg:hover .hc-logo, .main .navigation .logo-frame .logo-svg:active .hc-logo {
-  fill: #4d435b;
+  fill: var(--triple-four-font);
 }
 
 .main .navigation ul {
@@ -571,7 +569,7 @@ body {
 
 .main .navigation ul li a {
   padding: 0.5rem;
-  color: var(--primary-lighter-font-color);
+  color: var(--triple-c-font);
   text-decoration: none;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.45s;
@@ -603,11 +601,11 @@ body {
 }
 
 .main .content_wrap .content-name {
-  margin-bottom: 7vh;
+  margin-bottom: 9vh;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.3vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 800, "slnt" 0;
-  color: var(--primary-normal-font-color);
+  color: var(--triple-seven-font);
   display: grid;
   grid-template-columns: 1;
 }
@@ -618,7 +616,7 @@ body {
   font-family: "Recursive", Helvetica, Arial, "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", color-emoji;
   font-weight: 600;
   font-size: 1.31em;
-  color: var(--primary-lighter-font-color);
+  color: var(--triple-c-font);
 }
 
 .main .content_wrap .content-name .i-am {
@@ -636,7 +634,7 @@ body {
 .main .content_wrap .content-name .i-am .complete-name .family-name {
   position: relative;
   text-decoration: underline;
-  text-decoration-color: var(--primary-lighter-font-color);
+  text-decoration-color: var(--triple-c-font);
   transition: 0.45s ease;
   will-change: font-variation-settings;
 }
@@ -644,7 +642,7 @@ body {
 .main .content_wrap .content-name .i-am .complete-name .first-name::after,
 .main .content_wrap .content-name .i-am .complete-name .family-name::after {
   font-size: calc(0.3vw - 0vw + 12px);
-  color: rgba(0, 0, 0, 0);
+  color: transparent;
   position: absolute;
   text-align: center;
   bottom: -0.2rem;
@@ -655,16 +653,22 @@ body {
   transition-delay: 0.1s;
 }
 
-.main .content_wrap .content-name .i-am .complete-name .first-name:hover, .main .content_wrap .content-name .i-am .complete-name .first-name:active,
-.main .content_wrap .content-name .i-am .complete-name .family-name:hover,
-.main .content_wrap .content-name .i-am .complete-name .family-name:active {
-  color: #5f3fd5;
+.main .content_wrap .content-name .i-am .complete-name .first-name :hover,
+.main .content_wrap .content-name .i-am .complete-name .first-name :active,
+.main .content_wrap .content-name .i-am .complete-name .first-name :focus,
+.main .content_wrap .content-name .i-am .complete-name .family-name :hover,
+.main .content_wrap .content-name .i-am .complete-name .family-name :active,
+.main .content_wrap .content-name .i-am .complete-name .family-name :focus {
+  color: var(--linked-font-color);
 }
 
-.main .content_wrap .content-name .i-am .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am .complete-name .first-name:active::after,
-.main .content_wrap .content-name .i-am .complete-name .family-name:hover::after,
-.main .content_wrap .content-name .i-am .complete-name .family-name:active::after {
-  color: #a48cee;
+.main .content_wrap .content-name .i-am .complete-name .first-name :hover::after,
+.main .content_wrap .content-name .i-am .complete-name .first-name :active::after,
+.main .content_wrap .content-name .i-am .complete-name .first-name :focus::after,
+.main .content_wrap .content-name .i-am .complete-name .family-name :hover::after,
+.main .content_wrap .content-name .i-am .complete-name .family-name :active::after,
+.main .content_wrap .content-name .i-am .complete-name .family-name :focus::after {
+  color: var(--secondary-normal-color);
   transform: translateY(-0.3rem);
 }
 
@@ -672,7 +676,7 @@ body {
   content: 'about me ⤴️';
 }
 
-.main .content_wrap .content-name .i-am .complete-name .first-name:hover, .main .content_wrap .content-name .i-am .complete-name .first-name:active {
+.main .content_wrap .content-name .i-am .complete-name .first-name:hover, .main .content_wrap .content-name .i-am .complete-name .first-name:active, .main .content_wrap .content-name .i-am .complete-name .first-name:focus {
   font-variation-settings: "MONO" 0, "CASL" 1, "wght" 740, "slnt" 0;
 }
 
@@ -680,14 +684,38 @@ body {
   content: 'contact ⤴️';
 }
 
-.main .content_wrap .content-name .i-am .complete-name .family-name:hover, .main .content_wrap .content-name .i-am .complete-name .family-name:active {
+.main .content_wrap .content-name .i-am .complete-name .family-name:hover, .main .content_wrap .content-name .i-am .complete-name .family-name:active, .main .content_wrap .content-name .i-am .complete-name .family-name:focus {
   font-variation-settings: "MONO" 0, "CASL" 0.1, "wght" 740, "slnt" 0;
 }
 
 .main .content_wrap .content-name .i-am:hover .complete-name .first-name,
 .main .content_wrap .content-name .i-am:hover .complete-name .family-name, .main .content_wrap .content-name .i-am:active .complete-name .first-name,
 .main .content_wrap .content-name .i-am:active .complete-name .family-name {
+  color: var(--triple-seven-font);
+  color: var(--linked-font-color);
   text-decoration-color: var(--secondary-normal-color);
+}
+
+.main .content_wrap .content-name .i-am:hover .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:active, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:focus,
+.main .content_wrap .content-name .i-am:hover .complete-name .family-name:hover,
+.main .content_wrap .content-name .i-am:hover .complete-name .family-name:active,
+.main .content_wrap .content-name .i-am:hover .complete-name .family-name:focus, .main .content_wrap .content-name .i-am:active .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:active .complete-name .first-name:active, .main .content_wrap .content-name .i-am:active .complete-name .first-name:focus,
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:hover,
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:active,
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus {
+  color: var(--linked-font-color);
+  text-decoration-color: var(--triple-c-font);
+}
+
+.main .content_wrap .content-name .i-am:hover .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:focus::after,
+.main .content_wrap .content-name .i-am:hover .complete-name .family-name:hover::after,
+.main .content_wrap .content-name .i-am:hover .complete-name .family-name:active::after,
+.main .content_wrap .content-name .i-am:hover .complete-name .family-name:focus::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:focus::after,
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:hover::after,
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:active::after,
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus::after {
+  color: var(--secondary-normal-color);
+  transform: translateY(-0.3rem);
 }
 
 .main .content_wrap .content-portfolio {
@@ -695,7 +723,8 @@ body {
   text-align: left;
   letter-spacing: -0.32px;
   line-height: 1.5;
-  color: var(--primary-normal-font-color);
+  color: var(--triple-eight-font);
+  transition: 0.4s ease-out;
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 600, "slnt" 0;
   will-change: font-variation-settings;
 }
@@ -724,7 +753,7 @@ body {
 
 .main .content_wrap .content-portfolio .l-line {
   font-family: Menlo, "Noto Sans Symbols2", "Arial Unicode MS", "Zapf Dingbats", sans-serif;
-  color: var(--primary-lighter-font-color);
+  color: var(--triple-c-font);
   line-height: inherit;
   transition: 0.6s ease-out;
 }
@@ -733,20 +762,14 @@ body {
   position: relative;
   font-variation-settings: "MONO" 0.2, "CASL" 0.1, "wght" 620, "slnt" 0;
   color: var(--linked-font-color);
-  text-decoration-color: #b9cabf;
   text-decoration-color: transparent;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
   transition: 0.43s ease-out;
 }
 
 .main .content_wrap .content-portfolio .link:hover, .main .content_wrap .content-portfolio .link:active {
   font-variation-settings: "MONO" 0.2, "CASL" 0.6, "wght" 740, "slnt" 0;
-}
-
-.main .content_wrap .content-portfolio .link:active {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
 
 .main .content_wrap .content-portfolio .link.italic-fun:hover {
@@ -812,7 +835,7 @@ body {
 }
 
 .main .content_wrap .content-portfolio .link.coming:hover::after, .main .content_wrap .content-portfolio .link.coming:active::after {
-  color: var(--primary-normal-font-color);
+  color: var(--triple-seven-font);
   content: '[C🙃ming Soon]';
 }
 
@@ -961,8 +984,12 @@ body {
   display: block;
 }
 
+.main .content_wrap .content-portfolio:hover, .main .content_wrap .content-portfolio:active {
+  color: var(--triple-nine-font);
+}
+
 .main .content_wrap .content-portfolio:hover .l-line, .main .content_wrap .content-portfolio:active .l-line {
-  color: #00ff84;
+  color: var(--secondary-light-color);
 }
 
 .main .content_wrap .content-portfolio:hover .link, .main .content_wrap .content-portfolio:active .link {
@@ -1027,7 +1054,7 @@ footer {
 footer .footer {
   position: fixed;
   bottom: 0px;
-  background-color: var(--background-footer-color);
+  background-color: var(--background-footer);
   transition: 0.5s;
   margin: 0 auto;
   padding-top: 1rem;
@@ -1062,7 +1089,7 @@ footer .footer .line span {
   white-space: nowrap;
   font-size: 1.7rem;
   font-variation-settings: "MONO" 0.4, "CASL" 0, "wght" 500, "slnt" 0;
-  color: var(--primary-light-font-color);
+  color: var(--triple-nine-font);
   padding: 12px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1074,11 +1101,11 @@ footer .footer .line .footerSpan {
 }
 
 footer .footer .line .footerSpan.futureSpan {
-  color: var(--background-josh-bluish-color);
+  color: var(--bg-josh-bluish);
 }
 
 footer .footer .line .footerSpan.workingSpan {
-  color: var(--background-josh-bluish-color);
+  color: var(--bg-josh-bluish);
   font-variation-settings: "MONO" 0.4, "CASL" 0.2, "wght" 500;
 }
 
@@ -1156,7 +1183,7 @@ footer .footer #githublink:hover a {
     padding-right: 5px;
   }
   footer .footer #githublink {
-    color: var(--background-josh-bluish-color);
+    color: var(--bg-josh-bluish);
     font-variation-settings: "MONO" 1, "wght" 400, "slnt" 0;
     font-size: calc(0.4vw + 7px);
     padding-bottom: 0.8rem;
@@ -1170,7 +1197,7 @@ footer .footer:hover {
 }
 
 footer .footer:hover .closeBtn {
-  color: #c1f1b0;
+  color: #c2f1b1;
 }
 
 footer .footer:hover .closeBtn:hover, footer .footer:hover .closeBtn:active {
@@ -1208,7 +1235,7 @@ footer .footer:hover .footerSpan.workingSpan:hover {
 
 footer .footer:hover .footerSpan.dangerSpan {
   transition: 0.3s;
-  color: var(--background-josh-bluish-color);
+  color: var(--bg-josh-bluish);
   animation: slintness 2s ease infinite;
   font-variation-settings: "MONO" 0.4, "CASL" 0.5, "wght" 500, "CRSV" 1;
 }
@@ -1226,7 +1253,7 @@ footer .footer:hover .footerSpan.dangerSpan {
 }
 
 footer .footer:hover #githublink {
-  color: #00ff84;
+  color: var(--secondary-light-color);
 }
 
 footer .footer:hover #githublink #heart::after {
