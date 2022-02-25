@@ -1,19 +1,14 @@
 @import 'globals';
 @import 'variables';
 
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-  // color: $font-black;
-  position: relative;
-
+:root {
   // --triple-three-color: # 333 !important;
   // --triple-five-color: # 555 !important;
   // --triple-six-color: # 666 !important;
   // --primary-normal-font-color: # 82807d !important;
   // --primary-light-font: # a6a6a6 !important;
+  // --triple-six-font: #666 !important;
+  // --triple-two-font: #222 !important;
   --triple-four-font: #444 !important;
   --triple-seven-font: #777 !important;
   --triple-eight-font: #888 !important;
@@ -25,13 +20,28 @@ body {
   --linked-font-color: #5f3fd5 !important;
   --secondary-normal-color: #1dd75e !important;
   --secondary-light-color: #00ff84 !important;
-  --selected-color: #fff705 !important;
-  // --background-light-color: #fcfaf8 !important;
 }
-// .special-char {
-//   font-family: $ff-special-char;
-//   line-height: 600;
-// }
+// Dark Mode
+[data-theme='dark'] {
+  --triple-four-font: #bbb !important;
+  --triple-seven-font: #888 !important;
+  --triple-eight-font: #777 !important;
+  --triple-nine-font: #666 !important;
+  --triple-c-font: #333 !important;
+  --background-footer: #222 !important;
+  --bg-josh-bluish: #100e0a !important;
+  --background-color: #000 !important;
+  --linked-font-color: #ffa500 !important; //#5f3fd5 ;
+  --secondary-normal-color: #d71dbb !important; //#1dd75e
+  --secondary-light-color: #f200ff !important; //#00ff84
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  position: relative;
+}
 //////////// PRE LOADER //////////////////////
 //// ALERT! don't put it inside the body/////
 .preloader {
@@ -181,37 +191,85 @@ body {
   //logo home filter contact about me
   .navigation {
     grid-column: 2;
+    width: 100%;
 
     display: flex;
-    width: 100%;
     justify-content: flex-end;
-    padding-top: 2vh;
-    &:hover,
-    &:active {
-      .logo-frame.logo-svg.hc-logo {
-        // fill: $sutil-dark-purple-gray-color;
-        fill: var(--triple-four-font);
+    align-items: center;
+    margin-top: 2vh;
+
+    #interactive-logo {
+      // all the 3 parts
+      .part {
       }
-    }
-    .logo-frame {
-      margin-right: auto;
-      .logo-svg {
-        height: 2.5rem; // svg size
-        cursor: $cursor-pointer-down-hand;
-        .hc-logo {
-          transition: $trans-slow;
-          fill: transparent;
-        }
-        &:hover,
-        &:active {
-          .hc-logo {
-            // fill: $sutil-dark-purple-gray-color;
-            fill: var(--triple-four-font);
+      // the  TOOGLE
+      .left.container {
+        // TO NO DISPLAY FOR THE USER
+        // BETA
+        display: none;
+        .switch {
+          // margin: auto 0px;
+          display: inline-block;
+          position: relative;
+          height: 26px;
+          width: 45px;
+          input {
+            display: none;
+          }
+          .slider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+
+            background-color: var(--triple-c-font);
+            transition: 0.4s;
+            &:hover,
+            &focus {
+              cursor: $cursor-please-fingers;
+            }
+            &:active {
+              cursor: $cursor-yeah-hand;
+            }
+            &:before {
+              background-color: var(--background-color);
+              position: absolute;
+              bottom: 4px;
+              left: 4px;
+
+              content: '';
+              height: 18px;
+              width: 18px;
+              transition: 0.4s;
+            }
+          }
+          input:checked + .slider {
+            background-color: var(--secondary-normal-color);
+            &:before {
+              transform: translateX(19px);
+            }
+          }
+
+          .slider.round {
+            border-radius: 26px;
+            &:before {
+              border-radius: 50%;
+            }
           }
         }
       }
+      .right {
+        //about me
+        &.upper {
+          cursor: $cursor-about-me;
+        }
+        //contact
+        &.down {
+          cursor: $cursor-contact-mail;
+        }
+      }
     }
-
     ul {
       list-style-type: none;
       right: 3vw;
@@ -222,24 +280,26 @@ body {
           $slnt;
         a {
           padding: 0.5rem;
+          // padding-top: 2rem;
           color: var(--triple-c-font);
           text-decoration: none;
           cursor: $cursor-arrow-hand;
 
           transition: $trans-slow;
           &:hover,
-          &:active {
+          &:active,
+          &:focus {
             color: var(
               --secondary-normal-color
             ); //$sutil-dark-purple-gray-color;
           }
         }
         //about me
-        .nowPage {
+        .about {
           cursor: $cursor-about-me;
         }
         //contact
-        .filter {
+        .contact {
           cursor: $cursor-contact-mail;
         }
       }
@@ -278,17 +338,18 @@ body {
       .i-am {
         grid-row: 2;
         margin-top: 1vh;
-        // color: ;
+        // color: inherit ;
         // transition: $trans-slow ease;
         .complete-name {
-          grid-row: 2;
-          color: inherit;
+          // grid-row: 2;
           text-decoration: none;
 
-          .first-name,
-          .family-name {
+          // .first-name,
+          // .family-name {
+          .name {
             position: relative;
 
+            color: var(--triple-seven-font);
             text-decoration: underline;
             text-decoration-color: var(--triple-c-font);
 
@@ -345,26 +406,52 @@ body {
         &:active,
         &:focus {
           .complete-name {
-            .first-name,
-            .family-name {
-              // color: var(--linked-font-color);
-              // color: var(--secondary-normal-color);
-              // text-decoration-color: var(--triple-c-font);
-              // text-decoration-color: var(--secondary-normal-color);
+            // 1. HOVER on phrase turn green
+            .name {
+              text-decoration-color: var(--secondary-normal-color);
+            }
+            // 2. HOVER on the complete name will be gray
+            &:hover,
+            &:active,
+            &:focus {
+              .name {
+                text-decoration-color: var(--triple-c-font);
+              }
+            }
+            //  3. Now only the hovered name is Green
+            .name {
               &:hover,
               &:active,
               &:focus {
-                // color: var(--linked-font-color);
-                color: var(--triple-seven-font);
+                // color: var(--triple-seven-font);
                 // text-decoration-color: var(--triple-c-font);
                 text-decoration-color: var(--secondary-normal-color);
-
                 &::after {
-                  color: var(--secondary-normal-color); // $underline-color;
+                  color: var(--secondary-normal-color);
                   transform: translateY(-0.3rem);
                 }
               }
             }
+            // .first-name {
+            //   &:hover,
+            //   &:active,
+            //   &:focus {
+            //     text-decoration-color: var(--secondary-normal-color);
+            //     // & ~ .family-name {
+            //     //   text-decoration-color: var(--triple-c-font);
+            //     // }
+            //   }
+            // }
+            // .family-name {
+            //   &:hover,
+            //   &:active,
+            //   &:focus {
+            //     text-decoration-color: var(--secondary-normal-color);
+            //     // & ~ .first-name {
+            //     //   text-decoration-color: var(--triple-c-font);
+            //     // }
+            //   }
+            // }
           }
         }
       }
@@ -597,7 +684,7 @@ body {
             z-index: 7;
             .box {
               z-index: 7;
-              background-color: var(--background-color); //white;
+              background-color: var(--background-color);
               padding: calc(0.4vw + 1.8rem);
 
               border-radius: 1.3rem;
@@ -620,11 +707,12 @@ body {
                 padding: 4px 1rem;
                 padding-right: 2rem;
                 font-size: 1.2em;
-                color: rgb(97, 97, 97);
+                color: var(--triple-seven-font);
+                transition: 0.15s;
                 &:hover,
                 &:active,
                 &:focus {
-                  color: black;
+                  color: var(--triple-four-font);
                 }
               }
               //text

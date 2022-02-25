@@ -365,13 +365,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   }
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  position: relative;
+:root {
   --triple-four-font: #444 !important;
   --triple-seven-font: #777 !important;
   --triple-eight-font: #888 !important;
@@ -383,7 +377,29 @@ body {
   --linked-font-color: #5f3fd5 !important;
   --secondary-normal-color: #1dd75e !important;
   --secondary-light-color: #00ff84 !important;
-  --selected-color: #fff705 !important;
+}
+
+[data-theme='dark'] {
+  --triple-four-font: #bbb !important;
+  --triple-seven-font: #888 !important;
+  --triple-eight-font: #777 !important;
+  --triple-nine-font: #666 !important;
+  --triple-c-font: #333 !important;
+  --background-footer: #222 !important;
+  --bg-josh-bluish: #100e0a !important;
+  --background-color: #000 !important;
+  --linked-font-color: #ffa500 !important;
+  --secondary-normal-color: #d71dbb !important;
+  --secondary-light-color: #f200ff !important;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
 }
 
 .preloader {
@@ -528,32 +544,79 @@ body {
 
 .main .navigation {
   grid-column: 2;
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: flex-end;
-  padding-top: 2vh;
+  align-items: center;
+  margin-top: 2vh;
 }
 
-.main .navigation:hover .logo-frame.logo-svg.hc-logo, .main .navigation:active .logo-frame.logo-svg.hc-logo {
-  fill: var(--triple-four-font);
+.main .navigation #interactive-logo .left.container {
+  display: none;
 }
 
-.main .navigation .logo-frame {
-  margin-right: auto;
+.main .navigation #interactive-logo .left.container .switch {
+  display: inline-block;
+  position: relative;
+  height: 26px;
+  width: 45px;
 }
 
-.main .navigation .logo-frame .logo-svg {
-  height: 2.5rem;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>👇</text></svg>") 16 0, auto;
+.main .navigation #interactive-logo .left.container .switch input {
+  display: none;
 }
 
-.main .navigation .logo-frame .logo-svg .hc-logo {
-  transition: 0.45s;
-  fill: transparent;
+.main .navigation #interactive-logo .left.container .switch .slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: var(--triple-c-font);
+  transition: 0.4s;
 }
 
-.main .navigation .logo-frame .logo-svg:hover .hc-logo, .main .navigation .logo-frame .logo-svg:active .hc-logo {
-  fill: var(--triple-four-font);
+.main .navigation #interactive-logo .left.container .switch .slider:hover, .main .navigation #interactive-logo .left.container .switch .sliderfocus {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
+}
+
+.main .navigation #interactive-logo .left.container .switch .slider:active {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>✌️</text></svg>") 16 0, auto;
+}
+
+.main .navigation #interactive-logo .left.container .switch .slider:before {
+  background-color: var(--background-color);
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  content: '';
+  height: 18px;
+  width: 18px;
+  transition: 0.4s;
+}
+
+.main .navigation #interactive-logo .left.container .switch input:checked + .slider {
+  background-color: var(--secondary-normal-color);
+}
+
+.main .navigation #interactive-logo .left.container .switch input:checked + .slider:before {
+  transform: translateX(19px);
+}
+
+.main .navigation #interactive-logo .left.container .switch .slider.round {
+  border-radius: 26px;
+}
+
+.main .navigation #interactive-logo .left.container .switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.main .navigation #interactive-logo .right.upper {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,-3px);'><text y='57%'>👁‍🗨</text></svg>") 16 0, auto;
+}
+
+.main .navigation #interactive-logo .right.down {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,-6px);'><text y='57%'>💌 </text></svg>") 16 0, auto;
 }
 
 .main .navigation ul {
@@ -575,15 +638,15 @@ body {
   transition: 0.45s;
 }
 
-.main .navigation ul li a:hover, .main .navigation ul li a:active {
+.main .navigation ul li a:hover, .main .navigation ul li a:active, .main .navigation ul li a:focus {
   color: var(--secondary-normal-color);
 }
 
-.main .navigation ul li .nowPage {
+.main .navigation ul li .about {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,-3px);'><text y='57%'>👁‍🗨</text></svg>") 16 0, auto;
 }
 
-.main .navigation ul li .filter {
+.main .navigation ul li .contact {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,-6px);'><text y='57%'>💌 </text></svg>") 16 0, auto;
 }
 
@@ -625,22 +688,19 @@ body {
 }
 
 .main .content_wrap .content-name .i-am .complete-name {
-  grid-row: 2;
-  color: inherit;
   text-decoration: none;
 }
 
-.main .content_wrap .content-name .i-am .complete-name .first-name,
-.main .content_wrap .content-name .i-am .complete-name .family-name {
+.main .content_wrap .content-name .i-am .complete-name .name {
   position: relative;
+  color: var(--triple-seven-font);
   text-decoration: underline;
   text-decoration-color: var(--triple-c-font);
   transition: 0.45s ease;
   will-change: font-variation-settings;
 }
 
-.main .content_wrap .content-name .i-am .complete-name .first-name::after,
-.main .content_wrap .content-name .i-am .complete-name .family-name::after {
+.main .content_wrap .content-name .i-am .complete-name .name::after {
   font-size: calc(0.3vw - 0vw + 12px);
   color: transparent;
   position: absolute;
@@ -669,30 +729,19 @@ body {
   font-variation-settings: "MONO" 0, "CASL" 0.1, "wght" 740, "slnt" 0;
 }
 
-.main .content_wrap .content-name .i-am:hover .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:active, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:focus,
-.main .content_wrap .content-name .i-am:hover .complete-name .family-name:hover,
-.main .content_wrap .content-name .i-am:hover .complete-name .family-name:active,
-.main .content_wrap .content-name .i-am:hover .complete-name .family-name:focus, .main .content_wrap .content-name .i-am:active .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:active .complete-name .first-name:active, .main .content_wrap .content-name .i-am:active .complete-name .first-name:focus,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:hover,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:active,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:active, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:focus,
-.main .content_wrap .content-name .i-am:focus .complete-name .family-name:hover,
-.main .content_wrap .content-name .i-am:focus .complete-name .family-name:active,
-.main .content_wrap .content-name .i-am:focus .complete-name .family-name:focus {
-  color: var(--triple-seven-font);
+.main .content_wrap .content-name .i-am:hover .complete-name .name, .main .content_wrap .content-name .i-am:active .complete-name .name, .main .content_wrap .content-name .i-am:focus .complete-name .name {
   text-decoration-color: var(--secondary-normal-color);
 }
 
-.main .content_wrap .content-name .i-am:hover .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:focus::after,
-.main .content_wrap .content-name .i-am:hover .complete-name .family-name:hover::after,
-.main .content_wrap .content-name .i-am:hover .complete-name .family-name:active::after,
-.main .content_wrap .content-name .i-am:hover .complete-name .family-name:focus::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:focus::after,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:hover::after,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:active::after,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus::after, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:focus::after,
-.main .content_wrap .content-name .i-am:focus .complete-name .family-name:hover::after,
-.main .content_wrap .content-name .i-am:focus .complete-name .family-name:active::after,
-.main .content_wrap .content-name .i-am:focus .complete-name .family-name:focus::after {
+.main .content_wrap .content-name .i-am:hover .complete-name:hover .name, .main .content_wrap .content-name .i-am:hover .complete-name:active .name, .main .content_wrap .content-name .i-am:hover .complete-name:focus .name, .main .content_wrap .content-name .i-am:active .complete-name:hover .name, .main .content_wrap .content-name .i-am:active .complete-name:active .name, .main .content_wrap .content-name .i-am:active .complete-name:focus .name, .main .content_wrap .content-name .i-am:focus .complete-name:hover .name, .main .content_wrap .content-name .i-am:focus .complete-name:active .name, .main .content_wrap .content-name .i-am:focus .complete-name:focus .name {
+  text-decoration-color: var(--triple-c-font);
+}
+
+.main .content_wrap .content-name .i-am:hover .complete-name .name:hover, .main .content_wrap .content-name .i-am:hover .complete-name .name:active, .main .content_wrap .content-name .i-am:hover .complete-name .name:focus, .main .content_wrap .content-name .i-am:active .complete-name .name:hover, .main .content_wrap .content-name .i-am:active .complete-name .name:active, .main .content_wrap .content-name .i-am:active .complete-name .name:focus, .main .content_wrap .content-name .i-am:focus .complete-name .name:hover, .main .content_wrap .content-name .i-am:focus .complete-name .name:active, .main .content_wrap .content-name .i-am:focus .complete-name .name:focus {
+  text-decoration-color: var(--secondary-normal-color);
+}
+
+.main .content_wrap .content-name .i-am:hover .complete-name .name:hover::after, .main .content_wrap .content-name .i-am:hover .complete-name .name:active::after, .main .content_wrap .content-name .i-am:hover .complete-name .name:focus::after, .main .content_wrap .content-name .i-am:active .complete-name .name:hover::after, .main .content_wrap .content-name .i-am:active .complete-name .name:active::after, .main .content_wrap .content-name .i-am:active .complete-name .name:focus::after, .main .content_wrap .content-name .i-am:focus .complete-name .name:hover::after, .main .content_wrap .content-name .i-am:focus .complete-name .name:active::after, .main .content_wrap .content-name .i-am:focus .complete-name .name:focus::after {
   color: var(--secondary-normal-color);
   transform: translateY(-0.3rem);
 }
@@ -910,11 +959,12 @@ body {
   padding: 4px 1rem;
   padding-right: 2rem;
   font-size: 1.2em;
-  color: #616161;
+  color: var(--triple-seven-font);
+  transition: 0.15s;
 }
 
 .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stickers-x-btn:hover, .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stickers-x-btn:active, .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stickers-x-btn:focus {
-  color: black;
+  color: var(--triple-four-font);
 }
 
 .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stk-text {
