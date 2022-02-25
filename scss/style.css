@@ -576,7 +576,7 @@ body {
 }
 
 .main .navigation ul li a:hover, .main .navigation ul li a:active {
-  color: var(--primary-heavier-font-color);
+  color: var(--secondary-normal-color);
 }
 
 .main .navigation ul li .nowPage {
@@ -653,25 +653,6 @@ body {
   transition-delay: 0.1s;
 }
 
-.main .content_wrap .content-name .i-am .complete-name .first-name :hover,
-.main .content_wrap .content-name .i-am .complete-name .first-name :active,
-.main .content_wrap .content-name .i-am .complete-name .first-name :focus,
-.main .content_wrap .content-name .i-am .complete-name .family-name :hover,
-.main .content_wrap .content-name .i-am .complete-name .family-name :active,
-.main .content_wrap .content-name .i-am .complete-name .family-name :focus {
-  color: var(--linked-font-color);
-}
-
-.main .content_wrap .content-name .i-am .complete-name .first-name :hover::after,
-.main .content_wrap .content-name .i-am .complete-name .first-name :active::after,
-.main .content_wrap .content-name .i-am .complete-name .first-name :focus::after,
-.main .content_wrap .content-name .i-am .complete-name .family-name :hover::after,
-.main .content_wrap .content-name .i-am .complete-name .family-name :active::after,
-.main .content_wrap .content-name .i-am .complete-name .family-name :focus::after {
-  color: var(--secondary-normal-color);
-  transform: translateY(-0.3rem);
-}
-
 .main .content_wrap .content-name .i-am .complete-name .first-name::after {
   content: 'about me ⤴️';
 }
@@ -688,23 +669,18 @@ body {
   font-variation-settings: "MONO" 0, "CASL" 0.1, "wght" 740, "slnt" 0;
 }
 
-.main .content_wrap .content-name .i-am:hover .complete-name .first-name,
-.main .content_wrap .content-name .i-am:hover .complete-name .family-name, .main .content_wrap .content-name .i-am:active .complete-name .first-name,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name {
-  color: var(--triple-seven-font);
-  color: var(--linked-font-color);
-  text-decoration-color: var(--secondary-normal-color);
-}
-
 .main .content_wrap .content-name .i-am:hover .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:active, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:focus,
 .main .content_wrap .content-name .i-am:hover .complete-name .family-name:hover,
 .main .content_wrap .content-name .i-am:hover .complete-name .family-name:active,
 .main .content_wrap .content-name .i-am:hover .complete-name .family-name:focus, .main .content_wrap .content-name .i-am:active .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:active .complete-name .first-name:active, .main .content_wrap .content-name .i-am:active .complete-name .first-name:focus,
 .main .content_wrap .content-name .i-am:active .complete-name .family-name:hover,
 .main .content_wrap .content-name .i-am:active .complete-name .family-name:active,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus {
-  color: var(--linked-font-color);
-  text-decoration-color: var(--triple-c-font);
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:hover, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:active, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:focus,
+.main .content_wrap .content-name .i-am:focus .complete-name .family-name:hover,
+.main .content_wrap .content-name .i-am:focus .complete-name .family-name:active,
+.main .content_wrap .content-name .i-am:focus .complete-name .family-name:focus {
+  color: var(--triple-seven-font);
+  text-decoration-color: var(--secondary-normal-color);
 }
 
 .main .content_wrap .content-name .i-am:hover .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:hover .complete-name .first-name:focus::after,
@@ -713,7 +689,10 @@ body {
 .main .content_wrap .content-name .i-am:hover .complete-name .family-name:focus::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:active .complete-name .first-name:focus::after,
 .main .content_wrap .content-name .i-am:active .complete-name .family-name:hover::after,
 .main .content_wrap .content-name .i-am:active .complete-name .family-name:active::after,
-.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus::after {
+.main .content_wrap .content-name .i-am:active .complete-name .family-name:focus::after, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:hover::after, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:active::after, .main .content_wrap .content-name .i-am:focus .complete-name .first-name:focus::after,
+.main .content_wrap .content-name .i-am:focus .complete-name .family-name:hover::after,
+.main .content_wrap .content-name .i-am:focus .complete-name .family-name:active::after,
+.main .content_wrap .content-name .i-am:focus .complete-name .family-name:focus::after {
   color: var(--secondary-normal-color);
   transform: translateY(-0.3rem);
 }
@@ -743,11 +722,11 @@ body {
   display: none;
 }
 
-.main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:hover .default-span, .main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:active .default-span {
+.main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:hover .default-span, .main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:active .default-span, .main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:focus .default-span {
   display: none;
 }
 
-.main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:hover .hidden-span, .main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:active .hidden-span {
+.main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:hover .hidden-span, .main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:active .hidden-span, .main .content_wrap .content-portfolio .link-wrapper.with-hidden-span:focus .hidden-span {
   display: inline;
 }
 
@@ -768,7 +747,7 @@ body {
   transition: 0.43s ease-out;
 }
 
-.main .content_wrap .content-portfolio .link:hover, .main .content_wrap .content-portfolio .link:active {
+.main .content_wrap .content-portfolio .link:hover, .main .content_wrap .content-portfolio .link:active, .main .content_wrap .content-portfolio .link:focus {
   font-variation-settings: "MONO" 0.2, "CASL" 0.6, "wght" 740, "slnt" 0;
 }
 
@@ -834,7 +813,7 @@ body {
   content: 'Video Projects';
 }
 
-.main .content_wrap .content-portfolio .link.coming:hover::after, .main .content_wrap .content-portfolio .link.coming:active::after {
+.main .content_wrap .content-portfolio .link.coming:hover::after, .main .content_wrap .content-portfolio .link.coming:active::after, .main .content_wrap .content-portfolio .link.coming:focus::after {
   color: var(--triple-seven-font);
   content: '[C🙃ming Soon]';
 }
@@ -843,11 +822,11 @@ body {
   display: none;
 }
 
-.main .content_wrap .content-portfolio .link.pixelLink:hover #mosaic, .main .content_wrap .content-portfolio .link.pixelLink:active #mosaic {
+.main .content_wrap .content-portfolio .link.pixelLink:hover #mosaic, .main .content_wrap .content-portfolio .link.pixelLink:active #mosaic, .main .content_wrap .content-portfolio .link.pixelLink:focus #mosaic {
   display: none;
 }
 
-.main .content_wrap .content-portfolio .link.pixelLink:hover #pixel, .main .content_wrap .content-portfolio .link.pixelLink:active #pixel {
+.main .content_wrap .content-portfolio .link.pixelLink:hover #pixel, .main .content_wrap .content-portfolio .link.pixelLink:active #pixel, .main .content_wrap .content-portfolio .link.pixelLink:focus #pixel {
   display: inline;
   font-variation-settings: 'MONO' 0.735, 'CASL' 0.1, 'wght' 550;
 }
@@ -934,7 +913,7 @@ body {
   color: #616161;
 }
 
-.main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stickers-x-btn:hover {
+.main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stickers-x-btn:hover, .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stickers-x-btn:active, .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .stickers-x-btn:focus {
   color: black;
 }
 
@@ -958,7 +937,7 @@ body {
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500;
 }
 
-.main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .link:hover {
+.main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .link:hover, .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .link:active, .main .content_wrap .content-portfolio .pop-up.stickers .box-wrapper .box .link:focus {
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 740;
 }
 
@@ -984,21 +963,21 @@ body {
   display: block;
 }
 
-.main .content_wrap .content-portfolio:hover, .main .content_wrap .content-portfolio:active {
+.main .content_wrap .content-portfolio:hover, .main .content_wrap .content-portfolio:active, .main .content_wrap .content-portfolio:focus {
   color: var(--triple-nine-font);
 }
 
-.main .content_wrap .content-portfolio:hover .l-line, .main .content_wrap .content-portfolio:active .l-line {
+.main .content_wrap .content-portfolio:hover .l-line, .main .content_wrap .content-portfolio:active .l-line, .main .content_wrap .content-portfolio:focus .l-line {
   color: var(--secondary-light-color);
 }
 
-.main .content_wrap .content-portfolio:hover .link, .main .content_wrap .content-portfolio:active .link {
+.main .content_wrap .content-portfolio:hover .link, .main .content_wrap .content-portfolio:active .link, .main .content_wrap .content-portfolio:focus .link {
   color: var(--linked-font-color);
   text-decoration: underline;
   text-decoration-color: transparent;
 }
 
-.main .content_wrap .content-portfolio:hover .link-number, .main .content_wrap .content-portfolio:active .link-number {
+.main .content_wrap .content-portfolio:hover .link-number, .main .content_wrap .content-portfolio:active .link-number, .main .content_wrap .content-portfolio:focus .link-number {
   color: var(--linked-font-color);
 }
 
@@ -1021,7 +1000,7 @@ body {
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 620;
 }
 
-.main .content_wrap #oneMore #mailText:hover, .main .content_wrap #oneMore #mailText:active {
+.main .content_wrap #oneMore #mailText:hover, .main .content_wrap #oneMore #mailText:active, .main .content_wrap #oneMore #mailText:focus {
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 690;
 }
 
@@ -1039,7 +1018,7 @@ body {
   }
 }
 
-.main .content_wrap #oneMore:hover #mailText, .main .content_wrap #oneMore:active #mailText {
+.main .content_wrap #oneMore:hover #mailText, .main .content_wrap #oneMore:active #mailText, .main .content_wrap #oneMore:focus #mailText {
   color: var(--linked-font-color);
   text-decoration: none;
 }
@@ -1168,7 +1147,7 @@ footer .footer #githublink:hover a {
     top: 0px;
     padding: 1rem;
   }
-  footer .footer .closeBtn:hover {
+  footer .footer .closeBtn:hover, footer .footer .closeBtn:active, footer .footer .closeBtn:focus {
     font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
     color: var(--background-color);
   }
@@ -1191,35 +1170,35 @@ footer .footer #githublink:hover a {
   }
 }
 
-footer .footer:hover {
+footer .footer:hover, footer .footer:active, footer .footer:focus {
   background-color: #1dd75e;
   color: var(--background-color);
 }
 
-footer .footer:hover .closeBtn {
+footer .footer:hover .closeBtn, footer .footer:active .closeBtn, footer .footer:focus .closeBtn {
   color: #c2f1b1;
 }
 
-footer .footer:hover .closeBtn:hover, footer .footer:hover .closeBtn:active {
+footer .footer:hover .closeBtn:hover, footer .footer:hover .closeBtn:active, footer .footer:hover .closeBtn:focus, footer .footer:active .closeBtn:hover, footer .footer:active .closeBtn:active, footer .footer:active .closeBtn:focus, footer .footer:focus .closeBtn:hover, footer .footer:focus .closeBtn:active, footer .footer:focus .closeBtn:focus {
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
   color: var(--background-color);
 }
 
-footer .footer:hover .footerSpan.futureSpan {
+footer .footer:hover .footerSpan.futureSpan, footer .footer:active .footerSpan.futureSpan, footer .footer:focus .footerSpan.futureSpan {
   color: #00ff84;
   transition: 0.2s ease-in;
 }
 
-footer .footer:hover .footerSpan.futureSpan:hover {
+footer .footer:hover .footerSpan.futureSpan:hover, footer .footer:hover .footerSpan.futureSpan:active, footer .footer:hover .footerSpan.futureSpan:focus, footer .footer:active .footerSpan.futureSpan:hover, footer .footer:active .footerSpan.futureSpan:active, footer .footer:active .footerSpan.futureSpan:focus, footer .footer:focus .footerSpan.futureSpan:hover, footer .footer:focus .footerSpan.futureSpan:active, footer .footer:focus .footerSpan.futureSpan:focus {
   animation: none;
 }
 
-footer .footer:hover .footerSpan.workingSpan {
+footer .footer:hover .footerSpan.workingSpan, footer .footer:active .footerSpan.workingSpan, footer .footer:focus .footerSpan.workingSpan {
   color: #00ff84;
   transition: 0.2s ease-in;
 }
 
-footer .footer:hover .footerSpan.workingSpan:hover {
+footer .footer:hover .footerSpan.workingSpan:hover, footer .footer:hover .footerSpan.workingSpan:active, footer .footer:hover .footerSpan.workingSpan:focus, footer .footer:active .footerSpan.workingSpan:hover, footer .footer:active .footerSpan.workingSpan:active, footer .footer:active .footerSpan.workingSpan:focus, footer .footer:focus .footerSpan.workingSpan:hover, footer .footer:focus .footerSpan.workingSpan:active, footer .footer:focus .footerSpan.workingSpan:focus {
   color: var(--background-color);
   animation: widthness 1s ease-out infinite alternate;
 }
@@ -1233,7 +1212,7 @@ footer .footer:hover .footerSpan.workingSpan:hover {
   }
 }
 
-footer .footer:hover .footerSpan.dangerSpan {
+footer .footer:hover .footerSpan.dangerSpan, footer .footer:active .footerSpan.dangerSpan, footer .footer:focus .footerSpan.dangerSpan {
   transition: 0.3s;
   color: var(--bg-josh-bluish);
   animation: slintness 2s ease infinite;
@@ -1252,10 +1231,10 @@ footer .footer:hover .footerSpan.dangerSpan {
   }
 }
 
-footer .footer:hover #githublink {
+footer .footer:hover #githublink, footer .footer:active #githublink, footer .footer:focus #githublink {
   color: var(--secondary-light-color);
 }
 
-footer .footer:hover #githublink #heart::after {
+footer .footer:hover #githublink #heart::after, footer .footer:active #githublink #heart::after, footer .footer:focus #githublink #heart::after {
   content: '💚';
 }

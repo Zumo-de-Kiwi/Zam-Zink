@@ -230,7 +230,7 @@ body {
           &:hover,
           &:active {
             color: var(
-              --primary-heavier-font-color
+              --secondary-normal-color
             ); //$sutil-dark-purple-gray-color;
           }
         }
@@ -308,15 +308,15 @@ body {
               transition: $trans-slow;
               transition-delay: $delay-fast;
             }
-            :hover,
-            :active,
-            :focus {
-              color: var(--linked-font-color);
-              &::after {
-                color: var(--secondary-normal-color); //$underline-color;
-                transform: translateY(-0.3rem);
-              }
-            }
+            // :hover,
+            // :active,
+            // :focus {
+            //   // color: var(--linked-font-color);
+            //   &::after {
+            //     color: var(--secondary-normal-color); //$underline-color;
+            //     transform: translateY(-0.3rem);
+            //   }
+            // }
           }
           .first-name {
             &::after {
@@ -342,21 +342,23 @@ body {
           }
         }
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
           .complete-name {
             .first-name,
             .family-name {
-              color: var(--triple-seven-font);
-              color: var(--linked-font-color);
+              // color: var(--linked-font-color);
+              // color: var(--secondary-normal-color);
               // text-decoration-color: var(--triple-c-font);
-              text-decoration-color: var(
-                --secondary-normal-color
-              ); //$spotify-text-green;
+              // text-decoration-color: var(--secondary-normal-color);
               &:hover,
               &:active,
               &:focus {
-                color: var(--linked-font-color);
-                text-decoration-color: var(--triple-c-font);
+                // color: var(--linked-font-color);
+                color: var(--triple-seven-font);
+                // text-decoration-color: var(--triple-c-font);
+                text-decoration-color: var(--secondary-normal-color);
+
                 &::after {
                   color: var(--secondary-normal-color); // $underline-color;
                   transform: translateY(-0.3rem);
@@ -393,7 +395,8 @@ body {
             display: none;
           }
           &:hover,
-          &:active {
+          &:active,
+          &:focus {
             .default-span {
               display: none;
             }
@@ -426,7 +429,8 @@ body {
 
         // GLOBAL
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
           font-variation-settings: 'MONO' 0.2, 'CASL' 0.6,
             'wght' $font-weight-bolder, $slnt;
         }
@@ -504,7 +508,8 @@ body {
             content: 'Video Projects';
           }
           &:hover,
-          &:active {
+          &:active,
+          &:focus {
             &::after {
               color: var(--triple-seven-font); //$font-light-gray;
               content: '[C🙃ming Soon]';
@@ -517,7 +522,8 @@ body {
             display: none;
           }
           &:hover,
-          &:active {
+          &:active,
+          &:focus {
             #mosaic {
               display: none;
             }
@@ -615,7 +621,9 @@ body {
                 padding-right: 2rem;
                 font-size: 1.2em;
                 color: rgb(97, 97, 97);
-                &:hover {
+                &:hover,
+                &:active,
+                &:focus {
                   color: black;
                 }
               }
@@ -639,7 +647,9 @@ body {
                 line-height: 0.8;
                 font-variation-settings: 'MONO' 0, 'CASL' 0,
                   'wght' $font-weight-light;
-                &:hover {
+                &:hover,
+                &:active,
+                &:focus {
                   font-variation-settings: 'MONO' 0, 'CASL' 0,
                     'wght' $font-weight-bolder;
                 }
@@ -672,7 +682,8 @@ body {
 
       // ALL LINKS
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         //for gray text
         color: var(--triple-nine-font);
         .l-line {
@@ -708,7 +719,8 @@ body {
           'wght' $font-weight-normal;
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
           font-variation-settings: 'MONO' 0.2, 'CASL' 0,
             'wght' $font-weight-bold;
         }
@@ -727,7 +739,8 @@ body {
         }
       }
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         #mailText {
           color: var(--linked-font-color);
           text-decoration: none;
@@ -856,7 +869,9 @@ footer {
         top: 0px;
         // left: 0rem;
         padding: 1rem;
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus {
           font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
           color: var(--background-color); //white;
         }
@@ -882,13 +897,16 @@ footer {
         padding-top: 1.2rem;
       }
     }
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       background-color: $spotify-text-green;
       color: var(--background-color); //white;
       .closeBtn {
         color: hsl(104, 70%, 82%);
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
           font-variation-settings: 'MONO' 1, 'CASL' 0.1, 'wght' 500, $slnt;
           color: var(--background-color); // white;
         }
@@ -897,14 +915,18 @@ footer {
         &.futureSpan {
           color: $skillshare-green;
           transition: 0.2s ease-in;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             animation: none;
           }
         }
         &.workingSpan {
           color: $skillshare-green;
           transition: 0.2s ease-in;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             color: var(--background-color); // white;
             animation: widthness 1s ease-out infinite alternate;
           }
