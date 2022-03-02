@@ -82,19 +82,8 @@
     <div class="body">
       <main class="main">
         <nav class="navigation">
-          <!-- NEW LOGO -->
-          <div id="interactive-logo">
-            <div class="left container part">
-              <label class="switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-              </label>
-            </div>
-            <div class="right upper part"></div>
-            <left class="upper part"></left>
-          </div>
-          <ul>
-            <!--LOGO is transparent, you need to change to color to be visible-->
+          <!-- ORIGINAL NAV (mobile) -->
+          <ul class="mobile-nav">
             <li>
               <a class="about" href="pages/about-me/about_me.html">about</a>
             </li>
@@ -102,6 +91,35 @@
               <a class="contact" href="pages/contact/contact.html">contact</a>
             </li>
           </ul>
+
+          <!-- NEW LOGO (desktop)-->
+          <div class="desktop-logo">
+            <!-- L -->
+            <!-- 2.0 -->
+            <div class="left logo">
+              <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
+            <!-- 1.0 -->
+            <div class="left container part">
+              <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
+
+            <!-- R -->
+            <!-- <div class="logo-right-wrapper"> -->
+            <div class="right upper part">
+              <a class="about" href="pages/about-me/about_me.html"></a>
+            </div>
+            <div class="right down part">
+              <a class="contact" href="pages/contact/contact.html"></a>
+            </div>
+            <!-- </div> -->
+          </div>
         </nav>
         <!-- <main class="content_wrap"> -->
         <div class="content_wrap">
@@ -425,7 +443,7 @@
             >
             ☜
             <!-- VERSION -->
-            <span class="footerSpan"> version 0.84.1</span>
+            <span class="footerSpan"> version 0.86.0</span>
           </div>
         </div>
       </footer>
