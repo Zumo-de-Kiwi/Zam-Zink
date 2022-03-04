@@ -9,31 +9,32 @@
   // --primary-light-font: # a6a6a6 !important;
   // --triple-six-font: #666 !important;
   // --triple-two-font: #222 !important;
-  --triple-four-font: #444 !important;
-  --triple-seven-font: #777 !important;
-  --triple-eight-font: #888 !important;
-  --triple-nine-font: #999 !important;
-  --triple-c-font: #ccc !important;
-  --triple-d-bg: #ddd !important;
-  --josh-bluish-bg: #eff1f5 !important;
-  --color-bg: #fff !important;
-  --linked-font-color: #5f3fd5 !important;
-  --secondary-normal-color: #1dd75e !important;
-  --secondary-light-color: #00ff84 !important;
+  --triple-four-font: #444;
+  --triple-seven-font: #777;
+  --triple-eight-font: #888;
+  --triple-nine-font: #999;
+  --triple-c-font: #ccc;
+  --triple-d-bg: #ddd;
+  --josh-bluish-bg: #eff1f5;
+  --color-bg: #fff;
+  --linked-font-color: #5f3fd5;
+  --secondary-normal-color: #1dd75e;
+  --secondary-light-color: #00ff84;
+  --heart-emoji: '💚';
 }
-// Dark Mode
 [data-theme='dark'] {
-  --triple-four-font: #bbb !important;
-  --triple-seven-font: #888 !important;
-  --triple-eight-font: #777 !important;
-  --triple-nine-font: #666 !important;
-  --triple-c-font: #333 !important;
-  --triple-d-bg: #222 !important;
-  --josh-bluish-bg: #100e0a !important;
-  --color-bg: #000 !important;
-  --linked-font-color: #ffa500 !important;
-  --secondary-normal-color: #d71dbb !important;
-  --secondary-light-color: #f200ff !important;
+  --triple-four-font: #bbb;
+  --triple-seven-font: #999; //#888;
+  --triple-eight-font: #888; //#777;
+  --triple-nine-font: #777; //#666;
+  --triple-c-font: #444; //#333;
+  --triple-d-bg: #333; //#222;
+  --josh-bluish-bg: #100e0a;
+  --color-bg: #000;
+  --linked-font-color: #ffa500;
+  --secondary-normal-color: #cb15af;
+  --secondary-light-color: #f344fc;
+  --heart-emoji: '💜';
 }
 
 html {
@@ -42,6 +43,7 @@ html {
 body {
   min-height: 100%;
   position: relative;
+  background: var(--color-bg);
 }
 //////////// PRE LOADER //////////////////////
 //// ALERT! don't put it inside the body/////
@@ -51,7 +53,7 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgb(255, 255, 255);
+  background: var(--color-bg);
 
   display: flex;
   justify-content: center;
@@ -166,7 +168,7 @@ body {
     }
   }
   &.preload-finish {
-    opacity: 0; //need to be 0
+    opacity: 0;
     pointer-events: none;
     .text-char {
       .innerWrapper {
@@ -243,7 +245,9 @@ body {
       height: 8rem;
 
       display: grid;
+      grid-template-columns: 1.5fr 1.3fr 1.1fr 1fr 1fr;
       justify-content: unset;
+      justify-items: start;
       align-items: center;
       margin: 1vh 0vh;
     }
@@ -267,12 +271,13 @@ body {
       .bg-color {
         background-color: var(--triple-d-bg);
       }
-      .left.logo {
+
+      .left {
         grid-row: 1 / 3;
         height: calc(34px * var(--logo-multi));
         width: calc(15px * var(--logo-multi));
         transition: 0.5s;
-        .switch {
+        .theme-switch {
           transition: color 0.3s, transform 0.3s, border-radius 0.3s;
           display: inline-block;
           height: 100%;
@@ -307,7 +312,6 @@ body {
           }
         }
       }
-      // B C
       .right {
         grid-column: 2;
         height: calc(1.5rem * var(--logo-multi));
@@ -322,18 +326,19 @@ body {
           position: relative;
           &::after {
             position: absolute;
-            top: 2.5px;
-            left: 6.7px;
-            bottom: 0;
-            right: 0;
-            transition: 0.3s; // color 0.3s, font-size 0.3s;
+            transform: translate(6.7px, 2.5px);
+            transition: 0.3s;
+
+            font-size: 1.9rem;
             color: transparent;
+            font-variation-settings: 'MONO' 0.2, 'CASL' 0,
+              'wght' $font-weight-normal, $slnt;
           }
           //about me
           &.about {
             border-radius: 11% 33% 11% 11%;
             &::after {
-              content: 'B';
+              content: 'A';
             }
           }
           //contact
@@ -350,15 +355,17 @@ body {
     // :hover on NAV
     &:hover {
       .desktop-logo {
-        --logo-multi: 1.1;
+        --logo-multi: 1.2;
         .bg-color {
           background-color: var(--triple-c-font);
         }
       }
     }
 
-    // :hover on NAV PARTS (not working)
+    // :hover on NAV PARTS
     .cls {
+      width: 100%;
+      height: 100%;
       &.cl-1:hover ~ .desktop-logo {
         --logo-multi: 1.2;
       }
@@ -366,13 +373,12 @@ body {
         --logo-multi: 1.3;
       }
       &.cl-3:hover ~ .desktop-logo {
-        --logo-multi: 1.5;
+        --logo-multi: 1.45;
       }
       &.cl-4:hover ~ .desktop-logo {
-        --logo-multi: 1.7;
+        --logo-multi: 1.6;
       }
-      // desktop-logo
-      &.cl-5 {
+      &.cl-5.desktop-logo {
         grid-column: 5;
         &:hover {
           --logo-multi: 1.9;
@@ -388,45 +394,42 @@ body {
       .bg-color:hover {
         background-color: var(--secondary-normal-color);
       }
-      .left.logo {
+      .left {
         height: 65px;
         width: 33px;
-        .switch {
-          display: inline-block;
-          position: relative;
-          input {
-            display: none;
-          }
+        .theme-switch {
           .slider {
             border-radius: 1.3rem 5px 5px 1.3rem;
             &:hover,
             &focus {
               cursor: $cursor-please-fingers;
+              border-radius: 2.1rem;
             }
             &:active {
               cursor: $cursor-yeah-hand;
             }
             &:before {
               background-color: var(--color-bg);
-              top: 5.5px;
-              left: 5.5px;
-              height: 23px;
-              width: 23px;
+              top: 6px;
+              left: 5.7px;
+              height: 21px;
+              width: 21px;
+              will-change: transform;
             }
           }
           input:checked + .slider:before {
-            transform: translateY(30px);
+            transform: translateY(32px);
           }
         }
       }
       .right a {
         &::after {
           color: var(--color-bg);
-          font-size: 1.8rem;
         }
         &:hover::after {
-          left: 31px;
           color: var(--secondary-normal-color);
+          transform: translate(33px, 4px);
+          font-size: 1.7rem;
         }
         &.about:hover::after {
           content: 'About';
@@ -494,9 +497,12 @@ body {
 
             transition: $trans-slow ease;
             will-change: font-variation-settings;
+
             &::after {
               font-size: $font-size-small;
               color: transparent;
+              font-variation-settings: $MONO, 'CASL' 0,
+                'wght' $font-weight-normal, $slnt;
 
               position: absolute;
               text-align: center;
@@ -507,29 +513,29 @@ body {
 
               transition: $trans-slow;
               transition-delay: $delay-fast;
+              will-change: transform;
             }
           }
           .first-name {
-            &::after {
-              // ⤴️
-              content: '↑ about me';
-            }
             &:hover,
             &:active,
             &:focus {
               font-variation-settings: $MONO, 'CASL' 0.87,
                 'wght' $font-weight-bolder, $slnt;
             }
+            &::after {
+              content: '↑ about me';
+            }
           }
           .family-name {
-            &::after {
-              content: 'contact ↑';
-            }
             &:hover,
             &:active,
             &:focus {
               font-variation-settings: $MONO, 'CASL' 0,
                 'wght' $font-weight-bolder, $slnt;
+            }
+            &::after {
+              content: 'contact ↑';
             }
           }
         }
@@ -988,7 +994,7 @@ footer {
         font-size: 1.7rem;
         font-variation-settings: 'MONO' 0.4, 'CASL' 0, 'wght' $font-weight-light,
           $slnt;
-        color: var(--triple-nine-font); //var(--primary-light-font);
+        color: var(--triple-nine-font);
 
         padding: 12px;
         padding-left: 20px;
@@ -1076,7 +1082,6 @@ footer {
       .line {
         margin-right: 1.5rem;
         margin-left: 1.5rem;
-        // font-size: 0.9em;
         span {
           font-size: calc(0.6vw + 0.9rem);
           line-height: 1.8;
@@ -1097,7 +1102,7 @@ footer {
     &:hover,
     &:active,
     &:focus {
-      background-color: $spotify-text-green;
+      background-color: var(--secondary-normal-color);
       color: var(--color-bg);
       .closeBtn {
         color: var(--color-bg);
@@ -1112,7 +1117,7 @@ footer {
       }
       .footerSpan {
         &.futureSpan {
-          color: $skillshare-green;
+          color: var(--secondary-light-color);
           transition: 0.2s ease-in;
           &:hover,
           &:active,
@@ -1121,7 +1126,7 @@ footer {
           }
         }
         &.workingSpan {
-          color: $skillshare-green;
+          color: var(--secondary-light-color);
           transition: 0.2s ease-in;
           &:hover,
           &:active,
@@ -1163,7 +1168,7 @@ footer {
       #githublink {
         color: var(--secondary-light-color);
         #heart::after {
-          content: '💚';
+          content: var(--heart-emoji);
         }
       }
     }

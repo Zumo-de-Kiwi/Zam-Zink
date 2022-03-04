@@ -20,18 +20,17 @@
 ## 0. HOME
 
 - [ ] #001 `footer` coming soon put a expandable or pau-ma-ten with more **coming soon**, **working on** and **future project**
-- [ ] #002 make the version in the `footer` a real-time-auto-updated version
-- [ ] #012 **...** Make my LOGO returns, maybe with `buttons` inside itself
+- [ ] #002 Make the version in the `footer` a real-time-auto-updated version
 - [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
-- [x] #014 Add the sketch linkable to the DRAWINGS page
 - [ ] #015 Dark mode
-
 - [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a `@keyframe animation` directly
 - [ ] #023 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
 
 - COMPLETED
 
   - [x] #010 One more thing `:active` for iPad mobile
+  - [x] #012 Make my LOGO returns, maybe with `buttons` inside itself
+  - [x] #014 Add the sketch linkable to the DRAWINGS page
   - [x] #015 Minor corections on the home page
   - [x] #020 Use your logo for home `loading`. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
   - [x] #021 Put char text for logo for home loading
