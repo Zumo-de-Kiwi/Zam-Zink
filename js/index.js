@@ -23,7 +23,7 @@ const toggleSwitch = document.querySelector(
 const currentTheme = localStorage.getItem('theme')
   ? localStorage.getItem('theme')
   : null;
-
+/////////////////////////////////
 // 1. Check for saved user preference, if any, on load of the website
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
@@ -32,6 +32,7 @@ if (currentTheme) {
     toggleSwitch.checked = true;
   }
 }
+/////////////////////////////////
 // 2. Store the user preference for future visits
 // 3. Adding the event handlers (using the toogle)
 function switchTheme(e) {
@@ -43,7 +44,6 @@ function switchTheme(e) {
     localStorage.setItem('theme', 'light'); //add this
   }
 }
-
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 /////////////////////////////////

@@ -22,7 +22,7 @@
 - [ ] #001 `footer` coming soon put a expandable or pau-ma-ten with more **coming soon**, **working on** and **future project**
 - [ ] #002 Make the version in the `footer` a real-time-auto-updated version
 - [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
-- [ ] #015 Dark mode
+
 - [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a `@keyframe animation` directly
 - [ ] #023 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
 
@@ -32,6 +32,7 @@
   - [x] #012 Make my LOGO returns, maybe with `buttons` inside itself
   - [x] #014 Add the sketch linkable to the DRAWINGS page
   - [x] #015 Minor corections on the home page
+  - [x] #015 Dark mode
   - [x] #020 Use your logo for home `loading`. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
   - [x] #021 Put char text for logo for home loading
   - [x] #040 Appears a messenger bubble when click on the Stickers link, so you need to have external linked it
@@ -68,7 +69,7 @@
 - [ ] #407 **#18** On the `footer` say it is kare
 - [ ] #408 **#19** Download link to the game
 - [ ] #409 **#20** Link to download the fb frame
-- [ ] #410 **...** #10 (add PICS) The designs in real life
+- [ ] #410 **#10...** (add PICS) The designs in real life
 - [ ] #414 **#6** Add the updated my web pic with the new LOGO
 
 - COMPLETED
