@@ -3,7 +3,7 @@
 
 body {
   ///////////////////////////////////////////
-  $design-bg-color: hsl(30, 37%, 68%); //#dac6b2;
+  $design-bg-color: hsl(30, 43%, 71%); //hsl(30, 37%, 68%); //#dac6b2;
   $design-plastic-color: rgb(51, 148, 103);
   $design-color-green: rgb(51, 148, 103);
   $design-color-yellow: rgb(245, 221, 59);
@@ -12,7 +12,6 @@ body {
   $design-white-color: rgb(244, 242, 235);
   ///////////////////////////////////////////
   font-family: $ff-space-grotesk;
-  // font-family: $ff-grotesk-mono;
   background-color: $design-bg-color;
   width: 100vw;
   font-weight: 300;
@@ -48,17 +47,19 @@ body {
       @media (max-width: 768px) {
         top: 1rem;
       }
+      &:hover {
+        .hc-logo {
+          fill: $design-bg-color; //$design-color-green;
+        }
+      }
       .link-a {
         padding-right: 3rem;
         color: $design-bg-color;
-        &:hover {
-          color: $design-bg-color;
-        }
       }
     }
   }
-  header {
-  }
+  // header {
+  // }
   main {
     background: $design-bg-color;
     // height: 600vh;

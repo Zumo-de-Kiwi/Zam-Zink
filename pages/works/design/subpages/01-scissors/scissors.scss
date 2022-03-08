@@ -63,13 +63,22 @@ body {
   }
   main {
     display: grid; //trampemoji
-    .subpage-wrapper {
+    // .subpage-wrapper {
+    //   display: grid;
+    //   grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+    //       7%,
+    //       1fr
+    //     );
+    .w-part {
+      // width: 100%;
+      grid-column: 1 /5;
       display: grid;
+
       grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
           7%,
           1fr
         );
-      .subpage-content-1 {
+      .inner-w-part {
         grid-column: 2;
         width: 100%;
         position: relative;
@@ -84,7 +93,6 @@ body {
         .small-image {
           width: 19%;
         }
-        // text-align
         .txt-l {
           text-align: left;
         }
@@ -101,17 +109,12 @@ body {
           font-size: 5rem;
           margin-bottom: 0.3rem;
         }
-        // .w-box {
         .w-texts {
           font-family: $ff-space-grotesk;
-          // font-family: $ff-grotesk-mono;
           .w-para {
             margin-bottom: 4rem;
             margin-right: 19%;
             font-size: 1.6rem;
-            // @media (max-width: 768px) {
-            //   font-size: 0.7em;
-            // }
           }
         }
         .info-text {
@@ -164,283 +167,276 @@ body {
           grid-row: 2;
           padding-top: 6rem;
         }
-
-        ////////// PART 2 ////////
-        ////////// FULL-SIZE ////////
-        .full-wrapper {
-          grid-column: 1 / 4;
-
-          &.wrapper-1 {
-            grid-row: 4;
-            #el-1-up {
-              font-family: $ff-tourney;
-              padding-top: 7rem;
-              font-size: 6rem;
-              transform: translateY(1.5rem);
-              font-weight: 900;
-              text-align: center;
-              color: rgb(229, 107, 146);
-              border-radius: 25px 25px 0px 0px;
-            }
-            #el-1 {
-              padding-right: 15%;
-              padding-left: 15%;
-              padding-top: 3%;
-              padding-bottom: 3%;
-              border-radius: 1rem;
-              background-color: rgb(229, 107, 146);
-              width: 100%;
-              grid-row: 9;
-              grid-column: 1/ 4;
-            }
-            #el-1-down {
-              padding-bottom: 7rem;
-              font-size: 1.7rem;
-              font-weight: 900;
-              text-align: center;
-              color: rgb(229, 107, 146);
-              border-radius: 25px 25px 0px 0px;
-            }
-          }
-
-          &.wrapper-2 {
-            grid-row: 5;
-            #el-2-up {
-              font-family: $ff-tourney;
-              padding-top: 7rem;
-              font-size: 6rem;
-              transform: translateY(1.5rem);
-              font-weight: 900;
-              text-align: center;
-              color: #fcbd33;
-              border-radius: 25px 25px 0px 0px;
-            }
-            #el-2 {
-              padding-right: 15%;
-              padding-left: 15%;
-              padding-top: 3%;
-              padding-bottom: 1%;
-              border-radius: 1rem;
-              background-color: #fcbd33;
-              width: 100%;
-              grid-row: 9;
-              grid-column: 1/ 4;
-            }
-            #el-2::after {
-              width: 100%;
-              padding-top: 1rem;
-              padding-bottom: 1rem;
-              font-size: 1.7rem;
-              text-align: center;
-              display: block;
-              color: white;
-              content: '↑ She is one of my craziest friend ↑';
-              background-color: #fcbd33;
-              grid-column: 1/ 4;
-              border-radius: 0px 0px 25px 25px;
-            }
-            #el-2-down {
-              padding-bottom: 7rem;
-              font-size: 1.7rem;
-
-              font-weight: 900;
-              text-align: center;
-              color: #f5b70b;
-              border-radius: 25px 25px 0px 0px;
-            }
-          }
-
-          // HOUSE
-          &.wrapper-3 {
-            grid-row: 6;
-            #el-3-up {
-              font-family: $ff-tourney;
-              padding-top: 7rem;
-              font-size: 6rem;
-              transform: translateY(1.5rem);
-              font-weight: 900;
-              text-align: center;
-              color: #3a57a2;
-              border-radius: 25px 25px 0px 0px;
-            }
-            #el-3::before {
-              width: 100%;
-              padding-top: 1rem;
-              padding-bottom: 1rem;
-              font-size: 1.7rem;
-              text-align: center;
-              display: block;
-              color: white;
-              content: '↓ by Nobuhiko Obayashi ↓';
-              background-color: #3a57a2;
-              grid-column: 1/ 4;
-              border-radius: 0px 0px 25px 25px;
-            }
-            #el-3 {
-              padding-right: 15%;
-              padding-left: 15%;
-              // padding-top: 3%;
-              // padding-bottom: 1%;
-              border-radius: 1rem;
-              background: linear-gradient(#3a57a2, #b8bcf0);
-              width: 100%;
-              grid-row: 9;
-              // grid-column: 1/ 4;
-            }
-
-            #el-3::after {
-              width: 100%;
-              padding-top: 1rem;
-              padding-bottom: 1rem;
-              font-size: 3rem;
-              text-align: center;
-              display: block;
-              color: white;
-              font-family: $ff-jp-elegant;
-              font-weight: 600;
-              content: 'ハ ウ ス';
-              background-color: #a43229;
-              // background-color: #3a57a2;
-              // background-color: #3aa24f;
-              grid-column: 1/ 4;
-              border-radius: 0px 0px 25px 25px;
-            }
-            #el-3-down {
-              padding-bottom: 7rem;
-              font-size: 1.5rem;
-              width: 60%;
-              margin: 0px auto;
-              // transform: translateY(1.5rem);
-              font-weight: 900;
-              text-align: center;
-              // display: block;
-              // background-color: #949f97e9;
-              color: #c44b42;
-              // grid-column: 1/ 4;
-              border-radius: 25px 25px 0px 0px;
-            }
-          }
-
-          // SPACE
-          &.wrapper-4 {
-            grid-row: 7;
-            #el-3-up {
-              font-family: $ff-tourney;
-              padding-top: 7rem;
-              font-size: 6rem;
-              transform: translateY(1.2rem);
-              font-weight: 900;
-              animation: to400Anim 1.7s infinite linear alternate;
-              transition: 0.3s;
-              text-align: center;
-              color: #1f1e24;
-              border-radius: 25px 25px 0px 0px;
-            }
-            @keyframes to400Anim {
-              to {
-                font-weight: 400;
-              }
-            }
-            #el-3::before {
-              width: 100%;
-              padding-top: 2rem;
-              padding-bottom: 2rem;
-              font-size: 1.7rem;
-              text-align: center;
-              display: block;
-              color: #a17282; //#c56950;
-              content: '↓ roommate boriness ↓';
-              // background-color: #000000;
-              grid-column: 1/ 4;
-              border-radius: 0px 0px 0px 0px;
-            }
-            #el-3 {
-              padding-right: 15%;
-              padding-left: 15%;
-              border-radius: 1rem;
-              background: linear-gradient(20deg, #15130e, #322d34, #000000);
-              width: 100%;
-              grid-row: 9;
-              img {
-                box-shadow: 0px 3px 17px rgb(0, 0, 0);
-              }
-            }
-
-            #el-3::after {
-              width: 100%;
-              padding-top: 2rem;
-              padding-bottom: 3rem;
-              font-size: 3rem;
-              text-align: center;
-              display: block;
-              color: rgb(206, 153, 68); // #9d7123;
-              font-family: $ff-jp-elegant;
-              font-weight: 600;
-              content: 'レ カ ロ';
-              // background: linear-gradient(  180deg, rgba(210, 107, 70, 1) 0%,  rgba(231, 180, 91, 1) 33%,  rgba(230, 176, 90, 1) 66%,  rgba(210, 107, 70, 1) 100%
-              // );
-              grid-column: 1/ 4;
-              border-radius: 0px 0px 0px 0px;
-            }
-            #el-3-down {
-              padding-bottom: 7rem;
-              font-size: 1.5rem;
-              width: 60%;
-              margin: 0px auto;
-              // transform: translateY(1.5rem);
-              font-weight: 900;
-              text-align: center;
-              color: rgba(230, 176, 90, 1);
-              border-radius: 25px 25px 0px 0px;
-            }
+      }
+    }
+    // .subpage-content-1 {
+    .contain-part {
+      grid-column: 1 / 5;
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+          7%,
+          1fr
+        );
+      .full-wrapper {
+        grid-column: 1 / 4;
+        // grid-column: 2;
+        picture {
+          // max-width: 900px;
+          img {
+            width: 100%;
+            margin: 0px auto;
+            max-width: 900px;
           }
         }
-        .btn-wrapper {
-          // grid-row: 10;
-          // grid-column: 1/ 4;
-          // display: flex;
-          // justify-content: space-around;
-          // padding-left: 5%;
-          // padding-right: 5%;
-          .btns {
-            // text-align: center;
-            // font-size: 1.8rem;
 
-            // border-radius: 2rem;
-            // transition: 0.15s;
-            background: rgb(227, 115, 74);
-            &:hover {
-              background: rgb(230, 176, 90);
+        &.wrapper-1 {
+          grid-row: 4;
+          #el-1-up {
+            font-family: $ff-tourney;
+            padding-top: 7rem;
+            font-size: 6rem;
+            transform: translateY(1.5rem);
+            font-weight: 900;
+            text-align: center;
+            color: rgb(229, 107, 146);
+            border-radius: 25px 25px 0px 0px;
+          }
+          #el-1 {
+            padding-right: 15%;
+            padding-left: 15%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            border-radius: 1rem;
+            background-color: rgb(229, 107, 146);
+            width: 100%;
+            // grid-row: 9;
+            // grid-column: 1/ 4;
+          }
+          #el-1-down {
+            padding-bottom: 7rem;
+            font-size: 1.7rem;
+            font-weight: 900;
+            text-align: center;
+            color: rgb(229, 107, 146);
+            border-radius: 25px 25px 0px 0px;
+          }
+        }
+
+        &.wrapper-2 {
+          grid-row: 5;
+          #el-2-up {
+            font-family: $ff-tourney;
+            padding-top: 7rem;
+            font-size: 6rem;
+            transform: translateY(1.5rem);
+            font-weight: 900;
+            text-align: center;
+            color: #fcbd33;
+            border-radius: 25px 25px 0px 0px;
+          }
+          #el-2 {
+            padding-right: 15%;
+            padding-left: 15%;
+            padding-top: 3%;
+            padding-bottom: 1%;
+            border-radius: 1rem;
+            background-color: #fcbd33;
+            width: 100%;
+            // grid-row: 9;
+            grid-column: 1/ 4;
+          }
+          #el-2::after {
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 1.7rem;
+            text-align: center;
+            display: block;
+            color: white;
+            content: '↑ She is one of my craziest friend ↑';
+            background-color: #fcbd33;
+            grid-column: 1/ 4;
+            border-radius: 0px 0px 25px 25px;
+          }
+          #el-2-down {
+            padding-bottom: 7rem;
+            font-size: 1.7rem;
+
+            font-weight: 900;
+            text-align: center;
+            color: #f5b70b;
+            border-radius: 25px 25px 0px 0px;
+          }
+        }
+
+        // HOUSE
+        &.wrapper-3 {
+          grid-row: 6;
+          #el-3-up {
+            font-family: $ff-tourney;
+            padding-top: 7rem;
+            font-size: 6rem;
+            transform: translateY(1.5rem);
+            font-weight: 900;
+            text-align: center;
+            color: #3a57a2;
+            border-radius: 25px 25px 0px 0px;
+          }
+          #el-3::before {
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 1.7rem;
+            text-align: center;
+            display: block;
+            color: white;
+            content: '↓ directed by Nobuhiko Obayashi ↓';
+            background-color: #3a57a2;
+            // grid-column: 1/ 4;
+            border-radius: 0px 0px 25px 25px;
+          }
+          #el-3 {
+            padding-right: 15%;
+            padding-left: 15%;
+            border-radius: 1rem;
+            background: linear-gradient(#3a57a2, #b8bcf0);
+            width: 100%;
+            // grid-row: 9;
+            // grid-column: 1/ 4;
+          }
+
+          #el-3::after {
+            content: 'ハ ウ ス';
+            background-color: #a43229;
+
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 3rem;
+            text-align: center;
+            display: block;
+            color: white;
+            font-family: $ff-jp-elegant;
+            font-weight: 600;
+            // grid-column: 1/ 4;
+            border-radius: 0px 0px 25px 25px;
+            max-width: 900px;
+            margin: 0px auto;
+          }
+          #el-3-down {
+            color: #c44b42;
+
+            font-size: 1.5rem;
+            width: 60%;
+            margin: 0px auto;
+            // transform: translateY(1.5rem);
+            font-weight: 900;
+            text-align: center;
+
+            // grid-column: 1/ 4;
+            border-radius: 25px 25px 0px 0px;
+            padding-bottom: 7rem;
+          }
+        }
+
+        // SPACE
+        &.wrapper-4 {
+          grid-row: 7;
+          #el-3-up {
+            font-family: $ff-tourney;
+            padding-top: 7rem;
+            font-size: 6rem;
+            transform: translateY(1.2rem);
+            font-weight: 900;
+            animation: to400Anim 1.7s infinite linear alternate;
+            transition: 0.3s;
+            text-align: center;
+            color: #1f1e24;
+            border-radius: 25px 25px 0px 0px;
+          }
+          @keyframes to400Anim {
+            to {
+              font-weight: 400;
             }
-            a {
-              color: white;
-              // text-decoration: none;
-              // height: 6rem;
-              // line-height: 6rem;
-              // min-width: 18%;
-              // padding: 2rem;
-              // padding-right: 4rem;
-              // padding-left: 4rem;
+          }
+          #el-3::before {
+            content: '↓ roommate boriness ↓';
+            color: #a17282; //#c56950;
+            font-size: 1.7rem;
+            text-align: center;
+
+            width: 100%;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+            display: block;
+            // grid-column: 1/ 4;
+            border-radius: 0px 0px 0px 0px;
+          }
+          #el-3 {
+            padding-right: 15%;
+            padding-left: 15%;
+            border-radius: 1rem;
+            background: linear-gradient(20deg, #15130e, #322d34, #000000);
+            width: 100%;
+            // grid-row: 9;
+            img {
+              box-shadow: 0px 3px 17px rgb(0, 0, 0);
+              width: 90%;
+              max-width: 480px;
+              transition: 0.3s ease-out;
+              // will-change: transform;
+              &:hover {
+                transform: scale(1.2) translateY(1.3rem);
+              }
             }
-            // &.prev {
-            //   a {
-            //     cursor: $cursor-arrow-hand;
-            //   }
-            // }
-            // &.back-design {
-            //   a {
-            //     cursor: $cursor-pointer-hand-flip;
-            //   }
-            // }
-            // &.next {
-            //   a {
-            //     cursor: $cursor-right-hand;
-            //   }
-            // }
+          }
+
+          #el-3::after {
+            width: 100%;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+            font-size: 3rem;
+            text-align: center;
+            display: block;
+            color: rgb(206, 153, 68); // #9d7123;
+            font-family: $ff-jp-elegant;
+            font-weight: 600;
+            content: 'レ カ ロ';
+
+            // grid-column: 1/ 4;
+            border-radius: 0px 0px 0px 0px;
+          }
+          #el-3-down {
+            padding-bottom: 7rem;
+            font-size: 1.5rem;
+            width: 60%;
+            margin: 0px auto;
+            transform: translateY(1.5rem);
+            font-weight: 900;
+            text-align: center;
+            color: rgba(230, 176, 90, 1);
+            border-radius: 25px 25px 0px 0px;
           }
         }
       }
     }
+    .btn-wrapper {
+      grid-column: 2;
+      .btns {
+        background: rgb(227, 115, 74);
+        &:hover {
+          background: rgb(230, 176, 90);
+        }
+        a {
+          color: white;
+        }
+      }
+    }
+    // }
+    // }
 
     #trampolin-wrapper {
       #trampolineEmoji {
@@ -449,6 +445,7 @@ body {
     }
     // footer
     .footer {
+      grid-column: 1 / 5;
       z-index: 19;
       height: 29rem;
       width: 100%;

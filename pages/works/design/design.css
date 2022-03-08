@@ -367,7 +367,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #ccad8f;
+  background-color: #d5b595;
   width: 100vw;
   font-weight: 300;
   position: relative;
@@ -412,17 +412,17 @@ body .absolute-nav .left-arrow {
   }
 }
 
-body .absolute-nav .left-arrow .link-a {
-  padding-right: 3rem;
-  color: #ccad8f;
+body .absolute-nav .left-arrow:hover .hc-logo {
+  fill: #d5b595;
 }
 
-body .absolute-nav .left-arrow .link-a:hover {
-  color: #ccad8f;
+body .absolute-nav .left-arrow .link-a {
+  padding-right: 3rem;
+  color: #d5b595;
 }
 
 body main {
-  background: #ccad8f;
+  background: #d5b595;
   position: relative;
   display: grid;
   font-weight: 400;
@@ -437,7 +437,7 @@ body main .main-header {
 }
 
 body main .main-header h1 {
-  color: #ccad8f;
+  color: #d5b595;
   background-color: #363636;
   font-weight: 700;
   font-size: 2.3rem;

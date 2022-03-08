@@ -63,14 +63,15 @@
 
 ## 4. SUBDESIGN
 
-- [ ] #403 **...** **#6** Put the sketches
+- [ ] #403 **#6...** Put the sketches
+- [ ] #414 **#6..** Add the updated my web pic with the new LOGO
 
-- [ ] #405 **#12** Put the lamp head on the corner
+- [ ] #405 **#12...** Put the lamp head on the corner
 - [ ] #407 **#18** On the `footer` say it is kare
 - [ ] #408 **#19** Download link to the game
 - [ ] #409 **#20** Link to download the fb frame
 - [ ] #410 **#10...** (add PICS) The designs in real life
-- [ ] #414 **#6** Add the updated my web pic with the new LOGO
+- [ ] #415 **#** ...
 
 - COMPLETED
 
