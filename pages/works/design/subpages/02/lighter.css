@@ -517,7 +517,7 @@ body main #trampolin-wrapper #trampolineEmoji {
 body {
   font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: white;
-  width: 100vw;
+  width: 100%;
   font-weight: 300;
   position: relative;
 }
@@ -591,6 +591,19 @@ body main .subpage-wrapper .subpage-content-1 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+body main .subpage-wrapper .subpage-content-1 .external-link {
+  color: inherit;
+  opacity: 0.8;
+  text-decoration: underline;
+  text-decoration-color: #a3a3a3;
+  transition: 0.3s;
+}
+
+body main .subpage-wrapper .subpage-content-1 .external-link:hover {
+  opacity: 1;
+  text-decoration-color: black;
 }
 
 body main .subpage-wrapper .subpage-content-1 .hero-image {

@@ -75,6 +75,18 @@ body {
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        .external-link {
+          color: inherit;
+          opacity: 0.8;
+          text-decoration: underline;
+          text-decoration-color: rgb(163, 163, 163);
+          transition: 0.3s;
+          &:hover {
+            opacity: 1;
+            text-decoration-color: rgb(0, 0, 0);
+          }
+        }
         .hero-image {
           width: 100%;
         }

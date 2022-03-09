@@ -4,18 +4,16 @@
 
 body {
   ///////////////////////////////////////////
-  $design-color-green: rgb(51, 148, 103);
-  $design-color-yellow: rgb(245, 221, 59);
-  $design-color-red: rgb(215, 61, 69);
+  // $design-color-green: rgb(51, 148, 103);
+  // $design-color-yellow: rgb(245, 221, 59);
+  // $design-color-red: rgb(215, 61, 69);
   $design-text-color: hsl(0, 0%, 21%);
   $design-white-color: rgb(244, 242, 235);
   $design-subpg-bg: hsl(0, 0%, 100%);
   ///////////////////////////////////////////
   font-family: $ff-space-grotesk;
-  // font-family: $ff-grotesk-mono;
-  // font-family: $ff-tourney;
   background-color: $design-subpg-bg;
-  width: 100vw;
+  width: 100%;
   font-weight: 300;
   position: relative;
 
@@ -80,6 +78,15 @@ body {
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        .external-link {
+          color: inherit;
+          text-decoration-color: rgb(102, 101, 101);
+          transition: 0.3s;
+          &:hover {
+            color: #a52c2c;
+            text-decoration-color: #a52c2c;
+          }
+        }
         .www {
           font-family: $ff-tourney;
           font-weight: 200;

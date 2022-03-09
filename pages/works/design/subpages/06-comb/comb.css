@@ -704,13 +704,15 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper#step-3 {
 body main .subpage-wrapper .subpage-content-1 .full-wrapper#on-web {
   grid-row: 9;
   width: 66%;
+  box-shadow: 0.1px 0.7px 1.8px -14px rgba(0, 0, 0, 0.059), 0.2px 1.7px 4.4px -14px rgba(0, 0, 0, 0.084), 0.4px 3.5px 9px -14px rgba(0, 0, 0, 0.106), 0.7px 7.3px 18.6px -14px rgba(0, 0, 0, 0.131), 2px 20px 51px -14px rgba(0, 0, 0, 0.19);
   justify-self: center;
-  filter: grayscale(30%);
+  filter: grayscale(50%);
   transition: 0.3s;
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper#on-web:hover {
   filter: none;
+  box-shadow: 0.1px 0.7px 1.6px -2px rgba(0, 0, 0, 0.037), 0.2px 1.7px 4px -2px rgba(0, 0, 0, 0.053), 0.4px 3.5px 8.2px -2px rgba(0, 0, 0, 0.067), 0.7px 7.3px 16.8px -2px rgba(0, 0, 0, 0.083), 2px 20px 46px -2px rgba(0, 0, 0, 0.12);
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper#on-card {

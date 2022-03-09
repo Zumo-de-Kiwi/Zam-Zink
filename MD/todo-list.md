@@ -64,8 +64,6 @@
 ## 4. SUBDESIGN
 
 - [ ] #403 **#6...** Put the sketches
-- [ ] #414 **#6..** Add the updated my web pic with the new LOGO
-
 - [ ] #405 **#12...** Put the lamp head on the corner
 - [ ] #407 **#18** On the `footer` say it is kare
 - [ ] #408 **#19** Download link to the game
@@ -82,19 +80,22 @@
   - [x] #411 **#4** Place eraser pic centered
   - [x] #412 **#16** Add the video
   - [x] #413 **#17** Correct the `text` in the teletext pics
+  - [x] #414 **#6..** Add the updated my web pic with the new LOGO
 
 ## 4. SUBDESIGN (globally)
 
+- [ ] #451 #\* **...** Put wiki or other links
 - [ ] #450 #\* Add `active` on the `hover` elements
-- [ ] #451 #\* Put wiki or other links
 - [ ] #452 #\* Change oldsubDESIGN `footer-r>subwrapper>` **div** `padding` to 1.1rem
-- [x] #453 #\* Add a **global** template for subdesign
 - [ ] #454 #\* Improve the global template for subdesign
-- [x] #455 #\* Update all the `btm-bnt`
 - [ ] #456 #\* Center `WWW` on early subPages
 - [ ] #457 #\* Clean up some comments
-- [x] #458 #\* more responsive on mobile with smaller text in the `paragraphs`
 - [ ] #459 #\* Reajust some `btm-btn`
+
+- COMPLETED
+  - [x] #453 #\* Add a **global** template for subdesign
+  - [x] #455 #\* Update all the `btm-bnt`
+  - [x] #458 #\* more responsive on mobile with smaller text in the `paragraphs`
 
 ## 4. DESIGN
 

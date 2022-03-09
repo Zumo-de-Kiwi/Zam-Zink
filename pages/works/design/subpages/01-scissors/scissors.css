@@ -581,9 +581,10 @@ body main {
 }
 
 body main .w-part {
-  grid-column: 1 /5;
+  width: 100%;
+  grid-column: 1 / 5;
   display: grid;
-  grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
+  grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(7%, 1fr);
 }
 
 body main .w-part .inner-w-part {
@@ -594,28 +595,15 @@ body main .w-part .inner-w-part {
   grid-template-columns: repeat(3, 1fr);
 }
 
-body main .w-part .inner-w-part .hero-image {
-  width: 100%;
+body main .w-part .inner-w-part a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #a0a0a0;
+  transition: 0.3s;
 }
 
-body main .w-part .inner-w-part .normal-image {
-  width: 30%;
-}
-
-body main .w-part .inner-w-part .small-image {
-  width: 19%;
-}
-
-body main .w-part .inner-w-part .txt-l {
-  text-align: left;
-}
-
-body main .w-part .inner-w-part .txt-c {
-  text-align: center;
-}
-
-body main .w-part .inner-w-part .txt-r {
-  text-align: right;
+body main .w-part .inner-w-part a:hover {
+  text-decoration-color: black;
 }
 
 body main .w-part .inner-w-part .www {
@@ -686,13 +674,50 @@ body main .w-part .inner-w-part .what-text1 {
   padding-top: 6rem;
 }
 
+@media (max-width: 760px) {
+  body main .w-part .inner-w-part {
+    grid-template-columns: unset;
+  }
+  body main .w-part .inner-w-part .w-texts .w-para {
+    margin-right: unset;
+    padding-left: 11%;
+    font-size: 1.5rem;
+  }
+  body main .w-part .inner-w-part .cl-1,
+  body main .w-part .inner-w-part .cl-2,
+  body main .w-part .inner-w-part .cl-3 {
+    grid-column: 1;
+  }
+  body main .w-part .inner-w-part #why {
+    grid-row: 2;
+  }
+  body main .w-part .inner-w-part .why-text1 {
+    padding-top: 6rem;
+    grid-row: 2;
+  }
+  body main .w-part .inner-w-part #where {
+    grid-row: 3;
+  }
+  body main .w-part .inner-w-part .where-text1 {
+    padding-top: 6rem;
+    grid-row: 3;
+  }
+  body main .w-part .inner-w-part #what {
+    grid-row: 4;
+  }
+  body main .w-part .inner-w-part .what-text1 {
+    grid-row: 4;
+    padding-top: 6rem;
+  }
+}
+
 body main .contain-part {
   grid-column: 1 / 5;
   width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(7%, 1fr);
+  grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(7%, 1fr);
 }
 
 body main .contain-part .full-wrapper {
@@ -703,6 +728,11 @@ body main .contain-part .full-wrapper picture img {
   width: 100%;
   margin: 0px auto;
   max-width: 900px;
+}
+
+body main .contain-part .full-wrapper .info-text {
+  font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding: 0.5rem;
 }
 
 body main .contain-part .full-wrapper.wrapper-1 {
@@ -732,7 +762,7 @@ body main .contain-part .full-wrapper.wrapper-1 #el-1 {
 
 body main .contain-part .full-wrapper.wrapper-1 #el-1-down {
   padding-bottom: 7rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 900;
   text-align: center;
   color: #e56b92;
@@ -769,7 +799,7 @@ body main .contain-part .full-wrapper.wrapper-2 #el-2::after {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-align: center;
   display: block;
   color: white;
@@ -781,7 +811,7 @@ body main .contain-part .full-wrapper.wrapper-2 #el-2::after {
 
 body main .contain-part .full-wrapper.wrapper-2 #el-2-down {
   padding-bottom: 7rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 900;
   text-align: center;
   color: #f5b70b;
@@ -807,7 +837,7 @@ body main .contain-part .full-wrapper.wrapper-3 #el-3::before {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-align: center;
   display: block;
   color: white;
@@ -917,7 +947,7 @@ body main .contain-part .full-wrapper.wrapper-4 #el-3::after {
   font-family: "Hiragino Kaku Gothic ProN", Roboto, Arial, Helvetica, sans-serif;
   font-weight: 600;
   content: 'レ カ ロ';
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 0px;
 }
 
 body main .contain-part .full-wrapper.wrapper-4 #el-3-down {
@@ -930,6 +960,13 @@ body main .contain-part .full-wrapper.wrapper-4 #el-3-down {
   text-align: center;
   color: #e6b05a;
   border-radius: 25px 25px 0px 0px;
+}
+
+@media (max-width: 760px) {
+  body main .contain-part .full-wrapper .info-text {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
 }
 
 body main .btn-wrapper {

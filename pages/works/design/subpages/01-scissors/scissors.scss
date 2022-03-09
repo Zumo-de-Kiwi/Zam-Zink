@@ -63,18 +63,12 @@ body {
   }
   main {
     display: grid; //trampemoji
-    // .subpage-wrapper {
-    //   display: grid;
-    //   grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
-    //       7%,
-    //       1fr
-    //     );
     .w-part {
-      // width: 100%;
-      grid-column: 1 /5;
+      width: 100%;
+      grid-column: 1 / 5;
       display: grid;
 
-      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+      grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
           7%,
           1fr
         );
@@ -84,24 +78,33 @@ body {
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        .hero-image {
-          width: 100%;
+        a {
+          color: inherit;
+          text-decoration: underline;
+          text-decoration-color: rgb(160, 160, 160);
+          transition: 0.3s;
+          &:hover {
+            text-decoration-color: rgb(0, 0, 0);
+          }
         }
-        .normal-image {
-          width: 30%;
-        }
-        .small-image {
-          width: 19%;
-        }
-        .txt-l {
-          text-align: left;
-        }
-        .txt-c {
-          text-align: center;
-        }
-        .txt-r {
-          text-align: right;
-        }
+        // .hero-image {
+        //   width: 100%;
+        // }
+        // .normal-image {
+        //   width: 30%;
+        // }
+        // .small-image {
+        //   width: 19%;
+        // }
+        // .txt-l {
+        //   text-align: left;
+        // }
+        // .txt-c {
+        //   text-align: center;
+        // }
+        // .txt-r {
+        //   text-align: right;
+        // }
         .www {
           font-family: $ff-tourney;
           font-weight: 200;
@@ -124,7 +127,6 @@ body {
 
         //MARGIN TOP
         .margin-top {
-          // height: 200rem;
           grid-column: 1 / 4;
           margin: 5rem;
           grid-row: 1;
@@ -134,6 +136,7 @@ body {
         // COLUMN 1 ////////////
         .cl-1 {
           grid-column: 1;
+          // grid-row: 1;
         }
         #why {
           grid-row: 2;
@@ -167,31 +170,78 @@ body {
           grid-row: 2;
           padding-top: 6rem;
         }
+
+        // MOBILE
+        @media (max-width: 760px) {
+          grid-template-columns: unset;
+
+          .w-texts {
+            .w-para {
+              margin-right: unset;
+              padding-left: 11%;
+              font-size: 1.5rem;
+            }
+          }
+
+          .cl-1,
+          .cl-2,
+          .cl-3 {
+            grid-column: 1;
+          }
+          ////////////////////////
+          // ROW 1 ////////////
+          #why {
+            grid-row: 2;
+          }
+          .why-text1 {
+            padding-top: 6rem;
+            grid-row: 2;
+          }
+
+          ////////////////////////
+          // ROW 2 ///////////
+          #where {
+            grid-row: 3;
+          }
+          .where-text1 {
+            padding-top: 6rem;
+            grid-row: 3;
+          }
+          ////////////////////////
+          // ROW 3 //////////
+          #what {
+            grid-row: 4;
+          }
+          .what-text1 {
+            grid-row: 4;
+            padding-top: 6rem;
+          }
+        }
       }
     }
-    // .subpage-content-1 {
     .contain-part {
       grid-column: 1 / 5;
       width: 100%;
       position: relative;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-columns: minmax(7%, 1fr) minmax(300px, 900px) minmax(
+      grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(
           7%,
           1fr
         );
       .full-wrapper {
         grid-column: 1 / 4;
-        // grid-column: 2;
         picture {
-          // max-width: 900px;
           img {
             width: 100%;
             margin: 0px auto;
             max-width: 900px;
           }
         }
-
+        .info-text {
+          font-family: $ff-grotesk-mono;
+          padding: 0.5rem;
+        }
         &.wrapper-1 {
           grid-row: 4;
           #el-1-up {
@@ -217,7 +267,7 @@ body {
           }
           #el-1-down {
             padding-bottom: 7rem;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             font-weight: 900;
             text-align: center;
             color: rgb(229, 107, 146);
@@ -245,14 +295,13 @@ body {
             border-radius: 1rem;
             background-color: #fcbd33;
             width: 100%;
-            // grid-row: 9;
             grid-column: 1/ 4;
           }
           #el-2::after {
             width: 100%;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             text-align: center;
             display: block;
             color: white;
@@ -263,7 +312,7 @@ body {
           }
           #el-2-down {
             padding-bottom: 7rem;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
 
             font-weight: 900;
             text-align: center;
@@ -289,7 +338,7 @@ body {
             width: 100%;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             text-align: center;
             display: block;
             color: white;
@@ -372,7 +421,6 @@ body {
             padding-top: 4rem;
             padding-bottom: 2rem;
             display: block;
-            // grid-column: 1/ 4;
             border-radius: 0px 0px 0px 0px;
           }
           #el-3 {
@@ -381,13 +429,11 @@ body {
             border-radius: 1rem;
             background: linear-gradient(20deg, #15130e, #322d34, #000000);
             width: 100%;
-            // grid-row: 9;
             img {
               box-shadow: 0px 3px 17px rgb(0, 0, 0);
               width: 90%;
               max-width: 480px;
               transition: 0.3s ease-out;
-              // will-change: transform;
               &:hover {
                 transform: scale(1.2) translateY(1.3rem);
               }
@@ -406,8 +452,7 @@ body {
             font-weight: 600;
             content: 'レ カ ロ';
 
-            // grid-column: 1/ 4;
-            border-radius: 0px 0px 0px 0px;
+            border-radius: 0px;
           }
           #el-3-down {
             padding-bottom: 7rem;
@@ -420,6 +465,21 @@ body {
             color: rgba(230, 176, 90, 1);
             border-radius: 25px 25px 0px 0px;
           }
+        }
+        @media (max-width: 760px) {
+          .info-text {
+            // font-family: $ff-grotesk-mono;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+          }
+          // #el-1,
+          // #el-2,
+          // #el-3 {
+          //   &::after,
+          //   &::before {
+          //     font-size: 1.5rem;
+          //   }
+          // }
         }
       }
     }
@@ -435,8 +495,6 @@ body {
         }
       }
     }
-    // }
-    // }
 
     #trampolin-wrapper {
       #trampolineEmoji {
@@ -458,7 +516,7 @@ body {
         display: grid;
         grid-template-columns:
           minmax(7%, 1fr) minmax(150px, 500px) minmax(150px, 500px)
-          minmax(7%, 1fr); // 1fr 1fr;
+          minmax(7%, 1fr);
         gap: 2rem;
         padding: 2rem;
         color: rgb(162, 162, 162);
@@ -491,7 +549,6 @@ body {
             height: 100%;
             display: flex;
             flex-direction: column;
-            // align-content: space-around;
             justify-self: end;
             text-align: right;
 
