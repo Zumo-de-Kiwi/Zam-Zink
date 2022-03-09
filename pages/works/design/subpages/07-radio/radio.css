@@ -593,6 +593,17 @@ body main .subpage-wrapper .subpage-content-1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+body main .subpage-wrapper .subpage-content-1 .external-link {
+  color: inherit;
+  text-decoration-color: #666565;
+  transition: 0.3s;
+}
+
+body main .subpage-wrapper .subpage-content-1 .external-link:hover {
+  color: #f81d30;
+  text-decoration-color: #f81d30;
+}
+
 body main .subpage-wrapper .subpage-content-1 .www {
   font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 200;
@@ -643,6 +654,7 @@ body main .subpage-wrapper .subpage-content-1 #why {
 }
 
 body main .subpage-wrapper .subpage-content-1 .why-text1 {
+  z-index: 2;
   grid-row: 3;
   margin-left: 10%;
   margin-right: 18%;
@@ -654,7 +666,8 @@ body main .subpage-wrapper .subpage-content-1 .cl-2 {
 }
 
 body main .subpage-wrapper .subpage-content-1 #mouth {
-  z-index: -1;
+  z-index: 1;
+  z-index: 0;
   grid-row: 1 /4;
   grid-column: 1/ 4;
   margin-top: 8rem;
@@ -703,6 +716,15 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper picture {
+  transition: 0.3s ease-out;
+  transform: scale(0.9);
+}
+
+body main .subpage-wrapper .subpage-content-1 .full-wrapper picture:hover {
+  transform: scale(1.03);
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #cat {
