@@ -35,9 +35,19 @@ body {
 
     .left-arrow {
       .link-a {
+        padding-right: 3rem;
+        // padding-: 2rem;
         color: $muji-cover;
         &:hover {
           color: $muji-cover;
+        }
+      }
+      &:hover .logo-frame {
+        cursor: $cursor-arrow-hand;
+        .hc-logo {
+          fill: $muji-cover;
+          fill: #fcf6e3; //#d8d1c4;
+          // opacity: 0.6;
         }
       }
     }
@@ -437,8 +447,8 @@ body {
           padding-left: 11%;
           padding-right: 11%;
         }
-        #pistola {
-        }
+        // #pistola {
+        // }
         #lin-club {
           padding-left: 7%;
           padding-right: 7%;
@@ -447,8 +457,8 @@ body {
         #flora-color {
           padding-bottom: 17%;
         }
-        #election-draw {
-        }
+        // #election-draw {
+        // }
         #mr-cakebeef {
           grid-column: 1 /3;
           padding-right: 23%;
@@ -461,10 +471,10 @@ body {
           // padding-bottom: 0rem;
         }
       }
-      #cafeDraws {
-        #cafe-two-woman {
-        }
-      }
+      // #cafeDraws {
+      //   #cafe-two-woman {
+      //   }
+      // }
       #dodoDraws {
         #dodo-fapiaou {
           padding-top: 19%;
@@ -506,8 +516,8 @@ body {
         #zodiac-blue-red {
           padding-left: 2rem;
         }
-        #soft-robotics {
-        }
+        // #soft-robotics {
+        // }
         #sketch-diario-1 {
           padding-left: 5%;
           padding-right: 5%;

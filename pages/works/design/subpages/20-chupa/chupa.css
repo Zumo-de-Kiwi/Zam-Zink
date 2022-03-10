@@ -852,12 +852,12 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   border: 3px #ffe02d solid;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus {
   background: #ffe02d;
   border: 3px #2f253a solid;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active a, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus a {
   color: #ff4949;
 }
 
@@ -884,7 +884,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   color: #ff4949;
   text-decoration: underline;
 }

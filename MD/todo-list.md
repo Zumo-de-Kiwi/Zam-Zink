@@ -84,8 +84,6 @@
 
 ## 4. SUBDESIGN (globally)
 
-- [ ] #451 #\* **...** Put wiki or other links
-- [ ] #450 #\* Add `active` on the `hover` elements
 - [ ] #452 #\* Change oldsubDESIGN `footer-r>subwrapper>` **div** `padding` to 1.1rem
 - [ ] #454 #\* Improve the global template for subdesign
 - [ ] #456 #\* Center `WWW` on early subPages
@@ -93,6 +91,8 @@
 - [ ] #459 #\* Reajust some `btm-btn`
 
 - COMPLETED
+  - [x] #451 #\* **...** Put wiki or other links
+  - [x] #450 #\* Add `active` on the `hover` elements
   - [x] #453 #\* Add a **global** template for subdesign
   - [x] #455 #\* Update all the `btm-bnt`
   - [x] #458 #\* more responsive on mobile with smaller text in the `paragraphs`

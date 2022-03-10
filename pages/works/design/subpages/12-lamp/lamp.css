@@ -700,7 +700,7 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   background: #f5dd3b;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus {
   background: #339467;
 }
 
@@ -735,7 +735,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   text-decoration: underline;
 }
 

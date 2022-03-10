@@ -574,11 +574,21 @@ body .absolute-nav {
 }
 
 body .absolute-nav .left-arrow .link-a {
+  padding-right: 3rem;
   color: #3e3d3c;
 }
 
 body .absolute-nav .left-arrow .link-a:hover {
   color: #3e3d3c;
+}
+
+body .absolute-nav .left-arrow:hover .logo-frame {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
+}
+
+body .absolute-nav .left-arrow:hover .logo-frame .hc-logo {
+  fill: #3e3d3c;
+  fill: #fcf6e3;
 }
 
 body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {
