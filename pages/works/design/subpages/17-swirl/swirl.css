@@ -770,11 +770,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   border: 5px solid magenta;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus {
   background: magenta;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active a, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus a {
   color: black;
 }
 
@@ -810,7 +810,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   color: white;
   text-decoration: underline;
 }

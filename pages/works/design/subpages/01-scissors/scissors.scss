@@ -83,7 +83,9 @@ body {
           text-decoration: underline;
           text-decoration-color: rgb(160, 160, 160);
           transition: 0.3s;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             text-decoration-color: rgb(0, 0, 0);
           }
         }
@@ -434,7 +436,9 @@ body {
               width: 90%;
               max-width: 480px;
               transition: 0.3s ease-out;
-              &:hover {
+              &:hover,
+              &:active,
+              &:focus {
                 transform: scale(1.2) translateY(1.3rem);
               }
             }
@@ -487,7 +491,9 @@ body {
       grid-column: 2;
       .btns {
         background: rgb(227, 115, 74);
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus {
           background: rgb(230, 176, 90);
         }
         a {
@@ -524,7 +530,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

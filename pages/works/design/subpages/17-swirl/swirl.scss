@@ -378,7 +378,9 @@ body {
           .btns {
             border-radius: 0rem;
             border: 5px solid $design-tele-pink;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: $design-tele-pink;
               a {
                 color: black;
@@ -422,7 +424,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               color: rgb(255, 255, 255);
               text-decoration: underline;
             }

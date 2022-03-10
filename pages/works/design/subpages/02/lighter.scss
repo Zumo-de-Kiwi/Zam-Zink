@@ -80,14 +80,14 @@ body {
         grid-template-columns: repeat(3, 1fr);
 
         .external-link {
-          color: inherit;
-          opacity: 0.8;
-          text-decoration: underline;
-          text-decoration-color: rgb(163, 163, 163);
+          color: #000;
+          text-decoration-color: #38e907;
           transition: 0.3s;
-          &:hover {
-            opacity: 1;
-            text-decoration-color: rgb(0, 0, 0);
+          &:hover,
+          &:active,
+          &:focus {
+            color: #38e907;
+            text-decoration-color: #ffffff;
           }
         }
         .hero-image {
@@ -178,10 +178,11 @@ body {
           .link {
             padding-bottom: 0.7rem;
             color: rgb(70, 70, 70);
-            // text-decoration-color: rgb(218, 218, 218);
-            &:hover {
-              // text-decoration-color: rgb(56, 233, 7);
-              color: rgb(56, 233, 7);
+            transition: 0.2s;
+            &:hover,
+            &:active,
+            &:focus {
+              color: #38e907;
             }
           }
         }
@@ -237,17 +238,20 @@ body {
 
         #sticker-banner::before {
           grid-row: 9;
+          grid-column: 1/ 4;
           width: 100%;
-          padding-top: 7rem;
-          padding-bottom: 2rem;
-          font-size: 1.6rem;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          background-color: #36f860e9;
+          border-radius: 25px 25px 0px 0px;
+
+          font-size: calc(1vh + 3vw);
+          font-weight: 700;
+          content: "WHAT'S NEXT?";
+          color: #f8f8f8;
+
           text-align: center;
           display: block;
-          content: '↓ This is the next Sticker Pack I am preparing ↓';
-          color: rgb(55, 54, 54);
-          background-color: #36f860e9;
-          grid-column: 1/ 4;
-          border-radius: 25px 25px 0px 0px;
         }
         #sticker-banner {
           width: 100%;
@@ -258,12 +262,14 @@ body {
           grid-row: 9;
           width: 100%;
 
+          padding-top: 1rem;
           padding-bottom: 3rem;
           font-size: 1.6rem;
           text-align: center;
           display: block;
-          content: '';
-          color: rgb(72, 72, 72);
+
+          content: '↑ This is the next Sticker Pack I am preparing ↑';
+          color: #ffffff;
           background-color: #36f860d9;
           grid-column: 1/ 4;
           border-radius: 0px 0px 25px 25px;
@@ -278,7 +284,7 @@ body {
           align-items: flex-start;
           .btns {
             border-bottom: 7px solid #91ffab;
-            border-right: 5px solid rgb(63, 84, 205);
+            border-right: 5px solid #3f54cd;
             transition: color 0.3s, border 0.3s ease-out;
             will-change: border;
             background: #36f860d9;
@@ -339,7 +345,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

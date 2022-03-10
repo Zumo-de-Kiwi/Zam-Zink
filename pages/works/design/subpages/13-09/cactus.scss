@@ -81,7 +81,9 @@ body {
           color: inherit;
           text-decoration-color: #666565;
           transition: 0.3s;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             color: #888888;
             text-decoration-color: #b0b0b0;
           }
@@ -156,7 +158,9 @@ body {
           transition: 1s;
           padding-left: 10%;
           padding-bottom: 0px;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             filter: none;
             opacity: 100%;
           }
@@ -223,7 +227,9 @@ body {
           .btns {
             background: #375ba7;
 
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: #e8505b;
             }
           }
@@ -258,7 +264,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

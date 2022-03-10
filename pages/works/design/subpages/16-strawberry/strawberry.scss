@@ -231,7 +231,9 @@ body {
         .btn-wrapper {
           .btns {
             background: rgb(205, 205, 205);
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: rgb(38, 38, 38);
             }
             a {
@@ -271,7 +273,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               color: rgb(182, 182, 182);
               text-decoration: underline;
             }

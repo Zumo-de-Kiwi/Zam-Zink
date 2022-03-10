@@ -570,7 +570,7 @@ body header .absolute-nav .main-header {
 }
 
 body header .absolute-nav .main-header h1 {
-  color: #363636;
+  color: gray;
   background-color: white;
   font-weight: 700;
   font-size: 2.3rem;
@@ -696,7 +696,7 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zau
   transition: 0.3s;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü:hover {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü:hover, body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü:active, body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-1 #zauzü:focus {
   box-shadow: 0px 0px 25px #e6ded1, 0px 0px 5px #bdb4a1;
   transform: scale(1.2);
 }
@@ -732,7 +732,7 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #bus
   will-change: transform;
 }
 
-body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas:hover {
+body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas:hover, body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas:active, body main .subpage-wrapper .subpage-content-1 .full-wrapper.frame-wrapper-2 #buscas:focus {
   box-shadow: 0px 0px 20px #b7abce, 0px 0px 5px #38275e;
   transform: scale(1.13);
 }
@@ -741,7 +741,7 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   background: #5f24bd;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus {
   background: #f56f3e;
 }
 
@@ -772,7 +772,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   text-decoration: underline;
 }
 

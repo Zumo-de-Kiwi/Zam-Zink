@@ -53,7 +53,7 @@ body {
         text-align: center;
         box-shadow: 0px 0.3rem 0.6rem #b1b1b1, 0px 0.15rem 0.2rem #d8d8d8;
         h1 {
-          color: $design-text-color;
+          color: rgb(163, 163, 163);
           background-color: $design-subpg-bg;
           font-weight: 700;
           font-size: 2.3rem;
@@ -196,7 +196,9 @@ body {
               filter: grayscale(100%) contrast(70%);
               will-change: transform;
               transition: 0.4s;
-              &:hover {
+              &:hover,
+              &:active,
+              &:focus {
                 filter: none;
                 transform: scale(1.3);
               }
@@ -209,7 +211,9 @@ body {
                 mix-blend-mode: multiply;
                 // opacity: 90%;
                 filter: none;
-                &:hover {
+                &:hover,
+                &:active,
+                &:focus {
                   filter: none;
                   transform: none;
                 }
@@ -263,7 +267,9 @@ body {
         .btn-wrapper {
           .btns {
             background: #76eef0;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: #ffbbde;
             }
           }
@@ -298,7 +304,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

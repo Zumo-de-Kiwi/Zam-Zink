@@ -46,9 +46,8 @@ body {
         width: 100%;
         text-align: center;
         box-shadow: 0px 0.3rem 0.6rem #dadada, 0px 0.15rem 0.2rem #b0b0b0;
-        // box-shadow: 0px 0.3rem 0.6rem #b1b1b1, 0px 0.15rem 0.2rem #d8d8d8;
         h1 {
-          color: $design-text-color;
+          color: rgb(175, 175, 175);
           background-color: $design-subpg-bg;
           font-weight: 700;
           font-size: 2.3rem;
@@ -74,7 +73,9 @@ body {
           color: inherit;
           text-decoration-color: #9b64b1 !important;
           transition: 0.3s;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             color: #9b64b1 !important;
             text-decoration-color: #9b64b1 !important;
           }
@@ -494,7 +495,9 @@ body {
             background: rgb(52, 189, 110);
             border: 3px rgb(52, 151, 89) solid;
             // height: 7rem;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               border-top: 11px rgb(52, 151, 89) solid;
               // background: rgb(94, 42, 145);
               // border: 3px rgb(47, 37, 58) solid;
@@ -556,12 +559,13 @@ body {
         gap: 2rem;
         padding: 2rem;
         color: rgb(255, 161, 205);
-        // color: rgb(80, 80, 80);
         .footer-part {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               color: rgb(255, 224, 45);
               text-decoration: underline;
             }

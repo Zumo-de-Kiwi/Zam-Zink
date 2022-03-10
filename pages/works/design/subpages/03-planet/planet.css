@@ -593,6 +593,19 @@ body main .subpage-wrapper .subpage-content-1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+body main .subpage-wrapper .subpage-content-1 .external-link {
+  color: inherit;
+  opacity: 0.8;
+  text-decoration: underline;
+  text-decoration-color: #a3a3a3;
+  transition: 0.3s;
+}
+
+body main .subpage-wrapper .subpage-content-1 .external-link:hover, body main .subpage-wrapper .subpage-content-1 .external-link:active, body main .subpage-wrapper .subpage-content-1 .external-link:focus {
+  opacity: 1;
+  text-decoration-color: black;
+}
+
 body main .subpage-wrapper .subpage-content-1 .hero-image {
   width: 100%;
 }
@@ -719,7 +732,7 @@ body main .subpage-wrapper .subpage-content-1 picture img {
   box-shadow: 0px 0px 2.7px -3px rgba(0, 0, 0, 0.022), 0px 0px 6.9px -3px rgba(0, 0, 0, 0.031);
 }
 
-body main .subpage-wrapper .subpage-content-1 picture img:hover {
+body main .subpage-wrapper .subpage-content-1 picture img:hover, body main .subpage-wrapper .subpage-content-1 picture img:active, body main .subpage-wrapper .subpage-content-1 picture img:focus {
   transform: scale(1.13);
   box-shadow: 0px 0px 2.7px -3px rgba(0, 0, 0, 0.022), 0px 0px 6.9px -3px rgba(0, 0, 0, 0.031), 0px 0px 14.2px -3px rgba(0, 0, 0, 0.039), 0px 0px 29.2px -3px rgba(0, 0, 0, 0.048), 0px 0px 80px -3px rgba(0, 0, 0, 0.07);
 }
@@ -735,7 +748,7 @@ body main .subpage-wrapper .subpage-content-1 picture#brainstorm img {
   filter: grayscale(97%) brightness(107%) saturate(67%);
 }
 
-body main .subpage-wrapper .subpage-content-1 picture#brainstorm img:hover {
+body main .subpage-wrapper .subpage-content-1 picture#brainstorm img:hover, body main .subpage-wrapper .subpage-content-1 picture#brainstorm img:active, body main .subpage-wrapper .subpage-content-1 picture#brainstorm img:focus {
   filter: grayscale(0%) brightness(107%) saturate(90%);
 }
 
@@ -743,7 +756,7 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   background: #dc3a78;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus {
   background: #f261b1;
 }
 
@@ -774,7 +787,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   text-decoration: underline;
 }
 

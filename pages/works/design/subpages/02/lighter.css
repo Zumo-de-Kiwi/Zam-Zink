@@ -594,16 +594,14 @@ body main .subpage-wrapper .subpage-content-1 {
 }
 
 body main .subpage-wrapper .subpage-content-1 .external-link {
-  color: inherit;
-  opacity: 0.8;
-  text-decoration: underline;
-  text-decoration-color: #a3a3a3;
+  color: #000;
+  text-decoration-color: #38e907;
   transition: 0.3s;
 }
 
-body main .subpage-wrapper .subpage-content-1 .external-link:hover {
-  opacity: 1;
-  text-decoration-color: black;
+body main .subpage-wrapper .subpage-content-1 .external-link:hover, body main .subpage-wrapper .subpage-content-1 .external-link:active, body main .subpage-wrapper .subpage-content-1 .external-link:focus {
+  color: #38e907;
+  text-decoration-color: #ffffff;
 }
 
 body main .subpage-wrapper .subpage-content-1 .hero-image {
@@ -707,9 +705,10 @@ body main .subpage-wrapper .subpage-content-1 .download-stickers h4 {
 body main .subpage-wrapper .subpage-content-1 .download-stickers .link {
   padding-bottom: 0.7rem;
   color: #464646;
+  transition: 0.2s;
 }
 
-body main .subpage-wrapper .subpage-content-1 .download-stickers .link:hover {
+body main .subpage-wrapper .subpage-content-1 .download-stickers .link:hover, body main .subpage-wrapper .subpage-content-1 .download-stickers .link:active, body main .subpage-wrapper .subpage-content-1 .download-stickers .link:focus {
   color: #38e907;
 }
 
@@ -766,17 +765,18 @@ body main .subpage-wrapper .subpage-content-1 #down-txt {
 
 body main .subpage-wrapper .subpage-content-1 #sticker-banner::before {
   grid-row: 9;
+  grid-column: 1/ 4;
   width: 100%;
-  padding-top: 7rem;
-  padding-bottom: 2rem;
-  font-size: 1.6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #36f860e9;
+  border-radius: 25px 25px 0px 0px;
+  font-size: calc(1vh + 3vw);
+  font-weight: 700;
+  content: "WHAT'S NEXT?";
+  color: #f8f8f8;
   text-align: center;
   display: block;
-  content: '↓ This is the next Sticker Pack I am preparing ↓';
-  color: #373636;
-  background-color: #36f860e9;
-  grid-column: 1/ 4;
-  border-radius: 25px 25px 0px 0px;
 }
 
 body main .subpage-wrapper .subpage-content-1 #sticker-banner {
@@ -788,12 +788,13 @@ body main .subpage-wrapper .subpage-content-1 #sticker-banner {
 body main .subpage-wrapper .subpage-content-1 #sticker-banner::after {
   grid-row: 9;
   width: 100%;
+  padding-top: 1rem;
   padding-bottom: 3rem;
   font-size: 1.6rem;
   text-align: center;
   display: block;
-  content: '';
-  color: #484848;
+  content: '↑ This is the next Sticker Pack I am preparing ↑';
+  color: #ffffff;
   background-color: #36f860d9;
   grid-column: 1/ 4;
   border-radius: 0px 0px 25px 25px;
@@ -870,7 +871,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   text-decoration: underline;
 }
 

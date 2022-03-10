@@ -84,7 +84,9 @@ body {
           color: inherit;
           text-decoration-color: rgb(102, 101, 101);
           transition: 0.3s;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             color: #f81d30;
             text-decoration-color: #f81d30;
           }
@@ -205,7 +207,9 @@ body {
           picture {
             transition: 0.3s ease-out;
             transform: scale(0.9);
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               transform: scale(1.03);
             }
           }
@@ -248,7 +252,9 @@ body {
         .btn-wrapper {
           .btns {
             background: #25bb68;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: #e4c92d;
             }
           }
@@ -283,7 +289,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

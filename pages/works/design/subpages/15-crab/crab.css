@@ -595,7 +595,7 @@ body main .subpage-wrapper .subpage-content-1 .external-link {
   transition: 0.3s;
 }
 
-body main .subpage-wrapper .subpage-content-1 .external-link:hover {
+body main .subpage-wrapper .subpage-content-1 .external-link:hover, body main .subpage-wrapper .subpage-content-1 .external-link:active, body main .subpage-wrapper .subpage-content-1 .external-link:focus {
   color: #f3a1a2 !important;
   text-decoration-color: #faecda !important;
 }
@@ -674,7 +674,7 @@ body main .subpage-wrapper .subpage-content-1 #make {
   overflow: hidden;
 }
 
-body main .subpage-wrapper .subpage-content-1 #make:hover {
+body main .subpage-wrapper .subpage-content-1 #make:hover, body main .subpage-wrapper .subpage-content-1 #make:active, body main .subpage-wrapper .subpage-content-1 #make:focus {
   opacity: 1;
   transform: scale(1.3) translateX(-1rem) translateY(0.3rem);
 }
@@ -759,11 +759,11 @@ body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns {
   background: #729797;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus {
   background: #8073ca;
 }
 
-body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a {
+body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:hover a, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:active a, body main .subpage-wrapper .subpage-content-1 .btn-wrapper .btns:focus a {
   color: #faecda;
 }
 
@@ -798,7 +798,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   color: #faecda;
   text-decoration: underline;
 }

@@ -270,7 +270,9 @@ body {
         .btn-wrapper {
           .btns {
             background: #4444a9;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: #f5da3e;
             }
           }
@@ -305,7 +307,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

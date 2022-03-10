@@ -58,7 +58,7 @@ body {
         text-align: center;
         box-shadow: 0px 0.3rem 0.6rem #b1b1b1, 0px 0.15rem 0.2rem #d8d8d8;
         h1 {
-          color: $design-text-color;
+          color: gray;
           background-color: $design-subpg-bg;
           font-weight: 700;
           font-size: 2.3rem;
@@ -80,10 +80,10 @@ body {
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        // header Ws
+
         .www {
           font-family: $ff-tourney;
-          font-weight: 200; //900; ///////
+          font-weight: 200;
           text-transform: uppercase;
           font-size: 5rem;
           margin-bottom: 0.3rem;
@@ -218,7 +218,9 @@ body {
               width: 67%;
               will-change: transform;
               transition: 0.3s;
-              &:hover {
+              &:hover,
+              &:active,
+              &:focus {
                 box-shadow: 0px 0px 25px rgb(230, 222, 209),
                   0px 0px 5px rgb(189, 180, 161);
                 transform: scale(1.2);
@@ -237,7 +239,6 @@ body {
           &.frame-wrapper-2 {
             margin-top: 5%;
             grid-row: 7;
-            // height: 87%;
             #text {
               grid-column: 1;
               // grid-row: 1;
@@ -246,19 +247,20 @@ body {
               // width: 100%;
               margin-left: 27%;
               text-align: justify;
-              span {
-                // margin-left: 20%;
-              }
+              // span {
+              //   // margin-left: 20%;
+              // }
             }
             #buscas {
               grid-column: 2;
-              // grid-row: 1;
               align-self: center;
               justify-self: center;
               width: 53%;
               transition: 0.3s;
               will-change: transform;
-              &:hover {
+              &:hover,
+              &:active,
+              &:focus {
                 box-shadow: 0px 0px 20px rgb(183, 171, 206),
                   0px 0px 5px rgb(56, 39, 94);
                 transform: scale(1.13);
@@ -269,7 +271,9 @@ body {
         .btn-wrapper {
           .btns {
             background: #5f24bd;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: #f56f3e;
             }
           }
@@ -304,7 +308,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

@@ -602,7 +602,7 @@ body main .w-part .inner-w-part a {
   transition: 0.3s;
 }
 
-body main .w-part .inner-w-part a:hover {
+body main .w-part .inner-w-part a:hover, body main .w-part .inner-w-part a:active, body main .w-part .inner-w-part a:focus {
   text-decoration-color: black;
 }
 
@@ -932,7 +932,7 @@ body main .contain-part .full-wrapper.wrapper-4 #el-3 img {
   transition: 0.3s ease-out;
 }
 
-body main .contain-part .full-wrapper.wrapper-4 #el-3 img:hover {
+body main .contain-part .full-wrapper.wrapper-4 #el-3 img:hover, body main .contain-part .full-wrapper.wrapper-4 #el-3 img:active, body main .contain-part .full-wrapper.wrapper-4 #el-3 img:focus {
   transform: scale(1.2) translateY(1.3rem);
 }
 
@@ -977,7 +977,7 @@ body main .btn-wrapper .btns {
   background: #e3734a;
 }
 
-body main .btn-wrapper .btns:hover {
+body main .btn-wrapper .btns:hover, body main .btn-wrapper .btns:active, body main .btn-wrapper .btns:focus {
   background: #e6b05a;
 }
 
@@ -1013,7 +1013,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   text-decoration: underline;
 }
 

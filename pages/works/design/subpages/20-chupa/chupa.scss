@@ -340,7 +340,9 @@ body {
           .btns {
             background: rgb(255, 73, 73);
             border: 3px rgb(255, 224, 45) solid;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: rgb(255, 224, 45);
               border: 3px rgb(47, 37, 58) solid;
               a {
@@ -375,7 +377,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               color: rgb(255, 73, 73);
               text-decoration: underline;
             }

@@ -600,7 +600,7 @@ body main .subpage-wrapper .subpage-content .external-link {
   transition: 0.3s;
 }
 
-body main .subpage-wrapper .subpage-content .external-link:hover {
+body main .subpage-wrapper .subpage-content .external-link:hover, body main .subpage-wrapper .subpage-content .external-link:active, body main .subpage-wrapper .subpage-content .external-link:focus {
   color: #888888;
   text-decoration-color: #b0b0b0;
 }
@@ -686,7 +686,7 @@ body main .subpage-wrapper .subpage-content #blues-exp {
   padding-bottom: 0px;
 }
 
-body main .subpage-wrapper .subpage-content #blues-exp:hover {
+body main .subpage-wrapper .subpage-content #blues-exp:hover, body main .subpage-wrapper .subpage-content #blues-exp:active, body main .subpage-wrapper .subpage-content #blues-exp:focus {
   filter: none;
   opacity: 100%;
 }
@@ -758,7 +758,7 @@ body main .subpage-wrapper .subpage-content .btn-wrapper .btns {
   background: #375ba7;
 }
 
-body main .subpage-wrapper .subpage-content .btn-wrapper .btns:hover {
+body main .subpage-wrapper .subpage-content .btn-wrapper .btns:hover, body main .subpage-wrapper .subpage-content .btn-wrapper .btns:active, body main .subpage-wrapper .subpage-content .btn-wrapper .btns:focus {
   background: #e8505b;
 }
 
@@ -789,7 +789,7 @@ body main .footer #footer-wrapper .footer-part a {
   text-decoration: none;
 }
 
-body main .footer #footer-wrapper .footer-part a:hover {
+body main .footer #footer-wrapper .footer-part a:hover, body main .footer #footer-wrapper .footer-part a:active, body main .footer #footer-wrapper .footer-part a:focus {
   text-decoration: underline;
 }
 

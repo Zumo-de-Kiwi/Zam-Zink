@@ -82,7 +82,9 @@ body {
           text-decoration: underline;
           text-decoration-color: rgb(163, 163, 163);
           transition: 0.3s;
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus {
             opacity: 1;
             text-decoration-color: rgb(0, 0, 0);
           }
@@ -203,7 +205,9 @@ body {
             will-change: transform, box-shadow;
             box-shadow: 0px 0px 2.7px -3px rgba(0, 0, 0, 0.022),
               0px 0px 6.9px -3px rgba(0, 0, 0, 0.031);
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               transform: scale(1.13);
               box-shadow: 0px 0px 2.7px -3px rgba(0, 0, 0, 0.022),
                 0px 0px 6.9px -3px rgba(0, 0, 0, 0.031),
@@ -220,7 +224,9 @@ body {
             margin-top: 4rem;
             img {
               filter: grayscale(97%) brightness(107%) saturate(67%);
-              &:hover {
+              &:hover,
+              &:active,
+              &:focus {
                 filter: grayscale(0%) brightness(107%) saturate(90%);
               }
             }
@@ -230,7 +236,9 @@ body {
         .btn-wrapper {
           .btns {
             background: #dc3a78;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: #f261b1;
             }
           }
@@ -265,7 +273,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }

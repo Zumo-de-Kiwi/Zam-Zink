@@ -173,7 +173,9 @@ body {
             margin-right: 15%;
             filter: opacity(87%);
             transition: 0.3s;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               filter: none;
             }
           }
@@ -194,7 +196,9 @@ body {
             justify-self: center;
             filter: grayscale(50%);
             transition: 0.3s;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               filter: none;
               box-shadow: 0.1px 0.7px 1.6px -2px rgba(0, 0, 0, 0.037),
                 0.2px 1.7px 4px -2px rgba(0, 0, 0, 0.053),
@@ -226,7 +230,9 @@ body {
             border-radius: 2rem;
             transition: 0.15s;
             background: #393636;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               background: #7b7b7b;
             }
             a {
@@ -272,7 +278,9 @@ body {
           a {
             color: inherit;
             text-decoration: none;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
               text-decoration: underline;
             }
           }
