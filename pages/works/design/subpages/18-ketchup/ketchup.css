@@ -593,6 +593,17 @@ body main .subpage-wrapper .subpage-content-1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+body main .subpage-wrapper .subpage-content-1 .external-link {
+  color: inherit;
+  text-decoration-color: #808080 !important;
+  transition: 0.3s;
+}
+
+body main .subpage-wrapper .subpage-content-1 .external-link:hover {
+  color: #b1b0ae !important;
+  text-decoration-color: #b1b0ae !important;
+}
+
 body main .subpage-wrapper .subpage-content-1 .www {
   font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 200;
@@ -730,7 +741,8 @@ body main .subpage-wrapper .subpage-content-1 .full-wrapper.download a {
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper.download a:hover {
-  color: blue;
+  color: #b0afae;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>👇</text></svg>") 16 0, auto;
 }
 
 body main .subpage-wrapper .subpage-content-1 .full-wrapper#where {

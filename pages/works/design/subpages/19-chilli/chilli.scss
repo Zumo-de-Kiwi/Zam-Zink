@@ -70,6 +70,15 @@ body {
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        .external-link {
+          color: inherit;
+          text-decoration-color: #9b64b1 !important;
+          transition: 0.3s;
+          &:hover {
+            color: #9b64b1 !important;
+            text-decoration-color: #9b64b1 !important;
+          }
+        }
         // header Ws
         .www {
           font-family: $ff-tourney;
@@ -97,6 +106,7 @@ body {
         .info-text {
           font-family: $ff-grotesk-mono;
           padding: 0.5rem;
+          font-size: 1.6rem;
         }
 
         //MARGIN TOP
@@ -105,12 +115,6 @@ body {
           grid-row: 1;
           margin-bottom: 13rem;
         }
-        // HERO IMG
-        // #hero-outline {
-        //   grid-column: 1 / 4;
-        //   grid-row: 2;
-        //   margin-bottom: 10%;
-        // }
 
         ////////////////////////
         // COLUMN 1 ////////////
@@ -376,18 +380,29 @@ body {
             font-size: 2.3rem;
             grid-row: 5;
             max-width: 50rem;
-            margin-top: 5rem;
-            margin-bottom: 3rem;
+            margin-top: 7rem;
+            margin-bottom: 2.7rem;
             justify-self: center;
             text-align: center;
+
+            background: -webkit-linear-gradient(
+              -60deg,
+              #00ad48,
+              #00ad79,
+              #00a5b8,
+              #008ae0,
+              #7261ae,
+              #8261ae,
+              #9961ae
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
           &.more-wrapper {
             grid-row: 6;
             display: grid;
             gap: 9%;
             grid-template-columns: 1fr 1fr;
-            // grid-template-rows: 1fr 1fr;
-            // padding-top: 3rem;
             padding-bottom: 7rem;
             #text-1 {
               grid-column: 1;
@@ -399,7 +414,8 @@ body {
             .pic-1 {
               grid-column: 1;
               grid-row: 2;
-              margin-left: 30%;
+              transform: translateY(7px);
+              margin-left: 21%;
               img {
                 width: 100%;
                 object-fit: contain;
@@ -415,7 +431,7 @@ body {
               grid-column: 2;
               grid-row: 2;
               margin-right: 30%;
-              margin-left: 7%;
+              // margin-left: 7%;
               img {
                 width: 90%;
                 object-fit: contain;
@@ -458,37 +474,44 @@ body {
           }
         }
         .btn-wrapper {
-          margin-top: 10rem;
           grid-row: 12;
           grid-column: 1/ 4;
+
+          margin-top: 10rem;
           display: flex;
-          justify-content: space-around;
-          padding-left: 11%;
-          padding-right: 11%;
+          align-items: flex-start;
+          // justify-content: space-around;
+          // padding-left: 11%;
+          // padding-right: 11%;
+
+          height: 11rem;
           .btns {
             text-align: center;
             font-size: 2rem;
-            margin: 1rem;
+            margin: 0rem;
             border-radius: 2rem;
-            transition: 0.15s;
+            transition: 0.3s;
             background: rgb(52, 189, 110);
             border: 3px rgb(52, 151, 89) solid;
+            // height: 7rem;
             &:hover {
-              background: rgb(94, 42, 145);
-              border: 3px rgb(47, 37, 58) solid;
-              a {
-                color: rgb(255, 232, 131);
-              }
+              border-top: 11px rgb(52, 151, 89) solid;
+              // background: rgb(94, 42, 145);
+              // border: 3px rgb(47, 37, 58) solid;
+              // border-top: 11px rgb(47, 37, 58) solid;
+              // a {
+              //   color: rgb(255, 232, 131);
+              // }
             }
             a {
               text-decoration: none;
-              color: white; //rgb(229, 181, 65);
-              height: 6rem;
-              line-height: 6rem;
+              color: white;
+              // height: 6rem;
+              // line-height: 6rem;
               min-width: 18%;
-              padding: 2rem;
-              padding-right: 4rem;
-              padding-left: 4rem;
+              padding: 2rem 4rem;
+              // padding-right: 4rem;
+              // padding-left: 4rem;
             }
             &.prev {
               a {

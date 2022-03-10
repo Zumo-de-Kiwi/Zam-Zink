@@ -4,18 +4,13 @@
 
 body {
   ///////////////////////////////////////////
-  //  $design-bg-color: hsl(30, 37%, 68%); //#dac6b2;
-  // $design-plastic-color: rgb(51, 148, 103);
-  $design-color-green: rgb(51, 148, 103);
-  $design-color-yellow: rgb(245, 221, 59);
-  $design-color-red: rgb(215, 61, 69);
+  // $design-color-yellow: rgb(245, 221, 59);
+  // $design-color-red: rgb(215, 61, 69);
   $design-text-color: hsl(0, 0%, 21%);
   $design-white-color: rgb(244, 242, 235);
   $design-subpg-bg: hsl(0, 0%, 100%);
   ///////////////////////////////////////////
   font-family: $ff-space-grotesk;
-  // font-family: $ff-grotesk-mono;
-  // font-family: $ff-tourney;
   background-color: $design-subpg-bg;
   width: 100vw;
   font-weight: 300;
@@ -49,9 +44,6 @@ body {
       width: 100%;
       .left-arrow {
         top: 1rem !important;
-        // @media (max-width: 768px) {
-        //   top: 1rem;
-        // }
         .link-a {
           color: $design-text-color;
         }
@@ -85,6 +77,15 @@ body {
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        .external-link {
+          color: inherit;
+          text-decoration-color: #666565;
+          transition: 0.3s;
+          &:hover {
+            color: #888888;
+            text-decoration-color: #b0b0b0;
+          }
+        }
         .hero-image {
           width: 100%;
         }
@@ -220,10 +221,10 @@ body {
         }
         .btn-wrapper {
           .btns {
-            background: #4444a9;
+            background: #375ba7;
 
             &:hover {
-              background: #f5da3e;
+              background: #e8505b;
             }
           }
         }
@@ -282,7 +283,6 @@ body {
             height: 100%;
             display: flex;
             flex-direction: column;
-            // align-content: space-around;
             justify-self: end;
             text-align: right;
 

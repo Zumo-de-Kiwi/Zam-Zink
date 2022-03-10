@@ -589,6 +589,17 @@ body main .subpage-wrapper .subpage-content-1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+body main .subpage-wrapper .subpage-content-1 .external-link {
+  color: inherit;
+  text-decoration-color: #f3a1a2 !important;
+  transition: 0.3s;
+}
+
+body main .subpage-wrapper .subpage-content-1 .external-link:hover {
+  color: #f3a1a2 !important;
+  text-decoration-color: #faecda !important;
+}
+
 body main .subpage-wrapper .subpage-content-1 .www {
   font-family: "Tourney", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 900;

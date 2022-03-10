@@ -594,6 +594,17 @@ body main .subpage-wrapper .subpage-content {
   grid-template-columns: repeat(3, 1fr);
 }
 
+body main .subpage-wrapper .subpage-content .external-link {
+  color: inherit;
+  text-decoration-color: #666565;
+  transition: 0.3s;
+}
+
+body main .subpage-wrapper .subpage-content .external-link:hover {
+  color: #888888;
+  text-decoration-color: #b0b0b0;
+}
+
 body main .subpage-wrapper .subpage-content .hero-image {
   width: 100%;
 }
@@ -744,11 +755,11 @@ body main .subpage-wrapper .subpage-content #egg {
 }
 
 body main .subpage-wrapper .subpage-content .btn-wrapper .btns {
-  background: #4444a9;
+  background: #375ba7;
 }
 
 body main .subpage-wrapper .subpage-content .btn-wrapper .btns:hover {
-  background: #f5da3e;
+  background: #e8505b;
 }
 
 body main #trampolin-wrapper #trampolineEmoji {
