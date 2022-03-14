@@ -20,7 +20,8 @@
   --linked-font-color: #5f3fd5;
   --secondary-normal-color: #1dd75e;
   --secondary-light-color: #00ff84;
-  --heart-emoji: '💚';
+  --heart-emoji: '🤍';
+  --heart-emoji-on-hover: '💚';
 }
 [data-theme='dark'] {
   --triple-four-font: #bbb;
@@ -34,7 +35,8 @@
   --linked-font-color: #ffa500;
   --secondary-normal-color: #cb15af;
   --secondary-light-color: #f344fc;
-  --heart-emoji: '💜';
+  --heart-emoji: '🖤';
+  --heart-emoji-on-hover: '💜';
 }
 
 html {
@@ -44,6 +46,7 @@ body {
   min-height: 100%;
   position: relative;
   background: var(--color-bg);
+  transition: background 0.3s;
 }
 //////////// PRE LOADER //////////////////////
 //// ALERT! don't put it inside the body/////
@@ -736,6 +739,20 @@ body {
           }
         }
 
+        // &.stickers-link {
+        //   span {
+        //     font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 550, 'slnt' 0 !important;
+        //   }
+        //   &:hover,
+        //   &:active,
+        //   &:focus {
+        //     span {
+        //       font-variation-settings: 'MONO' 1, 'CASL' 0.3, 'wght' 550,
+        //         'slnt' 0 !important;
+        //     }
+        //   }
+        // }
+
         .angled-brackets {
           color: transparent;
           transition: 0.6s;
@@ -746,7 +763,10 @@ body {
         }
         &#playground:hover,
         &#playground:active {
+          // width: 40px;
           .angled-brackets {
+            // font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'wght' 620,
+            //   'slnt'  0;
             color: var(--linked-font-color);
           }
         }
@@ -869,10 +889,6 @@ body {
                 &.signal {
                   color: #3a76f0;
                   grid-column: 3;
-                  // &#mac-sig-link {
-                  // }
-                  // &#vege-sig-link {
-                  // }
                 }
               }
             }
@@ -890,10 +906,10 @@ body {
         //for gray text
         color: var(--triple-nine-font);
         .l-line {
-          color: var(--secondary-light-color); //$skillshare-green;
+          color: var(--secondary-light-color);
         }
         .link {
-          color: var(--linked-font-color); //$font-linked-color;
+          color: var(--linked-font-color);
           text-decoration: underline;
           text-decoration-color: transparent;
           // transition: 0.4s;
@@ -1036,8 +1052,10 @@ footer {
       padding-bottom: 1.7rem;
       padding-top: 1rem;
 
+      transition: color 0.3s;
+
       #heart::after {
-        content: '🤍';
+        content: var(--heart-emoji);
       }
       a {
         padding-top: 1rem;
@@ -1046,7 +1064,7 @@ footer {
         font-variation-settings: 'MONO' 1, 'wght' $font-weight-lighter,
           'slnt' -3;
         color: inherit;
-        transition: $trans-slow;
+        transition: color 0.1s;
         &:hover,
         &:active,
         &:focus {
@@ -1168,7 +1186,7 @@ footer {
       #githublink {
         color: var(--secondary-light-color);
         #heart::after {
-          content: var(--heart-emoji);
+          content: var(--heart-emoji-on-hover);
         }
       }
     }

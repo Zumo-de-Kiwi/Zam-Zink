@@ -51,15 +51,15 @@
 
 ## 2. DRAW
 
-- [ ] #202 The intro of **café** in DRAWINGS
-- [ ] #203 Make DRAW more responsive
-- [ ] #204 Put `::after` short descriptions of every drawing pic.
-- [x] #205 Add more sketches from #2 Muji
+- [ ] #202 **WORKING** The intro of **café** in DRAWINGS
+- [ ] #203 **WORKING** Put `::after` short descriptions of every drawing pic.
+- [ ] #204 Make DRAW more responsive
 
 - COMPLETED
 
   - [x] #200 Add jp-poster sketch
   - [x] #201 Update some big size (jpg>100kB) draw pics with `webp`
+  - [x] #205 Add more sketches from #2 Muji
 
 ## 4. SUBDESIGN
 

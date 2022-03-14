@@ -36,7 +36,6 @@ body {
     .left-arrow {
       .link-a {
         padding-right: 3rem;
-        // padding-: 2rem;
         color: $muji-cover;
         &:hover {
           color: $muji-cover;
@@ -45,9 +44,8 @@ body {
       &:hover .logo-frame {
         cursor: $cursor-arrow-hand;
         .hc-logo {
-          fill: $muji-cover;
-          fill: #fcf6e3; //#d8d1c4;
-          // opacity: 0.6;
+          // fill: $muji-cover;
+          fill: #fcf6e3;
         }
       }
     }
