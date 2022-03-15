@@ -51,7 +51,7 @@
 
 ## 2. DRAW
 
-- [ ] #202 **WORKING** The intro of **café** in DRAWINGS
+- [x] #202 **WORKING** The intro of **café** in DRAWINGS
 - [ ] #203 **WORKING** Put `::after` short descriptions of every drawing pic.
 - [ ] #204 Make DRAW more responsive
 
@@ -69,7 +69,8 @@
 - [ ] #408 **#19** Download link to the game
 - [ ] #409 **#20** Link to download the fb frame
 - [ ] #410 **#10...** (add PICS) The designs in real life
-- [ ] #415 **#** ...
+- [ ] #415 **#...** Put Erik's game YT [embedded](https://www.youtube.com/watch?v=EeFFnSwFxvc)
+- [ ] #416 **#** ...
 
 - COMPLETED
 

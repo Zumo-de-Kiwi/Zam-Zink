@@ -10,6 +10,7 @@ body {
   $muji-cover: hsl(30, 2%, 24%);
 
   width: 100%;
+  background-color: $my-paper-color-Bside;
   font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' $font-weight-normal,
     $slnt;
   position: relative;
@@ -59,7 +60,6 @@ body {
   }
 
   header {
-    // background-color: rgb(245, 243, 230);
     z-index: 18;
     position: fixed;
     top: 0rem;
@@ -291,6 +291,10 @@ body {
             opacity: 0.3;
           }
         }
+        #para-2-wrapper {
+          display: flex;
+          align-content: center;
+        }
 
         .hov-secs {
           transform: translateY(-1.5rem);
@@ -313,10 +317,14 @@ body {
           .hovered {
             opacity: 0.7;
             transition: opacity 0.3s;
-            padding-left: 1.5%;
-            padding-right: 1.5%;
-            padding-top: 1.7rem;
+            padding: 1.7rem 1.6%; // y x cordinates
             padding-bottom: 2.7em;
+            // padding-left: 1.5%;
+            // padding-right: 1.5%;
+            // padding-top: 1.7rem;
+            &#hov-nood {
+              padding-left: 0rem;
+            }
           }
           #and {
             padding-top: 3.04%;

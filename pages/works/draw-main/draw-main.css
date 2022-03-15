@@ -546,6 +546,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   width: 100%;
+  background-color: #f5f3e6;
   font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 620, "slnt" 0;
   position: relative;
 }
@@ -816,6 +817,11 @@ body main .top-info .info-text .para.para-2 {
   opacity: 0.3;
 }
 
+body main .top-info .info-text #para-2-wrapper {
+  display: flex;
+  align-content: center;
+}
+
 body main .top-info .info-text .hov-secs {
   transform: translateY(-1.5rem);
   display: flex;
@@ -838,10 +844,12 @@ body main .top-info .info-text .hov-secs:hover ~ .dynamic-el-wrapper .hover-me, 
 body main .top-info .info-text .hov-secs .hovered {
   opacity: 0.7;
   transition: opacity 0.3s;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-  padding-top: 1.7rem;
+  padding: 1.7rem 1.6%;
   padding-bottom: 2.7em;
+}
+
+body main .top-info .info-text .hov-secs .hovered#hov-nood {
+  padding-left: 0rem;
 }
 
 body main .top-info .info-text .hov-secs #and {

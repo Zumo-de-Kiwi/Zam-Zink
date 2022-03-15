@@ -15,6 +15,7 @@ const hovSkt = document.querySelector('#hov-skt');
 /// dynamic explain ////
 const dyElWrapper = document.querySelector('.dynamic-el-wrapper');
 const exArch = document.querySelector('#explain-arch');
+const exCafe = document.querySelector('#explain-cafe');
 const exDodo = document.querySelector('#explain-dodo');
 const exRand = document.querySelector('#explain-rand');
 const exNood = document.querySelector('#explain-nood');
@@ -33,6 +34,8 @@ function showEx(exp) {
     exNood.style.display = 'block';
   } else if (exp === 5) {
     exSk.style.display = 'block';
+  } else if (exp === 6) {
+    exCafe.style.display = 'block';
   } else {
     console.log('hérror');
   }
@@ -48,23 +51,12 @@ function hideEx(exp) {
     exNood.style.display = 'none';
   } else if (exp === 5) {
     exSk.style.display = 'none';
+  } else if (exp === 6) {
+    exCafe.style.display = 'none';
   } else {
     console.log('hérror');
   }
 }
-
-// function showEx(exArch) {
-//   // console.log(arc);
-//   exArch.style.display = 'block';
-//   // if (exArch === el) {
-//   //   console.log(el);
-//   //   el.style.display = 'block';
-//   // } else if (dodo === el) {
-//   //   console.log(el);
-//   //   exDodo.style.display = 'block';
-//   // } else {
-//   // }
-// }
 
 //////////////////////////////////////////
 /////////// HAMBURGER BTN ///////////////
@@ -94,7 +86,9 @@ const closeNav = function () {
 menuBtn.addEventListener('click', closeOrOpenNav);
 main.addEventListener('click', closeNav);
 
-//// go to different sections of the page ////////
+//////////////////////////////////////////
+//////////////////////////////////////////
+//// go to different sections of the page /////
 const noodles = document.querySelector('#noodlesTab');
 const cafe = document.querySelector('#cafeTab');
 const dodo = document.querySelector('#dodoTab');
@@ -127,6 +121,7 @@ arch.addEventListener('click', function () {
 random.addEventListener('click', function () {
   randomSec.scrollIntoView({ behavior: 'smooth' });
 });
+
 // Smoth scrolling to a section
 const btnScroll = document.querySelector('.toTopBtn');
 btnScroll.addEventListener('click', function (e) {
