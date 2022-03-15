@@ -588,7 +588,7 @@ body .absolute-nav .left-arrow:hover .logo-frame {
 }
 
 body .absolute-nav .left-arrow:hover .logo-frame .hc-logo {
-  fill: #fcf6e3;
+  fill: #f5f3e6;
 }
 
 body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {
@@ -727,7 +727,7 @@ body header #draw-types ul #randomTab:hover .path {
     height: 41rem;
     width: 100vw;
     overflow: hidden;
-    background-color: rgba(245, 243, 230, 0.93);
+    background-color: #f5f3e6ed;
   }
   body header #draw-types ul {
     width: 100vw;
@@ -897,23 +897,21 @@ body main .top-info .info-text .making-link-wrapper {
   margin-top: 1rem;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: 0.83em;
 }
 
 body main .top-info .info-text .making-link-wrapper .link-to-blog {
   color: inherit;
-  opacity: 0.6;
-  text-decoration-color: #c6c6c6;
-  margin: 0px auto;
-  text-align: center;
+  opacity: 0.67;
+  text-decoration-color: #949494;
+  text-align: right;
   transition: 0.3s;
 }
 
 body main .top-info .info-text .making-link-wrapper .link-to-blog:hover, body main .top-info .info-text .making-link-wrapper .link-to-blog:active {
-  opacity: 0.8;
+  opacity: 1;
   text-decoration-color: transparent;
-  color: #5f3fd5;
 }
 
 body main #drawSections {
@@ -948,13 +946,32 @@ body main #drawSections .titleSign {
   padding: 1.5rem;
   text-align: center;
   width: 100%;
-  color: #5b5448;
+  color: #3e3d3c;
+  opacity: 0.7;
   font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0;
 }
 
 body main #drawSections picture {
   padding-bottom: 6rem;
   height: auto;
+}
+
+body main #drawSections picture::after {
+  font-variation-settings: "MONO" 1, "CASL" 0.5, "wght" 500, "slnt" 0;
+  font-size: 0.57em;
+  color: #3e3d3c;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  body main #drawSections picture::after {
+    opacity: 0.6;
+  }
+}
+
+body main #drawSections picture::after:hover, body main #drawSections picture::after:focus, body main #drawSections picture::after:active {
+  opacity: 0.7;
 }
 
 body main #drawSections #noodlesDraws {
@@ -976,6 +993,10 @@ body main #drawSections #noodlesDraws #hidro {
   padding-top: 17%;
   padding-left: 11%;
   padding-right: 11%;
+}
+
+body main #drawSections #noodlesDraws #hidro::after {
+  content: 'based on the album on the album “Animalitos” of the band Hidrogenese ';
 }
 
 body main #drawSections #noodlesDraws #lin-club {

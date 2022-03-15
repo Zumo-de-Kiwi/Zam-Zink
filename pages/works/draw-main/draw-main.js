@@ -3,7 +3,9 @@
 // var length = path.getTotalLength();
 // console.log(length);
 
-///////////  TOP EXPLAIN ///////////
+//////////////////////////////////////////
+//////////////////////////////////////////
+/////////////  TOP EXPLAIN ///////////////
 /// Titles ////
 const hovSecs = document.querySelector('.hov-secs');
 // titles
@@ -59,6 +61,7 @@ function hideEx(exp) {
 }
 
 //////////////////////////////////////////
+//////////////////////////////////////////
 /////////// HAMBURGER BTN ///////////////
 const menuBtn = document.querySelector('.menu-btn');
 const navBar = document.querySelector('.header');
@@ -88,7 +91,7 @@ main.addEventListener('click', closeNav);
 
 //////////////////////////////////////////
 //////////////////////////////////////////
-//// go to different sections of the page /////
+///////////// Click to Sections ////////////
 const noodles = document.querySelector('#noodlesTab');
 const cafe = document.querySelector('#cafeTab');
 const dodo = document.querySelector('#dodoTab');
@@ -128,3 +131,7 @@ btnScroll.addEventListener('click', function (e) {
   main.scrollIntoView({ behavior: 'smooth' });
   // console.log(btnScrollTo,mian);
 });
+
+//////////////////////////////////////////
+//////////////////////////////////////////
+///////////// NAVBAR SHOW/HIDE ///////////
