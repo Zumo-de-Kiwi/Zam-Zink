@@ -127,8 +127,8 @@
 
 ## 7. PHOTO
 
-- [ ] #700 Improve the close modal of ANALOG with a overlay
-- [ ] #701 Improve close modal with external links and btn resolve it
+- [ ] #700 **WORKING** Improve the close modal of ANALOG sections with a overlay
+- [ ] #701 **WORKING** Improve close modal with external links and btn resolve it
 - [ ] #702 Make the Analog titles linkable
 - [ ] #703 Appear a (You reacted with a [emoji] ) bubble when the user press on the emoji on the analog photo subpage
 - [ ] #704 Emojis on #2 #3 analog are not centre.

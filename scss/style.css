@@ -1334,7 +1334,7 @@ footer .footer #githublink a {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(6px,0px);'><text y='57%'>🖖</text></svg>") 16 0, auto;
   font-variation-settings: "MONO" 1, "wght" 400, "slnt" -3;
   color: inherit;
-  transition: color 0.1s;
+  transition: 0.13s;
 }
 
 footer .footer #githublink a:hover, footer .footer #githublink a:active, footer .footer #githublink a:focus {

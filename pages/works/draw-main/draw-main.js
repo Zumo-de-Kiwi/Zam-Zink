@@ -147,15 +147,3 @@ btnScroll.addEventListener('click', function (e) {
 //   }
 //   prevScrollpos = currentScrollPos;
 // };
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  // document.getElementById('navBar').style.top = '-50px';
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos != currentScrollPos) {
-    document.getElementById('navBar').style.top = '0';
-  } else {
-    document.getElementById('navBar').style.top = '0';
-  }
-  prevScrollpos = currentScrollPos;
-};
