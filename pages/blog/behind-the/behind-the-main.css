@@ -58,16 +58,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
 body ::selection {
-  background-color: #fff705;
+  background-color: hsl(58deg, 100%, 51%);
   color: black;
 }
-
 body h1 {
   font-size: calc(0.3vw + 0.4vw + 30px);
 }
-
 body .left-arrow {
   padding-top: 1rem;
   z-index: 10;
@@ -79,15 +76,13 @@ body .left-arrow {
   top: 2rem;
   left: 2rem;
 }
-
 @media (max-width: 768px) {
   body .left-arrow {
     top: 1rem;
   }
 }
-
 body .left-arrow .link-a {
-  color: #b9cabf;
+  color: hsl(141deg, 14%, 76%);
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
@@ -95,24 +90,20 @@ body .left-arrow .link-a {
   font-size: 3.1rem;
   transition: 0.45s;
 }
-
 @media (max-width: 768px) {
   body .left-arrow .link-a {
     font-variation-settings: "CASL" 1, "wght" 500;
   }
 }
-
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
-  color: #b9cabf;
+  color: hsl(141deg, 14%, 76%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
-
 body .left-arrow .link-a #left-arrow {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
-
 body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
@@ -120,30 +111,24 @@ body .left-arrow .logo-frame {
   top: -3.4rem;
   pointer-events: none;
 }
-
 @media (max-width: 768px) {
   body .left-arrow .logo-frame {
     display: none;
   }
 }
-
 body .left-arrow .logo-frame .logo-svg {
   width: 29px;
 }
-
 body .left-arrow .logo-frame .logo-svg .hc-logo {
   transition: 0.3s ease-out;
   fill: transparent;
 }
-
 body .left-arrow:hover .logo-frame {
   left: 5.5rem;
 }
-
 body .left-arrow:hover .logo-frame .hc-logo {
-  fill: #6c5ffc;
+  fill: hsl(245deg, 96%, 68%);
 }
-
 body .menu-btn {
   z-index: 39;
   position: fixed;
@@ -160,15 +145,13 @@ body .menu-btn {
   width: 6rem;
   height: 5rem;
 }
-
 @media (min-width: 768px) {
   body .menu-btn {
     display: none;
   }
 }
-
 body .menu-btn .menu-btn__burger::after, body .menu-btn .menu-btn__burger::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2.6rem;
   height: 0.35rem;
@@ -176,36 +159,28 @@ body .menu-btn .menu-btn__burger::after, body .menu-btn .menu-btn__burger::befor
   background-color: #232522;
   transition: all 0.4s ease-in-out;
 }
-
 body .menu-btn .menu-btn__burger::after {
   transform: translateY(-0.7rem);
 }
-
 body .menu-btn .menu-btn__burger::before {
   transform: translateY(0.7rem);
 }
-
 body .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg);
 }
-
 body .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
 }
-
 body ul {
   list-style: none;
 }
-
 body a {
-  color: #5f3fd5;
+  color: hsl(253deg, 64%, 54%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
-
 body a:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
-
 body #trampolin-wrapper {
   position: fixed;
   height: 90%;
@@ -216,64 +191,53 @@ body #trampolin-wrapper {
   justify-content: right;
   overflow: hidden;
 }
-
 body #trampolin-wrapper #trampolineEmoji {
-  position: fixed;
-  /* Fixed/sticky position */
+  position: fixed; /* Fixed/sticky position */
   overflow: hidden;
-  bottom: 2.3rem;
-  /* Place the button at the bottom of the page */
+  bottom: 2.3rem; /* Place the button at the bottom of the page */
   user-select: none;
   right: 1rem;
-  z-index: 18;
-  /* Make sure it does not overlap */
+  z-index: 18; /* Make sure it does not overlap */
   text-align: center;
   text-decoration: none;
-  padding: 2rem;
-  /* Some padding */
+  padding: 2rem; /* Some padding */
   font-size: 3.3rem;
   transition: 0.15s;
   opacity: 0.33;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
-
 @media (max-width: 768px) {
   body #trampolin-wrapper #trampolineEmoji {
     bottom: 1rem;
     right: 0.6rem;
   }
 }
-
 @media (max-width: 768px) {
   body #trampolin-wrapper #trampolineEmoji {
     font-size: 2.3rem;
   }
 }
-
 body #trampolin-wrapper #trampolineEmoji:hover {
   opacity: 1;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
-
 body #trampolin-wrapper #trampolineEmoji:active {
   transform: translateY(0.2rem);
 }
-
 .preloader {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
-  background: white;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
   transition: 0.45s ease-out;
 }
-
 .preloader #emoji-loader,
 .preloader #text-loader {
   height: 100px;
@@ -281,7 +245,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   text-align: center;
   margin: 0px auto;
 }
-
 .preloader #emoji-loader {
   font-size: 60px;
   animation: jump 2.6s infinite ease alternate;
@@ -289,22 +252,19 @@ body #trampolin-wrapper #trampolineEmoji:active {
   height: 70px;
   transform-origin: center;
 }
-
 @keyframes jump {
   to {
     transform: translateY(0.7rem);
   }
 }
-
 .preloader #text-loader {
   font-weight: 500;
   padding-top: 10rem;
-  font-family: Monaco, Consolas, 'Courier New', monospace;
+  font-family: Monaco, Consolas, "Courier New", monospace;
   animation: variableOpacity 2s infinite linear;
-  color: #4d435b;
+  color: hsl(265deg, 15%, 31%);
   font-size: calc(0.3vw - 0vw + 12px);
 }
-
 @media (max-width: 700px) {
   .preloader #text-loader {
     font-size: 1.5rem;
@@ -315,11 +275,9 @@ body #trampolin-wrapper #trampolineEmoji:active {
   opacity: 0;
   pointer-events: none;
 }
-
 .preload-finish #emoji-loader {
   animation: none;
 }
-
 .preload-finish #text-loader {
   animation: none;
 }
@@ -332,7 +290,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   animation: animHidden 0.5s ease-out forwards;
   opacity: 0;
 }
-
 @keyframes animHidden {
   from {
     opacity: 1;
@@ -352,7 +309,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   display: block;
   opacity: 1;
 }
-
 @keyframes showHidden {
   0% {
     opacity: 0;
@@ -366,28 +322,24 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   width: 100vw;
   background-color: #ccae90;
   font-weight: 300;
   position: relative;
 }
-
 body .preloader {
   transition: 0.45s ease-out;
-  background: #339467;
+  background: rgb(51, 148, 103);
 }
-
 body .preloader #emoji-loader {
   animation: jump 1.5s ease 0.3s infinite alternate;
 }
-
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: #363636;
+  color: hsl(0deg, 0%, 21%);
   font-size: 1.8rem;
 }
-
 body .absolute-nav {
   position: fixed;
   top: 0rem;
@@ -395,26 +347,21 @@ body .absolute-nav {
   display: flex;
   align-items: center;
 }
-
 body .absolute-nav .left-arrow .link-a {
-  color: #363636;
+  color: hsl(0deg, 0%, 21%);
 }
-
 body .absolute-nav .left-arrow .link-a:hover {
-  color: #363636;
+  color: hsl(0deg, 0%, 21%);
 }
-
 body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {
-  background-color: #363636;
+  background-color: hsl(0deg, 0%, 21%);
 }
-
 body main {
   background: #ccae90;
   position: relative;
   display: grid;
   font-weight: 400;
 }
-
 body main .main-header {
   width: 100%;
   line-height: 8rem;
@@ -422,21 +369,18 @@ body main .main-header {
   text-align: center;
   box-shadow: 0px 0.3rem 0.3rem #463a2f;
 }
-
 body main .main-header h1 {
-  color: #3e3e3e;
-  background-color: #f5f3e6;
+  color: rgb(62, 62, 62);
+  background-color: rgb(245, 243, 230);
   font-weight: 700;
   font-size: 3.3rem;
 }
-
 body main .footer {
   z-index: 1;
   position: relative;
   width: 100%;
-  background: #9a8a70;
+  background: rgb(154, 138, 112);
 }
-
 body main .footer #footer-wrapper {
   height: 100%;
   width: 100%;
@@ -444,27 +388,22 @@ body main .footer #footer-wrapper {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
-  color: #f4f2eb;
+  color: rgb(244, 242, 235);
 }
-
 body main .footer #footer-wrapper .footer-part a {
-  color: #f4f2eb;
+  color: rgb(244, 242, 235);
   text-decoration: none;
 }
-
 body main .footer #footer-wrapper .footer-part a:hover {
   text-decoration: underline;
-  color: #f4f2eb;
+  color: rgb(244, 242, 235);
 }
-
 body main .footer #footer-wrapper .footer-l {
   grid-column: 1;
 }
-
 body main .footer #footer-wrapper .footer-l h2 {
   text-transform: uppercase;
 }
-
 body main .footer #footer-wrapper .footer-r {
   grid-column: 2;
   justify-self: end;

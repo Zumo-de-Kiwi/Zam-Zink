@@ -58,16 +58,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
 body ::selection {
-  background-color: #fff705;
+  background-color: hsl(58deg, 100%, 51%);
   color: black;
 }
-
 body h1 {
   font-size: calc(0.3vw + 0.4vw + 30px);
 }
-
 body .left-arrow {
   padding-top: 1rem;
   z-index: 10;
@@ -79,15 +76,13 @@ body .left-arrow {
   top: 2rem;
   left: 2rem;
 }
-
 @media (max-width: 768px) {
   body .left-arrow {
     top: 1rem;
   }
 }
-
 body .left-arrow .link-a {
-  color: #b9cabf;
+  color: hsl(141deg, 14%, 76%);
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
@@ -95,24 +90,20 @@ body .left-arrow .link-a {
   font-size: 3.1rem;
   transition: 0.45s;
 }
-
 @media (max-width: 768px) {
   body .left-arrow .link-a {
     font-variation-settings: "CASL" 1, "wght" 500;
   }
 }
-
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
-  color: #b9cabf;
+  color: hsl(141deg, 14%, 76%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
-
 body .left-arrow .link-a #left-arrow {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
   transition: 0.2s;
 }
-
 body .left-arrow .logo-frame {
   transition: 0.3s ease-out;
   position: relative;
@@ -120,30 +111,24 @@ body .left-arrow .logo-frame {
   top: -3.4rem;
   pointer-events: none;
 }
-
 @media (max-width: 768px) {
   body .left-arrow .logo-frame {
     display: none;
   }
 }
-
 body .left-arrow .logo-frame .logo-svg {
   width: 29px;
 }
-
 body .left-arrow .logo-frame .logo-svg .hc-logo {
   transition: 0.3s ease-out;
   fill: transparent;
 }
-
 body .left-arrow:hover .logo-frame {
   left: 5.5rem;
 }
-
 body .left-arrow:hover .logo-frame .hc-logo {
-  fill: #6c5ffc;
+  fill: hsl(245deg, 96%, 68%);
 }
-
 body .menu-btn {
   z-index: 39;
   position: fixed;
@@ -160,15 +145,13 @@ body .menu-btn {
   width: 6rem;
   height: 5rem;
 }
-
 @media (min-width: 768px) {
   body .menu-btn {
     display: none;
   }
 }
-
 body .menu-btn .menu-btn__burger::after, body .menu-btn .menu-btn__burger::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2.6rem;
   height: 0.35rem;
@@ -176,36 +159,28 @@ body .menu-btn .menu-btn__burger::after, body .menu-btn .menu-btn__burger::befor
   background-color: #232522;
   transition: all 0.4s ease-in-out;
 }
-
 body .menu-btn .menu-btn__burger::after {
   transform: translateY(-0.7rem);
 }
-
 body .menu-btn .menu-btn__burger::before {
   transform: translateY(0.7rem);
 }
-
 body .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg);
 }
-
 body .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
 }
-
 body ul {
   list-style: none;
 }
-
 body a {
-  color: #5f3fd5;
+  color: hsl(253deg, 64%, 54%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
-
 body a:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>✌️</text></svg>") 16 0, auto;
 }
-
 body #trampolin-wrapper {
   position: fixed;
   height: 90%;
@@ -216,64 +191,53 @@ body #trampolin-wrapper {
   justify-content: right;
   overflow: hidden;
 }
-
 body #trampolin-wrapper #trampolineEmoji {
-  position: fixed;
-  /* Fixed/sticky position */
+  position: fixed; /* Fixed/sticky position */
   overflow: hidden;
-  bottom: 2.3rem;
-  /* Place the button at the bottom of the page */
+  bottom: 2.3rem; /* Place the button at the bottom of the page */
   user-select: none;
   right: 1rem;
-  z-index: 18;
-  /* Make sure it does not overlap */
+  z-index: 18; /* Make sure it does not overlap */
   text-align: center;
   text-decoration: none;
-  padding: 2rem;
-  /* Some padding */
+  padding: 2rem; /* Some padding */
   font-size: 3.3rem;
   transition: 0.15s;
   opacity: 0.33;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>☝️</text></svg>") 16 0, auto;
 }
-
 @media (max-width: 768px) {
   body #trampolin-wrapper #trampolineEmoji {
     bottom: 1rem;
     right: 0.6rem;
   }
 }
-
 @media (max-width: 768px) {
   body #trampolin-wrapper #trampolineEmoji {
     font-size: 2.3rem;
   }
 }
-
 body #trampolin-wrapper #trampolineEmoji:hover {
   opacity: 1;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>☝️</text></svg>") 16 0, auto;
   transform: translateY(-0.2rem);
 }
-
 body #trampolin-wrapper #trampolineEmoji:active {
   transform: translateY(0.2rem);
 }
-
 .preloader {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
-  background: white;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
   transition: 0.45s ease-out;
 }
-
 .preloader #emoji-loader,
 .preloader #text-loader {
   height: 100px;
@@ -281,7 +245,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   text-align: center;
   margin: 0px auto;
 }
-
 .preloader #emoji-loader {
   font-size: 60px;
   animation: jump 2.6s infinite ease alternate;
@@ -289,22 +252,19 @@ body #trampolin-wrapper #trampolineEmoji:active {
   height: 70px;
   transform-origin: center;
 }
-
 @keyframes jump {
   to {
     transform: translateY(0.7rem);
   }
 }
-
 .preloader #text-loader {
   font-weight: 500;
   padding-top: 10rem;
-  font-family: Monaco, Consolas, 'Courier New', monospace;
+  font-family: Monaco, Consolas, "Courier New", monospace;
   animation: variableOpacity 2s infinite linear;
-  color: #4d435b;
+  color: hsl(265deg, 15%, 31%);
   font-size: calc(0.3vw - 0vw + 12px);
 }
-
 @media (max-width: 700px) {
   .preloader #text-loader {
     font-size: 1.5rem;
@@ -315,11 +275,9 @@ body #trampolin-wrapper #trampolineEmoji:active {
   opacity: 0;
   pointer-events: none;
 }
-
 .preload-finish #emoji-loader {
   animation: none;
 }
-
 .preload-finish #text-loader {
   animation: none;
 }
@@ -332,7 +290,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   animation: animHidden 0.5s ease-out forwards;
   opacity: 0;
 }
-
 @keyframes animHidden {
   from {
     opacity: 1;
@@ -352,7 +309,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
   display: block;
   opacity: 1;
 }
-
 @keyframes showHidden {
   0% {
     opacity: 0;
@@ -370,7 +326,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
     transform: rotate(360deg);
   }
 }
-
 @keyframes variableOpacity {
   0% {
     opacity: 100%;
@@ -382,7 +337,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
     opacity: 100%;
   }
 }
-
 @keyframes gifFrame1 {
   0% {
     opacity: 100%;
@@ -397,7 +351,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
     opacity: 0%;
   }
 }
-
 @keyframes gifFrame2 {
   0% {
     opacity: 0%;
@@ -418,7 +371,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
     opacity: 0%;
   }
 }
-
 @keyframes gifFrame3 {
   0% {
     opacity: 0%;
@@ -439,7 +391,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
     opacity: 0%;
   }
 }
-
 @keyframes gifFrame4 {
   0% {
     opacity: 0%;
@@ -454,25 +405,21 @@ body #trampolin-wrapper #trampolineEmoji:active {
     opacity: 100%;
   }
 }
-
 @keyframes brujula {
   to {
     transform: rotateZ(23deg);
   }
 }
-
 @keyframes jump {
   to {
     transform: translateY(1rem);
   }
 }
-
 @keyframes goLeft {
   to {
     transform: translateX(-0.6rem);
   }
 }
-
 @keyframes navbarAppears {
   from {
     transform: translateX(5rem);
@@ -483,7 +430,6 @@ body #trampolin-wrapper #trampolineEmoji:active {
     opacity: 100%;
   }
 }
-
 @keyframes widthness {
   0% {
     font-variation-settings: "wght" 500;
@@ -498,19 +444,17 @@ body #trampolin-wrapper #trampolineEmoji:active {
     font-variation-settings: "wght" 500;
   }
 }
-
 @keyframes slintness {
   0% {
-    font-variation-settings: 'slnt' 0, 'CRSV' 1;
+    font-variation-settings: "slnt" 0, "CRSV" 1;
   }
   40% {
-    font-variation-settings: 'slnt' -15, 'CRSV' 1;
+    font-variation-settings: "slnt" -15, "CRSV" 1;
   }
   100% {
-    font-variation-settings: 'slnt' 0, 'CRSV' 1;
+    font-variation-settings: "slnt" 0, "CRSV" 1;
   }
 }
-
 @keyframes waveHand {
   0% {
     transform: rotate(0deg);
@@ -537,35 +481,29 @@ body #trampolin-wrapper #trampolineEmoji:active {
     transform: rotate(0deg);
   }
 }
-
 @keyframes to400Anim {
   to {
     font-weight: 400;
   }
 }
-
 body {
   width: 100%;
   background-color: #f5f3e6;
   font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 620, "slnt" 0;
   position: relative;
 }
-
 body .preloader {
   transition: 0.45s ease-out;
   background: #eeebe7;
 }
-
 body .preloader #emoji-loader {
   animation: jump 1.5s ease 0.3s infinite alternate;
 }
-
 body .preloader #text-loader {
   padding-top: 12rem;
   color: #3e3d3c;
   font-size: calc(0.3vw + 0.3vw + 13px);
 }
-
 body .absolute-nav {
   position: fixed;
   top: 0rem;
@@ -573,59 +511,48 @@ body .absolute-nav {
   display: flex;
   align-items: center;
 }
-
 body .absolute-nav .left-arrow .link-a {
   padding-right: 3rem;
   color: #3e3d3c;
 }
-
 body .absolute-nav .left-arrow .link-a:hover {
   color: #3e3d3c;
 }
-
 body .absolute-nav .left-arrow:hover .logo-frame {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
-
 body .absolute-nav .left-arrow:hover .logo-frame .hc-logo {
   fill: #f5f3e6;
 }
-
 body .absolute-nav .menu-btn__burger::after, body .absolute-nav .menu-btn__burger::before {
   background-color: #3e3d3c;
 }
-
 body header {
   z-index: 18;
   position: fixed;
   top: 0rem;
   width: 100%;
 }
-
 body header #draw-types {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 body header #draw-types ul {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-
 body header #draw-types ul li {
   list-style: none;
   line-height: 5rem;
 }
-
 body header #draw-types ul li .li-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-
 body header #draw-types ul li .li-wrapper a {
   position: relative;
   color: #3e3d3c;
@@ -638,7 +565,6 @@ body header #draw-types ul li .li-wrapper a {
   padding-bottom: 0rem;
   transition: 0.3s;
 }
-
 body header #draw-types ul li .li-wrapper a svg {
   z-index: 19;
   position: absolute;
@@ -648,77 +574,61 @@ body header #draw-types ul li .li-wrapper a svg {
   bottom: -5px;
   margin: auto;
 }
-
 body header #draw-types ul li .li-wrapper:hover a {
   font-variation-settings: "CASL" 0.5, "wght" 620;
   opacity: 1;
 }
-
 body header #draw-types ul li .li-wrapper:hover svg .path {
   animation: dash 0.8s cubic-bezier(0.27, 0.22, 0.44, forwards 1.03) 1 0.3s;
   will-change: transform;
 }
-
 @keyframes dash {
   to {
     stroke-dashoffset: 0px;
   }
 }
-
 body header #draw-types ul #noodlesTab .path {
   stroke-dasharray: 87px;
   stroke-dashoffset: 87px;
 }
-
 body header #draw-types ul #noodlesTab:hover .path {
   animation: dash 1.3s linear infinite forwards;
 }
-
 body header #draw-types ul #cafeTab .path {
   stroke-dasharray: 54px;
   stroke-dashoffset: 54px;
 }
-
 body header #draw-types ul #cafeTab:hover .path {
   animation: dash 1s forwards;
 }
-
 body header #draw-types ul #dodoTab .path {
   stroke-dasharray: 59px;
   stroke-dashoffset: 59px;
 }
-
 body header #draw-types ul #dodoTab:hover .path {
   animation: dash 0.9s ease-out 2 0.4s forwards;
 }
-
 body header #draw-types ul #sketchTab path {
   stroke-dasharray: 76px;
   stroke-dashoffset: 76px;
 }
-
 body header #draw-types ul #sketchTab:hover .path {
   animation: dash 0.85s linear 2 forwards;
 }
-
 body header #draw-types ul #archTab .path {
   stroke-dasharray: 128px;
   stroke-dashoffset: 128px;
 }
-
 body header #draw-types ul #archTab:hover .path {
   animation: dash 1.3s linear forwards;
 }
-
 body header #draw-types ul #randomTab .path {
   stroke-dasharray: 82px;
   stroke-dashoffset: 82px;
 }
-
 body header #draw-types ul #randomTab:hover .path {
   animation: dash 1s linear 3 0.3s forwards;
 }
-
 @media (max-width: 768px) {
   body header {
     display: none;
@@ -728,7 +638,7 @@ body header #draw-types ul #randomTab:hover .path {
     height: 41rem;
     width: 100vw;
     overflow: hidden;
-    background-color: #f5f3e6ed;
+    background-color: rgba(245, 243, 230, 0.9294117647);
   }
   body header #draw-types ul {
     width: 100vw;
@@ -767,12 +677,10 @@ body header #draw-types ul #randomTab:hover .path {
     animation: none;
   }
 }
-
 body main {
   position: relative;
   display: grid;
 }
-
 body main .top-info {
   width: 100%;
   position: sticky;
@@ -782,7 +690,6 @@ body main .top-info {
   padding-bottom: 5rem;
   color: #3e3e3e;
 }
-
 body main .top-info h1 {
   text-align: center;
   text-transform: uppercase;
@@ -790,75 +697,60 @@ body main .top-info h1 {
   font-variation-settings: "MONO" 1, "CASL" 0, "wght" 740, "slnt" -7;
   margin-bottom: 9rem;
 }
-
 body main .top-info .info-text {
   max-width: 53ch;
   margin: 0px auto;
   font-size: 1.8rem;
 }
-
 @media (max-width: 768px) {
   body main .top-info .info-text {
     display: none;
   }
 }
-
 body main .top-info .info-text .para {
   pointer-events: none;
   line-height: 1.3;
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0;
   font-size: 0.77em;
 }
-
 body main .top-info .info-text .para.para-1 {
   opacity: 0.87;
 }
-
 body main .top-info .info-text .para.para-2 {
   opacity: 0.3;
 }
-
 body main .top-info .info-text #para-2-wrapper {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
-
 body main .top-info .info-text .hov-secs {
   transform: translateY(-1.5rem);
   display: flex;
   justify-content: space-between;
 }
-
-body main .top-info .info-text .hov-secs:hover > .hovered,
-body main .top-info .info-text .hov-secs:active > .hovered {
+body main .top-info .info-text .hov-secs:hover > .hovered, body main .top-info .info-text .hov-secs:active > .hovered {
   opacity: 0.3;
 }
-
 body main .top-info .info-text .hov-secs:hover .hovered:hover, body main .top-info .info-text .hov-secs:active .hovered:hover {
   opacity: 1;
 }
-
 body main .top-info .info-text .hov-secs:hover ~ .dynamic-el-wrapper .hover-me, body main .top-info .info-text .hov-secs:active ~ .dynamic-el-wrapper .hover-me {
   display: none;
 }
-
 body main .top-info .info-text .hov-secs .hovered {
   opacity: 0.7;
   transition: opacity 0.3s;
   padding: 1.7rem 1.6%;
   padding-bottom: 2.7em;
 }
-
 body main .top-info .info-text .hov-secs .hovered#hov-nood {
   padding-left: 0rem;
 }
-
 body main .top-info .info-text .hov-secs #and {
   padding-top: 3.04%;
   opacity: 0.3;
 }
-
 body main .top-info .info-text .dynamic-el-wrapper {
   pointer-events: none;
   width: 98%;
@@ -871,7 +763,6 @@ body main .top-info .info-text .dynamic-el-wrapper {
   align-items: center;
   transition: 0.3s;
 }
-
 body main .top-info .info-text .dynamic-el-wrapper .hover-me {
   display: block;
   font-size: 0.73em;
@@ -879,11 +770,9 @@ body main .top-info .info-text .dynamic-el-wrapper .hover-me {
   text-transform: uppercase;
   font-variation-settings: "MONO" 1, "CASL" 0.1, "wght" 500, "slnt" 0;
 }
-
 body main .top-info .info-text .dynamic-el-wrapper .parentesis {
   opacity: 0.23;
 }
-
 body main .top-info .info-text .dynamic-el-wrapper .hover-el {
   display: none;
   text-align: justify;
@@ -893,7 +782,6 @@ body main .top-info .info-text .dynamic-el-wrapper .hover-el {
   font-size: 0.87em;
   opacity: 0.87;
 }
-
 body main .top-info .info-text .making-link-wrapper {
   transform: translateY(-2.3em);
   margin-top: 1rem;
@@ -902,7 +790,6 @@ body main .top-info .info-text .making-link-wrapper {
   justify-content: center;
   font-size: 0.83em;
 }
-
 body main .top-info .info-text .making-link-wrapper .link-to-blog {
   color: inherit;
   opacity: 0.67;
@@ -910,12 +797,10 @@ body main .top-info .info-text .making-link-wrapper .link-to-blog {
   text-align: right;
   transition: 0.3s;
 }
-
 body main .top-info .info-text .making-link-wrapper .link-to-blog:hover, body main .top-info .info-text .making-link-wrapper .link-to-blog:active {
   opacity: 1;
   text-decoration-color: transparent;
 }
-
 body main #drawSections {
   border-top: 1.7px solid #f2f2e9;
   box-shadow: 0px -0.7px 2.7px -11px rgba(0, 0, 0, 0.022), 0px -1.8px 6.9px -11px rgba(0, 0, 0, 0.031), 0px -3.7px 14.2px -11px rgba(0, 0, 0, 0.039), 0px -7.7px 29.2px -11px rgba(0, 0, 0, 0.048), 0px -21px 80px -11px rgba(0, 0, 0, 0.07);
@@ -925,12 +810,10 @@ body main #drawSections {
   grid-template-columns: minmax(7%, 1fr) minmax(300px, 1000px) minmax(7%, 1fr);
   gap: 1rem;
 }
-
 body main #drawSections .drawSection {
   grid-column: 2;
   padding-bottom: 7rem;
 }
-
 body main #drawSections .title {
   top: 0px;
   position: sticky;
@@ -939,10 +822,9 @@ body main #drawSections .title {
   padding: 1.7rem;
   text-align: center;
   font-size: 2.5rem;
-  color: #6a665e;
+  color: rgb(106, 102, 94);
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500, "slnt" 0;
 }
-
 body main #drawSections .titleSign {
   display: none;
   padding: 1.5rem;
@@ -952,12 +834,10 @@ body main #drawSections .titleSign {
   opacity: 0.7;
   font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0;
 }
-
 body main #drawSections picture {
   padding-bottom: 6rem;
   height: auto;
 }
-
 body main #drawSections picture::after {
   font-variation-settings: "MONO" 1, "CASL" 0.5, "wght" 500, "slnt" 0;
   font-size: 0.57em;
@@ -965,154 +845,126 @@ body main #drawSections picture::after {
   opacity: 0.4;
   transition: 0.3s;
 }
-
 @media (min-width: 768px) {
   body main #drawSections picture::after {
     opacity: 0.6;
   }
 }
-
 body main #drawSections picture::after:hover, body main #drawSections picture::after:focus, body main #drawSections picture::after:active {
   opacity: 0.7;
 }
-
 body main #drawSections #noodlesDraws {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 4rem;
 }
-
 body main #drawSections #noodlesDraws .title {
-  grid-column: 1 / 4;
+  grid-column: 1/4;
 }
-
 body main #drawSections #noodlesDraws picture {
-  grid-column: 1/ 4;
+  grid-column: 1/4;
 }
-
 body main #drawSections #noodlesDraws #hidro {
   place-self: center;
   padding-top: 17%;
   padding-left: 11%;
   padding-right: 11%;
 }
-
 body main #drawSections #noodlesDraws #hidro::after {
-  content: 'based on the album on the album “Animalitos” of the band Hidrogenese ';
+  content: "based on the album on the album “Animalitos” of the band Hidrogenese";
 }
-
 body main #drawSections #noodlesDraws #lin-club {
   padding-left: 7%;
   padding-right: 7%;
   padding-bottom: 0rem;
 }
-
 body main #drawSections #noodlesDraws #flora-color {
   padding-bottom: 17%;
 }
-
 body main #drawSections #noodlesDraws #mr-cakebeef {
-  grid-column: 1 /3;
+  grid-column: 1/3;
   padding-right: 23%;
   padding-top: 7%;
   padding-bottom: 7%;
 }
-
 body main #drawSections #noodlesDraws #tijera-black {
   padding-left: 23%;
-  grid-column: 2 /4;
+  grid-column: 2/4;
 }
-
 body main #drawSections #dodoDraws #dodo-fapiaou {
   padding-top: 19%;
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 10rem;
 }
-
 body main #drawSections #dodoDraws #ropa-dodo {
   padding-left: 11%;
   padding-right: 29%;
   padding-bottom: 8rem;
 }
-
 body main #drawSections #dodoDraws #magnet-dodo {
   padding-left: 29%;
   padding-right: 29%;
   padding-bottom: 8rem;
 }
-
 body main #drawSections #dodoDraws #mosquito-dodo {
   padding-left: 31%;
   padding-right: 31%;
   padding-bottom: 8rem;
 }
-
 body main #drawSections #dodoDraws #dodo-kagaroo {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 10rem;
 }
-
 body main #drawSections #dodoDraws #dodo-revolution {
   padding-bottom: 8rem;
   display: none;
 }
-
 body main #drawSections #dodoDraws #dodo-ojo {
   padding-left: 47%;
   padding-right: 13%;
   padding-bottom: 10rem;
 }
-
 body main #drawSections #sketchDraws #zodiac-blue-red {
   padding-left: 2rem;
 }
-
 body main #drawSections #sketchDraws #sketch-diario-1 {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 6rem;
   filter: saturate(141%);
 }
-
 body main #drawSections #sketchDraws #rus-sketch {
   padding-left: 11%;
   padding-right: 7%;
 }
-
 body main #drawSections #sketchDraws #manga {
   padding-left: 13%;
   padding-right: 13%;
 }
-
 body main #drawSections #archDraws {
   display: grid;
   justify-items: center;
 }
-
 body main #drawSections #archDraws picture {
   width: 83%;
   padding-bottom: 3rem;
 }
-
 body main #drawSections #archDraws .flex-group {
   display: flex;
   flex-direction: column;
   margin: 0px auto;
 }
-
 body main #drawSections #randomDraws {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
 }
-
 body main #drawSections #randomDraws .title {
-  grid-column: 1 /4;
+  grid-column: 1/4;
   grid-row: 1;
 }
-
 body main #drawSections #randomDraws #pato-gato {
   grid-column: 3;
   grid-row: 2;
@@ -1120,74 +972,64 @@ body main #drawSections #randomDraws #pato-gato {
   padding-bottom: 4.5rem;
   padding-left: 1rem;
 }
-
 body main #drawSections #randomDraws #ancient-spanish {
-  grid-column: 1/ 3;
-  grid-row: 3/ 5;
+  grid-column: 1/3;
+  grid-row: 3/5;
   padding-left: 15%;
   padding-bottom: 5rem;
 }
-
 body main #drawSections #randomDraws #penguin-banera {
-  grid-column: 1/ 4;
+  grid-column: 1/4;
   grid-row: 5;
   padding-left: 0vw;
   padding-right: 0vw;
   padding-bottom: 29%;
 }
-
 body main #drawSections #randomDraws #korean {
-  grid-column: 1/ 4;
+  grid-column: 1/4;
   grid-row: 5;
   padding-top: 57%;
   padding-left: 1rem;
   padding-right: 0.6rem;
   padding-bottom: 7%;
 }
-
 body main #drawSections #randomDraws #citron-girl {
-  grid-column: 2/ 4;
+  grid-column: 2/4;
   grid-row: 6;
   padding-left: 13vw;
   padding-right: 1vw;
   padding-bottom: 22vh;
 }
-
 body main #drawSections #randomDraws #cat-arrow {
-  grid-column: 1/ 3;
+  grid-column: 1/3;
   grid-row: 6;
   padding-top: 41%;
   padding-right: 19%;
   padding-left: 5%;
   padding-bottom: 23%;
 }
-
 body main #drawSections #randomDraws #beer-coleta {
-  grid-column: 1/ 4;
+  grid-column: 1/4;
   grid-row: 8;
   padding-right: 3%;
   padding-left: 3%;
   padding-bottom: 16rem;
 }
-
 body main #drawSections #randomDraws #fin1,
 body main #drawSections #randomDraws #fin3 {
   grid-row: 10;
   text-align: center;
-  color: #f4b5c2;
+  color: rgb(244, 181, 194);
   font-weight: 400;
   font-size: 2.3rem;
   padding-bottom: 11rem;
 }
-
 body main #drawSections #randomDraws #fin1 {
   grid-column: 1;
 }
-
 body main #drawSections #randomDraws #fin3 {
   grid-column: 3;
 }
-
 body main #drawSections #randomDraws #rabbit {
   grid-column: 2;
   grid-row: 11;
@@ -1196,7 +1038,6 @@ body main #drawSections #randomDraws #rabbit {
   align-items: center;
   justify-content: center;
 }
-
 body main #drawSections #randomDraws #fin2,
 body main #drawSections #randomDraws #fin4 {
   grid-row: 12;
@@ -1206,15 +1047,12 @@ body main #drawSections #randomDraws #fin4 {
   font-size: 2.3rem;
   padding-bottom: 9rem;
 }
-
 body main #drawSections #randomDraws #fin2 {
   grid-column: 3;
 }
-
 body main #drawSections #randomDraws #fin4 {
   grid-column: 1;
 }
-
 @media (min-width: 768px) {
   body main .top-info {
     padding-top: 17rem;
@@ -1231,7 +1069,7 @@ body main #drawSections #randomDraws #fin4 {
     height: 12rem;
     padding-top: 8rem;
     font-size: 2.5rem;
-    color: #aeaaa4;
+    color: rgb(174, 170, 164);
     font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 620, "slnt" 0;
   }
   body main #drawSections .titleSign {
@@ -1239,11 +1077,11 @@ body main #drawSections #randomDraws #fin4 {
     padding: 1.5rem;
     text-align: center;
     width: 100%;
-    color: #5b5448;
+    color: rgb(91, 84, 72);
     font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0;
   }
   body main #drawSections #noodlesDraws picture {
-    grid-column: 1/ 4;
+    grid-column: 1/4;
   }
   body main #drawSections #noodlesDraws #hidro {
     place-self: center;
@@ -1276,13 +1114,13 @@ body main #drawSections #randomDraws #fin4 {
   body main #drawSections #noodlesDraws #mr-cakebeef {
     padding-left: 29%;
     padding-right: 23%;
-    grid-column: 1 /3;
+    grid-column: 1/3;
     padding-top: 1rem;
     padding-bottom: 3rem;
   }
   body main #drawSections #noodlesDraws #tijera-black {
     padding-left: 51%;
-    grid-column: 2 /4;
+    grid-column: 2/4;
   }
   body main #drawSections #cafeDraws picture {
     padding-top: 1vh;
@@ -1298,8 +1136,8 @@ body main #drawSections #randomDraws #fin4 {
     grid-template-columns: 1fr 1fr 1fr;
   }
   body main #drawSections #dodoDraws picture,
-  body main #drawSections #dodoDraws .title {
-    grid-column: 1/ 4;
+body main #drawSections #dodoDraws .title {
+    grid-column: 1/4;
   }
   body main #drawSections #dodoDraws .title {
     grid-row: 1;
@@ -1335,14 +1173,14 @@ body main #drawSections #randomDraws #fin4 {
     padding-bottom: 12rem;
   }
   body main #drawSections #dodoDraws #dodo-kagaroo {
-    grid-column: 2/ 4;
+    grid-column: 2/4;
     grid-row: 6;
     padding-left: 7%;
     padding-right: 7%;
     padding-bottom: 9em;
   }
   body main #drawSections #dodoDraws #dodo-revolution {
-    grid-column: 1/ 4;
+    grid-column: 1/4;
     grid-row: 7;
     padding-bottom: 8rem;
     display: none;
@@ -1359,38 +1197,38 @@ body main #drawSections #randomDraws #fin4 {
     grid-template-columns: repeat(9, minmax(1rem, 12rem));
   }
   body main #drawSections #sketchDraws .title {
-    grid-column: 1/ 10;
+    grid-column: 1/10;
     grid-row: 1;
     place-self: center;
   }
   body main #drawSections #sketchDraws #sketch-diario-1 {
-    grid-column: 2/ 9;
+    grid-column: 2/9;
     padding: 7%;
     padding-top: 23%;
   }
   body main #drawSections #sketchDraws #zodiac-blue-red {
-    grid-column: 1/ 7;
+    grid-column: 1/7;
     padding: 3%;
     padding-bottom: 7%;
   }
   body main #drawSections #sketchDraws #soft-robotics {
-    grid-column: 4/ 10;
+    grid-column: 4/10;
     padding: 3%;
     padding-bottom: 7%;
   }
   body main #drawSections #sketchDraws #magnolia {
-    grid-column: 2/ 8;
+    grid-column: 2/8;
     padding-bottom: 13%;
   }
   body main #drawSections #sketchDraws #abuelo-jp {
-    grid-column: 1/ 10;
+    grid-column: 1/10;
     padding-bottom: 11%;
   }
   body main #drawSections #sketchDraws #manga {
-    grid-column: 5/ 10;
+    grid-column: 5/10;
   }
   body main #drawSections #sketchDraws #rus-sketch {
-    grid-column: 2/ 7;
+    grid-column: 2/7;
     padding: 11%;
     padding-top: 3%;
     padding-bottom: 17%;
@@ -1440,36 +1278,36 @@ body main #drawSections #randomDraws #fin4 {
     place-items: center;
   }
   body main #drawSections #randomDraws .title {
-    grid-column: 1 /11;
+    grid-column: 1/11;
     grid-row: 1;
   }
   body main #drawSections #randomDraws #pato-gato {
-    grid-column: 7/ 9;
+    grid-column: 7/9;
     grid-row: 2;
     padding-top: 199%;
     padding-bottom: 57%;
     padding-left: 41%;
   }
   body main #drawSections #randomDraws #ancient-spanish {
-    grid-column: 1/ 6;
-    grid-row: 3/ 5;
+    grid-column: 1/6;
+    grid-row: 3/5;
     padding-left: 0vw;
     padding-bottom: 12rem;
   }
   body main #drawSections #randomDraws #penguin-banera {
-    grid-column: 4/ 11;
+    grid-column: 4/11;
     grid-row: 5;
     align-self: flex-start;
   }
   body main #drawSections #randomDraws #korean {
-    grid-column: 2/ 8;
+    grid-column: 2/8;
     grid-row: 5;
     padding-top: 67%;
     padding-bottom: 10rem;
     align-self: flex-end;
   }
   body main #drawSections #randomDraws #citron-girl {
-    grid-column: 8/ 11;
+    grid-column: 8/11;
     grid-row: 6;
     padding-top: 0rem;
     padding-left: 0vw;
@@ -1478,7 +1316,7 @@ body main #drawSections #randomDraws #fin4 {
     align-self: flex-start;
   }
   body main #drawSections #randomDraws #cat-arrow {
-    grid-column: 1/ 4;
+    grid-column: 1/4;
     grid-row: 6;
     padding-top: 121%;
     padding-right: 0vw;
@@ -1487,17 +1325,17 @@ body main #drawSections #randomDraws #fin4 {
     align-self: flex-end;
   }
   body main #drawSections #randomDraws #beer-coleta {
-    grid-column: 3/ 9;
+    grid-column: 3/9;
     grid-row: 8;
     padding-right: 0vw;
     padding-left: 0vw;
     padding-bottom: 33rem;
   }
   body main #drawSections #randomDraws #fin1,
-  body main #drawSections #randomDraws #fin3 {
+body main #drawSections #randomDraws #fin3 {
     grid-row: 10;
     text-align: center;
-    color: #f4b5c2;
+    color: rgb(244, 181, 194);
     font-weight: 400;
     font-size: 2.3rem;
     padding-bottom: 11rem;
@@ -1509,14 +1347,14 @@ body main #drawSections #randomDraws #fin4 {
     grid-column: 8;
   }
   body main #drawSections #randomDraws #rabbit {
-    grid-column: 5/ 7;
+    grid-column: 5/7;
     grid-row: 11;
     padding-bottom: 11rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
   body main #drawSections #randomDraws #fin2,
-  body main #drawSections #randomDraws #fin4 {
+body main #drawSections #randomDraws #fin4 {
     grid-row: 12;
     text-align: center;
     color: #85c288;
@@ -1531,16 +1369,13 @@ body main #drawSections #randomDraws #fin4 {
     grid-column: 3;
   }
 }
-
 body main #trampolin-wrapper {
   overflow: hidden;
   grid-column: 3;
 }
-
 body main #trampolin-wrapper #trampolineEmoji {
   right: 0.7%;
 }
-
 body .footer {
   z-index: 19;
   height: 29rem;
@@ -1548,7 +1383,6 @@ body .footer {
   background: #f5f3e6;
   color: #85c288;
 }
-
 body .footer #footer-wrapper {
   height: 100%;
   width: 100%;
@@ -1557,36 +1391,29 @@ body .footer #footer-wrapper {
   gap: 2rem;
   padding: 2rem;
 }
-
 body .footer #footer-wrapper .footer-part a {
   color: inherit;
   text-decoration: none;
 }
-
 body .footer #footer-wrapper .footer-part a:hover {
-  color: #f4b5c2;
+  color: rgb(244, 181, 194);
 }
-
 body .footer #footer-wrapper .footer-l {
   grid-column: 2;
   align-self: center;
   justify-self: center;
   text-align: center;
 }
-
 body .footer #footer-wrapper .footer-l h2 {
   text-transform: uppercase;
   font-weight: 500;
 }
-
 body .footer #footer-wrapper .footer-l div {
   padding-top: 2.3rem;
 }
-
 body .footer #footer-wrapper .footer-r {
   grid-column: 3;
 }
-
 body .footer #footer-wrapper .footer-r .sub-wrapper {
   height: 100%;
   display: flex;
@@ -1594,24 +1421,19 @@ body .footer #footer-wrapper .footer-r .sub-wrapper {
   justify-self: end;
   text-align: right;
 }
-
 body .footer #footer-wrapper .footer-r .sub-wrapper div {
   padding: 1.2rem;
   font-weight: 500;
 }
-
 body .footer #footer-wrapper .footer-r .sub-wrapper div .r-links {
   padding: 1rem;
 }
-
 body .footer #footer-wrapper .footer-r .sub-wrapper div #making-of::after {
-  content: 'the making of';
+  content: "the making of";
 }
-
 body .footer #footer-wrapper .footer-r .sub-wrapper div #making-of:hover::after {
-  content: 'the Drawing Page';
+  content: "the Drawing Page";
 }
-
 body .footer #footer-wrapper .footer-r .sub-wrapper div .arrow {
   font-size: 2.5rem;
 }

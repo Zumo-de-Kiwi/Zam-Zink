@@ -3,7 +3,6 @@ body {
   height: 100vh;
   margin: 0;
 }
-
 body .container {
   width: 100%;
   height: 100%;
@@ -11,7 +10,6 @@ body .container {
   overflow-x: scroll;
   display: flex;
 }
-
 body .container section {
   flex: none;
   display: flex;
@@ -21,22 +19,18 @@ body .container section {
   width: 100vw;
   scroll-snap-align: start;
 }
-
 body .container section:nth-of-type(1) {
   background-color: bisque;
-  color: #010102;
+  color: rgb(1, 1, 2);
 }
-
 body .container section:nth-of-type(2) {
-  background-color: #e67e00;
-  color: #f1e2ff;
+  background-color: rgb(230, 126, 0);
+  color: rgb(241, 226, 255);
 }
-
 body .container section:nth-of-type(3) {
-  background-color: #ffb964;
-  color: #c296eb;
+  background-color: rgb(255, 185, 100);
+  color: rgb(194, 150, 235);
 }
-
 body .container section h1 {
   font-size: 8rem;
 }
