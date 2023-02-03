@@ -46,7 +46,7 @@
 ## 1. GLOBAL
 
 - [x] #100 (adjust globally) emoji cursor to be in his `top left` corner
-- [ ] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
+- [x] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 - [x] #102 Improvements for emoji `cursor` be displayed well on Windows and Mac.
 
 ## 2. DRAW
@@ -165,9 +165,9 @@
 
    1. About me
 
+      - [ ] friends testimonials about me, that updates every 7s
       - [x] Text
       - [x] Brainstorm Layout
-      - [ ] friends testimonials about me, that updates every 7s
       - [x] "Tips" about my hobbies, personality
       - [Cancelled] Super Arrowed 100vh intro
 
