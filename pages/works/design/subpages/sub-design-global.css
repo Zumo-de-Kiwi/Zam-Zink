@@ -1,14 +1,14 @@
 @charset "UTF-8";
 body {
   font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   width: 100%;
   font-weight: 300;
   position: relative;
 }
 body .preloader {
   transition: 0.45s ease-out;
-  background: hsl(0deg, 0%, 100%);
+  background: hsl(0, 0%, 100%);
 }
 body .preloader #emoji-loader {
   animation: jump 3s ease-out 0.3s infinite alternate;
@@ -20,7 +20,7 @@ body .preloader #emoji-loader {
 }
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: hsl(0deg, 0%, 21%);
+  color: hsl(0, 0%, 21%);
   font-family: "Space Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.8rem;
 }

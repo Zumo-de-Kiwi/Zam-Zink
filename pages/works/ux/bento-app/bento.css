@@ -59,7 +59,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 body ::selection {
-  background-color: hsl(58deg, 100%, 51%);
+  background-color: hsl(58, 100%, 51%);
   color: black;
 }
 body h1 {
@@ -82,7 +82,7 @@ body .left-arrow {
   }
 }
 body .left-arrow .link-a {
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
@@ -97,7 +97,7 @@ body .left-arrow .link-a {
 }
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 body .left-arrow .link-a #left-arrow {
@@ -127,7 +127,7 @@ body .left-arrow:hover .logo-frame {
   left: 5.5rem;
 }
 body .left-arrow:hover .logo-frame .hc-logo {
-  fill: hsl(245deg, 96%, 68%);
+  fill: hsl(245, 96%, 68%);
 }
 body .menu-btn {
   z-index: 39;
@@ -175,7 +175,7 @@ body ul {
   list-style: none;
 }
 body a {
-  color: hsl(253deg, 64%, 54%);
+  color: hsl(253, 64%, 54%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 body a:active {
@@ -262,7 +262,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   padding-top: 10rem;
   font-family: Monaco, Consolas, "Courier New", monospace;
   animation: variableOpacity 2s infinite linear;
-  color: hsl(265deg, 15%, 31%);
+  color: hsl(265, 15%, 31%);
   font-size: calc(0.3vw - 0vw + 12px);
 }
 @media (max-width: 700px) {
@@ -430,7 +430,7 @@ body main .top-img-wrapper {
   display: flex;
   justify-content: center;
   align-self: center;
-  background-color: hsl(49deg, 100%, 54%);
+  background-color: hsl(49, 100%, 54%);
 }
 body main .top-img-wrapper picture img {
   height: 31rem;
@@ -501,7 +501,7 @@ body main .out-wrapper .ps-wrapper .paragraph a {
   transition: 0.23s;
 }
 body main .out-wrapper .ps-wrapper .paragraph a:hover, body main .out-wrapper .ps-wrapper .paragraph a:active {
-  color: hsl(245deg, 96%, 68%);
+  color: hsl(245, 96%, 68%);
 }
 body main .out-wrapper .ps-wrapper .paragraph .light-text {
   font-weight: 200;
@@ -679,7 +679,7 @@ body main .footer {
   z-index: 11;
   border-radius: 2rem 2rem 0rem 0rem;
   bottom: 0px;
-  background: hsl(49deg, 100%, 54%);
+  background: hsl(49, 100%, 54%);
   display: grid;
   grid-template-columns: minmax(7%, 1fr) minmax(250px, 900px) minmax(7%, 1fr);
 }

@@ -59,7 +59,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 body ::selection {
-  background-color: hsl(58deg, 100%, 51%);
+  background-color: hsl(58, 100%, 51%);
   color: black;
 }
 body h1 {
@@ -82,7 +82,7 @@ body .left-arrow {
   }
 }
 body .left-arrow .link-a {
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
@@ -97,7 +97,7 @@ body .left-arrow .link-a {
 }
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 body .left-arrow .link-a #left-arrow {
@@ -127,7 +127,7 @@ body .left-arrow:hover .logo-frame {
   left: 5.5rem;
 }
 body .left-arrow:hover .logo-frame .hc-logo {
-  fill: hsl(245deg, 96%, 68%);
+  fill: hsl(245, 96%, 68%);
 }
 body .menu-btn {
   z-index: 39;
@@ -175,7 +175,7 @@ body ul {
   list-style: none;
 }
 body a {
-  color: hsl(253deg, 64%, 54%);
+  color: hsl(253, 64%, 54%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 body a:active {
@@ -262,7 +262,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   padding-top: 10rem;
   font-family: Monaco, Consolas, "Courier New", monospace;
   animation: variableOpacity 2s infinite linear;
-  color: hsl(265deg, 15%, 31%);
+  color: hsl(265, 15%, 31%);
   font-size: calc(0.3vw - 0vw + 12px);
 }
 @media (max-width: 700px) {
@@ -323,7 +323,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: hsl(30deg, 43%, 71%);
+  background-color: hsl(30, 43%, 71%);
   width: 100vw;
   font-weight: 300;
   position: relative;
@@ -361,14 +361,14 @@ body .absolute-nav .left-arrow {
   }
 }
 body .absolute-nav .left-arrow:hover .hc-logo {
-  fill: hsl(30deg, 43%, 71%);
+  fill: hsl(30, 43%, 71%);
 }
 body .absolute-nav .left-arrow .link-a {
   padding-right: 3rem;
-  color: hsl(30deg, 43%, 71%);
+  color: hsl(30, 43%, 71%);
 }
 body main {
-  background: hsl(30deg, 43%, 71%);
+  background: hsl(30, 43%, 71%);
   position: relative;
   display: grid;
   font-weight: 400;
@@ -381,8 +381,8 @@ body main .main-header {
   box-shadow: 0px 0.3rem 0.6rem #463a2f, 0px 0.15rem 0.2rem #1a1817;
 }
 body main .main-header h1 {
-  color: hsl(30deg, 43%, 71%);
-  background-color: hsl(0deg, 0%, 21%);
+  color: hsl(30, 43%, 71%);
+  background-color: hsl(0, 0%, 21%);
   font-weight: 700;
   font-size: 2.3rem;
 }
@@ -745,7 +745,7 @@ body main .designSections .modals .modal {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 29;
-  border: 5px solid hsl(0deg, 0%, 21%);
+  border: 5px solid hsl(0, 0%, 21%);
   border-radius: 1rem;
   padding: 6rem;
   width: 80%;
@@ -753,7 +753,7 @@ body main .designSections .modals .modal {
   max-height: 90vh;
   overflow-y: auto;
   background-color: white;
-  color: hsl(0deg, 0%, 21%);
+  color: hsl(0, 0%, 21%);
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.33);
   transition: 0.3s;
 }
@@ -855,7 +855,7 @@ body main .designSections .modals .modal#eat-modal .part-1 {
 body main .designSections .modals .modal#eat-modal .part-1 a {
   z-index: 89;
   text-decoration: none;
-  color: hsl(0deg, 0%, 21%);
+  color: hsl(0, 0%, 21%);
 }
 body main .designSections .modals .modal#eat-modal .part-1 h3 {
   font-size: 2.3rem;

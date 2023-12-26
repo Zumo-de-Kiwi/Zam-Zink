@@ -59,7 +59,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 body ::selection {
-  background-color: hsl(58deg, 100%, 51%);
+  background-color: hsl(58, 100%, 51%);
   color: black;
 }
 body h1 {
@@ -82,7 +82,7 @@ body .left-arrow {
   }
 }
 body .left-arrow .link-a {
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
@@ -97,7 +97,7 @@ body .left-arrow .link-a {
 }
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 body .left-arrow .link-a #left-arrow {
@@ -127,7 +127,7 @@ body .left-arrow:hover .logo-frame {
   left: 5.5rem;
 }
 body .left-arrow:hover .logo-frame .hc-logo {
-  fill: hsl(245deg, 96%, 68%);
+  fill: hsl(245, 96%, 68%);
 }
 body .menu-btn {
   z-index: 39;
@@ -175,7 +175,7 @@ body ul {
   list-style: none;
 }
 body a {
-  color: hsl(253deg, 64%, 54%);
+  color: hsl(253, 64%, 54%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 body a:active {
@@ -262,7 +262,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   padding-top: 10rem;
   font-family: Monaco, Consolas, "Courier New", monospace;
   animation: variableOpacity 2s infinite linear;
-  color: hsl(265deg, 15%, 31%);
+  color: hsl(265, 15%, 31%);
   font-size: calc(0.3vw - 0vw + 12px);
 }
 @media (max-width: 700px) {
@@ -488,34 +488,34 @@ body #trampolin-wrapper #trampolineEmoji:active {
 }
 body {
   width: 100vw;
-  background-color: hsl(35deg, 16%, 92%);
+  background-color: hsl(35, 16%, 92%);
   font-size: 2rem;
   font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 620, "slnt" 0;
   position: relative;
 }
 body .preloader {
   transition: 0.45s ease-out;
-  background: hsl(35deg, 16%, 92%);
+  background: hsl(35, 16%, 92%);
 }
 body .preloader #emoji-loader {
   animation: jump 1.5s ease 0.3s infinite alternate;
 }
 body .preloader #text-loader {
   padding-top: 12rem;
-  color: hsl(30deg, 2%, 24%);
+  color: hsl(30, 2%, 24%);
   font-size: calc(0.3vw + 0.3vw + 13px);
 }
 body .left-arrow .link-a {
-  color: hsl(30deg, 2%, 24%);
+  color: hsl(30, 2%, 24%);
 }
 body .left-arrow .link-a:hover {
-  color: hsl(30deg, 2%, 24%);
+  color: hsl(30, 2%, 24%);
 }
 body .left-arrow:hover .hc-logo {
-  fill: hsl(253deg, 64%, 54%);
+  fill: hsl(253, 64%, 54%);
 }
 body header {
-  background-color: hsl(35deg, 16%, 92%);
+  background-color: hsl(35, 16%, 92%);
 }
 body header h1 {
   text-align: center;
@@ -549,7 +549,7 @@ body header #draw-types ul li .li-wrapper {
 }
 body header #draw-types ul li .li-wrapper a {
   position: relative;
-  color: hsl(30deg, 2%, 24%);
+  color: hsl(30, 2%, 24%);
   text-decoration: none;
   font-variation-settings: "wght" 500;
   padding: 1rem;
@@ -617,7 +617,7 @@ body header #draw-types ul #randomTab:hover .path {
   animation: dash 1s linear 3 0.3s;
 }
 body main {
-  background: hsl(35deg, 16%, 92%);
+  background: hsl(35, 16%, 92%);
   height: 600vh;
   position: relative;
   display: grid;
@@ -635,7 +635,7 @@ body main #drawSections .drawSection {
 body main #drawSections .title {
   top: 0px;
   position: sticky;
-  background-color: hsl(35deg, 16%, 92%);
+  background-color: hsl(35, 16%, 92%);
   padding: 2rem;
   text-align: center;
   font-size: 2.1rem;
@@ -756,7 +756,7 @@ body #footer {
   height: 50vh;
   bottom: 0px;
   width: 100%;
-  background: hsl(30deg, 2%, 24%);
+  background: hsl(30, 2%, 24%);
   display: grid;
   grid-template-columns: 1fr 360px 1fr;
 }
@@ -779,7 +779,7 @@ body #footer #wrapper span {
 body #footer #wrapper .morePrj {
   z-index: -1;
   text-decoration-color: transparent;
-  color: hsl(35deg, 16%, 92%);
+  color: hsl(35, 16%, 92%);
   font-size: 1.8rem;
   align-self: center;
   transition: 0.3s;

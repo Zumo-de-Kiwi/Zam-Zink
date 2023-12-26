@@ -59,7 +59,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 body ::selection {
-  background-color: hsl(58deg, 100%, 51%);
+  background-color: hsl(58, 100%, 51%);
   color: black;
 }
 body h1 {
@@ -82,7 +82,7 @@ body .left-arrow {
   }
 }
 body .left-arrow .link-a {
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   font-variation-settings: "MONO" 0, "CASL" 0.3, "wght" 500;
   text-decoration: none;
   padding-left: 1rem;
@@ -97,7 +97,7 @@ body .left-arrow .link-a {
 }
 body .left-arrow .link-a:hover {
   font-variation-settings: "CASL" 0.9, "wght" 500;
-  color: hsl(141deg, 14%, 76%);
+  color: hsl(141, 14%, 76%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(11px,-6px);'><text y='57%'>👈</text></svg>") 16 0, auto;
 }
 body .left-arrow .link-a #left-arrow {
@@ -127,7 +127,7 @@ body .left-arrow:hover .logo-frame {
   left: 5.5rem;
 }
 body .left-arrow:hover .logo-frame .hc-logo {
-  fill: hsl(245deg, 96%, 68%);
+  fill: hsl(245, 96%, 68%);
 }
 body .menu-btn {
   z-index: 39;
@@ -175,7 +175,7 @@ body ul {
   list-style: none;
 }
 body a {
-  color: hsl(253deg, 64%, 54%);
+  color: hsl(253, 64%, 54%);
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
 }
 body a:active {
@@ -262,7 +262,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
   padding-top: 10rem;
   font-family: Monaco, Consolas, "Courier New", monospace;
   animation: variableOpacity 2s infinite linear;
-  color: hsl(265deg, 15%, 31%);
+  color: hsl(265, 15%, 31%);
   font-size: calc(0.3vw - 0vw + 12px);
 }
 @media (max-width: 700px) {
@@ -1136,7 +1136,7 @@ body main #drawSections #randomDraws #fin4 {
     grid-template-columns: 1fr 1fr 1fr;
   }
   body main #drawSections #dodoDraws picture,
-body main #drawSections #dodoDraws .title {
+  body main #drawSections #dodoDraws .title {
     grid-column: 1/4;
   }
   body main #drawSections #dodoDraws .title {
@@ -1332,7 +1332,7 @@ body main #drawSections #dodoDraws .title {
     padding-bottom: 33rem;
   }
   body main #drawSections #randomDraws #fin1,
-body main #drawSections #randomDraws #fin3 {
+  body main #drawSections #randomDraws #fin3 {
     grid-row: 10;
     text-align: center;
     color: rgb(244, 181, 194);
@@ -1354,7 +1354,7 @@ body main #drawSections #randomDraws #fin3 {
     padding-right: 4rem;
   }
   body main #drawSections #randomDraws #fin2,
-body main #drawSections #randomDraws #fin4 {
+  body main #drawSections #randomDraws #fin4 {
     grid-row: 12;
     text-align: center;
     color: #85c288;

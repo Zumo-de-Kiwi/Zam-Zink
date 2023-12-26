@@ -55,7 +55,7 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 $(function () {
   count = 0;
   // wordsArray = ['Hej', 'Hey', '哈囉', 'Hola', '哩賀'];
-  wordsArray = ['¡Hola!', '嗨~!', '👋', 'Hej!', '哩賀!', 'Bon dia!', '🖖'];
+  wordsArray = ['¡Hola!', '嗨~!', '👋', 'Hej!', '哩賀!', '🖖', 'Здарова']; //'Hey' is already included //Other ru: Д'арова!
   setInterval(function () {
     count++;
     $('.change-hey').fadeOut(404, function () {
@@ -131,12 +131,11 @@ const closeFooter = function () {
 closeBtn.addEventListener('click', closeFooter);
 //////////////////////////////////
 ///// place left for MAC /////////
-if (navigator.platform == 'MacIntel') {
+if (navigator.userAgent.includes('Mac OS X')) {
   closeBtn.classList.add('onLeft');
 }
+
 // For other user system properties: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_nav_all
-console.log(`OS: ${navigator.platform}`);
-console.log(`Browser CodeName: ${navigator.appCodeName}`);
-console.log(`Browser Name: ${navigator.appName}`);
+console.log(`OS, Engine, Browser: ${navigator.userAgent}`);
 console.log(`Browser Language: ${navigator.language}`);
 console.log(`Cookies Enabled: ${navigator.cookieEnabled}`);
