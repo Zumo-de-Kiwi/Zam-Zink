@@ -24,25 +24,25 @@
 
 [Playful/minimalistic layout with interactive layout and a playground](http://kaiwei.design/#/)
 
-[Simplistic and inovative intro DEV](https://www.gregorychristian.com)
+[Simplistic and innovative intro DEV](https://www.gregorychristian.com)
 
-[Many cool ideas with this duo](https://www.thepapestielliz.com) simple gif draw anim, parallel moving text, ouline text > moving photo > fill text
+[Many cool ideas with this duo](https://www.thepapestielliz.com) simple gif draw anim, parallel moving text, outline text > moving photo > fill text
 
-[About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hinding in same parts, gifs on every part
+[About](https://www.davidebaratta.com/info) with many interactions, the pointer ball hiding in same parts, gifs on every part
 
-[main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its arouind with your cursor movements.
+[main page](https://www.davidebaratta.com) with minimalistic, cool big background subtle text, and a different way of make a portfolio layout, dragging left to right, pic showing its around with your cursor movements.
 
 Here is another page that is moving left to right but doing [like God](http://robinmastromarino.com)
 
-moving typography, big profile pic with [lsd effect when hover over](https://kulbachny.com)
+moving typography, big profile pic with [LSD effect when hover over](https://kulbachny.com)
 
-[Very cool simple svg animated in a more complete way, clever and simple granular fx](https://www.svz.io)
+[Very cool simple SVG animated in a more complete way, clever and simple granular FX](https://www.svz.io)
 
-love how Penny use the [hambuguer](http://pennybanks.com/muse), very natural moving the content to the left
+love how Penny use the [hamburger](http://pennybanks.com/muse), very natural moving the content to the left
 
 ## **Webflow Templates**
 
-[Very cool interactive](https://prisma-portfolio.webflow.io) way of navigate throught your projects]
+[Very cool interactive](https://prisma-portfolio.webflow.io) way of navigate thought  your projects]
 
 The frame animation in very [minimalistic and cool](https://shots-template.webflow.io/projects-wide)
 
@@ -70,7 +70,7 @@ The Name stays in the same place all the time, although sometimes are behind, th
 
 [Rijksmuseum](https://www.rijksmuseum.nl/nl)
 
-## **Bussiness**
+## **Business**
 
 Good animation rolling in the mid of [the page](https://impact.ideo.org)
 

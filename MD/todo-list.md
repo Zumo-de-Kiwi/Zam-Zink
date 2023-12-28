@@ -19,11 +19,11 @@
 
 ## 0. HOME
 
-- [ ] #001 `footer` coming soon put a expandable or pau-ma-ten with more **coming soon**, **working on** and **future project**
+- [ ] #001 `footer` coming soon put an expandable or pau-ma-ten with more **coming soon**, **working on** and **future project**
 - [ ] #002 Make the version in the `footer` a real-time-auto-updated version
 - [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
 
-- [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different svg then loop them, you can’t change it with a `@keyframe animation` directly
+- [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different SVG then loop them, you can’t change it with a `@keyframe animation` directly
 - [ ] #023 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
 
 - COMPLETED
@@ -31,7 +31,7 @@
   - [x] #010 One more thing `:active` for iPad mobile
   - [x] #012 Make my LOGO returns, maybe with `buttons` inside itself
   - [x] #014 Add the sketch linkable to the DRAWINGS page
-  - [x] #015 Minor corections on the home page
+  - [x] #015 Minor corrections on the home page
   - [x] #015 Dark mode
   - [x] #020 Use your logo for home `loading`. Pop up uno tras de otro, cada uno tiene un pattern o texture, los tres cada uno representa mis main pages
   - [x] #021 Put char text for logo for home loading
@@ -79,7 +79,7 @@
   - [x] #400 **#1** Add Ricardo Space crazy photo to scissors
   - [x] #402 **#3** rcd_album Behind process info
   - [x] #404 **#11** Make bread have dfrt translate `anim`
-  - [x] #406 **#17** blue wrapper word wrong (hours spennds)
+  - [x] #406 **#17** blue wrapper word wrong (hours spends)
   - [x] #411 **#4** Place eraser pic centered
   - [x] #412 **#16** Add the video
   - [x] #413 **#17** Correct the `text` in the teletext pics
@@ -106,11 +106,11 @@
 - [ ] #471 Explanation on hover
 - [ ] #472 Poner juntas al peón
 - [ ] #473 Put weather FX
-- [ ] #474 Hertz word is mis written and the outline need to be thinner
+- [ ] #474 Hertz word is misspelled and the outline need to be thinner
 - [ ] #475 Make the crab say no swinging when hover
-- [ ] #476 Let visual fx come out from the radio in DESIGN home
+- [ ] #476 Let visual FX come out from the radio in DESIGN home
 - [ ] #477 Make the ASCII into two parts for every word for better resp
-- [ ] #478 Make the wrapper numers more understandable
+- [ ] #478 Make the wrapper numbers more understandable
 
 ## 5. BLOG
 
@@ -131,7 +131,7 @@
 - [ ] #701 **WORKING** Improve close modal with external links and btn resolve it
 - [ ] #702 Make the Analog titles linkable
 - [ ] #703 Appear a (You reacted with a [emoji] ) bubble when the user press on the emoji on the analog photo subpage
-- [ ] #704 Emojis on #2 #3 analog are not centre.
+- [ ] #704 Emojis on #2 #3 analog are not center.
 - [ ] #705 Crop the few btm white lines of analog X out of order
 - [ ] #706 Mover y position friends and chips
 - [ ] #707 Pass the analog test code to the final direction
@@ -156,10 +156,10 @@
 ## OLD AND FINISHED TODO LIST
 
 - [x] Separate the link of Hector and Cortes
-- [x] Hector Hover doesn't change undeline to green
+- [x] Hector Hover doesn't change underline to green
 - [x] linked github icon
 - [x] Animate bottom banner
-- [x] Link netlify to the working page
+- [x] Link Netlify to the working page
 
 1. Subpage
 

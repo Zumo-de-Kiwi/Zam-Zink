@@ -40,13 +40,13 @@
 
    1. Bungee outline: normal mode.
 
-   1. Bungee shade: when hover(it appears a shade in his left-downer side)
+   1. Bungee shade: when hover (it appears a shade in his left-downer side)
 
-   1. Bungee (asecas): Title(is the fill version)
+   1. Bungee (asecas): Title (is the fill version)
 
-   1. Bungee inline: Like Bungee but without the hair inside(so weird)
+   1. Bungee inline: Like Bungee but without the hair inside (so weird)
 
-   1. Bungee hairline: for complementary, ui or secondary stuff.
+   1. Bungee hairline: for complementary, UI or secondary stuff.
 
 1. **BioRhyme** the seif cute normal-megastretched
 
@@ -143,7 +143,7 @@
 
    1. Getting the Most Out of Variable Fonts on Google Fonts [CSS tricks](https://css-tricks.com/getting-the-most-out-of-variable-fonts-on-google-fonts/)
 
-      1. Writted by the person who made Recursive
+      1. Written by the person who made Recursive
 
    1. CSS [custom properties trick](https://pixelambacht.nl/2019/fixing-variable-font-inheritance/) for variable fonts
 
@@ -243,8 +243,8 @@
 
 ### Phrases
 
-1. No many people reads before the first paragraph
-   - So I made only one paragraph in the main page.
+1. Not many people read before the first paragraph
+   - So, I made only one paragraph in the main page.
 
 ## COLOR
 
@@ -259,7 +259,7 @@
 
    1. Josh Comeau [blog](https://www.joshwcomeau.com/performance/embracing-modern-image-formats/)
 
-   1. Someone Recommend to use WebP for images with alpha(like what **png** does), there is more difference in size than with **jpg** like images.
+   1. Someone Recommend to use WebP for images with alpha(like what **PNG** does), there is more difference in size than with **jpg** like images.
 
    1. FALLBACK: **'picture'** to the rescue!
 
@@ -315,8 +315,8 @@
 
 1. my SOP
 
-   1. Trow the svg in the [Image Optim](https://imageoptim.com/mac) app
-   1. Trow it again in [SVGOMG](https://jakearchibald.github.io/svgomg/) web and download it
+   1. Throw the SVG in the [Image Optim](https://imageoptim.com/mac) app
+   1. Throw it again in [SVGOMG](https://jakearchibald.github.io/svgomg/) web and download it
 
 1. Stuff at the Top of an SVG [medium](https://medium.com/@peternowell/stuff-at-the-top-of-an-svg-f3ad198eb54e)
 

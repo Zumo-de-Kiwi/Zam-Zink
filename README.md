@@ -28,7 +28,7 @@
 
 1. Contact me
 
-   - [x] Real pic, svg, png draw or me in pixel art?
+   - [x] Real pic, SVG, PNG draw or me in pixel art?
    - [x] how to show my avatar or pic
    - [x] one or more pics of me?
    - [x] in a pop up or full page?
@@ -67,7 +67,7 @@
 
 ### Subpages
 
-- Every subpage have a color added/subtracted/variant/different contrast to the main page
+- Every subpage has a color added/subtracted/variant/different contrast to the main page
 - The fonts remain the same
 
 1. Designs
@@ -95,7 +95,7 @@
 
    1. The green page
 
-      - a page with svg animations that talks about what can we do
+      - a page with SVG animations that talks about what can we do
       - at the end is a check box for the user with 10 sentences, after summit it will tell you
 
    1. more about the "TESIS" prj
@@ -109,11 +109,11 @@ And have all the types of work you have like [roknol page](http://roknrol-2018.w
 
 ### A part
 
-1. **LOGO** (hover will come up )
+1. **LOGO** (hover will come up)
 
 2. **Design**
 
-   - physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What ,How.
+   - physical UX projects like [this](http://pennybanks.com/muse), and like the link put Why, What, How.
    - Digital UX projects, apps and websites
    - FB frames, 3D pics, 360 pics.
    - Telegram and Signal Stickers.
@@ -179,9 +179,9 @@ ii. Cada tema tiene un icono, pero todos los iconos tienen que ser del mismo tem
 
 ### 4. MODES (lang, color...)
 
-      - [ ] 4 languages: En, Se, Es, (Zh, Tw(es tamil pero lo hago pasar como taiwanés 台語), Ca, De, Fr）
+      - [ ] languages: En, Se, Es, zh-Hant, Tw (es tamil pero lo hago pasar como taiwanés), Ca）
       - [ ] When preloads it appears an [skeleton css](https://www.youtube.com/watch?v=ZVug65gW-fc0)
-      - [ ] Dark mode (on off interruptor (antiguo de casa de sbd)
+      - [ ] Dark mode (on off interruptor (de las casas antiguas))
       - [ ] 8bit ver CV - for my 8 bit works
 
 ### 5. BONUS
