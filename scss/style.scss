@@ -442,7 +442,7 @@ body {
         }
       }
     }
-    // Diplay different on MOBILE AND DESK
+    // Display different on MOBILE AND DESK
     @media (min-width: 768px) {
       .mobile-nav {
         display: none;
@@ -465,7 +465,7 @@ body {
     }
     ///////// Hi, I am Héctor /////////
     .content-name {
-      margin-bottom: 9vh;
+      margin-bottom: 7vh;
       font-family: $ff-recursive-bold;
       font-size: $font-size-huge;
       font-variation-settings: 'MONO' 0.2, 'CASL' 0, 'wght' $font-weight-heavy,

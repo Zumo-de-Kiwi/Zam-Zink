@@ -55,7 +55,7 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 $(function () {
   count = 0;
   // wordsArray = ['Hej', 'Hey', '哈囉', 'Hola', '哩賀'];
-  wordsArray = ['¡Hola!', '嗨~!', '👋', 'Hej!', '哩賀!', '🖖', 'Здарова']; //'Hey' is already included //Other ru: Д'арова!
+  wordsArray = ['¡Hola!', '嗨~!', '👋', 'Hej!', '哩賀!', '🖖', 'Здарова!']; //'Hey' is already included //Other ru: Д'арова!
   setInterval(function () {
     count++;
     $('.change-hey').fadeOut(404, function () {

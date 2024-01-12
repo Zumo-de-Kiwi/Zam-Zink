@@ -719,7 +719,7 @@ body {
   }
 }
 .main .content_wrap .content-name {
-  margin-bottom: 9vh;
+  margin-bottom: 7vh;
   font-family: "Recursive", "Arial Black", "Helvetica Neue Bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", color-emoji;
   font-size: calc(0.3vw + 0.4vw + 30px);
   font-variation-settings: "MONO" 0.2, "CASL" 0, "wght" 800, "slnt" 0;
