@@ -21,6 +21,7 @@
 
 - [ ] #001 `footer` coming soon put an expandable or pau-ma-ten with more **coming soon**, **working on** and **future project**
 - [ ] #002 Make the version in the `footer` a real-time-auto-updated version
+- [ ] #003 Update a Pixel art external link to a internal page (you should make apage about pixel art)
 - [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
 
 - [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different SVG then loop them, you can’t change it with a `@keyframe animation` directly
