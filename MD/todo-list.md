@@ -48,6 +48,7 @@
 - [x] #100 (adjust globally) emoji cursor to be in his `top left` corner
 - [x] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 - [x] #102 Improvements for emoji `cursor` be displayed well on Windows and Mac.
+- [ ] #103 Add a weird 404 page.
 
 ## 2. DRAW
 
