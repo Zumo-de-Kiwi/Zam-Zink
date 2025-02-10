@@ -24,9 +24,13 @@
 - [ ] #003 Update a Pixel art external link to a internal page (you should make apage about pixel art)
 - [ ] #013 Implement an `animated` char that change its variable when hover or not with trans/or not
 - [ ] #016 Make an up-right arrow, signifing that is going to an external website
+- [ ] #024 stickers popup make the filter bg layer white and no gray
+- [ ] #025 when in iphone landscape the *Video Projects* text appears too small
+- [ ] #026 automatically show the hidden text (about and contact) for some secs from my name
 
 - [ ] #022 **FUTURE** Make the loading your name changing its `Variable Font` Fast, like the {vid below} you need to make every variation text into a different SVG then loop them, you can’t change it with a `@keyframe animation` directly
 - [ ] #023 **FUTURE** [Put hover IMG on home links](https://www.youtube.com/watch?v=HMXMunMRrRI)
+- [ ] #031 **FUTURE** if long press the toggle for dark/light mode it appears enables an Colorfoul neon rainbow mode.
 
 - COMPLETED
 
@@ -50,14 +54,15 @@
 - [x] #100 (adjust globally) emoji cursor to be in his `top left` corner
 - [x] #101 Free hosting like imgbb [https://postimages.org/](https://postimages.org/)
 - [x] #102 Improvements for emoji `cursor` be displayed well on Windows and Mac.
-- [ ] #103 Add a weird 404 page.
+- [ ] #103 Add a weird/unique 404 page.
+- [ ] #104 detect and apply OS dark/light mode
 
 ## 2. DRAW
 
 - [ ] #203 **WORKING** Put `::after` short descriptions of every drawing pic.
 - [ ] #204 Make DRAW more responsive
 - [ ] #206 Hide Navbar when the user is on the top
-- [ ] #207 ...
+- [ ] #207 ::after pics / based on the album on the album “Animalitos” of Hidrogenese
 
 - COMPLETED
 
@@ -120,6 +125,7 @@
 - [ ] #503 ...Put the design process webpage sketches pics
 - [ ] #504 Comparar un papel con outline para los niños para que lo coloreen con un papel en blanco
 - [ ] #505 Arale 2001: A Space Odyssey
+- [ ] #506 Have a blog dedicated to some cool btns used (better use the same color pallette to display them)
 
 ## 6. UX
 
