@@ -1,4 +1,4 @@
-# Héctor Cortés Website
+# My Website
 
 ## 1. Main Sections of the website
 
@@ -92,5 +92,5 @@ Will display with icons
 
 ## 6. Credits
 
-The [Recursive](https://www.recursive.design) variable font used.
+The <a href="https://www.recursive.design" target="_blank">Recursive</a> variable font used.
 People that inspired this website [Una](https://una.im), [Josh](https://www.joshwcomeau.com) and many others.
