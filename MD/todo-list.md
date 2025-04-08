@@ -56,6 +56,12 @@
 - [x] #102 Improvements for emoji `cursor` be displayed well on Windows and Mac.
 - [ ] #103 Add a weird/unique 404 page.
 - [ ] #104 detect and apply OS dark/light mode
+- [ ] #105 Support multilanguage (EN, ES, ZH-Hant, SE)
+- [ ] #106 When preloads it appears an [skeleton css](https://www.youtube.com/watch?v=ZVug65gW-fc0)
+- [ ] #106 Hot Keys:
+      - `1~9`: Switch Page Blocks
+      - `Shift`: Slow Animation
+      - `L`: Change Language
 
 ## 2. DRAW
 
@@ -146,11 +152,13 @@
 - [ ] #707 Pass the analog test code to the final direction
 - [x] #708 Margin in #1 analog text between h3 and p
 
-## 8. OTHER WORKS
-
-- LOST OBJ
+## 8. LOST OBJ
 
   - [x] #800 Touch me on lost objects :active
+
+## 9. PIXEL ART
+
+  - [] #900
 
 ## A. OFFICE WORK
 
@@ -161,6 +169,10 @@
   - [x] #a02 ORDER from easy to difficult
   - [x] #a03 Numbered all the todos
   - [x] #a04 Text Correction and pass all the to-do from Notes
+
+## C. CODE SECTION
+
+    - [ ] #c001[URL Animation](twitter.com/nealagarwal/status/1293578708247248897)
 
 ## OLD AND FINISHED TODO LIST
 
@@ -183,3 +195,51 @@
    1. Contact me
       - [x] Text
       - [x] Brainstorm Layout
+
+# What's next?
+
+## Crucial stuff
+
+1. Hover on...
+   - [ ] link appears a big preview image or another stuff?
+   - [canceled] hover on the **contact me** will appear the `email address` and a `copy email` button.
+
+1. link to more pages
+   - [x] Choose the delay after clicked on the link
+   - [x] How can I do a seamless transition while downloading the next page?
+
+1. Contact me
+   - [x] Real pic, SVG, PNG draw or me in pixel art?
+   - [x] how to show my avatar or pic
+   - [x] one or more pics of me?
+   - [x] in a pop up or full page?
+
+1. External links
+   - [x] Open the mail app
+   - [x] Github, Twitter, pixeljoint, Instagram, Dribble, Behance, Pinterest, Spotify....
+
+1. Responsive Web and Compatibility
+
+   1. Browsers
+      - [x] Safari
+      - [ ] Firefox
+      - [x] Chrome(Edge, Opera, Brave)
+
+   1. Devices
+      - [ ] iOS phone
+      - [ ] iOS iPad
+      - [x] Mac 13 inch
+      - [x] Mac 24 inch
+      - [x] Windows 13 inch
+      - [ ] Windows 24 inch
+      - [ ] Ubuntu 13 inch
+      - [ ] Ubuntu 24 ich
+
+## Optional stuff
+
+1. Visual
+
+   - [x] have a [selection color](https://www.vox.com) or the [text itself](https://www.davidebaratta.com). Example code:`::selection { background-color: #352e7e; color: #fff;}`
+   - [ ] Scroll percentage bar in top of the page
+
+   - [ ] Cool stuff in Baratta[main page](https://www.davidebaratta.com) -[ ] And in Baratta about with his funny hover on gifs
