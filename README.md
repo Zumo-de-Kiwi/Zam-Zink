@@ -92,7 +92,6 @@ Will display with icons
 
 ## 6. Credits
 
-The 
-<a href="https://www.recursive.design" target="_blank">Recursive</a>
-variable font used.
-People that inspired this website [Una](https://una.im){:target="_blank"}, [Josh](https://www.joshwcomeau.com){:target="_blank"} and many others.
+The [Recursive](https://www.recursive.design) variable font used.
+
+People that inspired this website [Una](https://una.im), [Josh](https://www.joshwcomeau.com) and many others.
