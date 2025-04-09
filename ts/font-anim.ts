@@ -1,4 +1,4 @@
-const p = document.querySelector('.mousePos');
+const p = document.querySelector('.mousePos') as HTMLParagraphElement;
 
 //////////// RANDOM //////////////////
 
@@ -60,9 +60,18 @@ const p = document.querySelector('.mousePos');
 // window.addEventListener("resize", variableResize);
 
 /////////////////////////////////////////////
+/////////////////////////////////////////////
 // And here, we use changed the font’s axes
 // dependent on the user’s mouse position on the screen.
-function updateText(e) {
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+function updateText(e: MouseEvent) {
+  let multiplierWidth: number;
+  let multiplierHeight: number;
+  let randomSlnt: number;
+  let randomWeight: number;
+
   multiplierWidth = e.offsetX / window.innerWidth;
   multiplierHeight = e.offsetY / window.innerHeight;
 

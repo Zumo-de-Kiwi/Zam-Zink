@@ -1,4 +1,4 @@
-const p = document.querySelector('.mousePos');
+const p = document.querySelector(".mousePos");
 
 //////////// RANDOM //////////////////
 
@@ -76,7 +76,7 @@ function updateText(e) {
   console.log(multiplierHeight, randomWeight);
 }
 // setInterval(updateText, 1000);
-window.addEventListener('mousemove', updateText);
+window.addEventListener("mousemove", updateText);
 
 /////////  VAriable fonts performanc  ///////
 // You’ll soon find that animating variable fonts with either CSS keyframes or JavaScript can cause devices to run real hot and become slow or unresponsive, especially when the animations have been running for a while. This will hopefully be optimized in subsequent browser releases, but until then, you’ll just have to minimize browser repainting. We’ve found that using an IntersectionObserver works great, and allows us to stop the animations whenever the variable text is off-screen.

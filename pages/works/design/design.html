@@ -1,877 +1,1046 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Q7V0HVMDCY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-Q7V0HVMDCY');
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Héctor Cortés - Designs</title>
-    <!-----------------FONTS-------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <!--SPACE(GROTESK + MONO) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!------------------CSS-------------------->
-    <link rel="stylesheet" href="design.css" />
-    <!------------------FAVICON-------------------->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body>
-    <!------------PRE LOADER------------------>
-    <div class="preloader">
-      <p id="emoji-loader">🧠</p>
-      <!-- 💭 -->
-      <p id="text-loader">It all comes out from connections.</p>
-    </div>
-    <div class="absolute-nav">
-      <div class="left-arrow" title="Home Page">
-        <a class="link-a" href="/index.html"><span id="leftArrow"><</span></a>
-        <!-- <span id="arrowLine">___________________</span> -->
-        <a href="/index.html" class="back logo-frame">
-          <svg
-            class="logo-svg"
-            clip-rule="evenodd"
-            fill-rule="evenodd"
-            stroke-linejoin="round"
-            stroke-miterlimit="2"
-            viewBox="0 0 48 48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g class="hc-logo" fill="hsl(0, 3%, 31%)">
-              <path
-                d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
-              />
-            </g>
-          </svg>
-        </a>
-      </div>
-      <!-- <div class="menu-btn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Héctor Cortés - Designs</title>
+        <!-----------------FONTS-------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
+            rel="stylesheet"
+        />
+        <!--SPACE(GROTESK + MONO) -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!------------------CSS-------------------->
+        <link rel="stylesheet" href="design.css" />
+        <!------------------FAVICON-------------------->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <!------------PRE LOADER------------------>
+        <div class="preloader">
+            <p id="emoji-loader">🧠</p>
+            <!-- 💭 -->
+            <p id="text-loader">It all comes out from connections.</p>
+        </div>
+        <div class="absolute-nav">
+            <div class="left-arrow" title="Home Page">
+                <a class="link-a" href="/index.html"
+                    ><span id="leftArrow"><</span></a
+                >
+                <!-- <span id="arrowLine">___________________</span> -->
+                <a href="/index.html" class="back logo-frame">
+                    <svg
+                        class="logo-svg"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g class="hc-logo" fill="hsl(0, 3%, 31%)">
+                            <path
+                                d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
+                            />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <!-- <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div> -->
-    </div>
+        </div>
 
-    <header class="header"></header>
+        <header class="header"></header>
 
-    <main class="main">
-      <div class="main-header">
-        <h1>Designs</h1>
-      </div>
-
-      <div class="designSections">
-        <!--💚 GREEN 💚-->
-        <div id="green-holder" class="frame-holder">
-          <!-- GREEN FRAME -->
-          <picture id="green-holder-img">
-            <source
-              srcset="https://i.ibb.co/2SKZL1N/green-all-2.webp"
-              type="image/webp"
-            />
-            <source
-              srcset="https://i.ibb.co/FXxsb10/green-all-2.png"
-              type="image/png"
-            />
-            <img
-              src="img/green/green-all-2.webp"
-              alt="green-holder"
-              type="image/webp"
-            />
-          </picture>
-          <!-- GREEN IMGS -->
-          <div class="green-imgs-wrapper imgs-wrapper">
-            <div class="inner-wrapper-rel">
-              <!-- CACTUS 🌵-->
-              <a href="subpages/13-09/cactus.html"
-                ><picture id="cactus" class="green-imgs">
-                  <source
-                    srcset="https://i.ibb.co/Bz3jQ8M/cactus-mini-4.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/TkT26sr/cactus-mini-4.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/cactus-mini-4.webp"
-                    alt="cactus"
-                    type="image/webp"
-                  /> </picture
-              ></a>
-
-              <!-- PAWN 😇-->
-              <div class="pawn-wrapper">
-                <a id="pawn-open">
-                  <picture id="pawn" class="green-imgs">
-                    <source srcset="" type="image/webp" />
-                    <source
-                      srcset="https://i.ibb.co/YbTjxy7/peon-mini.png"
-                      type="image/png"
-                    />
-                    <img
-                      src="img/green/peon-mini.png"
-                      alt=""
-                      type="image/png"
-                    /> </picture
-                ></a>
-              </div>
-
-              <!-- LIGTHER 🔥-->
-              <div class="ligther_element-wrapper green-imgs">
-                <div class="lighter-toogle">
-                  <a href="subpages/02/lighter.html">
-                    <picture id="lighter" class="green-imgs">
-                      <source srcset="" type="image/webp" />
-                      <source
-                        srcset="https://i.ibb.co/tYqsQS6/blues-mech-mini-7.png"
-                        type="image/png"
-                      />
-                      <img
-                        src="img/green/blues-mech-mini-7.png"
-                        alt=""
-                        type="image/png"
-                      />
-                    </picture>
-                  </a>
-                  <!-- FIRE 1 -->
-                  <picture id="lighter-fire1" class="green-imgs lighter-fire">
-                    <source
-                      srcset="https://i.ibb.co/MBQWYCQ/fire-mini1.webp"
-                      type="image/webp"
-                    />
-                    <source srcset="" type="image/png" />
-                    <img
-                      src="img/green/fire-mini1.webp"
-                      alt=""
-                      type="image/webp"
-                    />
-                  </picture>
-                  <!-- FIRE 2 -->
-                  <picture id="lighter-fire2" class="green-imgs lighter-fire">
-                    <source
-                      srcset="https://i.ibb.co/h2yCNMT/fire-mini2.webp"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="https://i.ibb.co/80kgcNH/fire-mini2.png"
-                      type="image/png"
-                    />
-                    <img
-                      src="img/green/fire-mini2.webp"
-                      alt=""
-                      type="image/webp"
-                    />
-                  </picture>
-                </div>
-              </div>
-
-              <!-- SCISSORS ✂️-->
-              <a href="subpages/01-scissors/scissors.html"
-                ><picture id="scissors" class="green-imgs">
-                  <source
-                    srcset="https://i.ibb.co/G3Dns9R/wilson-mini.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/7Kgptgf/wilson-mini.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/wilson-mini.webp"
-                    alt=""
-                    type="image/webp"
-                  /> </picture
-              ></a>
-
-              <!-- README 📚-->
-              <a id="read-me-open">
-                <picture id="read-me" class="green-imgs">
-                  <source srcset="" type="image/webp" />
-                  <source
-                    srcset="https://i.ibb.co/WK4hxbY/readme-mini.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/readme-mini.png"
-                    alt="read me"
-                    type="image/png"
-                  />
-                </picture>
-              </a>
-
-              <!-- PLANET 🌍-->
-              <a href="subpages/03-planet/planet.html"
-                ><picture id="planet" class="green-imgs">
-                  <source
-                    srcset="https://i.ibb.co/w49bKL6/egg-mini-4.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/4ZRhwDd/egg-mini-4.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/egg-mini-4.webp"
-                    alt=""
-                    type="image/webp"
-                  /> </picture
-              ></a>
-
-              <!-- COMB 💈-->
-              <picture id="comb-normal" class="green-imgs comb">
-                <source
-                  srcset="https://i.ibb.co/dWjksRW/peine-1.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/CPLZd1q/peine-1.png"
-                  type="image/png"
-                />
-                <img src="img/green/peine-1.webp" alt="" type="image/webp" />
-              </picture>
-              <!-- COMB HOVER 💈-->
-              <a href="subpages/06-comb/comb.html"
-                ><picture id="comb-hover" class="green-imgs comb">
-                  <source
-                    srcset="https://i.ibb.co/2kds7Fp/peine-hover-1.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/9gdHpM6/peine-hover-1.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/peine-hover-1.webp"
-                    alt=""
-                    type="image/webp"
-                  />
-                </picture>
-              </a>
-
-              <!-- PEN ✏️-->
-              <a href="subpages/04-pen/pen.html">
-                <picture id="pen" class="green-imgs">
-                  <source srcset="" type="image/webp" />
-                  <source
-                    srcset="https://i.ibb.co/8XnSLDY/muji-pen-mini-2.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/muji-pen-mini-2.png"
-                    alt=""
-                    type="image/png"
-                  />
-                </picture>
-              </a>
-
-              <!-- CHAIR 🦵🦵-->
-              <picture id="ikea" class="green-imgs ikea">
-                <source
-                  srcset="https://i.ibb.co/qj7P5yc/ikea-mini-6.webp"
-                  type="image/webp"
-                />
-                <source srcset="" type="image/png" />
-                <img
-                  src="img/green/ikea-mini-6.webp"
-                  alt=""
-                  type="image/webp"
-                />
-              </picture>
-              <!-- CHAIR 🦵🦵 💡-->
-              <a href="subpages/08-chair/chair.html">
-                <picture id="ikea-light" class="green-imgs ikea">
-                  <source srcset="" type="image/webp" />
-                  <source
-                    srcset="https://i.ibb.co/WPL6sCk/ikea-mini-light-7.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/ikea-mini-light-7.png"
-                    alt=""
-                    type="image/png"
-                  />
-                </picture>
-              </a>
-
-              <!-- RADIO 📻 -->
-              <a href="subpages/07-radio/radio.html"
-                ><picture id="radio" class="green-imgs">
-                  <source
-                    srcset="https://i.ibb.co/VM3dpxL/radio-out-5.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/1JHqvrM/radio-out-5.png"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/radio-out-5.webp"
-                    alt=""
-                    type="image/webp"
-                  />
-                </picture>
-              </a>
-
-              <!-- PIXAR 💡-->
-              <picture id="pixar" class="green-imgs pixar">
-                <source
-                  srcset="https://i.ibb.co/y0Rm9Zb/pixar-minimal-5.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/1799KXC/pixar-minimal-5.png"
-                  type="image/png"
-                />
-                <img
-                  src="img/green/pixar-minimal-5.webp"
-                  alt=""
-                  type="image/webp"
-                />
-              </picture>
-              <!-- PIXAR LIGHT 💡-->
-              <a href="subpages/12-lamp/lamp.html">
-                <picture id="pixar-light" class="green-imgs pixar">
-                  <source
-                    srcset="https://i.ibb.co/2ns2PYB/pixar-ligth-mini-5.webp"
-                    loading="lazy"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/JqcHnp6/pixar-ligth-mini-5.png"
-                    loading="lazy"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/pixar-ligth-mini-5.webp"
-                    alt=""
-                    loading="lazy"
-                    type="image/webp"
-                  />
-                </picture>
-              </a>
-
-              <!-- OUT OF STOCK 🏷-->
-              <a id="out-open">
-                <picture id="out-stock" class="green-imgs">
-                  <source srcset="" loading="lazy" type="image/webp" />
-                  <source
-                    srcset="https://i.ibb.co/4pHh9q7/out-stock-1.png"
-                    loading="lazy"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/out-stock-1.png"
-                    alt=""
-                    loading="lazy"
-                    type="image/png"
-                  />
-                </picture>
-              </a>
-
-              <!-- WEATHER 🌦-->
-              <a href="subpages/13-09/cactus.html"
-                ><picture id="weather" class="green-imgs">
-                  <source srcset="" loading="lazy" type="image/webp" />
-                  <source
-                    srcset="https://i.ibb.co/XFkGjpr/random-mini-4.png"
-                    loading="lazy"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/random-mini-4.webp"
-                    alt=""
-                    loading="lazy"
-                    type="image/webp"
-                  /> </picture
-              ></a>
-
-              <!-- 🌧 -->
-              <picture id="rain" class="green-imgs weather">
-                <source srcset="" loading="lazy" type="image/webp" />
-                <source
-                  srcset="https://i.ibb.co/DtYnhkz/random-rain-mini-2.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/green/random-rain-mini-2.png"
-                  loading="lazy"
-                  alt=""
-                  type="image/png"
-                />
-              </picture>
-              <!-- ⚡️ -->
-              <picture id="lightning" class="green-imgs weather">
-                <source srcset="" loading="lazy" type="image/webp" />
-                <source
-                  srcset="https://i.ibb.co/PrwHZL7/random-rayo-mini-2.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/green/random-rayo-mini-2.png"
-                  alt=""
-                  loading="lazy"
-                  type="image/png"
-                />
-              </picture>
-
-              <!-- GLASSES 🤓-->
-              <a href="subpages/10-glasses/glasses.html"
-                ><picture id="glasses" class="green-imgs">
-                  <source
-                    srcset="https://i.ibb.co/0q3h9HP/vincent-mini-3.webp"
-                    loading="lazy"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/kSSwx7n/vincent-mini-3.png"
-                    loading="lazy"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/vincent-mini-3.webp"
-                    alt="glasses"
-                    loading="lazy"
-                    type="image/webp"
-                  /> </picture
-              ></a>
-
-              <!-- CARD 🃏 -->
-              <a href="subpages/11-a113/a113.html">
-                <picture id="poker" class="green-imgs">
-                  <source
-                    srcset="https://i.ibb.co/4pxhkfc/poker-mini.webp"
-                    loading="lazy"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="https://i.ibb.co/9wLRL9b/poker-mini.png"
-                    loading="lazy"
-                    type="image/png"
-                  />
-                  <img
-                    src="img/green/poker-mini.webp"
-                    alt=""
-                    loading="lazy"
-                    type="image/webp"
-                  /> </picture
-              ></a>
+        <main class="main">
+            <div class="main-header">
+                <h1>Designs</h1>
             </div>
-          </div>
-        </div>
 
-        <!--🔴 RED 🔴-->
-        <div id="red-holder" class="frame-holder">
-          <!-- RED FRAME -->
-          <picture id="red-holder-img-wrapper">
-            <source
-              srcset="https://i.ibb.co/jT1qFxY/all-red-5.webp"
-              type="image/webp"
-            />
-            <source
-              srcset="https://i.ibb.co/7XmGTzn/all-red-5.png"
-              type="image/png"
-            />
-            <img src="img/red/all-red-5.webp" alt="" type="image/webp" />
-          </picture>
+            <div class="designSections">
+                <!--💚 GREEN 💚-->
+                <div id="green-holder" class="frame-holder">
+                    <!-- GREEN FRAME -->
+                    <picture id="green-holder-img">
+                        <source
+                            srcset="https://i.ibb.co/2SKZL1N/green-all-2.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="https://i.ibb.co/FXxsb10/green-all-2.png"
+                            type="image/png"
+                        />
+                        <img
+                            src="img/green/green-all-2.webp"
+                            alt="green-holder"
+                            type="image/webp"
+                        />
+                    </picture>
+                    <!-- GREEN IMGS -->
+                    <div class="green-imgs-wrapper imgs-wrapper">
+                        <div class="inner-wrapper-rel">
+                            <!-- CACTUS 🌵-->
+                            <a href="subpages/13-09/cactus.html"
+                                ><picture id="cactus" class="green-imgs">
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/Bz3jQ8M/cactus-mini-4.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/TkT26sr/cactus-mini-4.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/cactus-mini-4.webp"
+                                        alt="cactus"
+                                        type="image/webp"
+                                    /> </picture
+                            ></a>
 
-          <!-- RED IMGS 📕-->
-          <div class="red-imgs-wrapper imgs-wrapper">
-            <!-- CHUPA -->
-            <a href="subpages/20-chupa/chupa.html">
-              <picture id="chupa" class="red-imgs">
-                <source
-                  srcset="https://i.ibb.co/5BDHSr7/chupa-3.webp"
-                  loading="lazy"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/WchNLNL/chupa-3.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/red/chupa-3.webp"
-                  alt=""
-                  loading="lazy"
-                  type="image/webp"
-                /> </picture
-            ></a>
+                            <!-- PAWN 😇-->
+                            <div class="pawn-wrapper">
+                                <a id="pawn-open">
+                                    <picture id="pawn" class="green-imgs">
+                                        <source srcset="" type="image/webp" />
+                                        <source
+                                            srcset="
+                                                https://i.ibb.co/YbTjxy7/peon-mini.png
+                                            "
+                                            type="image/png"
+                                        />
+                                        <img
+                                            src="img/green/peon-mini.png"
+                                            alt=""
+                                            type="image/png"
+                                        /> </picture
+                                ></a>
+                            </div>
 
-            <!-- CRAB -->
-            <a href="subpages/15-crab/crab.html">
-              <picture id="crab" class="red-imgs">
-                <source
-                  srcset="https://i.ibb.co/dL8DyRv/crab.webp"
-                  loading="lazy"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/56hYrWX/crab.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/red/crab.webp"
-                  alt=""
-                  loading="lazy"
-                  type="image/webp"
-                /> </picture
-            ></a>
+                            <!-- LIGTHER 🔥-->
+                            <div class="ligther_element-wrapper green-imgs">
+                                <div class="lighter-toogle">
+                                    <a href="subpages/02/lighter.html">
+                                        <picture
+                                            id="lighter"
+                                            class="green-imgs"
+                                        >
+                                            <source
+                                                srcset=""
+                                                type="image/webp"
+                                            />
+                                            <source
+                                                srcset="
+                                                    https://i.ibb.co/tYqsQS6/blues-mech-mini-7.png
+                                                "
+                                                type="image/png"
+                                            />
+                                            <img
+                                                src="img/green/blues-mech-mini-7.png"
+                                                alt=""
+                                                type="image/png"
+                                            />
+                                        </picture>
+                                    </a>
+                                    <!-- FIRE 1 -->
+                                    <picture
+                                        id="lighter-fire1"
+                                        class="green-imgs lighter-fire"
+                                    >
+                                        <source
+                                            srcset="
+                                                https://i.ibb.co/MBQWYCQ/fire-mini1.webp
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source srcset="" type="image/png" />
+                                        <img
+                                            src="img/green/fire-mini1.webp"
+                                            alt=""
+                                            type="image/webp"
+                                        />
+                                    </picture>
+                                    <!-- FIRE 2 -->
+                                    <picture
+                                        id="lighter-fire2"
+                                        class="green-imgs lighter-fire"
+                                    >
+                                        <source
+                                            srcset="
+                                                https://i.ibb.co/h2yCNMT/fire-mini2.webp
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                https://i.ibb.co/80kgcNH/fire-mini2.png
+                                            "
+                                            type="image/png"
+                                        />
+                                        <img
+                                            src="img/green/fire-mini2.webp"
+                                            alt=""
+                                            type="image/webp"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
 
-            <!-- SWIRL -->
-            <picture id="swirl-red" class="red-imgs swirl">
-              <source
-                srcset="https://i.ibb.co/6Bs3T8J/swirl-3.webp"
-                loading="lazy"
-                type="image/webp"
-              />
-              <source
-                srcset="https://i.ibb.co/RcYPyCs/swirl-3.png"
-                loading="lazy"
-                type="image/png"
-              />
-              <img
-                src="img/red/swirl-3.webp"
-                alt=""
-                loading="lazy"
-                type="image/webp"
-              />
-            </picture>
-            <!-- SWIRL:HOVER -->
-            <a href="subpages/17-swirl/swirl.html">
-              <picture id="swirl-white" class="red-imgs swirl">
-                <source
-                  srcset="https://i.ibb.co/P9GSKNC/swirl-3-white.webp"
-                  loading="lazy"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/3R8Q2kn/swirl-3-white.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/red/swirl-3-white.webp"
-                  alt=""
-                  loading="lazy"
-                  type="image/webp"
-                /> </picture
-            ></a>
+                            <!-- SCISSORS ✂️-->
+                            <a href="subpages/01-scissors/scissors.html"
+                                ><picture id="scissors" class="green-imgs">
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/G3Dns9R/wilson-mini.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/7Kgptgf/wilson-mini.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/wilson-mini.webp"
+                                        alt=""
+                                        type="image/webp"
+                                    /> </picture
+                            ></a>
 
-            <!-- 52 -->
-            <a href="subpages/18-ketchup/ketchup.html">
-              <picture id="ketchup" class="red-imgs">
-                <source
-                  srcset="https://i.ibb.co/Mc56xtg/ketchup-5.webp"
-                  loading="lazy"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/SXwcnZZ/ketchup-5.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/red/ketchup-5.webp"
-                  alt=""
-                  loading="lazy"
-                  type="image/webp"
-                /> </picture
-            ></a>
+                            <!-- README 📚-->
+                            <a id="read-me-open">
+                                <picture id="read-me" class="green-imgs">
+                                    <source srcset="" type="image/webp" />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/WK4hxbY/readme-mini.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/readme-mini.png"
+                                        alt="read me"
+                                        type="image/png"
+                                    />
+                                </picture>
+                            </a>
 
-            <!-- STRAWBERRY -->
-            <a href="subpages/16-strawberry/strawberry.html">
-              <picture id="strawberry" class="red-imgs">
-                <source
-                  srcset="https://i.ibb.co/GHMSmY6/straberry-3.webp"
-                  loading="lazy"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/Fstx61G/straberry-3.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/red/straberry-3.webp"
-                  alt=""
-                  loading="lazy"
-                  type="image/webp"
-                /> </picture
-            ></a>
+                            <!-- PLANET 🌍-->
+                            <a href="subpages/03-planet/planet.html"
+                                ><picture id="planet" class="green-imgs">
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/w49bKL6/egg-mini-4.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/4ZRhwDd/egg-mini-4.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/egg-mini-4.webp"
+                                        alt=""
+                                        type="image/webp"
+                                    /> </picture
+                            ></a>
 
-            <!-- EAT ME -->
-            <a id="eatme-open">
-              <picture id="eatme" class="red-imgs">
-                <source srcset="" loading="lazy" type="image/webp" />
-                <source
-                  srcset="https://i.ibb.co/QDJK6G7/Eatme-mini.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/red/Eatme-mini.png"
-                  alt=""
-                  loading="lazy"
-                  type="image/png"
-                /> </picture
-            ></a>
+                            <!-- COMB 💈-->
+                            <picture id="comb-normal" class="green-imgs comb">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/dWjksRW/peine-1.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/CPLZd1q/peine-1.png
+                                    "
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/green/peine-1.webp"
+                                    alt=""
+                                    type="image/webp"
+                                />
+                            </picture>
+                            <!-- COMB HOVER 💈-->
+                            <a href="subpages/06-comb/comb.html"
+                                ><picture
+                                    id="comb-hover"
+                                    class="green-imgs comb"
+                                >
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/2kds7Fp/peine-hover-1.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/9gdHpM6/peine-hover-1.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/peine-hover-1.webp"
+                                        alt=""
+                                        type="image/webp"
+                                    />
+                                </picture>
+                            </a>
 
-            <!-- YITIAOU -->
-            <!-- CHILLI -->
-            <picture id="chili" class="red-imgs yiTiaou">
-              <source
-                srcset="https://i.ibb.co/4ZKVBzh/chili-2.webp"
-                loading="lazy"
-                type="image/webp"
-              />
-              <source
-                srcset="https://i.ibb.co/KwMwnGz/chili-2.png"
-                loading="lazy"
-                type="image/png"
-              />
-              <img
-                src="img/red/chili-2.webp"
-                alt=""
-                loading="lazy"
-                type="image/webp"
-              />
-            </picture>
-            <!-- BANANA -->
-            <a href="subpages/19-chilli/chilli.html">
-              <picture id="banana" class="red-imgs yiTiaou">
-                <source
-                  srcset="https://i.ibb.co/rdVvgNM/banana-2.webp"
-                  loading="lazy"
-                  type="image/webp"
-                />
-                <source
-                  srcset="https://i.ibb.co/P1TWMxJ/banana-2.png"
-                  loading="lazy"
-                  type="image/png"
-                />
-                <img
-                  src="img/red/banana-2.webp"
-                  alt=""
-                  loading="lazy"
-                  type="image/webp"
-                />
-              </picture>
-            </a>
-          </div>
-        </div>
+                            <!-- PEN ✏️-->
+                            <a href="subpages/04-pen/pen.html">
+                                <picture id="pen" class="green-imgs">
+                                    <source srcset="" type="image/webp" />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/8XnSLDY/muji-pen-mini-2.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/muji-pen-mini-2.png"
+                                        alt=""
+                                        type="image/png"
+                                    />
+                                </picture>
+                            </a>
 
-        <!-- MODALS -->
-        <div class="modals">
-          <div id="pawn-modal" class="modal hidden">
-            <a class="x-btn">&times;</a>
-            <h2>404</h2>
-            <h3>The Pawn page is not found</h3>
-            <p>
-              Just like a pawn, who only receives orders and does not have
-              freedom of expression.
-            </p>
-            <p>
-              Just like a pawn, who only receives orders and does not have
-              freedom of expression.
-            </p>
-            <p>
-              Just like a pawn, who only receives orders and does not have
-              freedom of expression.
-            </p>
-          </div>
-          <div id="read-modal" class="modal hidden">
-            <a class="x-btn">&times;</a>
-            <div class="ascii">
-              <pre>
+                            <!-- CHAIR 🦵🦵-->
+                            <picture id="ikea" class="green-imgs ikea">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/qj7P5yc/ikea-mini-6.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source srcset="" type="image/png" />
+                                <img
+                                    src="img/green/ikea-mini-6.webp"
+                                    alt=""
+                                    type="image/webp"
+                                />
+                            </picture>
+                            <!-- CHAIR 🦵🦵 💡-->
+                            <a href="subpages/08-chair/chair.html">
+                                <picture
+                                    id="ikea-light"
+                                    class="green-imgs ikea"
+                                >
+                                    <source srcset="" type="image/webp" />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/WPL6sCk/ikea-mini-light-7.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/ikea-mini-light-7.png"
+                                        alt=""
+                                        type="image/png"
+                                    />
+                                </picture>
+                            </a>
+
+                            <!-- RADIO 📻 -->
+                            <a href="subpages/07-radio/radio.html"
+                                ><picture id="radio" class="green-imgs">
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/VM3dpxL/radio-out-5.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/1JHqvrM/radio-out-5.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/radio-out-5.webp"
+                                        alt=""
+                                        type="image/webp"
+                                    />
+                                </picture>
+                            </a>
+
+                            <!-- PIXAR 💡-->
+                            <picture id="pixar" class="green-imgs pixar">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/y0Rm9Zb/pixar-minimal-5.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/1799KXC/pixar-minimal-5.png
+                                    "
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/green/pixar-minimal-5.webp"
+                                    alt=""
+                                    type="image/webp"
+                                />
+                            </picture>
+                            <!-- PIXAR LIGHT 💡-->
+                            <a href="subpages/12-lamp/lamp.html">
+                                <picture
+                                    id="pixar-light"
+                                    class="green-imgs pixar"
+                                >
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/2ns2PYB/pixar-ligth-mini-5.webp
+                                        "
+                                        loading="lazy"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/JqcHnp6/pixar-ligth-mini-5.png
+                                        "
+                                        loading="lazy"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/pixar-ligth-mini-5.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        type="image/webp"
+                                    />
+                                </picture>
+                            </a>
+
+                            <!-- OUT OF STOCK 🏷-->
+                            <a id="out-open">
+                                <picture id="out-stock" class="green-imgs">
+                                    <source
+                                        srcset=""
+                                        loading="lazy"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/4pHh9q7/out-stock-1.png
+                                        "
+                                        loading="lazy"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/out-stock-1.png"
+                                        alt=""
+                                        loading="lazy"
+                                        type="image/png"
+                                    />
+                                </picture>
+                            </a>
+
+                            <!-- WEATHER 🌦-->
+                            <a href="subpages/13-09/cactus.html"
+                                ><picture id="weather" class="green-imgs">
+                                    <source
+                                        srcset=""
+                                        loading="lazy"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/XFkGjpr/random-mini-4.png
+                                        "
+                                        loading="lazy"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/random-mini-4.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        type="image/webp"
+                                    /> </picture
+                            ></a>
+
+                            <!-- 🌧 -->
+                            <picture id="rain" class="green-imgs weather">
+                                <source
+                                    srcset=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/DtYnhkz/random-rain-mini-2.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/green/random-rain-mini-2.png"
+                                    loading="lazy"
+                                    alt=""
+                                    type="image/png"
+                                />
+                            </picture>
+                            <!-- ⚡️ -->
+                            <picture id="lightning" class="green-imgs weather">
+                                <source
+                                    srcset=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/PrwHZL7/random-rayo-mini-2.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/green/random-rayo-mini-2.png"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                            </picture>
+
+                            <!-- GLASSES 🤓-->
+                            <a href="subpages/10-glasses/glasses.html"
+                                ><picture id="glasses" class="green-imgs">
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/0q3h9HP/vincent-mini-3.webp
+                                        "
+                                        loading="lazy"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/kSSwx7n/vincent-mini-3.png
+                                        "
+                                        loading="lazy"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/vincent-mini-3.webp"
+                                        alt="glasses"
+                                        loading="lazy"
+                                        type="image/webp"
+                                    /> </picture
+                            ></a>
+
+                            <!-- CARD 🃏 -->
+                            <a href="subpages/11-a113/a113.html">
+                                <picture id="poker" class="green-imgs">
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/4pxhkfc/poker-mini.webp
+                                        "
+                                        loading="lazy"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            https://i.ibb.co/9wLRL9b/poker-mini.png
+                                        "
+                                        loading="lazy"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="img/green/poker-mini.webp"
+                                        alt=""
+                                        loading="lazy"
+                                        type="image/webp"
+                                    /> </picture
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--🔴 RED 🔴-->
+                <div id="red-holder" class="frame-holder">
+                    <!-- RED FRAME -->
+                    <picture id="red-holder-img-wrapper">
+                        <source
+                            srcset="https://i.ibb.co/jT1qFxY/all-red-5.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="https://i.ibb.co/7XmGTzn/all-red-5.png"
+                            type="image/png"
+                        />
+                        <img
+                            src="img/red/all-red-5.webp"
+                            alt=""
+                            type="image/webp"
+                        />
+                    </picture>
+
+                    <!-- RED IMGS 📕-->
+                    <div class="red-imgs-wrapper imgs-wrapper">
+                        <!-- CHUPA -->
+                        <a href="subpages/20-chupa/chupa.html">
+                            <picture id="chupa" class="red-imgs">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/5BDHSr7/chupa-3.webp
+                                    "
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/WchNLNL/chupa-3.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/red/chupa-3.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                /> </picture
+                        ></a>
+
+                        <!-- CRAB -->
+                        <a href="subpages/15-crab/crab.html">
+                            <picture id="crab" class="red-imgs">
+                                <source
+                                    srcset="https://i.ibb.co/dL8DyRv/crab.webp"
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="https://i.ibb.co/56hYrWX/crab.png"
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/red/crab.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                /> </picture
+                        ></a>
+
+                        <!-- SWIRL -->
+                        <picture id="swirl-red" class="red-imgs swirl">
+                            <source
+                                srcset="https://i.ibb.co/6Bs3T8J/swirl-3.webp"
+                                loading="lazy"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="https://i.ibb.co/RcYPyCs/swirl-3.png"
+                                loading="lazy"
+                                type="image/png"
+                            />
+                            <img
+                                src="img/red/swirl-3.webp"
+                                alt=""
+                                loading="lazy"
+                                type="image/webp"
+                            />
+                        </picture>
+                        <!-- SWIRL:HOVER -->
+                        <a href="subpages/17-swirl/swirl.html">
+                            <picture id="swirl-white" class="red-imgs swirl">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/P9GSKNC/swirl-3-white.webp
+                                    "
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/3R8Q2kn/swirl-3-white.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/red/swirl-3-white.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                /> </picture
+                        ></a>
+
+                        <!-- 52 -->
+                        <a href="subpages/18-ketchup/ketchup.html">
+                            <picture id="ketchup" class="red-imgs">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/Mc56xtg/ketchup-5.webp
+                                    "
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/SXwcnZZ/ketchup-5.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/red/ketchup-5.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                /> </picture
+                        ></a>
+
+                        <!-- STRAWBERRY -->
+                        <a href="subpages/16-strawberry/strawberry.html">
+                            <picture id="strawberry" class="red-imgs">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/GHMSmY6/straberry-3.webp
+                                    "
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/Fstx61G/straberry-3.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/red/straberry-3.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                /> </picture
+                        ></a>
+
+                        <!-- EAT ME -->
+                        <a id="eatme-open">
+                            <picture id="eatme" class="red-imgs">
+                                <source
+                                    srcset=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/QDJK6G7/Eatme-mini.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/red/Eatme-mini.png"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/png"
+                                /> </picture
+                        ></a>
+
+                        <!-- YITIAOU -->
+                        <!-- CHILLI -->
+                        <picture id="chili" class="red-imgs yiTiaou">
+                            <source
+                                srcset="https://i.ibb.co/4ZKVBzh/chili-2.webp"
+                                loading="lazy"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="https://i.ibb.co/KwMwnGz/chili-2.png"
+                                loading="lazy"
+                                type="image/png"
+                            />
+                            <img
+                                src="img/red/chili-2.webp"
+                                alt=""
+                                loading="lazy"
+                                type="image/webp"
+                            />
+                        </picture>
+                        <!-- BANANA -->
+                        <a href="subpages/19-chilli/chilli.html">
+                            <picture id="banana" class="red-imgs yiTiaou">
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/rdVvgNM/banana-2.webp
+                                    "
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        https://i.ibb.co/P1TWMxJ/banana-2.png
+                                    "
+                                    loading="lazy"
+                                    type="image/png"
+                                />
+                                <img
+                                    src="img/red/banana-2.webp"
+                                    alt=""
+                                    loading="lazy"
+                                    type="image/webp"
+                                />
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MODALS -->
+                <div class="modals">
+                    <div id="pawn-modal" class="modal hidden">
+                        <a class="x-btn">&times;</a>
+                        <h2>404</h2>
+                        <h3>The Pawn page is not found</h3>
+                        <p>
+                            Just like a pawn, who only receives orders and does
+                            not have freedom of expression.
+                        </p>
+                        <p>
+                            Just like a pawn, who only receives orders and does
+                            not have freedom of expression.
+                        </p>
+                        <p>
+                            Just like a pawn, who only receives orders and does
+                            not have freedom of expression.
+                        </p>
+                    </div>
+                    <div id="read-modal" class="modal hidden">
+                        <a class="x-btn">&times;</a>
+                        <div class="ascii">
+                            <pre>
 <!-- here need to have a blank line for the first line be centered -->
  ______   _______   ___     ______         ____    ___   _______
 | ____ \ | _____/  / _ \   |_ ___ \       |_   \  /  _| | _____/
-| |__/ / | |____  / /_\ \   | |  \ \       |    \/   |  | |____ 
-| __  /  |  ___/ | _____ |  | |  | |       | |\   /| |  |  ___/ 
+| |__/ / | |____  / /_\ \   | |  \ \       |    \/   |  | |____
+| __  /  |  ___/ | _____ |  | |  | |       | |\   /| |  |  ___/
 | | \ \  | |____ | |   | |  | |__/ /       | | \_/ | |  | |_____
 |_|  \_\ |_____//___\ /___\|______/       |___|   |___| |______/</pre>
-            </div>
-            <div class="part-1">
-              <div class="block-text block-1">
-                <h3>How To Use</h3>
-                <p>
-                  There is a WHY and WHAT section in every work. Some will have
-                  WHERE as well.
-                </p>
-              </div>
-              <div class="block-text block-2">
-                <h6>why</h6>
-                <p>
-                  Where I state why I choose that object to represent my work,
-                  and explain the design process behind it.
-                </p>
-              </div>
-              <div class="block-text block-3">
-                <h6>where</h6>
-                <p>
-                  Where I briefly describe either the historical context of this
-                  work, where the inspiration comes from or where this topic
-                  originated.
-                </p>
-              </div>
-              <div class="block-text block-4">
-                <h6>what</h6>
-                <p>
-                  Where I outline what this project is about, its purpose, my
-                  source of inspiration, the process and other details.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <div id="out-modal" class="modal hidden">
+                        </div>
+                        <div class="part-1">
+                            <div class="block-text block-1">
+                                <h3>How To Use</h3>
+                                <p>
+                                    There is a WHY and WHAT section in every
+                                    work. Some will have WHERE as well.
+                                </p>
+                            </div>
+                            <div class="block-text block-2">
+                                <h6>why</h6>
+                                <p>
+                                    Where I state why I choose that object to
+                                    represent my work, and explain the design
+                                    process behind it.
+                                </p>
+                            </div>
+                            <div class="block-text block-3">
+                                <h6>where</h6>
+                                <p>
+                                    Where I briefly describe either the
+                                    historical context of this work, where the
+                                    inspiration comes from or where this topic
+                                    originated.
+                                </p>
+                            </div>
+                            <div class="block-text block-4">
+                                <h6>what</h6>
+                                <p>
+                                    Where I outline what this project is about,
+                                    its purpose, my source of inspiration, the
+                                    process and other details.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div id="out-modal" class="modal hidden">
             <a class="x-btn">&times;</a>
           </div> -->
-          <div id="eat-modal" class="modal hidden">
-            <a class="x-btn">&times;</a>
-            <div class="ascii">
-              <pre>
+                    <div id="eat-modal" class="modal hidden">
+                        <a class="x-btn">&times;</a>
+                        <div class="ascii">
+                            <pre>
 <!-- here need to have a blank line for the first line be centered -->
- _______   ___    _______        ____    ___   _______   
+ _______   ___    _______        ____    ___   _______
 | _____/  / _ \  |__   __|      |_   \  /  _| | _____/
-| |____  / /_\ \    | |          |    \/   |  | |____ 
-|  ___/ | _____ |   | |          | |\   /| |  |  ___/ 
+| |____  / /_\ \    | |          |    \/   |  | |____
+|  ___/ | _____ |   | |          | |\   /| |  |  ___/
 | |____ | |   | |   | |          | | \_/ | |  | |_____
 |_____//___\ /___\ /___\        /___\   /___\ |______/</pre>
+                        </div>
+                        <div class="part-1">
+                            <div class="block-text block-1">
+                                <h3>The Design Concept</h3>
+                                <p>
+                                    My main inspiration for wrapping my designs
+                                    harmonically together is using the frames of
+                                    the
+                                    <a
+                                        href="[https://en.wikipedia.org/wiki/Gundam]"
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        >Gundam</a
+                                    >
+                                    when they are just building pieces waiting
+                                    to be assembled.
+                                </p>
+                            </div>
+                            <div class="block-text block-2">
+                                <h3>About This Page</h3>
+                                <p>
+                                    This is my Design Page, where you can find
+                                    my design works, divided into two sections
+                                    one for vector designs and the other focused
+                                    on pixel Art.
+                                </p>
+                            </div>
+                            <div class="block-text block-3">
+                                <h3>What I learned</h3>
+                                <p>
+                                    Some of the reference items helped me
+                                    discover the beauty of design, i. e. they
+                                    taught me that something with a valuable
+                                    design is not only visually attractive but
+                                    is also endowed with a satisfactory
+                                    usability; for example, a building entrance
+                                    door that you can intuitively know whether
+                                    you need to pull or push, the wheel of an
+                                    iPod which you know how to handle
+                                    immediately, an easy to read magazine layout
+                                    or a website that guides you with its UX
+                                    patterns throughout its interface.
+                                </p>
+                            </div>
+                            <div class="block-text block-4">
+                                <h3>A tribute</h3>
+                                <p>
+                                    This design page is also a tribute to many
+                                    of my design references, which come from the
+                                    fields of architecture, animation, interior
+                                    design and industrial design. They all make
+                                    our lives easier or more comfortable. I
+                                    can’t imagine living one hundred years ago
+                                    without many items that nowadays we use on a
+                                    daily basis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shadow-layer hidden"></div>
+                    <div class="bg-modal hidden"></div>
+                </div>
+
+                <div id="trampolin-wrapper">
+                    <a
+                        id="trampolineEmoji"
+                        class="toTopBtn"
+                        title="Go to the top"
+                        >🦵</a
+                    >
+                </div>
             </div>
-            <div class="part-1">
-              <div class="block-text block-1">
-                <h3>The Design Concept</h3>
-                <p>
-                  My main inspiration for wrapping my designs harmonically
-                  together is using the frames of the
-                  <a
-                    href="[https://en.wikipedia.org/wiki/Gundam]"
-                    rel="noreferrer"
-                    target="_blank"
-                    >Gundam</a
-                  >
-                  when they are just building pieces waiting to be assembled.
-                </p>
-              </div>
-              <div class="block-text block-2">
-                <h3>About This Page</h3>
-                <p>
-                  This is my Design Page, where you can find my design works,
-                  divided into two sections one for vector designs and the other
-                  focused on pixel Art.
-                </p>
-              </div>
-              <div class="block-text block-3">
-                <h3>What I learned</h3>
-                <p>
-                  Some of the reference items helped me discover the beauty of
-                  design, i. e. they taught me that something with a valuable
-                  design is not only visually attractive but is also endowed
-                  with a satisfactory usability; for example, a building
-                  entrance door that you can intuitively know whether you need
-                  to pull or push, the wheel of an iPod which you know how to
-                  handle immediately, an easy to read magazine layout or a
-                  website that guides you with its UX patterns throughout its
-                  interface.
-                </p>
-              </div>
-              <div class="block-text block-4">
-                <h3>A tribute</h3>
-                <p>
-                  This design page is also a tribute to many of my design
-                  references, which come from the fields of architecture,
-                  animation, interior design and industrial design. They all
-                  make our lives easier or more comfortable. I can’t imagine
-                  living one hundred years ago without many items that nowadays
-                  we use on a daily basis.
-                </p>
-              </div>
+
+            <div class="footer">
+                <div id="footer-wrapper">
+                    <!-- L SIDE -->
+                    <div class="footer-l footer-part">
+                        <div class="sub-wrapper">
+                            <h2>other works</h2>
+                            <div>
+                                <a
+                                    href="../gsap-test/5-analog-hori-scroll/analog-test.html"
+                                    >photography</a
+                                >
+                            </div>
+                            <div>
+                                <a href="../draw-main/draw-main.html">
+                                    drawings & sketches</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- R SIDE -->
+                    <div class="footer-r footer-part">
+                        <div class="sub-wrapper">
+                            <div>
+                                <a
+                                    href="#top"
+                                    class="r-links arrow"
+                                    title="Go to the top"
+                                >
+                                    ↑
+                                </a>
+                                <!-- 🦵 -->
+                            </div>
+                            <div>
+                                <a href="/index.html" class="r-links">home</a>
+                            </div>
+                            <div>
+                                <a
+                                    href="../../contact/contact.html"
+                                    class="r-links"
+                                    >contact</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="../../about-me/about_me.html"
+                                    class="r-links"
+                                    >about me</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    id="making-of"
+                                    href="../../blog/the-making-of/software/my-web/design-page/making-design-pg.html"
+                                    class="r-links"
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </main>
 
-          <div class="shadow-layer hidden"></div>
-          <div class="bg-modal hidden"></div>
-        </div>
-
-        <div id="trampolin-wrapper">
-          <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🦵</a>
-        </div>
-      </div>
-
-      <div class="footer">
-        <div id="footer-wrapper">
-          <!-- L SIDE -->
-          <div class="footer-l footer-part">
-            <div class="sub-wrapper">
-              <h2>other works</h2>
-              <div>
-                <a href="../gsap-test/5-analog-hori-scroll/analog-test.html"
-                  >photography</a
-                >
-              </div>
-              <div>
-                <a href="../draw-main/draw-main.html"> drawings & sketches</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- R SIDE -->
-          <div class="footer-r footer-part">
-            <div class="sub-wrapper">
-              <div>
-                <a href="#top" class="r-links arrow" title="Go to the top">
-                  ↑
-                </a>
-                <!-- 🦵 -->
-              </div>
-              <div><a href="/index.html" class="r-links">home</a></div>
-              <div>
-                <a href="../../contact/contact.html" class="r-links">contact</a>
-              </div>
-              <div>
-                <a href="../../about-me/about_me.html" class="r-links"
-                  >about me</a
-                >
-              </div>
-              <div>
-                <a
-                  id="making-of"
-                  href="../../blog/the-making-of/software/my-web/design-page/making-design-pg.html"
-                  class="r-links"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <script src="/js/app.js"></script>
-    <script src="design.js"></script>
-  </body>
+        <script src="/js/app.js"></script>
+        <script src="design.js"></script>
+    </body>
 </html>

@@ -1,242 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Q7V0HVMDCY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-Q7V0HVMDCY');
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Héctor Cortés - Blog</title>
-    <!-----------------FONTS-------------------->
-    <!------need to be above the CSS style sheet----------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!------------------CSS-------------------->
-    <link rel="stylesheet" href="blog.css" />
-    <!--  animate.css -->
-    <!-- <link
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Héctor Cortés - Blog</title>
+        <!-----------------FONTS-------------------->
+        <!------need to be above the CSS style sheet----------->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!------------------CSS-------------------->
+        <link rel="stylesheet" href="blog.css" />
+        <!--  animate.css -->
+        <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     /> -->
-    <!------------------FAVICON-------------------->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <!--------------------JS----------------------->
-    <!--     is in the bottom of the <body>      -->
-  </head>
-  <body>
-    <!------------PRE LOADER------------------>
-    <div class="preloader">
-      <p id="emoji-loader">🦷</p>
-      <!-- 💭 -->
-      <p id="text-loader">ctrl + Ving my blog</p>
-    </div>
-    <div class="absolute-nav">
-      <div class="left-arrow" title="Main Page">
-        <a class="link-a" href="/index.html"><span id="leftArrow"><</span></a>
+        <!------------------FAVICON-------------------->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <!--------------------JS----------------------->
+        <!--     is in the bottom of the <body>      -->
+    </head>
+    <body>
+        <!------------PRE LOADER------------------>
+        <div class="preloader">
+            <p id="emoji-loader">🦷</p>
+            <!-- 💭 -->
+            <p id="text-loader">ctrl + Ving my blog</p>
+        </div>
+        <div class="absolute-nav">
+            <div class="left-arrow" title="Main Page">
+                <a class="link-a" href="/index.html"
+                    ><span id="leftArrow"><</span></a
+                >
 
-        <a class="back logo-frame">
-          <svg
-            class="logo-svg"
-            clip-rule="evenodd"
-            fill-rule="evenodd"
-            stroke-linejoin="round"
-            stroke-miterlimit="2"
-            viewBox="0 0 48 48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g class="hc-logo" fill="hsl(0, 3%, 31%)">
-              <path
-                d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
-              />
-            </g>
-          </svg>
-        </a>
-      </div>
-      <!-- <div class="menu-btn">
+                <a class="back logo-frame">
+                    <svg
+                        class="logo-svg"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g class="hc-logo" fill="hsl(0, 3%, 31%)">
+                            <path
+                                d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
+                            />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <!-- <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div> -->
-    </div>
-
-    <header class="header">
-      <div class="main-header">
-        <h1>BLOG</h1>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="blogSections">
-        <div class="sections-holder">
-          <!-- MAKING SECTIONS -->
-          <div class="making-of section">
-            <div class="section-top">
-              <h2 class="section-header">making of</h2>
-              <div class="art-numbers">4 Articles</div>
-            </div>
-            <div class="articles-holder making-articles">
-              <a id="make-intro" class="making-of-article">
-                <div class="article">
-                  <h3>Introduction</h3>
-                  <p>
-                    In these sections I am going to describe the process of
-                    building my website: its inspirations and ideation, the
-                    brainstorming stage, the user-testing stage and the latest
-                    remodelling. The three subpages are: the Design Page, the
-                    Drawing Page and the Photography Page.
-                  </p>
-                  <p id="intro-p-2" class="hidden">
-                    <br />
-                    At the beginning of this all, before my website existed,
-                    even before I bought my domain, I had a crucial question:
-                    would I use a website template from Wix or other similar
-                    pages or should I create my own coding from scratch? After
-                    doing research for a few days, I decided that I would choose
-                    the latter option, despite it being the more complicated.
-                  </p>
-                  <h6 class="read-more more-intro">< Expand ></h6>
-                </div>
-              </a>
-
-              <!-- DESIGN -->
-              <a
-                id="make-design"
-                class="making-of-article"
-                href="the-making-of/software/my-web/design-page/making-design-pg.html"
-              >
-                <div class="article">
-                  <h3>The Design Page</h3>
-                  <p>
-                    It is my wish to build an unconventional page, by starting
-                    from scratch and resorting to an offbeat display. Although
-                    when I was doing research on how to build my own website...
-                  </p>
-
-                  <h6 class="read-more">Read more ></h6>
-                </div>
-              </a>
-
-              <!-- DRAW -->
-              <a
-                id="make-draw"
-                class="making-of-article"
-                href="the-making-of/software/my-web/draw-page/making-draw-pg.html"
-              >
-                <div class="article">
-                  <h3>The Drawing Page</h3>
-                  <p>
-                    The first main page I made. I feel that drawing and
-                    sketching should be easy tasks that one can carry out
-                    anywhere anytime with just a pen and a sheet of paper.
-                  </p>
-
-                  <h6 class="read-more">Read more ></h6>
-                </div>
-              </a>
-
-              <!-- PHOTO-->
-              <a
-                id="make-draw"
-                class="making-of-article"
-                href="the-making-of/software/my-web/photo-page/making-photo-pg.html"
-              >
-                <div class="article">
-                  <h3>The Photography Page</h3>
-                  <p>
-                    There were a few doubts when doing this section. Even if I
-                    had numerous ideas, it didn’t seem easy to select the most
-                    appropriate ones. Rather than feeling disappointed, I
-                    understood that I had a breathtaking challenge ahead.
-                  </p>
-
-                  <h6 class="read-more">Read more ></h6>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- BEHIND SECTIONS -->
-          <div class="behind-the"></div>
         </div>
 
-        <div id="trampolin-wrapper">
-          <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">☝️</a>
-        </div>
-      </div>
-
-      <div class="footer">
-        <div id="footer-wrapper">
-          <!-- L SIDE -->
-          <div class="footer-l footer-part">
-            <div class="sub-wrapper">
-              <h2>my works</h2>
-              <div>
-                <a
-                  href="../works/gsap-test/5-analog-hori-scroll/analog-test.html"
-                  >photography</a
-                >
-              </div>
-              <div>
-                <a href="../works/draw-main/draw-main.html"> drawings</a>
-              </div>
-              <div>
-                <a href="../works/design/design.html"> designs</a>
-              </div>
+        <header class="header">
+            <div class="main-header">
+                <h1>BLOG</h1>
             </div>
-          </div>
+        </header>
 
-          <!-- R SIDE -->
-          <div class="footer-r footer-part">
-            <div class="sub-wrapper">
-              <div>
-                <a href="#top" class="r-links arrow" title="Go to the top">
-                  ↑
-                </a>
-                <!-- 🦵 -->
-              </div>
-              <div><a href="/index.html" class="r-links">home</a></div>
-              <div>
-                <a href="../contact/contact.html" class="r-links">contact</a>
-              </div>
-              <div>
-                <a href="../about-me/about_me.html" class="r-links">about me</a>
-              </div>
-              <!-- <div>
+        <main class="main">
+            <div class="blogSections">
+                <div class="sections-holder">
+                    <!-- MAKING SECTIONS -->
+                    <div class="making-of section">
+                        <div class="section-top">
+                            <h2 class="section-header">making of</h2>
+                            <div class="art-numbers">4 Articles</div>
+                        </div>
+                        <div class="articles-holder making-articles">
+                            <a id="make-intro" class="making-of-article">
+                                <div class="article">
+                                    <h3>Introduction</h3>
+                                    <p>
+                                        In these sections I am going to describe
+                                        the process of building my website: its
+                                        inspirations and ideation, the
+                                        brainstorming stage, the user-testing
+                                        stage and the latest remodelling. The
+                                        three subpages are: the Design Page, the
+                                        Drawing Page and the Photography Page.
+                                    </p>
+                                    <p id="intro-p-2" class="hidden">
+                                        <br />
+                                        At the beginning of this all, before my
+                                        website existed, even before I bought my
+                                        domain, I had a crucial question: would
+                                        I use a website template from Wix or
+                                        other similar pages or should I create
+                                        my own coding from scratch? After doing
+                                        research for a few days, I decided that
+                                        I would choose the latter option,
+                                        despite it being the more complicated.
+                                    </p>
+                                    <h6 class="read-more more-intro">
+                                        < Expand >
+                                    </h6>
+                                </div>
+                            </a>
+
+                            <!-- DESIGN -->
+                            <a
+                                id="make-design"
+                                class="making-of-article"
+                                href="the-making-of/software/my-web/design-page/making-design-pg.html"
+                            >
+                                <div class="article">
+                                    <h3>The Design Page</h3>
+                                    <p>
+                                        It is my wish to build an unconventional
+                                        page, by starting from scratch and
+                                        resorting to an offbeat display.
+                                        Although when I was doing research on
+                                        how to build my own website...
+                                    </p>
+
+                                    <h6 class="read-more">Read more ></h6>
+                                </div>
+                            </a>
+
+                            <!-- DRAW -->
+                            <a
+                                id="make-draw"
+                                class="making-of-article"
+                                href="the-making-of/software/my-web/draw-page/making-draw-pg.html"
+                            >
+                                <div class="article">
+                                    <h3>The Drawing Page</h3>
+                                    <p>
+                                        The first main page I made. I feel that
+                                        drawing and sketching should be easy
+                                        tasks that one can carry out anywhere
+                                        anytime with just a pen and a sheet of
+                                        paper.
+                                    </p>
+
+                                    <h6 class="read-more">Read more ></h6>
+                                </div>
+                            </a>
+
+                            <!-- PHOTO-->
+                            <a
+                                id="make-draw"
+                                class="making-of-article"
+                                href="the-making-of/software/my-web/photo-page/making-photo-pg.html"
+                            >
+                                <div class="article">
+                                    <h3>The Photography Page</h3>
+                                    <p>
+                                        There were a few doubts when doing this
+                                        section. Even if I had numerous ideas,
+                                        it didn’t seem easy to select the most
+                                        appropriate ones. Rather than feeling
+                                        disappointed, I understood that I had a
+                                        breathtaking challenge ahead.
+                                    </p>
+
+                                    <h6 class="read-more">Read more ></h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- BEHIND SECTIONS -->
+                    <div class="behind-the"></div>
+                </div>
+
+                <div id="trampolin-wrapper">
+                    <a
+                        id="trampolineEmoji"
+                        class="toTopBtn"
+                        title="Go to the top"
+                        >☝️</a
+                    >
+                </div>
+            </div>
+
+            <div class="footer">
+                <div id="footer-wrapper">
+                    <!-- L SIDE -->
+                    <div class="footer-l footer-part">
+                        <div class="sub-wrapper">
+                            <h2>my works</h2>
+                            <div>
+                                <a
+                                    href="../works/gsap-test/5-analog-hori-scroll/analog-test.html"
+                                    >photography</a
+                                >
+                            </div>
+                            <div>
+                                <a href="../works/draw-main/draw-main.html">
+                                    drawings</a
+                                >
+                            </div>
+                            <div>
+                                <a href="../works/design/design.html">
+                                    designs</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- R SIDE -->
+                    <div class="footer-r footer-part">
+                        <div class="sub-wrapper">
+                            <div>
+                                <a
+                                    href="#top"
+                                    class="r-links arrow"
+                                    title="Go to the top"
+                                >
+                                    ↑
+                                </a>
+                                <!-- 🦵 -->
+                            </div>
+                            <div>
+                                <a href="/index.html" class="r-links">home</a>
+                            </div>
+                            <div>
+                                <a
+                                    href="../contact/contact.html"
+                                    class="r-links"
+                                    >contact</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="../about-me/about_me.html"
+                                    class="r-links"
+                                    >about me</a
+                                >
+                            </div>
+                            <!-- <div>
                 <a
                   href="../../blog/the-making-of/software/my-web/design-page/making-design-pg.html"
                   class="r-links"
                   >the making of this page</a
                 >
               </div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </main>
+        </main>
 
-    <script src="/js/app.js"></script>
-    <script src="blog.js"></script>
-  </body>
+        <script src="/js/app.js"></script>
+        <script src="blog.js"></script>
+    </body>
 </html>

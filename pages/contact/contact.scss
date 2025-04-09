@@ -6,265 +6,276 @@
 
 body,
 html {
-  height: 100%;
+    height: 100%;
 }
 .preloader {
-  background: rgb(245, 245, 245);
+    background: rgb(245, 245, 245);
 
-  #emoji-loader {
-    // emoji rotate when loading
-    animation: none; //ease is funnier//linear
-    position: relative;
-    padding-right: 8vw;
-    #frame1,
-    #frame2,
-    #frame3,
-    #frame4 {
-      position: absolute;
+    #emoji-loader {
+        // emoji rotate when loading
+        animation: none; //ease is funnier//linear
+        position: relative;
+        padding-right: 8vw;
+        #frame1,
+        #frame2,
+        #frame3,
+        #frame4 {
+            position: absolute;
+        }
+        #frame1 {
+            animation: gifFrame1 1.6s infinite ease;
+        }
+        #frame2 {
+            animation: gifFrame2 1.6s infinite ease;
+        }
+        #frame3 {
+            animation: gifFrame3 1.6s infinite ease;
+        }
+        #frame4 {
+            animation: gifFrame4 1.6s infinite ease;
+        }
     }
-    #frame1 {
-      animation: gifFrame1 1.6s infinite ease;
+    #text-loader {
+        // font-weight: 500;
+        padding-top: 12rem;
+        // font-family: $ff-recursive;
+        // font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
+        animation: variableOpacity 2s infinite linear;
+        color: $sutil-dark-purple-gray-color;
+        // font-size: $font-size-small;
     }
-    #frame2 {
-      animation: gifFrame2 1.6s infinite ease;
-    }
-    #frame3 {
-      animation: gifFrame3 1.6s infinite ease;
-    }
-    #frame4 {
-      animation: gifFrame4 1.6s infinite ease;
-    }
-  }
-  #text-loader {
-    // font-weight: 500;
-    padding-top: 12rem;
-    // font-family: $ff-recursive;
-    // font-variation-settings: $MONO, $CASL, "wght" $font-weight-normal;
-    animation: variableOpacity 2s infinite linear;
-    color: $sutil-dark-purple-gray-color;
-    // font-size: $font-size-small;
-  }
 }
 .preload-finish {
-  opacity: 0;
-  pointer-events: none;
-  #emoji-loader {
-    // stop emoji rotate
-    animation: none;
-    #frame1,
-    #frame2,
-    #frame3,
-    #frame4 {
-      animation: none;
+    opacity: 0;
+    pointer-events: none;
+    #emoji-loader {
+        // stop emoji rotate
+        animation: none;
+        #frame1,
+        #frame2,
+        #frame3,
+        #frame4 {
+            animation: none;
+        }
     }
-  }
-  #text-loader {
-    animation: none;
-  }
+    #text-loader {
+        animation: none;
+    }
 }
 // ARROW BACK
 .left-arrow {
-  .link-a {
-    color: $font-gray;
-    &:hover {
-      color: $font-gray;
+    .link-a {
+        color: $font-gray;
+        &:hover {
+            color: $font-gray;
+        }
     }
-  }
 }
 
 .container {
-  height: 100%;
-  position: relative;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr minmax(100%, 50ch) 1fr;
-  #subcontainer {
     height: 100%;
-    grid-column: 2;
-
-    line-height: 1.5;
+    position: relative;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    width: clamp(250px, 80%, 60ch);
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    h1 {
-      grid-row: 1;
-      text-align: center;
-      align-self: end;
-      color: rgb(237, 237, 237);
-      font-variation-settings: 'MONO' 0.5, 'CASL' 0.1, 'wght' $font-weight-light;
-    }
-    p {
-      text-align: center;
-      color: $light-gray;
-      font-size: $font-size-normal;
-    }
-    .p1 {
-      grid-row: 2;
-    }
-
-    .italic {
-      font-size: 1.02em;
-      font-family: $ff-recursive-bold;
-      font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 500, 'slnt' -13;
-    }
-    #mailFrame {
-      // grid-column: 2;
-      z-index: 2;
-      grid-row: 3;
-      a {
-        text-decoration-color: $font-sutil-gray-color;
-        transition: $trans-slow;
-        &:hover {
-          text-decoration-color: $font-black;
-        }
-        #mailText {
-          font-variation-settings: 'MONO' 1, 'CASL' 0.2,
-            'wght' $font-weight-light;
-          font-size: $font-size-normal;
-          // font-family: "Ginto Variable";
-          transition: font-variation-settings 0.5s ease;
-          font-size: calc(3vw + 12px);
-          user-select: none;
-          color: $sutil-dark-purple-gray-color;
-          // font-variation-settings: "wght" 400;
-          &:hover {
-            cursor: $cursor-contact-mail;
-            font-variation-settings: 'MONO' 1, 'CASL' 0.01,
-              'wght' $font-weight-lighter;
-            color: $font-black;
-          }
-        }
-      }
-      //////wave hand
-      div {
-        display: none;
-      }
-      &:hover {
-        div {
-          font-size: calc(3vw + 40px);
-          position: fixed;
-          // position: relative;
-          left: 45%; //40%
-          top: 50%; //50%
-          transform: translate(-50%, -50%);
-          width: calc(3vw + 70px);
-          height: calc(3vw + 70px);
-          border-radius: 50%;
-        }
-        .wave {
-          display: block;
-          position: absolute;
-          pointer-events: none;
-          z-index: 2;
-          place-self: end;
-          animation-name: waveHand;
-          animation-duration: 3s;
-          animation-iteration-count: infinite;
-          // transform-origin: 50% 80%;
-
-          top: 55%;
-          left: 53%;
-          // transform: translate(-20%, 20%);
-        }
-      }
-    }
-    .p2 {
-      grid-row: 4;
-    }
-
-    .contacs {
-      grid-row: 5;
-      // display: grid;
-      // grid-template-rows: 1fr;
-      // grid-template-columns: repeat(4, 1fr);
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly; // center; //
-      justify-items: stretch;
-      &:hover {
-        justify-content: center;
-        a {
-          flex-basis: 25%;
-          .moreContacts {
-            padding: 0.5rem;
-            border: 1.3px solid rgb(103, 103, 103);
-            background-color: rgb(255, 255, 255);
-          }
-        }
-      }
-      a {
-        padding: 5%;
-        padding-top: 5%;
+    place-items: center;
+    grid-template-columns: 1fr minmax(100%, 50ch) 1fr;
+    #subcontainer {
         height: 100%;
-        text-decoration: none;
-        // flex-basis: 25%;
-        .moreContacts {
-          border-radius: 50%;
-          // margin: auto;
-          padding: 0.5rem;
-          background-color: rgb(232, 231, 231);
-          border: 1.3px solid transparent;
-          opacity: 0.7;
-          transition: 0.4s;
-          span {
-            transition: inherit;
-            display: none;
-            font-size: 0.9em;
+        grid-column: 2;
+
+        line-height: 1.5;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: clamp(250px, 80%, 60ch);
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        h1 {
+            grid-row: 1;
             text-align: center;
-            color: rgb(255, 255, 255);
-          }
-          &:hover {
-            //   padding: 1rem;
-            //   opacity: 1;
-            //   border: none;
-            //   border-radius: 1rem;
-            //   padding: 0.4rem;
-            //   span {
-            //     display: block;
-            //     transform: scale(1);
-            //     padding: 0rem;
-            //   }
-          }
+            align-self: end;
+            color: rgb(237, 237, 237);
+            font-variation-settings:
+                'MONO' 0.5,
+                'CASL' 0.1,
+                'wght' $font-weight-light;
         }
-        &:hover {
-          .moreContacts {
-            padding: 1rem;
-            opacity: 1;
-            border: none;
-            border-radius: 1rem;
-            padding: 0.4rem;
-            span {
-              display: block;
-              // transform: scale(1);
-              padding: 0rem;
-            }
-            &#job {
-              background-color: rgb(215, 215, 215);
-            }
-            &#pics {
-              background-color: rgb(126, 255, 135);
-            }
-            &#pixel {
-              background-color: rgb(255, 211, 101);
-            }
-            &#code {
-              background-color: rgb(192, 140, 255);
-            }
-          }
+        p {
+            text-align: center;
+            color: $light-gray;
+            font-size: $font-size-normal;
         }
-      }
-      &:hover {
-        a {
-          .moreContacts {
-            border-radius: 1rem;
-          }
+        .p1 {
+            grid-row: 2;
         }
-      }
+
+        .italic {
+            font-size: 1.02em;
+            font-family: $ff-recursive-bold;
+            font-variation-settings:
+                'MONO' 0,
+                'CASL' 0.5,
+                'wght' 500,
+                'slnt' -13;
+        }
+        #mailFrame {
+            // grid-column: 2;
+            z-index: 2;
+            grid-row: 3;
+            a {
+                text-decoration-color: $font-sutil-gray-color;
+                transition: $trans-slow;
+                &:hover {
+                    text-decoration-color: $font-black;
+                }
+                #mailText {
+                    font-variation-settings:
+                        'MONO' 1,
+                        'CASL' 0.2,
+                        'wght' $font-weight-light;
+                    font-size: $font-size-normal;
+                    // font-family: "Ginto Variable";
+                    transition: font-variation-settings 0.5s ease;
+                    font-size: calc(3vw + 12px);
+                    user-select: none;
+                    color: $sutil-dark-purple-gray-color;
+                    // font-variation-settings: "wght" 400;
+                    &:hover {
+                        cursor: $cursor-contact-mail;
+                        font-variation-settings:
+                            'MONO' 1,
+                            'CASL' 0.01,
+                            'wght' $font-weight-lighter;
+                        color: $font-black;
+                    }
+                }
+            }
+            //////wave hand
+            div {
+                display: none;
+            }
+            &:hover {
+                div {
+                    font-size: calc(3vw + 40px);
+                    position: fixed;
+                    // position: relative;
+                    left: 45%; //40%
+                    top: 50%; //50%
+                    transform: translate(-50%, -50%);
+                    width: calc(3vw + 70px);
+                    height: calc(3vw + 70px);
+                    border-radius: 50%;
+                }
+                .wave {
+                    display: block;
+                    position: absolute;
+                    pointer-events: none;
+                    z-index: 2;
+                    place-self: end;
+                    animation-name: waveHand;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    // transform-origin: 50% 80%;
+
+                    top: 55%;
+                    left: 53%;
+                    // transform: translate(-20%, 20%);
+                }
+            }
+        }
+        .p2 {
+            grid-row: 4;
+        }
+
+        .contacs {
+            grid-row: 5;
+            // display: grid;
+            // grid-template-rows: 1fr;
+            // grid-template-columns: repeat(4, 1fr);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly; // center; //
+            justify-items: stretch;
+            &:hover {
+                justify-content: center;
+                a {
+                    flex-basis: 25%;
+                    .moreContacts {
+                        padding: 0.5rem;
+                        border: 1.3px solid rgb(103, 103, 103);
+                        background-color: rgb(255, 255, 255);
+                    }
+                }
+            }
+            a {
+                padding: 5%;
+                padding-top: 5%;
+                height: 100%;
+                text-decoration: none;
+                // flex-basis: 25%;
+                .moreContacts {
+                    border-radius: 50%;
+                    // margin: auto;
+                    padding: 0.5rem;
+                    background-color: rgb(232, 231, 231);
+                    border: 1.3px solid transparent;
+                    opacity: 0.7;
+                    transition: 0.4s;
+                    span {
+                        transition: inherit;
+                        display: none;
+                        font-size: 0.9em;
+                        text-align: center;
+                        color: rgb(255, 255, 255);
+                    }
+                    &:hover {
+                        //   padding: 1rem;
+                        //   opacity: 1;
+                        //   border: none;
+                        //   border-radius: 1rem;
+                        //   padding: 0.4rem;
+                        //   span {
+                        //     display: block;
+                        //     transform: scale(1);
+                        //     padding: 0rem;
+                        //   }
+                    }
+                }
+                &:hover {
+                    .moreContacts {
+                        padding: 1rem;
+                        opacity: 1;
+                        border: none;
+                        border-radius: 1rem;
+                        padding: 0.4rem;
+                        span {
+                            display: block;
+                            // transform: scale(1);
+                            padding: 0rem;
+                        }
+                        &#job {
+                            background-color: rgb(215, 215, 215);
+                        }
+                        &#pics {
+                            background-color: rgb(126, 255, 135);
+                        }
+                        &#pixel {
+                            background-color: rgb(255, 211, 101);
+                        }
+                        &#code {
+                            background-color: rgb(192, 140, 255);
+                        }
+                    }
+                }
+            }
+            &:hover {
+                a {
+                    .moreContacts {
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
     }
-  }
 }

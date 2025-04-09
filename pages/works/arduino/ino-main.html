@@ -1,314 +1,358 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Q7V0HVMDCY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-Q7V0HVMDCY');
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>H.C. Arduino Prj</title>
-    <!-----------------FONTS-------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- RECURSIVE -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <!-- POPPINS + MOCHIY -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!------------------CSS-------------------->
-    <link rel="stylesheet" href="ino-main.css" />
-    <!------------------FAVICON-------------------->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body>
-    <!---------PRE LOADER----------->
-    <div class="preloader">
-      <p id="emoji-loader">⚛︎</p>
-      <p id="text-loader">we are made of stardust</p>
-    </div>
-
-    <header class="header">
-      <div class="absolute-nav">
-        <div class="left-arrow" title="Home Page">
-          <a class="link-a" href="/index.html"><span id="leftArrow"><</span></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>H.C. Arduino Prj</title>
+        <!-----------------FONTS-------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- RECURSIVE -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
+            rel="stylesheet"
+        />
+        <!-- POPPINS + MOCHIY -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!------------------CSS-------------------->
+        <link rel="stylesheet" href="ino-main.css" />
+        <!------------------FAVICON-------------------->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <!---------PRE LOADER----------->
+        <div class="preloader">
+            <p id="emoji-loader">⚛︎</p>
+            <p id="text-loader">we are made of stardust</p>
         </div>
-        <h1>
-          <span>Arduino :<br /> </span> Automated Lights
-        </h1>
-      </div>
-    </header>
 
-    <main class="main">
-      <div class="blog-wrapper">
-        <div class="ps-wrapper">
-          <h2 class="p-header">Why</h2>
-          <p class="paragraph">
-            Anything that can help you save time is welcome. As humans, we have
-            improved our lives mainly by saving time on unnecessary/repetitive
-            tasks, so that we can do more productive work instead.
-          </p>
-          <p class="paragraph">
-            It is <strong>Eco Friendly</strong>. Connecting the lights to a
-            motion sensor is a good way of
-            <a
-              href="https://www.energy.gov/energysaver/lighting-controls"
-              target="_blank"
-              rel="noopener noreferrer"
-              >saving energy</a
-            >. Forget about having to switch off the lights. They will remain on
-            only when there is someone in that area. Furthermore, it saves you
-            money.
-          </p>
+        <header class="header">
+            <div class="absolute-nav">
+                <div class="left-arrow" title="Home Page">
+                    <a class="link-a" href="/index.html"
+                        ><span id="leftArrow"><</span></a
+                    >
+                </div>
+                <h1>
+                    <span>Arduino :<br /> </span> Automated Lights
+                </h1>
+            </div>
+        </header>
 
-          <picture id="tools-pir" class="round-edges">
-            <source
-              srcset="https://i.ibb.co/DrcNqvN/tools-pir-2.webp"
-              type="image/webp"
-            />
-            <img src="img/tools-pir-2.webp" alt="" type="image/webp" />
-          </picture>
+        <main class="main">
+            <div class="blog-wrapper">
+                <div class="ps-wrapper">
+                    <h2 class="p-header">Why</h2>
+                    <p class="paragraph">
+                        Anything that can help you save time is welcome. As
+                        humans, we have improved our lives mainly by saving time
+                        on unnecessary/repetitive tasks, so that we can do more
+                        productive work instead.
+                    </p>
+                    <p class="paragraph">
+                        It is <strong>Eco Friendly</strong>. Connecting the
+                        lights to a motion sensor is a good way of
+                        <a
+                            href="https://www.energy.gov/energysaver/lighting-controls"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >saving energy</a
+                        >. Forget about having to switch off the lights. They
+                        will remain on only when there is someone in that area.
+                        Furthermore, it saves you money.
+                    </p>
 
-          <!-- WHAT -->
-          <h2 class="p-header">what</h2>
-          <p class="paragraph">
-            The Hands-Free Light has an
-            <a
-              href="https://www.amazon.com/dp/B07KZW86YR/ref=cm_sw_em_r_mt_dp_MCSNJCFW0SZD106EKB8S"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Infrared Sensor</a
-            >
-            , an
-            <a
-              href="https://www.arduino.cc/en/Main/arduinoBoardUno&gt;"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Arduino Uno</a
-            >, a
-            <a
-              href="https://www.amazon.com/dp/B07874KSLY/ref=cm_sw_em_r_mt_dp_QCF8DJ6SPDAJ3KW8XQVM?_encoding=UTF8&psc=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Relay</a
-            >
-            and a Lamp Base. Also I use jumper wires and a breadboard to make it
-            easier.
-          </p>
-          <p class="paragraph">
-            When the sensor detects a person entering the room, it will
-            <span class="italic">"tell"</span> the relay to
-            <strong>light up</strong> the bulb. Later on, after a certain period
-            of time, it will switch off automatically if there isn’t any
-            movement nearby.
-          </p>
+                    <picture id="tools-pir" class="round-edges">
+                        <source
+                            srcset="https://i.ibb.co/DrcNqvN/tools-pir-2.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="img/tools-pir-2.webp"
+                            alt=""
+                            type="image/webp"
+                        />
+                    </picture>
 
-          <iframe
-            id="totakeke"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/4xmouwKKCmo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=4xmouwKKCmo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
-          <div class="explain">
-            Testings before connecting all to the current.
-          </div>
+                    <!-- WHAT -->
+                    <h2 class="p-header">what</h2>
+                    <p class="paragraph">
+                        The Hands-Free Light has an
+                        <a
+                            href="https://www.amazon.com/dp/B07KZW86YR/ref=cm_sw_em_r_mt_dp_MCSNJCFW0SZD106EKB8S"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Infrared Sensor</a
+                        >
+                        , an
+                        <a
+                            href="https://www.arduino.cc/en/Main/arduinoBoardUno&gt;"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Arduino Uno</a
+                        >, a
+                        <a
+                            href="https://www.amazon.com/dp/B07874KSLY/ref=cm_sw_em_r_mt_dp_QCF8DJ6SPDAJ3KW8XQVM?_encoding=UTF8&psc=1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Relay</a
+                        >
+                        and a Lamp Base. Also I use jumper wires and a
+                        breadboard to make it easier.
+                    </p>
+                    <p class="paragraph">
+                        When the sensor detects a person entering the room, it
+                        will
+                        <span class="italic">"tell"</span> the relay to
+                        <strong>light up</strong> the bulb. Later on, after a
+                        certain period of time, it will switch off automatically
+                        if there isn’t any movement nearby.
+                    </p>
 
-          <h2 class="p-header">how</h2>
-          <p class="paragraph">
-            The Infrared Sensor is a motion sensor. When it detects a motion, it
-            will send a signal to the Arduino Uno. The Arduino is a
-            microcontroller which has a <code>custom code</code> assigned
-            beforehand by the computer and then transferred by a USB cable.
-            <br /><br />
-            When the Arduino <strong>receives</strong> the signal from the
-            sensor, it <strong>processes</strong> that logic through the
-            <code>custom code</code> , and does the expected
-            <strong>action</strong>, in this case,
-            <span class="italic">"tell"</span> the relay to switch on. When the
-            relay switches on, the bulb gets electricity.
-          </p>
+                    <iframe
+                        id="totakeke"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/4xmouwKKCmo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=4xmouwKKCmo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    ></iframe>
+                    <div class="explain">
+                        Testings before connecting all to the current.
+                    </div>
 
-          <iframe
-            id="final-vid"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/-6Oj11SAIyw?controls=0&showinfo=0&rel=0&loop=1&mute=1&playlist=-6Oj11SAIyw"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <div class="explain">
-            This is how I implemented the automated lights at home.
-          </div>
+                    <h2 class="p-header">how</h2>
+                    <p class="paragraph">
+                        The Infrared Sensor is a motion sensor. When it detects
+                        a motion, it will send a signal to the Arduino Uno. The
+                        Arduino is a microcontroller which has a
+                        <code>custom code</code> assigned beforehand by the
+                        computer and then transferred by a USB cable.
+                        <br /><br />
+                        When the Arduino <strong>receives</strong> the signal
+                        from the sensor, it <strong>processes</strong> that
+                        logic through the <code>custom code</code> , and does
+                        the expected <strong>action</strong>, in this case,
+                        <span class="italic">"tell"</span> the relay to switch
+                        on. When the relay switches on, the bulb gets
+                        electricity.
+                    </p>
 
-          <h2 class="p-header">the code</h2>
+                    <iframe
+                        id="final-vid"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/-6Oj11SAIyw?controls=0&showinfo=0&rel=0&loop=1&mute=1&playlist=-6Oj11SAIyw"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                    <div class="explain">
+                        This is how I implemented the automated lights at home.
+                    </div>
 
-          <p class="paragraph real-code">
-            <!-- 
+                    <h2 class="p-header">the code</h2>
+
+                    <p class="paragraph real-code">
+                        <!--
             <span class="comments"></span>
             <span class="state"></span>
             <span class="parameters"></span>
             <span class="ser-pin"></span>
            -->
 
-            <span class="parameters">const int</span> SENSOR_PIN = 2;
-            <span class="comments"
-              >//Pin Digital-2 connected to output (middle) wire of
-              sensor(OUT)</span
-            ><br />
-            <span class="parameters">const int</span> RELAY_PIN = 4;
-            <span class="comments"
-              >//Pin Digital-4 which is connected to control relay</span
-            >
-            <br />
-            <br />
-            <span class="parameters">void</span>
-            <span class="state">setup</span>() { <br />
-            &nbsp;&nbsp;&nbsp;<span class="ser-pin">Serial.begin</span>(9600);
-            <span class="comments"
-              >//setup Serial Monitor to display information</span
-            ><br />
-            &nbsp;&nbsp;&nbsp;<span class="ser-pin">Serial.println</span
-            >("HC-SR501 sensor with 5V relay");
-            <br />
-            <br />&nbsp;&nbsp;&nbsp;<span class="ser-pin">pinMode</span
-            >(SENSOR_PIN, <span class="parameters">INPUT</span>);
-            <span class="comments"
-              >//Define SENSOR_PIN as Input from sensor</span
-            >
-            <br />&nbsp;&nbsp;&nbsp;<span class="ser-pin">pinMode</span
-            >(RELAY_PIN, <span class="parameters">OUTPUT</span>);
-            <span class="comments">//Define RELAY_PIN as OUTPUT for relay </span
-            ><br />}<br />
+                        <span class="parameters">const int</span> SENSOR_PIN =
+                        2;
+                        <span class="comments"
+                            >//Pin Digital-2 connected to output (middle) wire
+                            of sensor(OUT)</span
+                        ><br />
+                        <span class="parameters">const int</span> RELAY_PIN = 4;
+                        <span class="comments"
+                            >//Pin Digital-4 which is connected to control
+                            relay</span
+                        >
+                        <br />
+                        <br />
+                        <span class="parameters">void</span>
+                        <span class="state">setup</span>() { <br />
+                        &nbsp;&nbsp;&nbsp;<span class="ser-pin"
+                            >Serial.begin</span
+                        >(9600);
+                        <span class="comments"
+                            >//setup Serial Monitor to display information</span
+                        ><br />
+                        &nbsp;&nbsp;&nbsp;<span class="ser-pin"
+                            >Serial.println</span
+                        >("HC-SR501 sensor with 5V relay");
+                        <br />
+                        <br />&nbsp;&nbsp;&nbsp;<span class="ser-pin"
+                            >pinMode</span
+                        >(SENSOR_PIN, <span class="parameters">INPUT</span>);
+                        <span class="comments"
+                            >//Define SENSOR_PIN as Input from sensor</span
+                        >
+                        <br />&nbsp;&nbsp;&nbsp;<span class="ser-pin"
+                            >pinMode</span
+                        >(RELAY_PIN, <span class="parameters">OUTPUT</span>);
+                        <span class="comments"
+                            >//Define RELAY_PIN as OUTPUT for relay </span
+                        ><br />}<br />
 
-            <!--  -->
-            <span class="parameters">void</span>
-            <span class="state">loop</span>() {<br />
-            &nbsp;&nbsp;&nbsp;<span class="parameters">int</span> motion =
-            <span class="ser-pin">digitalRead</span>(SENSOR_PIN);
-            <span class="comments"
-              >// read the sensor pin and stores it in "motion" variable</span
-            ><br />
-            <br />
-            &nbsp;&nbsp;&nbsp;<span class="state">if</span>(motion){
-            <span class="comments">// if motion is detected</span><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ser-pin"
-              >Serial.println</span
-            >("Motion detected"); <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ser-pin"
-              >digitalWrite</span
-            >(RELAY_PIN, <span class="parameters">LOW</span>);
-            <span class="comments">// Turn the relay ON</span><br />
-            &nbsp;&nbsp;&nbsp;}<br />
-            &nbsp;&nbsp;&nbsp;<span class="state">else</span>{<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ser-pin"
-              >Serial.println</span
-            >("No Motion");
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;digitalWrite(RELAY_PIN,<span
-              class="parameters"
-              >HIGH</span
-            >);
-            <span class="comments">// Turn the relay OFF</span>
-            <br />&nbsp;&nbsp;&nbsp;}<br />
-            &nbsp;&nbsp;&nbsp;<span class="ser-pin">delay</span>(300);<br />
-            }
-          </p>
-        </div>
+                        <!--  -->
+                        <span class="parameters">void</span>
+                        <span class="state">loop</span>() {<br />
+                        &nbsp;&nbsp;&nbsp;<span class="parameters">int</span>
+                        motion =
+                        <span class="ser-pin">digitalRead</span>(SENSOR_PIN);
+                        <span class="comments"
+                            >// read the sensor pin and stores it in "motion"
+                            variable</span
+                        ><br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;<span class="state">if</span>(motion){
+                        <span class="comments">// if motion is detected</span
+                        ><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="ser-pin"
+                            >Serial.println</span
+                        >("Motion detected"); <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="ser-pin"
+                            >digitalWrite</span
+                        >(RELAY_PIN, <span class="parameters">LOW</span>);
+                        <span class="comments">// Turn the relay ON</span><br />
+                        &nbsp;&nbsp;&nbsp;}<br />
+                        &nbsp;&nbsp;&nbsp;<span class="state">else</span>{<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="ser-pin"
+                            >Serial.println</span
+                        >("No Motion");
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;digitalWrite(RELAY_PIN,<span
+                            class="parameters"
+                            >HIGH</span
+                        >);
+                        <span class="comments">// Turn the relay OFF</span>
+                        <br />&nbsp;&nbsp;&nbsp;}<br />
+                        &nbsp;&nbsp;&nbsp;<span class="ser-pin">delay</span
+                        >(300);<br />
+                        }
+                    </p>
+                </div>
 
-        <div class="btn-wrapper">
-          <div class="prev btns">
-            <a href="../lost-objects/lost-objects.html"></a>
-          </div>
-          <div class="back-design btns">
-            <a href="/index.html"></a>
-          </div>
-          <div class="next btns">
-            <a href="../draw-main/draw-main.html"></a>
-          </div>
-        </div>
+                <div class="btn-wrapper">
+                    <div class="prev btns">
+                        <a href="../lost-objects/lost-objects.html"></a>
+                    </div>
+                    <div class="back-design btns">
+                        <a href="/index.html"></a>
+                    </div>
+                    <div class="next btns">
+                        <a href="../draw-main/draw-main.html"></a>
+                    </div>
+                </div>
 
-        <div id="trampolin-wrapper">
-          <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">☝️</a>
-        </div>
-      </div>
-      <div class="footer">
-        <div id="footer-wrapper">
-          <!-- MID SIDE -->
-          <div class="footer-m footer-part">
-            <div class="sub-wrapper">
-              <div>
-                <a
-                  href="#top"
-                  class="footer-header links arrow"
-                  title="Go to the top"
-                  ><br />↑</a
-                >
-              </div>
-              <div><a href="/index.html" class="links">home</a></div>
-              <div>
-                <a href="../../contact/contact.html" class="links">contact</a>
-              </div>
-              <div>
-                <a href="../../about-me/about_me.html" class="links"
-                  >about me</a
-                >
-              </div>
+                <div id="trampolin-wrapper">
+                    <a
+                        id="trampolineEmoji"
+                        class="toTopBtn"
+                        title="Go to the top"
+                        >☝️</a
+                    >
+                </div>
             </div>
-          </div>
+            <div class="footer">
+                <div id="footer-wrapper">
+                    <!-- MID SIDE -->
+                    <div class="footer-m footer-part">
+                        <div class="sub-wrapper">
+                            <div>
+                                <a
+                                    href="#top"
+                                    class="footer-header links arrow"
+                                    title="Go to the top"
+                                    ><br />↑</a
+                                >
+                            </div>
+                            <div>
+                                <a href="/index.html" class="links">home</a>
+                            </div>
+                            <div>
+                                <a
+                                    href="../../contact/contact.html"
+                                    class="links"
+                                    >contact</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="../../about-me/about_me.html"
+                                    class="links"
+                                    >about me</a
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- R SIDE -->
-          <div class="footer-r footer-part">
-            <div class="sub-wrapper">
-              <div>
-                <div class="footer-header"><span>MORE</span><br />My Works</div>
-              </div>
-              <div>
-                <a
-                  class="links"
-                  href="../gsap-test/5-analog-hori-scroll/analog-test.html"
-                  >photography</a
-                >
-              </div>
-              <div>
-                <a class="links" href="../draw-main/draw-main.html">
-                  drawings</a
-                >
-              </div>
-              <div>
-                <a class="links" href="../design/design.html"> designs</a>
-              </div>
+                    <!-- R SIDE -->
+                    <div class="footer-r footer-part">
+                        <div class="sub-wrapper">
+                            <div>
+                                <div class="footer-header">
+                                    <span>MORE</span><br />My Works
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    class="links"
+                                    href="../gsap-test/5-analog-hori-scroll/analog-test.html"
+                                    >photography</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    class="links"
+                                    href="../draw-main/draw-main.html"
+                                >
+                                    drawings</a
+                                >
+                            </div>
+                            <div>
+                                <a class="links" href="../design/design.html">
+                                    designs</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </main>
+        </main>
 
-    <script src="/js/app.js"></script>
-    <script src="ino.js"></script>
-  </body>
+        <script src="/js/app.js"></script>
+        <script src="ino.js"></script>
+    </body>
 </html>

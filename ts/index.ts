@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 /////////////////////////////////
 /////// FOR HOME PAGE ///////////
 
@@ -8,7 +10,9 @@
 /////////////////////////////////
 window.addEventListener('load', () => {
   const preloader = document.querySelector('.preloader');
-  preloader.classList.add('preload-finish');
+  if (preloader) {
+    preloader.classList.add('preload-finish');
+  }
 });
 
 /////////////////////////////////
@@ -19,7 +23,7 @@ window.addEventListener('load', () => {
 // https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]',
-);
+) as HTMLElement;
 const currentTheme = localStorage.getItem('theme')
   ? localStorage.getItem('theme')
   : null;
@@ -29,7 +33,7 @@ if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
 
   if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
+    (toggleSwitch as HTMLInputElement).checked = true;
   }
 }
 /////////////////////////////////
@@ -52,13 +56,15 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 /////////////////////////////////
 /////////////////////////////////
 // VERSION D with fade
+
 $(function () {
-  count = 0;
-  // wordsArray = ['Hej', 'Hey', '哈囉', 'Hola', '哩賀'];
-  wordsArray = ['¡Hola!', '嗨~!', '👋', 'Hej!', '哩賀!', '🖖', 'Здарова!']; //'Hey' is already included //Other ru: Д'арова!
+  let count = 0;
+  let wordsArray = [];
+
+  wordsArray = ['¡Hola!', '嗨~!', '👋', 'Hej!', '哩賀!', '🖖', 'Здарова!']; //'Hey' is already included
   setInterval(function () {
     count++;
-    $('.change-hey').fadeOut(404, function () {
+    $('.change-hey').fadeOut(404, function (this: HTMLElement) {
       $(this)
         .text(wordsArray[count % wordsArray.length])
         .fadeIn(404);
@@ -72,22 +78,24 @@ $(function () {
 /////////////////////////////////
 /////////////////////////////////
 const stickersLink = document.querySelector('#stickers-link');
-const stickersAll = document.querySelector('.stickers'); //all stickers pop up
+const stickersAll = document.querySelector(
+  '.stickers',
+) as HTMLDivElement | null; //all stickers pop up
 const bgClose = document.querySelector('.bg-close'); //bg-close
 const stickersX = document.querySelector('.stickers-x-btn');
 
 //////////////// FUNC //////////////////
 const openStickers = function () {
-  stickersAll.classList.add('open');
-  bgClose.classList.remove('hidden');
+  stickersAll?.classList.add('open');
+  bgClose?.classList.remove('hidden');
 };
 const closeStickers = function () {
-  stickersAll.classList.remove('open');
-  bgClose.classList.add('hidden');
+  stickersAll?.classList.remove('open');
+  bgClose?.classList.add('hidden');
 };
 
 let stickersOpen = 0;
-const openOrClose = function (whoClicked) {
+const openOrClose = function (whoClicked: number) {
   console.log(whoClicked);
   // whoclicked == 1 it need to be open
   if (whoClicked == 1) {
@@ -97,6 +105,7 @@ const openOrClose = function (whoClicked) {
   // whoclicked == 0 it need to be closed
   else if (whoClicked == 0) {
     stickersOpen = 0;
+    // closeStickers();
   } else {
     console.log('hérror on who clicked.');
   }
@@ -112,9 +121,17 @@ const stickersXPressed = function () {
   openOrClose(0);
 };
 
-stickersLink.addEventListener('click', linkPressed);
-bgClose.addEventListener('click', closeStickers);
-stickersX.addEventListener('click', closeStickers);
+if (stickersLink) {
+  stickersLink.addEventListener('click', linkPressed);
+}
+
+if (bgClose) {
+  bgClose.addEventListener('click', closeStickers);
+}
+
+if (stickersX) {
+  stickersX.addEventListener('click', closeStickers);
+}
 // stickersX.addEventListener('click', stickersXPressed);
 
 /////////////////////////////////
@@ -126,14 +143,15 @@ const closeBtn = document.querySelector('.closeBtn');
 const footer = document.querySelector('.footer');
 
 const closeFooter = function () {
-  footer.classList.add('hidden');
+  footer?.classList.add('hidden');
 };
-closeBtn.addEventListener('click', closeFooter);
-//////////////////////////////////
-///// place left for MAC /////////
-if (navigator.userAgent.includes('Mac OS X')) {
-  closeBtn.classList.add('onLeft');
-}
+closeBtn?.addEventListener('click', closeFooter);
+
+// close button will be on the left when the user is using macOS
+// const isMac = navigator.userAgent.includes('Mac OS X');
+// if (isMac) {
+//   closeBtn?.classList.add('onLeft');
+// }
 
 // For other user system properties: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_nav_all
 console.log(`OS, Engine, Browser: ${navigator.userAgent}`);

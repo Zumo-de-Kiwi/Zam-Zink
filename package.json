@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
