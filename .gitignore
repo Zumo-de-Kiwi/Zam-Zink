@@ -17,8 +17,6 @@ css/
 # IDE and editor files
 .vscode/
 .idea/
-*.sublime-text
-*.atom
 
 # Git hooks
 .git/hooks/
