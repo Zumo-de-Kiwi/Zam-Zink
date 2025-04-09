@@ -1,398 +1,420 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Q7V0HVMDCY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hé..és - Lost Objects</title>
+        <!-----------------FONTS-------------------->
+        <!------need to be above the CSS style sheet----------->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
+            rel="stylesheet"
+        />
+        <!------------------CSS-------------------->
+        <link rel="stylesheet" href="lost-objects.css" />
+        <!------------------FAVICON-------------------->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <!------------PRE LOADER------------------>
+        <div class="preloader">
+            <p id="emoji-loader">🧭</p>
+            <p id="text-loader">
+                There is one absolute North<br />and one relative North.
+            </p>
+        </div>
 
-      gtag('config', 'G-Q7V0HVMDCY');
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hé..és - Lost Objects</title>
-    <!-----------------FONTS-------------------->
-    <!------need to be above the CSS style sheet----------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <!------------------CSS-------------------->
-    <link rel="stylesheet" href="lost-objects.css" />
-    <!------------------FAVICON-------------------->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body>
-    <!------------PRE LOADER------------------>
-    <div class="preloader">
-      <p id="emoji-loader">🧭</p>
-      <p id="text-loader">
-        There is one absolute North<br />and one relative North.
-      </p>
-    </div>
-
-    <div class="left-arrow" title="Main Page">
-      <a class="link-a" href="/index.html"><span id="leftArrow"><</span></a>
-
-      <div class="back logo-frame">
-        <svg
-          class="logo-svg"
-          clip-rule="evenodd"
-          fill-rule="evenodd"
-          stroke-linejoin="round"
-          stroke-miterlimit="2"
-          viewBox="0 0 48 48"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g class="hc-logo" fill="hsl(0, 3%, 31%)">
-            <path
-              d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
-            />
-          </g>
-        </svg>
-      </div>
-    </div>
-
-    <div class="mainBgPic">
-      <h1>Lost Objects</h1>
-      <!-- rounded corner division -->
-      <div id="svgRounded"></div>
-      <p id="explainBg">
-        ↑ the header background with the Soul characters' color palette ↑
-      </p>
-    </div>
-    <div id="headerWrapper"></div>
-    <main>
-      <!-- section one doesn;t have the totop btn -->
-      <section id="section">
-        <div id="div1">
-          <p id="p1">
-            If you pay attention to the details in the streets, you will
-            discover they are fully packed with unlimited surprises for you.<br />
-            <br />
-            <span id="collect">
-              Here are some objects which I have collected on the streets over
-              the years.</span
+        <div class="left-arrow" title="Main Page">
+            <a class="link-a" href="/index.html"
+                ><span id="leftArrow"><</span></a
             >
-            <br />
-            <span id="touchMe">↑ touch me ↑</span>
-          </p>
 
-          <p id="sweat">
-            Some are sweet,<br />
-            others are bitter.
-          </p>
-          <picture id="chocoPic">
-            <source srcset="" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/tQVhKTw/choco.jpg"
-              type="image/jpg"
-            />
-            <img src="lost-obj-img/choco.jpg" alt="chocoPic" type="image/jpg" />
-          </picture>
-          <!-- <img id="chocoPic" src="lost-obj-img/choco.jpg" alt="choco" /> -->
-          <picture id="alonePic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/ZHS71dq/alone.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/alone.jpg"
-              alt=""
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-          <!-- <img
+            <div class="back logo-frame">
+                <svg
+                    class="logo-svg"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="2"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g class="hc-logo" fill="hsl(0, 3%, 31%)">
+                        <path
+                            d="M20.122-.045H6.893A6.758 6.758 0 0 0 .138 6.713v34.445a6.755 6.755 0 0 0 6.755 6.758h13.23zM48.112 28.081H27.977V47.94h13.377c1.8 0 3.518-.711 4.778-1.979a6.733 6.733 0 0 0 1.98-4.779v-13.1zM48.11 6.709A6.731 6.731 0 0 0 46.13 1.93a6.743 6.743 0 0 0-4.774-1.98h-13.38v20.027H48.11z"
+                        />
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="mainBgPic">
+            <h1>Lost Objects</h1>
+            <!-- rounded corner division -->
+            <div id="svgRounded"></div>
+            <p id="explainBg">
+                ↑ the header background with the Soul characters' color palette
+                ↑
+            </p>
+        </div>
+        <div id="headerWrapper"></div>
+        <main>
+            <!-- section one doesn;t have the totop btn -->
+            <section id="section">
+                <div id="div1">
+                    <p id="p1">
+                        If you pay attention to the details in the streets, you
+                        will discover they are fully packed with unlimited
+                        surprises for you.<br />
+                        <br />
+                        <span id="collect">
+                            Here are some objects which I have collected on the
+                            streets over the years.</span
+                        >
+                        <br />
+                        <span id="touchMe">↑ touch me ↑</span>
+                    </p>
+
+                    <p id="sweat">
+                        Some are sweet,<br />
+                        others are bitter.
+                    </p>
+                    <picture id="chocoPic">
+                        <source srcset="" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/tQVhKTw/choco.jpg"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/choco.jpg"
+                            alt="chocoPic"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img id="chocoPic" src="lost-obj-img/choco.jpg" alt="choco" /> -->
+                    <picture id="alonePic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/ZHS71dq/alone.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/alone.jpg"
+                            alt=""
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img
             id="alonePic"
             loading="lazy"
             src="lost-obj-img/alone.jpg"
             alt="alonePic"
           /> -->
-          <p id="boring">
-            Others are written by boring people or for boring purposes.
-          </p>
-          <picture id="checkPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/wKvbrdT/check600.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/check600.jpg"
-              alt="check600"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-          <!-- <img
+                    <p id="boring">
+                        Others are written by boring people or for boring
+                        purposes.
+                    </p>
+                    <picture id="checkPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/wKvbrdT/check600.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/check600.jpg"
+                            alt="check600"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img
             id="checkPic"
             loading="lazy"
             src="lost-obj-img/check600.jpg"
             alt=""
           /> -->
-          <p id="monetaryText">
-            Last but not least,<br />
-            here are some notes with a monetary purpose.
-          </p>
-          <picture id="dreamsPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/cxNbs1D/dreams.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/dreams"
-              alt="dreamsPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-          <!-- <img
+                    <p id="monetaryText">
+                        Last but not least,<br />
+                        here are some notes with a monetary purpose.
+                    </p>
+                    <picture id="dreamsPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/cxNbs1D/dreams.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/dreams"
+                            alt="dreamsPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img
             id="dreamsPic"
             loading="lazy"
             src="lost-obj-img/dreams.jpg"
             alt=""
           /> -->
-          <picture id="mathPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/DDMGz5D/shinkong-Math.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/shinkongMath.jpg"
-              alt="mathPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-          <!-- <img
+                    <picture id="mathPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/DDMGz5D/shinkong-Math.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/shinkongMath.jpg"
+                            alt="mathPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img
             id="mathPic"
             loading="lazy"
             src="lost-obj-img/shinkongMath.jpg"
             alt="math"
           /> -->
-          <p id="mathText">
-            As always, you can’t stop learning,<br />even in the streets.
-          </p>
-          <p id="cardsText">Now come the work-related...</p>
-          <picture id="wsjPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/WtD94Cc/wsj.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/wsj.jpg"
-              alt="wsjPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-          <!-- <img id="wsjPic" loading="lazy" src="lost-obj-img/wsj.jpg" alt="" /> -->
-          <picture id="generaliPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/3pypFrK/generali.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/generali.jpg"
-              alt="generaliPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-          <!-- <img
+                    <p id="mathText">
+                        As always, you can’t stop learning,<br />even in the
+                        streets.
+                    </p>
+                    <p id="cardsText">Now come the work-related...</p>
+                    <picture id="wsjPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/WtD94Cc/wsj.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/wsj.jpg"
+                            alt="wsjPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img id="wsjPic" loading="lazy" src="lost-obj-img/wsj.jpg" alt="" /> -->
+                    <picture id="generaliPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/3pypFrK/generali.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/generali.jpg"
+                            alt="generaliPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img
             id="generaliPic"
             loading="lazy"
             src="lost-obj-img/generali.jpg"
             alt=""
           /> -->
-          <p id="schoolText">...and school-realated items.</p>
-          <picture id="schoolPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/BZhrNpJ/schoolnm.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/schoolnm.jpg"
-              alt="schoolPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-          <!-- <img
+                    <p id="schoolText">...and school-realated items.</p>
+                    <picture id="schoolPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/BZhrNpJ/schoolnm.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/schoolnm.jpg"
+                            alt="schoolPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+                    <!-- <img
             id="schoolPic"
             loading="lazy"
             src="lost-obj-img/schoolnm.jpg"
             alt=""
           /> -->
 
-          <h3 id="graphicalText">
-            Don’t like reading?<br />
-            Here come the graphic samples.
-          </h3>
-          <picture id="granPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/J2BNnMN/granma.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/"
-              alt="granPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
+                    <h3 id="graphicalText">
+                        Don’t like reading?<br />
+                        Here come the graphic samples.
+                    </h3>
+                    <picture id="granPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/J2BNnMN/granma.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/"
+                            alt="granPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
 
-          <picture id="miliPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/88zDFRh/mili.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/mili.jpg"
-              alt=""
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
+                    <picture id="miliPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/88zDFRh/mili.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/mili.jpg"
+                            alt=""
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
 
-          <picture id="girlPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/mXtc21J/girl.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/girl.jpg"
-              alt="girlPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
+                    <picture id="girlPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/mXtc21J/girl.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/girl.jpg"
+                            alt="girlPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
 
-          <div id="secureWrapper">
-            <picture id="securePic">
-              <source srcset="" loading="lazy" type="image/webp" />
-              <source
-                srcset="https://i.ibb.co/gmJT3fw/securitycard.jpg"
-                loading="lazy"
-                type="image/jpg"
-              />
-              <img
-                src="lost-obj-img/securitycard.jpg"
-                alt="securePic"
-                loading="lazy"
-                type="image/jpg"
-              />
+                    <div id="secureWrapper">
+                        <picture id="securePic">
+                            <source
+                                srcset=""
+                                loading="lazy"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    https://i.ibb.co/gmJT3fw/securitycard.jpg
+                                "
+                                loading="lazy"
+                                type="image/jpg"
+                            />
+                            <img
+                                src="lost-obj-img/securitycard.jpg"
+                                alt="securePic"
+                                loading="lazy"
+                                type="image/jpg"
+                            />
+                        </picture>
+                    </div>
+
+                    <p id="carText">
+                        And finally, the most beloved and hated thing in the
+                        streets, the cars.
+                    </p>
+                    <picture id="toyotaPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/L0G3v56/toyota.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/toyota.jpg"
+                            alt="toyotaPic"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+
+                    <picture id="barrosPic">
+                        <source srcset="" loading="lazy" type="image/webp" />
+                        <source
+                            srcset="https://i.ibb.co/QF0Fysp/guardabarros.jpg"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                        <img
+                            src="lost-obj-img/guardabarros.jpg"
+                            alt="guardabarros"
+                            loading="lazy"
+                            type="image/jpg"
+                        />
+                    </picture>
+
+                    <h3 id="endText">- Fin -</h3>
+                </div>
+                <div id="trampolin-wrapper">
+                    <a
+                        id="trampolineEmoji"
+                        class="toTopBtn"
+                        title="Go to the top"
+                        >🧹</a
+                    >
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <picture id="placa">
+                <source
+                    srcset="https://i.ibb.co/yd3mG38/placa800bw.webp"
+                    loading="lazy"
+                    type="image/webp"
+                />
+                <source
+                    srcset="https://i.ibb.co/XpsVfHQ/placa800bw.png"
+                    loading="lazy"
+                    type="image/png"
+                />
+                <img
+                    src="lost-obj-img/placa800bw.webp"
+                    alt="placa"
+                    loading="lazy"
+                    type="image/webp"
+                />
             </picture>
-          </div>
 
-          <p id="carText">
-            And finally, the most beloved and hated thing in the streets, the
-            cars.
-          </p>
-          <picture id="toyotaPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/L0G3v56/toyota.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/toyota.jpg"
-              alt="toyotaPic"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
+            <div id="wrapper">
+                <a
+                    id="nextPrj"
+                    class="morePrj"
+                    href="../gsap-test/5-analog-hori-scroll/analog-test.html"
+                    >Photography Page ></a
+                >
+                <br />
+                <a id="prevPrj" class="morePrj" href="/index.html"
+                    >< Return Home</a
+                >
+            </div>
+        </footer>
 
-          <picture id="barrosPic">
-            <source srcset="" loading="lazy" type="image/webp" />
-            <source
-              srcset="https://i.ibb.co/QF0Fysp/guardabarros.jpg"
-              loading="lazy"
-              type="image/jpg"
-            />
-            <img
-              src="lost-obj-img/guardabarros.jpg"
-              alt="guardabarros"
-              loading="lazy"
-              type="image/jpg"
-            />
-          </picture>
-
-          <h3 id="endText">- Fin -</h3>
-        </div>
-        <div id="trampolin-wrapper">
-          <a id="trampolineEmoji" class="toTopBtn" title="Go to the top">🧹</a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <picture id="placa">
-        <source
-          srcset="https://i.ibb.co/yd3mG38/placa800bw.webp"
-          loading="lazy"
-          type="image/webp"
-        />
-        <source
-          srcset="https://i.ibb.co/XpsVfHQ/placa800bw.png"
-          loading="lazy"
-          type="image/png"
-        />
-        <img
-          src="lost-obj-img/placa800bw.webp"
-          alt="placa"
-          loading="lazy"
-          type="image/webp"
-        />
-      </picture>
-
-      <div id="wrapper">
-        <a
-          id="nextPrj"
-          class="morePrj"
-          href="../gsap-test/5-analog-hori-scroll/analog-test.html"
-          >Photography Page ></a
-        >
-        <br />
-        <a id="prevPrj" class="morePrj" href="/index.html">< Return Home</a>
-      </div>
-    </footer>
-
-    <script src="/js/app.js"></script>
-  </body>
+        <script src="/js/app.js"></script>
+    </body>
 </html>
