@@ -323,7 +323,7 @@ body #trampolin-wrapper #trampolineEmoji:active {
 
 body {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: rgb(239, 241, 245);
+  background-color: hsl(49, 100%, 54%);
   font-weight: 300;
   position: relative;
 }
@@ -347,16 +347,16 @@ body .preloader #text-loader {
 body header {
   overflow: hidden;
   position: sticky;
-  position: -webkit-sticky;
   display: block;
   top: 0px;
   z-index: 9;
-  background-color: transparent;
-  backdrop-filter: blur(7px);
   box-shadow: 0px 3.1px 2.7px -3px rgba(0, 0, 0, 0.022), 0px 7.7px 6.9px -10px rgba(0, 0, 0, 0.031), 0px 15.8px 14.2px -10px rgba(0, 0, 0, 0.039), 0px 32.5px 29.2px -10px rgba(0, 0, 0, 0.048), 0px 89px 80px -10px rgba(0, 0, 0, 0.07);
 }
 body header .absolute-nav {
   text-align: center;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.4);
 }
 body header .absolute-nav .left-arrow {
   top: 0.9rem;
@@ -382,7 +382,7 @@ body header .absolute-nav .left-arrow .link-a:hover, body header .absolute-nav .
 body header .absolute-nav h1 {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  mix-blend-mode: multiply;
+  text-shadow: 0px 0px 7px rgb(230, 233, 240);
   font-family: "Mochiy Pop P One", sans-serif;
   font-size: 3rem;
   line-height: 6rem;

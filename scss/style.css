@@ -668,6 +668,7 @@ body {
 .main .navigation .desktop-logo:hover .left .theme-switch .slider:hover, .main .navigation .desktop-logo:hover .left .theme-switch .sliderfocus {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>🤞</text></svg>") 16 0, auto;
   border-radius: 2.1rem;
+  transition: 0.3s;
 }
 .main .navigation .desktop-logo:hover .left .theme-switch .slider:active {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='37' height='29' viewport='0 0 100 100' style='fill:black;font-size:18px;transform:translate(8px,0px);'><text y='57%'>✌️</text></svg>") 16 0, auto;

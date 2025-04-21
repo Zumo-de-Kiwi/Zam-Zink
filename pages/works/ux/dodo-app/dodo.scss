@@ -19,9 +19,8 @@ body {
   $exp-blue: rgb(74, 107, 225);
   $exp-gray: rgb(170, 170, 174);
   ///////////////////////////////////////////
-  // font-family: 'Mochiy Pop P One', sans-serif;
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: $color-bg;
+  background-color: $app-yellow;
   font-weight: 300;
   position: relative;
 
@@ -46,14 +45,10 @@ body {
   header {
     overflow: hidden;
     position: sticky;
-    position: -webkit-sticky;
     display: block;
     top: 0px;
     z-index: 9;
-    // padding-bottom: 1rem;
 
-    background-color: transparent; //
-    backdrop-filter: blur(7px);
     box-shadow: 0px 3.1px 2.7px -3px rgba(0, 0, 0, 0.022),
       0px 7.7px 6.9px -10px rgba(0, 0, 0, 0.031),
       0px 15.8px 14.2px -10px rgba(0, 0, 0, 0.039),
@@ -61,6 +56,11 @@ body {
       0px 89px 80px -10px rgba(0, 0, 0, 0.07);
     .absolute-nav {
       text-align: center;
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(
+        7px
+      ); // really needed even for modern webkit
+      background: rgba(255, 255, 255, 0.4);
       .left-arrow {
         top: 0.9rem;
         .link-a {
@@ -85,9 +85,8 @@ body {
       h1 {
         text-transform: uppercase;
         color: rgb(255, 255, 255);
-        mix-blend-mode: multiply;
+        text-shadow: 0px 0px 7px $code-bg;
         font-family: 'Mochiy Pop P One', sans-serif;
-
         font-size: 3rem;
         line-height: 6rem;
       }
