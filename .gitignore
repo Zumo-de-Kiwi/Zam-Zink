@@ -1,18 +1,9 @@
-**/.DS_Store
-.DS_Store
-
 # Node modules
 node_modules/
 
 # TypeScript build output
 dist/
 build/
-
-# SCSS build output
-css/
-
-# JavaScript build output
-# js/
 
 # IDE and editor files
 .vscode/
